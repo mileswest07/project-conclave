@@ -1,2 +1,2 @@
-# metroid-item-tracker
+# Metroid Item Tracker
 Item tracker for any and all Metroid games, vanilla or randomized

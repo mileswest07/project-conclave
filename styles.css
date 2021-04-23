@@ -1,0 +1,89 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.hide-section {
+  display: none;
+}
+
+#selection:not(.show-menu) {
+  display: none;
+}
+
+#selection .menu-container {
+  height: 100vh;
+  margin-left: 8.333333%;
+  overflow: auto;
+  position: relative;
+  width: 83.333333%;
+}
+
+#selection .menu-container .menu-footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#selection .menu-container .menu-body .menu-query-section p {
+  vertical-align: middle;
+}
+
+#selection .gameError {
+  color: red;
+  font-weight: bold;
+}
+
+#selection .gameError.hide-error {
+  display: none;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.startup-button {
+  margin-top: 14px;
+}
+
+.item, .expansion {
+  float: left;
+}
+
+.item-image {
+  left: 0;
+  margin: 2px;
+  position: relative;
+  top: 0;
+}
+
+.expansion p {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+
+.deselected {
+  opacity: 0.3;
+}
+
+.blank {
+  opacity: 0.0;
+}
+

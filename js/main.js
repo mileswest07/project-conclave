@@ -71,7 +71,7 @@ let main = {
       startsWith: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     "mp3c": {
-      items: ["powerBeamA", "chargeBeam", "morphBall", "bombB", "spaceJumpBoots", "combatVisor", "scanVisor", "--", "hypermodeBeam", "plasmaBeamC", "novaBeamA", "missile", "iceMissile", "seekerLauncher", "shipMissile", "hyperMissile", "--", "boostBall", "spiderBall", "hyperBall", "grappleLasso", "grappleBeam", "grappleVoltage", "shipGrapple", "hyperGrapple", "--", "ped", "phazonSuit", "hazardShield", "-", "screwAttackA", "-", "commandVisorA", "corruptionXRayVisor"],
+      items: ["powerBeamA", "chargeBeam", "morphBall", "bombB", "spaceJumpBoots", "combatVisor", "scanVisorA", "--", "hypermodeBeam", "plasmaBeamC", "novaBeamA", "missile", "iceMissile", "seekerLauncher", "shipMissile", "hyperMissile", "--", "boostBall", "spiderBall", "hyperBall", "grappleLasso", "grappleBeam", "grappleVoltage", "shipGrapple", "hyperGrapple", "--", "ped", "phazonSuit", "hazardShield", "-", "screwAttackA", "-", "commandVisorA", "corruptionXRayVisor"],
       names: ["Power Beam", "Charge Beam", "Morph Ball", "Bombs", "Space Jump Boots", "Combat Visor", "Scan Visor", "", "Hyper Beam", "Plasma Beam", "Nova Beam", "Missile","Ice Missile", "Seeker Launcher", "Ship Missile", "Hyper Missile", "", "Boost Ball", "Spider Ball", "Hyper Ball", "Grapple Lasso", "Grapple Swing", "Grapple Voltage", "Ship Grapple", "Hyper Grapple", "", "P.E.D. Suit", "Corrupted Hypermode", "Hazard Shield", "", "Screw Attack", "", "Command Visor", "X-Ray Visor"],
       expansions: ["energyTank", "missileTank", "shipMissileExpansion", "-", "theronianBomb", "pirateCode", "-", "energyCell"],
       expansionNames: ["Energy Tank", "Missile Expansion", "Ship Missile Expansion", "", "Theronian Bomb Components", "Pirate Code", "", "Energy Cell"],
@@ -95,7 +95,7 @@ let main = {
       startsWith: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
     },
     "msr": {
-      items: ["morphBall", "bombB", "spiderBall", "springBall", "-", "varia", "gravitySuit", "--", "scanPulse", "lightningShield", "beamBurst", "phaseDrift", "-", "highJump", "spaceJump", "--", "chargeBeamD", "iceBeamC", "waveBeam", "spazerBeamA", "plasmaBeamD", "grappleBeam", "screwAttack"],
+      items: ["morphBall", "bombB", "spiderBall", "springBall", "-", "varia", "gravitySuit", "--", "scanPulse", "lightningShield", "beamBurst", "phaseDrift", "-", "highJump", "spaceJump", "--", "chargeBeamD", "iceBeamC", "waveBeam", "spazerBeamB", "plasmaBeamD", "grappleBeam", "screwAttack"],
       names: ["Morph Ball", "Bombs", "Spider Ball", "Spring Ball", "", "Varia Suit", "Gravity Suit", "", "Scan Pulse", "Lightning Shield", "Beam Burst", "Phase Drift", "", "High Jump Boots", "Space Jump", "", "Charge Beam", "Ice Beam", "Wave Beam", "Spazer Beam", "Plasma Beam", "Grapple Beam", "Screw Attack"],
       expansions: ["energyTank", "missileTank", "superMissileTank", "powerBombTank", "aeionExpansion", "metroidDna", "metroid"],
       expansionNames: ["Energy Tanks", "Missile Tanks", "Super Missile Tanks", "Power Bomb Tanks", "Aeion Expansion", "Metroids", "Baby Metroid"],
@@ -119,7 +119,7 @@ let main = {
       startsWith: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     "mf": {
-      items: ["missileA", "missile", "iceMissile", "superMissile", "-", "morphBall", "bomb", "powerBomb", "--", "chargeBeam", "spazerBeamA", "plasmaBeamA", "waveBeam", "iceBeamA", "--", "highJump", "speedBoost", "spaceJump", "screwAttack", "-", "varia", "gravitySuit", "fullPowerSuit"],
+      items: ["missileA", "missile", "iceMissile", "superMissile", "-", "morphBall", "bomb", "powerBomb", "--", "chargeBeam", "wideBeam", "plasmaBeamA", "waveBeam", "iceBeamA", "--", "highJump", "speedBoost", "spaceJump", "screwAttack", "-", "varia", "gravitySuit", "fullPowerSuit"],
       names: ["Missiles", "Super Missiles", "Ice Missiles", "Diffusion Effect", "", "Morph Ball", "Bombs", "Power Bombs", "--", "Charge Beam", "Wide Beam", "Plasma Beam", "Wave Beam", "Ice Beam", "--", "High Jump Boots", "Speed Booster", "Space Jump", "Screw Attack", "", "Varia Suit", "Gravity Suit", "Final Suit"],
       expansions: ["energyTank", "missileTank", "powerBombTank", "securityL0", "securityL1", "securityL2", "securityL3", "securityL4"],
       expansionNames: ["Energy Tanks", "Missile Tanks", "Power Bomb Tanks", "Security Level 0", "Security Level 1", "Security Level 2", "Security Level 3", "Security Level 4"],

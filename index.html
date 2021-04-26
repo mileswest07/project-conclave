@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <meta name="Keywords" content=""> -->
 <!-- <meta name="Description" content=""> -->
-<!-- <link rel="icon" href="/images/util/samus.png" type="image/x-icon"> -->
+<!-- <link rel="icon" href="/images/samus.png" type="image/x-icon"/> -->
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,7 +18,7 @@
           <p class="menu-query-section">
             Select game:
             <select name="selectedGame">
-              <option value="" selected>Select from the menu...</option>
+              <option value="" selected disabled>Select from the menu...</option>
               <option value="m">Metroid (NES)</option>
               <option value="d">Rogue Dawn (NES)</option>
               <option value="z">Metroid: Zero Mission (GBA)</option>
@@ -41,7 +41,7 @@
       </form>
     </div>
     <div class="startup-button float-left">
-      <input type="button" onclick="main.validateStartup(event)" value="Ready">
+      <input type="button" disabled="" onclick="main.validateStartup(event)" value="Ready">
     </div>
     <div class="clear-both"></div>
   </section>
@@ -54,6 +54,7 @@
     
   </section>
   <div class="clear-both"></div>
+  <script src="js/rawData.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
   <script type="text/javascript">
     document.addEventListener('wheel', function (e) { e.preventDefault(); });

@@ -34,9 +34,9 @@ const rawData = {
   "mp2e": {
     items: ["-", "powerBeamC", "combatVisor", "scanVisor", "morphBall", "chargeBeamC", "energyTransferModule", "--", "missile", "violetTranslator", "bomb", "amberTranslator", "spaceJumpBoots", "darkBeam", "lightBeam", "darkSuit", "--", "superMissileA", "emeraldTranslator", "boostBall", "seekerLauncher", "darkburst", "gravityBoost", "grappleBeam", "darkVisor", "--", "cobaltTranslator", "spiderBall", "powerBomb", "sunburst", "echoVisor", "annihilatorBeam", "sonicBoom", "lightSuit"],
     names: ["", "Power Beam", "Combat Visor", "Scan Visor", "Morph Ball", "Charge Beam", "Energy Transfer Module", "", "Missile Launcher", "Violet Translator", "Bombs", "Amber Translator", "Space Jump Boots", "Dark Beam", "Light Beam", "Dark Suit", "", "Super Missile", "Emerald Translator", "Boost Ball", "Seeker Launcher", "Darkburst", "Gravity Boost", "Grapple Beam", "Dark Visor", "", "Cobalt Translator", "Spider Ball", "Power Bombs", "Sunburst", "X-Ray Visor", "Annihilator Beam", "Sonic Boom", "Light Suit"],
-    expansions: ["-", "energyTank", "missileTank", "beamAmmoExpansion", "powerBombTank", "-", "lightOfAetherA", "--", "-", "-", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey"],
-    expansionNames: ["", "Energy Tanks", "Missile Tanks", "Beam Ammo Expansion", "Power Bomb Tanks", "-", "Sanctuary Energy Returned", "--", "", "", "Dark Agon Key", "Dark Torvus Key", "Ing Hive Key", "Sky Temple Key"],
-    max: [0, 14, 49, 4, 6, 0, 0, 0, 0, 0, 3, 3, 3, 8],
+    expansions: ["-", "energyTank", "missileTank", "beamAmmoExpansion", "powerBombTank", "-", "cannonball", "lightOfAetherA", "--", "-", "-", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey"],
+    expansionNames: ["", "Energy Tanks", "Missile Tanks", "Beam Ammo Expansion", "Power Bomb Tanks", "-", "Cannonball", "Sanctuary Energy Returned", "--", "", "", "Dark Agon Key", "Dark Torvus Key", "Ing Hive Key", "Sky Temple Key"],
+    max: [0, 14, 49, 4, 6, 0, 0, 0, 0, 0, 0, 3, 3, 3, 8],
     startsWith: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
   "ph": {

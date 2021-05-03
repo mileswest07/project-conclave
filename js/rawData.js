@@ -60,7 +60,7 @@ const rawData = {
     names: ["", "Bombs", "Spider Ball", "Spring Ball", "", "Varia Suit", "High Jump Boots", "Space Jump", "Screw Attack", "", "Ice Beam", "Wave Beam", "Spazer Beam", "Plasma Beam"],
     expansions: ["energyTank", "missileTank", "metroidDna", "metroid"],
     expansionNames: ["Energy Tanks", "Missile Tanks", "Metroids", "Baby Metroid"],
-    max: [6, 22, 0, 49, 0, 0],
+    max: [6, 22, 49, 0],
     startsWith: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
   "am2r": {

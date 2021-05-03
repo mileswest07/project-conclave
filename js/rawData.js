@@ -3,7 +3,7 @@ const rawData = {
     items: ["highJump", "bombB", "varia", "iceBeam", "--", "wallJumpBoots", "springBall", "screwAttack", "waveBeam"],
     names: ["High Jump Boots", "Bombs", "Varia Suit", "Ice Beam", "", "Wall Jump Boots", "Spring Ball", "Screw Attack", "Prototype Wave Beam"],
     expansions: ["energyTank", "missileTank", "boss", "metroidCapsule"],
-    expansionNames: ["Energy Tanks", "Missile Tanks", "Bosses", "Metroid Cell Capsule"],
+    expansionNames: ["Energy Tanks", "Missile Tanks", "Access", "Metroid Cell Capsule"],
     max: [7, 31, 2, 0],
     startsWith: [0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
@@ -11,7 +11,7 @@ const rawData = {
     items: ["morphBall", "varia", "longBeamA", "iceBeamA", "--", "bombB", "highJump", "screwAttack", "waveBeam"],
     names: ["Morph Ball", "Varia Suit", "Long Beam", "Ice Beam", "", "Bombs", "High Jump Boots", "Screw Attack", "Wave Beam"],
     expansions: ["energyTank", "missileTank", "boss"],
-    expansionNames: ["Energy Tanks", "Missile Tanks", "Access"],
+    expansionNames: ["Energy Tanks", "Missile Tanks", "Bosses"],
     max: [8, 21, 2],
     startsWith: [0, 0, 0, 0, 0, 0, 0, 0, 0]
   },

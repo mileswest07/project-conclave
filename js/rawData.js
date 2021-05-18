@@ -100,7 +100,7 @@ const rawData = {
     names: ["Morph Ball", "Bombs", "Missiles", "Super Missiles", "Seeker Missiles", "Varia Feature", "Gravity Feature", "Grapple Beam", "--", "Diffusion Beam", "Ice Beam", "Wave Beam", "Plasma Beam", "Speed Booster", "Space Jump", "Screw Attack", "Power Bomb"],
     expansions: ["energyTank", "missileTank", "chargeAccel", "energyPart", "eRecoveryTank"],
     expansionNames: ["Energy Tanks", "Missile Tanks", "Accel Charges", "Energy Parts", "E-Recovery Tanks"],
-    max: [5, 70, 6, 16, 4],
+    max: [5, 70, 6, 16, 3],
     startsWith: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
   "mf": {

@@ -36,7 +36,7 @@ const rawData = {
     names: ["", "Power Beam", "Combat Visor", "Scan Visor", "Morph Ball", "Charge Beam", "Energy Transfer Module", "", "Missile Launcher", "Violet Translator", "Bombs", "Amber Translator", "Space Jump Boots", "Dark Beam", "Light Beam", "Dark Suit", "", "Super Missile", "Emerald Translator", "Boost Ball", "Seeker Launcher", "Darkburst", "Gravity Boost", "Grapple Beam", "Dark Visor", "", "Cobalt Translator", "Spider Ball", "Power Bombs", "Sunburst", "Echo Visor", "Screw Attack", "Annihilator Beam", "Sonic Boom", "Light Suit"],
     expansions: ["-", "energyTank", "missileTank", "beamAmmoExpansion", "powerBombTank", "-", "cannonball", "lightOfAetherA", "--", "-", "-", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey"],
     expansionNames: ["", "Energy Tanks", "Missile Tanks", "Beam Ammo Expansion", "Power Bomb Tanks", "", "Cannonball", "Sanctuary Energy Returned", "", "", "", "Dark Agon Key", "Dark Torvus Key", "Ing Hive Key", "Sky Temple Key"],
-    max: [0, 14, 49, 4, 6, 0, 0, 0, 0, 0, 0, 3, 3, 3, 8],
+    max: [0, 14, 49, 4, 8, 0, 0, 0, 0, 0, 0, 3, 3, 3, 9],
     startsWith: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   },
   "e_rnd": {
@@ -44,7 +44,7 @@ const rawData = {
     names: ["Combat Visor", "Violet Translator", "Power Beam", "Super Missile", "Charge Beam", "Bombs", "Space Jump Boots", "Energy Transfer Module", "", "Scan Visor", "Amber Translator", "Dark Beam", "Darkburst", "Missile Launcher", "Boost Ball", "Cannonball", "Dark Suit", "", "Dark Visor", "Emerald Translator", "Light Beam", "Sunburst", "Seeker Launcher", "Spider Ball", "Grapple Beam", "Gravity Boost", "", "Echo Visor", "Cobalt Translator", "Annihilator Beam", "Sonic Boom", "Morph Ball", "Power Bombs", "Screw Attack", "Light Suit"],
     expansions: ["energyTank", "missileTank", "darkAmmoExpansion", "lightAmmoExpansion", "powerBombTank", "-", "-", "lightOfAetherA", "--", "-", "-", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey"],
     expansionNames: ["Energy Tanks", "Missile Tanks", "Dark Beam Ammo Expansions", "Light Beam Ammo Expansions", "Power Bomb Tanks", "", "", "Sanctuary Energy Returned", "", "", "", "Dark Agon Key", "Dark Torvus Key", "Ing Hive Key", "Sky Temple Key"],
-    max: [14, 33, 10, 10, 8, 0, 0, 0, 0, 0, 0, 3, 3, 3, 8],
+    max: [14, 33, 10, 10, 8, 0, 0, 0, 0, 0, 0, 3, 3, 3, 9],
     startsWith: [1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
   },
   "ph": {

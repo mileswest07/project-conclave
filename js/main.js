@@ -11,6 +11,7 @@ let main = {
     "p": "mp",
     "b": "pb",
     "e": "mp2e",
+    "v": "e_rnd",
     "h": "ph",
     "c": "mp3c",
     "2": "m2ros",

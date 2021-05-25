@@ -18,6 +18,7 @@ let main = {
     "a": "am2r",
     "r": "msr",
     "s": "sm",
+    "3": "smz3",
     "o": "mom",
     "f": "mf"
   };
@@ -66,6 +67,79 @@ let main = {
     e.target.parentElement.querySelectorAll("p")[0].innerText = values.join(" ");
   }
   
+  function renderEntry(pointer, element, classLabel, index) {
+    if (element.id === "--") {
+      let breakage = document.createElement("div");
+      if (breakage.classList) {
+        breakage.classList.add("clear-both");
+      } else {
+        breakage.className = "clear-both";
+      }
+      document.getElementById(pointer).appendChild(breakage);
+      return;
+    }
+    
+    let wrapper = document.createElement("div");
+    let image = document.createElement("img");
+    wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
+    if (wrapper.classList) {
+      wrapper.classList.add(classLabel);
+    } else {
+      wrapper.className = classLabel;
+    }
+    
+    if (image.classList) {
+      image.classList.add("item-image");
+      if (element.id === "-") {
+        image.classList.add("blank");
+      }
+      if (element.max < 2) {
+        if (element.start < 1) {
+          image.classList.add("deselected");
+        }
+        // TODO: segments
+        wrapper.addEventListener("mousedown", clickItem);
+      } else {
+        wrapper.addEventListener("mousedown", clickExpansion);
+      }
+    } else {
+      image.className = "item-image";
+      if (element.id === "-") {
+        image.className += " blank";
+      }
+      if (element.max < 2) {
+        if (element.start < 1) {
+          image.className += " deselected";
+        }
+        wrapper.addEventListener("mousedown", clickItem);
+      } else {
+        wrapper.addEventListener("mousedown", clickExpansion);
+      }
+    }
+    if (element.id === "-") {
+      image.src = "images/itemSphere.png";
+    } else {
+      image.src = "images/" + element.id + ".png";
+    }
+    
+    image.alt = element.name;
+    wrapper.title = element.name;
+    image.height = 42;
+    image.width = 42;
+    
+    wrapper.appendChild(image);
+    if (element.id !== "-") {
+      if (element.max > 1) {
+        let label = document.createElement("p");
+        label.innerText = element.start + " / " + element.max;
+        wrapper.appendChild(label);
+      }
+      wrapper.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+    }
+    
+    document.getElementById(pointer).appendChild(wrapper);
+  }
+  
   function generate() {
     if (main.menu) {
       let menuPointer = document.getElementById("selection");
@@ -86,136 +160,10 @@ let main = {
       }
       
       // section for main items
-      for (let i = 0; i < main.workingData.items.length; i++) {
-        if (main.workingData.items[i] === "--") {
-          let breakage = document.createElement("div");
-          if (breakage.classList) {
-            breakage.classList.add("clear-both");
-          } else {
-            breakage.className = "clear-both";
-          }
-          document.getElementById("itemField").appendChild(breakage);
-          continue;
-        }
-        
-        let wrapper = document.createElement("div");
-        wrapper.id = "item-" + main.workingData.items[i] + "-" + i;
-        if (wrapper.classList) {
-          wrapper.classList.add("item");
-        } else {
-          wrapper.className = "item";
-        }
-        
-        let image = document.createElement("img");
-        if (image.classList) {
-          image.classList.add("item-image");
-          if (main.workingData.items[i] === "-") {
-            image.classList.add("blank");
-          } else if (main.workingData.startsWith[i] === 0) {
-            image.classList.add("deselected");
-          }
-        } else {
-          if (main.workingData.items[i] === "-") {
-            image.className = "item-image blank";
-          } else if (main.workingData.startsWith[i] === 0) {
-            image.className = "item-image deselected";
-          } else {
-            image.className = "item-image";
-          }
-        }
-        if (main.workingData.items[i] === "-") {
-          image.src = "images/itemSphere.png";
-        } else {
-          image.src = "images/" + main.workingData.items[i] + ".png";
-        }
-        
-        image.alt = main.workingData.names[i];
-        wrapper.title = main.workingData.names[i];
-        image.height = 42;
-        image.width = 42;
-        
-        wrapper.appendChild(image);
-        if (main.workingData.items[i] !== "-") {
-          wrapper.addEventListener("mousedown", clickItem);
-          wrapper.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-        }
-        
-        document.getElementById("itemField").appendChild(wrapper);
-      }
+      main.workingData.items.forEach((element, i) => renderEntry("itemField", element, "item", i));
       
       // section for expansions and boss
-      for (let i = 0; i < main.workingData.expansions.length; i++) {
-        if (main.workingData.expansions[i] === "--") {
-          let breakage = document.createElement("div");
-          if (breakage.classList) {
-            breakage.classList.add("clear-both");
-          } else {
-            breakage.className = "clear-both";
-          }
-          document.getElementById("expansions").appendChild(breakage);
-          continue;
-        }
-        
-        let wrapper = document.createElement("div");
-        let image = document.createElement("img");
-        let maxCount = 0;
-        wrapper.id = "expansion-" + main.workingData.expansions[i] + "-" + i;
-        
-        if (main.workingData.expansions[i] === "-") {
-          image.src = "images/itemSphere.png";
-        } else {
-          image.src = "images/" + main.workingData.expansions[i] + ".png";
-        }
-        
-        image.alt = main.workingData.expansionNames[i];
-        wrapper.title = main.workingData.expansionNames[i];
-        maxCount = main.workingData.max[i];
-        
-        if (wrapper.classList) {
-          wrapper.classList.add("expansion");
-        } else {
-          wrapper.className = "expansion";
-        }
-        
-        if (image.classList) {
-          image.classList.add("item-image");
-          if (main.workingData.expansions[i] === "-") {
-            image.classList.add("blank");
-          }
-          if (maxCount <= 0) {
-            image.classList.add("deselected");
-            wrapper.addEventListener("mousedown", clickItem);
-          } else {
-            wrapper.addEventListener("mousedown", clickExpansion);
-          }
-        } else {
-          image.className = "item-image";
-          if (main.workingData.expansions[i] === "-") {
-            image.className += " blank";
-          }
-          if (maxCount <= 0) {
-            image.className += " deselected";
-            wrapper.addEventListener("mousedown", clickItem);
-          } else {
-            wrapper.addEventListener("mousedown", clickExpansion);
-          }
-        }
-        image.height = 42;
-        image.width = 42;
-        
-        wrapper.appendChild(image);
-        if (main.workingData.expansions[i] !== "-") {
-          if (maxCount > 0) {
-            let label = document.createElement("p");
-            label.innerText = "0 / " + maxCount;
-            wrapper.appendChild(label);
-          }
-          
-          wrapper.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-        }
-        
-        document.getElementById("expansions").appendChild(wrapper);
-      }
+      main.workingData.expansions.forEach((element, i) => renderEntry("expansions", element, "expansion", i));
     }
   }
   

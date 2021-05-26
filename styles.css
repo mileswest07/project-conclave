@@ -3,6 +3,7 @@
 }
 
 body {
+  /* background: navy; */
   margin: 0;
   overflow: hidden;
 }
@@ -15,23 +16,6 @@ body {
   display: none;
 }
 
-#selection .menu-container {
-  height: 100vh;
-  margin-left: 8.333333%;
-  overflow: auto;
-  position: relative;
-  width: 83.333333%;
-}
-
-#selection .menu-container .menu-footer {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#selection .menu-container .menu-body .menu-query-section p {
-  vertical-align: middle;
-}
-
 #selection .gameError {
   color: red;
   font-weight: bold;
@@ -40,6 +24,10 @@ body {
 #selection .gameError.hide-error {
   display: none;
 }
+
+/* #startupMenu p {
+  color: white;
+} */
 
 .hide-menu {
   display: none;
@@ -73,6 +61,7 @@ body {
 }
 
 .expansion p {
+  /* color: white; */
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 0;
@@ -83,6 +72,7 @@ body {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   opacity: 0.3;
+  mix-blend-mode: multiply;
 }
 
 .blank {

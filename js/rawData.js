@@ -185,12 +185,12 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/*{
         id: "metroid/gravitySuit",
         name: "Unknown Item 3 - Gravity Suit",
         start: 0,
         max: 1,
-        segments: [
+        segments: [*/
           {
             id: "metroid/unknownItem3",
             name: "Unknown Item 3",
@@ -201,9 +201,9 @@ const rawData = {
             name: "Gravity Suit",
             start: 0,
             max: 1
-          }
+          }/*
         ]
-      },{
+      }*/,{
         id: "metroid/fullPowerSuit",
         name: "Fully Powered Suit",
         start: 0,
@@ -227,12 +227,12 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/* {
         id: "metroid/plasmaBeam",
         name: "Unknown Item 1 - Plasma Beam",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ */
           {
             id: "metroid/unknownItem1",
             name: "Unknown Item 1",
@@ -243,9 +243,9 @@ const rawData = {
             name: "Plasma Beam",
             start: 0,
             max: 1
-          }
+          }/* 
         ]
-      },{
+      } */,{
         id: "metroid/iceBeamA",
         name: "Ice Beam",
         start: 0,
@@ -269,12 +269,12 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/* {
         id: "metroid/spaceJump",
         name: "Unknown Item 2 - Space Jump",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ */
           {
             id: "metroid/unknownItem2",
             name: "Unknown Item 2",
@@ -285,9 +285,9 @@ const rawData = {
             name: "Space Jump",
             start: 0,
             max: 1
-          }
+          }/* 
         ]
-      },{
+      } */,{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
@@ -854,7 +854,7 @@ const rawData = {
         id: "metroid/ingHiveKey",
         name: "Ing Hive Key",
         start: 0,
-        max: 3,
+        max: 3/*,
         segments: [
           {
             id: "metroid/ingHiveKey",
@@ -865,14 +865,14 @@ const rawData = {
             id: "metroid/lightOfAether",
             name: "Ing Hive Energy Retrieved",
             start: 0,
-            max: 1
+            max: 1*/
           },{
             id: "metroid/lightOfAetherA",
             name: "Sanctuary Energy Restored",
             start: 0,
             max: 1
-          }]
-      },{
+          }/*]
+      }*/,{
         id: "metroid/skyTempleKey",
         name: "Sky Temple Key",
         start: 0,
@@ -1182,7 +1182,7 @@ const rawData = {
         id: "metroid/ingHiveKey",
         name: "Ing Hive Key",
         start: 0,
-        max: 3,
+        max: 3/* ,
         segments: [
           {
             id: "metroid/ingHiveKey",
@@ -1193,14 +1193,14 @@ const rawData = {
             id: "metroid/lightOfAether",
             name: "Ing Hive Energy Retrieved",
             start: 0,
-            max: 1
+            max: 1 */
           },{
             id: "metroid/lightOfAetherA",
             name: "Sanctuary Energy Restored",
             start: 0,
             max: 1
-          }]
-      },{
+          }/* ]
+      } */,{
         id: "metroid/skyTempleKey",
         name: "Sky Temple Key",
         start: 0,
@@ -1279,6 +1279,12 @@ const rawData = {
         name: "UA Expansions",
         start: 0,
         max: 12,
+        segments: []
+      },{ // TODO: remove once segment code is in place
+        id: "metroid/octolith",
+        name: "Octoliths",
+        start: 0,
+        max: 8,
         segments: []
       },{
         id: "--",
@@ -1678,7 +1684,7 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/* {
         id: "-",
         name: "",
         start: 0,
@@ -1689,7 +1695,7 @@ const rawData = {
         name: "Energy Cell",
         start: 0,
         max: 9,
-        segments: [[
+        segments: [ */
           {
             id: "metroid/energyCell",
             name: "Energy Cell",
@@ -1700,9 +1706,9 @@ const rawData = {
             name: "Pirate Code",
             start: 0,
             max: 1
-          }
-        ]]
-      },
+          }/* 
+        ]
+      } */,
     ]
   }, 
   "m2ros": {
@@ -1793,7 +1799,6 @@ const rawData = {
         segments: []
       },
     ],
-    
     expansions: [
       {
         id: "metroid/energyTank",

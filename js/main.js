@@ -98,9 +98,9 @@ let main = {
           image.classList.add("deselected");
         }
         // TODO: segments
-        wrapper.addEventListener("mousedown", clickItem);
+        image.addEventListener("mousedown", clickItem);
       } else {
-        wrapper.addEventListener("mousedown", clickExpansion);
+        image.addEventListener("mousedown", clickExpansion);
       }
     } else {
       image.className = "item-image";
@@ -111,9 +111,9 @@ let main = {
         if (element.start < 1) {
           image.className += " deselected";
         }
-        wrapper.addEventListener("mousedown", clickItem);
+        image.addEventListener("mousedown", clickItem);
       } else {
-        wrapper.addEventListener("mousedown", clickExpansion);
+        image.addEventListener("mousedown", clickExpansion);
       }
     }
     if (element.id === "-") {
@@ -128,13 +128,10 @@ let main = {
     image.width = 42;
     
     wrapper.appendChild(image);
-    if (element.id !== "-") {
-      if (element.max > 1) {
-        let label = document.createElement("p");
-        label.innerText = element.start + " / " + element.max;
-        wrapper.appendChild(label);
-      }
-      wrapper.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+    if (element.id !== "-" && element.max > 1) {
+      let label = document.createElement("p");
+      label.innerText = element.start + " / " + element.max;
+      wrapper.appendChild(label);
     }
     
     document.getElementById(pointer).appendChild(wrapper);
@@ -193,6 +190,7 @@ let main = {
   }
 
   function init() {
+    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     main.menu = false;
   }
 

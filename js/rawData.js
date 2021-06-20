@@ -2686,7 +2686,7 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/chargeBeam",
+        id: "metroid/chargeBeamE",
         name: "Charge Beam",
         start: 0,
         max: 1,

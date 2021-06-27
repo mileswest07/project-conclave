@@ -25,32 +25,23 @@ let main = {
   
   function validateStartup(e) {
     e.preventDefault();
-    if (!main.menu) {
-      let gameInput = document.forms["startupMenu"]["selectedGame"].value;
+    let gameInput = document.forms["startupMenu"]["selectedGame"].value;
+    
+    if (gameInput === "") {
+      let error = document.getElementsByClassName("gameError")[0];
       
-      if (gameInput === "") {
-        let error = document.getElementsByClassName("gameError")[0];
-        
-        if (error.classList) { // browser compatibility logic
-          error.classList.remove("hide-error");
-        } else {
-          error.className += error.className.replace(/\bhide-error\b/g);
-        }
-        
-        return;
+      if (error.classList) { // browser compatibility logic
+        error.classList.remove("hide-error");
+      } else {
+        error.className += error.className.replace(/\bhide-error\b/g);
       }
       
-      main.menu = true;
-      let queryIncoming = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
-      location.search = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
-      console.log(location.href, queryIncoming);
+      return;
     }
+    
+    location.search = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
   }
 
-  function init() {
-    main.menu = false;
-  }
-
-  main.init = init;
+  main.games = games;
   main.validateStartup = validateStartup;
 })();

@@ -2686,19 +2686,19 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/chargeBeamE",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/wideBeam",
+        id: "metroid/wideBeamA",
         name: "Wide Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeamA",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -2710,7 +2710,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeamA",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -2723,12 +2723,12 @@ const rawData = {
         segments: []
       },{
         id: "metroid/highJump",
-        name: "High Jump Boots",
+        name: "Hi-Jump and Jumpball",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/speedBoost",
+        id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
         max: 1,
@@ -2757,13 +2757,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/* {
         id: "metroid/fullPowerSuit",
         name: "Final Suit",
         start: 0,
         max: 1,
         segments: []
-      },
+      }, */
     ],
     expansions: [
       {
@@ -2784,19 +2784,37 @@ const rawData = {
         start: 0,
         max: 32,
         segments: []
-      },{
-        id: "metroid/ventilationUnit",
+      },/* {
+        id: "metroid/sector1SRX",
         name: "Sector 1 SRX - Ventilation Units",
         start: 0,
         max: 5,
         segments: []
       },{
+        id: "metroid/pumpControlUnit",
+        name: "Sector 4 AQA - Pump Control Unit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/mainBoiler",
+        name: "Sector 3 PYR - Main Boiler Cooling Unit",
+        start: 0,
+        max: 1,
+        segments: []
+      }, */{
         id: "metroid/etedach",
         name: "Animals Rescued",
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/* {
+        id: "metroid/reactorCore",
+        name: "Main Deck - Reactor Core Auxiliary Power",
+        start: 0,
+        max: 1,
+        segments: []
+      }, */{
         id: "--",
         name: "",
         start: 0,

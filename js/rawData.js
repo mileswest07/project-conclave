@@ -2352,6 +2352,60 @@ const rawData = {
         max: 1,
         segments: []
       },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/bow",
+        name: "Bow",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/silverArrows",
+        name: "Silver Arrows",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/boomerang",
+        name: "Boomerang",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/magicalBoomerang",
+        name: "Magical Boomerang",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hookshot",
+        name: "Hookshot",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bombs",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powder",
+        name: "Magic Powder",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mushroom",
+        name: "Mushroom",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
         id: "--",
         name: "",
         start: 0,
@@ -2372,6 +2426,78 @@ const rawData = {
       },{
         id: "metroid/xRayScope",
         name: "X-Ray Scope",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/fireRod",
+        name: "Fire Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/iceRod",
+        name: "Ice Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bombos",
+        name: "Bombos",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/ether",
+        name: "Ether",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/quake",
+        name: "Quake",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/sword",
+        name: "Fighter's Sword",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/masterSword",
+        name: "Master Sword",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/temperedSword",
+        name: "Tempered Sword",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/goldenSword",
+        name: "Golden Sword",
         start: 0,
         max: 1,
         segments: []
@@ -2406,6 +2532,72 @@ const rawData = {
         max: 1,
         segments: []
       },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/lamp",
+        name: "Lamp",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hammer",
+        name: "Magic Hammer",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/shovel",
+        name: "Shovel",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/flute",
+        name: "Flute",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/fluteBird",
+        name: "Flute (Warping enabled)",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/net",
+        name: "Bug-Catching Net",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/book",
+        name: "Book of Mudora",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/halfMagic",
+        name: "Half Magic",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/quarterMagic",
+        name: "Quarter Magic",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
         id: "--",
         name: "",
         start: 0,
@@ -2432,6 +2624,72 @@ const rawData = {
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/bottle",
+        name: "Bottle",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/somaria",
+        name: "Cane of Somaria",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/byrna",
+        name: "Cane of Byrna",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/cape",
+        name: "Magic Cape",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirror",
+        name: "Magic Mirror",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/shield",
+        name: "Fighter's Shield",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/redShield",
+        name: "Red Sword",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirrorShield",
+        name: "Mirror Sword",
         start: 0,
         max: 1,
         segments: []
@@ -2463,6 +2721,72 @@ const rawData = {
         max: 10,
         segments: []
       },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/boots",
+        name: "Pegasus Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powerGlove",
+        name: "Power Glove",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/titansMitt",
+        name: "Titan's Mitt",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/flipper",
+        name: "Zora Flipper",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/moonPearl",
+        name: "Moon Pearl",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/greenJerkin",
+        name: "Green Jerkin",
+        start: 1,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/blueMail",
+        name: "Blue Mail",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/redMail",
+        name: "Red Mail",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
         id: "--",
         name: "",
         start: 0,
@@ -2491,6 +2815,72 @@ const rawData = {
         name: "Bosses",
         start: 0,
         max: 4,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/pendantOfCourage",
+        name: "Pendant of Courage - Eastern Palace",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/pendantOfWisdom",
+        name: "Pendant of Wisdom - Desert Palace",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/pendantOfPower",
+        name: "Pendant of Power - Tower of Hera",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Crystal - Palace of Darkness",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Crystal - Swamp Palace",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Crystal - Skull Woods",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Crystal - Thieves' Town",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/fairyCrystal",
+        name: "Crystal - Ice Palace",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/fairyCrystal",
+        name: "Crystal - Misery Mire",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Crystal - Turtle Rock",
+        start: 0,
+        max: 1,
         segments: []
       },
     ]

@@ -48,7 +48,6 @@ let main = {
   }
 
   function init() {
-    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     main.menu = false;
   }
 

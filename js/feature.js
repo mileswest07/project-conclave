@@ -25,6 +25,8 @@ let feature = {
           e.target.className += " deselected";
         }
       }
+    } else if (e.which == 2) { // middle click
+      clickOverlay(e);
     }
   }
   
@@ -40,12 +42,35 @@ let feature = {
     } else if (e.which === 3) { // right click
       if (previous <= 0) return;
       previous--;
+    } else if (e.which == 2) { // middle click
+      clickOverlay(e);
+      return;
     } else {
       return;
     }
     values[0] = previous;
 
     e.target.parentElement.querySelectorAll("p")[0].innerText = values.join(" ");
+  }
+  
+  function clickOverlay(e) {
+    e.preventDefault();
+    
+    if (e.which == 2) { // middle click
+      if (e.target.parentElement.classList) { // browser compatibility logic
+        if (!e.target.parentElement.classList.contains("show-over")) {
+          e.target.parentElement.classList.add("show-over");
+          return;
+        }
+        e.target.parentElement.classList.remove("show-over");
+      } else {
+        if (e.target.parentElement.className.has("show-over")) {
+          e.target.parentElement.className += " show-over";
+          return;
+        }
+        e.target.parentElement.className += e.className.replace(/\bshowOver\b/g);
+      }
+    }
   }
   
   function renderEntry(pointer, element, classLabel, index) {
@@ -113,6 +138,21 @@ let feature = {
       let label = document.createElement("p");
       label.innerText = element.start + " / " + element.max;
       wrapper.appendChild(label);
+    }
+    
+    if (element.over && element.overText) {
+      let overlayImage = document.createElement("img");
+      if (overlayImage.classList) {
+        overlayImage.classList.add("overlay-image");
+      } else {
+        overlayImage.className = "overlay-image";
+      }
+      overlayImage.src = "images/overlays/" + element.over + ".png";
+      overlayImage.alt = element.overText;
+      overlayImage.addEventListener("mousedown", clickOverlay);
+      overlayImage.height = 16;
+      overlayImage.width = 16;
+      wrapper.appendChild(overlayImage);
     }
     
     document.getElementById(pointer).appendChild(wrapper);

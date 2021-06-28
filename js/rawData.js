@@ -20,7 +20,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeam",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -100,13 +100,13 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/longBeamA",
+        id: "metroid/longBeamB",
         name: "Long Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeamA",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -158,7 +158,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/boss",
-        name: "Access",
+        name: "Bosses Defeated",
         start: 0,
         max: 2,
         segments: []
@@ -216,13 +216,13 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/longBeamA",
+        id: "metroid/longBeamB",
         name: "Long Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/chargeBeam",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
@@ -239,14 +239,14 @@ const rawData = {
             start: 0,
             max: 1
           },{
-            id: "metroid/plasmaBeam",
+            id: "metroid/plasmaBeamE",
             name: "Plasma Beam",
             start: 0,
             max: 1
           }/* 
         ]
       } */,{
-        id: "metroid/iceBeamA",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -1442,13 +1442,13 @@ const rawData = {
   "mp3c": {
     items: [
       {
-        id: "metroid/powerBeamA",
+        id: "metroid/powerBeamC",
         name: "Power Beam",
         start: 1,
         max: 1,
         segments: []
       },{
-        id: "metroid/chargeBeam",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 1,
         max: 1,
@@ -1490,19 +1490,19 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/hypermodeBeam",
+        id: "metroid/hyperBeamB",
         name: "Hyper Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeamC",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/novaBeamA",
+        id: "metroid/novaBeam",
         name: "Nova Beam",
         start: 0,
         max: 1,
@@ -1774,25 +1774,25 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/iceBeam",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/waveBeamB",
+        id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/spazerBeam",
+        id: "metroid/spazerBeamC",
         name: "Spazer Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeam",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -1848,31 +1848,31 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/chargeBeamA",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/spazerBeam",
+        id: "metroid/spazerBeamA",
         name: "Spazer Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/waveBeamB",
+        id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeam",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeam",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -2224,31 +2224,31 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/chargeBeamA",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/spazerBeam",
+        id: "metroid/spazerBeamC",
         name: "Spazer",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeam",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/waveBeamB",
+        id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeam",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -2508,25 +2508,25 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/chargeBeamA",
+        id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/spazerBeam",
+        id: "metroid/spazerBeamC",
         name: "Spazer",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeam",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/waveBeamB",
+        id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -2604,7 +2604,7 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/plasmaBeam",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -2948,7 +2948,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/iceBeamA",
+        id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -2960,7 +2960,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/plasmaBeamA",
+        id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -3032,42 +3032,56 @@ const rawData = {
         name: "Missiles",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Operations Deck - Data Room",
         segments: []
       },{
         id: "metroid/missile",
         name: "Super Missiles",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Sector 3 PYR - Data Room",
         segments: []
       },{
         id: "metroid/iceMissile",
         name: "Ice Missiles",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Sector 5 ARC - Data Room",
         segments: []
       },{
         id: "metroid/superMissile",
         name: "Diffusion Effect",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Sector 4 AQA - Data Room",
         segments: []
       },{
         id: "metroid/morphBall",
         name: "Morph Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Arachnus Defeated",
         segments: []
       },{
-        id: "metroid/bomb",
+        id: "metroid/bombB",
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Sector 2 TRO - Data Room",
         segments: []
       },{
         id: "metroid/powerBomb",
         name: "Power Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Data",
+        overText: "Sector 5 ARC - Data Room",
         segments: []
       },{
         id: "--",
@@ -3080,24 +3094,32 @@ const rawData = {
         name: "Charge Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Elephant Bird Defeated",
         segments: []
       },{
         id: "metroid/wideBeamA",
         name: "Wide Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Wide Laser Core-X Defeated",
         segments: []
       },{
         id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Nettori Defeated",
         segments: []
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "SR-BOX 2 Defeated",
         segments: []
       },{
         id: "metroid/iceBeamD",
@@ -3116,36 +3138,48 @@ const rawData = {
         name: "Hi-Jump and Jumpball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Zazabi Defeated",
         segments: []
       },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Serris Defeated",
         segments: []
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Yakuza Defeated",
         segments: []
       },{
         id: "metroid/screwAttack",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Neo-Ridley-X Defeated",
         segments: []
       },{
         id: "metroid/varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Barrier Core-X Defeated",
         segments: []
       },{
         id: "metroid/gravitySuit",
         name: "Gravity Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Nightmare Defeated",
         segments: []
       },/* {
         id: "metroid/fullPowerSuit",
@@ -3192,13 +3226,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      }, */{
+      }, {
         id: "metroid/etedach",
         name: "Animals Rescued",
         start: 0,
         max: 1,
         segments: []
-      },/* {
+      }, {
         id: "metroid/reactorCore",
         name: "Main Deck - Reactor Core Auxiliary Power",
         start: 0,

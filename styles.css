@@ -25,10 +25,6 @@ body {
   display: none;
 }
 
-/* #startupMenu p {
-  color: white;
-} */
-
 .hide-menu {
   display: none;
 }
@@ -51,21 +47,41 @@ body {
 
 .item, .expansion {
   float: left;
+  position: relative;
 }
+
+.overlay-image {
+  display: none;
+  left: 26px;
+  margin: 2px;
+  position: absolute;
+  top: 26px;
+  z-index: 5;
+}
+
+.show-over .overlay-image {
+  display: block;
+}
+
 
 .item-image {
   left: 0;
   margin: 2px;
   position: relative;
   top: 0;
+  z-index: 1;
 }
 
 .expansion p {
-  /* color: white; */
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 0;
   text-align: center;
+}
+
+body.dark-mode #startupMenu p,
+body.dark-mode .expansion p {
+  color: white;
 }
 
 .deselected {

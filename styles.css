@@ -68,8 +68,8 @@ body {
   top: 26px;
 }
 
-.can-level-up:hover > .level-up-image,
-.can-level-down:hover > .level-down-image {
+.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
+.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
   display: block;
 }
 

@@ -175,6 +175,7 @@ const rawData = {
     items: [
       {
         id: "metroid/morphBall",
+        sprite: "metroid/z_morphBall",
         name: "Morph Ball",
         start: 0,
         max: 1,
@@ -183,6 +184,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/z_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -191,6 +193,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/varia",
+        sprite: "metroid/z_varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -205,6 +208,7 @@ const rawData = {
         segments: [
           {
             id: "metroid/unknownItem3",
+            sprite: "metroid/z_unknownItem3",
             name: "Unknown Item 3",
             start: 0,
             max: 1,
@@ -212,6 +216,7 @@ const rawData = {
             overText: "Unknown Item 3 Orb Acquired",
           },{
             id: "metroid/gravitySuit",
+            sprite: "metroid/z_gravitySuit",
             name: "Gravity Suit",
             start: 0,
             max: 1
@@ -219,6 +224,7 @@ const rawData = {
         ]
       },{
         id: "metroid/fullPowerSuit",
+        sprite: "metroid/z_fullPowerSuit",
         name: "Fully Powered Suit",
         start: 0,
         max: 1,
@@ -231,6 +237,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/longBeamB",
+        sprite: "metroid/z_longBeam",
         name: "Long Beam",
         start: 0,
         max: 1,
@@ -239,6 +246,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/chargeBeamF",
+        sprite: "metroid/z_chargeBeam",
         name: "Charge Beam",
         start: 0,
         max: 1,
@@ -253,6 +261,7 @@ const rawData = {
         segments: [
           {
             id: "metroid/unknownItem1",
+            sprite: "metroid/z_unknownItem1",
             name: "Unknown Item 1",
             start: 0,
             max: 1,
@@ -260,6 +269,7 @@ const rawData = {
             overText: "Unknown Item 1 Orb Acquired",
           },{
             id: "metroid/plasmaBeamE",
+            sprite: "metroid/z_plasmaBeam",
             name: "Plasma Beam",
             start: 0,
             max: 1
@@ -267,6 +277,7 @@ const rawData = {
         ]
       },{
         id: "metroid/iceBeamD",
+        sprite: "metroid/z_iceBeam",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -275,6 +286,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/waveBeam",
+        sprite: "metroid/z_waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -289,6 +301,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/powerGrip",
+        sprite: "metroid/z_powerGrip",
         name: "Power Grip",
         start: 0,
         max: 1,
@@ -303,6 +316,7 @@ const rawData = {
         segments: [
           {
             id: "metroid/unknownItem2",
+            sprite: "metroid/z_unknownItem2",
             name: "Unknown Item 2",
             start: 0,
             max: 1,
@@ -310,6 +324,7 @@ const rawData = {
             overText: "Unknown Item 2 Orb Acquired",
           },{
             id: "metroid/spaceJump",
+            sprite: "metroid/z_spaceJump",
             name: "Space Jump",
             start: 0,
             max: 1
@@ -317,6 +332,7 @@ const rawData = {
         ]
       },{
         id: "metroid/speedBoosterB",
+        sprite: "metroid/z_speedBooster",
         name: "Speed Booster",
         start: 0,
         max: 1,
@@ -325,6 +341,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/highJump",
+        sprite: "metroid/z_highJump",
         name: "High Jump Boots",
         start: 0,
         max: 1,
@@ -333,6 +350,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/z_screwAttack",
         name: "Screw Attack",
         start: 0,
         max: 1,
@@ -347,24 +365,28 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/z_energyTank",
         name: "Energy Tanks",
         start: 0,
         max: 12,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/z_missileTank",
         name: "Missile Tanks",
         start: 0,
         max: 50,
         segments: []
       },{
         id: "metroid/superMissileTank",
+        sprite: "metroid/z_superMissileTank",
         name: "Super Missile Tanks",
         start: 0,
         max: 15,
         segments: []
       },{
         id: "metroid/powerBombTank",
+        sprite: "metroid/z_powerBombTank",
         name: "Super Missile Tanks",
         start: 0,
         max: 9,

@@ -9,17 +9,82 @@ let feature = {
     
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
-        if (!e.target.classList.contains("deselected")) return;
+        if (!e.target.classList.contains("deselected")) {
+          if (e.target.parentElement.nextSibling) {
+            if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
+              if (
+                e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1
+              ) {
+                e.target.parentElement.classList.add("hide-segment");
+                let nextItem = e.target.parentElement.nextSibling;
+                let nextImage = nextItem.querySelectorAll(".item-image")[0];
+                nextItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                nextImage.classList.remove("deselected");
+              }
+            }
+          }
+          return;
+        }
         e.target.classList.remove("deselected");
       } else {
-        if (e.target.className.has("deselected")) return;
-        e.target.className += e.className.replace(/\bdeselected\b/g);
+        if (e.target.className.has("deselected")) {
+          if (e.target.parentElement.nextSibling) {
+            if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
+              if (
+                e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1
+              ) {
+                e.target.parentElement.className += " hide-segment";
+                let nextItem = e.target.parentElement.nextSibling;
+                let nextImage = nextItem.querySelectorAll(".item-image")[0];
+                nextItem.className += nextItem.className.replace(/\bhide\-segment\b/g);
+                nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
+              }
+            }
+          }
+          return;
+        }
+        e.target.className += e.target.className.replace(/\bdeselected\b/g);
       }
     } else if (e.which == 3) { // right click
       if (e.target.classList) { // browser compatibility logic
-        if (e.target.classList.contains("deselected")) return;
+        if (e.target.classList.contains("deselected")) {
+          return;
+        }
+        if (e.target.parentElement.previousSibling) {
+          if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
+            if (
+              e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+              parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1
+            ) {
+              e.target.parentElement.classList.add("hide-segment");
+              let previousItem = e.target.parentElement.previousSibling;
+              let previousImage = previousItem.querySelectorAll(".item-image")[0];
+              previousItem.classList.remove("hide-segment");
+              previousImage.classList.remove("deselected"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+            }
+          }
+        }
         e.target.classList.add("deselected");
       } else {
+        if (e.target.className.has("deselected")) {
+          if (e.target.parentElement.previousSibling) {
+            if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
+              if (
+                e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1
+              ) {
+                e.target.parentElement.className += " hide-segment";
+                let previousItem = e.target.parentElement.previousSibling;
+                let previousImage = previousItem.querySelectorAll(".item-image")[0];
+                previousItem.className += previousItem.className.replace(/\bhide\-segment\b/g);
+                previousImage.className += previousImage.className.replace(/\bdeselected\b/g);
+              }
+            }
+          }
+          return;
+        }
         let arr = e.target.className.split(" ");
         if (arr.indexOf("deselected") === -1) {
           e.target.className += " deselected";
@@ -37,10 +102,54 @@ let feature = {
     let previous = parseInt(values[0]);
     let max = parseInt(values[2]);
     if (e.which === 1) { // left click
-      if (previous >= max) return;
+      if (previous >= max) {
+        if (e.target.parentElement.nextSibling) {
+          if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
+            if (
+              e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+              parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1
+            ) {
+              let nextItem = e.target.parentElement.nextSibling;
+              let nextImage = nextItem.querySelectorAll(".item-image")[0];
+              if (e.target.classList) { // browser compatibility logic
+                e.target.parentElement.classList.add("hide-segment");
+                nextItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                nextImage.classList.remove("deselected");
+              } else {
+                e.target.parentElement.className += " hide-segment";
+                nextItem.className += nextImage.className.replace(/\bhide\-segment\b/g);
+                nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
+              }
+            }
+          }
+        }
+        return;
+      }
       previous++;
     } else if (e.which === 3) { // right click
-      if (previous <= 0) return;
+      if (previous <= 0) {
+        if (e.target.parentElement.previousSibling) {
+          if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
+            if (
+              e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+              parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1
+            ) {
+              let previousItem = e.target.parentElement.previousSibling;
+              let previousImage = previousItem.querySelectorAll(".item-image")[0];
+              if (e.target.classList) { // browser compatibility logic
+                e.target.parentElement.classList.add("hide-segment");
+                previousItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                previousImage.classList.remove("deselected");
+              } else {
+                e.target.parentElement.className += " hide-segment";
+                previousItem.className += previousItem.className.replace(/\bhide\-segment\b/g);
+                previousImage.className += previousImage.className.replace(/\bdeselected\b/g);
+              }
+            }
+          }
+        }
+        return;
+      }
       previous--;
     } else if (e.which == 2) { // middle click
       clickOverlay(e);
@@ -57,23 +166,48 @@ let feature = {
     e.preventDefault();
     
     if (e.which == 2) { // middle click
+      if (e.target.parentElement.querySelectorAll(".overlay-image")[0] == undefined) {
+        return;
+      }
+      const itemTitle = e.target.parentElement.querySelectorAll(".item-image")[0].alt;
+      const overlayTitle = e.target.parentElement.querySelectorAll(".overlay-image")[0].alt;
+      const newTitle = itemTitle + " - " + overlayTitle;
       if (e.target.parentElement.classList) { // browser compatibility logic
         if (!e.target.parentElement.classList.contains("show-over")) {
           e.target.parentElement.classList.add("show-over");
-          return;
+          e.target.parentElement.title = newTitle;
+        } else {
+          e.target.parentElement.classList.remove("show-over");
+          e.target.parentElement.title = itemTitle;
         }
-        e.target.parentElement.classList.remove("show-over");
       } else {
         if (e.target.parentElement.className.has("show-over")) {
           e.target.parentElement.className += " show-over";
-          return;
+          e.target.parentElement.title = newTitle;
+        } else {
+          e.target.parentElement.className += e.className.replace(/\bshowOver\b/g);
+          e.target.parentElement.title = itemTitle;
         }
-        e.target.parentElement.className += e.className.replace(/\bshowOver\b/g);
       }
     }
   }
   
-  function renderEntry(pointer, element, classLabel, index) {
+  function renderEntry(element, index, isSegment, isSegmentHidden, maxSegments) {
+    if (!isSegment) {
+      if (element.segments && element.segments.length > 0) {
+        let segmentProgress = element.start;
+        for (let j = 0; j < element.segments.length; j++) {
+          --segmentProgress;
+          if (element.segments[j].max < 2) {
+            renderEntry(element.segments[j], index + "-" + j, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
+          } else {
+            renderEntry(element.segments[j], index + "-" + j, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
+          }
+        }
+        return;
+      }
+    }
+    
     if (element.id === "--") {
       let breakage = document.createElement("div");
       if (breakage.classList) {
@@ -81,17 +215,24 @@ let feature = {
       } else {
         breakage.className = "clear-both";
       }
-      document.getElementById(pointer).appendChild(breakage);
+      document.getElementById("itemField").appendChild(breakage);
       return;
     }
     
     let wrapper = document.createElement("div");
     let image = document.createElement("img");
+    let classLabel = element.max < 2 ? "item" : "expansion";
     wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
     if (wrapper.classList) {
-      wrapper.classList.add(classLabel);
+      wrapper.classList.add("item");
+      if (isSegmentHidden) {
+        wrapper.classList.add("hide-segment");
+      }
     } else {
-      wrapper.className = classLabel;
+      wrapper.className = "item";
+      if (isSegmentHidden) {
+        wrapper.className += " hide-segment";
+      }
     }
     
     if (image.classList) {
@@ -99,29 +240,25 @@ let feature = {
       if (element.id === "-") {
         image.classList.add("blank");
       }
-      if (element.max < 2) {
-        if (element.start < 1) {
-          image.classList.add("deselected");
-        }
-        // TODO: segments
-        image.addEventListener("mousedown", clickItem);
-      } else {
-        image.addEventListener("mousedown", clickExpansion);
+      if (element.max < 2 && element.start < 1) {
+        image.classList.add("deselected");
       }
     } else {
       image.className = "item-image";
       if (element.id === "-") {
         image.className += " blank";
       }
-      if (element.max < 2) {
-        if (element.start < 1) {
-          image.className += " deselected";
-        }
-        image.addEventListener("mousedown", clickItem);
-      } else {
-        image.addEventListener("mousedown", clickExpansion);
+      if (element.max < 2 && element.start < 1) {
+        image.className += " deselected";
       }
     }
+    
+    if (element.max < 2) {
+      image.addEventListener("mousedown", clickItem);
+    } else {
+      image.addEventListener("mousedown", clickExpansion);
+    }
+    
     if (element.id === "-") {
       image.src = "images/itemSphere.png";
     } else {
@@ -155,7 +292,41 @@ let feature = {
       wrapper.appendChild(overlayImage);
     }
     
-    document.getElementById(pointer).appendChild(wrapper);
+    if (isSegment) {
+      let currentStep = parseInt(index.split('-')[1]);
+      if (currentStep + 1 < maxSegments) {
+        let levelUp = document.createElement("img");
+        if (levelUp.classList) {
+          levelUp.classList.add("level-up-image");
+          wrapper.classList.add("can-level-up");
+        } else {
+          levelUp.className = "level-up-image";
+          wrapper.className += "can-level-up";
+        }
+        levelUp.src = "images/overlays/Level_Up.png";
+        levelUp.alt = "Level Up";
+        levelUp.height = 16;
+        levelUp.width = 16;
+        wrapper.appendChild(levelUp);
+      }
+      if (currentStep > 0) {
+        let levelDown = document.createElement("img");
+        if (levelDown.classList) {
+          levelDown.classList.add("level-down-image");
+          wrapper.classList.add("can-level-down");
+        } else {
+          levelDown.className = "level-down-image";
+          wrapper.className += "can-level-down";
+        }
+        levelDown.src = "images/overlays/Level_Down.png";
+        levelDown.alt = "Level Down";
+        levelDown.height = 16;
+        levelDown.width = 16;
+        wrapper.appendChild(levelDown);
+      }
+    }
+    
+    document.getElementById("itemField").appendChild(wrapper);
   }
   
   function generate() {
@@ -166,21 +337,15 @@ let feature = {
       menuPointer.className += menuPointer.className.replace(/\bshow-menu\b/g);
     }
     
-    let pointers = ["itemField", "expansions"];
-    for (const pointer of pointers) {
-      let target = document.getElementById(pointer);
-      if (target.classList) { // browser compatibility logic
-        target.classList.remove("hide-section");
-      } else {
-        target.className += target.className.replace(/\bhide-section\b/g);
-      }
+    let target = document.getElementById("itemField");
+    if (target.classList) { // browser compatibility logic
+      target.classList.remove("hide-section");
+    } else {
+      target.className += target.className.replace(/\bhide-section\b/g);
     }
     
     // section for main items
-    feature.workingData.items.forEach((element, i) => renderEntry("itemField", element, "item", i));
-    
-    // section for expansions and boss
-    feature.workingData.expansions.forEach((element, i) => renderEntry("expansions", element, "expansion", i));
+    feature.workingData.items.forEach((element, i) => renderEntry(element, i, false, false, -1));
   }
 
   feature.generate = generate;

@@ -8,25 +8,17 @@ body {
   overflow: hidden;
 }
 
-.hide-section {
-  display: none;
-}
-
-#selection:not(.show-menu) {
+#selection:not(.show-menu),
+#selection .gameError.hide-error,
+.hide-menu,
+.hide-section,
+.hide-segment {
   display: none;
 }
 
 #selection .gameError {
   color: red;
   font-weight: bold;
-}
-
-#selection .gameError.hide-error {
-  display: none;
-}
-
-.hide-menu {
-  display: none;
 }
 
 .clear-both {
@@ -56,13 +48,34 @@ body {
   margin: 2px;
   position: absolute;
   top: 26px;
+  z-index: 10;
+}
+
+.level-up-image,
+.level-down-image {
+  display: none;
+  left: 0;
+  margin: 2px;
+  position: absolute;
   z-index: 5;
+}
+
+.level-up-image {
+  top: 0;
+}
+
+.level-down-image {
+  top: 26px;
+}
+
+.can-level-up:hover > .level-up-image,
+.can-level-down:hover > .level-down-image {
+  display: block;
 }
 
 .show-over .overlay-image {
   display: block;
 }
-
 
 .item-image {
   left: 0;
@@ -72,6 +85,7 @@ body {
   z-index: 1;
 }
 
+.item p,
 .expansion p {
   font-size: 0.8em;
   font-weight: bold;
@@ -80,6 +94,7 @@ body {
 }
 
 body.dark-mode #startupMenu p,
+body.dark-mode .item p,
 body.dark-mode .expansion p {
   color: white;
 }

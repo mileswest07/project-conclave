@@ -55,10 +55,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -141,10 +144,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -172,38 +178,46 @@ const rawData = {
         name: "Morph Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Vanilla Morph Ball Item Acquired",
         segments: []
       },{
         id: "metroid/bombB",
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Bombs Orb Acquired",
         segments: []
       },{
         id: "metroid/varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Varia Suit Orb Acquired",
         segments: []
-      },/*{
+      },{
         id: "metroid/gravitySuit",
         name: "Unknown Item 3 - Gravity Suit",
         start: 0,
         max: 1,
-        segments: [*/
+        segments: [
           {
             id: "metroid/unknownItem3",
             name: "Unknown Item 3",
             start: 0,
-            max: 1
+            max: 1,
+            over: "metroid/Z_Orb",
+            overText: "Unknown Item 3 Orb Acquired",
           },{
             id: "metroid/gravitySuit",
             name: "Gravity Suit",
             start: 0,
             max: 1
-          }/*
+          }
         ]
-      }*/,{
+      },{
         id: "metroid/fullPowerSuit",
         name: "Fully Powered Suit",
         start: 0,
@@ -220,42 +234,52 @@ const rawData = {
         name: "Long Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Long Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Beam Beast Defeated",
         segments: []
-      },/* {
+      },{
         id: "metroid/plasmaBeam",
         name: "Unknown Item 1 - Plasma Beam",
         start: 0,
         max: 1,
-        segments: [ */
+        segments: [
           {
             id: "metroid/unknownItem1",
             name: "Unknown Item 1",
             start: 0,
-            max: 1
+            max: 1,
+            over: "metroid/Z_Orb",
+            overText: "Unknown Item 1 Orb Acquired",
           },{
             id: "metroid/plasmaBeamE",
             name: "Plasma Beam",
             start: 0,
             max: 1
-          }/* 
+          }
         ]
-      } */,{
+      },{
         id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Ice Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Wave Beam Orb Acquired",
         segments: []
       },{
         id: "--",
@@ -268,47 +292,60 @@ const rawData = {
         name: "Power Grip",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Power Grip Orb Acquired",
         segments: []
-      },/* {
+      },{
         id: "metroid/spaceJump",
         name: "Unknown Item 2 - Space Jump",
         start: 0,
         max: 1,
-        segments: [ */
+        segments: [
           {
             id: "metroid/unknownItem2",
             name: "Unknown Item 2",
             start: 0,
-            max: 1
+            max: 1,
+            over: "metroid/Z_Orb",
+            overText: "Unknown Item 2 Orb Acquired",
           },{
             id: "metroid/spaceJump",
             name: "Space Jump",
             start: 0,
             max: 1
-          }/* 
+          }
         ]
-      } */,{
+      },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Speed Booster Orb Acquired",
         segments: []
       },{
         id: "metroid/highJump",
         name: "High Jump Boots",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "High Jump Orb Acquired",
         segments: []
       },{
         id: "metroid/screwAttack",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Screw Attack Orb Acquired",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -360,24 +397,32 @@ const rawData = {
         name: "Varia Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Flaahgra Defeated",
         segments: []
       },{
         id: "metroid/gravitySuit",
         name: "Gravity Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phendrana Drifts - Gravity Chamber",
         segments: []
       },{
         id: "metroid/phazonSuit",
         name: "Phazon Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Omega Pirate Defeated",
         segments: []
       },{
         id: "metroid/spaceJumpBoots",
         name: "Space Jump Boots",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Tallon Overworld - Alcove",
         segments: []
       },{
         id: "--",
@@ -396,24 +441,32 @@ const rawData = {
         name: "Charge Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Chozo Ruins - Watery Hall",
         segments: []
       },{
         id: "metroid/waveBeamA",
         name: "Wave Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phendrana Drifts - Chapel of the Elders",
         segments: []
       },{
         id: "metroid/iceBeamB",
         name: "Ice Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Chozo Ruins - Antechamber",
         segments: []
       },{
         id: "metroid/plasmaBeamB",
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Magmoor Caverns - Plasma Processing",
         segments: []
       },{
         id: "--",
@@ -426,30 +479,40 @@ const rawData = {
         name: "Missile Launcher",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Hive Mecha Defeated",
         segments: []
       },{
         id: "metroid/superMissileA",
         name: "Super Missile",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phendrana Drifts - Observatory",
         segments: []
       },{
         id: "metroid/wavebuster",
         name: "Wavebuster",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Chozo Ruins - Tower of Light",
         segments: []
       },{
         id: "metroid/iceSpreader",
         name: "Ice Spreader",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Magmoor Caverns - Shore Tunnel",
         segments: []
       },{
         id: "metroid/flamethrower",
         name: "Flamethrower",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phazon Mines - Storage Depot A",
         segments: []
       },{
         id: "--",
@@ -462,30 +525,40 @@ const rawData = {
         name: "Morph Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Chozo Ruins - Ruined Shrine",
         segments: []
       },{
         id: "metroid/bomb",
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Incinerator Drone Defeated",
         segments: []
       },{
         id: "metroid/boostBall",
         name: "Boost Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phendrana Drifts - Phendrana Canyon",
         segments: []
       },{
         id: "metroid/spiderBall",
         name: "Spider Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Thardus Defeated",
         segments: []
       },{
         id: "metroid/powerBomb",
         name: "Power Bomb",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phazon Mines - Central Dynamo",
         segments: []
       },{
         id: "--",
@@ -510,23 +583,32 @@ const rawData = {
         name: "Thermal Visor",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phendrana Drifts - Research Core",
         segments: []
       },{
         id: "metroid/xRayVisor",
         name: "X-Ray Visor",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Tallon Overworld - Life Grove",
         segments: []
       },{
         id: "metroid/grappleBeam",
         name: "Grapple Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Phazon Mines - Storage Depot B",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -555,6 +637,8 @@ const rawData = {
         name: "Chozo Artifacts",
         start: 0,
         max: 12,
+        over: "metroid/Z_Chozo",
+        overText: "Hints Acquired",
         segments: []
       },
     ]
@@ -572,6 +656,8 @@ const rawData = {
         name: "Violet Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Great Temple - Main Energy Controller 1",
         segments: []
       },{
         id: "metroid/powerBeamC",
@@ -584,6 +670,8 @@ const rawData = {
         name: "Super Missile",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Torvus Temple",
         segments: []
       },{
         id: "metroid/chargeBeamC",
@@ -596,18 +684,24 @@ const rawData = {
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Bomb Guardian Defeated",
         segments: []
       },{
         id: "metroid/spaceJumpBoots",
         name: "Space Jump Boots",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Jump Guardian Defeated",
         segments: []
       },{
         id: "metroid/energyTransferModule",
         name: "Energy Transfer Module",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
         id: "--",
@@ -626,30 +720,40 @@ const rawData = {
         name: "Amber Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Agon Energy Controller",
         segments: []
       },{
         id: "metroid/darkBeam",
         name: "Dark Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Storage D",
         segments: []
       },{
         id: "metroid/darkburst",
         name: "Darkburst",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Mining Station B",
         segments: []
       },{
         id: "metroid/missile",
         name: "Missile Launcher",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - GFMC Compound",
         segments: []
       },{
         id: "metroid/boostBall",
         name: "Boost Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Boost Guardian Defeated",
         segments: []
       },{
         id: "-",
@@ -662,6 +766,8 @@ const rawData = {
         name: "Dark Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Amorbis Defeated",
         segments: []
       },{
         id: "--",
@@ -674,48 +780,64 @@ const rawData = {
         name: "Dark Visor",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Chykka Defeated",
         segments: []
       },{
         id: "metroid/emeraldTranslator",
         name: "Emerald Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Torvus Energy Controller",
         segments: []
       },{
         id: "metroid/lightBeam",
         name: "Light Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Dark Agon Wastes - Ing Cache 1",
         segments: []
       },{
         id: "metroid/sunburst",
         name: "Sunburst",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - Grand Windchamber",
         segments: []
       },{
         id: "metroid/seekerLauncher",
         name: "Seeker Launcher",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - Hall of Honored Dead",
         segments: []
       },{
         id: "metroid/spiderBall",
         name: "Spider Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Spider Guardian Defeated",
         segments: []
       },{
         id: "metroid/grappleBeam",
         name: "Grapple Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Grapple Guardian Defeated",
         segments: []
       },{
         id: "metroid/gravityBoost",
         name: "Gravity Boost",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Hydrodynamo Storage",
         segments: []
       },{
         id: "--",
@@ -728,24 +850,32 @@ const rawData = {
         name: "Echo Visor",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Aerie",
         segments: []
       },{
         id: "metroid/cobaltTranslator",
         name: "Cobalt Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Sanctuary Temple",
         segments: []
       },{
         id: "metroid/annihilatorBeam",
         name: "Annihilator Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Quadraxis Defeated",
         segments: []
       },{
         id: "metroid/sonicBoom",
         name: "Sonic Boom",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Dark Agon Wastes - Ing Cache 2",
         segments: []
       },{
         id: "metroid/morphBall",
@@ -758,23 +888,32 @@ const rawData = {
         name: "Power Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Power Bomb Guardian Defeated",
         segments: []
       },{
         id: "metroid/screwAttackA",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Vault",
         segments: []
       },{
         id: "metroid/lightSuit",
         name: "Light Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Great Temple - Main Energy Controller 2",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -854,7 +993,7 @@ const rawData = {
         id: "metroid/ingHiveKey",
         name: "Ing Hive Key",
         start: 0,
-        max: 3/*,
+        max: 3,
         segments: [
           {
             id: "metroid/ingHiveKey",
@@ -865,18 +1004,20 @@ const rawData = {
             id: "metroid/lightOfAether",
             name: "Ing Hive Energy Retrieved",
             start: 0,
-            max: 1*/
+            max: 1
           },{
             id: "metroid/lightOfAetherA",
             name: "Sanctuary Energy Restored",
             start: 0,
             max: 1
-          }/*]
-      }*/,{
+          }]
+      },{
         id: "metroid/skyTempleKey",
         name: "Sky Temple Key",
         start: 0,
         max: 9,
+        over: "metroid/Z_Chozo",
+        overText: "Hints Acquired",
         segments: []
       },
     ]
@@ -894,6 +1035,8 @@ const rawData = {
         name: "Violet Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Great Temple - Main Energy Controller 1",
         segments: []
       },{
         id: "metroid/powerBeamC",
@@ -906,6 +1049,8 @@ const rawData = {
         name: "Super Missile",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Torvus Temple",
         segments: []
       },{
         id: "metroid/chargeBeamC",
@@ -918,18 +1063,24 @@ const rawData = {
         name: "Bombs",
         start: 1,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Bomb Guardian Defeated",
         segments: []
       },{
         id: "metroid/spaceJumpBoots",
         name: "Space Jump Boots",
         start: 1,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Jump Guardian Defeated",
         segments: []
       },{
         id: "metroid/energyTransferModule",
         name: "Energy Transfer Module",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
         id: "--",
@@ -948,30 +1099,40 @@ const rawData = {
         name: "Amber Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Agon Energy Controller",
         segments: []
       },{
         id: "metroid/darkBeam",
         name: "Dark Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Storage D",
         segments: []
       },{
         id: "metroid/darkburst",
         name: "Darkburst",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Agon Wastes - Mining Station B",
         segments: []
       },{
         id: "metroid/missile",
         name: "Missile Launcher",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - GFMC Compound",
         segments: []
       },{
         id: "metroid/boostBall",
         name: "Boost Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Boost Guardian Defeated",
         segments: []
       },{
         id: "metroid/cannonball",
@@ -984,6 +1145,8 @@ const rawData = {
         name: "Dark Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Amorbis Defeated",
         segments: []
       },{
         id: "--",
@@ -996,48 +1159,64 @@ const rawData = {
         name: "Dark Visor",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Chykka Defeated",
         segments: []
       },{
         id: "metroid/emeraldTranslator",
         name: "Emerald Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Torvus Energy Controller",
         segments: []
       },{
         id: "metroid/lightBeam",
         name: "Light Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Dark Agon Wastes - Ing Cache 1",
         segments: []
       },{
         id: "metroid/sunburst",
         name: "Sunburst",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - Grand Windchamber",
         segments: []
       },{
         id: "metroid/seekerLauncher",
         name: "Seeker Launcher",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Temple Grounds - Hall of Honored Dead",
         segments: []
       },{
         id: "metroid/spiderBall",
         name: "Spider Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Spider Guardian Defeated",
         segments: []
       },{
         id: "metroid/grappleBeam",
         name: "Grapple Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Grapple Guardian Defeated",
         segments: []
       },{
         id: "metroid/gravityBoost",
         name: "Gravity Boost",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Torvus Bog - Hydrodynamo Storage",
         segments: []
       },{
         id: "--",
@@ -1050,24 +1229,32 @@ const rawData = {
         name: "Echo Visor",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Aerie",
         segments: []
       },{
         id: "metroid/cobaltTranslator",
         name: "Cobalt Translator",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Sanctuary Temple",
         segments: []
       },{
         id: "metroid/annihilatorBeam",
         name: "Annihilator Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Quadraxis Defeated",
         segments: []
       },{
         id: "metroid/sonicBoom",
         name: "Sonic Boom",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Dark Agon Wastes - Ing Cache 2",
         segments: []
       },{
         id: "metroid/morphBall",
@@ -1080,23 +1267,32 @@ const rawData = {
         name: "Power Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Power Bomb Guardian Defeated",
         segments: []
       },{
         id: "metroid/screwAttackA",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Sanctuary Fortress - Vault",
         segments: []
       },{
         id: "metroid/lightSuit",
         name: "Light Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Great Temple - Main Energy Controller 2",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -1182,7 +1378,7 @@ const rawData = {
         id: "metroid/ingHiveKey",
         name: "Ing Hive Key",
         start: 0,
-        max: 3/* ,
+        max: 3,
         segments: [
           {
             id: "metroid/ingHiveKey",
@@ -1193,18 +1389,20 @@ const rawData = {
             id: "metroid/lightOfAether",
             name: "Ing Hive Energy Retrieved",
             start: 0,
-            max: 1 */
+            max: 1
           },{
             id: "metroid/lightOfAetherA",
             name: "Sanctuary Energy Restored",
             start: 0,
             max: 1
-          }/* ]
-      } */,{
+          }]
+      },{
         id: "metroid/skyTempleKey",
         name: "Sky Temple Key",
         start: 0,
         max: 9,
+        over: "metroid/Z_Chozo",
+        overText: "Hints Acquired",
         segments: []
       },
     ]
@@ -1259,10 +1457,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -1317,7 +1518,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactAl1",
             name: "Alimbic Artifacts: Alinos 1",
             start: 0,
             max: 3
@@ -1335,7 +1536,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactVDO1",
             name: "Alimbic Artifacts: VDO 1",
             start: 0,
             max: 3
@@ -1353,7 +1554,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactArc1",
             name: "Alimbic Artifacts: Arcterra 1",
             start: 0,
             max: 3
@@ -1371,7 +1572,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactCA2",
             name: "Alimbic Artifacts: Celestial Archives 2",
             start: 0,
             max: 3
@@ -1389,7 +1590,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactAl2",
             name: "Alimbic Artifacts: Alinos 2",
             start: 0,
             max: 3
@@ -1407,7 +1608,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactVDO2",
             name: "Alimbic Artifacts: VDO 2",
             start: 0,
             max: 3
@@ -1425,7 +1626,7 @@ const rawData = {
         max: 3,
         segments: [
           {
-            id: "metroid/alimbicArtifactCA1",
+            id: "metroid/alimbicArtifactArc2",
             name: "Alimbic Artifacts: Arcterra 2",
             start: 0,
             max: 3
@@ -1500,12 +1701,16 @@ const rawData = {
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Ghor Defeated",
         segments: []
       },{
         id: "metroid/novaBeam",
         name: "Nova Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Pirate Homeworld - Pirate Mines - Main Cavern",
         segments: []
       },{
         id: "metroid/missile",
@@ -1518,24 +1723,32 @@ const rawData = {
         name: "Ice Missile",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Rundas Defeated",
         segments: []
       },{
         id: "metroid/seekerLauncher",
         name: "Seeker Launcher",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Skytown - Eastern Skytown - Xenoresearch B",
         segments: []
       },{
         id: "metroid/shipMissile",
         name: "Ship Missile",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Bryyo - Hangar Bay",
         segments: []
       },{
         id: "metroid/hyperMissile",
         name: "Hyper Missile",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Helios Defeated",
         segments: []
       },{
         id: "--",
@@ -1548,48 +1761,64 @@ const rawData = {
         name: "Boost Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Defense Drone Defeated",
         segments: []
       },{
         id: "metroid/spiderBall",
         name: "Spider Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Skytown - Powerworks",
         segments: []
       },{
         id: "metroid/hyperBall",
         name: "Hyper Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Mogenar Defeated",
         segments: []
       },{
         id: "metroid/grappleLasso",
         name: "Grapple Lasso",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Norion - Docking Hub Alpha",
         segments: []
       },{
         id: "metroid/grappleBeam",
-        name: "Grapple Beam",
+        name: "Grapple Swing",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Bryyo - Reliquary I",
         segments: []
       },{
         id: "metroid/grappleVoltage",
         name: "Grapple Voltage",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Gandrayda Defeated",
         segments: []
       },{
         id: "metroid/shipGrapple",
         name: "Ship Grapple",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Skytown - Eastern Skytown - Skytown Federation Landing Site",
         segments: []
       },{
         id: "metroid/hyperGrapple",
         name: "Hyper Grapple",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Omega Ridley Defeated",
         segments: []
       },{
         id: "--",
@@ -1614,6 +1843,8 @@ const rawData = {
         name: "Hazard Shield",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Pirate Homeworld - Pirate Research - Craneyard",
         segments: []
       },{
         id: "-",
@@ -1626,6 +1857,8 @@ const rawData = {
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Bryyo - Bryyo Ice - Hall of Remembrance",
         segments: []
       },{
         id: "-",
@@ -1644,11 +1877,16 @@ const rawData = {
         name: "X-Ray Visor",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Pirate Homeworld - Pirate Command - Command Vault",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -1684,7 +1922,7 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },/* {
+      },{
         id: "-",
         name: "",
         start: 0,
@@ -1695,20 +1933,22 @@ const rawData = {
         name: "Energy Cell",
         start: 0,
         max: 9,
-        segments: [ */
+        segments: [
           {
             id: "metroid/energyCell",
             name: "Energy Cell",
             start: 0,
-            max: 9
+            max: 9,
+            over: "metroid/Z_Chozo",
+            overText: "Hints Acquired",
           },{
             id: "metroid/pirateCode",
             name: "Pirate Code",
             start: 0,
             max: 1
-          }/* 
+          }
         ]
-      } */,
+      },
     ]
   }, 
   "m2ros": {
@@ -1797,10 +2037,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -1931,10 +2174,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -2010,12 +2256,16 @@ const rawData = {
         name: "Spring Ball",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Arachnus Defeated",
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "metroid/powerBomb",
+        name: "Power Bomb",
         start: 0,
-        max: 0,
+        max: 1,
+        over: "metroid/F_Boss",
+        overText: "Area 6 - Diggernaut Defeated",
         segments: []
       },{
         id: "metroid/varia",
@@ -2076,6 +2326,8 @@ const rawData = {
         name: "Space Jump",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Area 4 - Survived Diggernaut",
         segments: []
       },{
         id: "--",
@@ -2125,10 +2377,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -2180,42 +2435,56 @@ const rawData = {
         name: "Morphing Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Vanilla Morph Ball Item Acquired",
         segments: []
       },{
         id: "metroid/bombB",
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Torizo Defeated",
         segments: []
       },{
         id: "metroid/springBall",
         name: "Spring Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Spring Ball Orb Acquired",
         segments: []
       },{
         id: "metroid/screwAttack",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Screw Attack Orb Acquired",
         segments: []
       },{
         id: "metroid/varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Kraid Defeated",
         segments: []
       },{
         id: "metroid/gravitySuit",
         name: "Gravity Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Gravity Suit Orb Acquired",
         segments: []
       },{
         id: "metroid/xRayScope",
         name: "X-Ray Scope",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "X-Ray Scope Orb Acquired",
         segments: []
       },{
         id: "--",
@@ -2228,53 +2497,72 @@ const rawData = {
         name: "Charge Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Charge Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/spazerBeamC",
         name: "Spazer",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Spazer Orb Acquired",
         segments: []
       },{
         id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Ice Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Wave Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Plasma Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/highJump",
         name: "High Jump Boots",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "High Jump Orb Acquired",
         segments: []
       },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Speed Booster Orb Acquired",
         segments: []
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Draygon Defeated",
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -2332,24 +2620,32 @@ const rawData = {
         name: "Morphing Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Vanilla Morph Ball Item Acquired",
         segments: []
       },{
         id: "metroid/bombB",
         name: "Bombs",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Torizo Defeated",
         segments: []
       },{
         id: "metroid/springBall",
         name: "Spring Ball",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Spring Ball Orb Acquired",
         segments: []
       },{
         id: "metroid/screwAttack",
         name: "Screw Attack",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Screw Attack Orb Acquired",
         segments: []
       },{
         id: "-",
@@ -2362,30 +2658,52 @@ const rawData = {
         name: "Bow",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "zelda/silverArrows",
-        name: "Silver Arrows",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
+        over: "zelda/MC_Chest",
+        overText: "L1 Big Chest",
+        segments: [
+          {
+            id: "zelda/bow",
+            name: "Bow",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L1 Big Chest",
+          },{
+            id: "zelda/silverArrows",
+            name: "Silver Arrows",
+            start: 0,
+            max: 1
+          }
+        ]
+      },/* {
         id: "zelda/boomerang",
         name: "Boomerang",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "zelda/magicalBoomerang",
-        name: "Magical Boomerang",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
+        over: "zelda/MC_Chest",
+        overText: "HC Basement Chest",
+        segments: [ */
+          {
+            id: "zelda/boomerang",
+            name: "Boomerang",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "HC Basement Chest",
+          },{
+            id: "zelda/magicalBoomerang",
+            name: "Magical Boomerang",
+            start: 0,
+            max: 1
+          }/* 
+        ]
+      } */,{
         id: "zelda/hookshot",
         name: "Hookshot",
         start: 0,
         max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D2 Big Chest",
         segments: []
       },{
         id: "zelda/bombs",
@@ -2416,18 +2734,24 @@ const rawData = {
         name: "Varia Suit",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Kraid Defeated",
         segments: []
       },{
         id: "metroid/gravitySuit",
         name: "Gravity Suit",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Gravity Suit Orb Acquired",
         segments: []
       },{
         id: "metroid/xRayScope",
         name: "X-Ray Scope",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "X-Ray Scope Orb Acquired",
         segments: []
       },{
         id: "-",
@@ -2446,6 +2770,8 @@ const rawData = {
         name: "Fire Rod",
         start: 0,
         max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D3 Big Chest",
         segments: []
       },{
         id: "zelda/iceRod",
@@ -2478,30 +2804,6 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "zelda/sword",
-        name: "Fighter's Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/masterSword",
-        name: "Master Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/temperedSword",
-        name: "Tempered Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/goldenSword",
-        name: "Golden Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
         id: "--",
         name: "",
         start: 0,
@@ -2512,24 +2814,32 @@ const rawData = {
         name: "Charge Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Charge Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/spazerBeamC",
         name: "Spazer",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Spazer Orb Acquired",
         segments: []
       },{
         id: "metroid/iceBeamD",
         name: "Ice Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Ice Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Wave Beam Orb Acquired",
         segments: []
       },{
         id: "-",
@@ -2548,6 +2858,8 @@ const rawData = {
         name: "Magic Hammer",
         start: 0,
         max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D1 Big Chest",
         segments: []
       },{
         id: "zelda/shovel",
@@ -2560,13 +2872,19 @@ const rawData = {
         name: "Flute",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "zelda/fluteBird",
-        name: "Flute (Warping enabled)",
-        start: 0,
-        max: 1,
-        segments: []
+        segments: [
+          {
+            id: "zelda/flute",
+            name: "Flute",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/fluteBird",
+            name: "Flute (Warping enabled)",
+            start: 0,
+            max: 1,
+          }
+        ]
       },{
         id: "zelda/net",
         name: "Bug-Catching Net",
@@ -2576,24 +2894,6 @@ const rawData = {
       },{
         id: "zelda/book",
         name: "Book of Mudora",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "zelda/halfMagic",
-        name: "Half Magic",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/quarterMagic",
-        name: "Quarter Magic",
         start: 0,
         max: 1,
         segments: []
@@ -2608,24 +2908,32 @@ const rawData = {
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Plasma Beam Orb Acquired",
         segments: []
       },{
         id: "metroid/highJump",
         name: "High Jump Boots",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "High Jump Orb Acquired",
         segments: []
       },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
         start: 0,
         max: 1,
+        over: "metroid/Z_Orb",
+        overText: "Speed Booster Orb Acquired",
         segments: []
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
         start: 0,
         max: 1,
+        over: "metroid/F_Boss",
+        overText: "Draygon Defeated",
         segments: []
       },{
         id: "-",
@@ -2644,6 +2952,8 @@ const rawData = {
         name: "Cane of Somaria",
         start: 0,
         max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D6 Big Chest",
         segments: []
       },{
         id: "zelda/byrna",
@@ -2664,39 +2974,92 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "zelda/sword",
+        name: "Fighter's Sword",
         start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
+        max: 1,
+        segments: [
+          {
+            id: "zelda/sword",
+            name: "Fighter's Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/masterSword",
+            name: "Master Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/temperedSword",
+            name: "Tempered Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/goldenSword",
+            name: "Golden Sword",
+            start: 0,
+            max: 1,
+          }
+        ]
       },{
         id: "zelda/shield",
         name: "Fighter's Shield",
         start: 0,
         max: 1,
+        segments: [
+          {
+            id: "zelda/shield",
+            name: "Fighter's Shield",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/redShield",
+            name: "Red Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/mirrorShield",
+            name: "Mirror Sword",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D7 Big Chest",
+          }
+        ]
+      },{
+        id: "zelda/greenJerkin",
+        name: "Green Jerkin",
+        start: 1,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/greenJerkin",
+            name: "Green Jerkin",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/blueMail",
+            name: "Blue Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D5 Big Chest",
+          },{
+            id: "zelda/redMail",
+            name: "Red Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "GT Big Chest",
+          }
+        ]
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
         segments: []
       },{
-        id: "zelda/redShield",
-        name: "Red Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/mirrorShield",
-        name: "Mirror Sword",
-        start: 0,
-        max: 1,
-        segments: []
-      },
-    ],
-    expansions: [
-      {
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -2737,13 +3100,23 @@ const rawData = {
         name: "Power Glove",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "zelda/titansMitt",
-        name: "Titan's Mitt",
-        start: 0,
-        max: 1,
-        segments: []
+        segments: [
+          {
+            id: "zelda/powerGlove",
+            name: "Power Glove",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L2 Big Chest",
+          },{
+            id: "zelda/titansMitt",
+            name: "Titan's Mitt",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D4 Big Chest",
+          }
+        ]
       },{
         id: "zelda/flipper",
         name: "Zora Flipper",
@@ -2755,6 +3128,8 @@ const rawData = {
         name: "Moon Pearl",
         start: 0,
         max: 1,
+        over: "zelda/MC_Chest",
+        overText: "L3 Big Chest",
         segments: []
       },{
         id: "-",
@@ -2763,28 +3138,34 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "zelda/greenJerkin",
-        name: "Green Jerkin",
-        start: 1,
-        max: 1,
-        segments: []
-      },{
-        id: "zelda/blueMail",
-        name: "Blue Mail",
+        id: "zelda/halfMagic",
+        name: "Half Magic",
         start: 0,
         max: 1,
+        segments: [
+          {
+            id: "zelda/halfMagic",
+            name: "Half Magic",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/quarterMagic",
+            name: "Quarter Magic",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/arrowsExp",
+        name: "Arrow Capacity",
+        start: 0,
+        max: 8,
         segments: []
       },{
-        id: "zelda/redMail",
-        name: "Red Mail",
+        id: "zelda/bombsExp",
+        name: "Bomb Capacity",
         start: 0,
-        max: 1,
+        max: 8,
         segments: []
       },{
         id: "--",
@@ -2827,60 +3208,80 @@ const rawData = {
         name: "Pendant of Courage - Eastern Palace",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Armos Knights Defeated",
         segments: []
       },{
         id: "zelda/pendantOfWisdom",
         name: "Pendant of Wisdom - Desert Palace",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Lanmolas Defeated",
         segments: []
       },{
         id: "zelda/pendantOfPower",
         name: "Pendant of Power - Tower of Hera",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Moldorm Defeated",
         segments: []
       },{
         id: "zelda/crystal",
         name: "Crystal - Palace of Darkness",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Helmasaur King Defeated",
         segments: []
       },{
         id: "zelda/crystal",
         name: "Crystal - Swamp Palace",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Arrghus Defeated",
         segments: []
       },{
         id: "zelda/crystal",
         name: "Crystal - Skull Woods",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Mothula Defeated",
         segments: []
       },{
         id: "zelda/crystal",
         name: "Crystal - Thieves' Town",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Blind Defeated",
         segments: []
       },{
         id: "zelda/fairyCrystal",
         name: "Crystal - Ice Palace",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Kholdstare Defeated",
         segments: []
       },{
         id: "zelda/fairyCrystal",
         name: "Crystal - Misery Mire",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Vitreous Defeated",
         segments: []
       },{
         id: "zelda/crystal",
         name: "Crystal - Turtle Rock",
         start: 0,
         max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Trinexx Defeated",
         segments: []
       },
     ]
@@ -2989,10 +3390,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },
-    ],
-    expansions: [
-      {
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -3187,10 +3591,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      }, */
-    ],
-    expansions: [
-      {
+      }, */{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,

@@ -1503,12 +1503,6 @@ const rawData = {
         start: 0,
         max: 12,
         segments: []
-      },{ // TODO: remove once segment code is in place
-        id: "metroid/octolith",
-        name: "Octoliths",
-        start: 0,
-        max: 8,
-        segments: []
       },{
         id: "--",
         name: "",
@@ -1803,7 +1797,7 @@ const rawData = {
         overText: "Mogenar Defeated",
         segments: []
       },{
-        id: "metroid/grappleLasso",
+        id: "metroid/grappleLassoA",
         name: "Grapple Lasso",
         start: 0,
         max: 1,

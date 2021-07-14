@@ -1040,7 +1040,19 @@ const rawData = {
         max: 9,
         over: "metroid/Z_Chozo",
         overText: "Hints Acquired",
-        segments: []
+        segments: [
+          {
+            id: "metroid/skyTempleKey",
+            name: "Sky Temple Key",
+            start: 0,
+            max: 9
+          },{
+            id: "metroid/skyTempleAccess",
+            name: "Sky Temple Access",
+            start: 0,
+            max: 1
+          }
+        ]
       },
     ]
   },
@@ -1425,7 +1437,19 @@ const rawData = {
         max: 9,
         over: "metroid/Z_Chozo",
         overText: "Hints Acquired",
-        segments: []
+        segments: [
+          {
+            id: "metroid/skyTempleKey",
+            name: "Sky Temple Key",
+            start: 0,
+            max: 9
+          },{
+            id: "metroid/skyTempleAccess",
+            name: "Sky Temple Access",
+            start: 0,
+            max: 1
+          }
+        ]
       },
     ]
   },

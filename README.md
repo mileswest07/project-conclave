@@ -17,3 +17,5 @@ If you want to use the tracker on your OBS Studio layout, do the following:
 1. On your scene window, right click your tracker and select Interact. This should open up the tracker in a new window, where you can click on the item icons and the on-screen tracker will update. It is here that any background CSS you specified in the properties for this Browser Source, will be applied. By default, any transparent background will be shown as black (#000000ff), making any expansion counters illegible.
 
 At this point, you should be set up! Please file any issues you may find on my GitHub repo.
+
+All icons were either created by me or made by Nintendo. All assets are owned by their respective creators and are used here without express written permission and without intent to profit.

@@ -409,11 +409,23 @@ const rawData = {
   "mp": {
     items: [
       {
-        id: "-", // TODO: Fusion Suit icon
-        name: "",
+        id: "metroid/fusionSuit",
+        name: "Fusion Suit",
         start: 0,
-        max: 0,
-        segments: []
+        max: 1,
+        segments: [
+          {
+            id: "metroid/primeSuit",
+            name: "Prime Suit Active",
+            start: 1,
+            max: 1,
+          },{
+            id: "metroid/fusionSuit",
+            name: "Fusion Suit Active",
+            start: 0,
+            max: 1
+          }
+        ]
       },{
         id: "metroid/varia",
         name: "Varia Suit",
@@ -653,6 +665,83 @@ const rawData = {
         name: "",
         start: 0,
         max: 0,
+        segments: []
+      },{
+        id: "metroid/chozoArtifact",
+        name: "Chozo Artifacts",
+        start: 0,
+        max: 12,
+        over: "metroid/Z_Chozo",
+        overText: "Hints Acquired",
+        segments: []
+      },
+    ]
+  },
+  "p2d": {
+    items: [
+      {
+        id: "metroid/powerGrip",
+        name: "Power Grip",
+        start: 0,
+        max: 1,
+        over: "metroid/Z_Chozo",
+        overText: "Artifact of Truth obtained",
+        segments: []
+      },{
+        id: "metroid/missile",
+        name: "Missile Launcher",
+        start: 0,
+        max: 1,
+        over: "metroid/F_Boss",
+        overText: "Hive Mecha Defeated",
+        segments: []
+      },{
+        id: "metroid/morphBall",
+        name: "Morph Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/bomb",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/boostBall",
+        name: "Boost Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/springBall",
+        name: "Spring Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "metroid/energyTank",
+        name: "Energy Tanks",
+        start: 0,
+        max: 2,
+        segments: []
+      },{
+        id: "metroid/missileTank",
+        name: "Missile Expansions",
+        start: 0,
+        max: 7,
         segments: []
       },{
         id: "metroid/chozoArtifact",

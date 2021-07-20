@@ -5,22 +5,24 @@ let main = {
 (() => {
   
   const games = {
-    "d": "mrd",
-    "m": "m1",
-    "z": "mzm",
-    "p": "mp",
-    "b": "pb",
-    "e": "mp2e",
-    "v": "e_rnd",
-    "h": "ph",
-    "c": "mp3c",
-    "2": "m2ros",
-    "a": "am2r",
-    "r": "msr",
-    "s": "sm",
-    "3": "smz3",
-    "o": "mom",
-    "f": "mf"
+    "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
+    "m": "m1", // Metroid
+    "z": "mzm", // Metroid: Zero Mission
+    "p": "mp", // Metroid Prime
+    "b": "pb", // Metroid Prime Pinball
+    "p2d": "p2d", // Prime 2D
+    "e": "mp2e", // Metroid Prime 2: Echoes
+    "v": "e_rnd", // Metroid Prime 2: Echoes (Randovania settings)
+    "h": "ph", // Metroid Prime Hunters
+    "c": "mp3c", // Metroid Prime 3: Corruption
+    "2": "m2ros", // Metroid II: Return of Samus
+    "a": "am2r", // Another Metroid 2 Remake
+    "r": "msr", // Metroid: Samus Returns
+    "s": "sm", // Super Metroid
+    "3": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
+    "o": "mom", // Metroid: Other M
+    "f": "mf", // Metroid Fusion
+    // "d": "md" // Metroid Dread
   };
   
   function validateStartup(e) {
@@ -41,7 +43,38 @@ let main = {
     
     location.search = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
   }
-
+  
+  function start() {
+    if (location.search.length) {
+      let incomingGame = location.search.split('=')[1];
+      if (rawData.hasOwnProperty(incomingGame)) {
+        let game = null;
+        for (const [key, value] of Object.entries(games)) {
+          if (value == incomingGame) {
+            game = key;
+            break;
+          }
+        }
+        feature.currentGame = incomingGame;
+        feature.workingData = rawData[feature.currentGame];
+        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
+        let foundItem = null;
+        for (let i = 0; i < targetingData.length; i++) {
+          if (targetingData[i].value == game) {
+            foundItem = targetingData[i];
+          }
+        }
+        if (foundItem) {
+          let currentTitle = document.title;
+          document.title = currentTitle + " - " + foundItem.innerHTML;
+        }
+        feature.generate();
+      }
+    }
+  }
+  
+  main.useSprites = false;
   main.games = games;
   main.validateStartup = validateStartup;
+  main.start = start;
 })();

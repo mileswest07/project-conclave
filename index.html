@@ -20,9 +20,10 @@
             <select name="selectedGame">
               <option value="" selected disabled>Select from the menu...</option>
               <option value="m">Metroid (NES)</option>
-              <option value="d">Rogue Dawn (NES)</option>
+              <option value="rd">Rogue Dawn (NES)</option>
               <option value="z">Metroid: Zero Mission (GBA)</option>
               <option value="p">Metroid Prime (GCN)</option>
+              <option value="p2d">Prime 2D (PC)</option>
               <option value="e">Metroid Prime 2: Echoes (GCN)</option>
               <option value="v">Echoes Randovania</option>
               <option value="h">Metroid Prime: Hunters (NDS)</option>
@@ -64,16 +65,7 @@
   <script type="text/javascript">
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-    document.addEventListener("DOMContentLoaded", () => {
-      if (location.search.length) {
-        let incomingGame = location.search.split('=')[1];
-        if (rawData.hasOwnProperty(incomingGame)) {
-          feature.currentGame = incomingGame;
-          feature.workingData = rawData[feature.currentGame];
-          feature.generate();
-        }
-      }
-    });
+    document.addEventListener("DOMContentLoaded", () => { main.start(); });
   </script>
 </body>
 </html>

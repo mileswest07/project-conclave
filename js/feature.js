@@ -62,11 +62,13 @@ let feature = {
               let previousItem = e.target.parentElement.previousSibling;
               let previousImage = previousItem.querySelectorAll(".item-image")[0];
               previousItem.classList.remove("hide-segment");
-              previousImage.classList.remove("deselected"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+              previousImage.classList.remove("deselected"); // this assumes the Previous is an Item. TODO: case when it's an Expansion
             }
           }
         }
-        e.target.classList.add("deselected");
+        if (feature.currentGame !== "mp" || (e.target.parentElement.id !== "item-fusionSuit-0-1" && e.target.parentElement.id !== "item-primeSuit-0-0")) {
+          e.target.classList.add("deselected");
+        }
       } else {
         if (e.target.className.has("deselected")) {
           if (e.target.parentElement.previousSibling) {
@@ -85,9 +87,11 @@ let feature = {
           }
           return;
         }
-        let arr = e.target.className.split(" ");
-        if (arr.indexOf("deselected") === -1) {
-          e.target.className += " deselected";
+        if (feature.currentGame !== "mp" || (e.target.parentElement.id !== "item-fusionSuit-0-1" && e.target.parentElement.id !== "item-primeSuit-0-0")) {
+          let arr = e.target.className.split(" ");
+          if (arr.indexOf("deselected") === -1) {
+            e.target.className += " deselected";
+          }
         }
       }
     } else if (e.which == 2) { // middle click
@@ -138,7 +142,7 @@ let feature = {
               let previousImage = previousItem.querySelectorAll(".item-image")[0];
               if (e.target.classList) { // browser compatibility logic
                 e.target.parentElement.classList.add("hide-segment");
-                previousItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                previousItem.classList.remove("hide-segment"); // this assumes the Previous is an Item. TODO: case when it's an Expansion
                 previousImage.classList.remove("deselected");
               } else {
                 e.target.parentElement.className += " hide-segment";
@@ -262,7 +266,11 @@ let feature = {
     if (element.id === "-") {
       image.src = "images/itemSphere.png";
     } else {
-      image.src = "images/" + element.id + ".png";
+      if (element.hasOwnProperty("sprite") && main.useSprites) {
+        image.src = "images/" + element.sprite + ".png";
+      } else {
+        image.src = "images/" + element.id + ".png";
+      }
     }
     
     image.alt = element.name;
@@ -292,7 +300,7 @@ let feature = {
       wrapper.appendChild(overlayImage);
     }
     
-    if (isSegment) {
+    if (isSegment && (feature.currentGame !== "mp" || (element.id !== "metroid/fusionSuit" && element.id !== "metroid/primeSuit"))) {
       let currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");

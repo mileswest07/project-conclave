@@ -8,6 +8,49 @@ body {
   overflow: hidden;
 }
 
+.slider-switch {
+  display: inline-block;
+  position: relative;
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.slider-switch input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.slider-switch .slider {
+  background-color: #909090;
+  border-radius: 36px;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.slider-switch .slider:before {
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  bottom: 0.3em;
+  content: "";
+  height: 1em;
+  left: 0.3em;
+  position: absolute;
+  width: 1em;
+}
+
+.slider-switch input:checked + .slider {
+  background-color: #f8b000;
+}
+
+.slider-switch input:checked + .slider:before {
+  background-color: #f80000;
+}
+
 #selection:not(.show-menu),
 #selection .gameError.hide-error,
 .hide-menu,
@@ -48,7 +91,7 @@ body {
   margin: 2px;
   position: absolute;
   top: 26px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .level-up-image,
@@ -57,7 +100,7 @@ body {
   left: 0;
   margin: 2px;
   position: absolute;
-  z-index: 5;
+  z-index: 50;
 }
 
 .level-up-image {
@@ -81,6 +124,14 @@ body {
   left: 0;
   margin: 2px;
   position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+.back-image {
+  left: 0;
+  margin: 2px;
+  position: absolute;
   top: 0;
   z-index: 1;
 }

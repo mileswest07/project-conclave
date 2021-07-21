@@ -432,17 +432,20 @@ const rawData = {
       {
         id: "metroid/fusionSuit",
         name: "Fusion Suit",
+        type: "toggle",
         start: 0,
         max: 1,
         segments: [
           {
             id: "metroid/primeSuit",
             name: "Prime Suit Active",
+            type: "toggle",
             start: 1,
             max: 1,
           },{
             id: "metroid/fusionSuit",
             name: "Fusion Suit Active",
+            type: "toggle",
             start: 0,
             max: 1
           }
@@ -2819,29 +2822,35 @@ const rawData = {
         segments: []
       },{
         id: "zelda/bow",
-        name: "Bow",
+        name: "", // "Bow",
         start: 0,
         max: 1,
         over: "zelda/MC_Chest",
         overText: "L1 Big Chest",
-        segments: [
+        segments: [ // assuming progressive bow
           {
             id: "zelda/bow",
-            name: "Bow",
+            name: "Bow and Arrows",
             start: 0,
             max: 1,
             over: "zelda/MC_Chest",
             overText: "L1 Big Chest",
           },{
-            id: "zelda/silverArrows",
-            name: "Silver Arrows",
+            id: "zelda/bowSilver",
+            name: "Bow and Silver Arrows",
             start: 0,
             max: 1
           }
         ]
-      },/* {
+      },/* { // in case of nonprogressive bow
+        id: "zelda/silverArrows",
+        name: "Silver Arrows",
+        start: 0,
+        max: 1,
+        segments: []
+      }, *//* {
         id: "zelda/boomerang",
-        name: "Boomerang",
+        name: "",
         start: 0,
         max: 1,
         over: "zelda/MC_Chest",
@@ -3033,7 +3042,7 @@ const rawData = {
         segments: []
       },{
         id: "zelda/flute",
-        name: "Flute",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -3139,7 +3148,7 @@ const rawData = {
         segments: []
       },{
         id: "zelda/sword",
-        name: "Fighter's Sword",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -3167,7 +3176,7 @@ const rawData = {
         ]
       },{
         id: "zelda/shield",
-        name: "Fighter's Shield",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -3192,7 +3201,7 @@ const rawData = {
         ]
       },{
         id: "zelda/greenJerkin",
-        name: "Green Jerkin",
+        name: "",
         start: 1,
         max: 1,
         segments: [
@@ -3261,7 +3270,7 @@ const rawData = {
         segments: []
       },{
         id: "zelda/powerGlove",
-        name: "Power Glove",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -3303,7 +3312,7 @@ const rawData = {
         segments: []
       },{
         id: "zelda/halfMagic",
-        name: "Half Magic",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -3368,85 +3377,545 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "zelda/pendantOfCourage",
-        name: "Pendant of Courage - Eastern Palace",
+        id: "zelda/ep",
+        name: "Eastern Palace",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Armos Knights Defeated",
-        segments: []
+        back: "zelda/ep",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/pendantOfWisdom",
-        name: "Pendant of Wisdom - Desert Palace",
+        id: "zelda/dp",
+        name: "Desert Palace",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Lanmolas Defeated",
-        segments: []
+        back: "zelda/dp",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/pendantOfPower",
-        name: "Pendant of Power - Tower of Hera",
+        id: "zelda/toh",
+        name: "Tower of Hera",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Moldorm Defeated",
-        segments: []
+        back: "zelda/toh",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/crystal",
-        name: "Crystal - Palace of Darkness",
+        id: "zelda/pod",
+        name: "Palace of Darkness",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Helmasaur King Defeated",
-        segments: []
+        back: "zelda/pod",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/crystal",
-        name: "Crystal - Swamp Palace",
+        id: "zelda/sp",
+        name: "Swamp Palace",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Arrghus Defeated",
-        segments: []
+        back: "zelda/sp",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/crystal",
-        name: "Crystal - Skull Woods",
+        id: "zelda/sw",
+        name: "Skull Woods",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Mothula Defeated",
-        segments: []
+        back: "zelda/sw",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/crystal",
-        name: "Crystal - Thieves' Town",
+        id: "zelda/tt",
+        name: "Thieves' Town",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Blind Defeated",
-        segments: []
+        back: "zelda/tt",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/fairyCrystal",
-        name: "Crystal - Ice Palace",
+        id: "zelda/ip",
+        name: "Ice Palace",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Kholdstare Defeated",
-        segments: []
+        back: "zelda/ip",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/fairyCrystal",
-        name: "Crystal - Misery Mire",
+        id: "zelda/mm",
+        name: "Misery Mire",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Vitreous Defeated",
-        segments: []
+        back: "zelda/mm",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },{
-        id: "zelda/crystal",
-        name: "Crystal - Turtle Rock",
+        id: "zelda/tr",
+        name: "Turtle Rock",
         start: 0,
         max: 1,
         over: "zelda/MC_Skull",
         overText: "Trinexx Defeated",
-        segments: []
+        back: "zelda/tr",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
       },
     ]
   },

@@ -41,12 +41,31 @@ let main = {
       return;
     }
     
-    location.search = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
+    let searchString = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
+    
+    if (document.forms["startupMenu"]["useSprites"].checked) {
+      searchString += "&s=true";
+    }
+    location.search = searchString;
   }
   
   function start() {
     if (location.search.length) {
-      let incomingGame = location.search.split('=')[1];
+      const queryParams = location.search.split('?')[1].split('&');
+      let queryDict = {};
+      for (let i = 0; i < queryParams.length; i++) {
+        const kv = queryParams[i].split('=');
+        let k = kv[0];
+        let val = kv[1];
+        val = decodeURIComponent(val);
+        val = val.replace(/\+/g, ' ');
+        
+        queryDict[k] = val;
+      }
+      let incomingGame = queryDict.game;
+      let willUseSprites = !!queryDict.s;
+      willUseSprites = !!JSON.parse(willUseSprites);
+      main.useSprites = willUseSprites;
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;
         for (const [key, value] of Object.entries(games)) {

@@ -196,17 +196,22 @@ let feature = {
     }
   }
   
-  function renderEntry(element, index, isSegment, isSegmentHidden, maxSegments) {
+  function renderEntry(element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
     if (!isSegment) {
       if (element.segments && element.segments.length > 0) {
         let segmentProgress = element.start;
         for (let j = 0; j < element.segments.length; j++) {
           --segmentProgress;
-          if (element.segments[j].max < 2) {
-            renderEntry(element.segments[j], index + "-" + j, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
+          let segmentName = "";
+          if (elementName && elementName.length) {
+            segmentName = elementName;
+            if (element.segments[j].name && element.segments[j].name.length) {
+              segmentName += " - " + element.segments[j].name;
+            }
           } else {
-            renderEntry(element.segments[j], index + "-" + j, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
+            segmentName = element.segments[j].name;
           }
+          renderEntry(element.segments[j], index + "-" + j, segmentName, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
         }
         return;
       }
@@ -273,10 +278,24 @@ let feature = {
       }
     }
     
-    image.alt = element.name;
-    wrapper.title = element.name;
+    image.alt = element.name || elementName;
+    wrapper.title = elementName || element.name;
     image.height = 42;
     image.width = 42;
+    
+    if (element.hasOwnProperty("back")) {
+      let backImage = document.createElement("img");
+      if (backImage.classList) {
+        backImage.classList.add("back-image");
+      } else {
+        backImage.className = "back-image";
+      }
+      backImage.src = "images/back/" + element.back + ".png";
+      backImage.alt = element.back.split("/")[1];
+      backImage.height = 42;
+      backImage.width = 42;
+      wrapper.appendChild(backImage);
+    }
     
     wrapper.appendChild(image);
     if (element.id !== "-" && element.max > 1) {
@@ -311,7 +330,10 @@ let feature = {
           levelUp.className = "level-up-image";
           wrapper.className += "can-level-up";
         }
-        if (feature.currentGame === "mp" && (element.id === "metroid/fusionSuit" || element.id === "metroid/primeSuit")) {
+        if (
+          element.hasOwnProperty("type") && 
+          (element.type === "toggle" || element.type == "dungeon")
+        ) {
           levelUp.src = "images/overlays/Level_Up_Alt.png";
         } else {
           levelUp.src = "images/overlays/Level_Up.png";
@@ -330,7 +352,10 @@ let feature = {
           levelDown.className = "level-down-image";
           wrapper.className += "can-level-down";
         }
-        if (feature.currentGame === "mp" && (element.id === "metroid/fusionSuit" || element.id === "metroid/primeSuit")) {
+        if (
+          element.hasOwnProperty("type") && 
+          (element.type === "toggle" || element.type == "dungeon")
+        ) {
           levelDown.src = "images/overlays/Level_Down_Alt.png";
         } else {
           levelDown.src = "images/overlays/Level_Down.png";
@@ -361,7 +386,7 @@ let feature = {
     }
     
     // section for main items
-    feature.workingData.items.forEach((element, i) => renderEntry(element, i, false, false, -1));
+    feature.workingData.items.forEach((element, i) => renderEntry(element, i, element.name, false, false, -1));
   }
 
   feature.generate = generate;

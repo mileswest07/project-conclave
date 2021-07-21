@@ -3,24 +3,28 @@ const rawData = {
     items: [
       {
         id: "metroid/highJump",
+        sprite: "metroid/rd_high",
         name: "High Jump Boots",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/rd_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/varia",
+        sprite: "metroid/rd_varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/iceBeamD",
+        sprite: "metroid/rd_ice",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -33,24 +37,28 @@ const rawData = {
         segments: []
       },{
         id: "metroid/wallJumpBoots",
+        sprite: "metroid/rd_wall",
         name: "Wall Jump Boots",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/springBall",
+        sprite: "metroid/rd_spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/rd_screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/waveBeam",
+        sprite: "metroid/rd_wave",
         name: "Prototype Wave Beam",
         start: 0,
         max: 1,
@@ -63,12 +71,14 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/rd_energy",
         name: "Energy Tanks",
         start: 0,
         max: 7,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/rd_missile",
         name: "Missile Tanks",
         start: 0,
         max: 31,
@@ -81,6 +91,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/metroidCapsule",
+        sprite: "metroid/rd_cell",
         name: "Metroid Cell Capsule",
         start: 0,
         max: 1,
@@ -92,24 +103,28 @@ const rawData = {
     items: [
       {
         id: "metroid/morphBall",
+        sprite: "metroid/m_morph",
         name: "Morph Ball",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/varia",
+        sprite: "metroid/m_varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/longBeamB",
+        sprite: "metroid/m_long",
         name: "Long Beam",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/iceBeamD",
+        sprite: "metroid/m_ice",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -122,24 +137,28 @@ const rawData = {
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/m_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/highJump",
+        sprite: "metroid/m_high",
         name: "High Jump Boots",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/m_screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/waveBeam",
+        sprite: "metroid/m_wave",
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -152,12 +171,14 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/m_energy",
         name: "Energy Tanks",
         start: 0,
         max: 8,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/m_missile",
         name: "Missile Tanks",
         start: 0,
         max: 21,
@@ -2090,18 +2111,21 @@ const rawData = {
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/2_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spiderBall",
+        sprite: "metroid/2_spider",
         name: "Spider Ball",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/springBall",
+        sprite: "metroid/2_spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
@@ -2114,24 +2138,28 @@ const rawData = {
         segments: []
       },{
         id: "metroid/varia",
+        sprite: "metroid/2_varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/highJump",
+        sprite: "metroid/2_high",
         name: "High Jump Boots",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spaceJump",
+        sprite: "metroid/2_space",
         name: "Space Jump",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/2_screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
@@ -2144,24 +2172,28 @@ const rawData = {
         segments: []
       },{
         id: "metroid/iceBeamD",
+        sprite: "metroid/2_ice",
         name: "Ice Beam",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/waveBeam",
+        sprite: "metroid/2_wave",
         name: "Wave Beam",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spazerBeamC",
+        sprite: "metroid/2_spazer",
         name: "Spazer Beam",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/plasmaBeamE",
+        sprite: "metroid/2_plasma",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -2174,12 +2206,14 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/2_energy",
         name: "Energy Tanks",
         start: 0,
         max: 6,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/2_missile",
         name: "Missile Tanks",
         start: 0,
         max: 22,
@@ -2192,6 +2226,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/metroid",
+        sprite: "metroid/2_baby",
         name: "Baby Metroid",
         start: 0,
         max: 1,
@@ -3728,19 +3763,22 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/f_energy",
         name: "Energy Tanks",
         start: 0,
         max: 20,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/f_missile",
         name: "Missile Tanks",
         start: 0,
         max: 48,
         segments: []
       },{
         id: "metroid/powerBombTank",
-        name: "Super Missile Tanks",
+        sprite: "metroid/f_pbomb",
+        name: "Power Bomb Tanks",
         start: 0,
         max: 32,
         segments: []

@@ -300,7 +300,7 @@ let feature = {
       wrapper.appendChild(overlayImage);
     }
     
-    if (isSegment && (feature.currentGame !== "mp" || (element.id !== "metroid/fusionSuit" && element.id !== "metroid/primeSuit"))) {
+    if (isSegment) {
       let currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");
@@ -311,7 +311,11 @@ let feature = {
           levelUp.className = "level-up-image";
           wrapper.className += "can-level-up";
         }
-        levelUp.src = "images/overlays/Level_Up.png";
+        if (feature.currentGame === "mp" && (element.id === "metroid/fusionSuit" || element.id === "metroid/primeSuit")) {
+          levelUp.src = "images/overlays/Level_Up_Alt.png";
+        } else {
+          levelUp.src = "images/overlays/Level_Up.png";
+        }
         levelUp.alt = "Level Up";
         levelUp.height = 16;
         levelUp.width = 16;
@@ -326,7 +330,11 @@ let feature = {
           levelDown.className = "level-down-image";
           wrapper.className += "can-level-down";
         }
-        levelDown.src = "images/overlays/Level_Down.png";
+        if (feature.currentGame === "mp" && (element.id === "metroid/fusionSuit" || element.id === "metroid/primeSuit")) {
+          levelDown.src = "images/overlays/Level_Down_Alt.png";
+        } else {
+          levelDown.src = "images/overlays/Level_Down.png";
+        }
         levelDown.alt = "Level Down";
         levelDown.height = 16;
         levelDown.width = 16;

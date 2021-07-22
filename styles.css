@@ -13,6 +13,7 @@ body {
   position: relative;
   width: 1.6em;
   height: 1.6em;
+  top: -4px;
 }
 
 .slider-switch input {

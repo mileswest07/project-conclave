@@ -223,7 +223,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/gravitySuit",
-        name: "Unknown Item 3 - Gravity Suit",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -276,7 +276,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/plasmaBeam",
-        name: "Unknown Item 1 - Plasma Beam",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -331,7 +331,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/spaceJump",
-        name: "Unknown Item 2 - Space Jump",
+        name: "",
         start: 0,
         max: 1,
         segments: [
@@ -431,7 +431,7 @@ const rawData = {
     items: [
       {
         id: "metroid/fusionSuit",
-        name: "Fusion Suit",
+        name: "",
         type: "toggle",
         start: 0,
         max: 1,
@@ -1073,20 +1073,14 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/darkAgonKey",
-        name: "Dark Agon Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/darkAgonKey",
-            name: "Dark Agon Key",
+            name: "Dark Agon Keys",
             start: 0,
             max: 3
           },{
@@ -1103,13 +1097,13 @@ const rawData = {
         ]
       },{
         id: "metroid/darkTorvusKey",
-        name: "Dark Torvus Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/darkTorvusKey",
-            name: "Dark Torvus Key",
+            name: "Dark Torvus Keys",
             start: 0,
             max: 3
           },{
@@ -1126,13 +1120,13 @@ const rawData = {
         ]
       },{
         id: "metroid/ingHiveKey",
-        name: "Ing Hive Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/ingHiveKey",
-            name: "Ing Hive Key",
+            name: "Ing Hive Keys",
             start: 0,
             max: 3
           },{
@@ -1148,7 +1142,7 @@ const rawData = {
           }]
       },{
         id: "metroid/skyTempleKey",
-        name: "Sky Temple Key",
+        name: "",
         start: 0,
         max: 9,
         over: "metroid/Z_Chozo",
@@ -1156,12 +1150,12 @@ const rawData = {
         segments: [
           {
             id: "metroid/skyTempleKey",
-            name: "Sky Temple Key",
+            name: "Sky Temple Keys",
             start: 0,
             max: 9
           },{
             id: "metroid/skyTempleAccess",
-            name: "Sky Temple Access",
+            name: "Sky Temple Accessible",
             start: 0,
             max: 1
           }
@@ -1477,13 +1471,13 @@ const rawData = {
         segments: []
       },{
         id: "metroid/darkAgonKey",
-        name: "Dark Agon Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/darkAgonKey",
-            name: "Dark Agon Key",
+            name: "Dark Agon Keys",
             start: 0,
             max: 3
           },{
@@ -1500,13 +1494,13 @@ const rawData = {
         ]
       },{
         id: "metroid/darkTorvusKey",
-        name: "Dark Torvus Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/darkTorvusKey",
-            name: "Dark Torvus Key",
+            name: "Dark Torvus Keys",
             start: 0,
             max: 3
           },{
@@ -1523,13 +1517,13 @@ const rawData = {
         ]
       },{
         id: "metroid/ingHiveKey",
-        name: "Ing Hive Key",
+        name: "",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/ingHiveKey",
-            name: "Ing Hive Key",
+            name: "Ing Hive Keys",
             start: 0,
             max: 3
           },{
@@ -1545,7 +1539,7 @@ const rawData = {
           }]
       },{
         id: "metroid/skyTempleKey",
-        name: "Sky Temple Key",
+        name: "",
         start: 0,
         max: 9,
         over: "metroid/Z_Chozo",
@@ -1553,12 +1547,12 @@ const rawData = {
         segments: [
           {
             id: "metroid/skyTempleKey",
-            name: "Sky Temple Key",
+            name: "Sky Temple Keys",
             start: 0,
             max: 9
           },{
             id: "metroid/skyTempleAccess",
-            name: "Sky Temple Access",
+            name: "Sky Temple Accessible",
             start: 0,
             max: 1
           }
@@ -1648,144 +1642,144 @@ const rawData = {
         segments: []
       },{
         id: "metroid/alimbicArtifactCA1",
-        name: "Alimbic Artifacts: Celestial Archives 1",
+        name: "Celestial Archives 1",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactCA1",
-            name: "Alimbic Artifacts: Celestial Archives 1",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Celestial Archives Octolith 1",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactAl1",
-        name: "Alimbic Artifacts: Alinos 1",
+        name: "Alinos 1",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactAl1",
-            name: "Alimbic Artifacts: Alinos 1",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Alinos Octolith 1",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactVDO1",
-        name: "Alimbic Artifacts: VDO 1",
+        name: "VDO 1",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactVDO1",
-            name: "Alimbic Artifacts: VDO 1",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "VDO Octolith 1",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactArc1",
-        name: "Alimbic Artifacts: Arcterra 1",
+        name: "Arcterra 1",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactArc1",
-            name: "Alimbic Artifacts: Arcterra 1",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Arcterra Octolith 1",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactCA2",
-        name: "Alimbic Artifacts: Celestial Archives 2",
+        name: "Celestial Archives 2",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactCA2",
-            name: "Alimbic Artifacts: Celestial Archives 2",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Celestial Archives Octolith 2",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactAl2",
-        name: "Alimbic Artifacts: Alinos 2",
+        name: "Alinos 2",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactAl2",
-            name: "Alimbic Artifacts: Alinos 2",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Alinos Octolith 2",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactVDO2",
-        name: "Alimbic Artifacts: VDO 2",
+        name: "VDO 2",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactVDO2",
-            name: "Alimbic Artifacts: VDO 2",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "VDO Octolith 2",
+            name: "Octolith",
             start: 0,
             max: 1
           }
         ]
       },{
         id: "metroid/alimbicArtifactArc2",
-        name: "Alimbic Artifacts: Arcterra 2",
+        name: "Arcterra 2",
         start: 0,
         max: 3,
         segments: [
           {
             id: "metroid/alimbicArtifactArc2",
-            name: "Alimbic Artifacts: Arcterra 2",
+            name: "Alimbic Artifacts",
             start: 0,
             max: 3
           },{
             id: "metroid/octolith",
-            name: "Arcterra Octolith 2",
+            name: "Octolith",
             start: 0,
             max: 1
           }
@@ -2058,8 +2052,14 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "-", // "metroid/norion"
+        name: "", // "Norion Complete"
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-", // "metroid/bryyo"
+        name: "", // "Bryyo Complete"
         start: 0,
         max: 0,
         segments: []
@@ -2068,28 +2068,34 @@ const rawData = {
         name: "Theronian Bomb Components",
         start: 0,
         max: 3,
-        segments: []
+        segments: [
+          /* {
+            id: "metroid/theronianBomb",
+            name: "Theronian Bomb Components",
+            start: 0,
+            max: 3,
+          },{
+            id: "metroid/elysia",
+            name: "Elysia Complete",
+            start: 1,
+            max: 1,
+          }, */
+        ]
       },{
-        id: "-",
-        name: "",
+        id: "-", // "metroid/homeworld"
+        name: "", // "Pirate Homeworld Complete"
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/energyCell",
-        name: "Energy Cell",
+        name: "",
         start: 0,
         max: 9,
         segments: [
           {
             id: "metroid/energyCell",
-            name: "Energy Cell",
+            name: "Energy Cells",
             start: 0,
             max: 9,
             over: "metroid/Z_Chozo",
@@ -2599,6 +2605,7 @@ const rawData = {
     items: [
       {
         id: "metroid/morphBall",
+        sprite: "metroid/s_morph",
         name: "Morphing Ball",
         start: 0,
         max: 1,
@@ -2607,6 +2614,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/s_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -2615,6 +2623,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/springBall",
+        sprite: "metroid/s_spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
@@ -2623,6 +2632,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/s_screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
@@ -2631,6 +2641,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/varia",
+        sprite: "metroid/s_varia",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -2639,6 +2650,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/gravitySuit",
+        sprite: "metroid/s_grav",
         name: "Gravity Suit",
         start: 0,
         max: 1,
@@ -2647,6 +2659,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/xRayScope",
+        sprite: "metroid/s_xray",
         name: "X-Ray Scope",
         start: 0,
         max: 1,
@@ -2662,6 +2675,7 @@ const rawData = {
       },{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
+        sprite: "metroid/s_charge",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -2669,6 +2683,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/spazerBeamC",
+        sprite: "metroid/s_spazer",
         name: "Spazer",
         start: 0,
         max: 1,
@@ -2677,6 +2692,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/iceBeamD",
+        sprite: "metroid/s_ice",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -2685,6 +2701,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/waveBeam",
+        sprite: "metroid/s_wave",
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -2693,6 +2710,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/plasmaBeamE",
+        sprite: "metroid/s_plasma",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -2701,6 +2719,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/highJump",
+        sprite: "metroid/s_high",
         name: "High Jump Boots",
         start: 0,
         max: 1,
@@ -2709,6 +2728,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/speedBoosterB",
+        sprite: "metroid/s_speed",
         name: "Speed Booster",
         start: 0,
         max: 1,
@@ -2717,6 +2737,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/spaceJump",
+        sprite: "metroid/s_space",
         name: "Space Jump",
         start: 0,
         max: 1,
@@ -2731,30 +2752,35 @@ const rawData = {
         segments: []
       },{
         id: "metroid/energyTank",
+        sprite: "metroid/s_energy",
         name: "Energy Tanks",
         start: 0,
         max: 14,
         segments: []
       },{
         id: "metroid/missileTank",
+        sprite: "metroid/s_missile",
         name: "Missile Tanks",
         start: 0,
         max: 46,
         segments: []
       },{
         id: "metroid/superMissileTank",
+        sprite: "metroid/s_super",
         name: "Super Missile Tanks",
         start: 0,
         max: 10,
         segments: []
       },{
         id: "metroid/powerBombTank",
+        sprite: "metroid/s_pbomb",
         name: "Power Bomb Tanks",
         start: 0,
         max: 10,
         segments: []
       },{
         id: "metroid/reserveTank",
+        sprite: "metroid/s_reserve",
         name: "Reserve Tanks",
         start: 0,
         max: 4,
@@ -2767,6 +2793,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/boss",
+        sprite: "metroid/s_boss",
         name: "Bosses",
         start: 0,
         max: 4,
@@ -2785,6 +2812,7 @@ const rawData = {
       {
         id: "metroid/morphBall",
         name: "Morphing Ball",
+        sprite: "metroid/s_morph",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -2792,6 +2820,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/bombB",
+        sprite: "metroid/s_bomb",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -2800,6 +2829,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/springBall",
+        sprite: "metroid/s_spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
@@ -2808,6 +2838,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/screwAttack",
+        sprite: "metroid/s_screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
@@ -2905,6 +2936,7 @@ const rawData = {
       },{
         id: "metroid/varia",
         name: "Varia Suit",
+        sprite: "metroid/s_varia",
         start: 0,
         max: 1,
         over: "metroid/F_Boss",
@@ -2912,6 +2944,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/gravitySuit",
+        sprite: "metroid/s_grav",
         name: "Gravity Suit",
         start: 0,
         max: 1,
@@ -2920,6 +2953,7 @@ const rawData = {
         segments: []
       },{
         id: "metroid/xRayScope",
+        sprite: "metroid/s_xray",
         name: "X-Ray Scope",
         start: 0,
         max: 1,
@@ -2985,6 +3019,7 @@ const rawData = {
       },{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
+        sprite: "metroid/s_charge",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -2993,6 +3028,7 @@ const rawData = {
       },{
         id: "metroid/spazerBeamC",
         name: "Spazer",
+        sprite: "metroid/s_spazer",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3001,6 +3037,7 @@ const rawData = {
       },{
         id: "metroid/iceBeamD",
         name: "Ice Beam",
+        sprite: "metroid/s_ice",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3009,6 +3046,7 @@ const rawData = {
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
+        sprite: "metroid/s_wave",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3079,6 +3117,7 @@ const rawData = {
       },{
         id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
+        sprite: "metroid/s_plasma",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3087,6 +3126,7 @@ const rawData = {
       },{
         id: "metroid/highJump",
         name: "High Jump Boots",
+        sprite: "metroid/s_high",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3095,6 +3135,7 @@ const rawData = {
       },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
+        sprite: "metroid/s_speed",
         start: 0,
         max: 1,
         over: "metroid/Z_Orb",
@@ -3103,6 +3144,7 @@ const rawData = {
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
+        sprite: "metroid/s_space",
         start: 0,
         max: 1,
         over: "metroid/F_Boss",
@@ -3235,24 +3277,28 @@ const rawData = {
       },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
+        sprite: "metroid/s_energy",
         start: 0,
         max: 14,
         segments: []
       },{
         id: "metroid/missileTank",
         name: "Missile Tanks",
+        sprite: "metroid/s_missile",
         start: 0,
         max: 46,
         segments: []
       },{
         id: "metroid/superMissileTank",
         name: "Super Missile Tanks",
+        sprite: "metroid/s_super",
         start: 0,
         max: 10,
         segments: []
       },{
         id: "metroid/powerBombTank",
         name: "Power Bomb Tanks",
+        sprite: "metroid/s_pbomb",
         start: 0,
         max: 10,
         segments: []
@@ -3349,6 +3395,7 @@ const rawData = {
       },{
         id: "metroid/reserveTank",
         name: "Reserve Tanks",
+        sprite: "metroid/s_reserve",
         start: 0,
         max: 4,
         segments: []
@@ -3367,6 +3414,7 @@ const rawData = {
       },{
         id: "metroid/boss",
         name: "Bosses",
+        sprite: "metroid/s_boss",
         start: 0,
         max: 4,
         segments: []
@@ -4269,13 +4317,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      }, {
+      },{
         id: "metroid/etedach",
         name: "Animals Rescued",
         start: 0,
         max: 1,
         segments: []
-      }, {
+      },{
         id: "metroid/reactorCore",
         name: "Main Deck - Reactor Core Auxiliary Power",
         start: 0,

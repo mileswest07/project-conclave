@@ -262,10 +262,12 @@ let feature = {
       }
     }
     
-    if (element.max < 2) {
-      image.addEventListener("mousedown", clickItem);
-    } else {
-      image.addEventListener("mousedown", clickExpansion);
+    if (!(element.id === "-" && !isSegment)) {
+      if (element.max < 2) {
+        image.addEventListener("mousedown", clickItem);
+      } else {
+        image.addEventListener("mousedown", clickExpansion);
+      }
     }
     
     if (element.id === "-") {

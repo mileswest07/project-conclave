@@ -252,6 +252,9 @@ let feature = {
       if (element.max < 2 && element.start < 1) {
         image.classList.add("deselected");
       }
+      if (element.hasOwnProperty("isGo") && element.isGo) {
+        wrapper.classList.add("go-mode-item");
+      }
     } else {
       image.className = "item-image";
       if (element.id === "-") {
@@ -259,6 +262,9 @@ let feature = {
       }
       if (element.max < 2 && element.start < 1) {
         image.className += " deselected";
+      }
+      if (element.hasOwnProperty("isGo") && element.isGo) {
+        wrapper.className += " go-mode-item";
       }
     }
     

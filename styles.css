@@ -158,7 +158,17 @@ body.dark-mode .expansion p {
   mix-blend-mode: multiply;
 }
 
+.go-mode-item > .item-image:not(.deselected),
+.go-mode-item:hover > .item-image {
+  outline: 2px solid black;
+  outline-offset: -2px;
+}
+
 .blank {
   opacity: 0.0 !important;
 }
 
+body.dark-mode .go-mode-item > .item-image:not(.deselected),
+body.dark-mode .go-mode-item:hover > .item-image {
+  outline: 2px solid white;
+}

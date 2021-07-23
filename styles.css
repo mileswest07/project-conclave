@@ -159,6 +159,6 @@ body.dark-mode .expansion p {
 }
 
 .blank {
-  opacity: 0.0;
+  opacity: 0.0 !important;
 }
 

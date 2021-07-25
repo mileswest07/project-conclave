@@ -3160,7 +3160,7 @@ const rawData = {
         id: "zelda/bottle",
         name: "Bottle",
         start: 0,
-        max: 1,
+        max: 4,
         segments: []
       },{
         id: "zelda/somaria",
@@ -4368,4 +4368,1868 @@ const rawData = {
       },
     ]
   },
+  "thf": {
+    items: [
+      {
+        id: "zelda/raft",
+        name: "Raft",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/magicBook",
+        name: "Magic Book",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/magicBook",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/greenJerkin",
+            name: "Green Jerkin",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/blueRing",
+            name: "Blue Ring",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/redRing",
+            name: "Red Ring",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "zelda/ladder",
+        name: "Ladder",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bigKey",
+        name: "Magic Key",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bracelets",
+        name: "Power Bracelet",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/boomerang",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/woodenBoomerang",
+            name: "Boomerang",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/magicBoomerang",
+            name: "Magical Boomerang",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "zelda/bombs",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/arrow",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/arrow",
+            name: "Arrow",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/silverArrows",
+            name: "Silver Arrow",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "zelda/heroBow",
+        name: "Bow",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/candle",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/candle",
+            name: "Blue Candle",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/redCandle",
+            name: "Red Candle",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/recorder",
+        name: "Whistle",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bait",
+        name: "Bait",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/note",
+        name: "Note",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/magicRod",
+        name: "Magic Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/woodenSword",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/woodenSword",
+            name: "Wooden Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/whiteSword",
+            name: "White Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/magicalSword",
+            name: "Magical Sword",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "zelda/magicalShield",
+        name: "Magical Shield",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/heartContainer",
+        name: "Heart Containers",
+        start: 3,
+        max: 16,
+        segments: []
+      },{
+        id: "zelda/bombsExp",
+        name: "I bet you'd like to carry more Bombs",
+        start: 0,
+        max: 2,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/triforce",
+        name: "Triforce Pieces",
+        start: 0,
+        max: 8,
+        segments: []
+      },
+    ]
+  },
+  "aol": {
+    items: [
+      {
+        id: "zelda/redMail",
+        name: "Shield Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/jumpSpell",
+        name: "Jump Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/lifeSpell",
+        name: "Life Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/fairySpell",
+        name: "Fairy Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/fireSpell",
+        name: "Fire Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirrorShield",
+        name: "Reflect Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/spellSpell",
+        name: "Spell Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/thunder",
+        name: "Thunder Spell",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/trophy",
+        name: "Trophy",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirror",
+        name: "Mirror",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/waterOfLife",
+        name: "Water of Life",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/water",
+        name: "Water",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/child",
+        name: "Child",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/note",
+        name: "Bagu's Note",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/redCandle",
+        name: "Candle",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powerGlove",
+        name: "Glove",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/raft",
+        name: "Raft",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/wingedBoots",
+        name: "Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/flute",
+        name: "Flute",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/cross",
+        name: "Cross",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hammer",
+        name: "Hammer",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bigKey",
+        name: "Magic Key",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },/* {
+        id: "zelda/parapa", // "zelda/palace",
+        name: "Parapa Palace Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/midoro", // "zelda/palace",
+        name: "Midoro Palace Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/island", // "zelda/palace",
+        name: "Island Palace Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/maze", // "zelda/palace",
+        name: "Maze Palace Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/onthesea", // "zelda/palace",
+        name: "Palace On The Sea Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hidden", // "zelda/palace",
+        name: "Hidden Palace Crystal",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      }, */{
+        id: "zelda/heartContainer",
+        name: "Heart Containers",
+        start: 4,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/magicContainer",
+        name: "Magic Containers",
+        start: 4,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/downStab",
+        name: "Down Stab",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/upStab",
+        name: "Up Stab",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/heart",
+        name: "Life",
+        start: 1,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/magic",
+        name: "Magic",
+        start: 1,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/attack",
+        name: "Attack",
+        start: 1,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/palace",
+        name: "Palace Crystals",
+        start: 6,
+        max: 6,
+        segments: []
+      },
+    ]
+  },
+  "alttp": {
+    items: [
+      {
+        id: "zelda/bow",
+        name: "Bow",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "L1 Big Chest",
+        segments: [
+          {
+            id: "zelda/bow",
+            name: "Arrows",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L1 Big Chest",
+          },{
+            id: "zelda/bowSilver",
+            name: "Silver Arrows",
+            start: 0,
+            max: 1
+          }
+        ]
+      },{
+        id: "zelda/boomerang",
+        name: "",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "HC Basement Chest",
+        segments: [
+          {
+            id: "zelda/boomerang",
+            name: "Boomerang",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "HC Basement Chest",
+          },{
+            id: "zelda/magicalBoomerang",
+            name: "Magical Boomerang",
+            start: 0,
+            max: 1
+          }
+        ]
+      },{
+        id: "zelda/hookshot",
+        name: "Hookshot",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D2 Big Chest",
+        segments: []
+      },{
+        id: "zelda/bombs",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powder",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/mushroom",
+            name: "Mushroom",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/powder",
+            name: "Magic Powder",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/pendantOfPower",
+        name: "Tower of Hera - Pendent of Courage",
+        start: 0,
+        max: 1,
+        back: "zelda/toh",
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/fireRod",
+        name: "Fire Rod",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D3 Big Chest",
+        segments: []
+      },{
+        id: "zelda/iceRod",
+        name: "Ice Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bombos",
+        name: "Bombos",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/ether",
+        name: "Ether",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/quake",
+        name: "Quake",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/pendantOfWisdom",
+        name: "Desert Palace - Pendent of Wisdom",
+        start: 0,
+        max: 1,
+        back: "zelda/dp",
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/pendantOfCourage",
+        name: "Eastern Palace - Pendent of Courage",
+        start: 0,
+        max: 1,
+        back: "zelda/ep",
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/lamp",
+        name: "Lamp",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hammer",
+        name: "Magic Hammer",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D1 Big Chest",
+        segments: []
+      },{
+        id: "zelda/flute",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/shovel",
+            name: "Shovel",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/flute",
+            name: "Flute",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/fluteBird",
+            name: "Flute (Warping enabled)",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/net",
+        name: "Bug-Catching Net",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/book",
+        name: "Book of Mudora",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },/* {
+        id: "zelda/agahnim", // TODO: make icon for Agahnim completion
+        name: "Agahnim's Tower",
+        start: 0,
+        max: 1,
+        back: "zelda/at",
+        segments: []
+      } */,{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/bottle",
+        name: "Bottle",
+        start: 0,
+        max: 4,
+        segments: []
+      },{
+        id: "zelda/somaria",
+        name: "Cane of Somaria",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D6 Big Chest",
+        segments: []
+      },{
+        id: "zelda/byrna",
+        name: "Cane of Byrna",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/cape",
+        name: "Magic Cape",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirror",
+        name: "Magic Mirror",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/sword",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/sword",
+            name: "Fighter's Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/masterSword",
+            name: "Master Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/temperedSword",
+            name: "Tempered Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/goldenSword",
+            name: "Golden Sword",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/shield",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/shield",
+            name: "Fighter's Shield",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/redShield",
+            name: "Red Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/mirrorShield",
+            name: "Mirror Sword",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D7 Big Chest",
+          }
+        ]
+      },{
+        id: "zelda/greenJerkin",
+        name: "",
+        start: 1,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/greenJerkin",
+            name: "Green Jerkin",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/blueMail",
+            name: "Blue Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D5 Big Chest",
+          },{
+            id: "zelda/redMail",
+            name: "Red Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "GT Big Chest",
+          }
+        ]
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/boots",
+        name: "Pegasus Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powerGlove",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/powerGlove",
+            name: "Power Glove",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L2 Big Chest",
+          },{
+            id: "zelda/titansMitt",
+            name: "Titan's Mitt",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D4 Big Chest",
+          }
+        ]
+      },{
+        id: "zelda/flipper",
+        name: "Zora Flipper",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/moonPearl",
+        name: "Moon Pearl",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "L3 Big Chest",
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/halfMagic",
+        name: "Half Magic",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/arrowsExp",
+        name: "Arrow Capacity",
+        start: 0,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/bombsExp",
+        name: "Bomb Capacity",
+        start: 0,
+        max: 8,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Palace of Darkness - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/pod",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Swamp Palace - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/sp",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Skull Woods - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/sw",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Thieves' Town - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/tt",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Ice Palace - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/ip",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Misery Mire - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/mm",
+        segments: []
+      },{
+        id: "zelda/crystal",
+        name: "Turtle Rock - Crystal",
+        start: 0,
+        max: 1,
+        back: "zelda/tr",
+        segments: []
+      },
+    ]
+  },
+  "z3_rnd": {
+    items: [
+      {
+        id: "zelda/bow",
+        name: "", // "Bow",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "L1 Big Chest",
+        segments: [ // assuming progressive bow
+          {
+            id: "zelda/bow",
+            name: "Bow and Arrows",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L1 Big Chest",
+          },{
+            id: "zelda/bowSilver",
+            name: "Bow and Silver Arrows",
+            start: 0,
+            max: 1
+          }
+        ]
+      },/* { // in case of nonprogressive bow
+        id: "zelda/silverArrows",
+        name: "Silver Arrows",
+        start: 0,
+        max: 1,
+        segments: []
+      }, *//* {
+        id: "zelda/boomerang",
+        name: "",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "HC Basement Chest",
+        segments: [ */
+          {
+            id: "zelda/boomerang",
+            name: "Boomerang",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "HC Basement Chest",
+          },{
+            id: "zelda/magicalBoomerang",
+            name: "Magical Boomerang",
+            start: 0,
+            max: 1
+          }/* 
+        ]
+      } */,{
+        id: "zelda/hookshot",
+        name: "Hookshot",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D2 Big Chest",
+        segments: []
+      },{
+        id: "zelda/bombs",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powder",
+        name: "Magic Powder",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mushroom",
+        name: "Mushroom",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/fireRod",
+        name: "Fire Rod",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D3 Big Chest",
+        segments: []
+      },{
+        id: "zelda/iceRod",
+        name: "Ice Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/bombos",
+        name: "Bombos",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/ether",
+        name: "Ether",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/quake",
+        name: "Quake",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/lamp",
+        name: "Lamp",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/hammer",
+        name: "Magic Hammer",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D1 Big Chest",
+        segments: []
+      },{
+        id: "zelda/shovel",
+        name: "Shovel",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/flute",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/flute",
+            name: "Flute",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/fluteBird",
+            name: "Flute (Warping enabled)",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/net",
+        name: "Bug-Catching Net",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/book",
+        name: "Book of Mudora",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/bottle",
+        name: "Bottle",
+        start: 0,
+        max: 4,
+        segments: []
+      },{
+        id: "zelda/somaria",
+        name: "Cane of Somaria",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "D6 Big Chest",
+        segments: []
+      },{
+        id: "zelda/byrna",
+        name: "Cane of Byrna",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/cape",
+        name: "Magic Cape",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/mirror",
+        name: "Magic Mirror",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/sword",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/sword",
+            name: "Fighter's Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/masterSword",
+            name: "Master Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/temperedSword",
+            name: "Tempered Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/goldenSword",
+            name: "Golden Sword",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/shield",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/shield",
+            name: "Fighter's Shield",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/redShield",
+            name: "Red Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/mirrorShield",
+            name: "Mirror Sword",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D7 Big Chest",
+          }
+        ]
+      },{
+        id: "zelda/greenJerkin",
+        name: "",
+        start: 1,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/greenJerkin",
+            name: "Green Jerkin",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/blueMail",
+            name: "Blue Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D5 Big Chest",
+          },{
+            id: "zelda/redMail",
+            name: "Red Mail",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "GT Big Chest",
+          }
+        ]
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/boots",
+        name: "Pegasus Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/powerGlove",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/powerGlove",
+            name: "Power Glove",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "L2 Big Chest",
+          },{
+            id: "zelda/titansMitt",
+            name: "Titan's Mitt",
+            start: 0,
+            max: 1,
+            over: "zelda/MC_Chest",
+            overText: "D4 Big Chest",
+          }
+        ]
+      },{
+        id: "zelda/flipper",
+        name: "Zora Flipper",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "zelda/moonPearl",
+        name: "Moon Pearl",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Chest",
+        overText: "L3 Big Chest",
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/halfMagic",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/halfMagic",
+            name: "Half Magic",
+            start: 0,
+            max: 1,
+          },{
+            id: "zelda/quarterMagic",
+            name: "Quarter Magic",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/arrowsExp",
+        name: "Arrow Capacity",
+        start: 0,
+        max: 8,
+        segments: []
+      },{
+        id: "zelda/bombsExp",
+        name: "Bomb Capacity",
+        start: 0,
+        max: 8,
+        segments: []
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "zelda/ep",
+        name: "Eastern Palace",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Armos Knights Defeated",
+        back: "zelda/ep",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/ep",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/dp",
+        name: "Desert Palace",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Lanmolas Defeated",
+        back: "zelda/dp",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/dp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/toh",
+        name: "Tower of Hera",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Moldorm Defeated",
+        back: "zelda/toh",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/toh",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/pod",
+        name: "Palace of Darkness",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Helmasaur King Defeated",
+        back: "zelda/pod",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/pod",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/sp",
+        name: "Swamp Palace",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Arrghus Defeated",
+        back: "zelda/sp",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/sp",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/sw",
+        name: "Skull Woods",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Mothula Defeated",
+        back: "zelda/sw",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/sw",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/tt",
+        name: "Thieves' Town",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Blind Defeated",
+        back: "zelda/tt",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/tt",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/ip",
+        name: "Ice Palace",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Kholdstare Defeated",
+        back: "zelda/ip",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/ip",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/mm",
+        name: "Misery Mire",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Vitreous Defeated",
+        back: "zelda/mm",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/mm",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          }
+        ]
+      },{
+        id: "zelda/tr",
+        name: "Turtle Rock",
+        start: 0,
+        max: 1,
+        over: "zelda/MC_Skull",
+        overText: "Trinexx Defeated",
+        back: "zelda/tr",
+        type: "dungeon",
+        segments: [
+          {
+            id: "-",
+            name: "",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfCourage",
+            name: "Pendent of Courage",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfWisdom",
+            name: "Pendent of Wisdom",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/pendantOfPower",
+            name: "Pendent of Power",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/crystal",
+            name: "Crystal",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },{
+            id: "zelda/fairyCrystal",
+            name: "Fairy Crystal",
+            back: "zelda/tr",
+            type: "dungeon",
+            start: 1,
+            max: 1,
+          },
+        ]
+      },
+    ]
+  }
 };

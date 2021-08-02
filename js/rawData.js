@@ -738,7 +738,7 @@ const rawData = {
         start: 0,
         max: 1,
         over: "metroid/Z_Chozo",
-        overText: "Artifact of Truth obtained",
+        overText: "Artifact of Truth acquired",
         segments: []
       },{
         id: "metroid/missile",
@@ -820,7 +820,7 @@ const rawData = {
         name: "Violet Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Great Temple - Main Energy Controller 1",
         segments: []
       },{
@@ -884,7 +884,7 @@ const rawData = {
         name: "Amber Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Agon Wastes - Agon Energy Controller",
         segments: []
       },{
@@ -952,7 +952,7 @@ const rawData = {
         name: "Emerald Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Torvus Bog - Torvus Energy Controller",
         segments: []
       },{
@@ -1022,7 +1022,7 @@ const rawData = {
         name: "Cobalt Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Sanctuary Fortress - Sanctuary Temple",
         segments: []
       },{
@@ -1068,7 +1068,7 @@ const rawData = {
         name: "Light Suit",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Great Temple - Main Energy Controller 2",
         segments: []
       },{
@@ -1110,6 +1110,8 @@ const rawData = {
           {
             id: "metroid/darkAgonKey",
             name: "Dark Agon Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Amorbis required",
             start: 0,
             max: 3
           },{
@@ -1133,6 +1135,8 @@ const rawData = {
           {
             id: "metroid/darkTorvusKey",
             name: "Dark Torvus Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Chykka required",
             start: 0,
             max: 3
           },{
@@ -1156,6 +1160,8 @@ const rawData = {
           {
             id: "metroid/ingHiveKey",
             name: "Ing Hive Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Quadraxis required",
             start: 0,
             max: 3
           },{
@@ -1180,6 +1186,8 @@ const rawData = {
           {
             id: "metroid/skyTempleKey",
             name: "Sky Temple Keys",
+            over: "metroid/E_Lumin_Ex",
+            overText: "Hints acquired",
             start: 0,
             max: 9
           },{
@@ -1205,7 +1213,7 @@ const rawData = {
         name: "Violet Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Great Temple - Main Energy Controller 1",
         segments: []
       },{
@@ -1269,7 +1277,7 @@ const rawData = {
         name: "Amber Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Agon Wastes - Agon Energy Controller",
         segments: []
       },{
@@ -1337,7 +1345,7 @@ const rawData = {
         name: "Emerald Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Torvus Bog - Torvus Energy Controller",
         segments: []
       },{
@@ -1407,7 +1415,7 @@ const rawData = {
         name: "Cobalt Translator",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Sanctuary Fortress - Sanctuary Temple",
         segments: []
       },{
@@ -1453,7 +1461,7 @@ const rawData = {
         name: "Light Suit",
         start: 0,
         max: 1,
-        over: "metroid/Z_Orb",
+        over: "metroid/E_Lumin",
         overText: "Great Temple - Main Energy Controller 2",
         segments: []
       },{
@@ -1507,6 +1515,8 @@ const rawData = {
           {
             id: "metroid/darkAgonKey",
             name: "Dark Agon Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Amorbis required",
             start: 0,
             max: 3
           },{
@@ -1530,6 +1540,8 @@ const rawData = {
           {
             id: "metroid/darkTorvusKey",
             name: "Dark Torvus Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Chykka required",
             start: 0,
             max: 3
           },{
@@ -1553,6 +1565,8 @@ const rawData = {
           {
             id: "metroid/ingHiveKey",
             name: "Ing Hive Keys",
+            over: "metroid/F_Boss_Ex",
+            overText: "Quadraxis required",
             start: 0,
             max: 3
           },{
@@ -1577,6 +1591,8 @@ const rawData = {
           {
             id: "metroid/skyTempleKey",
             name: "Sky Temple Keys",
+            over: "metroid/E_Lumin_Ex",
+            overText: "Hints acquired",
             start: 0,
             max: 9
           },{
@@ -2091,6 +2107,8 @@ const rawData = {
         name: "", // "Bryyo Complete"
         start: 0,
         max: 0,
+        // over: "metroid/F_Boss_Ex",
+        // overText: "Mogenar required",
         segments: []
       },{
         id: "metroid/theronianBomb",
@@ -2101,6 +2119,8 @@ const rawData = {
           /* {
             id: "metroid/theronianBomb",
             name: "Theronian Bomb Components",
+            over: "metroid/F_Boss_Ex",
+            overText: "Helios required",
             start: 0,
             max: 3,
           },{
@@ -2115,6 +2135,8 @@ const rawData = {
         name: "", // "Pirate Homeworld Complete"
         start: 0,
         max: 1,
+        // over: "metroid/F_Boss_Ex",
+        // overText: "Omega Ridley required",
         segments: []
       },{
         id: "metroid/energyCell",
@@ -2127,7 +2149,7 @@ const rawData = {
             name: "Energy Cells",
             start: 0,
             max: 9,
-            over: "metroid/Z_Chozo",
+            over: "metroid/C_Fuse",
             overText: "Hints Acquired",
           },{
             id: "metroid/pirateCode",
@@ -3189,7 +3211,7 @@ const rawData = {
         id: "zelda/bottle",
         name: "Bottle",
         start: 0,
-        max: 1,
+        max: 4,
         segments: []
       },{
         id: "zelda/somaria",

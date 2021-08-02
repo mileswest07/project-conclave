@@ -701,6 +701,35 @@ const rawData = {
       },
     ]
   },
+  "pb": {
+    items: [
+      {
+        id: "metroid/chozoArtifact",
+        name: "Artifacts",
+        start: 0,
+        max: 12,
+        segments: []
+      },{
+        id: "metroid/powerBomb",
+        name: "Power Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/missile",
+        name: "Missile Launcher",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/forceBall",
+        name: "Force Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },
+    ]
+  },
   "p2d": {
     items: [
       {

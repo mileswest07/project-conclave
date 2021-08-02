@@ -4463,7 +4463,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "zelda/bigKey",
+        id: "zelda/lionKey",
         name: "Magic Key",
         start: 0,
         max: 1,
@@ -4773,7 +4773,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "zelda/flute",
+        id: "zelda/whistle",
         name: "Flute",
         start: 0,
         max: 1,
@@ -4791,7 +4791,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "zelda/bigKey",
+        id: "zelda/hiddenKey",
         name: "Magic Key",
         start: 0,
         max: 1,
@@ -4888,10 +4888,22 @@ const rawData = {
         segments: []
       },{
         id: "zelda/palace",
-        name: "Palace Crystals",
-        start: 6,
-        max: 6,
-        segments: []
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "zelda/palace",
+            name: "Palace Crystals",
+            start: 0,
+            max: 6,
+          },{
+            id: "zelda/triforce",
+            name: "Great Palace open",
+            start: 0,
+            max: 1,
+          },
+        ]
       },
     ]
   },

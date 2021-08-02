@@ -50,6 +50,9 @@ let main = {
     if (document.forms["startupMenu"]["useSprites"].checked) {
       searchString += "&s=true";
     }
+    if (document.forms["startupMenu"]["useDarkMode"].checked) {
+      searchString += "&d=true";
+    }
     location.search = searchString;
   }
   
@@ -67,6 +70,15 @@ let main = {
         queryDict[k] = val;
       }
       let incomingGame = queryDict.game;
+      let willUseDarkMode = !!queryDict.d;
+      willUseDarkMode = !!JSON.parse(willUseDarkMode);
+      if (willUseDarkMode) {
+        if (document.body.classList) {
+          document.body.classList.add("dark-mode");
+        } else {
+          document.body.className += "dark-mode";
+        }
+      }
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;

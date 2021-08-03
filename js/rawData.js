@@ -2097,22 +2097,22 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "-", // "metroid/norion"
-        name: "", // "Norion Complete"
+        id: "-", // "metroid/norion",
+        name: "", // "Norion Complete",
         start: 0,
-        max: 0,
+        max: 0, // 1,
         segments: []
       },{
-        id: "-", // "metroid/bryyo"
-        name: "", // "Bryyo Complete"
+        id: "-", // "metroid/bryyo",
+        name: "", // "Bryyo Complete",
         start: 0,
-        max: 0,
+        max: 0, // 1,
         // over: "metroid/F_Boss_Ex",
         // overText: "Mogenar required",
         segments: []
       },{
         id: "metroid/theronianBomb",
-        name: "Theronian Bomb Components",
+        name: "Theronian Bomb Components", // "",
         start: 0,
         max: 3,
         segments: [
@@ -2126,15 +2126,17 @@ const rawData = {
           },{
             id: "metroid/elysia",
             name: "Elysia Complete",
+            over: "metroid/F_Boss_Ex",
+            overText: "Helios required",
             start: 1,
             max: 1,
           }, */
         ]
       },{
-        id: "-", // "metroid/homeworld"
-        name: "", // "Pirate Homeworld Complete"
+        id: "-", // "metroid/urtraghus",
+        name: "", // "Pirate Homeworld Complete",
         start: 0,
-        max: 1,
+        max: 0, // 1,
         // over: "metroid/F_Boss_Ex",
         // overText: "Omega Ridley required",
         segments: []
@@ -4993,7 +4995,7 @@ const rawData = {
         segments: []
       },{
         id: "zelda/pendantOfPower",
-        name: "Tower of Hera - Pendent of Courage",
+        name: "Tower of Hera - Pendent of Power",
         start: 0,
         max: 1,
         back: "zelda/toh",
@@ -5117,14 +5119,14 @@ const rawData = {
         start: 0,
         max: 0,
         segments: []
-      },/* {
-        id: "zelda/agahnim", // TODO: make icon for Agahnim completion
-        name: "Agahnim's Tower",
+      },{
+        id: "zelda/agahnim",
+        name: "Agahnim's Tower - Agahnim defeated",
         start: 0,
         max: 1,
         back: "zelda/at",
         segments: []
-      } */,{
+      },{
         id: "--",
         name: "",
         start: 0,

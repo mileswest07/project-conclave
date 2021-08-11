@@ -231,14 +231,21 @@ let feature = {
     let wrapper = document.createElement("div");
     let image = document.createElement("img");
     let classLabel = element.max < 2 ? "item" : "expansion";
-    wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
     if (wrapper.classList) {
-      wrapper.classList.add("item");
+      if (element.id === "-") {
+        wrapper.classList.add("blank");
+      } else {
+        wrapper.classList.add(classLabel);
+      }
       if (isSegmentHidden) {
         wrapper.classList.add("hide-segment");
       }
     } else {
-      wrapper.className = "item";
+      if (element.id === "-") {
+        wrapper.className += " blank";
+      } else {
+        wrapper.className = classLabel;
+      }
       if (isSegmentHidden) {
         wrapper.className += " hide-segment";
       }
@@ -246,18 +253,12 @@ let feature = {
     
     if (image.classList) {
       image.classList.add("item-image");
-      if (element.id === "-") {
-        image.classList.add("blank");
-      }
-      if (element.max < 2 && element.start < 1) {
+      if (element.max < 2 && element.start < 1 && element.id !== "-") {
         image.classList.add("deselected");
       }
     } else {
       image.className = "item-image";
-      if (element.id === "-") {
-        image.className += " blank";
-      }
-      if (element.max < 2 && element.start < 1) {
+      if (element.max < 2 && element.start < 1 && element.id !== "-") {
         image.className += " deselected";
       }
     }
@@ -271,8 +272,9 @@ let feature = {
     }
     
     if (element.id === "-") {
-      image.src = "images/itemSphere.png";
+      image.src = "images/blank.png";
     } else {
+      wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
       if (element.hasOwnProperty("sprite") && main.useSprites) {
         image.src = "images/" + element.sprite + ".png";
       } else {

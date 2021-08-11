@@ -549,7 +549,7 @@ const rawData = {
         overText: "Phendrana Drifts - Observatory",
         segments: []
       },{
-        id: "metroid/wavebuster",
+        id: "metroid/shockShot",
         name: "Wavebuster",
         start: 0,
         max: 1,
@@ -557,7 +557,7 @@ const rawData = {
         overText: "Chozo Ruins - Tower of Light",
         segments: []
       },{
-        id: "metroid/iceSpreader",
+        id: "metroid/freezeShot",
         name: "Ice Spreader",
         start: 0,
         max: 1,
@@ -565,7 +565,7 @@ const rawData = {
         overText: "Magmoor Caverns - Shore Tunnel",
         segments: []
       },{
-        id: "metroid/flamethrower",
+        id: "metroid/flameShot",
         name: "Flamethrower",
         start: 0,
         max: 1,

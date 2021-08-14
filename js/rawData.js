@@ -83,11 +83,25 @@ const rawData = {
         start: 0,
         max: 31,
         segments: []
-      },{
+      },/* {
         id: "metroid/boss",
         name: "Access",
         start: 0,
         max: 2,
+        segments: []
+      }, */{
+        id: "metroid/m_lock1",
+        sprite: "metroid/rd_captain",
+        name: "Access Lock 1",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/m_lock2",
+        sprite: "metroid/rd_research",
+        name: "Access Lock 2",
+        start: 0,
+        max: 1,
         segments: []
       },{
         id: "metroid/metroidCapsule",
@@ -183,11 +197,25 @@ const rawData = {
         start: 0,
         max: 21,
         segments: []
-      },{
+      },/* {
         id: "metroid/boss",
         name: "Bosses Defeated",
         start: 0,
         max: 2,
+        segments: []
+      }, */ {
+        id: "metroid/m_kraid",
+        sprite: "metroid/m_kraid",
+        name: "Kraid Defeated",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/m_ridley",
+        sprite: "metroid/m_ridley",
+        name: "Ridley Defeated",
+        start: 0,
+        max: 1,
         segments: []
       },
     ]

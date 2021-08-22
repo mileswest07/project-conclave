@@ -11,9 +11,9 @@ let feature = {
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
           if (e.target.parentElement.nextSibling) {
-            if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
+            if (e.target.parentElement.nextSibling.id && e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
-                e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1
               ) {
                 e.target.parentElement.classList.add("hide-segment");
@@ -32,7 +32,7 @@ let feature = {
           if (e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
-                e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1
               ) {
                 e.target.parentElement.className += " hide-segment";
@@ -55,7 +55,7 @@ let feature = {
         if (e.target.parentElement.previousSibling) {
           if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
             if (
-              e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+              parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
               parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1
             ) {
               e.target.parentElement.classList.add("hide-segment");
@@ -66,7 +66,12 @@ let feature = {
             }
           }
         }
-        if (feature.currentGame !== "mp" || (e.target.parentElement.id !== "item-fusionSuit-0-1" && e.target.parentElement.id !== "item-primeSuit-0-0")) {
+        if (
+          (e.target.parentElement.getAttribute("typing") === "toggle") ||
+          (e.target.parentElement.getAttribute("typing") === "dungeon")
+        ) {
+          return;
+        } else {
           e.target.classList.add("deselected");
         }
       } else {
@@ -74,7 +79,7 @@ let feature = {
           if (e.target.parentElement.previousSibling) {
             if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
               if (
-                e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+                parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
                 parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1
               ) {
                 e.target.parentElement.className += " hide-segment";
@@ -87,7 +92,12 @@ let feature = {
           }
           return;
         }
-        if (feature.currentGame !== "mp" || (e.target.parentElement.id !== "item-fusionSuit-0-1" && e.target.parentElement.id !== "item-primeSuit-0-0")) {
+        if (
+          (e.target.parentElement.getAttribute("typing") === "toggle") ||
+          (e.target.parentElement.getAttribute("typing") === "dungeon")
+        ) {
+          return;
+        } else {
           let arr = e.target.className.split(" ");
           if (arr.indexOf("deselected") === -1) {
             e.target.className += " deselected";
@@ -232,7 +242,7 @@ let feature = {
     let image = document.createElement("img");
     let classLabel = element.max < 2 ? "item" : "expansion";
     if (wrapper.classList) {
-      if (element.id === "-") {
+      if (element.id === "-" && !isSegment) {
         wrapper.classList.add("blank");
       } else {
         wrapper.classList.add(classLabel);
@@ -241,7 +251,7 @@ let feature = {
         wrapper.classList.add("hide-segment");
       }
     } else {
-      if (element.id === "-") {
+      if (element.id === "-" && !isSegment) {
         wrapper.className += " blank";
       } else {
         wrapper.className = classLabel;
@@ -272,6 +282,11 @@ let feature = {
     }
     
     if (element.id === "-") {
+      if (isSegment) {
+        let interimText = JSON.stringify(elementName).split(' ');
+        interimText[0] = interimText[0].toLowerCase();
+        wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
+      }
       image.src = "images/blank.png";
     } else {
       wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
@@ -321,6 +336,10 @@ let feature = {
       overlayImage.height = 16;
       overlayImage.width = 16;
       wrapper.appendChild(overlayImage);
+    }
+    
+    if (element.type === "toggle" || element.type === "dungeon") {
+      wrapper.setAttribute("typing", element.type);
     }
     
     if (isSegment) {

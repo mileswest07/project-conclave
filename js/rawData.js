@@ -2913,10 +2913,60 @@ const rawData = {
         segments: []
       },{
         id: "metroid/metroidDna",
-        name: "Metroids",
+        name: "Metroids defeated",
         start: 0,
-        max: 54,
-        segments: []
+        max: 50,
+        segments: [
+          {
+            id: "metroid/metroidDna",
+            name: "Surface",
+            type: "counter",
+            start: 0,
+            max: 1,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 1",
+            start: 0,
+            max: 4,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 2",
+            start: 0,
+            max: 8,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 3",
+            start: 0,
+            max: 10,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 4",
+            type: "counter",
+            start: 0,
+            max: 4,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 5",
+            start: 0,
+            max: 7,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 6",
+            type: "counter",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 7",
+            start: 0,
+            max: 3,
+          },{
+            id: "metroid/metroidDna",
+            name: "Area 8",
+            start: 0,
+            max: 11,
+          },
+        ]
       },{
         id: "metroid/metroid",
         name: "Baby Metroid",

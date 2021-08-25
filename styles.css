@@ -123,6 +123,7 @@ body {
 }
 
 .item-image {
+  filter: drop-shadow(0 0 5px #000);
   left: 0;
   margin: 2px;
   position: relative;
@@ -157,21 +158,21 @@ body {
   opacity: 0.0 !important;
 }
 
-body.dark-mode {
+.dark-mode {
   background: black;
 }
 
-body.dark-mode #startupMenu p,
-body.dark-mode .item p,
-body.dark-mode .expansion p {
+.dark-mode #startupMenu p,
+.dark-mode .item p,
+.dark-mode .expansion p {
   color: white;
 }
 
-body .item-image:not(.deselected) {
+.dark-mode .item-image:not(.deselected) {
   filter: drop-shadow(0 0 5px #fff);
 }
 
-body.dark-mode .deselected {
+.dark-mode .deselected {
   opacity: 0.5;
   mix-blend-mode: normal;
 }

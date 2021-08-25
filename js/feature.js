@@ -240,6 +240,13 @@ let feature = {
     
     let wrapper = document.createElement("div");
     let image = document.createElement("img");
+    
+    let counterAnyway = false;
+    
+    if (element.hasOwnProperty("type") && element.type === "counter") {
+      counterAnyway = true;
+    }
+    
     let classLabel = element.max < 2 ? "item" : "expansion";
     if (wrapper.classList) {
       if (element.id === "-" && !isSegment) {
@@ -263,18 +270,18 @@ let feature = {
     
     if (image.classList) {
       image.classList.add("item-image");
-      if (element.max < 2 && element.start < 1 && element.id !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
         image.classList.add("deselected");
       }
     } else {
       image.className = "item-image";
-      if (element.max < 2 && element.start < 1 && element.id !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
         image.className += " deselected";
       }
     }
     
     if (!(element.id === "-" && !isSegment)) {
-      if (element.max < 2) {
+      if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
         image.addEventListener("mousedown", clickExpansion);
@@ -317,7 +324,7 @@ let feature = {
     }
     
     wrapper.appendChild(image);
-    if (element.id !== "-" && element.max > 1) {
+    if (element.id !== "-" && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");
       label.innerText = element.start + " / " + element.max;
       wrapper.appendChild(label);
@@ -338,7 +345,7 @@ let feature = {
       wrapper.appendChild(overlayImage);
     }
     
-    if (element.type === "toggle" || element.type === "dungeon") {
+    if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
       wrapper.setAttribute("typing", element.type);
     }
     

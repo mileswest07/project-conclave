@@ -443,6 +443,7 @@ const rawData = {
       },{
         id: "metroid/zipline",
         name: "Zipline",
+        sprite: "metroid/z_zipline",
         start: 0,
         max: 1,
         segments: []
@@ -720,12 +721,26 @@ const rawData = {
         segments: []
       },{
         id: "metroid/chozoArtifact",
-        name: "Chozo Artifacts",
+        name: "",
         start: 0,
         max: 12,
         over: "metroid/Z_Chozo",
         overText: "Hints Acquired",
-        segments: []
+        segments: [
+          {
+            id: "metroid/chozoArtifact",
+            name: "Chozo Artifacts",
+            over: "metroid/Z_Chozo",
+            overText: "Hints Acquired",
+            start: 0,
+            max: 12
+          },{
+            id: "metroid/cipher",
+            name: "Impact Crater Accessible",
+            start: 0,
+            max: 1
+          }
+        ]
       },
     ]
   },
@@ -1708,7 +1723,7 @@ const rawData = {
         max: 12,
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -1785,6 +1800,36 @@ const rawData = {
             max: 1
           }
         ]
+      },{
+        id: "--",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "metroid/oubliette",
+        name: "Oubliette unlocked",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
       },{
         id: "metroid/alimbicArtifactCA2",
         name: "Celestial Archives 2",
@@ -2125,26 +2170,50 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "-", // "metroid/norion",
-        name: "", // "Norion Complete",
+        id: "-",
+        name: "",
         start: 0,
-        max: 0, // 1,
+        max: 0,
         segments: []
       },{
-        id: "-", // "metroid/bryyo",
-        name: "", // "Bryyo Complete",
+        id: "-",
+        name: "",
         start: 0,
-        max: 0, // 1,
-        // over: "metroid/F_Boss_Ex",
-        // overText: "Mogenar required",
+        max: 0,
         segments: []
       },{
         id: "metroid/theronianBomb",
-        name: "Theronian Bomb Components", // "",
+        name: "Theronian Bomb Components",
+        start: 0,
+        max: 3,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },/*{
+        id: "metroid/norion",
+        name: "Norion Complete",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/bryyo",
+        name: "Bryyo Complete",
+        start: 0,
+        max: 1,
+        over: "metroid/F_Boss_Ex",
+        overText: "Mogenar required",
+        segments: []
+      },{
+        id: "metroid/theronianBomb",
+        name: "",
         start: 0,
         max: 3,
         segments: [
-          /* {
+          {
             id: "metroid/theronianBomb",
             name: "Theronian Bomb Components",
             over: "metroid/F_Boss_Ex",
@@ -2158,21 +2227,22 @@ const rawData = {
             overText: "Helios required",
             start: 1,
             max: 1,
-          }, */
+          },
         ]
       },{
-        id: "-", // "metroid/urtraghus",
-        name: "", // "Pirate Homeworld Complete",
+        id: "metroid/urtraghus",
+        name: "Pirate Homeworld Complete",
         start: 0,
-        max: 0, // 1,
-        // over: "metroid/F_Boss_Ex",
-        // overText: "Omega Ridley required",
+        max: 1,
+        over: "metroid/F_Boss_Ex",
+        overText: "Omega Ridley required",
         segments: []
-      },{
+      },*/{
         id: "metroid/energyCell",
         name: "",
         start: 0,
         max: 9,
+        back: "metroid/valhalla",
         segments: [
           {
             id: "metroid/energyCell",
@@ -2184,6 +2254,11 @@ const rawData = {
           },{
             id: "metroid/pirateCode",
             name: "Pirate Code",
+            start: 0,
+            max: 1
+          },{
+            id: "metroid/phaaze",
+            name: "Phaaze accessible",
             start: 0,
             max: 1
           }
@@ -2310,10 +2385,75 @@ const rawData = {
         segments: []
       },{
         id: "metroid/metroidDna",
-        name: "Metroids",
+        name: "Metroids defeated",
+        sprite: "metroid/2_monsters",
         start: 0,
         max: 49,
-        segments: []
+        segments: [
+          {
+            id: "metroid/metroidDna",
+            name: "Phase 1",
+            sprite: "metroid/2_monsters",
+            type: "counter",
+            start: 0,
+            max: 1,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 2",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 4,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 3",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 8,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 4",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 10,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 5",
+            sprite: "metroid/2_monsters",
+            type: "counter",
+            start: 0,
+            max: 1,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 6",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 7",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 7,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 8",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 9",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 3,
+          },{
+            id: "metroid/metroidDna",
+            name: "Phase 10",
+            sprite: "metroid/2_monsters",
+            start: 0,
+            max: 9,
+          },
+        ]
       },{
         id: "metroid/metroid",
         sprite: "metroid/2_baby",
@@ -2329,48 +2469,56 @@ const rawData = {
       {
         id: "metroid/morphBall",
         name: "Morph Ball",
+        sprite: "metroid/am2r_morph",
         start: 1,
         max: 1,
         segments: []
       },{
         id: "metroid/varia",
         name: "Varia Suit",
+        sprite: "metroid/am2r_varia",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/gravitySuit",
         name: "Gravity Suit",
+        sprite: "metroid/am2r_gravity",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
+        sprite: "metroid/am2r_charge",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spazerBeamA",
         name: "Spazer Beam",
+        sprite: "metroid/am2r_spazer",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/waveBeam",
         name: "Wave Beam",
+        sprite: "metroid/am2r_wave",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
+        sprite: "metroid/am2r_plasma",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/iceBeamD",
         name: "Ice Beam",
+        sprite: "metroid/am2r_ice",
         start: 0,
         max: 1,
         segments: []
@@ -2383,48 +2531,56 @@ const rawData = {
       },{
         id: "metroid/bombB",
         name: "Bombs",
+        sprite: "metroid/am2r_bombs",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spiderBall",
         name: "Spider Ball",
+        sprite: "metroid/am2r_spider",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/springBall",
         name: "Spring Ball",
+        sprite: "metroid/am2r_spring",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/powerGrip",
         name: "Power Grip",
+        sprite: "metroid/am2r_grip",
         start: 1,
         max: 1,
         segments: []
       },{
         id: "metroid/highJump",
         name: "High Jump Boots",
+        sprite: "metroid/am2r_high",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/spaceJump",
         name: "Space Jump",
+        sprite: "metroid/am2r_space",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/speedBoosterB",
         name: "Speed Booster",
+        sprite: "metroid/am2r_speed",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/screwAttack",
         name: "Screw Attack",
+        sprite: "metroid/am2r_screw",
         start: 0,
         max: 1,
         segments: []
@@ -2437,24 +2593,28 @@ const rawData = {
       },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
+        sprite: "metroid/am2r_energy",
         start: 0,
         max: 10,
         segments: []
       },{
         id: "metroid/missileTank",
         name: "Missile Tanks",
+        sprite: "metroid/am2r_missile",
         start: 0,
         max: 45,
         segments: []
       },{
         id: "metroid/superMissileTank",
         name: "Super Missile Tanks",
+        sprite: "metroid/am2r_smissile",
         start: 0,
         max: 10,
         segments: []
       },{
         id: "metroid/powerBombTank",
         name: "Power Bomb Tanks",
+        sprite: "metroid/am2r_pbombs",
         start: 0,
         max: 10,
         segments: []
@@ -2466,19 +2626,103 @@ const rawData = {
         segments: []
       },{
         id: "metroid/metroidDna",
-        name: "Metroids",
+        name: "Metroids defeated",
         start: 0,
-        max: 54,
-        segments: []
+        max: 0,
+        segments: [
+          {
+            id: "metroid/metroidDna",
+            name: "Surface",
+            sprite: "metroid/am2r_monster",
+            type: "counter",
+            start: 0,
+            max: 1,
+          },{
+            id: "metroid/metroidDna",
+            name: "Golden Temple",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 4,
+          },{
+            id: "metroid/metroidDna",
+            name: "Hydro Station",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 8,
+          },{
+            id: "metroid/metroidDna",
+            name: "Industrial Complex",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 10,
+          },{
+            id: "metroid/metroidDna",
+            name: "Research Site",
+            sprite: "metroid/am2r_monster",
+            type: "counter",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "Mining Facility",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "The Tower",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 6,
+          },{
+            id: "metroid/metroidDna",
+            name: "Distribution Center",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 8,
+          },/* {
+            id: "metroid/metroidDna",
+            name: "Upper Areas",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 38,
+          }, */{
+            id: "metroid/metroidDna",
+            name: "Rescue Team Campsite",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 2,
+          },{
+            id: "metroid/metroidDna",
+            name: "The Nest",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 3,
+          },{
+            id: "metroid/metroidDna",
+            name: "Genetics Laboratory",
+            sprite: "metroid/am2r_monster",
+            start: 0,
+            max: 9,
+          },/*{
+            id: "metroid/metroidDna",
+            name: "Genetics Laboratory - EXTREME LABS",
+            sprite: "metroid/am2r_monsterEL",
+            start: 0,
+            max: 47,
+          },*/
+        ]
       },{
         id: "metroid/am2rPowerOrb",
         name: "Power Orbs Distributed",
+        sprite: "metroid/am2r_battery",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/metroid",
         name: "Baby Metroid",
+        sprite: "metroid/am2r_baby",
         start: 0,
         max: 1,
         segments: []

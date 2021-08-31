@@ -16,8 +16,8 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/varia",
-        sprite: "metroid/rd_varia",
+        id: "metroid/barrier",
+        sprite: "metroid/rd_barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -104,7 +104,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/metroidCapsule",
+        id: "metroid/monsterCapsule",
         sprite: "metroid/rd_cell",
         name: "Metroid Cell Capsule",
         start: 0,
@@ -123,8 +123,8 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/varia",
-        sprite: "metroid/m_varia",
+        id: "metroid/barrier",
+        sprite: "metroid/m_barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -241,8 +241,8 @@ const rawData = {
         overText: "Bombs Orb Acquired",
         segments: []
       },{
-        id: "metroid/varia",
-        sprite: "metroid/z_varia",
+        id: "metroid/barrier",
+        sprite: "metroid/z_barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -480,7 +480,7 @@ const rawData = {
           }
         ]
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -2302,8 +2302,8 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/varia",
-        sprite: "metroid/2_varia",
+        id: "metroid/barrier",
+        sprite: "metroid/2_barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -2384,70 +2384,70 @@ const rawData = {
         max: 22,
         segments: []
       },{
-        id: "metroid/metroidDna",
+        id: "metroid/monsterDna",
         name: "Metroids defeated",
         sprite: "metroid/2_monsters",
         start: 0,
         max: 49,
         segments: [
           {
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 1",
             sprite: "metroid/2_monsters",
             type: "counter",
             start: 0,
             max: 1,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 2",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 4,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 3",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 8,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 4",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 10,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 5",
             sprite: "metroid/2_monsters",
             type: "counter",
             start: 0,
             max: 1,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 6",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 7",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 7,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 8",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 9",
             sprite: "metroid/2_monsters",
             start: 0,
             max: 3,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Phase 10",
             sprite: "metroid/2_monsters",
             start: 0,
@@ -2455,7 +2455,7 @@ const rawData = {
           },
         ]
       },{
-        id: "metroid/metroid",
+        id: "metroid/monster",
         sprite: "metroid/2_baby",
         name: "Baby Metroid",
         start: 0,
@@ -2474,9 +2474,9 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Suit",
-        sprite: "metroid/am2r_varia",
+        sprite: "metroid/am2r_barrier",
         start: 0,
         max: 1,
         segments: []
@@ -2625,87 +2625,87 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/metroidDna",
+        id: "metroid/monsterDna",
         name: "Metroids defeated",
         start: 0,
         max: 0,
         segments: [
           {
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Surface",
             sprite: "metroid/am2r_monster",
             type: "counter",
             start: 0,
             max: 1,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Golden Temple",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 4,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Hydro Station",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 8,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Industrial Complex",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 10,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Research Site",
             sprite: "metroid/am2r_monster",
             type: "counter",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Mining Facility",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "The Tower",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 6,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Distribution Center",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 8,
           },/* {
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Upper Areas",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 38,
           }, */{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Rescue Team Campsite",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "The Nest",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 3,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Genetics Laboratory",
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 9,
           },/*{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Genetics Laboratory - EXTREME LABS",
             sprite: "metroid/am2r_monsterEL",
             start: 0,
@@ -2720,7 +2720,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/metroid",
+        id: "metroid/monster",
         name: "Baby Metroid",
         sprite: "metroid/am2r_baby",
         start: 0,
@@ -2766,7 +2766,7 @@ const rawData = {
         overText: "Area 6 - Diggernaut Defeated",
         segments: []
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -2912,63 +2912,63 @@ const rawData = {
         max: 14,
         segments: []
       },{
-        id: "metroid/metroidDna",
+        id: "metroid/monsterDna",
         name: "Metroids defeated",
         start: 0,
         max: 50,
         segments: [
           {
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Surface",
             type: "counter",
             start: 0,
             max: 1,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 1",
             start: 0,
             max: 4,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 2",
             start: 0,
             max: 8,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 3",
             start: 0,
             max: 10,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 4",
             type: "counter",
             start: 0,
             max: 4,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 5",
             start: 0,
             max: 7,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 6",
             type: "counter",
             start: 0,
             max: 2,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 7",
             start: 0,
             max: 3,
           },{
-            id: "metroid/metroidDna",
+            id: "metroid/monsterDna",
             name: "Area 8",
             start: 0,
             max: 11,
           },
         ]
       },{
-        id: "metroid/metroid",
+        id: "metroid/monster",
         name: "Baby Metroid",
         start: 0,
         max: 1,
@@ -3015,8 +3015,8 @@ const rawData = {
         overText: "Screw Attack Orb Acquired",
         segments: []
       },{
-        id: "metroid/varia",
-        sprite: "metroid/s_varia",
+        id: "metroid/barrier",
+        sprite: "metroid/s_barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -3309,9 +3309,9 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Suit",
-        sprite: "metroid/s_varia",
+        sprite: "metroid/s_barrier",
         start: 0,
         max: 1,
         over: "metroid/F_Boss",
@@ -4375,7 +4375,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Feature",
         start: 0,
         max: 1,
@@ -4626,7 +4626,7 @@ const rawData = {
         overText: "Neo-Ridley-X Defeated",
         segments: []
       },{
-        id: "metroid/varia",
+        id: "metroid/barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,

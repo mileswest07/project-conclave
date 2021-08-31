@@ -23,6 +23,10 @@ let main = {
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
     // "d": "md" // Metroid Dread
+    "z1": "thf", // The Legend of Zelda
+    "z2": "aol", // Zelda 2: The Adventure of Link
+    "z3": "alttp", // The Legend of Zelda: A Link to the Past
+    "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
   };
   
   function validateStartup(e) {

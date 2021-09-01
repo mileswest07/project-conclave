@@ -154,8 +154,8 @@ body {
   mix-blend-mode: multiply;
 }
 
-.go-mode-item > .item-image:not(.deselected),
-.go-mode-item:hover > .item-image {
+.go-mode-item:not(:hover) > .item-image.deselected,
+.go-mode-item:hover > .item-image:not(.deselected) {
   outline: 2px solid black;
   outline-offset: -2px;
 }
@@ -182,8 +182,8 @@ body {
   filter: drop-shadow(0 0 5px #fff);
 }
 
-.dark-mode .go-mode-item > .item-image:not(.deselected),
-.dark-mode .go-mode-item:hover > .item-image {
+.dark-mode .go-mode-item:not(:hover) > .item-image.deselected,
+.dark-mode .go-mode-item:hover > .item-image:not(.deselected) {
   outline: 2px solid white;
 }
 

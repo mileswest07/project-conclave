@@ -150,10 +150,12 @@ let feature = {
               let nextImage = nextItem.querySelectorAll(".item-image")[0];
               if (e.target.classList) { // browser compatibility logic
                 e.target.parentElement.classList.add("hide-segment");
+                nextItem.classList.add("unlocked-down");
                 nextItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
                 nextImage.classList.remove("deselected");
               } else {
                 e.target.parentElement.className += " hide-segment";
+                nextItem.className += " unlocked-down";
                 nextItem.className += nextImage.className.replace(/\bhide\-segment\b/g);
                 nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
               }
@@ -175,10 +177,12 @@ let feature = {
               let previousImage = previousItem.querySelectorAll(".item-image")[0];
               if (e.target.classList) { // browser compatibility logic
                 e.target.parentElement.classList.add("hide-segment");
+                previousItem.classList.add("unlocked-up");
                 previousItem.classList.remove("hide-segment"); // this assumes the Previous is an Item. TODO: case when it's an Expansion
                 previousImage.classList.remove("deselected");
               } else {
                 e.target.parentElement.className += " hide-segment";
+                previousItem.className += " unlocked-up";
                 previousItem.className += previousItem.className.replace(/\bhide\-segment\b/g);
                 previousImage.className += previousImage.className.replace(/\bdeselected\b/g);
               }
@@ -201,6 +205,44 @@ let feature = {
     values[0] = previous;
 
     e.target.parentElement.querySelectorAll("p")[0].innerText = values.join(" ");
+    if (
+      e.target.parentElement.nextSibling &&
+      e.target.parentElement.nextSibling.id.split('-').length === 4 &&
+      e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+      parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1 &&
+      previous === max
+    ) {
+      if (e.target.classList) { // browser compatibility logic
+          e.target.parentElement.classList.add("unlocked-up");
+      } else {
+          e.target.parentElement.className += " unlocked-up";
+      }
+    } else {
+      if (e.target.classList) { // browser compatibility logic
+          e.target.parentElement.classList.remove("unlocked-up");
+      } else {
+          e.target.parentElement.className += e.target.parentElement.className.replace(/\unlocked-up\b/g);
+      }
+    }
+    if (
+      e.target.parentElement.previousSibling &&
+      e.target.parentElement.previousSibling.id.split('-').length === 4 &&
+      e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
+      parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1 &&
+      previous == 0
+    ) {
+      if (e.target.classList) { // browser compatibility logic
+        e.target.parentElement.classList.add("unlocked-down");
+      } else {
+        e.target.parentElement.className += " unlocked-down";
+      }
+    } else {
+      if (e.target.classList) { // browser compatibility logic
+        e.target.parentElement.classList.remove("unlocked-down");
+      } else {
+        e.target.parentElement.className += e.target.parentElement.className.replace(/\unlocked-down\b/g);
+      }
+    }
   }
   
   function clickOverlay(e) {
@@ -263,7 +305,11 @@ let feature = {
       counterAnyway = true;
     }
     
-    let classLabel = element.max < 2 ? "item" : "expansion";
+    if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
+      wrapper.setAttribute("typing", element.type);
+    }
+    
+    let classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
     if (wrapper.classList) {
       if (element.id === "-" && !isSegment) {
         wrapper.classList.add("blank");
@@ -359,10 +405,6 @@ let feature = {
       overlayImage.height = 16;
       overlayImage.width = 16;
       wrapper.appendChild(overlayImage);
-    }
-    
-    if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
-      wrapper.setAttribute("typing", element.type);
     }
     
     if (isSegment) {

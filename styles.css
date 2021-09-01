@@ -5,6 +5,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  padding: 10px;
 }
 
 .slider-switch {
@@ -127,8 +128,10 @@ body {
 }
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
-.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
-.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
+.item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
+.item.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image,
+.expansion.unlocked-up.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
+.expansion.unlocked-down.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
   display: block;
 }
 

@@ -99,12 +99,13 @@ body {
   height: 80px;
 }
 
+.hint-image,
 .overlay-image {
   display: none;
   right: 0;
   margin: 0;
   position: absolute;
-  bottom: 0;
+  top: 26px;
   z-index: 100;
 }
 
@@ -122,9 +123,10 @@ body {
 }
 
 .level-down-image {
-  bottom: 0;
+  top: 26px;
 }
 
+#expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
 .can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
 .can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
   display: block;

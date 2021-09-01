@@ -2386,6 +2386,8 @@ const rawData = {
         id: "metroid/plasmaBeamE",
         name: "Plasma Beam",
         sprite: "metroid/am2r_plasma",
+        over: "metroid/F_Boss",
+        overText: "Tester Defeated",
         start: 0,
         max: 1,
         segments: []
@@ -2393,6 +2395,8 @@ const rawData = {
         id: "metroid/iceBeamD",
         name: "Ice Beam",
         sprite: "metroid/am2r_ice",
+        over: "metroid/F_Boss",
+        overText: "Serris Defeated",
         start: 0,
         max: 1,
         segments: []
@@ -2414,6 +2418,8 @@ const rawData = {
         id: "metroid/springBall",
         name: "Spring Ball",
         sprite: "metroid/am2r_spring",
+        over: "metroid/F_Boss",
+        overText: "Arachnus Defeated",
         start: 0,
         max: 1,
         segments: []
@@ -2435,6 +2441,8 @@ const rawData = {
         id: "metroid/spaceJump",
         name: "Space Jump",
         sprite: "metroid/am2r_space",
+        over: "metroid/F_Boss",
+        overText: "Torizo Defeated",
         start: 0,
         max: 1,
         segments: []
@@ -2477,6 +2485,8 @@ const rawData = {
         id: "metroid/powerBombTank",
         name: "Power Bomb Tanks",
         sprite: "metroid/am2r_pbombs",
+        over: "metroid/Z_Orb",
+        overText: "Power Plant Destroyed",
         start: 0,
         max: 10,
         segments: []
@@ -2566,13 +2576,7 @@ const rawData = {
             sprite: "metroid/am2r_monster",
             start: 0,
             max: 9,
-          },/*{
-            id: "metroid/monsterDna",
-            name: "Genetics Laboratory - EXTREME LABS",
-            sprite: "metroid/am2r_monsterEL",
-            start: 0,
-            max: 47,
-          },*/
+          },
         ]
       },{
         id: "metroid/am2rPowerOrb",

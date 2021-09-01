@@ -4,6 +4,25 @@ let feature = {
 
 (() => {
   
+  function am2r_extremeLabs(setOrReturn) {
+    let targetId = "";
+    if (setOrReturn) {
+      targetId = "expansion-monsterDna-21-10";
+    } else {
+      targetId = "expansion-monsterDna-21-10x";
+    }
+    const source = document.getElementById(targetId);
+    let hintImage = source.querySelector(".hint-image");
+    if (hintImage) source.removeChild(hintImage);
+    
+    source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
+    source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');
+    source.firstChild.src = setOrReturn ? source.firstChild.src.replace('am2r_monster', 'am2r_monsterEL') : source.firstChild.src.replace('am2r_monsterEL', 'am2r_monster');
+    let newP = document.createElement("p");
+    newP.innerText = "0 / " + (setOrReturn ? "47" : "9");
+    source.replaceChild(newP, source.children[1]);
+  }
+  
   function clickItem(e) {
     e.preventDefault();
     
@@ -105,7 +124,11 @@ let feature = {
         }
       }
     } else if (e.which == 2) { // middle click
-      clickOverlay(e);
+      if (feature.currentGame === "am2r" && (e.target.parentElement.id === "expansion-monsterDna-21-10" || e.target.parentElement.id === "expansion-monsterDna-21-10x")) {
+        am2r_extremeLabs(e.target.parentElement.id === "expansion-monsterDna-21-10");
+      } else {
+        clickOverlay(e);
+      }
     }
   }
   
@@ -166,7 +189,11 @@ let feature = {
       }
       previous--;
     } else if (e.which == 2) { // middle click
-      clickOverlay(e);
+      if (feature.currentGame === "am2r" && (e.target.parentElement.id === "expansion-monsterDna-21-10" || e.target.parentElement.id === "expansion-monsterDna-21-10x")) {
+        am2r_extremeLabs(e.target.parentElement.id === "expansion-monsterDna-21-10");
+      } else {
+        clickOverlay(e);
+      }
       return;
     } else {
       return;
@@ -386,7 +413,21 @@ let feature = {
       }
     }
     
-    document.getElementById("itemField").appendChild(wrapper);
+    if (feature.currentGame === "am2r" && wrapper.id === "expansion-monsterDna-21-10") {
+      let hint = document.createElement("img");
+      if (hint.classList) {
+        hint.classList.add("hint-image");
+      } else {
+        hint.className = "hint-image";
+      }
+      hint.src = "images/overlays/or.png";
+      hint.alt = "Toggle Extreme Labs";
+      hint.height = 16;
+      hint.width = 16;
+      wrapper.appendChild(hint);
+    }
+    
+    destination.appendChild(wrapper);
   }
   
   function generate(destinationId) {

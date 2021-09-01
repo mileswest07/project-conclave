@@ -206,7 +206,7 @@ let feature = {
     }
   }
   
-  function renderEntry(element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
+  function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
     if (!isSegment) {
       if (element.segments && element.segments.length > 0) {
         let segmentProgress = element.start;
@@ -221,21 +221,10 @@ let feature = {
           } else {
             segmentName = element.segments[j].name;
           }
-          renderEntry(element.segments[j], index + "-" + j, segmentName, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
+          renderEntry(destination, element.segments[j], index + "-" + j, segmentName, element.segments.length > 1, segmentProgress <= 0 && j !== 0, element.segments.length);
         }
         return;
       }
-    }
-    
-    if (element.id === "--") {
-      let breakage = document.createElement("div");
-      if (breakage.classList) {
-        breakage.classList.add("clear-both");
-      } else {
-        breakage.className = "clear-both";
-      }
-      document.getElementById("itemField").appendChild(breakage);
-      return;
     }
     
     let wrapper = document.createElement("div");
@@ -400,23 +389,12 @@ let feature = {
     document.getElementById("itemField").appendChild(wrapper);
   }
   
-  function generate() {
-    let menuPointer = document.getElementById("selection");
-    if (menuPointer.classList) { // browser compatibility logic
-      menuPointer.classList.remove("show-menu");
-    } else {
-      menuPointer.className += menuPointer.className.replace(/\bshow-menu\b/g);
-    }
-    
-    let target = document.getElementById("itemField");
-    if (target.classList) { // browser compatibility logic
-      target.classList.remove("hide-section");
-    } else {
-      target.className += target.className.replace(/\bhide-section\b/g);
-    }
+  function generate(destinationId) {
+    const destination = document.getElementById(destinationId);
+    destination.style.width = "" + ((parseInt(feature.workingData.width) * 42) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
     
     // section for main items
-    feature.workingData.items.forEach((element, i) => renderEntry(element, i, element.name, false, false, -1));
+    feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
   }
 
   feature.generate = generate;

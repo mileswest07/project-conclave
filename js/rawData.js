@@ -1,5 +1,6 @@
 const rawData = {
   "mrd": {
+    width: 5,
     items: [
       {
         id: "metroid/highJump",
@@ -30,7 +31,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -64,7 +65,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -114,6 +115,7 @@ const rawData = {
     ]
   },
   "m1": {
+    width: 4,
     items: [
       {
         id: "metroid/morphBall",
@@ -144,12 +146,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/bombB",
         sprite: "metroid/m_bomb",
         name: "Bombs",
@@ -176,12 +172,6 @@ const rawData = {
         name: "Wave Beam",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -221,6 +211,7 @@ const rawData = {
     ]
   },
   "mzm": {
+    width: 6,
     items: [
       {
         id: "metroid/morphBall",
@@ -279,7 +270,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -343,7 +334,7 @@ const rawData = {
         overText: "Wave Beam Orb Acquired",
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -407,7 +398,7 @@ const rawData = {
         overText: "Screw Attack Orb Acquired",
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -457,6 +448,7 @@ const rawData = {
     ]
   },
   "mp": {
+    width: 5,
     items: [
       {
         id: "metroid/fusionSuit",
@@ -512,12 +504,6 @@ const rawData = {
         overText: "Tallon Overworld - Alcove",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/powerBeam",
         name: "Power Beam",
         start: 1,
@@ -554,12 +540,6 @@ const rawData = {
         max: 1,
         over: "metroid/Z_Orb",
         overText: "Magmoor Caverns - Plasma Processing",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/missile",
@@ -602,12 +582,6 @@ const rawData = {
         overText: "Phazon Mines - Storage Depot A",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/morphBall",
         name: "Morph Ball",
         start: 0,
@@ -648,12 +622,6 @@ const rawData = {
         overText: "Phazon Mines - Central Dynamo",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/combatVisor",
         name: "Combat Visor",
         start: 1,
@@ -688,12 +656,6 @@ const rawData = {
         max: 1,
         over: "metroid/Z_Orb",
         overText: "Phazon Mines - Storage Depot B",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -745,6 +707,7 @@ const rawData = {
     ]
   },
   "pb": {
+    width: 4,
     items: [
       {
         id: "metroid/chozoArtifact",
@@ -774,6 +737,7 @@ const rawData = {
     ]
   },
   "p2d": {
+    width: 3,
     items: [
       {
         id: "metroid/powerGrip",
@@ -798,12 +762,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 1,
-        segments: []
-      },{
         id: "metroid/bomb",
         name: "Bombs",
         start: 0,
@@ -820,12 +778,6 @@ const rawData = {
         name: "Spring Ball",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -851,6 +803,7 @@ const rawData = {
     ]
   },
   "mp2e": {
+    width: 8,
     items: [
       {
         id: "metroid/combatVisor",
@@ -911,12 +864,6 @@ const rawData = {
         overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/scanVisor",
         name: "Scan Visor",
         start: 1,
@@ -975,12 +922,6 @@ const rawData = {
         max: 1,
         over: "metroid/F_Boss",
         overText: "Amorbis Defeated",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/darkVisor",
@@ -1047,12 +988,6 @@ const rawData = {
         overText: "Torvus Bog - Hydrodynamo Storage",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/echoVisor",
         name: "Echo Visor",
         start: 0,
@@ -1113,12 +1048,6 @@ const rawData = {
         max: 1,
         over: "metroid/E_Lumin",
         overText: "Great Temple - Main Energy Controller 2",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -1244,6 +1173,7 @@ const rawData = {
     ]
   },
   "e_rnd": {
+    width: 8,
     items: [
       {
         id: "metroid/combatVisor",
@@ -1304,12 +1234,6 @@ const rawData = {
         overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/scanVisor",
         name: "Scan Visor",
         start: 1,
@@ -1368,12 +1292,6 @@ const rawData = {
         max: 1,
         over: "metroid/F_Boss",
         overText: "Amorbis Defeated",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/darkVisor",
@@ -1440,12 +1358,6 @@ const rawData = {
         overText: "Torvus Bog - Hydrodynamo Storage",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/echoVisor",
         name: "Echo Visor",
         start: 0,
@@ -1508,12 +1420,6 @@ const rawData = {
         overText: "Great Temple - Main Energy Controller 2",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -1544,7 +1450,19 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -1649,6 +1567,7 @@ const rawData = {
     ]
   },
   "ph": {
+    width: 8,
     items: [
       {
         id: "metroid/missile",
@@ -1697,12 +1616,6 @@ const rawData = {
         name: "Omega Cannon",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -1800,12 +1713,6 @@ const rawData = {
             max: 1
           }
         ]
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },{
         id: "metroid/oubliette",
         name: "Oubliette unlocked",
@@ -1906,6 +1813,7 @@ const rawData = {
     ]
   },
   "mp3c": {
+    width: 8,
     items: [
       {
         id: "metroid/powerBeamC",
@@ -1950,7 +1858,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -2014,12 +1922,6 @@ const rawData = {
         max: 1,
         over: "metroid/F_Boss",
         overText: "Helios Defeated",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/boostBall",
@@ -2086,12 +1988,6 @@ const rawData = {
         overText: "Omega Ridley Defeated",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/ped",
         name: "P.E.D. Suit",
         start: 0,
@@ -2144,12 +2040,6 @@ const rawData = {
         max: 1,
         over: "metroid/Z_Orb",
         overText: "Pirate Homeworld - Pirate Command - Command Vault",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -2267,6 +2157,7 @@ const rawData = {
     ]
   }, 
   "m2ros": {
+    width: 4,
     items: [
       {
         id: "-",
@@ -2294,12 +2185,6 @@ const rawData = {
         name: "Spring Ball",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/barrier",
@@ -2330,12 +2215,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/iceBeamD",
         sprite: "metroid/2_ice",
         name: "Ice Beam",
@@ -2362,12 +2241,6 @@ const rawData = {
         name: "Plasma Beam",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -2465,6 +2338,7 @@ const rawData = {
     ]
   },
   "am2r": {
+    width: 8,
     items: [
       {
         id: "metroid/morphBall",
@@ -2523,12 +2397,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/bombB",
         name: "Bombs",
         sprite: "metroid/am2r_bombs",
@@ -2583,12 +2451,6 @@ const rawData = {
         sprite: "metroid/am2r_screw",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -2730,6 +2592,7 @@ const rawData = {
     ]
   },
   "msr": {
+    width: 7,
     items: [
       {
         id: "metroid/morphBall",
@@ -2778,12 +2641,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/scanPulse",
         name: "Scan Pulse",
         start: 0,
@@ -2828,12 +2685,6 @@ const rawData = {
         overText: "Area 4 - Survived Diggernaut",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/chargeBeamD",
         name: "Charge Beam",
         start: 0,
@@ -2874,12 +2725,6 @@ const rawData = {
         name: "Screw Attack",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "metroid/energyTank",
@@ -2977,6 +2822,7 @@ const rawData = {
     ]
   },
   "sm": {
+    width: 8,
     items: [
       {
         id: "metroid/morphBall",
@@ -3042,7 +2888,7 @@ const rawData = {
         overText: "X-Ray Scope Orb Acquired",
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -3120,12 +2966,6 @@ const rawData = {
         overText: "Draygon Defeated",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/energyTank",
         sprite: "metroid/s_energy",
         name: "Energy Tanks",
@@ -3183,6 +3023,7 @@ const rawData = {
     ]
   },
   "smz3": {
+    width: 15,
     items: [
       {
         id: "metroid/morphBall",
@@ -3303,7 +3144,19 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -3386,7 +3239,25 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -3484,7 +3355,25 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -3644,7 +3533,13 @@ const rawData = {
           }
         ]
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -3762,7 +3657,13 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4343,6 +4244,7 @@ const rawData = {
     ]
   },
   "mom": {
+    width: 8,
     items: [
       {
         id: "metroid/morphBall",
@@ -4393,12 +4295,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/diffusionBeam",
         name: "Diffusion Beam",
         start: 0,
@@ -4447,12 +4343,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/energyTank",
         name: "Energy Tanks",
         start: 0,
@@ -4486,6 +4376,7 @@ const rawData = {
     ]
   },
   "mf": {
+    width: 7,
     items: [
       {
         id: "metroid/missileA",
@@ -4544,12 +4435,6 @@ const rawData = {
         overText: "Sector 5 ARC - Data Room",
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
@@ -4588,7 +4473,13 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4648,7 +4539,7 @@ const rawData = {
         max: 1,
         segments: []
       }, */{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4705,7 +4596,25 @@ const rawData = {
         max: 1,
         segments: []
       }, */{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4744,6 +4653,7 @@ const rawData = {
     ]
   },
   "thf": {
+    width: 6,
     items: [
       {
         id: "zelda/raft",
@@ -4797,12 +4707,6 @@ const rawData = {
         name: "Power Bracelet",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "zelda/boomerang",
@@ -4871,7 +4775,7 @@ const rawData = {
           },
         ]
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4901,7 +4805,13 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -4963,6 +4873,7 @@ const rawData = {
     ]
   },
   "aol": {
+    width: 8,
     items: [
       {
         id: "zelda/redMail",
@@ -5013,12 +4924,6 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "-",
         name: "",
         start: 0,
@@ -5065,12 +4970,6 @@ const rawData = {
         name: "Bagu's Note",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "zelda/redCandle",
@@ -5120,12 +5019,6 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },/* {
         id: "zelda/parapa", // "zelda/palace",
         name: "Parapa Palace Crystal",
@@ -5161,12 +5054,6 @@ const rawData = {
         name: "Hidden Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       }, */{
         id: "zelda/heartContainer",
@@ -5232,6 +5119,7 @@ const rawData = {
     ]
   },
   "alttp": {
+    width: 8,
     items: [
       {
         id: "zelda/bow",
@@ -5323,7 +5211,7 @@ const rawData = {
         back: "zelda/toh",
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -5379,12 +5267,6 @@ const rawData = {
         start: 0,
         max: 1,
         back: "zelda/ep",
-        segments: []
-      },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
         segments: []
       },{
         id: "zelda/lamp",
@@ -5449,7 +5331,7 @@ const rawData = {
         back: "zelda/at",
         segments: []
       },{
-        id: "--",
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -5567,12 +5449,6 @@ const rawData = {
           }
         ]
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "zelda/boots",
         name: "Pegasus Boots",
         start: 0,
@@ -5639,12 +5515,6 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "--",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "zelda/crystal",
         name: "Palace of Darkness - Crystal",
         start: 0,
@@ -5697,6 +5567,7 @@ const rawData = {
     ]
   },
   "z3_rnd": {
+    width: 10,
     items: [
       {
         id: "zelda/bow",
@@ -5775,7 +5646,19 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -5813,7 +5696,31 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -5869,7 +5776,25 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -5987,7 +5912,13 @@ const rawData = {
           }
         ]
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,
@@ -6071,7 +6002,13 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "--",
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
         name: "",
         start: 0,
         max: 0,

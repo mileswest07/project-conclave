@@ -56,7 +56,14 @@ body {
 .hide-menu,
 .hide-section,
 .hide-segment {
-  display: none;
+  display: none !important;
+}
+
+.flex-field {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 #selection .gameError {
@@ -83,16 +90,21 @@ body {
 .item,
 .expansion,
 .blank {
-  float: left;
   position: relative;
+  width: 42px;
+  height: 42px;
+}
+
+.expansion {
+  height: 80px;
 }
 
 .overlay-image {
   display: none;
-  left: 26px;
-  margin: 2px;
+  right: 0;
+  margin: 0;
   position: absolute;
-  top: 26px;
+  bottom: 0;
   z-index: 100;
 }
 
@@ -100,7 +112,7 @@ body {
 .level-down-image {
   display: none;
   left: 0;
-  margin: 2px;
+  margin: 0;
   position: absolute;
   z-index: 50;
 }
@@ -110,7 +122,7 @@ body {
 }
 
 .level-down-image {
-  top: 26px;
+  bottom: 0;
 }
 
 .can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
@@ -125,15 +137,14 @@ body {
 .item-image {
   filter: drop-shadow(0 0 5px #000);
   left: 0;
-  margin: 2px;
+  margin: 0;
   position: relative;
   top: 0;
   z-index: 10;
 }
 
 .back-image {
-  left: 0;
-  margin: 2px;
+  right: 0;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -143,7 +154,7 @@ body {
 .expansion p {
   font-size: 0.8em;
   font-weight: bold;
-  margin-top: 0;
+  margin: 0;
   text-align: center;
 }
 

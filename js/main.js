@@ -103,7 +103,18 @@ let main = {
           let currentTitle = document.title;
           document.title = currentTitle + " - " + foundItem.innerHTML;
         }
-        feature.generate();
+        
+        let menuPointer = document.getElementById("selection");
+        menuPointer.remove();
+        
+        let target = document.getElementById("itemField");
+        if (target.classList) { // browser compatibility logic
+          target.classList.remove("hide-section");
+        } else {
+          target.className += target.className.replace(/\bhide-section\b/g);
+        }
+        
+        feature.generate("itemField");
       }
     }
   }

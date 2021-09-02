@@ -4569,61 +4569,132 @@ const rawData = {
         start: 0,
         max: 32,
         segments: []
-      },/* {
-        id: "metroid/sector1SRX",
-        name: "Sector 1 SRX - Ventilation Units",
+      },{
+        id: "-",
+        name: "",
         start: 0,
-        max: 5,
+        max: 0,
         segments: []
       },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },/* {
         id: "metroid/pumpControlUnit",
-        name: "Sector 4 AQA - Pump Control Unit",
+        name: "Water level lowered.",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/mainBoiler",
-        name: "Sector 3 PYR - Main Boiler Cooling Unit",
+        name: "Cooling unit operational.",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/etedach",
-        name: "Animals Rescued",
+        name: "Lock disengaged. Gate opening.",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "metroid/reactorCore",
-        name: "Main Deck - Reactor Core Auxiliary Power",
+        name: "Auxiliary power engaged.",
         start: 0,
         max: 1,
         segments: []
+      }, *//* {
+        id: "metroid/mainDeck",
+        name: "Main Deck",
+        segments: [
+          {
+            id: "metroid/mainDeck",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector1SRX",
+        name: "Sector 1 SRX",
+        segments: [
+          {
+            id: "metroid/sector1SRX",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector2TRO",
+        name: "Sector 2 TRO",
+        segments: [
+          {
+            id: "metroid/sector2TRO",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector3PYR",
+        name: "Sector 3 PYR",
+        segments: [
+          {
+            id: "metroid/sector3PYR",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector4AQA",
+        name: "Sector 4 AQA",
+        segments: [
+          {
+            id: "metroid/sector4AQA",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector5ARC",
+        name: "Sector 5 ARC",
+        segments: [
+          {
+            id: "metroid/sector5ARC",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "metroid/sector6NOC",
+        name: "Sector 6 NOC",
+        segments: [
+          {
+            id: "metroid/sector6NOC",
+            name: "Sector Clear",
+            start: 0,
+            max: 1,
+          },
+        ]
       }, */{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
         id: "metroid/securityL0",
         name: "Security Level 0",
         start: 0,
@@ -5024,6 +5095,12 @@ const rawData = {
         max: 1,
         segments: []
       },/* {
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
         id: "zelda/parapa", // "zelda/palace",
         name: "Parapa Palace Crystal",
         start: 0,
@@ -5058,6 +5135,12 @@ const rawData = {
         name: "Hidden Palace Crystal",
         start: 0,
         max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
         segments: []
       }, */{
         id: "zelda/heartContainer",

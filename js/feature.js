@@ -17,7 +17,9 @@ let feature = {
     
     source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
     source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');
-    source.firstChild.src = setOrReturn ? source.firstChild.src.replace('am2r_monster', 'am2r_monsterEL') : source.firstChild.src.replace('am2r_monsterEL', 'am2r_monster');
+    if (main.useSprites) {
+      source.firstChild.src = setOrReturn ? source.firstChild.src.replace('am2r_monster', 'am2r_monsterEL') : source.firstChild.src.replace('am2r_monsterEL', 'am2r_monster');
+    }
     let newP = document.createElement("p");
     newP.innerText = "0 / " + (setOrReturn ? "47" : "9");
     source.replaceChild(newP, source.children[1]);

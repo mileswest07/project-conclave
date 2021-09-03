@@ -716,7 +716,7 @@ const rawData = {
         max: 12,
         segments: []
       },{
-        id: "metroid/powerBomb",
+        id: "metroid/powerBombA",
         name: "Power Bombs",
         start: 0,
         max: 1,
@@ -762,7 +762,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/bombD",
+        id: "metroid/bombC",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -956,7 +956,7 @@ const rawData = {
         overText: "Temple Grounds - Grand Windchamber",
         segments: []
       },{
-        id: "metroid/seekerLauncher",
+        id: "metroid/seekerLauncherA",
         name: "Seeker Launcher",
         start: 0,
         max: 1,
@@ -1326,7 +1326,7 @@ const rawData = {
         overText: "Temple Grounds - Grand Windchamber",
         segments: []
       },{
-        id: "metroid/seekerLauncher",
+        id: "metroid/seekerLauncherA",
         name: "Seeker Launcher",
         start: 0,
         max: 1,

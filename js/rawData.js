@@ -427,7 +427,7 @@ const rawData = {
       },{
         id: "metroid/powerBombTank",
         sprite: "metroid/z_powerBombTank",
-        name: "Super Missile Tanks",
+        name: "Power Bomb Tanks",
         start: 0,
         max: 9,
         segments: []
@@ -590,7 +590,7 @@ const rawData = {
         overText: "Chozo Ruins - Ruined Shrine",
         segments: []
       },{
-        id: "metroid/bomb",
+        id: "metroid/bombC",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -614,7 +614,7 @@ const rawData = {
         overText: "Thardus Defeated",
         segments: []
       },{
-        id: "metroid/powerBomb",
+        id: "metroid/powerBombA",
         name: "Power Bomb",
         start: 0,
         max: 1,
@@ -658,7 +658,7 @@ const rawData = {
         overText: "Phazon Mines - Storage Depot B",
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 14,
@@ -670,7 +670,7 @@ const rawData = {
         max: 49,
         segments: []
       },{
-        id: "metroid/powerBombTank",
+        id: "metroid/powerBombExp",
         name: "Power Bomb Expansions",
         start: 0,
         max: 4,
@@ -762,7 +762,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/bomb",
+        id: "metroid/bombD",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -780,7 +780,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 2,
@@ -806,7 +806,7 @@ const rawData = {
     width: 8,
     items: [
       {
-        id: "metroid/combatVisor",
+        id: "metroid/combatVisorA",
         name: "Combat Visor",
         start: 1,
         max: 1,
@@ -840,7 +840,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/bomb",
+        id: "metroid/bombD",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -864,7 +864,7 @@ const rawData = {
         overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
-        id: "metroid/scanVisor",
+        id: "metroid/scanVisorA",
         name: "Scan Visor",
         start: 1,
         max: 1,
@@ -1026,7 +1026,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/powerBomb",
+        id: "metroid/powerBombB",
         name: "Power Bombs",
         start: 0,
         max: 1,
@@ -1050,7 +1050,7 @@ const rawData = {
         overText: "Great Temple - Main Energy Controller 2",
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 14,
@@ -1068,7 +1068,7 @@ const rawData = {
         max: 4,
         segments: []
       },{
-        id: "metroid/powerBombTank",
+        id: "metroid/powerBombExpA",
         name: "Power Bomb Expansions",
         start: 0,
         max: 8,
@@ -1176,7 +1176,7 @@ const rawData = {
     width: 8,
     items: [
       {
-        id: "metroid/combatVisor",
+        id: "metroid/combatVisorA",
         name: "Combat Visor",
         start: 1,
         max: 1,
@@ -1210,7 +1210,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/bomb",
+        id: "metroid/bombD",
         name: "Bombs",
         start: 1,
         max: 1,
@@ -1234,7 +1234,7 @@ const rawData = {
         overText: "Dark Alpha Splinter Defeated",
         segments: []
       },{
-        id: "metroid/scanVisor",
+        id: "metroid/scanVisorA",
         name: "Scan Visor",
         start: 1,
         max: 1,
@@ -1396,7 +1396,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/powerBomb",
+        id: "metroid/powerBombB",
         name: "Power Bombs",
         start: 0,
         max: 1,
@@ -1420,7 +1420,7 @@ const rawData = {
         overText: "Great Temple - Main Energy Controller 2",
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 14,
@@ -1444,7 +1444,7 @@ const rawData = {
         max: 10,
         segments: []
       },{
-        id: "metroid/powerBombTank",
+        id: "metroid/powerBombExpA",
         name: "Power Bomb Expansions",
         start: 0,
         max: 8,
@@ -1618,7 +1618,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 7,
@@ -1852,7 +1852,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/scanVisorA",
+        id: "metroid/scanVisorB",
         name: "Scan Visor",
         start: 1,
         max: 1,
@@ -1900,7 +1900,7 @@ const rawData = {
         overText: "Rundas Defeated",
         segments: []
       },{
-        id: "metroid/seekerLauncher",
+        id: "metroid/seekerLauncherB",
         name: "Seeker Launcher",
         start: 0,
         max: 1,
@@ -2042,7 +2042,7 @@ const rawData = {
         overText: "Pirate Homeworld - Pirate Command - Command Vault",
         segments: []
       },{
-        id: "metroid/energyTank",
+        id: "metroid/energyTankA",
         name: "Energy Tanks",
         start: 0,
         max: 14,

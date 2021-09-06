@@ -2369,16 +2369,16 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "metroid/spazerBeamA",
-        name: "Spazer Beam",
-        sprite: "metroid/am2r_spazer",
+        id: "metroid/waveBeam",
+        name: "Wave Beam",
+        sprite: "metroid/am2r_wave",
         start: 0,
         max: 1,
         segments: []
       },{
-        id: "metroid/waveBeam",
-        name: "Wave Beam",
-        sprite: "metroid/am2r_wave",
+        id: "metroid/spazerBeamA",
+        name: "Spazer Beam",
+        sprite: "metroid/am2r_spazer",
         start: 0,
         max: 1,
         segments: []
@@ -4414,7 +4414,43 @@ const rawData = {
         over: "metroid/F_Data",
         overText: "Sector 4 AQA - Data Room",
         segments: []
-      },{
+      },/*{
+        id: "metroid/missile",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "metroid/missileA",
+            name: "Missiles",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Data",
+            overText: "Operations Deck - Data Room"
+          },{
+            id: "metroid/missile",
+            name: "Super Missiles",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Data",
+            overText: "Sector 3 PYR - Data Room",
+          },{
+            id: "metroid/iceMissile",
+            name: "Ice Missiles",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Data",
+            overText: "Sector 5 ARC - Data Room",
+          },{
+            id: "metroid/superMissile",
+            name: "Diffusion Effect",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Data",
+            overText: "Sector 4 AQA - Data Room",
+          },
+        ]
+      },*/{
         id: "metroid/morphBall",
         name: "Morph Ball",
         start: 0,
@@ -4438,7 +4474,53 @@ const rawData = {
         over: "metroid/F_Data",
         overText: "Sector 5 ARC - Data Room",
         segments: []
-      },{
+      },/*{
+        id: "metroid/powerBeam",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "metroid/powerBeamD",
+            name: "Power Beam",
+            start: 1,
+            max: 1,
+          },{
+            id: "metroid/chargeBeamE",
+            name: "Charge Beam",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "Elephant Bird Defeated",
+          },{
+            id: "metroid/wideBeamB",
+            name: "Wide Beam",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "Wide Laser Core-X Defeated",
+          },{
+            id: "metroid/plasmaBeamF",
+            name: "Plasma Beam",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "Nettori Defeated",
+          },{
+            id: "metroid/waveBeamC",
+            name: "Wave Beam",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "SR-BOX 2 Defeated",
+          },{
+            id: "metroid/iceBeamE",
+            name: "Ice Beam",
+            start: 0,
+            max: 1,
+          }
+        ]
+      },*/{
         id: "metroid/chargeBeamF",
         name: "Charge Beam",
         start: 0,
@@ -4520,7 +4602,35 @@ const rawData = {
         over: "metroid/F_Boss",
         overText: "Neo-Ridley-X Defeated",
         segments: []
+      },/*{
+        id: "metroid/fusionSuit",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "metroid/barrier",
+            name: "Varia Suit",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "Barrier Core-X Defeated",
+          },{
+            id: "metroid/gravitySuit",
+            name: "Gravity Suit",
+            start: 0,
+            max: 1,
+            over: "metroid/F_Boss",
+            overText: "Nightmare Defeated",
+          }
+        ]
       },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },*/{
         id: "metroid/barrier",
         name: "Varia Suit",
         start: 0,

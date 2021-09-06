@@ -4379,6 +4379,236 @@ const rawData = {
       },
     ]
   },
+  "mng": {
+    width: 6,
+    items: [
+      {
+        id: "metroid/barrier",
+        name: "Varia Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/gravitySuit",
+        name: "Gravity Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/phazonSuit",
+        name: "Phazon Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/zeroSuit",
+        name: "Zero Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/fullPowerSuit",
+        name: "Black Zero Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/zeroSuitA",
+        name: "Equipment recovered",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/chargeBeamC",
+        name: "Charge Module",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/flameShot",
+        name: "Fire Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/spazerBeamC",
+        name: "Spazer",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/waveBeam",
+        name: "Wave Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/plasmaBeamE",
+        name: "Plasma Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/iceBeamD",
+        name: "Ice Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/morphBall",
+        name: "Morph Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/bomb",
+        name: "Bomb",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/springBall",
+        name: "Jump Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/spiderBall",
+        name: "Spider Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/bombA",
+        name: "Bomb-Beam Adapter",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/speedBoosterB",
+        name: "Speed Booster",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/highJump",
+        name: "Hi-Jump Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/spaceJump",
+        name: "Space Jump",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/powerGrip",
+        name: "Power Grip",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/screwAttack",
+        name: "Screw Attack",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "metroid/energyTank",
+        name: "Energy Tanks",
+        start: 0,
+        max: 14,
+        segments: []
+      },{
+        id: "metroid/missileTank",
+        name: "Missile Tanks",
+        start: 0,
+        max: 50,
+        segments: []
+      },{
+        id: "metroid/superMissileTank",
+        name: "Super Missile Tanks",
+        start: 0,
+        max: 20,
+        segments: []
+      },{
+        id: "metroid/magneticShieldTank",
+        name: "Magnetic Shield Tanks",
+        start: 0,
+        max: 15,
+        segments: []
+      },{
+        id: "metroid/powerBombTank",
+        name: "Power Bomb Tanks",
+        start: 0,
+        max: 10,
+        segments: []
+      },{
+        id: "metroid/monsterDna",
+        name: "Metroids defeated",
+        start: 0,
+        max: 80,
+        segments: [
+          {
+            id: "metroid/monsterDna",
+            name: "To unlock Trozodia",
+            type: "counter",
+            start: 0,
+            max: 1,
+          },{
+            id: "metroid/monsterDna",
+            name: "To unlock Pyrfair",
+            type: "counter",
+            start: 1,
+            max: 5,
+          },{
+            id: "metroid/monsterDna",
+            name: "To unlock Aqastar",
+            type: "counter",
+            start: 5,
+            max: 10,
+          },{
+            id: "metroid/monsterDna",
+            name: "To unlock Arcteria",
+            type: "counter",
+            start: 10,
+            max: 20,
+          },{
+            id: "metroid/monsterDna",
+            name: "To power up your ship",
+            type: "counter",
+            start: 20,
+            max: 35,
+          },{
+            id: "metroid/monsterDna",
+            name: "To unlock the Heart of the Galaxy",
+            type: "counter",
+            start: 35,
+            max: 60,
+          },{
+            id: "metroid/monsterDna",
+            name: "Genocide",
+            type: "counter",
+            start: 60,
+            max: 80,
+          },
+        ]
+      },
+    ]
+  },
   "mf": {
     width: 7,
     items: [

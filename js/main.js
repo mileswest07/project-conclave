@@ -22,6 +22,7 @@ let main = {
     "3": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
+    "n": "mng", // Metroid: A New Galaxy
     // "d": "md" // Metroid Dread
     "z1": "thf", // The Legend of Zelda
     "z2": "aol", // Zelda 2: The Adventure of Link

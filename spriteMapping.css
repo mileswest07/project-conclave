@@ -1,0 +1,755 @@
+/* == placeholders == */
+
+img.item-image.morphBall { background: url("images/m_graphics.png") 0 0; }
+img.item-image.bomb { background: url("images/m_graphics.png") -42px 0; }
+img.item-image.bombA { background: url("images/m_graphics.png") -84px 0; }
+img.item-image.bombB { background: url("images/m_graphics.png") -126px 0; }
+img.item-image.bombC { background: url("images/m_graphics.png") -168px 0; }
+img.item-image.powerBomb { background: url("images/m_graphics.png") -210px 0; }
+img.item-image.powerBombA { background: url("images/m_graphics.png") -252px 0; }
+img.item-image.powerBombB { background: url("images/m_graphics.png") -294px 0; }
+img.item-image.powerBombTank { background: url("images/m_graphics.png") -336px 0; }
+img.item-image.powerBombExp { background: url("images/m_graphics.png") -378px 0; }
+img.item-image.powerBombExpA { background: url("images/m_graphics.png") -420px 0; }
+img.item-image.springBall { background: url("images/m_graphics.png") -462px 0; }
+img.item-image.spiderBall { background: url("images/m_graphics.png") -504px 0; }
+img.item-image.boostBall { background: url("images/m_graphics.png") -546px 0; }
+img.item-image.cannonball { background: url("images/m_graphics.png") -588px 0; }
+img.item-image.hyperBall { background: url("images/m_graphics.png") -630px 0; }
+img.item-image.forceBall { background: url("images/m_graphics.png") -672px 0; }
+img.item-image.powerBeam { background: url("images/m_graphics.png") 0 -42px; }
+img.item-image.powerBeamA { background: url("images/m_graphics.png") -42px -42px; }
+img.item-image.powerBeamB { background: url("images/m_graphics.png") -84px -42px; }
+img.item-image.longBeam { background: url("images/m_graphics.png") -126px -42px; }
+img.item-image.chargeBeam { background: url("images/m_graphics.png") -168px -42px; }
+img.item-image.chargeBeamA { background: url("images/m_graphics.png") -210px -42px; }
+img.item-image.chargeBeamB { background: url("images/m_graphics.png") -252px -42px; }
+img.item-image.chargeBeamC { background: url("images/m_graphics.png") -294px -42px; }
+img.item-image.chargeBeamD { background: url("images/m_graphics.png") -336px -42px; }
+img.item-image.wideBeam { background: url("images/m_graphics.png") -378px -42px; }
+img.item-image.wideBeamA { background: url("images/m_graphics.png") -420px -42px; }
+img.item-image.wideBeamB { background: url("images/m_graphics.png") -462px -42px; }
+img.item-image.wideBeamC { background: url("images/m_graphics.png") -504px -42px; }
+img.item-image.wideBeamD { background: url("images/m_graphics.png") -546px -42px; }
+img.item-image.waveBeam { background: url("images/m_graphics.png") -588px -42px; }
+img.item-image.waveBeamA { background: url("images/m_graphics.png") -630px -42px; }
+img.item-image.waveBeamB { background: url("images/m_graphics.png") -672px -42px; }
+img.item-image.iceBeam { background: url("images/m_graphics.png") 0 -84px; }
+img.item-image.iceBeamA { background: url("images/m_graphics.png") -42px -84px; }
+img.item-image.iceBeamB { background: url("images/m_graphics.png") -84px -84px; }
+img.item-image.iceBeamC { background: url("images/m_graphics.png") -126px -84px; }
+img.item-image.plasmaBeam { background: url("images/m_graphics.png") -168px -84px; }
+img.item-image.plasmaBeamA { background: url("images/m_graphics.png") -210px -84px; }
+img.item-image.plasmaBeamB { background: url("images/m_graphics.png") -252px -84px; }
+img.item-image.plasmaBeamC { background: url("images/m_graphics.png") -294px -84px; }
+img.item-image.novaBeam { background: url("images/m_graphics.png") -336px -84px; }
+img.item-image.darkBeam { background: url("images/m_graphics.png") -378px -84px; }
+img.item-image.lightBeam { background: url("images/m_graphics.png") -420px -84px; }
+img.item-image.annihilatorBeam { background: url("images/m_graphics.png") -462px -84px; }
+img.item-image.hyperBeam { background: url("images/m_graphics.png") -504px -84px; }
+img.item-image.diffusionBeam { background: url("images/m_graphics.png") -546px -84px; }
+img.item-image.voltDriver { background: url("images/m_graphics.png") -588px -84px; }
+img.item-image.battlehammer { background: url("images/m_graphics.png") -630px -84px; }
+img.item-image.magmaul { background: url("images/m_graphics.png") -672px -84px; }
+img.item-image.judicator { background: url("images/m_graphics.png") 0 -126px; }
+img.item-image.shockCoil { background: url("images/m_graphics.png") -42px -126px; }
+img.item-image.imperialist { background: url("images/m_graphics.png") -84px -126px; }
+img.item-image.omegaCannon { background: url("images/m_graphics.png") -126px -126px; }
+img.item-image.freezeShot { background: url("images/m_graphics.png") -168px -126px; }
+img.item-image.flameShot { background: url("images/m_graphics.png") -210px -126px; }
+img.item-image.shockShot { background: url("images/m_graphics.png") -252px -126px; }
+img.item-image.beamAmmoExpansion { background: url("images/m_graphics.png") -294px -126px; }
+img.item-image.darkAmmoExpansion { background: url("images/m_graphics.png") -336px -126px; }
+img.item-image.lightAmmoExpansion { background: url("images/m_graphics.png") -378px -126px; }
+img.item-image.chargeAccel { background: url("images/m_graphics.png") -420px -126px; }
+img.item-image.grappleBeam { background: url("images/m_graphics.png") -462px -126px; }
+img.item-image.grappleLasso { background: url("images/m_graphics.png") -504px -126px; }
+img.item-image.grappleVoltage { background: url("images/m_graphics.png") -546px -126px; }
+img.item-image.hyperGrapple { background: url("images/m_graphics.png") -588px -126px; }
+img.item-image.shipGrapple { background: url("images/m_graphics.png") -630px -126px; }
+img.item-image.uaExpansion { background: url("images/m_graphics.png") -672px -126px; }
+img.item-image.combatVisor { background: url("images/m_graphics.png") 0 -168px; }
+img.item-image.combatVisorA { background: url("images/m_graphics.png") -42px -168px; }
+img.item-image.scanVisor { background: url("images/m_graphics.png") -84px -168px; }
+img.item-image.scanVisorA { background: url("images/m_graphics.png") -126px -168px; }
+img.item-image.scanVisorB { background: url("images/m_graphics.png") -168px -168px; }
+img.item-image.thermalVisor { background: url("images/m_graphics.png") -210px -168px; }
+img.item-image.xRayScope { background: url("images/m_graphics.png") -252px -168px; }
+img.item-image.xRayVisor { background: url("images/m_graphics.png") -294px -168px; }
+img.item-image.corruptionXRayVisor { background: url("images/m_graphics.png") -336px -168px; }
+img.item-image.darkVisor { background: url("images/m_graphics.png") -378px -168px; }
+img.item-image.echoVisor { background: url("images/m_graphics.png") -420px -168px; }
+img.item-image.commandVisor { background: url("images/m_graphics.png") -462px -168px; }
+img.item-image.violetTranslator { background: url("images/m_graphics.png") -504px -168px; }
+img.item-image.amberTranslator { background: url("images/m_graphics.png") -546px -168px; }
+img.item-image.emeraldTranslator { background: url("images/m_graphics.png") -588px -168px; }
+img.item-image.cobaltTranslator { background: url("images/m_graphics.png") -630px -168px; }
+img.item-image.thermalPositioner { background: url("images/m_graphics.png") -672px -168px; }
+img.item-image.fullPowerSuit { background: url("images/m_graphics.png") 0 -210px; }
+img.item-image.barrier { background: url("images/m_graphics.png") -42px -210px; }
+img.item-image.gravitySuit { background: url("images/m_graphics.png") -84px -210px; }
+img.item-image.zeroSuit { background: url("images/m_graphics.png") -126px -210px; }
+img.item-image.zeroSuitA { background: url("images/m_graphics.png") -168px -210px; }
+img.item-image.samus { background: url("images/m_graphics.png") -210px -210px; }
+img.item-image.progressiveSuit { background: url("images/m_graphics.png") -252px -210px; }
+img.item-image.primeSuit { background: url("images/m_graphics.png") -294px -210px; }
+img.item-image.fusionSuit { background: url("images/m_graphics.png") -336px -210px; }
+img.item-image.phazonSuit { background: url("images/m_graphics.png") -378px -210px; }
+img.item-image.darkSuit { background: url("images/m_graphics.png") -420px -210px; }
+img.item-image.gravityBoost { background: url("images/m_graphics.png") -462px -210px; }
+img.item-image.lightSuit { background: url("images/m_graphics.png") -504px -210px; }
+img.item-image.ped { background: url("images/m_graphics.png") -546px -210px; }
+img.item-image.hazardShield { background: url("images/m_graphics.png") -588px -210px; }
+img.item-image.magneticShield { background: url("images/m_graphics.png") -630px -210px; }
+img.item-image.armCannon { background: url("images/m_graphics.png") -672px -210px; }
+img.item-image.missile { background: url("images/m_graphics.png") 0 -252px; }
+img.item-image.missileTank { background: url("images/m_graphics.png") -42px -252px; }
+img.item-image.missileA { background: url("images/m_graphics.png") -84px -252px; }
+img.item-image.superMissile { background: url("images/m_graphics.png") -126px -252px; }
+img.item-image.superMissileA { background: url("images/m_graphics.png") -168px -252px; }
+img.item-image.superMissileTank { background: url("images/m_graphics.png") -210px -252px; }
+img.item-image.iceMissile { background: url("images/m_graphics.png") -252px -252px; }
+img.item-image.seekerLauncher { background: url("images/m_graphics.png") -294px -252px; }
+img.item-image.seekerLauncherA { background: url("images/m_graphics.png") -336px -252px; }
+img.item-image.seekerLauncherB { background: url("images/m_graphics.png") -378px -252px; }
+img.item-image.darkburst { background: url("images/m_graphics.png") -420px -252px; }
+img.item-image.sunburst { background: url("images/m_graphics.png") -462px -252px; }
+img.item-image.sonicBoom { background: url("images/m_graphics.png") -504px -252px; }
+img.item-image.hyperMissile { background: url("images/m_graphics.png") -546px -252px; }
+img.item-image.shipMissile { background: url("images/m_graphics.png") -588px -252px; }
+img.item-image.shipMissileExpansion { background: url("images/m_graphics.png") -630px -252px; }
+img.item-image.affinityWeapon { background: url("images/m_graphics.png") -672px -252px; }
+img.item-image.highJump { background: url("images/m_graphics.png") 0 -294px; }
+img.item-image.speedBooster { background: url("images/m_graphics.png") -42px -294px; }
+img.item-image.speedBoosterA { background: url("images/m_graphics.png") -84px -294px; }
+img.item-image.wallJumpBoots { background: url("images/m_graphics.png") -126px -294px; }
+img.item-image.spaceJump { background: url("images/m_graphics.png") -168px -294px; }
+img.item-image.screwAttack { background: url("images/m_graphics.png") -210px -294px; }
+img.item-image.screwAttackA { background: url("images/m_graphics.png") -252px -294px; }
+img.item-image.powerGrip { background: url("images/m_graphics.png") -294px -294px; }
+img.item-image.zipline { background: url("images/m_graphics.png") -336px -294px; }
+img.item-image.spaceJumpBoots { background: url("images/m_graphics.png") -378px -294px; }
+img.item-image.scanPulse { background: url("images/m_graphics.png") -420px -294px; }
+img.item-image.lightningShield { background: url("images/m_graphics.png") -462px -294px; }
+img.item-image.beamBurst { background: url("images/m_graphics.png") -504px -294px; }
+img.item-image.phaseDrift { background: url("images/m_graphics.png") -546px -294px; }
+img.item-image.aeionExpansion { background: url("images/m_graphics.png") -588px -294px; }
+img.item-image.jumpBoots { background: url("images/m_graphics.png") -630px -294px; }
+img.item-image.speedBoosterB { background: url("images/m_graphics.png") -672px -294px; }
+img.item-image.energyTank { background: url("images/m_graphics.png") 0 -336px; }
+img.item-image.energyTankA { background: url("images/m_graphics.png") -42px -336px; }
+img.item-image.reserveTank { background: url("images/m_graphics.png") -84px -336px; }
+img.item-image.energyPart { background: url("images/m_graphics.png") -126px -336px; }
+img.item-image.eRecoveryTank { background: url("images/m_graphics.png") -168px -336px; }
+img.item-image.unknownItem { background: url("images/m_graphics.png") -210px -336px; }
+img.item-image.unknownItem1 { background: url("images/m_graphics.png") -252px -336px; }
+img.item-image.unknownItem2 { background: url("images/m_graphics.png") -294px -336px; }
+img.item-image.unknownItem3 { background: url("images/m_graphics.png") -336px -336px; }
+img.item-image.chozoArtifact { background: url("images/m_graphics.png") -378px -336px; }
+img.item-image.darkAgonKey { background: url("images/m_graphics.png") -420px -336px; }
+img.item-image.darkTorvusKey { background: url("images/m_graphics.png") -462px -336px; }
+img.item-image.ingHiveKey { background: url("images/m_graphics.png") -504px -336px; }
+img.item-image.skyTempleKey { background: url("images/m_graphics.png") -546px -336px; }
+img.item-image.energyTransferModule { background: url("images/m_graphics.png") -588px -336px; }
+img.item-image.energyCell { background: url("images/m_graphics.png") -630px -336px; }
+img.item-image.pirateCode { background: url("images/m_graphics.png") -672px -336px; }
+img.item-image.templeKey { background: url("images/m_graphics.png") 0 -378px; }
+img.item-image.lightOfAether { background: url("images/m_graphics.png") -42px -378px; }
+img.item-image.lightOfAetherA { background: url("images/m_graphics.png") -84px -378px; }
+img.item-image.cipher { background: url("images/m_graphics.png") -126px -378px; }
+img.item-image.theronianBomb { background: url("images/m_graphics.png") -168px -378px; }
+img.item-image.phaaze { background: url("images/m_graphics.png") -210px -378px; }
+img.item-image.alimbicArtifactCA1 { background: url("images/m_graphics.png") -252px -378px; }
+img.item-image.alimbicArtifactCA2 { background: url("images/m_graphics.png") -294px -378px; }
+img.item-image.alimbicArtifactAl1 { background: url("images/m_graphics.png") -336px -378px; }
+img.item-image.alimbicArtifactAl2 { background: url("images/m_graphics.png") -378px -378px; }
+img.item-image.alimbicArtifactVDO1 { background: url("images/m_graphics.png") -420px -378px; }
+img.item-image.alimbicArtifactVDO2 { background: url("images/m_graphics.png") -462px -378px; }
+img.item-image.alimbicArtifactArc1 { background: url("images/m_graphics.png") -504px -378px; }
+img.item-image.alimbicArtifactArc2 { background: url("images/m_graphics.png") -546px -378px; }
+img.item-image.octolith { background: url("images/m_graphics.png") -588px -378px; }
+img.item-image.oubliette { background: url("images/m_graphics.png") -630px -378px; }
+img.item-image.am2rPowerOrb { background: url("images/m_graphics.png") -672px -378px; }
+img.item-image.securityL0 { background: url("images/m_graphics.png") 0 -420px; }
+img.item-image.securityL0_A { background: url("images/m_graphics.png") -42px -420px; }
+img.item-image.securityL1 { background: url("images/m_graphics.png") -84px -420px; }
+img.item-image.securityL1_A { background: url("images/m_graphics.png") -126px -420px; }
+img.item-image.securityL2 { background: url("images/m_graphics.png") -168px -420px; }
+img.item-image.securityL2_A { background: url("images/m_graphics.png") -210px -420px; }
+img.item-image.securityL3 { background: url("images/m_graphics.png") -252px -420px; }
+img.item-image.securityL3_A { background: url("images/m_graphics.png") -294px -420px; }
+img.item-image.securityL4 { background: url("images/m_graphics.png") -336px -420px; }
+img.item-image.securityL4_A { background: url("images/m_graphics.png") -378px -420px; }
+img.item-image.etedach { background: url("images/m_graphics.png") -420px -420px; }
+img.item-image.skyTempleAccess { background: url("images/m_graphics.png") -462px -420px; }
+img.item-image.norion { background: url("images/m_graphics.png") -504px -420px; }
+img.item-image.bryyo { background: url("images/m_graphics.png") -546px -420px; }
+img.item-image.elysia { background: url("images/m_graphics.png") -588px -420px; }
+img.item-image.urtraghus { background: url("images/m_graphics.png") -630px -420px; }
+img.item-image.spireDock { background: url("images/m_graphics.png") -672px -420px; }
+img.item-image.boss { background: url("images/m_graphics.png") 0 -462px; }
+img.item-image.monster { background: url("images/m_graphics.png") -42px -462px; }
+img.item-image.monsterDna { background: url("images/m_graphics.png") -84px -462px; }
+img.item-image.monsterCapsule { background: url("images/m_graphics.png") -126px -462px; }
+img.item-image.magneticShieldTank { background: url("images/m_graphics.png") -168px -462px; }
+img.item-image.pumpControlUnit { background: url("images/m_graphics.png") -210px -462px; }
+img.item-image.mainBoiler { background: url("images/m_graphics.png") -252px -462px; }
+img.item-image.reactorCore { background: url("images/m_graphics.png") -294px -462px; }
+img.item-image.mainDeck { background: url("images/m_graphics.png") -336px -462px; }
+img.item-image.sector1SRX { background: url("images/m_graphics.png") -378px -462px; }
+img.item-image.sector2TRO { background: url("images/m_graphics.png") -420px -462px; }
+img.item-image.sector3PYR { background: url("images/m_graphics.png") -462px -462px; }
+img.item-image.sector4AQA { background: url("images/m_graphics.png") -504px -462px; }
+img.item-image.sector5ARC { background: url("images/m_graphics.png") -546px -462px; }
+img.item-image.sector6NOC { background: url("images/m_graphics.png") -588px -462px; }
+img.item-image.restrictedLab { background: url("images/m_graphics.png") -630px -462px; }
+img.item-image.quarantineBay { background: url("images/m_graphics.png") -672px -462px; }
+img.item-image.towerPower { background: url("images/m_graphics.png") 0 -504px; }
+img.item-image.chozoStatue { background: url("images/m_graphics.png") -42px -504px; }
+img.item-image.federationArmy { background: url("images/m_graphics.png") -84px -504px; }
+img.item-image.federationMarines { background: url("images/m_graphics.png") -126px -504px; }
+img.item-image.xenoresearch { background: url("images/m_graphics.png") -168px -504px; }
+img.item-image.adam { background: url("images/m_graphics.png") -210px -504px; }
+img.item-image.powerBeamC { background: url("images/m_graphics.png") -252px -504px; }
+img.item-image.darkBeamA { background: url("images/m_graphics.png") -294px -504px; }
+img.item-image.lightBeamA { background: url("images/m_graphics.png") -336px -504px; }
+img.item-image.annihilatorBeamA { background: url("images/m_graphics.png") -378px -504px; }
+img.item-image.shieldKey { background: url("images/m_graphics.png") -420px -504px; }
+img.item-image.commandVisorA { background: url("images/m_graphics.png") -462px -504px; }
+img.item-image.crystalFlash { background: url("images/m_graphics.png") -504px -504px; }
+img.item-image.alimbicArtifact { background: url("images/m_graphics.png") -546px -504px; }
+img.item-image.translatorModule { background: url("images/m_graphics.png") -588px -504px; }
+img.item-image.securityUnlock { background: url("images/m_graphics.png") -630px -504px; }
+img.item-image.randomizer { background: url("images/m_graphics.png") -672px -504px; }
+img.item-image.bombD { background: url("images/m_graphics.png") 0 -546px; }
+img.item-image.monsterDnaA { background: url("images/m_graphics.png") -42px -546px; }
+img.item-image.lightBeamB { background: url("images/m_graphics.png") -84px -546px; }
+img.item-image.annihilatorBeamB { background: url("images/m_graphics.png") -126px -546px; }
+img.item-image.electroLob { background: url("images/m_graphics.png") -168px -546px; }
+img.item-image.darkVisorA { background: url("images/m_graphics.png") -210px -546px; }
+img.item-image.hint { background: url("images/m_graphics.png") -252px -546px; }
+img.item-image.bsl { background: url("images/m_graphics.png") -294px -546px; }
+img.item-image.datapack { background: url("images/m_graphics.png") -336px -546px; }
+img.item-image.doubleDamage { background: url("images/m_graphics.png") -378px -546px; }
+img.item-image.doubleDamageA { background: url("images/m_graphics.png") -420px -546px; }
+img.item-image.invisibility { background: url("images/m_graphics.png") -462px -546px; }
+img.item-image.chargeBomb { background: url("images/m_graphics.png") -504px -546px; }
+img.item-image.iceChargeShot { background: url("images/m_graphics.png") -546px -546px; }
+img.item-image.spikeBomb { background: url("images/m_graphics.png") -588px -546px; }
+img.item-image.modSlot { background: url("images/m_graphics.png") -630px -546px; }
+img.item-image.modChip { background: url("images/m_graphics.png") -672px -546px; }
+img.item-image.shield { background: url("images/m_graphics.png") 0 -588px; }
+img.item-image.adrenaline { background: url("images/m_graphics.png") -42px -588px; }
+img.item-image.eject { background: url("images/m_graphics.png") -84px -588px; }
+img.item-image.repairCapsule { background: url("images/m_graphics.png") -126px -588px; }
+img.item-image.shieldGenerator { background: url("images/m_graphics.png") -168px -588px; }
+img.item-image.missileB { background: url("images/m_graphics.png") -210px -588px; }
+img.item-image.superMissileB { background: url("images/m_graphics.png") -252px -588px; }
+img.item-image.proximityBomb { background: url("images/m_graphics.png") -294px -588px; }
+img.item-image.decoy { background: url("images/m_graphics.png") -336px -588px; }
+img.item-image.slowBeam { background: url("images/m_graphics.png") -378px -588px; }
+img.item-image.scanBolt { background: url("images/m_graphics.png") -420px -588px; }
+img.item-image.progressiveBeam { background: url("images/m_graphics.png") -462px -588px; }
+img.item-image.progressiveBeamA { background: url("images/m_graphics.png") -504px -588px; }
+img.item-image.progressiveGrapple { background: url("images/m_graphics.png") -546px -588px; }
+img.item-image.progressiveMissile { background: url("images/m_graphics.png") -588px -588px; }
+img.item-image.omegaCannonA { background: url("images/m_graphics.png") -630px -588px; }
+img.item-image.mapMarker { background: url("images/m_graphics.png") -672px -588px; }
+img.item-image.phantomCloak { background: url("images/m_graphics.png") 0 -630px; }
+img.item-image.chargeBeamE { background: url("images/m_graphics.png") -42px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -84px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -126px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -168px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -210px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -252px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -294px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -336px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -378px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -420px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -462px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -504px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -546px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -588px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -630px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") -672px -630px; }
+img.item-image.unused { background: url("images/m_graphics.png") 0 -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -42px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -84px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -126px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -168px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -210px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -252px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -294px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -336px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -378px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -420px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -462px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -504px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -546px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -588px -672px; }
+img.item-image.unused { background: url("images/m_graphics.png") -630px -672px; }
+img.item-image.itemSphere { background: url("images/m_graphics.png") -672px -672px; }
+
+img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
+img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
+img.item-image.m_lock1 { background: url("images/rd_spritesheet.png") -294px 0; }
+img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42px; }
+
+/* == game sprites == */
+
+/********* METROID: ROGUE DAWN (NES ROMHACK) *********/
+body.game-mrd .usesSprite img.item-image.high { background: url("images/rd_spritesheet.png") 0 0; }
+body.game-mrd .usesSprite img.item-image.bomb { background: url("images/rd_spritesheet.png") -42px 0; }
+body.game-mrd .usesSprite img.item-image.barrier { background: url("images/rd_spritesheet.png") -84px 0; }
+body.game-mrd .usesSprite img.item-image.ice { background: url("images/rd_spritesheet.png") -126px 0; }
+body.game-mrd .usesSprite img.item-image.wall { background: url("images/rd_spritesheet.png") -168px 0; }
+body.game-mrd .usesSprite img.item-image.spring { background: url("images/rd_spritesheet.png") -210px 0; }
+body.game-mrd .usesSprite img.item-image.screw { background: url("images/rd_spritesheet.png") -252px 0; }
+body.game-mrd .usesSprite img.item-image.wave { background: url("images/rd_spritesheet.png") 0 -42px; }
+body.game-mrd .usesSprite img.item-image.energy { background: url("images/rd_spritesheet.png") -42px -42px; }
+body.game-mrd .usesSprite img.item-image.missile { background: url("images/rd_spritesheet.png") -84px -42px; }
+body.game-mrd .usesSprite img.item-image.research { background: url("images/rd_spritesheet.png") -126px -42px; }
+body.game-mrd .usesSprite img.item-image.captain { background: url("images/rd_spritesheet.png") -168px -42px; }
+body.game-mrd .usesSprite img.item-image.cell { background: url("images/rd_spritesheet.png") -210px -42px; }
+
+/********* M1 - METROID (NES) *********/
+body.game-m1 .usesSprite img.item-image.morph { background: url("images/m1_spritesheet.png") 0 0; }
+body.game-m1 .usesSprite img.item-image.barrier { background: url("images/m1_spritesheet.png") -42px 0; }
+body.game-m1 .usesSprite img.item-image.long { background: url("images/m1_spritesheet.png") -84px 0; }
+body.game-m1 .usesSprite img.item-image.ice { background: url("images/m1_spritesheet.png") -126px 0; }
+body.game-m1 .usesSprite img.item-image.bomb { background: url("images/m1_spritesheet.png") 0 -42px; }
+body.game-m1 .usesSprite img.item-image.high { background: url("images/m1_spritesheet.png") -42px -42px; }
+body.game-m1 .usesSprite img.item-image.screw { background: url("images/m1_spritesheet.png") -84px -42px; }
+body.game-m1 .usesSprite img.item-image.wave { background: url("images/m1_spritesheet.png") -126px -42px; }
+body.game-m1 .usesSprite img.item-image.energy { background: url("images/m1_spritesheet.png") 0 -84px; }
+body.game-m1 .usesSprite img.item-image.missile { background: url("images/m1_spritesheet.png") -42px -84px; }
+body.game-m1 .usesSprite img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
+body.game-m1 .usesSprite img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
+
+/********* MZM - METROID: ZERO MISSION (GBA) *********/
+body.game-mzm .usesSprite img.item-image.morph { background: url("images/mzm_spritesheet.png") 0 0; }
+body.game-mzm .usesSprite img.item-image.bomb { background: url("images/mzm_spritesheet.png") -42px 0; }
+body.game-mzm .usesSprite img.item-image.barrier { background: url("images/mzm_spritesheet.png") -84px 0; }
+body.game-mzm .usesSprite img.item-image.ui3 { background: url("images/mzm_spritesheet.png") -126px 0; }
+body.game-mzm .usesSprite img.item-image.gravity { background: url("images/mzm_spritesheet.png") -168px 0; }
+body.game-mzm .usesSprite img.item-image.full { background: url("images/mzm_spritesheet.png") -210px 0; }
+body.game-mzm .usesSprite img.item-image.long { background: url("images/mzm_spritesheet.png") 0 -42px; }
+body.game-mzm .usesSprite img.item-image.charge { background: url("images/mzm_spritesheet.png") -42px -42px; }
+body.game-mzm .usesSprite img.item-image.ui1 { background: url("images/mzm_spritesheet.png") -84px -42px; }
+body.game-mzm .usesSprite img.item-image.plasma { background: url("images/mzm_spritesheet.png") -126px -42px; }
+body.game-mzm .usesSprite img.item-image.ice { background: url("images/mzm_spritesheet.png") -168px -42px; }
+body.game-mzm .usesSprite img.item-image.wave { background: url("images/mzm_spritesheet.png") -210px -42px; }
+body.game-mzm .usesSprite img.item-image.grip { background: url("images/mzm_spritesheet.png") 0 -84px; }
+body.game-mzm .usesSprite img.item-image.ui2 { background: url("images/mzm_spritesheet.png") -42px -84px; }
+body.game-mzm .usesSprite img.item-image.space { background: url("images/mzm_spritesheet.png") -84px -84px; }
+body.game-mzm .usesSprite img.item-image.speed { background: url("images/mzm_spritesheet.png") -126px -84px; }
+body.game-mzm .usesSprite img.item-image.high { background: url("images/mzm_spritesheet.png") -168px -84px; }
+body.game-mzm .usesSprite img.item-image.screw { background: url("images/mzm_spritesheet.png") -210px -84px; }
+body.game-mzm .usesSprite img.item-image.energy { background: url("images/mzm_spritesheet.png") 0 -126px; }
+body.game-mzm .usesSprite img.item-image.missile { background: url("images/mzm_spritesheet.png") -42px -126px; }
+body.game-mzm .usesSprite img.item-image.smissile { background: url("images/mzm_spritesheet.png") -84px -126px; }
+body.game-mzm .usesSprite img.item-image.pbomb { background: url("images/mzm_spritesheet.png") -126px -126px; }
+body.game-mzm .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
+
+/********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
+body.game-m2ros .usesSprite img.item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }
+body.game-m2ros .usesSprite img.item-image.spider { background: url("images/m2ros_spritesheet.png") -84px 0; }
+body.game-m2ros .usesSprite img.item-image.spring { background: url("images/m2ros_spritesheet.png") -126px 0; }
+body.game-m2ros .usesSprite img.item-image.barrier { background: url("images/m2ros_spritesheet.png") 0 -42px; }
+body.game-m2ros .usesSprite img.item-image.high { background: url("images/m2ros_spritesheet.png") -42px -42px; }
+body.game-m2ros .usesSprite img.item-image.space { background: url("images/m2ros_spritesheet.png") -84px -42px; }
+body.game-m2ros .usesSprite img.item-image.screw { background: url("images/m2ros_spritesheet.png") -126px -42px; }
+body.game-m2ros .usesSprite img.item-image.ice { background: url("images/m2ros_spritesheet.png") 0 -84px; }
+body.game-m2ros .usesSprite img.item-image.wave { background: url("images/m2ros_spritesheet.png") -42px -84px; }
+body.game-m2ros .usesSprite img.item-image.wide { background: url("images/m2ros_spritesheet.png") -84px -84px; }
+body.game-m2ros .usesSprite img.item-image.plasma { background: url("images/m2ros_spritesheet.png") -126px -84px; }
+body.game-m2ros .usesSprite img.item-image.energy { background: url("images/m2ros_spritesheet.png") 0 -126px; }
+body.game-m2ros .usesSprite img.item-image.missile { background: url("images/m2ros_spritesheet.png") -42px -126px; }
+body.game-m2ros .usesSprite img.item-image.monsters { background: url("images/m2ros_spritesheet.png") -84px -126px; }
+body.game-m2ros .usesSprite img.item-image.baby { background: url("images/m2ros_spritesheet.png") -126px -126px; }
+
+/********* AM2R - ANOTHER METROID 2 REMAKE (PC) *********/
+body.game-am2r .usesSprite img.item-image.morph { background: url("images/am2r_spritesheet.png") 0 0; }
+body.game-am2r .usesSprite img.item-image.barrier { background: url("images/am2r_spritesheet.png") -42px 0; }
+body.game-am2r .usesSprite img.item-image.gravity { background: url("images/am2r_spritesheet.png") -84px 0; }
+body.game-am2r .usesSprite img.item-image.charge { background: url("images/am2r_spritesheet.png") -126px 0; }
+body.game-am2r .usesSprite img.item-image.wave { background: url("images/am2r_spritesheet.png") -168px 0; }
+body.game-am2r .usesSprite img.item-image.wide { background: url("images/am2r_spritesheet.png") -210px 0; }
+body.game-am2r .usesSprite img.item-image.plasma { background: url("images/am2r_spritesheet.png") 0 -42px; }
+body.game-am2r .usesSprite img.item-image.ice { background: url("images/am2r_spritesheet.png") -42px -42px; }
+body.game-am2r .usesSprite img.item-image.bomb { background: url("images/am2r_spritesheet.png") -84px -42px; }
+body.game-am2r .usesSprite img.item-image.spider { background: url("images/am2r_spritesheet.png") -126px -42px; }
+body.game-am2r .usesSprite img.item-image.spring { background: url("images/am2r_spritesheet.png") -168px -42px; }
+body.game-am2r .usesSprite img.item-image.grip { background: url("images/am2r_spritesheet.png") -210px -42px; }
+body.game-am2r .usesSprite img.item-image.high { background: url("images/am2r_spritesheet.png") 0 -84px; }
+body.game-am2r .usesSprite img.item-image.space { background: url("images/am2r_spritesheet.png") -42px -84px; }
+body.game-am2r .usesSprite img.item-image.speed { background: url("images/am2r_spritesheet.png") -84px -84px; }
+body.game-am2r .usesSprite img.item-image.screw { background: url("images/am2r_spritesheet.png") -126px -84px; }
+body.game-am2r .usesSprite img.item-image.energy { background: url("images/am2r_spritesheet.png") -168px -84px; }
+body.game-am2r .usesSprite img.item-image.missile { background: url("images/am2r_spritesheet.png") -210px -84px; }
+body.game-am2r .usesSprite img.item-image.smissile { background: url("images/am2r_spritesheet.png") 0 -126px; }
+body.game-am2r .usesSprite img.item-image.pbombs { background: url("images/am2r_spritesheet.png") -42px -126px; }
+body.game-am2r .usesSprite img.item-image.monster { background: url("images/am2r_spritesheet.png") -84px -126px; }
+body.game-am2r .usesSprite img.item-image.monsterEL { background: url("images/am2r_spritesheet.png") -126px -126px; }
+body.game-am2r .usesSprite img.item-image.battery { background: url("images/am2r_spritesheet.png") -168px -126px; }
+body.game-am2r .usesSprite img.item-image.baby { background: url("images/am2r_spritesheet.png") -210px -126px; }
+body.game-am2r .usesSprite img.item-image.tower { background: url("images/am2r_spritesheet.png") 0 -168px; }
+body.game-am2r .usesSprite img.item-image.log { background: url("images/am2r_spritesheet.png") -42px -168px; }
+body.game-am2r .usesSprite img.item-image.gravityA { background: url("images/am2r_spritesheet.png") -84px -168px; }
+body.game-am2r .usesSprite img.item-image.gravityB { background: url("images/am2r_spritesheet.png") -126px -168px; }
+body.game-am2r .usesSprite img.item-image.fed { background: url("images/am2r_spritesheet.png") -168px -168px; }
+body.game-am2r .usesSprite img.item-image.fedA { background: url("images/am2r_spritesheet.png") -210px -168px; }
+
+/********* M3 - SUPER METROID (SNES) *********/
+body.game-sm .usesSprite img.item-image.morph,
+body.game-smz3 .usesSprite img.item-image.morph { background: url("images/sm_spritesheet.png") 0 0; }
+body.game-sm .usesSprite img.item-image.bomb,
+body.game-smz3 .usesSprite img.item-image.bomb { background: url("images/sm_spritesheet.png") -42px 0; }
+body.game-sm .usesSprite img.item-image.spring,
+body.game-smz3 .usesSprite img.item-image.spring { background: url("images/sm_spritesheet.png") -84px 0; }
+body.game-sm .usesSprite img.item-image.screw,
+body.game-smz3 .usesSprite img.item-image.screw { background: url("images/sm_spritesheet.png") -126px 0; }
+body.game-sm .usesSprite img.item-image.barrier,
+body.game-smz3 .usesSprite img.item-image.barrier { background: url("images/sm_spritesheet.png") -168px 0; }
+body.game-sm .usesSprite img.item-image.gravity,
+body.game-smz3 .usesSprite img.item-image.gravity { background: url("images/sm_spritesheet.png") -210px 0; }
+body.game-sm .usesSprite img.item-image.xray,
+body.game-smz3 .usesSprite img.item-image.xray { background: url("images/sm_spritesheet.png") 0 -42px; }
+body.game-sm .usesSprite img.item-image.charge,
+body.game-smz3 .usesSprite img.item-image.charge { background: url("images/sm_spritesheet.png") -42px -42px; }
+body.game-sm .usesSprite img.item-image.wide,
+body.game-smz3 .usesSprite img.item-image.wide { background: url("images/sm_spritesheet.png") -84px -42px; }
+body.game-sm .usesSprite img.item-image.ice,
+body.game-smz3 .usesSprite img.item-image.ice { background: url("images/sm_spritesheet.png") -126px -42px; }
+body.game-sm .usesSprite img.item-image.wave,
+body.game-smz3 .usesSprite img.item-image.wave { background: url("images/sm_spritesheet.png") -168px -42px; }
+body.game-sm .usesSprite img.item-image.plasma,
+body.game-smz3 .usesSprite img.item-image.plasma { background: url("images/sm_spritesheet.png") -210px -42px; }
+body.game-sm .usesSprite img.item-image.high,
+body.game-smz3 .usesSprite img.item-image.high { background: url("images/sm_spritesheet.png") 0 -84px; }
+body.game-sm .usesSprite img.item-image.speed,
+body.game-smz3 .usesSprite img.item-image.speed { background: url("images/sm_spritesheet.png") -42px -84px; }
+body.game-sm .usesSprite img.item-image.space,
+body.game-smz3 .usesSprite img.item-image.space { background: url("images/sm_spritesheet.png") -84px -84px; }
+body.game-sm .usesSprite img.item-image.energy,
+body.game-smz3 .usesSprite img.item-image.energy { background: url("images/sm_spritesheet.png") -126px -84px; }
+body.game-sm .usesSprite img.item-image.missile,
+body.game-smz3 .usesSprite img.item-image.missile { background: url("images/sm_spritesheet.png") -168px -84px; }
+body.game-sm .usesSprite img.item-image.smissile,
+body.game-smz3 .usesSprite img.item-image.smissile { background: url("images/sm_spritesheet.png") -210px -84px; }
+body.game-sm .usesSprite img.item-image.pbombs,
+body.game-smz3 .usesSprite img.item-image.pbombs { background: url("images/sm_spritesheet.png") 0 -126px; }
+body.game-sm .usesSprite img.item-image.reserve,
+body.game-smz3 .usesSprite img.item-image.reserve { background: url("images/sm_spritesheet.png") -42px -126px; }
+body.game-sm .usesSprite img.item-image.boss,
+body.game-smz3 .usesSprite img.item-image.boss { background: url("images/sm_spritesheet.png") -84px -126px; }
+body.game-sm .usesSprite img.item-image.grapple,
+body.game-smz3 .usesSprite img.item-image.grapple { background: url("images/sm_spritesheet.png") -126px -126px; }
+
+/********* M4 - METROID: FUSION (GBA) *********/
+body.game-mf .usesSprite img.item-image.energy { background: url("images/mf_spritesheet.png") 0 0; }
+body.game-mf .usesSprite img.item-image.missile { background: url("images/mf_spritesheet.png") -42px 0; }
+body.game-mf .usesSprite img.item-image.pbomb { background: url("images/mf_spritesheet.png") -84px 0; }
+
+/********* THE LEGEND OF ZELDA (NES)) *********/
+body.game-thf img.item-image.raft { background: url("images/zelda_graphics.png") 0 0; }
+body.game-thf img.item-image.book { background: url("images/zelda_graphics.png") -42px 0; }
+body.game-thf img.item-image.green { background: url("images/zelda_graphics.png") -84px 0; }
+body.game-thf img.item-image.blueRing { background: url("images/zelda_graphics.png") -126px 0; }
+body.game-thf img.item-image.redRing { background: url("images/zelda_graphics.png") -168px 0; }
+body.game-thf img.item-image.ladder { background: url("images/zelda_graphics.png") -210px 0; }
+body.game-thf img.item-image.magicKey { background: url("images/zelda_graphics.png") -252px 0; }
+body.game-thf img.item-image.bracelets { background: url("images/zelda_graphics.png") 0 -42px; }
+body.game-thf img.item-image.boomerang { background: url("images/zelda_graphics.png") -42px -42px; }
+body.game-thf img.item-image.magicRang { background: url("images/zelda_graphics.png") -84px -42px; }
+body.game-thf img.item-image.bombs { background: url("images/zelda_graphics.png") -126px -42px; }
+body.game-thf img.item-image.arrow { background: url("images/zelda_graphics.png") -168px -42px; }
+body.game-thf img.item-image.silverArrows { background: url("images/zelda_graphics.png") -210px -42px; }
+body.game-thf img.item-image.heroBow { background: url("images/zelda_graphics.png") -252px -42px; }
+body.game-thf img.item-image.candle { background: url("images/zelda_graphics.png") 0 -84px; }
+body.game-thf img.item-image.redCandle { background: url("images/zelda_graphics.png") -42px -84px; }
+body.game-thf img.item-image.recorder { background: url("images/zelda_graphics.png") -84px -84px; }
+body.game-thf img.item-image.bait { background: url("images/zelda_graphics.png") -126px -84px; }
+body.game-thf img.item-image.note { background: url("images/zelda_graphics.png") -168px -84px; }
+body.game-thf img.item-image.magicRod { background: url("images/zelda_graphics.png") -210px -84px; }
+body.game-thf img.item-image.woodenSword { background: url("images/zelda_graphics.png") -252px -84px; }
+body.game-thf img.item-image.whiteSword { background: url("images/zelda_graphics.png") 0 -126px; }
+body.game-thf img.item-image.magicalSword { background: url("images/zelda_graphics.png") -42px -126px; }
+body.game-thf img.item-image.magicalShield { background: url("images/zelda_graphics.png") -84px -126px; }
+body.game-thf img.item-image.heartContainer { background: url("images/zelda_graphics.png") -126px -126px; }
+body.game-thf img.item-image.bombsExp { background: url("images/zelda_graphics.png") -168px -126px; }
+body.game-thf img.item-image.triforce { background: url("images/zelda_graphics.png") -210px -126px; }
+body.game-thf img.item-image.heart { background: url("images/zelda_graphics.png") -252px -126px; }
+body.game-thf img.item-image.key { background: url("images/zelda_graphics.png") 0 -168px; }
+body.game-thf img.item-image.map { background: url("images/zelda_graphics.png") -42px -168px; }
+body.game-thf img.item-image.compass { background: url("images/zelda_graphics.png") -84px -168px; }
+
+/********* ZELDA II: THE ADVENTURE OF LINK (NES)) *********/
+body.game-aol img.item-image.shieldSpell { background: url("images/zelda_graphics.png") -126px -168px; }
+body.game-aol img.item-image.jumpSpell { background: url("images/zelda_graphics.png") -168px -168px; }
+body.game-aol img.item-image.lifeSpell { background: url("images/zelda_graphics.png") -210px -168px; }
+body.game-aol img.item-image.fairySpell { background: url("images/zelda_graphics.png") -252px -168px; }
+body.game-aol img.item-image.fireSpell { background: url("images/zelda_graphics.png") -294px 0; }
+body.game-aol img.item-image.reflectSpell { background: url("images/zelda_graphics.png") -336px 0; }
+body.game-aol img.item-image.spellSpell { background: url("images/zelda_graphics.png") -378px 0; }
+body.game-aol img.item-image.thunderSpell { background: url("images/zelda_graphics.png") -420px 0; }
+body.game-aol img.item-image.trophy { background: url("images/zelda_graphics.png") -462px 0; }
+body.game-aol img.item-image.mirror { background: url("images/zelda_graphics.png") -504px 0; }
+body.game-aol img.item-image.waterOfLife { background: url("images/zelda_graphics.png") -546px 0; }
+body.game-aol img.item-image.water { background: url("images/zelda_graphics.png") -294px -42px; }
+body.game-aol img.item-image.child { background: url("images/zelda_graphics.png") -336px -42px; }
+body.game-aol img.item-image.note { background: url("images/zelda_graphics.png") -168px -84px; }
+body.game-aol img.item-image.candle { background: url("images/zelda_graphics.png") -42px -84px; }
+body.game-aol img.item-image.glove { background: url("images/zelda_graphics.png") -378px -42px; }
+body.game-aol img.item-image.raft { background: url("images/zelda_graphics.png") 0 0; }
+body.game-aol img.item-image.boots { background: url("images/zelda_graphics.png") -420px -42px; }
+body.game-aol img.item-image.whistle { background: url("images/zelda_graphics.png") -462px -42px; }
+body.game-aol img.item-image.cross { background: url("images/zelda_graphics.png") -504px -42px; }
+body.game-aol img.item-image.hammer { background: url("images/zelda_graphics.png") -546px -42px; }
+body.game-aol img.item-image.magicKey { background: url("images/zelda_graphics.png") -294px -84px; }
+body.game-aol img.item-image.parapa { background: url("images/zelda_graphics.png") -336px -84px; }
+body.game-aol img.item-image.midoro { background: url("images/zelda_graphics.png") -378px -84px; }
+body.game-aol img.item-image.island { background: url("images/zelda_graphics.png") -420px -84px; }
+body.game-aol img.item-image.maze { background: url("images/zelda_graphics.png") -462px -84px; }
+body.game-aol img.item-image.onthesea { background: url("images/zelda_graphics.png") -504px -84px; }
+body.game-aol img.item-image.hidden { background: url("images/zelda_graphics.png") -546px -84px; }
+body.game-aol img.item-image.heartContainer { background: url("images/zelda_graphics.png") -126px -126px; }
+body.game-aol img.item-image.magicContainer { background: url("images/zelda_graphics.png") -294px -126px; }
+body.game-aol img.item-image.downStab { background: url("images/zelda_graphics.png") -336px -126px; }
+body.game-aol img.item-image.upStab { background: url("images/zelda_graphics.png") -378px -126px; }
+body.game-aol img.item-image.life { background: url("images/zelda_graphics.png") -252px -126px; }
+body.game-aol img.item-image.magic { background: url("images/zelda_graphics.png") -420px -126px; }
+body.game-aol img.item-image.attack { background: url("images/zelda_graphics.png") -462px -126px; }
+body.game-aol img.item-image.palace { background: url("images/zelda_graphics.png") -504px -126px; }
+body.game-aol img.item-image.triforce { background: url("images/zelda_graphics.png") -210px -126px; }
+body.game-aol img.item-image.bigMagic { background: url("images/zelda_graphics.png") -546px -126px; }
+
+/********* THE LEGEND OF ZELDA: A LINK TO THE PAST (SNES)) *********/
+body.game-alttp img.item-image.bow,
+body.game-smz3 img.item-image.bow,
+body.game-z3_rnd img.item-image.bow { background: url("images/zelda_graphics.png") -294px -168px; }
+body.game-alttp img.item-image.bowSilver,
+body.game-smz3 img.item-image.bowSilver,
+body.game-z3_rnd img.item-image.bowSilver { background: url("images/zelda_graphics.png") -336px -168px; }
+body.game-alttp img.item-image.boomerang,
+body.game-smz3 img.item-image.boomerang,
+body.game-z3_rnd img.item-image.boomerang { background: url("images/zelda_graphics.png") -378px -168px; }
+body.game-alttp img.item-image.magicRang,
+body.game-smz3 img.item-image.magicRang,
+body.game-z3_rnd img.item-image.magicRang { background: url("images/zelda_graphics.png") -420px -168px; }
+body.game-alttp img.item-image.hookshot,
+body.game-smz3 img.item-image.hookshot,
+body.game-z3_rnd img.item-image.hookshot { background: url("images/zelda_graphics.png") -462px -168px; }
+body.game-alttp img.item-image.bombs,
+body.game-smz3 img.item-image.bombs,
+body.game-z3_rnd img.item-image.bombs { background: url("images/zelda_graphics.png") -126px -42px; }
+body.game-alttp img.item-image.mushroom,
+body.game-smz3 img.item-image.mushroom,
+body.game-z3_rnd img.item-image.mushroom { background: url("images/zelda_graphics.png") -504px -168px; }
+body.game-alttp img.item-image.powder,
+body.game-smz3 img.item-image.powder,
+body.game-z3_rnd img.item-image.powder { background: url("images/zelda_graphics.png") -546px -168px; }
+body.game-alttp img.item-image.power,
+body.game-smz3 img.item-image.power,
+body.game-z3_rnd img.item-image.power { background: url("images/zelda_graphics.png") 0 -210px; }
+body.game-alttp img.item-image.fireRod,
+body.game-smz3 img.item-image.fireRod,
+body.game-z3_rnd img.item-image.fireRod { background: url("images/zelda_graphics.png") -42px -210px; }
+body.game-alttp img.item-image.iceRod,
+body.game-smz3 img.item-image.iceRod,
+body.game-z3_rnd img.item-image.iceRod { background: url("images/zelda_graphics.png") -84px -210px; }
+body.game-alttp img.item-image.bombos,
+body.game-smz3 img.item-image.bombos,
+body.game-z3_rnd img.item-image.bombos { background: url("images/zelda_graphics.png") -126px -210px; }
+body.game-alttp img.item-image.ether,
+body.game-smz3 img.item-image.ether,
+body.game-z3_rnd img.item-image.ether { background: url("images/zelda_graphics.png") -168px -210px; }
+body.game-alttp img.item-image.quake,
+body.game-smz3 img.item-image.quake,
+body.game-z3_rnd img.item-image.quake { background: url("images/zelda_graphics.png") -210px -210px; }
+body.game-alttp img.item-image.wisdom,
+body.game-smz3 img.item-image.wisdom,
+body.game-z3_rnd img.item-image.wisdom { background: url("images/zelda_graphics.png") -252px -210px; }
+body.game-alttp img.item-image.courage,
+body.game-smz3 img.item-image.courage,
+body.game-z3_rnd img.item-image.courage { background: url("images/zelda_graphics.png") -294px -210px; }
+body.game-alttp img.item-image.lamp,
+body.game-smz3 img.item-image.lamp,
+body.game-z3_rnd img.item-image.lamp { background: url("images/zelda_graphics.png") -336px -210px; }
+body.game-alttp img.item-image.hammer,
+body.game-smz3 img.item-image.hammer,
+body.game-z3_rnd img.item-image.hammer { background: url("images/zelda_graphics.png") -546px -42px; }
+body.game-alttp img.item-image.shovel,
+body.game-smz3 img.item-image.shovel,
+body.game-z3_rnd img.item-image.shovel { background: url("images/zelda_graphics.png") -378px -210px; }
+body.game-alttp img.item-image.flute,
+body.game-smz3 img.item-image.flute,
+body.game-z3_rnd img.item-image.flute { background: url("images/zelda_graphics.png") -420px -210px; }
+body.game-alttp img.item-image.bird,
+body.game-smz3 img.item-image.bird,
+body.game-z3_rnd img.item-image.bird { background: url("images/zelda_graphics.png") -462px -210px; }
+body.game-alttp img.item-image.net,
+body.game-smz3 img.item-image.net,
+body.game-z3_rnd img.item-image.net { background: url("images/zelda_graphics.png") -504px -210px; }
+body.game-alttp img.item-image.book,
+body.game-smz3 img.item-image.book,
+body.game-z3_rnd img.item-image.book { background: url("images/zelda_graphics.png") -546px -210px; }
+body.game-alttp img.item-image.agahnim,
+body.game-smz3 img.item-image.agahnim,
+body.game-z3_rnd img.item-image.agahnim { background: url("images/zelda_graphics.png") 0 -252px; }
+body.game-alttp img.item-image.bottle,
+body.game-smz3 img.item-image.bottle,
+body.game-z3_rnd img.item-image.bottle { background: url("images/zelda_graphics.png") -42px -252px; }
+body.game-alttp img.item-image.somaria,
+body.game-smz3 img.item-image.somaria,
+body.game-z3_rnd img.item-image.somaria { background: url("images/zelda_graphics.png") -84px -252px; }
+body.game-alttp img.item-image.byrna,
+body.game-smz3 img.item-image.byrna,
+body.game-z3_rnd img.item-image.byrna { background: url("images/zelda_graphics.png") -126px -252px; }
+body.game-alttp img.item-image.cape,
+body.game-smz3 img.item-image.cape,
+body.game-z3_rnd img.item-image.cape { background: url("images/zelda_graphics.png") -168px -252px; }
+body.game-alttp img.item-image.mirror,
+body.game-smz3 img.item-image.mirror,
+body.game-z3_rnd img.item-image.mirror { background: url("images/zelda_graphics.png") -504px 0; }
+body.game-alttp img.item-image.sword,
+body.game-smz3 img.item-image.sword,
+body.game-z3_rnd img.item-image.sword { background: url("images/zelda_graphics.png") -210px -252px; }
+body.game-alttp img.item-image.masterSword,
+body.game-smz3 img.item-image.masterSword,
+body.game-z3_rnd img.item-image.masterSword { background: url("images/zelda_graphics.png") -252px -252px; }
+body.game-alttp img.item-image.temperedSword,
+body.game-smz3 img.item-image.temperedSword,
+body.game-z3_rnd img.item-image.temperedSword { background: url("images/zelda_graphics.png") -294px -252px; }
+body.game-alttp img.item-image.goldenSword,
+body.game-smz3 img.item-image.goldenSword,
+body.game-z3_rnd img.item-image.goldenSword { background: url("images/zelda_graphics.png") -336px -252px; }
+body.game-alttp img.item-image.shield,
+body.game-smz3 img.item-image.shield,
+body.game-z3_rnd img.item-image.shield { background: url("images/zelda_graphics.png") -378px -252px; }
+body.game-alttp img.item-image.redShield,
+body.game-smz3 img.item-image.redShield,
+body.game-z3_rnd img.item-image.redShield { background: url("images/zelda_graphics.png") -420px -252px; }
+body.game-alttp img.item-image.mirrorShield,
+body.game-smz3 img.item-image.mirrorShield,
+body.game-z3_rnd img.item-image.mirrorShield { background: url("images/zelda_graphics.png") -336px 0; }
+body.game-alttp img.item-image.greenJerkin,
+body.game-smz3 img.item-image.greenJerkin,
+body.game-z3_rnd img.item-image.greenJerkin { background: url("images/zelda_graphics.png") -84px 0; }
+body.game-alttp img.item-image.blueMail,
+body.game-smz3 img.item-image.blueMail,
+body.game-z3_rnd img.item-image.blueMail { background: url("images/zelda_graphics.png") -504px -252px; }
+body.game-alttp img.item-image.redMail,
+body.game-smz3 img.item-image.redMail,
+body.game-z3_rnd img.item-image.redMail { background: url("images/zelda_graphics.png") -126px -168px; }
+body.game-alttp img.item-image.boots,
+body.game-smz3 img.item-image.boots,
+body.game-z3_rnd img.item-image.boots { background: url("images/zelda_graphics.png") 0 -294px; }
+body.game-alttp img.item-image.glove,
+body.game-smz3 img.item-image.glove,
+body.game-z3_rnd img.item-image.glove { background: url("images/zelda_graphics.png") -378px -42px; }
+body.game-alttp img.item-image.mitt,
+body.game-smz3 img.item-image.mitt,
+body.game-z3_rnd img.item-image.mitt { background: url("images/zelda_graphics.png") -42px -294px; }
+body.game-alttp img.item-image.flipper,
+body.game-smz3 img.item-image.flipper,
+body.game-z3_rnd img.item-image.flipper { background: url("images/zelda_graphics.png") -84px -294px; }
+body.game-alttp img.item-image.pearl,
+body.game-smz3 img.item-image.pearl,
+body.game-z3_rnd img.item-image.pearl { background: url("images/zelda_graphics.png") -126px -294px; }
+body.game-alttp img.item-image.halfMagic,
+body.game-smz3 img.item-image.halfMagic,
+body.game-z3_rnd img.item-image.halfMagic { background: url("images/zelda_graphics.png") -168px -294px; }
+body.game-alttp img.item-image.quarterMagic,
+body.game-smz3 img.item-image.quarterMagic,
+body.game-z3_rnd img.item-image.quarterMagic { background: url("images/zelda_graphics.png") -210px -294px; }
+body.game-alttp img.item-image.arrowsExp,
+body.game-smz3 img.item-image.arrowsExp,
+body.game-z3_rnd img.item-image.arrowsExp { background: url("images/zelda_graphics.png") -252px -294px; }
+body.game-alttp img.item-image.bombsExp,
+body.game-smz3 img.item-image.bombsExp,
+body.game-z3_rnd img.item-image.bombsExp { background: url("images/zelda_graphics.png") -168px -126px; }
+body.game-alttp img.item-image.crystal,
+body.game-smz3 img.item-image.crystal,
+body.game-z3_rnd img.item-image.crystal { background: url("images/zelda_graphics.png") -294px -294px; }
+body.game-alttp img.item-image.fairyCrystal,
+body.game-smz3 img.item-image.fairyCrystal,
+body.game-z3_rnd img.item-image.fairyCrystal { background: url("images/zelda_graphics.png") -336px -294px; }
+body.game-alttp img.item-image.arrow,
+body.game-smz3 img.item-image.arrow,
+body.game-z3_rnd img.item-image.arrow { background: url("images/zelda_graphics.png") -168px -42px; }
+body.game-alttp img.item-image.silverArrows,
+body.game-smz3 img.item-image.silverArrows,
+body.game-z3_rnd img.item-image.silverArrows { background: url("images/zelda_graphics.png") -210px -42px; }
+body.game-alttp img.item-image.heroBow,
+body.game-smz3 img.item-image.heroBow,
+body.game-z3_rnd img.item-image.heroBow { background: url("images/zelda_graphics.png") -252px -42px; }
+body.game-alttp img.item-image.superBomb,
+body.game-smz3 img.item-image.superBomb,
+body.game-z3_rnd img.item-image.superBomb { background: url("images/zelda_graphics.png") -546px -252px; }
+body.game-alttp img.item-image.heartContainer,
+body.game-smz3 img.item-image.heartContainer,
+body.game-z3_rnd img.item-image.heartContainer { background: url("images/zelda_graphics.png") -126px -126px; }
+body.game-alttp img.item-image.pieceOfHeart,
+body.game-smz3 img.item-image.pieceOfHeart,
+body.game-z3_rnd img.item-image.pieceOfHeart { background: url("images/zelda_graphics.png") -462px -252px; }
+body.game-alttp img.item-image.triforce,
+body.game-smz3 img.item-image.triforce,
+body.game-z3_rnd img.item-image.triforce { background: url("images/zelda_graphics.png") -210px -126px; }
+body.game-alttp img.item-image.heart,
+body.game-smz3 img.item-image.heart,
+body.game-z3_rnd img.item-image.heart { background: url("images/zelda_graphics.png") -252px -126px; }
+body.game-alttp img.item-image.key,
+body.game-smz3 img.item-image.key,
+body.game-z3_rnd img.item-image.key { background: url("images/zelda_graphics.png") 0 -168px; }
+body.game-alttp img.item-image.map,
+body.game-smz3 img.item-image.map,
+body.game-z3_rnd img.item-image.map { background: url("images/zelda_graphics.png") -42px -168px; }
+body.game-alttp img.item-image.compass,
+body.game-smz3 img.item-image.compass,
+body.game-z3_rnd img.item-image.compass { background: url("images/zelda_graphics.png") -84px -168px; }
+body.game-alttp img.item-image.bigKey,
+body.game-smz3 img.item-image.bigKey,
+body.game-z3_rnd img.item-image.bigKey { background: url("images/zelda_graphics.png") -378px -294px; }
+body.game-alttp img.item-image.arrows,
+body.game-smz3 img.item-image.arrows,
+body.game-z3_rnd img.item-image.arrows { background: url("images/zelda_graphics.png") -420px -294px; }
+body.game-alttp img.item-image.apple,
+body.game-smz3 img.item-image.apple,
+body.game-z3_rnd img.item-image.apple { background: url("images/zelda_graphics.png") -462px -294px; }
+
+/* == overlays == */
+
+img.overlay-image.Z_Orb { background: url("images/overlays.png") 0 0; }
+img.overlay-image.Z_Chozo { background: url("images/overlays.png") -16px 0; }
+img.overlay-image.S_Boss { background: url("images/overlays.png") -32px 0; }
+img.overlay-image.F_Data { background: url("images/overlays.png") -48px 0; }
+img.overlay-image.E_Lumin { background: url("images/overlays.png") 0 -16px; }
+img.overlay-image.E_Lumin_Ex { background: url("images/overlays.png") -16px -16px; }
+img.overlay-image.F_Boss { background: url("images/overlays.png") -32px -16px; }
+img.overlay-image.F_Boss_Ex { background: url("images/overlays.png") -48px -16px; }
+img.overlay-image.C_Fuse { background: url("images/overlays.png") 0 -32px; }
+img.overlay-image.or { background: url("images/overlays.png") -16px -32px; }
+img.overlay-image.Level_Up_Alt { background: url("images/overlays.png") -32px -32px; }
+img.overlay-image.Level_Up { background: url("images/overlays.png") -48px -32px; }
+img.overlay-image.MC_Chest { background: url("images/overlays.png") 0 -48px; }
+img.overlay-image.MC_Skull { background: url("images/overlays.png") -16px -48px; }
+img.overlay-image.Level_Down_Alt { background: url("images/overlays.png") -32px -48px; }
+img.overlay-image.Level_Down { background: url("images/overlays.png") -48px -48px; }
+
+/* == backdrops == */
+img.back-image.tt { background: url("images/backdrops.png") 0 0; }
+img.back-image.tr { background: url("images/backdrops.png") -42px 0; }
+img.back-image.toh { background: url("images/backdrops.png") -84px 0; }
+img.back-image.sw { background: url("images/backdrops.png") -126px 0; }
+img.back-image.sp { background: url("images/backdrops.png") -168px 0; }
+img.back-image.gt { background: url("images/backdrops.png") 0 -42px; }
+img.back-image.hc { background: url("images/backdrops.png") -42px -42px; }
+img.back-image.ip { background: url("images/backdrops.png") -84px -42px; }
+img.back-image.mm { background: url("images/backdrops.png") -126px -42px; }
+img.back-image.pod { background: url("images/backdrops.png") -168px -42px; }
+img.back-image.ep { background: url("images/backdrops.png") 0 -84px; }
+img.back-image.dp { background: url("images/backdrops.png") -42px -84px; }
+img.back-image.at { background: url("images/backdrops.png") -84px -84px; }
+img.back-image.unused { background: url("images/backdrops.png") -126px -84px; }
+img.back-image.unused { background: url("images/backdrops.png") -168px -84px; }

@@ -83,6 +83,7 @@ let main = {
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;
+      
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;
         for (const [key, value] of Object.entries(games)) {
@@ -92,6 +93,11 @@ let main = {
           }
         }
         feature.currentGame = incomingGame;
+        if (document.body.classList) {
+          document.body.classList.add("game-" + feature.currentGame);
+        } else {
+          document.body.className += " game-" + feature.currentGame;
+        }
         feature.workingData = rawData[feature.currentGame];
         let targetingData = document.forms["startupMenu"]["selectedGame"].options;
         let foundItem = null;
@@ -101,8 +107,7 @@ let main = {
           }
         }
         if (foundItem) {
-          let currentTitle = document.title;
-          document.title = currentTitle + " - " + foundItem.innerHTML;
+          document.title += " - " + foundItem.innerHTML;
         }
         
         let menuPointer = document.getElementById("selection");

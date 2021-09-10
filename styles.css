@@ -5,6 +5,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  padding: 10px;
 }
 
 .slider-switch {
@@ -56,7 +57,14 @@ body {
 .hide-menu,
 .hide-section,
 .hide-segment {
-  display: none;
+  display: none !important;
+}
+
+.flex-field {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 #selection .gameError {
@@ -83,14 +91,20 @@ body {
 .item,
 .expansion,
 .blank {
-  float: left;
   position: relative;
+  width: 42px;
+  height: 42px;
 }
 
+.expansion {
+  height: 80px;
+}
+
+.hint-image,
 .overlay-image {
   display: none;
-  left: 26px;
-  margin: 2px;
+  right: 0;
+  margin: 0;
   position: absolute;
   top: 26px;
   z-index: 100;
@@ -100,7 +114,7 @@ body {
 .level-down-image {
   display: none;
   left: 0;
-  margin: 2px;
+  margin: 0;
   position: absolute;
   z-index: 50;
 }
@@ -113,29 +127,41 @@ body {
   top: 26px;
 }
 
-.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
-.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
+#expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
+.item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
+.item.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image,
+.expansion.unlocked-up.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
+.expansion.unlocked-down.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image {
   display: block;
 }
 
-.show-over .overlay-image {
+.show-over .overlay-image:not(.level-up-image):not(.level-down-image) {
   display: block;
 }
 
 .item-image {
+  cursor: pointer;
   filter: drop-shadow(0 0 5px #000);
+  height: 42px;
   left: 0;
-  margin: 2px;
+  margin: 0;
   position: relative;
   top: 0;
+  width: 42px;
   z-index: 10;
 }
 
+.overlay-image {
+  height: 16px;
+  width: 16px;
+}
+
 .back-image {
-  left: 0;
-  margin: 2px;
+  height: 42px;
+  right: 0;
   position: absolute;
   top: 0;
+  width: 42px;
   z-index: 1;
 }
 
@@ -143,7 +169,7 @@ body {
 .expansion p {
   font-size: 0.8em;
   font-weight: bold;
-  margin-top: 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -163,11 +189,15 @@ body {
 .blank {
   opacity: 0.0 !important;
 }
+  
+.blank .item-image {
+  cursor: default;
+}
 
 .item-image:not(.deselected) {
   filter: drop-shadow(0 0 5px #fff);
 }
-  
+
 .dark-mode {
   background: black;
 }

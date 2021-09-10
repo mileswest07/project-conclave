@@ -8,6 +8,7 @@
 <!-- <meta name="Description" content=""> -->
 <!-- <link rel="icon" href="/images/samus.png" type="image/x-icon"/> -->
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="spriteMapping.css">
 </head>
 
 <body>
@@ -37,6 +38,7 @@
               <option value="3">SMZ3</option>
               <option value="o">Metroid: Other M (Wii)</option>
               <option value="f">Metroid: Fusion (GBA)</option>
+              <option value="n">Metroid: A New Galaxy (PC)</option>
               <option value="" disabled>==  ZELDA  ==</option>
               <option value="z1">The Legend of Zelda (NES)</option>
               <option value="z2">Zelda II: The Adventure of Link (NES)</option>
@@ -51,7 +53,9 @@
             <strong>Instructions:</strong>
           </p>
           <p>
-            Left-click to add or activate. Right-click to remove or deactivate.
+            Left-click to add or activate. Right-click to remove or deactivate.<br>
+            Middle-click, if you have it, will toggle hint collection icons on some items.<br>
+            Some items have progressive upgrades, shown with arrows.
           </p>
           <p>
             Use sprites if applicable?
@@ -75,11 +79,9 @@
     </div>
     <div class="clear-both"></div>
   </section>
-  <section id="itemField" class="hide-section">
-    <div class="clear-both"></div>
+  <section id="itemField" class="hide-section flex-field">
     
   </section>
-  <div class="clear-both"></div>
   <script src="js/rawData.js" type="text/javascript"></script>
   <script src="js/feature.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>

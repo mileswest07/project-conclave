@@ -22,6 +22,7 @@ let main = {
     "3": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
+    "n": "mng", // Metroid: A New Galaxy
     // "d": "md" // Metroid Dread
     "z1": "thf", // The Legend of Zelda
     "z2": "aol", // Zelda 2: The Adventure of Link
@@ -82,6 +83,7 @@ let main = {
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;
+      
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;
         for (const [key, value] of Object.entries(games)) {
@@ -91,6 +93,11 @@ let main = {
           }
         }
         feature.currentGame = incomingGame;
+        if (document.body.classList) {
+          document.body.classList.add("game-" + feature.currentGame);
+        } else {
+          document.body.className += " game-" + feature.currentGame;
+        }
         feature.workingData = rawData[feature.currentGame];
         let targetingData = document.forms["startupMenu"]["selectedGame"].options;
         let foundItem = null;
@@ -100,10 +107,20 @@ let main = {
           }
         }
         if (foundItem) {
-          let currentTitle = document.title;
-          document.title = currentTitle + " - " + foundItem.innerHTML;
+          document.title += " - " + foundItem.innerHTML;
         }
-        feature.generate();
+        
+        let menuPointer = document.getElementById("selection");
+        menuPointer.remove();
+        
+        let target = document.getElementById("itemField");
+        if (target.classList) { // browser compatibility logic
+          target.classList.remove("hide-section");
+        } else {
+          target.className += target.className.replace(/\bhide-section\b/g);
+        }
+        
+        feature.generate("itemField");
       }
     }
   }

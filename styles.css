@@ -135,23 +135,33 @@ body {
   display: block;
 }
 
-.show-over .overlay-image {
+.show-over .overlay-image:not(.level-up-image):not(.level-down-image) {
   display: block;
 }
 
 .item-image {
+  cursor: pointer;
   filter: drop-shadow(0 0 5px #000);
+  height: 42px;
   left: 0;
   margin: 0;
   position: relative;
   top: 0;
+  width: 42px;
   z-index: 10;
 }
 
+.overlay-image {
+  height: 16px;
+  width: 16px;
+}
+
 .back-image {
+  height: 42px;
   right: 0;
   position: absolute;
   top: 0;
+  width: 42px;
   z-index: 1;
 }
 
@@ -172,6 +182,10 @@ body {
 
 .blank {
   opacity: 0.0 !important;
+}
+
+.blank .item-image {
+  cursor: default;
 }
 
 .dark-mode {

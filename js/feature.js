@@ -17,9 +17,27 @@ let feature = {
     
     source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
     source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');
+    
     if (main.useSprites) {
-      source.firstChild.src = setOrReturn ? source.firstChild.src.replace('am2r_monster', 'am2r_monsterEL') : source.firstChild.src.replace('am2r_monsterEL', 'am2r_monster');
+      if (source.firstChild.classList) { // browser compatibility logic
+        if (!setOrReturn || source.firstChild.classList.contains("monsterEL")) {
+          source.firstChild.classList.remove("monsterEL");
+          source.firstChild.classList.add("monster");
+        } else {
+          source.firstChild.classList.remove("monster");
+          source.firstChild.classList.add("monsterEL");
+        }
+      } else {
+        if (!setOrReturn || source.firstChild.className.has("monsterEL")) {
+          source.firstChild.className += source.firstChild.className.replace(/\bmonsterEL\b/g);
+          source.firstChild.className += " monster";
+        } else {
+          source.firstChild.className += source.firstChild.className.replace(/\bmonster\b/g);
+          source.firstChild.className += " monsterEL";
+        }
+      }
     }
+    
     let newP = document.createElement("p");
     newP.innerText = "0 / " + (setOrReturn ? "47" : "9");
     source.replaceChild(newP, source.children[1]);
@@ -40,7 +58,7 @@ let feature = {
                 e.target.parentElement.classList.add("hide-segment");
                 let nextItem = e.target.parentElement.nextSibling;
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
-                nextItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                nextItem.classList.remove("hide-segment");
                 nextImage.classList.remove("deselected");
               }
             }
@@ -83,7 +101,7 @@ let feature = {
               let previousItem = e.target.parentElement.previousSibling;
               let previousImage = previousItem.querySelectorAll(".item-image")[0];
               previousItem.classList.remove("hide-segment");
-              previousImage.classList.remove("deselected"); // this assumes the Previous is an Item. TODO: case when it's an Expansion
+              previousImage.classList.remove("deselected");
             }
           }
         }
@@ -126,8 +144,8 @@ let feature = {
         }
       }
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id === "expansion-monsterDna-21-10" || e.target.parentElement.id === "expansion-monsterDna-21-10x")) {
-        am2r_extremeLabs(e.target.parentElement.id === "expansion-monsterDna-21-10");
+      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+        am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
       } else {
         clickOverlay(e);
       }
@@ -153,7 +171,7 @@ let feature = {
               if (e.target.classList) { // browser compatibility logic
                 e.target.parentElement.classList.add("hide-segment");
                 nextItem.classList.add("unlocked-down");
-                nextItem.classList.remove("hide-segment"); // this assumes the Next is an Item. TODO: case when it's an Expansion
+                nextItem.classList.remove("hide-segment");
                 nextImage.classList.remove("deselected");
               } else {
                 e.target.parentElement.className += " hide-segment";
@@ -180,7 +198,7 @@ let feature = {
               if (e.target.classList) { // browser compatibility logic
                 e.target.parentElement.classList.add("hide-segment");
                 previousItem.classList.add("unlocked-up");
-                previousItem.classList.remove("hide-segment"); // this assumes the Previous is an Item. TODO: case when it's an Expansion
+                previousItem.classList.remove("hide-segment");
                 previousImage.classList.remove("deselected");
               } else {
                 e.target.parentElement.className += " hide-segment";
@@ -195,8 +213,8 @@ let feature = {
       }
       previous--;
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id === "expansion-monsterDna-21-10" || e.target.parentElement.id === "expansion-monsterDna-21-10x")) {
-        am2r_extremeLabs(e.target.parentElement.id === "expansion-monsterDna-21-10");
+      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+        am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
       } else {
         clickOverlay(e);
       }
@@ -251,11 +269,11 @@ let feature = {
     e.preventDefault();
     
     if (e.which == 2) { // middle click
-      if (e.target.parentElement.querySelectorAll(".overlay-image")[0] == undefined) {
+      if (e.target.parentElement.querySelectorAll(".overlay-image:not(.level-up-image):not(.level-down-image):not(.hint-image)")[0] == undefined) {
         return;
       }
       const itemTitle = e.target.parentElement.querySelectorAll(".item-image")[0].alt;
-      const overlayTitle = e.target.parentElement.querySelectorAll(".overlay-image")[0].alt;
+      const overlayTitle = e.target.parentElement.querySelectorAll(".overlay-image:not(.level-up-image):not(.level-down-image):not(.hint-image)")[0].alt;
       const newTitle = itemTitle + " - " + overlayTitle;
       if (e.target.parentElement.classList) { // browser compatibility logic
         if (!e.target.parentElement.classList.contains("show-over")) {
@@ -321,6 +339,9 @@ let feature = {
       if (isSegmentHidden) {
         wrapper.classList.add("hide-segment");
       }
+      if (element.hasOwnProperty("sprite") && main.useSprites) {
+        wrapper.classList.add("usesSprite");
+      }
     } else {
       if (element.id === "-" && !isSegment) {
         wrapper.className += " blank";
@@ -330,6 +351,9 @@ let feature = {
       if (isSegmentHidden) {
         wrapper.className += " hide-segment";
       }
+      if (element.hasOwnProperty("sprite") && main.useSprites) {
+        wrapper.className += " usesSprite";
+      }
     }
     
     if (image.classList) {
@@ -338,7 +362,7 @@ let feature = {
         image.classList.add("deselected");
       }
     } else {
-      image.className = "item-image";
+      image.className = "item-image ";
       if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
         image.className += " deselected";
       }
@@ -358,32 +382,35 @@ let feature = {
         interimText[0] = interimText[0].toLowerCase();
         wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
       }
-      image.src = "images/blank.png";
     } else {
-      wrapper.id = classLabel + "-" + element.id.split("/")[1] + "-" + index;
+      let trimmedItemName = element.id;
+      wrapper.id = classLabel + "-" + trimmedItemName + "-" + index;
       if (element.hasOwnProperty("sprite") && main.useSprites) {
-        image.src = "images/" + element.sprite + ".png";
+        trimmedItemName = element.sprite;
+      }
+    
+      if (image.classList) {
+        image.classList.add(trimmedItemName);
       } else {
-        image.src = "images/" + element.id + ".png";
+        image.className += " " + trimmedItemName;
       }
     }
+    image.src = "images/blank.png";
     
     image.alt = element.name || elementName;
     wrapper.title = elementName || element.name;
-    image.height = 42;
-    image.width = 42;
     
     if (element.hasOwnProperty("back")) {
       let backImage = document.createElement("img");
+      backImage.src = "images/blank.png";
       if (backImage.classList) {
         backImage.classList.add("back-image");
+        backImage.classList.add(element.back);
       } else {
         backImage.className = "back-image";
+        backImage.className += " " + element.back;
       }
-      backImage.src = "images/back/" + element.back + ".png";
       backImage.alt = element.back.split("/")[1];
-      backImage.height = 42;
-      backImage.width = 42;
       wrapper.appendChild(backImage);
     }
     
@@ -398,10 +425,12 @@ let feature = {
       let overlayImage = document.createElement("img");
       if (overlayImage.classList) {
         overlayImage.classList.add("overlay-image");
+        overlayImage.classList.add(element.over);
       } else {
         overlayImage.className = "overlay-image";
+        overlayImage.className += " " + element.over;
       }
-      overlayImage.src = "images/overlays/" + element.over + ".png";
+      overlayImage.src = "images/blank.png";
       overlayImage.alt = element.overText;
       overlayImage.addEventListener("mousedown", clickOverlay);
       overlayImage.height = 16;
@@ -413,61 +442,79 @@ let feature = {
       let currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");
+        levelUp.src = "images/blank.png";
         if (levelUp.classList) {
           levelUp.classList.add("level-up-image");
+          levelUp.classList.add("overlay-image");
           wrapper.classList.add("can-level-up");
         } else {
           levelUp.className = "level-up-image";
-          wrapper.className += "can-level-up";
+          levelUp.className += " overlay-image";
+          wrapper.className += " can-level-up";
         }
         if (
           element.hasOwnProperty("type") && 
           (element.type === "toggle" || element.type == "dungeon")
         ) {
-          levelUp.src = "images/overlays/Level_Up_Alt.png";
+          if (levelUp.classList) {
+            levelUp.classList.add("Level_Up_Alt");
+          } else {
+            levelUp.className += " Level_Up_Alt";
+          }
         } else {
-          levelUp.src = "images/overlays/Level_Up.png";
+          if (levelUp.classList) {
+            levelUp.classList.add("Level_Up");
+          } else {
+            levelUp.className += " Level_Up";
+          }
         }
         levelUp.alt = "Level Up";
-        levelUp.height = 16;
-        levelUp.width = 16;
         wrapper.appendChild(levelUp);
       }
       if (currentStep > 0) {
         let levelDown = document.createElement("img");
+        levelDown.src = "images/blank.png";
         if (levelDown.classList) {
           levelDown.classList.add("level-down-image");
+          levelDown.classList.add("overlay-image");
           wrapper.classList.add("can-level-down");
         } else {
           levelDown.className = "level-down-image";
+          levelDown.className += " overlay-image";
           wrapper.className += "can-level-down";
         }
         if (
           element.hasOwnProperty("type") && 
           (element.type === "toggle" || element.type == "dungeon")
         ) {
-          levelDown.src = "images/overlays/Level_Down_Alt.png";
+          if (levelDown.classList) {
+            levelDown.classList.add("Level_Down_Alt");
+          } else {
+            levelDown.className += " Level_Down_Alt";
+          }
         } else {
-          levelDown.src = "images/overlays/Level_Down.png";
+          if (levelDown.classList) {
+            levelDown.classList.add("Level_Down");
+          } else {
+            levelDown.className += " Level_Down";
+          }
         }
         levelDown.alt = "Level Down";
-        levelDown.height = 16;
-        levelDown.width = 16;
         wrapper.appendChild(levelDown);
       }
     }
     
     if (feature.currentGame === "am2r" && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
+      hint.src = "images/blank.png";
       if (hint.classList) {
+        hint.classList.add("overlay-image");
         hint.classList.add("hint-image");
       } else {
-        hint.className = "hint-image";
+        hint.className = "overlay-image";
+        hint.className += " hint-image";
       }
-      hint.src = "images/overlays/or.png";
       hint.alt = "Toggle Extreme Labs";
-      hint.height = 16;
-      hint.width = 16;
       wrapper.appendChild(hint);
     }
     

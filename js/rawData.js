@@ -1429,7 +1429,7 @@ const rawData = {
         id: "missileTank",
         name: "Missile Expansions",
         start: 0,
-        max: 33,
+        max: 30,
         segments: []
       },{
         id: "darkAmmoExpansion",
@@ -1450,10 +1450,10 @@ const rawData = {
         max: 8,
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "doubleDamageA",
+        name: "Double Damage",
         start: 0,
-        max: 0,
+        max: 1,
         segments: []
       },{
         id: "infiniteBeamAmmo",

@@ -257,8 +257,8 @@ img.item-image.omegaCannonA { background: url("images/m_graphics.png") -630px -5
 img.item-image.mapMarker { background: url("images/m_graphics.png") -672px -588px; }
 img.item-image.phantomCloak { background: url("images/m_graphics.png") 0 -630px; }
 img.item-image.chargeBeamE { background: url("images/m_graphics.png") -42px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -84px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -126px -630px; }
+img.item-image.infiniteBeamAmmo { background: url("images/m_graphics.png") -84px -630px; }
+img.item-image.infiniteMissiles { background: url("images/m_graphics.png") -126px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -168px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -210px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -252px -630px; }

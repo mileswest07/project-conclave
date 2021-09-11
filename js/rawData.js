@@ -1456,16 +1456,16 @@ const rawData = {
         max: 0,
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "infiniteBeamAmmo",
+        name: "Infinite Beam Ammo",
         start: 0,
-        max: 0,
+        max: 1,
         segments: []
       },{
-        id: "-",
-        name: "",
+        id: "infiniteMissiles",
+        name: "Infinite Missiles",
         start: 0,
-        max: 0,
+        max: 1,
         segments: []
       },{
         id: "darkAgonKey",

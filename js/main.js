@@ -7,6 +7,7 @@ let main = {
   const games = {
     "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
     "m": "m1", // Metroid
+    "1": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
     "z": "mzm", // Metroid: Zero Mission
     "p": "mp", // Metroid Prime
     "b": "pb", // Metroid Prime Pinball

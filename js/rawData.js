@@ -210,6 +210,334 @@ const rawData = {
       },
     ]
   },
+  "z1m1": {
+    width: 10,
+    items: [
+      {
+        id: "morphBall",
+        sprite: "morph",
+        name: "Morph Ball",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "barrier",
+        sprite: "barrier",
+        name: "Varia Suit",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "raft",
+        name: "Raft",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "book",
+        name: "Magic Book",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "green",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "green",
+            name: "Green Jerkin",
+            start: 1,
+            max: 1,
+          },{
+            id: "blueRing",
+            name: "Blue Ring",
+            start: 0,
+            max: 1,
+          },{
+            id: "redRing",
+            name: "Red Ring",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "ladder",
+        name: "Ladder",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "magicKey",
+        name: "Magic Key",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "bracelets",
+        name: "Power Bracelet",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "longBeam",
+        sprite: "long",
+        name: "Long Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "iceBeam",
+        sprite: "ice",
+        name: "Ice Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "waveBeam",
+        sprite: "wave",
+        name: "Wave Beam",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "boomerang",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "boomerang",
+            name: "Boomerang",
+            start: 0,
+            max: 1,
+          },{
+            id: "magicRang",
+            name: "Magical Boomerang",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "bombs",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "arrow",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "arrow",
+            name: "Arrow",
+            start: 0,
+            max: 1,
+          },{
+            id: "silverArrows",
+            name: "Silver Arrow",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "heroBow",
+        name: "Bow",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "candle",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "candle",
+            name: "Blue Candle",
+            start: 0,
+            max: 1,
+          },{
+            id: "redCandle",
+            name: "Red Candle",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "bomb",
+        sprite: "bomb",
+        name: "Bombs",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "highJump",
+        sprite: "high",
+        name: "High Jump Boots",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "screwAttack",
+        sprite: "screw",
+        name: "Screw Attack",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "recorder",
+        name: "Whistle",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "bait",
+        name: "Bait",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "note",
+        name: "Note",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "magicRod",
+        name: "Magic Rod",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "energyTank",
+        sprite: "energy",
+        name: "Energy Tanks",
+        start: 0,
+        max: 8,
+        segments: []
+      },{
+        id: "missileTank",
+        sprite: "missile",
+        name: "Missile Tanks",
+        start: 0,
+        max: 21,
+        segments: []
+      },{
+        id: "kraid",
+        sprite: "kraid",
+        name: "Kraid Defeated",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "ridley",
+        sprite: "ridley",
+        name: "Ridley Defeated",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "sword",
+        name: "",
+        start: 0,
+        max: 1,
+        segments: [
+          {
+            id: "woodenSword",
+            name: "Wooden Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "whiteSword",
+            name: "White Sword",
+            start: 0,
+            max: 1,
+          },{
+            id: "magicalSword",
+            name: "Magical Sword",
+            start: 0,
+            max: 1,
+          },
+        ]
+      },{
+        id: "magicalShield",
+        name: "Magical Shield",
+        start: 0,
+        max: 1,
+        segments: []
+      },{
+        id: "heartContainer",
+        name: "Heart Containers",
+        start: 3,
+        max: 16,
+        segments: []
+      },{
+        id: "bombsExp",
+        name: "I bet you'd like to carry more Bombs",
+        start: 0,
+        max: 2,
+        segments: []
+      },{
+        id: "-",
+        name: "",
+        start: 0,
+        max: 0,
+        segments: []
+      },{
+        id: "triforce",
+        name: "Triforce Pieces",
+        start: 0,
+        max: 8,
+        segments: []
+      },
+    ]
+  },
   "mzm": {
     width: 6,
     items: [

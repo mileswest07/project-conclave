@@ -313,18 +313,30 @@ body.game-mrd .usesSprite img.item-image.captain { background: url("images/rd_sp
 body.game-mrd .usesSprite img.item-image.cell { background: url("images/rd_spritesheet.png") -210px -42px; }
 
 /********* M1 - METROID (NES) *********/
-body.game-m1 .usesSprite img.item-image.morph { background: url("images/m1_spritesheet.png") 0 0; }
-body.game-m1 .usesSprite img.item-image.barrier { background: url("images/m1_spritesheet.png") -42px 0; }
-body.game-m1 .usesSprite img.item-image.long { background: url("images/m1_spritesheet.png") -84px 0; }
-body.game-m1 .usesSprite img.item-image.ice { background: url("images/m1_spritesheet.png") -126px 0; }
-body.game-m1 .usesSprite img.item-image.bomb { background: url("images/m1_spritesheet.png") 0 -42px; }
-body.game-m1 .usesSprite img.item-image.high { background: url("images/m1_spritesheet.png") -42px -42px; }
-body.game-m1 .usesSprite img.item-image.screw { background: url("images/m1_spritesheet.png") -84px -42px; }
-body.game-m1 .usesSprite img.item-image.wave { background: url("images/m1_spritesheet.png") -126px -42px; }
-body.game-m1 .usesSprite img.item-image.energy { background: url("images/m1_spritesheet.png") 0 -84px; }
-body.game-m1 .usesSprite img.item-image.missile { background: url("images/m1_spritesheet.png") -42px -84px; }
-body.game-m1 .usesSprite img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
-body.game-m1 .usesSprite img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
+body.game-m1 .usesSprite img.item-image.morph,
+body.game-z1m1 .usesSprite img.item-image.morph { background: url("images/m1_spritesheet.png") 0 0; }
+body.game-m1 .usesSprite img.item-image.barrier,
+body.game-z1m1 .usesSprite img.item-image.barrier { background: url("images/m1_spritesheet.png") -42px 0; }
+body.game-m1 .usesSprite img.item-image.long,
+body.game-z1m1 .usesSprite img.item-image.long { background: url("images/m1_spritesheet.png") -84px 0; }
+body.game-m1 .usesSprite img.item-image.ice,
+body.game-z1m1 .usesSprite img.item-image.ice { background: url("images/m1_spritesheet.png") -126px 0; }
+body.game-m1 .usesSprite img.item-image.bomb,
+body.game-z1m1 .usesSprite img.item-image.bomb { background: url("images/m1_spritesheet.png") 0 -42px; }
+body.game-m1 .usesSprite img.item-image.high,
+body.game-z1m1 .usesSprite img.item-image.high { background: url("images/m1_spritesheet.png") -42px -42px; }
+body.game-m1 .usesSprite img.item-image.screw,
+body.game-z1m1 .usesSprite img.item-image.screw { background: url("images/m1_spritesheet.png") -84px -42px; }
+body.game-m1 .usesSprite img.item-image.wave,
+body.game-z1m1 .usesSprite img.item-image.wave { background: url("images/m1_spritesheet.png") -126px -42px; }
+body.game-m1 .usesSprite img.item-image.energy,
+body.game-z1m1 .usesSprite img.item-image.energy { background: url("images/m1_spritesheet.png") 0 -84px; }
+body.game-m1 .usesSprite img.item-image.missile,
+body.game-z1m1 .usesSprite img.item-image.missile { background: url("images/m1_spritesheet.png") -42px -84px; }
+body.game-m1 .usesSprite img.item-image.kraid,
+body.game-z1m1 .usesSprite img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
+body.game-m1 .usesSprite img.item-image.ridley,
+body.game-z1m1 .usesSprite img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
 
 /********* MZM - METROID: ZERO MISSION (GBA) *********/
 body.game-mzm .usesSprite img.item-image.morph { background: url("images/mzm_spritesheet.png") 0 0; }
@@ -452,37 +464,68 @@ body.game-mf .usesSprite img.item-image.missile { background: url("images/mf_spr
 body.game-mf .usesSprite img.item-image.pbomb { background: url("images/mf_spritesheet.png") -84px 0; }
 
 /********* THE LEGEND OF ZELDA (NES)) *********/
-body.game-thf img.item-image.raft { background: url("images/zelda_graphics.png") 0 0; }
-body.game-thf img.item-image.book { background: url("images/zelda_graphics.png") -42px 0; }
-body.game-thf img.item-image.green { background: url("images/zelda_graphics.png") -84px 0; }
-body.game-thf img.item-image.blueRing { background: url("images/zelda_graphics.png") -126px 0; }
-body.game-thf img.item-image.redRing { background: url("images/zelda_graphics.png") -168px 0; }
-body.game-thf img.item-image.ladder { background: url("images/zelda_graphics.png") -210px 0; }
-body.game-thf img.item-image.magicKey { background: url("images/zelda_graphics.png") -252px 0; }
-body.game-thf img.item-image.bracelets { background: url("images/zelda_graphics.png") 0 -42px; }
-body.game-thf img.item-image.boomerang { background: url("images/zelda_graphics.png") -42px -42px; }
-body.game-thf img.item-image.magicRang { background: url("images/zelda_graphics.png") -84px -42px; }
-body.game-thf img.item-image.bombs { background: url("images/zelda_graphics.png") -126px -42px; }
-body.game-thf img.item-image.arrow { background: url("images/zelda_graphics.png") -168px -42px; }
-body.game-thf img.item-image.silverArrows { background: url("images/zelda_graphics.png") -210px -42px; }
-body.game-thf img.item-image.heroBow { background: url("images/zelda_graphics.png") -252px -42px; }
-body.game-thf img.item-image.candle { background: url("images/zelda_graphics.png") 0 -84px; }
-body.game-thf img.item-image.redCandle { background: url("images/zelda_graphics.png") -42px -84px; }
-body.game-thf img.item-image.recorder { background: url("images/zelda_graphics.png") -84px -84px; }
-body.game-thf img.item-image.bait { background: url("images/zelda_graphics.png") -126px -84px; }
-body.game-thf img.item-image.note { background: url("images/zelda_graphics.png") -168px -84px; }
-body.game-thf img.item-image.magicRod { background: url("images/zelda_graphics.png") -210px -84px; }
-body.game-thf img.item-image.woodenSword { background: url("images/zelda_graphics.png") -252px -84px; }
-body.game-thf img.item-image.whiteSword { background: url("images/zelda_graphics.png") 0 -126px; }
-body.game-thf img.item-image.magicalSword { background: url("images/zelda_graphics.png") -42px -126px; }
-body.game-thf img.item-image.magicalShield { background: url("images/zelda_graphics.png") -84px -126px; }
-body.game-thf img.item-image.heartContainer { background: url("images/zelda_graphics.png") -126px -126px; }
-body.game-thf img.item-image.bombsExp { background: url("images/zelda_graphics.png") -168px -126px; }
-body.game-thf img.item-image.triforce { background: url("images/zelda_graphics.png") -210px -126px; }
-body.game-thf img.item-image.heart { background: url("images/zelda_graphics.png") -252px -126px; }
-body.game-thf img.item-image.key { background: url("images/zelda_graphics.png") 0 -168px; }
-body.game-thf img.item-image.map { background: url("images/zelda_graphics.png") -42px -168px; }
-body.game-thf img.item-image.compass { background: url("images/zelda_graphics.png") -84px -168px; }
+body.game-thf img.item-image.raft,
+body.game-z1m1 img.item-image.raft { background: url("images/zelda_graphics.png") 0 0; }
+body.game-thf img.item-image.book,
+body.game-z1m1 img.item-image.book { background: url("images/zelda_graphics.png") -42px 0; }
+body.game-thf img.item-image.green,
+body.game-z1m1 img.item-image.green { background: url("images/zelda_graphics.png") -84px 0; }
+body.game-thf img.item-image.blueRing,
+body.game-z1m1 img.item-image.blueRing { background: url("images/zelda_graphics.png") -126px 0; }
+body.game-thf img.item-image.redRing,
+body.game-z1m1 img.item-image.redRing { background: url("images/zelda_graphics.png") -168px 0; }
+body.game-thf img.item-image.ladder,
+body.game-z1m1 img.item-image.ladder { background: url("images/zelda_graphics.png") -210px 0; }
+body.game-thf img.item-image.magicKey,
+body.game-z1m1 img.item-image.magicKey { background: url("images/zelda_graphics.png") -252px 0; }
+body.game-thf img.item-image.bracelets,
+body.game-z1m1 img.item-image.bracelets { background: url("images/zelda_graphics.png") 0 -42px; }
+body.game-thf img.item-image.boomerang,
+body.game-z1m1 img.item-image.boomerang { background: url("images/zelda_graphics.png") -42px -42px; }
+body.game-thf img.item-image.magicRang,
+body.game-z1m1 img.item-image.magicRang { background: url("images/zelda_graphics.png") -84px -42px; }
+body.game-thf img.item-image.bombs,
+body.game-z1m1 img.item-image.bombs { background: url("images/zelda_graphics.png") -126px -42px; }
+body.game-thf img.item-image.arrow,
+body.game-z1m1 img.item-image.arrow { background: url("images/zelda_graphics.png") -168px -42px; }
+body.game-thf img.item-image.silverArrows,
+body.game-z1m1 img.item-image.silverArrows { background: url("images/zelda_graphics.png") -210px -42px; }
+body.game-thf img.item-image.heroBow,
+body.game-z1m1 img.item-image.heroBow { background: url("images/zelda_graphics.png") -252px -42px; }
+body.game-thf img.item-image.candle,
+body.game-z1m1 img.item-image.candle { background: url("images/zelda_graphics.png") 0 -84px; }
+body.game-thf img.item-image.redCandle,
+body.game-z1m1 img.item-image.redCandle { background: url("images/zelda_graphics.png") -42px -84px; }
+body.game-thf img.item-image.recorder,
+body.game-z1m1 img.item-image.recorder { background: url("images/zelda_graphics.png") -84px -84px; }
+body.game-thf img.item-image.bait,
+body.game-z1m1 img.item-image.bait { background: url("images/zelda_graphics.png") -126px -84px; }
+body.game-thf img.item-image.note,
+body.game-z1m1 img.item-image.note { background: url("images/zelda_graphics.png") -168px -84px; }
+body.game-thf img.item-image.magicRod,
+body.game-z1m1 img.item-image.magicRod { background: url("images/zelda_graphics.png") -210px -84px; }
+body.game-thf img.item-image.woodenSword,
+body.game-z1m1 img.item-image.woodenSword { background: url("images/zelda_graphics.png") -252px -84px; }
+body.game-thf img.item-image.whiteSword,
+body.game-z1m1 img.item-image.whiteSword { background: url("images/zelda_graphics.png") 0 -126px; }
+body.game-thf img.item-image.magicalSword,
+body.game-z1m1 img.item-image.magicalSword { background: url("images/zelda_graphics.png") -42px -126px; }
+body.game-thf img.item-image.magicalShield,
+body.game-z1m1 img.item-image.magicalShield { background: url("images/zelda_graphics.png") -84px -126px; }
+body.game-thf img.item-image.heartContainer,
+body.game-z1m1 img.item-image.heartContainer { background: url("images/zelda_graphics.png") -126px -126px; }
+body.game-thf img.item-image.bombsExp,
+body.game-z1m1 img.item-image.bombsExp { background: url("images/zelda_graphics.png") -168px -126px; }
+body.game-thf img.item-image.triforce,
+body.game-z1m1 img.item-image.triforce { background: url("images/zelda_graphics.png") -210px -126px; }
+body.game-thf img.item-image.heart,
+body.game-z1m1 img.item-image.heart { background: url("images/zelda_graphics.png") -252px -126px; }
+body.game-thf img.item-image.key,
+body.game-z1m1 img.item-image.key { background: url("images/zelda_graphics.png") 0 -168px; }
+body.game-thf img.item-image.map,
+body.game-z1m1 img.item-image.map { background: url("images/zelda_graphics.png") -42px -168px; }
+body.game-thf img.item-image.compass,
+body.game-z1m1 img.item-image.compass { background: url("images/zelda_graphics.png") -84px -168px; }
 
 /********* ZELDA II: THE ADVENTURE OF LINK (NES)) *********/
 body.game-aol img.item-image.shieldSpell { background: url("images/zelda_graphics.png") -126px -168px; }

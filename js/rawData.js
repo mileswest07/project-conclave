@@ -1154,7 +1154,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "superMissileA",
+        id: "superMissileC",
         name: "Super Missile",
         start: 0,
         max: 1,
@@ -1524,7 +1524,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "superMissileA",
+        id: "superMissileC",
         name: "Super Missile",
         start: 0,
         max: 1,
@@ -1785,13 +1785,13 @@ const rawData = {
         segments: []
       },{
         id: "infiniteBeamAmmo",
-        name: "Infinite Beam Ammo",
+        name: "Unlimited Beam Ammo",
         start: 0,
         max: 1,
         segments: []
       },{
         id: "infiniteMissiles",
-        name: "Infinite Missiles",
+        name: "Unlimited Missiles",
         start: 0,
         max: 1,
         segments: []

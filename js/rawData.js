@@ -2220,7 +2220,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "iceMissile",
+        id: "freezeShot",
         name: "Ice Missile",
         start: 0,
         max: 1,
@@ -2938,7 +2938,7 @@ const rawData = {
         max: 1,
         segments: []
       },{
-        id: "spiderBall",
+        id: "spiderBallA",
         name: "Spider Ball",
         start: 0,
         max: 1,

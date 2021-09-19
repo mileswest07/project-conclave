@@ -1300,7 +1300,7 @@ const rawData = {
         overText: "Spider Guardian Defeated",
         segments: []
       },{
-        id: "grappleBeam",
+        id: "primeGrapple",
         name: "Grapple Beam",
         start: 0,
         max: 1,
@@ -1670,7 +1670,7 @@ const rawData = {
         overText: "Spider Guardian Defeated",
         segments: []
       },{
-        id: "grappleBeam",
+        id: "primeGrapple",
         name: "Grapple Beam",
         start: 0,
         max: 1,

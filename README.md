@@ -24,4 +24,4 @@ At this point, you should be set up! Please file any issues you may find on my G
 
 ## Credits
 
-All sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit. All Metroid placeholder icons and Zelda sprites were made by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.
+All sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit. All Metroid placeholder icons and about half of the Zelda sprites were custom-made by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.

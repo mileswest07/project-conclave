@@ -5,6 +5,8 @@ Left and right clicks will toggle the icons. Middle click, if you have it, will 
 
 Left click on items with counters underneath them, will add one to the count. Right click will remove one.
 
+## Setup
+
 If you want to use the tracker on your OBS Studio layout, do the following:
 
 1. On your browser, open a tab and navigate to the published link. It should be reachable under the About section of this GitHub repo.
@@ -20,4 +22,6 @@ If you want to use the tracker on your OBS Studio layout, do the following:
 
 At this point, you should be set up! Please file any issues you may find on my GitHub repo.
 
-All icons were either created by me or made by Nintendo. All assets are owned by their respective creators and are used here without express written permission and without intent to profit.
+## Credits
+
+All sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit. All Metroid placeholder icons and Zelda sprites were made by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.

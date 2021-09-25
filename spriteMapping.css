@@ -261,7 +261,7 @@ img.item-image.infiniteBeamAmmo { background: url("images/m_graphics.png") -84px
 img.item-image.infiniteMissiles { background: url("images/m_graphics.png") -126px -630px; }
 img.item-image.superMissileC { background: url("images/m_graphics.png") -168px -630px; }
 img.item-image.spiderBallA { background: url("images/m_graphics.png") -210px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -252px -630px; }
+img.item-image.energyPickup { background: url("images/m_graphics.png") -252px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -294px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -336px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -378px -630px; }
@@ -457,11 +457,40 @@ body.game-sm .usesSprite img.item-image.boss,
 body.game-smz3 .usesSprite img.item-image.boss { background: url("images/sm_spritesheet.png") -84px -126px; }
 body.game-sm .usesSprite img.item-image.grapple,
 body.game-smz3 .usesSprite img.item-image.grapple { background: url("images/sm_spritesheet.png") -126px -126px; }
+body.game-sm .usesSprite img.item-image.animals { background: url("images/mf_spritesheet.png") -42px -42px; }
 
 /********* M4 - METROID: FUSION (GBA) *********/
 body.game-mf .usesSprite img.item-image.energy { background: url("images/mf_spritesheet.png") 0 0; }
 body.game-mf .usesSprite img.item-image.missile { background: url("images/mf_spritesheet.png") -42px 0; }
-body.game-mf .usesSprite img.item-image.pbomb { background: url("images/mf_spritesheet.png") -84px 0; }
+body.game-mf .usesSprite img.item-image.missileData { background: url("images/mf_spritesheet.png") -84px 0; }
+body.game-mf .usesSprite img.item-image.superMissile { background: url("images/mf_spritesheet.png") -126px 0; }
+body.game-mf .usesSprite img.item-image.speed { background: url("images/mf_spritesheet.png") -168px 0; }
+body.game-mf .usesSprite img.item-image.animals { background: url("images/mf_spritesheet.png") -42px -42px; }
+body.game-mf .usesSprite img.item-image.iceMissile { background: url("images/mf_spritesheet.png") -84px -42px; }
+body.game-mf .usesSprite img.item-image.diffusion { background: url("images/mf_spritesheet.png") -126px -42px; }
+body.game-mf .usesSprite img.item-image.high { background: url("images/mf_spritesheet.png") -168px -42px; }
+body.game-mf .usesSprite img.item-image.pbomb { background: url("images/mf_spritesheet.png") 0 -42px; }
+body.game-mf .usesSprite img.item-image.bombData { background: url("images/mf_spritesheet.png") 0 -84px; }
+body.game-mf .usesSprite img.item-image.pbombData { background: url("images/mf_spritesheet.png") -42px -84px; }
+body.game-mf .usesSprite img.item-image.powerBeam { background: url("images/mf_spritesheet.png") -84px -84px; }
+body.game-mf .usesSprite img.item-image.chargeBeam { background: url("images/mf_spritesheet.png") -126px -84px; }
+body.game-mf .usesSprite img.item-image.space { background: url("images/mf_spritesheet.png") -168px -84px; }
+body.game-mf .usesSprite img.item-image.wideBeam { background: url("images/mf_spritesheet.png") 0 -126px; }
+body.game-mf .usesSprite img.item-image.plasmaBeam { background: url("images/mf_spritesheet.png") -42px -126px; }
+body.game-mf .usesSprite img.item-image.waveBeam { background: url("images/mf_spritesheet.png") -84px -126px; }
+body.game-mf .usesSprite img.item-image.iceBeam { background: url("images/mf_spritesheet.png") -126px -126px; }
+body.game-mf .usesSprite img.item-image.screw { background: url("images/mf_spritesheet.png") -168px -126px; }
+body.game-mf .usesSprite img.item-image.fusion { background: url("images/mf_spritesheet.png") 0 -168px; }
+body.game-mf .usesSprite img.item-image.barrier { background: url("images/mf_spritesheet.png") -42px -168px; }
+body.game-mf .usesSprite img.item-image.gravity { background: url("images/mf_spritesheet.png") -84px -168px; }
+body.game-mf .usesSprite img.item-image.final { background: url("images/mf_spritesheet.png") -126px -168px; }
+body.game-mf .usesSprite img.item-image.morph { background: url("images/mf_spritesheet.png") -168px -168px; }
+
+body.game-mf img.item-image.securityL0 { background: url("images/m_graphics.png") -42px -420px; }
+body.game-mf img.item-image.securityL1 { background: url("images/m_graphics.png") -126px -420px; }
+body.game-mf img.item-image.securityL2 { background: url("images/m_graphics.png") -210px -420px; }
+body.game-mf img.item-image.securityL3 { background: url("images/m_graphics.png") -294px -420px; }
+body.game-mf img.item-image.securityL4 { background: url("images/m_graphics.png") -378px -420px; }
 
 /********* THE LEGEND OF ZELDA (NES)) *********/
 body.game-thf img.item-image.raft,

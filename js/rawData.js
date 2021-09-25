@@ -2579,7 +2579,7 @@ const rawData = {
       },{
         id: "missileTank",
         sprite: "missile",
-        name: "Missile Tanks",
+        name: "Missile Pods",
         start: 0,
         max: 22,
         segments: []
@@ -3349,6 +3349,7 @@ const rawData = {
         segments: []
       },{
         id: "etedach",
+        sprite: "animals",
         name: "Animals Rescued",
         start: 0,
         max: 1,
@@ -4950,6 +4951,7 @@ const rawData = {
         name: "Missiles",
         start: 0,
         max: 1,
+        sprite: "missileData",
         over: "F_Data",
         overText: "Operations Deck - Data Room",
         segments: []
@@ -4958,6 +4960,7 @@ const rawData = {
         name: "Super Missiles",
         start: 0,
         max: 1,
+        sprite: "superMissile",
         over: "F_Data",
         overText: "Sector 3 PYR - Data Room",
         segments: []
@@ -4966,6 +4969,7 @@ const rawData = {
         name: "Ice Missiles",
         start: 0,
         max: 1,
+        sprite: "iceMissile",
         over: "F_Data",
         overText: "Sector 5 ARC - Data Room",
         segments: []
@@ -4974,6 +4978,7 @@ const rawData = {
         name: "Diffusion Effect",
         start: 0,
         max: 1,
+        sprite: "diffusion",
         over: "F_Data",
         overText: "Sector 4 AQA - Data Room",
         segments: []
@@ -4988,6 +4993,7 @@ const rawData = {
             name: "Missiles",
             start: 0,
             max: 1,
+            sprite: "missileData",
             over: "F_Data",
             overText: "Operations Deck - Data Room"
           },{
@@ -4995,6 +5001,7 @@ const rawData = {
             name: "Super Missiles",
             start: 0,
             max: 1,
+            sprite: "superMissile",
             over: "F_Data",
             overText: "Sector 3 PYR - Data Room",
           },{
@@ -5002,6 +5009,7 @@ const rawData = {
             name: "Ice Missiles",
             start: 0,
             max: 1,
+            sprite: "iceMissile",
             over: "F_Data",
             overText: "Sector 5 ARC - Data Room",
           },{
@@ -5009,6 +5017,7 @@ const rawData = {
             name: "Diffusion Effect",
             start: 0,
             max: 1,
+            sprite: "diffusion",
             over: "F_Data",
             overText: "Sector 4 AQA - Data Room",
           },
@@ -5018,6 +5027,7 @@ const rawData = {
         name: "Morph Ball",
         start: 0,
         max: 1,
+        sprite: "morph",
         over: "F_Boss",
         overText: "Arachnus Defeated",
         segments: []
@@ -5026,6 +5036,7 @@ const rawData = {
         name: "Bombs",
         start: 0,
         max: 1,
+        sprite: "bombData",
         over: "F_Data",
         overText: "Sector 2 TRO - Data Room",
         segments: []
@@ -5034,25 +5045,29 @@ const rawData = {
         name: "Power Bombs",
         start: 0,
         max: 1,
+        sprite: "pbombData",
         over: "F_Data",
         overText: "Sector 5 ARC - Data Room",
         segments: []
       },/*{
         id: "powerBeam",
-        name: "",
-        start: 0,
+        name: "Power Beam",
+        start: 1,
         max: 1,
+        sprite: "powerBeam",
         segments: [
           {
             id: "powerBeamB",
             name: "Power Beam",
             start: 1,
             max: 1,
+            sprite: "powerBeam",
           },{
             id: "chargeBeamC",
             name: "Charge Beam",
             start: 0,
             max: 1,
+            sprite: "chargeBeam",
             over: "F_Boss",
             overText: "Elephant Bird Defeated",
           },{
@@ -5060,6 +5075,7 @@ const rawData = {
             name: "Wide Beam",
             start: 0,
             max: 1,
+            sprite: "wideBeam",
             over: "F_Boss",
             overText: "Wide Laser Core-X Defeated",
           },{
@@ -5067,6 +5083,7 @@ const rawData = {
             name: "Plasma Beam",
             start: 0,
             max: 1,
+            sprite: "plasmaBeam",
             over: "F_Boss",
             overText: "Nettori Defeated",
           },{
@@ -5074,6 +5091,7 @@ const rawData = {
             name: "Wave Beam",
             start: 0,
             max: 1,
+            sprite: "waveBeam",
             over: "F_Boss",
             overText: "SR-BOX 2 Defeated",
           },{
@@ -5081,6 +5099,7 @@ const rawData = {
             name: "Ice Beam",
             start: 0,
             max: 1,
+            sprite: "iceBeam",
           }
         ]
       },*/{
@@ -5088,6 +5107,7 @@ const rawData = {
         name: "Charge Beam",
         start: 0,
         max: 1,
+        sprite: "chargeBeam",
         over: "F_Boss",
         overText: "Elephant Bird Defeated",
         segments: []
@@ -5096,6 +5116,7 @@ const rawData = {
         name: "Wide Beam",
         start: 0,
         max: 1,
+        sprite: "wideBeam",
         over: "F_Boss",
         overText: "Wide Laser Core-X Defeated",
         segments: []
@@ -5104,6 +5125,7 @@ const rawData = {
         name: "Plasma Beam",
         start: 0,
         max: 1,
+        sprite: "plasmaBeam",
         over: "F_Boss",
         overText: "Nettori Defeated",
         segments: []
@@ -5112,6 +5134,7 @@ const rawData = {
         name: "Wave Beam",
         start: 0,
         max: 1,
+        sprite: "waveBeam",
         over: "F_Boss",
         overText: "SR-BOX 2 Defeated",
         segments: []
@@ -5120,6 +5143,7 @@ const rawData = {
         name: "Ice Beam",
         start: 0,
         max: 1,
+        sprite: "iceBeam",
         segments: []
       },{
         id: "-",
@@ -5138,6 +5162,7 @@ const rawData = {
         name: "Hi-Jump and Jumpball",
         start: 0,
         max: 1,
+        sprite: "high",
         over: "F_Boss",
         overText: "Zazabi Defeated",
         segments: []
@@ -5146,6 +5171,7 @@ const rawData = {
         name: "Speed Booster",
         start: 0,
         max: 1,
+        sprite: "speed",
         over: "F_Boss",
         overText: "Serris Defeated",
         segments: []
@@ -5154,6 +5180,7 @@ const rawData = {
         name: "Space Jump",
         start: 0,
         max: 1,
+        sprite: "space",
         over: "F_Boss",
         overText: "Yakuza Defeated",
         segments: []
@@ -5162,20 +5189,29 @@ const rawData = {
         name: "Screw Attack",
         start: 0,
         max: 1,
+        sprite: "screw",
         over: "F_Boss",
         overText: "Neo-Ridley-X Defeated",
         segments: []
       },/*{
         id: "fusionSuit",
-        name: "",
-        start: 0,
+        name: "Fusion Suit",
+        start: 1,
         max: 1,
+        sprite: "fusion",
         segments: [
           {
+            id: "fusionSuit",
+            name: "Fusion Suit",
+            start: 1,
+            max: 1,
+            sprite: "fusion",
+          },{
             id: "barrier",
             name: "Varia Suit",
             start: 0,
             max: 1,
+            sprite: "barrier",
             over: "F_Boss",
             overText: "Barrier Core-X Defeated",
           },{
@@ -5183,8 +5219,15 @@ const rawData = {
             name: "Gravity Suit",
             start: 0,
             max: 1,
+            sprite: "gravity",
             over: "F_Boss",
             overText: "Nightmare Defeated",
+          },{
+            id: "fullPowerSuit",
+            name: "Final Suit",
+            start: 0,
+            max: 1,
+            sprite: "final",
           }
         ]
       },{
@@ -5199,6 +5242,7 @@ const rawData = {
         start: 0,
         max: 1,
         over: "F_Boss",
+        sprite: "barrier",
         overText: "Barrier Core-X Defeated",
         segments: []
       },{
@@ -5207,6 +5251,7 @@ const rawData = {
         start: 0,
         max: 1,
         over: "F_Boss",
+        sprite: "gravity",
         overText: "Nightmare Defeated",
         segments: []
       },/* {
@@ -5214,6 +5259,7 @@ const rawData = {
         name: "Final Suit",
         start: 0,
         max: 1,
+        sprite: "final",
         segments: []
       }, */{
         id: "-",
@@ -5280,6 +5326,7 @@ const rawData = {
         segments: []
       },{
         id: "etedach",
+        sprite: "animals",
         name: "Lock disengaged. Gate opening.",
         start: 0,
         max: 1,

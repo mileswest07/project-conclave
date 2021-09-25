@@ -24,4 +24,21 @@ At this point, you should be set up! Please file any issues you may find on my G
 
 ## Credits
 
-All sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit. All Metroid placeholder icons and about half of the Zelda sprites were custom-made by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.
+Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.
+
+* Rogue Dawn graphics: Grimlock, Optomon, snarfblam and team
+* Metroid: A New Galaxy: u/Kelly_Crystal
+* Prime2D: Team SCU
+* Z1M1: Metalmachine and team
+* SMZ3: tewtal and team
+* Randovania: Darkszero and team
+* AM2R: DoctorM64, team, and continuation team
+* All randomizers: their respective teams
+
+All Metroid game sprites (with exception of Rogue Dawn and AM2R graphics) and Zelda Minish Cap sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit.
+
+Rogue Dawn sprites were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
+
+AM2R sprites were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.
+
+All Metroid placeholder icons and remainder Zelda sprites were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.

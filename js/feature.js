@@ -297,7 +297,7 @@ let feature = {
   
   function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
     if (!isSegment) {
-      if (element.segments && element.segments.length > 0) {
+      if (element.hasOwnProperty("segments") && element.segments.length > 0) {
         let segmentProgress = element.start;
         for (let j = 0; j < element.segments.length; j++) {
           --segmentProgress;
@@ -319,17 +319,13 @@ let feature = {
     let wrapper = document.createElement("div");
     let image = document.createElement("img");
     
-    let counterAnyway = false;
-    
-    if (element.hasOwnProperty("type") && element.type === "counter") {
-      counterAnyway = true;
-    }
+    const counterAnyway = (element.hasOwnProperty("type") && element.type === "counter");
     
     if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
       wrapper.setAttribute("typing", element.type);
     }
     
-    let classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
+    const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
     if (wrapper.classList) {
       if (element.id === "-" && !isSegment) {
         wrapper.classList.add("blank");
@@ -356,6 +352,11 @@ let feature = {
       }
     }
     
+    /* if (!main.useSprites && element.hasOwnProperty("bg")) {
+      wrapper.style.backgroundColor = ("#" + element.bg) || "white";
+      wrapper.style.backgroundBlendMode = "overlay";
+    } */
+
     if (image.classList) {
       image.classList.add("item-image");
       if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
@@ -414,11 +415,6 @@ let feature = {
       wrapper.appendChild(backImage);
     }
     
-    /* if (element.hasOwnProperty("bg")) {
-      wrapper.style.backgroundColor = ("#" + element.bg) || "white";
-      wrapper.style.backgroundBlendMode = "overlay";
-    } */
-    
     wrapper.appendChild(image);
     if (element.id !== "-" && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");
@@ -444,7 +440,7 @@ let feature = {
     }
     
     if (isSegment) {
-      let currentStep = parseInt(index.split('-')[1]);
+      const currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");
         levelUp.src = "images/blank.png";

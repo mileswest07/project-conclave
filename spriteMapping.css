@@ -597,9 +597,12 @@ body.game-aol img.item-image.triforce { background: url("images/zelda_graphics.p
 body.game-aol img.item-image.bigMagic { background: url("images/zelda_graphics.png") -546px -126px; }
 
 /********* THE LEGEND OF ZELDA: A LINK TO THE PAST (SNES)) *********/
+body.game-alttp img.item-image.bowArrows,
+body.game-smz3 img.item-image.bowArrows,
+body.game-z3_rnd img.item-image.bowArrows { background: url("images/zelda_graphics.png") -294px -168px; }
 body.game-alttp img.item-image.bow,
 body.game-smz3 img.item-image.bow,
-body.game-z3_rnd img.item-image.bow { background: url("images/zelda_graphics.png") -294px -168px; }
+body.game-z3_rnd img.item-image.bow { background: url("images/zelda_graphics.png") -252px -42px; }
 body.game-alttp img.item-image.bowSilver,
 body.game-smz3 img.item-image.bowSilver,
 body.game-z3_rnd img.item-image.bowSilver { background: url("images/zelda_graphics.png") -336px -168px; }

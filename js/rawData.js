@@ -40,10 +40,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "wallJumpBoots",
         sprite: "wall",
@@ -82,10 +79,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "energyTank",
         sprite: "energy",
@@ -289,16 +283,10 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "raft",
         name: "Raft",
@@ -381,10 +369,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "boomerang",
         name: "",
@@ -453,10 +438,7 @@ const rawData = {
         ]
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bomb",
         sprite: "bomb",
@@ -486,10 +468,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "recorder",
         name: "Whistle",
@@ -516,16 +495,10 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "energyTank",
         sprite: "energy",
@@ -605,10 +578,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "triforce",
         name: "Triforce Pieces",
@@ -656,11 +626,12 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "gravitySuit",
-        name: "",
+        sprite: "gravity",
+        name: "", // "Gravity Suit",
         start: 0,
         max: 1,
         segments: [
-          {
+          { // in case of progressive Gravity Suit
             id: "unknownItem3",
             sprite: "ui3",
             name: "Unknown Item 3",
@@ -679,7 +650,9 @@ const rawData = {
             bg: "602880",
             nodeType: "upgrade",
           }
-        ]
+        ],
+        bg: "602880",
+        nodeType: "upgrade",
       },{
         id: "fullPowerSuit",
         sprite: "full",
@@ -691,10 +664,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "longBeam",
         sprite: "long",
@@ -719,10 +689,11 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "plasmaBeam",
-        name: "",
+        sprite: "plasma",
+        name: "", // "Plasma Beam",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ // in case of progressive Plasma Beam
           {
             id: "unknownItem1",
             sprite: "ui1",
@@ -742,7 +713,9 @@ const rawData = {
             bg: "00ff08",
             nodeType: "upgrade",
           }
-        ]
+        ],
+        bg: "00ff08",
+        nodeType: "upgrade",
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -767,10 +740,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "powerGrip",
         sprite: "grip",
@@ -784,10 +754,11 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "spaceJump",
-        name: "",
+        sprite: "space",
+        name: "", // "Space Jump",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ // in case of progressive Space Jump
           {
             id: "unknownItem2",
             sprite: "ui2",
@@ -807,7 +778,9 @@ const rawData = {
             bg: "00a0e0",
             nodeType: "upgrade",
           }
-        ]
+        ],
+        bg: "00a0e0",
+        nodeType: "upgrade",
       },{
         id: "speedBooster",
         sprite: "speed",
@@ -843,10 +816,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "energyTank",
         sprite: "energy",
@@ -919,12 +889,16 @@ const rawData = {
             type: "toggle",
             start: 1,
             max: 1,
+            bg: "ffffff",
+            nodeType: "toggle",
           },{
             id: "fusionSuit",
             name: "Fusion Suit Active",
             type: "toggle",
             start: 0,
-            max: 1
+            max: 1,
+            bg: "ffffff",
+            nodeType: "toggle",
           }
         ],
         bg: "ffffff",
@@ -1189,13 +1163,10 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "chozoArtifact",
-        name: "",
+        name: "", // "Chozo Artifacts",
         start: 0,
         max: 12,
         over: "Z_Chozo",
@@ -1219,6 +1190,8 @@ const rawData = {
             nodeType: "goal",
           }
         ],
+        bg: "008080",
+        nodeType: "key",
       },
     ]
   },
@@ -1483,10 +1456,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "darkSuit",
         name: "Dark Suit",
@@ -1689,9 +1659,11 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "darkAgonKey",
-        name: "",
+        name: "", // "Dark Agon Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Amorbis required",
         segments: [
           {
             id: "darkAgonKey",
@@ -1717,12 +1689,16 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "ad6a40",
+        nodeType: "key",
       },{
         id: "darkTorvusKey",
-        name: "",
+        name: "", // "Dark Torvus Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Chykka required",
         segments: [
           {
             id: "darkTorvusKey",
@@ -1748,12 +1724,16 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "4b9467",
+        nodeType: "key",
       },{
         id: "ingHiveKey",
-        name: "",
+        name: "", // "Ing Hive Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Quadraxis required",
         segments: [
           {
             id: "ingHiveKey",
@@ -1778,13 +1758,16 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
-          }]
+          }
+        ],
+        bg: "5c819e",
+        nodeType: "key",
       },{
         id: "skyTempleKey",
-        name: "",
+        name: "", // "Sky Temple Keys",
         start: 0,
         max: 9,
-        over: "Z_Chozo",
+        over: "E_Lumin_Ex",
         overText: "Hints Acquired",
         segments: [
           {
@@ -1804,7 +1787,9 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "key",
       },
     ]
   },
@@ -2185,9 +2170,11 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "darkAgonKey",
-        name: "",
+        name: "", // "Dark Agon Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Amorbis required",
         segments: [
           {
             id: "darkAgonKey",
@@ -2213,12 +2200,16 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "ad6a40",
+        nodeType: "key",
       },{
         id: "darkTorvusKey",
-        name: "",
+        name: "", // "Dark Torvus Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Chykka required",
         segments: [
           {
             id: "darkTorvusKey",
@@ -2244,12 +2235,16 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "4b9467",
+        nodeType: "key",
       },{
         id: "ingHiveKey",
-        name: "",
+        name: "", // "Ing Hive Keys",
         start: 0,
         max: 3,
+        over: "F_Boss_Ex",
+        overText: "Quadraxis required",
         segments: [
           {
             id: "ingHiveKey",
@@ -2274,13 +2269,16 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
-          }]
+          }
+        ],
+        bg: "5c819e",
+        nodeType: "key",
       },{
         id: "skyTempleKey",
-        name: "",
+        name: "", // "Sky Temple Keys",
         start: 0,
         max: 9,
-        over: "Z_Chozo",
+        over: "E_Lumin_Ex",
         overText: "Hints Acquired",
         segments: [
           {
@@ -2300,7 +2298,9 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "key",
       },
     ]
   },
@@ -2397,13 +2397,10 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "alimbicArtifactCA1",
-        name: "Celestial Archives 1",
+        name: "Celestial Archives 1", // "Alimbic Artifacts - CA 1"
         start: 0,
         max: 3,
         segments: [
@@ -2422,10 +2419,12 @@ const rawData = {
             bg: "008080", // "00f0c8", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactAl1",
-        name: "Alinos 1",
+        name: "Alinos 1", // "Alimbic Artifacts - Al 1"
         start: 0,
         max: 3,
         segments: [
@@ -2444,10 +2443,12 @@ const rawData = {
             bg: "008080", // "f09000", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactVDO1",
-        name: "VDO 1",
+        name: "VDO 1", // "Alimbic Artifacts - VDO 1"
         start: 0,
         max: 3,
         segments: [
@@ -2466,10 +2467,12 @@ const rawData = {
             bg: "008080", // "2090a8", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactArc1",
-        name: "Arcterra 1",
+        name: "Arcterra 1", // "Alimbic Artifacts - Arc 1"
         start: 0,
         max: 3,
         segments: [
@@ -2488,36 +2491,45 @@ const rawData = {
             bg: "008080", // "2858a0", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "oubliette",
         name: "Oubliette unlocked",
         start: 0,
         max: 1,
-        segments: [],
+        segments: [
+          /* {
+            id: "octolith",
+            name: "Octoliths",
+            start: 0,
+            max: 8,
+            bg: "008080",
+            nodeType: "key",
+          },{
+            id: "oubliette",
+            name: "Oubliette unlocked",
+            start: 0,
+            max: 1,
+            bg: "402c00",
+            nodeType: "goal",
+          } */
+        ],
         bg: "402c00",
         nodeType: "goal",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "alimbicArtifactCA2",
-        name: "Celestial Archives 2",
+        name: "Celestial Archives 2", // "Alimbic Artifacts - CA 2"
         start: 0,
         max: 3,
         segments: [
@@ -2536,10 +2548,12 @@ const rawData = {
             bg: "008080", // "b8e008", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactAl2",
-        name: "Alinos 2",
+        name: "Alinos 2", // "Alimbic Artifacts - Al 2"
         start: 0,
         max: 3,
         segments: [
@@ -2558,10 +2572,12 @@ const rawData = {
             bg: "008080", // "f00000", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactVDO2",
-        name: "VDO 2",
+        name: "VDO 2", // "Alimbic Artifacts - VDO 2"
         start: 0,
         max: 3,
         segments: [
@@ -2580,10 +2596,12 @@ const rawData = {
             bg: "008080", // "0868e0", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },{
         id: "alimbicArtifactArc2",
-        name: "Arcterra 2",
+        name: "Arcterra 2", // "Alimbic Artifacts - Arc 2"
         start: 0,
         max: 3,
         segments: [
@@ -2602,7 +2620,9 @@ const rawData = {
             bg: "008080", // "184898", // "008080"
             nodeType: "goal",
           }
-        ]
+        ],
+        bg: "008080",
+        nodeType: "goal",
       },
     ]
   },
@@ -2667,10 +2687,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "hyperBeam",
         name: "Hyper Beam",
@@ -2695,7 +2712,7 @@ const rawData = {
         start: 0,
         max: 1,
         over: "Z_Orb",
-        overText: "Pirate Homeworld - Pirate Mines - Main Cavern",
+        overText: "Mining Laser defeated",
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
@@ -2855,10 +2872,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "screwAttackA",
         name: "Screw Attack",
@@ -2871,10 +2885,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "commandVisor",
         name: "Command Visor",
@@ -2919,16 +2930,10 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "theronianBomb",
         name: "Theronian Bomb Components",
@@ -2939,10 +2944,7 @@ const rawData = {
         nodeType: "goal",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },/*{
         id: "norion",
         name: "Norion Complete",
@@ -2999,9 +3001,11 @@ const rawData = {
         nodeType: "goal",
       },*/{
         id: "energyCell",
-        name: "",
+        name: "", // "Energy Cells",
         start: 0,
         max: 9,
+        over: "C_Fuse",
+        overText: "Hints Acquired",
         segments: [
           {
             id: "energyCell",
@@ -3038,10 +3042,7 @@ const rawData = {
     items: [
       {
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bomb",
         sprite: "bomb",
@@ -3463,15 +3464,14 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "monsterDna",
         name: "Metroids defeated",
+        sprite: "monster",
+        type: "counter",
         start: 0,
-        max: 0,
+        max: 54,
         segments: [
           {
             id: "monsterDna",
@@ -3693,10 +3693,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "highJump",
         name: "High Jump Boots",
@@ -4124,10 +4121,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "boss",
         sprite: "boss",
@@ -4198,20 +4192,17 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bow",
-        name: "", // "Bow",
+        name: "Bow", // "",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "L1 Big Chest",
         segments: [ // assuming progressive bow
-          {
-            id: "bow",
+          /*{
+            id: "bowArrows",
             name: "Bow and Arrows",
             start: 0,
             max: 1,
@@ -4222,22 +4213,34 @@ const rawData = {
             name: "Bow and Silver Arrows",
             start: 0,
             max: 1
-          }
+          }*/
         ]
-      },/* { // in case of nonprogressive bow
+      },{ // in case of nonprogressive bow
         id: "silverArrows",
-        name: "Silver Arrows",
+        name: "", // "Silver Arrows",
         start: 0,
         max: 1,
-        segments: []
-      }, *//* {
+        segments: [
+          {
+            id: "arrow",
+            name: "Arrows",
+            start: 0,
+            max: 1,
+          },{
+            id: "silverArrows",
+            name: "Silver Arrows",
+            start: 0,
+            max: 1
+          }
+        ]
+      }, /* { // assuming progressive Boomerang
         id: "boomerang",
-        name: "",
+        name: "", // "Boomerang",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "HC Basement Chest",
-        segments: [ */
+        segments: [ */ // in case of nonprogressive Boomerang
           {
             id: "boomerang",
             name: "Boomerang",
@@ -4266,36 +4269,30 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/*{
         id: "powder",
-        name: "Magic Powder",
+        name: "",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "mushroom",
-        name: "Mushroom",
-        start: 0,
-        max: 1,
-        segments: []
+        segments: [
+          */{
+            id: "mushroom",
+            name: "Mushroom",
+            start: 0,
+            max: 1,
+          },{
+            id: "powder",
+            name: "Magic Powder",
+            start: 0,
+            max: 1,
+          }/*
+        ]
+      }*/,{
+        id: "-",
+        max: 0,
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },{
         id: "barrier",
         sprite: "barrier",
@@ -4342,10 +4339,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -4380,34 +4374,19 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "chargeBeam",
         name: "Charge Beam",
@@ -4454,10 +4433,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "lamp",
         name: "Lamp",
@@ -4480,7 +4456,7 @@ const rawData = {
         segments: []
       },{
         id: "flute",
-        name: "",
+        name: "", // "Flute",
         start: 0,
         max: 1,
         segments: [
@@ -4510,28 +4486,16 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "plasmaBeam",
         sprite: "plasma",
@@ -4578,10 +4542,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bottle",
         name: "Bottle",
@@ -4696,16 +4657,10 @@ const rawData = {
         ]
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "energyTank",
         sprite: "energy",
@@ -4744,10 +4699,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "boots",
         name: "Pegasus Boots",
@@ -4792,10 +4744,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "halfMagic",
         name: "",
@@ -4828,16 +4777,10 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "reserveTank",
         name: "Reserve Tanks",
@@ -4849,16 +4792,10 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "boss",
         name: "Bosses",
@@ -4870,10 +4807,7 @@ const rawData = {
         nodeType: "boss",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "ep",
         name: "Eastern Palace",
@@ -5732,10 +5666,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
-        max: 1,
-        segments: []
+        max: 0,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -5778,10 +5709,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
-        name: "",
-        start: 0,
-        max: 1,
-        segments: []
+        max: 0,
       },{
         id: "energyTank",
         name: "Energy Tanks",
@@ -5892,56 +5820,12 @@ const rawData = {
   "mf": {
     width: 7,
     items: [
-      {
-        id: "missileA",
-        name: "Missiles",
-        start: 0,
-        max: 1,
-        sprite: "missileData",
-        over: "F_Data",
-        overText: "Operations Deck - Data Room",
-        segments: [],
-        bg: "d82800",
-        nodeType: "upgrade",
-      },{
-        id: "missile",
-        name: "Super Missiles",
-        start: 0,
-        max: 1,
-        sprite: "superMissile",
-        over: "F_Data",
-        overText: "Sector 3 PYR - Data Room",
-        segments: [],
-        bg: "007f0e",
-        nodeType: "upgrade",
-      },{
-        id: "iceMissile",
-        name: "Ice Missiles",
-        start: 0,
-        max: 1,
-        sprite: "iceMissile",
-        over: "F_Data",
-        overText: "Sector 5 ARC - Data Room",
-        segments: [],
-        bg: "2038ec",
-        nodeType: "upgrade",
-      },{
-        id: "superMissile",
-        name: "Diffusion Effect",
-        start: 0,
-        max: 1,
-        sprite: "diffusion",
-        over: "F_Data",
-        overText: "Sector 4 AQA - Data Room",
-        segments: [],
-        bg: "7f2800",
-        nodeType: "upgrade",
-      },/*{
+      /*{ // in case of progressive Missiles
         id: "missile",
         name: "",
         start: 0,
         max: 1,
-        segments: [
+        segments: [*/
           {
             id: "missileA",
             name: "Missiles",
@@ -5982,7 +5866,7 @@ const rawData = {
             overText: "Sector 4 AQA - Data Room",
             bg: "7f2800",
             nodeType: "upgrade",
-          },
+          },/*
         ]
       },*/{
         id: "morphBall",
@@ -6017,9 +5901,9 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
-      },/*{
+      },/*{ // in case of progressive beams
         id: "powerBeam",
-        name: "Power Beam",
+        name: "", // "Power Beam",
         start: 1,
         max: 1,
         sprite: "powerBeam",
@@ -6032,8 +5916,8 @@ const rawData = {
             sprite: "powerBeam",
             bg: "ffb508",
             nodeType: "upgrade",
-          },{
-            id: "chargeBeamC",
+          },*/{
+            id: "chargeBeam", // "chargeBeamC",
             name: "Charge Beam",
             start: 0,
             max: 1,
@@ -6043,7 +5927,7 @@ const rawData = {
             bg: "808000",
             nodeType: "upgrade",
           },{
-            id: "wideBeamB",
+            id: "wideBeamA", // "wideBeamB",
             name: "Wide Beam",
             start: 0,
             max: 1,
@@ -6053,7 +5937,7 @@ const rawData = {
             bg: "ffff80",
             nodeType: "upgrade",
           },{
-            id: "plasmaBeamA",
+            id: "plasmaBeam", // "plasmaBeamA",
             name: "Plasma Beam",
             start: 0,
             max: 1,
@@ -6063,7 +5947,7 @@ const rawData = {
             bg: "00ff08",
             nodeType: "upgrade",
           },{
-            id: "waveBeamB",
+            id: "waveBeam", // "waveBeamB",
             name: "Wave Beam",
             start: 0,
             max: 1,
@@ -6073,82 +5957,23 @@ const rawData = {
             bg: "92278f",
             nodeType: "upgrade",
           },{
-            id: "iceBeamC",
+            id: "iceBeam", // "iceBeamC",
             name: "Ice Beam",
             start: 0,
             max: 1,
             sprite: "iceBeam",
             bg: "2038ec",
             nodeType: "upgrade",
-          }
+          },/*
         ],
         bg: "ffb508",
         nodeType: "upgrade",
       },*/{
-        id: "chargeBeam",
-        name: "Charge Beam",
-        start: 0,
-        max: 1,
-        sprite: "chargeBeam",
-        over: "F_Boss",
-        overText: "Elephant Bird Defeated",
-        segments: [],
-        bg: "808000",
-        nodeType: "upgrade",
-      },{
-        id: "wideBeamA",
-        name: "Wide Beam",
-        start: 0,
-        max: 1,
-        sprite: "wideBeam",
-        over: "F_Boss",
-        overText: "Wide Laser Core-X Defeated",
-        segments: [],
-        bg: "ffff80",
-        nodeType: "upgrade",
-      },{
-        id: "plasmaBeam",
-        name: "Plasma Beam",
-        start: 0,
-        max: 1,
-        sprite: "plasmaBeam",
-        over: "F_Boss",
-        overText: "Nettori Defeated",
-        segments: [],
-        bg: "00ff08",
-        nodeType: "upgrade",
-      },{
-        id: "waveBeam",
-        name: "Wave Beam",
-        start: 0,
-        max: 1,
-        sprite: "waveBeam",
-        over: "F_Boss",
-        overText: "SR-BOX 2 Defeated",
-        segments: [],
-        bg: "92278f",
-        nodeType: "upgrade",
-      },{
-        id: "iceBeam",
-        name: "Ice Beam",
-        start: 0,
-        max: 1,
-        sprite: "iceBeam",
-        segments: [],
-        bg: "2038ec",
-        nodeType: "upgrade",
+        id: "-",
+        max: 0,
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },{
         id: "highJump",
         name: "Hi-Jump and Jumpball",
@@ -6193,7 +6018,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
-      },/*{
+      },/*{ // in case of progressive suits
         id: "fusionSuit",
         name: "Fusion Suit",
         start: 1,
@@ -6208,7 +6033,7 @@ const rawData = {
             sprite: "fusion",
             bg: "007098",
             nodeType: "upgrade",
-          },{
+          },*/{
             id: "barrier",
             name: "Varia Suit",
             start: 0,
@@ -6228,7 +6053,7 @@ const rawData = {
             overText: "Nightmare Defeated",
             bg: "602880",
             nodeType: "upgrade",
-          },{
+          },/*{
             id: "fullPowerSuit",
             name: "Final Suit",
             start: 0,
@@ -6236,51 +6061,11 @@ const rawData = {
             sprite: "final",
             bg: "ff7e00",
             nodeType: "upgrade",
-          }
+          },
         ]
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },*/{
-        id: "barrier",
-        name: "Varia Suit",
-        start: 0,
-        max: 1,
-        over: "F_Boss",
-        sprite: "barrier",
-        overText: "Barrier Core-X Defeated",
-        segments: [],
-        bg: "c8f048",
-        nodeType: "upgrade",
-      },{
-        id: "gravitySuit",
-        name: "Gravity Suit",
-        start: 0,
-        max: 1,
-        over: "F_Boss",
-        sprite: "gravity",
-        overText: "Nightmare Defeated",
-        segments: [],
-        bg: "602880",
-        nodeType: "upgrade",
-      },/* {
-        id: "fullPowerSuit",
-        name: "Final Suit",
-        start: 0,
-        max: 1,
-        sprite: "final",
-        segments: [],
-        bg: "ff7e00",
-        nodeType: "upgrade",
-      }, */{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "energyTank",
         sprite: "energy",
@@ -6310,31 +6095,19 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },/* {
         id: "pumpControlUnit",
-        name: "Water level lowered.",
+        name: "Sector 4 - Water level lowered.",
         start: 0,
         max: 1,
         segments: [],
@@ -6342,7 +6115,7 @@ const rawData = {
         nodeType: "goal",
       },{
         id: "mainBoiler",
-        name: "Cooling unit operational.",
+        name: "Sector 3 - Cooling unit operational.",
         start: 0,
         max: 1,
         segments: [],
@@ -6351,7 +6124,7 @@ const rawData = {
       },{
         id: "etedach",
         sprite: "animals",
-        name: "Lock disengaged. Gate opening.",
+        name: "Main Deck - Lock disengaged. Gate opening.",
         start: 0,
         max: 1,
         segments: [],
@@ -6359,7 +6132,7 @@ const rawData = {
         nodeType: "goal",
       },{
         id: "reactorCore",
-        name: "Auxiliary power engaged.",
+        name: "Main Deck - Auxiliary power engaged.",
         start: 0,
         max: 1,
         segments: [],
@@ -6642,10 +6415,7 @@ const rawData = {
         ]
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "recorder",
         name: "Whistle",
@@ -6672,16 +6442,10 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "sword",
         name: "",
@@ -6725,10 +6489,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "triforce",
         name: "Triforce Pieces",
@@ -6791,10 +6552,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "trophy",
         name: "Trophy",
@@ -6827,10 +6585,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "note",
         name: "Bagu's Note",
@@ -6887,10 +6642,7 @@ const rawData = {
         segments: []
       },/* {
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "parapa", // "palace",
         name: "Parapa Palace Crystal",
@@ -6929,10 +6681,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       }, */{
         id: "heartContainer",
         name: "Heart Containers",
@@ -7000,15 +6749,15 @@ const rawData = {
     width: 8,
     items: [
       {
-        id: "bow",
+        id: "bowArrows",
         name: "Bow",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "L1 Big Chest",
-        segments: [
+        segments: [ // assumes progressive bows
           {
-            id: "bow",
+            id: "bowArrows",
             name: "Arrows",
             start: 0,
             max: 1,
@@ -7021,14 +6770,14 @@ const rawData = {
             max: 1
           }
         ]
-      },{
+      },{ // assuming progressive Boomerang
         id: "boomerang",
-        name: "",
+        name: "", // "Boomerang",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "HC Basement Chest",
-        segments: [
+        segments: [ // in case of nonprogressive Boomerang
           {
             id: "boomerang",
             name: "Boomerang",
@@ -7062,7 +6811,7 @@ const rawData = {
         name: "",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ // assumes progressive mushroom/powder
           {
             id: "mushroom",
             name: "Mushroom",
@@ -7077,10 +6826,7 @@ const rawData = {
         ]
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "power",
         name: "Tower of Hera - Pendent of Power",
@@ -7090,10 +6836,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -7135,10 +6878,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "courage",
         name: "Eastern Palace - Pendent of Courage",
@@ -7165,7 +6905,7 @@ const rawData = {
         name: "",
         start: 0,
         max: 1,
-        segments: [
+        segments: [ // assumes progressive shovel/flute
           {
             id: "shovel",
             name: "Shovel",
@@ -7197,10 +6937,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "agahnim",
         name: "Agahnim's Tower - Agahnim defeated",
@@ -7210,10 +6947,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bottle",
         name: "Bottle",
@@ -7370,10 +7104,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "halfMagic",
         name: "Half Magic",
@@ -7449,14 +7180,14 @@ const rawData = {
     items: [
       {
         id: "bow",
-        name: "", // "Bow",
+        name: "Bow", // "",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "L1 Big Chest",
         segments: [ // assuming progressive bow
-          {
-            id: "bow",
+          /*{
+            id: "bowArrows",
             name: "Bow and Arrows",
             start: 0,
             max: 1,
@@ -7467,22 +7198,34 @@ const rawData = {
             name: "Bow and Silver Arrows",
             start: 0,
             max: 1
-          }
+          }*/
         ]
-      },/* { // in case of nonprogressive bow
+      },{ // in case of nonprogressive bow
         id: "silverArrows",
-        name: "Silver Arrows",
+        name: "", // "Silver Arrows",
         start: 0,
         max: 1,
-        segments: []
-      }, *//* {
+        segments: [
+          {
+            id: "arrow",
+            name: "Arrows",
+            start: 0,
+            max: 1,
+          },{
+            id: "silverArrows",
+            name: "Silver Arrows",
+            start: 0,
+            max: 1
+          }
+        ]
+      }, /* { // assuming progressive Boomerang
         id: "boomerang",
-        name: "",
+        name: "", // "Boomerang",
         start: 0,
         max: 1,
         over: "MC_Chest",
         overText: "HC Basement Chest",
-        segments: [ */
+        segments: [ */ // in case of nonprogressive Boomerang
           {
             id: "boomerang",
             name: "Boomerang",
@@ -7511,36 +7254,33 @@ const rawData = {
         start: 0,
         max: 1,
         segments: []
-      },{
+      },/*{
         id: "powder",
-        name: "Magic Powder",
+        name: "",
         start: 0,
         max: 1,
-        segments: []
-      },{
-        id: "mushroom",
-        name: "Mushroom",
-        start: 0,
-        max: 1,
-        segments: []
+        segments: [
+          */{
+            id: "mushroom",
+            name: "Mushroom",
+            start: 0,
+            max: 1,
+          },{
+            id: "powder",
+            name: "Magic Powder",
+            start: 0,
+            max: 1,
+          }/*
+        ]
+      }*/,/*{
+        id: "-",
+        max: 0,
+      },*/{
+        id: "-",
+        max: 0,
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
-      },{
-        id: "-",
-        name: "",
-        start: 0,
-        max: 0,
-        segments: []
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -7575,34 +7315,19 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "lamp",
         name: "Lamp",
@@ -7655,28 +7380,16 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "bottle",
         name: "Bottle",
@@ -7791,16 +7504,10 @@ const rawData = {
         ]
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "boots",
         name: "Pegasus Boots",
@@ -7845,10 +7552,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "halfMagic",
         name: "",
@@ -7881,16 +7585,10 @@ const rawData = {
         segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "-",
-        name: "",
-        start: 0,
         max: 0,
-        segments: []
       },{
         id: "ep",
         name: "Eastern Palace",

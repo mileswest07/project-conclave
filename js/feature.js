@@ -353,8 +353,8 @@ let feature = {
     }
     
     /* if (!main.useSprites && element.hasOwnProperty("bg")) {
-      wrapper.style.backgroundColor = ("#" + element.bg) || "white";
-      wrapper.style.backgroundBlendMode = "overlay";
+      wrapper.style.backgroundColor = ("#" + element.bg + "80") || "white";
+      wrapper.style.backgroundBlendMode = "multiply";
     } */
 
     if (image.classList) {

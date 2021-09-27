@@ -889,7 +889,6 @@ const rawData = {
             type: "toggle",
             start: 1,
             max: 1,
-            bg: "ffffff",
             nodeType: "toggle",
           },{
             id: "fusionSuit",
@@ -897,7 +896,6 @@ const rawData = {
             type: "toggle",
             start: 0,
             max: 1,
-            bg: "ffffff",
             nodeType: "toggle",
           }
         ],

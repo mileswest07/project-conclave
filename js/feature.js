@@ -414,6 +414,11 @@ let feature = {
       wrapper.appendChild(backImage);
     }
     
+    /* if (element.hasOwnProperty("bg")) {
+      wrapper.style.backgroundColor = ("#" + element.bg) || "white";
+      wrapper.style.backgroundBlendMode = "overlay";
+    } */
+    
     wrapper.appendChild(image);
     if (element.id !== "-" && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");

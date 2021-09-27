@@ -486,11 +486,11 @@ body.game-mf .usesSprite img.item-image.gravity { background: url("images/mf_spr
 body.game-mf .usesSprite img.item-image.final { background: url("images/mf_spritesheet.png") -126px -168px; }
 body.game-mf .usesSprite img.item-image.morph { background: url("images/mf_spritesheet.png") -168px -168px; }
 
-body.game-mf img.item-image.securityL0 { background: url("images/m_graphics.png") -42px -420px; }
-body.game-mf img.item-image.securityL1 { background: url("images/m_graphics.png") -126px -420px; }
-body.game-mf img.item-image.securityL2 { background: url("images/m_graphics.png") -210px -420px; }
-body.game-mf img.item-image.securityL3 { background: url("images/m_graphics.png") -294px -420px; }
-body.game-mf img.item-image.securityL4 { background: url("images/m_graphics.png") -378px -420px; }
+body.game-mf .usesSprite img.item-image.securityL0 { background: url("images/m_graphics.png") -42px -420px; }
+body.game-mf .usesSprite img.item-image.securityL1 { background: url("images/m_graphics.png") -126px -420px; }
+body.game-mf .usesSprite img.item-image.securityL2 { background: url("images/m_graphics.png") -210px -420px; }
+body.game-mf .usesSprite img.item-image.securityL3 { background: url("images/m_graphics.png") -294px -420px; }
+body.game-mf .usesSprite img.item-image.securityL4 { background: url("images/m_graphics.png") -378px -420px; }
 
 /********* THE LEGEND OF ZELDA (NES)) *********/
 body.game-thf img.item-image.raft,

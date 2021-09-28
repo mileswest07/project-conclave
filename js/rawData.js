@@ -990,7 +990,7 @@ const rawData = {
         bg: "ff4a4a",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1213,7 +1213,7 @@ const rawData = {
         bg: "98b830",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1245,7 +1245,7 @@ const rawData = {
         bg: "00e8d8",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1433,7 +1433,7 @@ const rawData = {
         bg: "9c84ff",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1907,7 +1907,7 @@ const rawData = {
         bg: "9c84ff",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -2306,7 +2306,7 @@ const rawData = {
     width: 8,
     items: [
       {
-        id: "missile",
+        id: "missileD",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -2505,6 +2505,13 @@ const rawData = {
             max: 8,
             bg: "008080",
             nodeType: "key",
+          },{
+            id: "alimbicCannon",
+            name: "Alimbic Cannon Control Room",
+            start: 0,
+            max: 1,
+            bg: "402c00",
+            nodeType: "goal",
           },{
             id: "oubliette",
             name: "Oubliette unlocked",
@@ -2715,7 +2722,7 @@ const rawData = {
         bg: "00ff08",
         nodeType: "upgrade",
       },{
-        id: "missile",
+        id: "missileC",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -4574,6 +4581,9 @@ const rawData = {
         max: 1,
         segments: []
       },{
+        id: "-",
+        max: 0,
+      },{
         id: "sword",
         name: "",
         start: 0,
@@ -4653,9 +4663,6 @@ const rawData = {
             overText: "GT Big Chest",
           }
         ]
-      },{
-        id: "-",
-        max: 0,
       },{
         id: "-",
         max: 0,
@@ -4744,6 +4751,9 @@ const rawData = {
         id: "-",
         max: 0,
       },{
+        id: "-",
+        max: 0,
+      },{
         id: "halfMagic",
         name: "",
         start: 0,
@@ -4773,9 +4783,6 @@ const rawData = {
         start: 0,
         max: 8,
         segments: []
-      },{
-        id: "-",
-        max: 0,
       },{
         id: "-",
         max: 0,
@@ -7421,6 +7428,9 @@ const rawData = {
         max: 1,
         segments: []
       },{
+        id: "-",
+        max: 0,
+      },{
         id: "sword",
         name: "",
         start: 0,
@@ -7504,9 +7514,6 @@ const rawData = {
         id: "-",
         max: 0,
       },{
-        id: "-",
-        max: 0,
-      },{
         id: "boots",
         name: "Pegasus Boots",
         start: 0,
@@ -7552,6 +7559,9 @@ const rawData = {
         id: "-",
         max: 0,
       },{
+        id: "-",
+        max: 0,
+      },{
         id: "halfMagic",
         name: "",
         start: 0,
@@ -7581,9 +7591,6 @@ const rawData = {
         start: 0,
         max: 8,
         segments: []
-      },{
-        id: "-",
-        max: 0,
       },{
         id: "-",
         max: 0,

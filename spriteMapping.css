@@ -268,9 +268,9 @@ img.item-image.bountyCoin10 { background: url("images/m_graphics.png") -378px -6
 img.item-image.bountyCoin50 { background: url("images/m_graphics.png") -420px -630px; }
 img.item-image.bountyCoin100 { background: url("images/m_graphics.png") -462px -630px; }
 img.item-image.diffusionBeamA { background: url("images/m_graphics.png") -504px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -546px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -588px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -630px -630px; }
+img.item-image.novaBeamA { background: url("images/m_graphics.png") -546px -630px; }
+img.item-image.hypermode { background: url("images/m_graphics.png") -588px -630px; }
+img.item-image.iceMissileA { background: url("images/m_graphics.png") -630px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") -672px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") 0 -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -42px -672px; }

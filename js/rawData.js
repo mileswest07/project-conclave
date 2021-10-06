@@ -40,6 +40,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "wallJumpBoots",
@@ -79,6 +80,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -283,9 +285,11 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "raft",
@@ -369,6 +373,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "boomerang",
@@ -438,6 +443,7 @@ const rawData = {
         ]
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bomb",
@@ -468,6 +474,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "recorder",
@@ -495,9 +502,11 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -578,6 +587,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "triforce",
@@ -664,6 +674,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "longBeam",
@@ -740,6 +751,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "powerGrip",
@@ -816,6 +828,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -1161,6 +1174,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "chozoArtifact",
@@ -1454,6 +1468,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "darkSuit",
@@ -2395,6 +2410,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "alimbicArtifactCA1",
@@ -2525,12 +2541,15 @@ const rawData = {
         nodeType: "goal",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "alimbicArtifactCA2",
@@ -2651,28 +2670,32 @@ const rawData = {
         bg: "808000",
         nodeType: "upgrade",
       },{
-        id: "morphBall",
-        name: "Morph Ball",
-        start: 1,
+        id: "hyperBeam", // "hypermode",
+        name: "Hyper Beam",
+        start: 0,
         max: 1,
         segments: [],
-        bg: "d8a480",
+        bg: "1010e0",
         nodeType: "upgrade",
       },{
-        id: "bomb",
-        name: "Bombs",
-        start: 1,
+        id: "plasmaBeam", // "flameShot",
+        name: "Plasma Beam",
+        start: 0,
         max: 1,
+        over: "F_Boss",
+        overText: "Ghor Defeated",
         segments: [],
-        bg: "3800a8",
+        bg: "ff4a4a",
         nodeType: "upgrade",
       },{
-        id: "spaceJumpBoots",
-        name: "Space Jump Boots",
-        start: 1,
+        id: "novaBeam", // "novaBeamA",
+        name: "Nova Beam",
+        start: 0,
         max: 1,
+        over: "Z_Orb",
+        overText: "Mining Laser defeated",
         segments: [],
-        bg: "00a0e0",
+        bg: "00ff08",
         nodeType: "upgrade",
       },{
         id: "combatVisor",
@@ -2683,43 +2706,20 @@ const rawData = {
         bg: "80d0ff",
         nodeType: "upgrade",
       },{
-        id: "scanVisorB",
-        name: "Scan Visor",
+        id: "ped",
+        name: "P.E.D. Suit",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "886848",
+        nodeType: "upgrade",
+      },{
+        id: "spaceJumpBoots",
+        name: "Space Jump Boots",
         start: 1,
         max: 1,
         segments: [],
-        bg: "bca470",
-        nodeType: "upgrade",
-      },{
-        id: "-",
-        max: 0,
-      },{
-        id: "hyperBeam",
-        name: "Hyper Beam",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "1010e0",
-        nodeType: "upgrade",
-      },{
-        id: "plasmaBeam",
-        name: "Plasma Beam",
-        start: 0,
-        max: 1,
-        over: "F_Boss",
-        overText: "Ghor Defeated",
-        segments: [],
-        bg: "ff4a4a",
-        nodeType: "upgrade",
-      },{
-        id: "novaBeam",
-        name: "Nova Beam",
-        start: 0,
-        max: 1,
-        over: "Z_Orb",
-        overText: "Mining Laser defeated",
-        segments: [],
-        bg: "00ff08",
+        bg: "00a0e0",
         nodeType: "upgrade",
       },{
         id: "missileC",
@@ -2770,6 +2770,48 @@ const rawData = {
         bg: "007f0e",
         nodeType: "upgrade",
       },{
+        id: "scanVisorB",
+        name: "Scan Visor",
+        start: 1,
+        max: 1,
+        segments: [],
+        bg: "bca470",
+        nodeType: "upgrade",
+      },{
+        id: "phazonSuit",
+        name: "Corrupted Hypermode",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "282018",
+        nodeType: "upgrade",
+      },{
+        id: "screwAttackA",
+        name: "Screw Attack",
+        start: 0,
+        max: 1,
+        over: "Z_Orb",
+        overText: "Bryyo - Bryyo Ice - Hall of Remembrance",
+        segments: [],
+        bg: "69cd69",
+        nodeType: "upgrade",
+      },{
+        id: "morphBall",
+        name: "Morph Ball",
+        start: 1,
+        max: 1,
+        segments: [],
+        bg: "d8a480",
+        nodeType: "upgrade",
+      },{
+        id: "bombC",
+        name: "Bombs",
+        start: 1,
+        max: 1,
+        segments: [],
+        bg: "3800a8",
+        nodeType: "upgrade",
+      },{
         id: "boostBall",
         name: "Boost Ball",
         start: 0,
@@ -2799,6 +2841,28 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+      },{
+        id: "commandVisor",
+        name: "Command Visor",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "bfbf00",
+        nodeType: "upgrade",
+      },{
+        id: "hazardShield",
+        name: "Hazard Shield",
+        start: 0,
+        max: 1,
+        over: "Z_Orb",
+        overText: "Pirate Homeworld - Pirate Research - Craneyard",
+        segments: [],
+        bg: "602880",
+        nodeType: "upgrade",
+      },{
+        id: "-",
+        name: "",
+        max: 0,
       },{
         id: "grappleLasso",
         name: "Grapple Lasso",
@@ -2850,56 +2914,6 @@ const rawData = {
         bg: "fcc4d8",
         nodeType: "upgrade",
       },{
-        id: "ped",
-        name: "P.E.D. Suit",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "886848",
-        nodeType: "upgrade",
-      },{
-        id: "phazonSuit",
-        name: "Corrupted Hypermode",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "282018",
-        nodeType: "upgrade",
-      },{
-        id: "hazardShield",
-        name: "Hazard Shield",
-        start: 0,
-        max: 1,
-        over: "Z_Orb",
-        overText: "Pirate Homeworld - Pirate Research - Craneyard",
-        segments: [],
-        bg: "602880",
-        nodeType: "upgrade",
-      },{
-        id: "-",
-        max: 0,
-      },{
-        id: "screwAttackA",
-        name: "Screw Attack",
-        start: 0,
-        max: 1,
-        over: "Z_Orb",
-        overText: "Bryyo - Bryyo Ice - Hall of Remembrance",
-        segments: [],
-        bg: "69cd69",
-        nodeType: "upgrade",
-      },{
-        id: "-",
-        max: 0,
-      },{
-        id: "commandVisor",
-        name: "Command Visor",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "bfbf00",
-        nodeType: "upgrade",
-      },{
         id: "corruptionXRayVisor",
         name: "X-Ray Visor",
         start: 0,
@@ -2909,6 +2923,14 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -2935,9 +2957,11 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "theronianBomb",
@@ -2949,6 +2973,7 @@ const rawData = {
         nodeType: "goal",
       },{
         id: "-",
+        name: "",
         max: 0,
       },/*{
         id: "norion",
@@ -3047,6 +3072,7 @@ const rawData = {
     items: [
       {
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bomb",
@@ -3469,6 +3495,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "monsterDna",
@@ -3698,6 +3725,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "highJump",
@@ -4126,6 +4154,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "boss",
@@ -4197,6 +4226,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bow",
@@ -4294,9 +4324,11 @@ const rawData = {
         ]
       }*/,{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "barrier",
@@ -4344,6 +4376,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "fireRod",
@@ -4379,18 +4412,23 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "chargeBeam",
@@ -4438,6 +4476,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "lamp",
@@ -4491,15 +4530,19 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "plasmaBeam",
@@ -4547,6 +4590,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bottle",
@@ -4582,6 +4626,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "sword",
@@ -4665,6 +4710,7 @@ const rawData = {
         ]
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -4704,6 +4750,7 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "boots",
@@ -4749,9 +4796,11 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "halfMagic",
@@ -4785,6 +4834,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "reserveTank",
@@ -4797,9 +4847,11 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "boss",
@@ -4812,6 +4864,7 @@ const rawData = {
         nodeType: "boss",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "ep",
@@ -5424,7 +5477,7 @@ const rawData = {
         bg: "00e8d8",
         nodeType: "upgrade",
       },{
-        id: "diffusionBeam",
+        id: "diffusionBeamA",
         name: "Diffusion Beam",
         start: 0,
         max: 1,
@@ -5671,6 +5724,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "speedBooster",
@@ -5714,6 +5768,7 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -5975,9 +6030,11 @@ const rawData = {
         nodeType: "upgrade",
       },*/{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "highJump",
@@ -6070,6 +6127,7 @@ const rawData = {
         ]
       },*/{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "energyTank",
@@ -6100,15 +6158,19 @@ const rawData = {
         nodeType: "expansion",
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },/* {
         id: "pumpControlUnit",
@@ -6420,6 +6482,7 @@ const rawData = {
         ]
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "recorder",
@@ -6447,9 +6510,11 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "sword",
@@ -6494,6 +6559,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "triforce",
@@ -6557,6 +6623,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "trophy",
@@ -6590,6 +6657,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "note",
@@ -6647,6 +6715,7 @@ const rawData = {
         segments: []
       },/* {
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "parapa", // "palace",
@@ -6686,6 +6755,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       }, */{
         id: "heartContainer",
@@ -6831,6 +6901,7 @@ const rawData = {
         ]
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "power",
@@ -6841,6 +6912,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "fireRod",
@@ -6883,6 +6955,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "courage",
@@ -6942,6 +7015,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "agahnim",
@@ -6952,6 +7026,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bottle",
@@ -7109,6 +7184,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "halfMagic",
@@ -7279,12 +7355,15 @@ const rawData = {
         ]
       }*/,/*{
         id: "-",
+        name: "",
         max: 0,
       },*/{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "fireRod",
@@ -7320,18 +7399,23 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "lamp",
@@ -7385,15 +7469,19 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "bottle",
@@ -7429,6 +7517,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "sword",
@@ -7512,6 +7601,7 @@ const rawData = {
         ]
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "boots",
@@ -7557,9 +7647,11 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "halfMagic",
@@ -7593,6 +7685,7 @@ const rawData = {
         segments: []
       },{
         id: "-",
+        name: "",
         max: 0,
       },{
         id: "ep",

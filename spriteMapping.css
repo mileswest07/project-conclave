@@ -253,9 +253,9 @@ img.item-image.progressiveBeam { background: url("images/m_graphics.png") -462px
 img.item-image.progressiveBeamA { background: url("images/m_graphics.png") -504px -588px; }
 img.item-image.primeGrapple { background: url("images/m_graphics.png") -546px -588px; }
 img.item-image.progressiveMissile { background: url("images/m_graphics.png") -588px -588px; }
-img.item-image.omegaCannonA { background: url("images/m_graphics.png") -630px -588px; }
+img.item-image.crossBombs { background: url("images/m_graphics.png") -630px -588px; }
 img.item-image.mapMarker { background: url("images/m_graphics.png") -672px -588px; }
-img.item-image.phantomCloak { background: url("images/m_graphics.png") 0 -630px; }
+img.item-image.spinBoost { background: url("images/m_graphics.png") 0 -630px; }
 img.item-image.chargeBeamE { background: url("images/m_graphics.png") -42px -630px; }
 img.item-image.infiniteBeamAmmo { background: url("images/m_graphics.png") -84px -630px; }
 img.item-image.infiniteMissiles { background: url("images/m_graphics.png") -126px -630px; }
@@ -271,7 +271,7 @@ img.item-image.diffusionBeamA { background: url("images/m_graphics.png") -504px 
 img.item-image.novaBeamA { background: url("images/m_graphics.png") -546px -630px; }
 img.item-image.hypermode { background: url("images/m_graphics.png") -588px -630px; }
 img.item-image.iceMissileA { background: url("images/m_graphics.png") -630px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") -672px -630px; }
+img.item-image.doubleMissileTank { background: url("images/m_graphics.png") -672px -630px; }
 img.item-image.unused { background: url("images/m_graphics.png") 0 -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -42px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -84px -672px; }

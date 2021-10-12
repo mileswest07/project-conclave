@@ -96,6 +96,20 @@ body {
   height: 42px;
 }
 
+#percentage-wrapper,
+#timer-wrapper,
+#total-wrapper {
+  height: 42px;
+}
+
+#percentage-wrapper {
+  flex-grow: 1;
+}
+
+#total-wrapper {
+  flex-grow: 2;
+}
+
 .expansion {
   height: 80px;
 }
@@ -173,6 +187,13 @@ body {
   text-align: center;
 }
 
+#percentage-wrapper p,
+#timer-wrapper p,
+#total-wrapper p {
+  font-weight: bold;
+  text-align: center;
+}
+
 .deselected {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -194,7 +215,10 @@ body {
 
 .dark-mode #startupMenu p,
 .dark-mode .item p,
-.dark-mode .expansion p {
+.dark-mode .expansion p,
+.dark-mode #percentage-wrapper p,
+.dark-mode #timer-wrapper p,
+.dark-mode #total-wrapper p {
   color: white;
 }
 

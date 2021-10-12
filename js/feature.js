@@ -594,10 +594,12 @@ let feature = {
   }
   
   function recycleTotals(change) {
-    const totalWrapper = document.getElementById("total-wrapper");
-    let totalText = totalWrapper.querySelector("p");
-    totalText.innerText = recalculateTotals(totalText.innerText, change);
-    recalculatePercentage(totalText.innerText);
+    if (main.showTotals) {
+      const totalWrapper = document.getElementById("total-wrapper");
+      let totalText = totalWrapper.querySelector("p");
+      totalText.innerText = recalculateTotals(totalText.innerText, change);
+      recalculatePercentage(totalText.innerText);
+    }
   }
   
   function renderPercentage(destination) {
@@ -683,8 +685,12 @@ let feature = {
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
-    renderPercentage(destination);
-    renderTimer(destination, parseInt(feature.workingData.width));
+    if (main.showTotals) {
+      renderPercentage(destination);
+    }
+    if (main.showTimer) {
+      renderTimer(destination, parseInt(feature.workingData.width));
+    }
   }
 
   feature.generate = generate;

@@ -272,8 +272,8 @@ img.item-image.novaBeamA { background: url("images/m_graphics.png") -546px -630p
 img.item-image.hypermode { background: url("images/m_graphics.png") -588px -630px; }
 img.item-image.iceMissileA { background: url("images/m_graphics.png") -630px -630px; }
 img.item-image.doubleMissileTank { background: url("images/m_graphics.png") -672px -630px; }
-img.item-image.unused { background: url("images/m_graphics.png") 0 -672px; }
-img.item-image.unused { background: url("images/m_graphics.png") -42px -672px; }
+img.item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -672px; }
+img.item-image.flashShift { background: url("images/m_graphics.png") -42px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -84px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -126px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -168px -672px; }

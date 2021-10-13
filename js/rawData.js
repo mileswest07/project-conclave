@@ -7091,7 +7091,7 @@ const rawData = {
         ],
         value: 1,
       },{
-        id: "seekerLauncher",
+        id: "seekerLauncherB",
         name: "Storm Missile",
         start: 0,
         max: 1,
@@ -7109,7 +7109,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "speedBoosterA",
+        id: "flashShift",
         name: "Flash Shift",
         start: 0,
         max: 1,
@@ -7161,7 +7161,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "bombC",
+        id: "bombD",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -7188,7 +7188,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "powerGrip",
+        id: "spiderMagnet",
         name: "Spider Magnet",
         start: 0,
         max: 1,

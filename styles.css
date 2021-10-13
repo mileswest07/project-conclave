@@ -96,18 +96,19 @@ body {
   height: 42px;
 }
 
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 #percentage-wrapper,
 #timer-wrapper,
 #total-wrapper {
   height: 42px;
 }
 
-#percentage-wrapper {
+#percentage-wrapper, #total-wrapper {
   flex-grow: 1;
-}
-
-#total-wrapper {
-  flex-grow: 2;
 }
 
 .expansion {

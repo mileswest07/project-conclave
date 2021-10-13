@@ -700,6 +700,15 @@ let feature = {
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
+    if (main.showTotals || main.showTimer) {
+      let breakRow = document.createElement("div");
+      if (breakRow.classList) {
+        breakRow.classList.add("flex-break");
+      } else {
+        breakRow.className = "flex-break";
+      }
+      destination.appendChild(breakRow);
+    }
     if (main.showTotals) {
       renderPercentage(destination);
     }

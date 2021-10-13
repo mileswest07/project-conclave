@@ -663,20 +663,35 @@ let feature = {
     }
   }
   
+  function onTimerReset(e) {
+    feature.timerState.running = false;
+    feature.timerState.timeBeforeLastStart = 0;
+    feature.timerState.timeOfLastStart = Date.now();
+    updateTimer();
+  }
+  
   function renderTimer(destination, width) {
     let wrapper = document.createElement("div");
     wrapper.id = "timer-wrapper";
-    wrapper.style.flexGrow = width;
     
     let timerText = document.createElement("p");
     timerText.innerText = "";
+    timerText.addEventListener("mousedown", onTimerToggle);
     wrapper.appendChild(timerText);
-    
-    wrapper.addEventListener("mousedown", onTimerToggle);
     
     destination.appendChild(wrapper);
     
     window.setInterval(updateTimer, 10);
+    
+    let resetWrapper = document.createElement("div");
+    resetWrapper.id = "reset-wrapper";
+    
+    let resetButton = document.createElement("button");
+    resetButton.innerText = "Reset";
+    resetButton.addEventListener("click", onTimerReset);
+    resetWrapper.appendChild(resetButton);
+    
+    destination.appendChild(resetWrapper);
   }
   
   function generate(destinationId) {

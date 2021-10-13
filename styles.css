@@ -189,9 +189,26 @@ body {
 
 #percentage-wrapper p,
 #timer-wrapper p,
+#reset-wrapper *, 
 #total-wrapper p {
   font-weight: bold;
   text-align: center;
+}
+
+#timer-wrapper {
+  width: 138px;
+}
+
+#timer-wrapper p {
+  margin-top: 12px;
+}
+
+#reset-wrapper {
+  width: 90px;
+}
+
+#reset-wrapper button {
+  margin: 10px 43px 10px 0;
 }
 
 .deselected {

@@ -195,12 +195,15 @@ body {
   text-align: center;
 }
 
-#timer-wrapper {
-  width: 138px;
+#percentage-wrapper p,
+#timer-wrapper p,
+#total-wrapper p {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
-#timer-wrapper p {
-  margin-top: 12px;
+#timer-wrapper {
+  width: 138px;
 }
 
 #reset-wrapper {

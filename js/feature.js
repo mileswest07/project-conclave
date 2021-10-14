@@ -1,5 +1,10 @@
 let feature = {
-  
+  timerState: {
+    running: false,
+    time: 0,
+    timeBeforeLastStart: 0,
+    timeOfLastStart: Date.now()
+  }
 };
 
 (() => {
@@ -43,6 +48,41 @@ let feature = {
     source.replaceChild(newP, source.children[1]);
   }
   
+  function fetchValueById(dom_id) {
+    const splitValues = dom_id.split('-');
+    let fetched = 0;
+    
+    for (const item of feature.workingData.items) {
+      if (item.hasOwnProperty("segments") && item.segments.length) {
+        let earlyBreakout = false;
+        for (const segment of item.segments) {
+          if (segment.id === splitValues[1]) {
+            earlyBreakout = true;
+            if (segment.hasOwnProperty("value")) {
+              fetched = segment.value;
+            } else {
+              fetched = 0;
+            }
+            break;
+          }
+        }
+        if (earlyBreakout) break;
+        continue;
+      }
+      
+      if (item.id === splitValues[1]) {
+        if (item.hasOwnProperty("value")) {
+          fetched = item.value;
+        } else {
+          fetched = 0;
+        }
+        break;
+      }
+    }
+    
+    return fetched;
+  }
+  
   function clickItem(e) {
     e.preventDefault();
     
@@ -60,11 +100,13 @@ let feature = {
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.classList.remove("hide-segment");
                 nextImage.classList.remove("deselected");
+                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id));
               }
             }
           }
           return;
         }
+        recycleTotals(fetchValueById(e.target.parentElement.id));
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
@@ -79,11 +121,13 @@ let feature = {
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.className += nextItem.className.replace(/\bhide\-segment\b/g);
                 nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
+                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id));
               }
             }
           }
           return;
         }
+        recycleTotals(fetchValueById(e.target.parentElement.id));
         e.target.className += e.target.className.replace(/\bdeselected\b/g);
       }
     } else if (e.which == 3) { // right click
@@ -109,8 +153,10 @@ let feature = {
           (e.target.parentElement.getAttribute("typing") === "toggle") ||
           (e.target.parentElement.getAttribute("typing") === "dungeon")
         ) {
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
           return;
         } else {
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
           e.target.classList.add("deselected");
         }
       } else {
@@ -135,8 +181,10 @@ let feature = {
           (e.target.parentElement.getAttribute("typing") === "toggle") ||
           (e.target.parentElement.getAttribute("typing") === "dungeon")
         ) {
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
           return;
         } else {
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
           let arr = e.target.className.split(" ");
           if (arr.indexOf("deselected") === -1) {
             e.target.className += " deselected";
@@ -184,6 +232,7 @@ let feature = {
         }
         return;
       }
+      recycleTotals(fetchValueById(e.target.parentElement.id));
       previous++;
     } else if (e.which === 3) { // right click
       if (previous <= 0) {
@@ -211,6 +260,7 @@ let feature = {
         }
         return;
       }
+      recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
       previous--;
     } else if (e.which == 2) { // middle click
       if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
@@ -522,12 +572,149 @@ let feature = {
     destination.appendChild(wrapper);
   }
   
+  function recalculatePercentage(textValues) {
+    const percentageWrapper = document.getElementById("percentage-wrapper");
+    let percentageText = percentageWrapper.querySelector("p");
+    
+    let splitValues = textValues.split('/');
+    let calculatedAmount = parseInt(splitValues[1]) != 0 ? 100 * parseInt(splitValues[0]) / parseInt(splitValues[1]) : 0;
+    percentageText.innerText = "" + calculatedAmount.toFixed(0) + '%';
+  }
+  
+  function recalculateTotals(already, delta) {
+    let splitValues = already.split('/');
+    let changedValue = parseInt(splitValues[0]) + parseInt(delta);
+    if (changedValue < 0) {
+      changedValue = 0;
+    }
+    if (changedValue > parseInt(splitValues[1])) {
+      changedValue = parseInt(splitValues[1]);
+    }
+    return changedValue + '/' + parseInt(splitValues[1]);
+  }
+  
+  function recycleTotals(change) {
+    if (main.showTotals) {
+      const totalWrapper = document.getElementById("total-wrapper");
+      let totalText = totalWrapper.querySelector("p");
+      totalText.innerText = recalculateTotals(totalText.innerText, change);
+      recalculatePercentage(totalText.innerText);
+    }
+  }
+  
+  function renderPercentage(destination) {
+    let twrapper = document.createElement("div");
+    twrapper.id = "total-wrapper";
+    let startingItems = 0;
+    let totalItems = feature.workingData.items.reduce((acc=0, next) => {
+      if (next.hasOwnProperty("start") && next.hasOwnProperty("value") && next.value) {
+        startingItems += next.start;
+      }
+      if (next.hasOwnProperty("value") && next.hasOwnProperty("max")) {
+        return acc + (parseInt(next.value) * parseInt(next.max));
+      }
+      return acc;
+    }, 0);
+    let totaltext = document.createElement("p");
+    totaltext.innerText = "" + startingItems + "/" + totalItems;
+    twrapper.appendChild(totaltext);
+    destination.appendChild(twrapper);
+    
+    let pwrapper = document.createElement("div");
+    pwrapper.id = "percentage-wrapper";
+    let percentagetext = document.createElement("p");
+    let calculatedAmount = totalItems != 0 ? 100 * startingItems / totalItems : 0;
+    percentagetext.innerText = "" + calculatedAmount.toFixed(0) + '%';
+    pwrapper.appendChild(percentagetext);
+    destination.appendChild(pwrapper);
+    
+    recycleTotals(0);
+  }
+  
+  function divmod(a, b) {
+    let q = Math.floor(a / b);
+    return [q, a - (b * q)];
+  }
+  
+  function updateTimer() {
+    feature.timerState.time = feature.timerState.timeBeforeLastStart + (feature.timerState.running ? (Date.now() - feature.timerState.timeOfLastStart) : 0);
+    
+    let time = feature.timerState.time;
+    let h, m, s, ms;
+    [h, time] = divmod(time, 60 * 60 * 1000);
+    [m, time] = divmod(time, 60 * 1000);
+    [s, ms] = divmod(time, 1000);
+    
+    const timerWrapper = document.getElementById("timer-wrapper");
+    let timerElement = timerWrapper.querySelector("p");
+    let hText = h > 0 ? String(h) + ":" : "";
+    let mText = String(m).padStart(2, "0") + ":";
+    let sText = String(s).padStart(2, "0");
+    let msText = "." + String(ms).padStart(3, "0");
+    timerElement.innerText = "" + hText + mText + sText + msText;
+  }
+  
+  function onTimerToggle(e) {
+    feature.timerState.running = !feature.timerState.running;
+    if (feature.timerState.running) {
+      feature.timerState.timeOfLastStart = Date.now();
+    } else {
+      feature.timerState.timeBeforeLastStart = feature.timerState.time;
+    }
+  }
+  
+  function onTimerReset(e) {
+    feature.timerState.running = false;
+    feature.timerState.timeBeforeLastStart = 0;
+    feature.timerState.timeOfLastStart = Date.now();
+    updateTimer();
+  }
+  
+  function renderTimer(destination, width) {
+    let wrapper = document.createElement("div");
+    wrapper.id = "timer-wrapper";
+    
+    let timerText = document.createElement("p");
+    timerText.innerText = "";
+    timerText.addEventListener("mousedown", onTimerToggle);
+    wrapper.appendChild(timerText);
+    
+    destination.appendChild(wrapper);
+    
+    window.setInterval(updateTimer, 10);
+    
+    let resetWrapper = document.createElement("div");
+    resetWrapper.id = "reset-wrapper";
+    
+    let resetButton = document.createElement("button");
+    resetButton.innerText = "Reset";
+    resetButton.addEventListener("click", onTimerReset);
+    resetWrapper.appendChild(resetButton);
+    
+    destination.appendChild(resetWrapper);
+  }
+  
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     destination.style.width = "" + ((parseInt(feature.workingData.width) * 42) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
+    if (main.showTotals || main.showTimer) {
+      let breakRow = document.createElement("div");
+      if (breakRow.classList) {
+        breakRow.classList.add("flex-break");
+      } else {
+        breakRow.className = "flex-break";
+      }
+      destination.appendChild(breakRow);
+    }
+    if (main.showTotals) {
+      renderPercentage(destination);
+    }
+    if (main.showTimer) {
+      renderTimer(destination, parseInt(feature.workingData.width));
+    }
   }
 
   feature.generate = generate;

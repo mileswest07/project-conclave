@@ -55,6 +55,12 @@ let main = {
     if (document.forms["startupMenu"]["useDarkMode"].checked) {
       searchString += "&d=true";
     }
+    if (document.forms["startupMenu"]["showTotals"].checked) {
+      searchString += "&pt=true";
+    }
+    if (document.forms["startupMenu"]["showTimer"].checked) {
+      searchString += "&t=true";
+    }
     location.search = searchString;
   }
   
@@ -84,6 +90,14 @@ let main = {
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;
+      
+      let willShowTotals = !!queryDict.pt;
+      willShowTotals = !!JSON.parse(willShowTotals);
+      main.showTotals = willShowTotals;
+      
+      let willShowTimer = !!queryDict.t;
+      willShowTimer = !!JSON.parse(willShowTimer);
+      main.showTimer = willShowTimer;
       
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;
@@ -127,6 +141,8 @@ let main = {
   }
   
   main.useSprites = false;
+  main.showTotals = false;
+  main.showTimer = false;
   main.games = games;
   main.validateStartup = validateStartup;
   main.start = start;

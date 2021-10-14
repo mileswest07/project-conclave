@@ -11,6 +11,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -20,6 +21,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -29,6 +31,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -38,6 +41,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -51,6 +55,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         sprite: "spring",
@@ -60,6 +65,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -69,6 +75,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -78,6 +85,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -91,6 +99,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -100,6 +109,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },/* {
         id: "boss",
         name: "Access",
@@ -117,6 +127,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "m_lock2",
         sprite: "research",
@@ -126,6 +137,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "monsterCapsule",
         sprite: "cell",
@@ -135,6 +147,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "upgrade",
+        value: 0,
       },
     ]
   },
@@ -150,6 +163,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -159,6 +173,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "longBeam",
         sprite: "long",
@@ -168,6 +183,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -178,6 +194,7 @@ const rawData = {
         bg: "2038ec",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -187,6 +204,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -196,6 +214,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -205,6 +224,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -215,6 +235,7 @@ const rawData = {
         bg: "92278f",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -224,6 +245,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -233,6 +255,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },/* {
         id: "boss",
         name: "Bosses Defeated",
@@ -274,6 +297,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -283,6 +307,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -296,54 +321,57 @@ const rawData = {
         name: "Raft",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "book",
         name: "Magic Book",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
-        id: "green",
+        id: "greenJerkin",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
-            id: "green",
-            name: "Green Jerkin",
-            start: 1,
-            max: 1,
-          },{
             id: "blueRing",
             name: "Blue Ring",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redRing",
             name: "Red Ring",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "ladder",
         name: "Ladder",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicKey",
         name: "Magic Key",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bracelets",
         name: "Power Bracelet",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "longBeam",
         sprite: "long",
@@ -353,6 +381,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -362,6 +391,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -371,6 +401,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -379,68 +410,79 @@ const rawData = {
         id: "boomerang",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "boomerang",
             name: "Boomerang",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "magicRang",
             name: "Magical Boomerang",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "arrow",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "arrow",
             name: "Arrow",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "silverArrows",
             name: "Silver Arrow",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "heroBow",
         name: "Bow",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "candle",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "candle",
             name: "Blue Candle",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redCandle",
             name: "Red Candle",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -454,6 +496,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -463,6 +506,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -472,6 +516,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -481,25 +526,29 @@ const rawData = {
         name: "Whistle",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bait",
         name: "Bait",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "note",
         name: "Note",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicRod",
         name: "Magic Rod",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -517,6 +566,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -526,6 +576,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "kraid",
         sprite: "kraid",
@@ -535,6 +586,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "ridley",
         sprite: "ridley",
@@ -544,47 +596,55 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "sword",
         name: "",
         start: 0,
-        max: 1,
+        max: 3,
         segments: [
           {
             id: "woodenSword",
             name: "Wooden Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "whiteSword",
             name: "White Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "magicalSword",
             name: "Magical Sword",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "magicalShield",
         name: "Magical Shield",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "heartContainer",
         name: "Heart Containers",
         start: 3,
         max: 16,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombsExp",
         name: "I bet you'd like to carry more Bombs",
         start: 0,
         max: 2,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -594,7 +654,8 @@ const rawData = {
         name: "Triforce Pieces",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 1,
       },
     ]
   },
@@ -612,6 +673,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -623,6 +685,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -634,6 +697,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         sprite: "gravity",
@@ -651,6 +715,7 @@ const rawData = {
             overText: "Unknown Item 3 Orb Acquired",
             bg: "887878",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "gravitySuit",
             sprite: "gravity",
@@ -659,10 +724,12 @@ const rawData = {
             max: 1,
             bg: "602880",
             nodeType: "upgrade",
+            value: 0,
           }
         ],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "fullPowerSuit",
         sprite: "full",
@@ -672,6 +739,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -687,6 +755,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "chargeBeam",
         sprite: "charge",
@@ -698,6 +767,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeam",
         sprite: "plasma",
@@ -715,6 +785,7 @@ const rawData = {
             overText: "Unknown Item 1 Orb Acquired",
             bg: "887878",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "plasmaBeam",
             sprite: "plasma",
@@ -723,10 +794,12 @@ const rawData = {
             max: 1,
             bg: "00ff08",
             nodeType: "upgrade",
+            value: 0,
           }
         ],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -738,6 +811,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -749,6 +823,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -764,6 +839,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         sprite: "space",
@@ -781,6 +857,7 @@ const rawData = {
             overText: "Unknown Item 2 Orb Acquired",
             bg: "887878",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "spaceJump",
             sprite: "space",
@@ -789,10 +866,12 @@ const rawData = {
             max: 1,
             bg: "00a0e0",
             nodeType: "upgrade",
+            value: 0,
           }
         ],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "speedBooster",
         sprite: "speed",
@@ -804,6 +883,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -815,6 +895,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -826,6 +907,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -839,6 +921,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -848,6 +931,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         sprite: "smissile",
@@ -857,6 +941,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         sprite: "pbomb",
@@ -866,6 +951,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "zipline",
         name: "Zipline",
@@ -875,6 +961,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "boss",
         name: "Bosses",
@@ -883,6 +970,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },
     ]
   },
@@ -894,7 +982,7 @@ const rawData = {
         name: "",
         type: "toggle",
         start: 0,
-        max: 1,
+        max: 0,
         segments: [
           {
             id: "primeSuit",
@@ -903,6 +991,7 @@ const rawData = {
             start: 1,
             max: 1,
             nodeType: "toggle",
+            value: 0,
           },{
             id: "fusionSuit",
             name: "Fusion Suit Active",
@@ -910,10 +999,12 @@ const rawData = {
             start: 0,
             max: 1,
             nodeType: "toggle",
+            value: 0,
           }
         ],
         bg: "ffffff",
         nodeType: "toggle",
+        value: 0,
       },{
         id: "barrier",
         name: "Varia Suit",
@@ -924,6 +1015,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         name: "Gravity Suit",
@@ -934,6 +1026,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "phazonSuit",
         name: "Phazon Suit",
@@ -944,6 +1037,7 @@ const rawData = {
         segments: [],
         bg: "282018",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJumpBoots",
         name: "Space Jump Boots",
@@ -954,6 +1048,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBeam",
         name: "Power Beam",
@@ -962,6 +1057,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "chargeBeamB",
         name: "Charge Beam",
@@ -972,6 +1068,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeamA",
         name: "Wave Beam",
@@ -982,6 +1079,7 @@ const rawData = {
         segments: [],
         bg: "6f3198",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeamA",
         name: "Ice Beam",
@@ -992,6 +1090,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeamB",
         name: "Plasma Beam",
@@ -1002,6 +1101,7 @@ const rawData = {
         segments: [],
         bg: "ff4a4a",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -1012,6 +1112,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "superMissileA",
         name: "Super Missile",
@@ -1022,6 +1123,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "shockShot",
         name: "Wavebuster",
@@ -1032,6 +1134,7 @@ const rawData = {
         segments: [],
         bg: "6f3198",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "freezeShot",
         name: "Ice Spreader",
@@ -1042,6 +1145,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "flameShot",
         name: "Flamethrower",
@@ -1052,6 +1156,7 @@ const rawData = {
         segments: [],
         bg: "ff4a4a",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -1062,6 +1167,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bombB",
         name: "Bombs",
@@ -1072,6 +1178,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "boostBall",
         name: "Boost Ball",
@@ -1082,6 +1189,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -1092,6 +1200,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBombA",
         name: "Power Bomb",
@@ -1102,6 +1211,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "combatVisor",
         name: "Combat Visor",
@@ -1110,6 +1220,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "scanVisor",
         name: "Scan Visor",
@@ -1118,6 +1229,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "thermalVisor",
         name: "Thermal Visor",
@@ -1128,6 +1240,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "xRayVisor",
         name: "X-Ray Visor",
@@ -1138,6 +1251,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -1148,6 +1262,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -1156,6 +1271,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -1164,6 +1280,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombExp",
         name: "Power Bomb Expansions",
@@ -1172,6 +1289,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -1193,6 +1311,7 @@ const rawData = {
             max: 12,
             bg: "008080",
             nodeType: "key",
+            value: 1,
           },{
             id: "cipher",
             name: "Impact Crater Accessible",
@@ -1200,10 +1319,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "key",
+        value: 1,
       },
     ]
   },
@@ -1218,6 +1339,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "key",
+        value: 1,
       },{
         id: "powerBombA",
         name: "Power Bombs",
@@ -1226,6 +1348,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -1234,6 +1357,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "forceBall",
         name: "Force Ball",
@@ -1242,6 +1366,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 0,
       },
     ]
   },
@@ -1258,6 +1383,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -1268,6 +1394,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -1276,6 +1403,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bombB",
         name: "Bombs",
@@ -1284,6 +1412,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "boostBall",
         name: "Boost Ball",
@@ -1292,6 +1421,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         name: "Spring Ball",
@@ -1300,6 +1430,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -1308,6 +1439,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -1316,6 +1448,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "chozoArtifact",
         name: "Chozo Artifacts",
@@ -1326,6 +1459,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "key",
+        value: 0,
       },
     ]
   },
@@ -1340,6 +1474,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "violetTranslator",
         name: "Violet Translator",
@@ -1350,6 +1485,7 @@ const rawData = {
         segments: [],
         bg: "a36fb1",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBeamA",
         name: "Power Beam",
@@ -1359,6 +1495,7 @@ const rawData = {
         nodeType: "upgrade",
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "superMissileC",
         name: "Super Missile",
@@ -1370,6 +1507,7 @@ const rawData = {
         nodeType: "upgrade",
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "chargeBeamA",
         name: "Charge Beam",
@@ -1378,6 +1516,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "bombC",
         name: "Bombs",
@@ -1388,6 +1527,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJumpBoots",
         name: "Space Jump Boots",
@@ -1398,6 +1538,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTransferModule",
         name: "Energy Transfer Module",
@@ -1408,6 +1549,7 @@ const rawData = {
         segments: [],
         bg: "887878",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "scanVisorA",
         name: "Scan Visor",
@@ -1416,6 +1558,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "amberTranslator",
         name: "Amber Translator",
@@ -1426,6 +1569,7 @@ const rawData = {
         segments: [],
         bg: "ad6a40",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkBeam",
         name: "Dark Beam",
@@ -1436,6 +1580,7 @@ const rawData = {
         segments: [],
         bg: "9c84ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkburst",
         name: "Darkburst",
@@ -1446,6 +1591,7 @@ const rawData = {
         segments: [],
         bg: "9c84ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -1456,6 +1602,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "boostBall",
         name: "Boost Ball",
@@ -1466,10 +1613,11 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
-        max: 0,
+        max: 1,
       },{
         id: "darkSuit",
         name: "Dark Suit",
@@ -1480,6 +1628,7 @@ const rawData = {
         segments: [],
         bg: "6c0204",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkVisor",
         name: "Dark Visor",
@@ -1490,6 +1639,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "emeraldTranslator",
         name: "Emerald Translator",
@@ -1500,6 +1650,7 @@ const rawData = {
         segments: [],
         bg: "4b9467",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "lightBeam",
         name: "Light Beam",
@@ -1510,6 +1661,7 @@ const rawData = {
         segments: [],
         bg: "5ac7f7",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "sunburst",
         name: "Sunburst",
@@ -1520,6 +1672,7 @@ const rawData = {
         segments: [],
         bg: "5ac7f7",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "seekerLauncherA",
         name: "Seeker Launcher",
@@ -1530,6 +1683,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -1540,6 +1694,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "primeGrapple",
         name: "Grapple Beam",
@@ -1550,6 +1705,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravityBoost",
         name: "Gravity Boost",
@@ -1560,6 +1716,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "echoVisor",
         name: "Echo Visor",
@@ -1570,6 +1727,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "cobaltTranslator",
         name: "Cobalt Translator",
@@ -1580,6 +1738,7 @@ const rawData = {
         segments: [],
         bg: "5c819e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "annihilatorBeam",
         name: "Annihilator Beam",
@@ -1590,6 +1749,7 @@ const rawData = {
         segments: [],
         bg: "9b9b9b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "sonicBoom",
         name: "Sonic Boom",
@@ -1600,6 +1760,7 @@ const rawData = {
         segments: [],
         bg: "9b9b9b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -1608,6 +1769,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "powerBombB",
         name: "Power Bombs",
@@ -1618,6 +1780,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttackA",
         name: "Screw Attack",
@@ -1628,6 +1791,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "lightSuit",
         name: "Light Suit",
@@ -1638,6 +1802,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -1646,6 +1811,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -1654,6 +1820,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "beamAmmoExpansion",
         name: "Beam Ammo Expansions",
@@ -1662,6 +1829,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombExpA",
         name: "Power Bomb Expansions",
@@ -1670,6 +1838,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "darkAgonKey",
         name: "", // "Dark Agon Keys",
@@ -1687,6 +1856,7 @@ const rawData = {
             max: 3,
             bg: "ad6a40",
             nodeType: "key",
+            value: 0,
           },{
             id: "lightOfAether",
             name: "Dark Agon Energy Retrieved",
@@ -1694,6 +1864,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Agon Energy Restored",
@@ -1701,10 +1872,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "ad6a40",
         nodeType: "key",
+        value: 0,
       },{
         id: "darkTorvusKey",
         name: "", // "Dark Torvus Keys",
@@ -1722,6 +1895,7 @@ const rawData = {
             max: 3,
             bg: "4b9467",
             nodeType: "key",
+            value: 0,
           },{
             id: "lightOfAether",
             name: "Dark Torvus Energy Retrieved",
@@ -1729,6 +1903,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Torvus Energy Restored",
@@ -1736,10 +1911,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "4b9467",
         nodeType: "key",
+        value: 0,
       },{
         id: "ingHiveKey",
         name: "", // "Ing Hive Keys",
@@ -1757,6 +1934,7 @@ const rawData = {
             max: 3,
             bg: "5c819e",
             nodeType: "key",
+            value: 0,
           },{
             id: "lightOfAether",
             name: "Ing Hive Energy Retrieved",
@@ -1764,6 +1942,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Sanctuary Energy Restored",
@@ -1771,10 +1950,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "5c819e",
         nodeType: "key",
+        value: 0,
       },{
         id: "skyTempleKey",
         name: "", // "Sky Temple Keys",
@@ -1792,6 +1973,7 @@ const rawData = {
             max: 9,
             bg: "008080",
             nodeType: "key",
+            value: 0,
           },{
             id: "skyTempleAccess",
             name: "Sky Temple Accessible",
@@ -1799,10 +1981,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "key",
+        value: 0,
       },
     ]
   },
@@ -1817,6 +2001,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "violetTranslator",
         name: "Violet Translator",
@@ -1827,6 +2012,7 @@ const rawData = {
         segments: [],
         bg: "a36fb1",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBeamA",
         name: "Power Beam",
@@ -1835,6 +2021,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "superMissileC",
         name: "Super Missile",
@@ -1845,6 +2032,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "chargeBeamA",
         name: "Charge Beam",
@@ -1853,6 +2041,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bombC",
         name: "Bombs",
@@ -1863,6 +2052,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spaceJumpBoots",
         name: "Space Jump Boots",
@@ -1873,6 +2063,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "energyTransferModule",
         name: "Energy Transfer Module",
@@ -1883,6 +2074,7 @@ const rawData = {
         segments: [],
         bg: "887878",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "scanVisorA",
         name: "Scan Visor",
@@ -1891,6 +2083,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "amberTranslator",
         name: "Amber Translator",
@@ -1901,6 +2094,7 @@ const rawData = {
         segments: [],
         bg: "ad6a40",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkBeam",
         name: "Dark Beam",
@@ -1911,6 +2105,7 @@ const rawData = {
         segments: [],
         bg: "9c84ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkburst",
         name: "Darkburst",
@@ -1921,6 +2116,7 @@ const rawData = {
         segments: [],
         bg: "9c84ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -1931,6 +2127,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "boostBall",
         name: "Boost Ball",
@@ -1941,6 +2138,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "cannonball",
         name: "Cannon Ball",
@@ -1949,6 +2147,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkSuit",
         name: "Dark Suit",
@@ -1959,6 +2158,7 @@ const rawData = {
         segments: [],
         bg: "6c0204",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkVisor",
         name: "Dark Visor",
@@ -1969,6 +2169,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "emeraldTranslator",
         name: "Emerald Translator",
@@ -1979,6 +2180,7 @@ const rawData = {
         segments: [],
         bg: "4b9467",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "lightBeam",
         name: "Light Beam",
@@ -1989,6 +2191,7 @@ const rawData = {
         segments: [],
         bg: "5ac7f7",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "sunburst",
         name: "Sunburst",
@@ -1999,6 +2202,7 @@ const rawData = {
         segments: [],
         bg: "5ac7f7",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "seekerLauncherA",
         name: "Seeker Launcher",
@@ -2009,6 +2213,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -2019,6 +2224,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "primeGrapple",
         name: "Grapple Beam",
@@ -2029,6 +2235,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravityBoost",
         name: "Gravity Boost",
@@ -2039,6 +2246,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "echoVisor",
         name: "Echo Visor",
@@ -2049,6 +2257,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "cobaltTranslator",
         name: "Cobalt Translator",
@@ -2059,6 +2268,7 @@ const rawData = {
         segments: [],
         bg: "5c819e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "annihilatorBeam",
         name: "Annihilator Beam",
@@ -2069,6 +2279,7 @@ const rawData = {
         segments: [],
         bg: "9b9b9b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "sonicBoom",
         name: "Sonic Boom",
@@ -2079,6 +2290,7 @@ const rawData = {
         segments: [],
         bg: "9b9b9b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -2087,6 +2299,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "powerBombB",
         name: "Power Bombs",
@@ -2097,6 +2310,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttackA",
         name: "Screw Attack",
@@ -2107,6 +2321,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "lightSuit",
         name: "Light Suit",
@@ -2117,6 +2332,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -2125,6 +2341,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -2133,6 +2350,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "darkAmmoExpansion",
         name: "Dark Beam Ammo Expansions",
@@ -2141,6 +2359,7 @@ const rawData = {
         segments: [],
         bg: "9c84ff",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "lightAmmoExpansion",
         name: "Light Beam Ammo Expansions",
@@ -2149,6 +2368,7 @@ const rawData = {
         segments: [],
         bg: "5ac7f7",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombExpA",
         name: "Power Bomb Expansions",
@@ -2157,6 +2377,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "doubleDamageA",
         name: "Double Damage",
@@ -2165,6 +2386,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "infiniteBeamAmmo",
         name: "Unlimited Beam Ammo",
@@ -2173,6 +2395,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "infiniteMissiles",
         name: "Unlimited Missiles",
@@ -2181,6 +2404,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "darkAgonKey",
         name: "", // "Dark Agon Keys",
@@ -2198,6 +2422,7 @@ const rawData = {
             max: 3,
             bg: "ad6a40",
             nodeType: "key",
+            value: 1,
           },{
             id: "lightOfAether",
             name: "Dark Agon Energy Retrieved",
@@ -2205,6 +2430,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Agon Energy Restored",
@@ -2212,10 +2438,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "ad6a40",
         nodeType: "key",
+        value: 1,
       },{
         id: "darkTorvusKey",
         name: "", // "Dark Torvus Keys",
@@ -2233,6 +2461,7 @@ const rawData = {
             max: 3,
             bg: "4b9467",
             nodeType: "key",
+            value: 1,
           },{
             id: "lightOfAether",
             name: "Dark Torvus Energy Retrieved",
@@ -2240,6 +2469,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Torvus Energy Restored",
@@ -2247,10 +2477,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "4b9467",
         nodeType: "key",
+        value: 1,
       },{
         id: "ingHiveKey",
         name: "", // "Ing Hive Keys",
@@ -2268,6 +2500,7 @@ const rawData = {
             max: 3,
             bg: "5c819e",
             nodeType: "key",
+            value: 1,
           },{
             id: "lightOfAether",
             name: "Ing Hive Energy Retrieved",
@@ -2275,6 +2508,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "lightOfAetherA",
             name: "Sanctuary Energy Restored",
@@ -2282,10 +2516,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "5c819e",
         nodeType: "key",
+        value: 1,
       },{
         id: "skyTempleKey",
         name: "", // "Sky Temple Keys",
@@ -2303,6 +2539,7 @@ const rawData = {
             max: 9,
             bg: "008080",
             nodeType: "key",
+            value: 1,
           },{
             id: "skyTempleAccess",
             name: "Sky Temple Accessible",
@@ -2310,10 +2547,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "key",
+        value: 1,
       },
     ]
   },
@@ -2328,6 +2567,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "voltDriver",
         name: "Volt Driver",
@@ -2336,6 +2576,7 @@ const rawData = {
         segments: [],
         bg: "ffbc15",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "magmaul",
         name: "Magmaul",
@@ -2344,6 +2585,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "shockCoil",
         name: "Shock Coil",
@@ -2352,6 +2594,7 @@ const rawData = {
         segments: [],
         bg: "303898",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "battlehammer",
         name: "Battlehammer",
@@ -2360,6 +2603,7 @@ const rawData = {
         segments: [],
         bg: "22b14c",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "judicator",
         name: "Judicator",
@@ -2368,6 +2612,7 @@ const rawData = {
         segments: [],
         bg: "6f3198",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "imperialist",
         name: "Imperialist",
@@ -2376,6 +2621,7 @@ const rawData = {
         segments: [],
         bg: "ed1c24",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "omegaCannon",
         name: "Omega Cannon",
@@ -2384,6 +2630,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "energyTankA",
         name: "Energy Tanks",
@@ -2392,6 +2639,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -2400,6 +2648,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "uaExpansion",
         name: "UA Expansions",
@@ -2408,6 +2657,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -2425,6 +2675,7 @@ const rawData = {
             max: 3,
             bg: "00f0c8",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2432,10 +2683,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "00f0c8", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactAl1",
         name: "Alinos 1", // "Alimbic Artifacts - Al 1"
@@ -2449,6 +2702,7 @@ const rawData = {
             max: 3,
             bg: "f09000",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2456,10 +2710,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "f09000", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactVDO1",
         name: "VDO 1", // "Alimbic Artifacts - VDO 1"
@@ -2473,6 +2729,7 @@ const rawData = {
             max: 3,
             bg: "2090a8",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2480,10 +2737,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "2090a8", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactArc1",
         name: "Arcterra 1", // "Alimbic Artifacts - Arc 1"
@@ -2497,6 +2756,7 @@ const rawData = {
             max: 3,
             bg: "2858a0",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2504,10 +2764,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "2858a0", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "oubliette",
         name: "Oubliette unlocked",
@@ -2539,6 +2801,7 @@ const rawData = {
         ],
         bg: "402c00",
         nodeType: "goal",
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -2564,6 +2827,7 @@ const rawData = {
             max: 3,
             bg: "b8e008",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2571,10 +2835,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "b8e008", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactAl2",
         name: "Alinos 2", // "Alimbic Artifacts - Al 2"
@@ -2588,6 +2854,7 @@ const rawData = {
             max: 3,
             bg: "f00000",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2595,10 +2862,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "f00000", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactVDO2",
         name: "VDO 2", // "Alimbic Artifacts - VDO 2"
@@ -2612,6 +2881,7 @@ const rawData = {
             max: 3,
             bg: "0868e0",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2619,10 +2889,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "0868e0", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },{
         id: "alimbicArtifactArc2",
         name: "Arcterra 2", // "Alimbic Artifacts - Arc 2"
@@ -2636,6 +2908,7 @@ const rawData = {
             max: 3,
             bg: "184898",
             nodeType: "key",
+            value: 0,
           },{
             id: "octolith",
             name: "Octolith",
@@ -2643,10 +2916,12 @@ const rawData = {
             max: 1,
             bg: "008080", // "184898", // "008080"
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -2661,6 +2936,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "chargeBeam",
         name: "Charge Beam",
@@ -2669,6 +2945,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "hyperBeam", // "hypermode",
         name: "Hyper Beam",
@@ -2677,6 +2954,7 @@ const rawData = {
         segments: [],
         bg: "1010e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeam", // "flameShot",
         name: "Plasma Beam",
@@ -2687,6 +2965,7 @@ const rawData = {
         segments: [],
         bg: "ff4a4a",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "novaBeam", // "novaBeamA",
         name: "Nova Beam",
@@ -2697,6 +2976,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "combatVisor",
         name: "Combat Visor",
@@ -2705,6 +2985,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "ped",
         name: "P.E.D. Suit",
@@ -2713,6 +2994,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spaceJumpBoots",
         name: "Space Jump Boots",
@@ -2721,6 +3003,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "missileC",
         name: "Missile Launcher",
@@ -2729,6 +3012,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "freezeShot",
         name: "Ice Missile",
@@ -2739,6 +3023,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "seekerLauncherB",
         name: "Seeker Launcher",
@@ -2749,6 +3034,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "shipMissile",
         name: "Ship Missile",
@@ -2759,6 +3045,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "hyperMissile",
         name: "Hyper Missile",
@@ -2769,6 +3056,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "scanVisorB",
         name: "Scan Visor",
@@ -2777,6 +3065,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "phazonSuit",
         name: "Corrupted Hypermode",
@@ -2785,6 +3074,7 @@ const rawData = {
         segments: [],
         bg: "282018",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "screwAttackA",
         name: "Screw Attack",
@@ -2795,6 +3085,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -2803,6 +3094,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "bombC",
         name: "Bombs",
@@ -2811,6 +3103,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "boostBall",
         name: "Boost Ball",
@@ -2821,6 +3114,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -2831,6 +3125,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "hyperBall",
         name: "Hyper Ball",
@@ -2841,6 +3136,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "commandVisor",
         name: "Command Visor",
@@ -2849,6 +3145,7 @@ const rawData = {
         segments: [],
         bg: "bfbf00",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "hazardShield",
         name: "Hazard Shield",
@@ -2859,6 +3156,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -2873,6 +3171,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "grappleBeam",
         name: "Grapple Swing",
@@ -2883,6 +3182,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "grappleVoltage",
         name: "Grapple Voltage",
@@ -2893,6 +3193,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "shipGrapple",
         name: "Ship Grapple",
@@ -2903,6 +3204,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "hyperGrapple",
         name: "Hyper Grapple",
@@ -2913,6 +3215,7 @@ const rawData = {
         segments: [],
         bg: "fcc4d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "corruptionXRayVisor",
         name: "X-Ray Visor",
@@ -2923,6 +3226,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -2939,6 +3243,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Expansions",
@@ -2947,6 +3252,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "shipMissileExpansion",
         name: "Ship Missile Expansions",
@@ -2955,6 +3261,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -2971,6 +3278,7 @@ const rawData = {
         segments: [],
         bg: "887878",
         nodeType: "goal",
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -2983,6 +3291,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "bryyo",
         name: "Bryyo Complete",
@@ -2993,6 +3302,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "theronianBomb",
         name: "",
@@ -3008,17 +3318,20 @@ const rawData = {
             max: 3,
             bg: "887878",
             nodeType: "goal",
+            value: 0,
           },{
             id: "elysia",
             name: "Elysia Complete",
             over: "F_Boss_Ex",
             overText: "Helios required",
-            start: 1,
+            start: 0,
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },
-        ]
+        ],
+        value: 0,
       },{
         id: "urtraghus",
         name: "Pirate Homeworld Complete",
@@ -3029,6 +3342,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },*/{
         id: "energyCell",
         name: "", // "Energy Cells",
@@ -3046,6 +3360,7 @@ const rawData = {
             overText: "Hints Acquired",
             bg: "008080",
             nodeType: "key",
+            value: 1,
           },{
             id: "pirateCode",
             name: "Pirate Code",
@@ -3053,6 +3368,7 @@ const rawData = {
             max: 1,
             bg: "887878",
             nodeType: "goal",
+            value: 0,
           },{
             id: "phaaze",
             name: "Phaaze accessible",
@@ -3060,10 +3376,12 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }
         ],
         bg: "008080",
         nodeType: "key",
+        value: 1,
       },
     ]
   }, 
@@ -3083,6 +3401,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         sprite: "spider",
@@ -3092,6 +3411,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         sprite: "spring",
@@ -3101,6 +3421,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -3110,6 +3431,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -3119,6 +3441,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         sprite: "space",
@@ -3128,6 +3451,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -3137,6 +3461,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -3147,6 +3472,7 @@ const rawData = {
         bg: "2038ec",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -3157,6 +3483,7 @@ const rawData = {
         bg: "92278f",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "wideBeam",
         sprite: "wide",
@@ -3167,6 +3494,7 @@ const rawData = {
         bg: "ffff80",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "plasmaBeam",
         sprite: "plasma",
@@ -3177,6 +3505,7 @@ const rawData = {
         bg: "00ff08",
         nodeType: "slot",
         slotType: "beam",
+        value: 1,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -3186,6 +3515,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -3195,6 +3525,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "monsterDna",
         name: "Metroids defeated",
@@ -3211,6 +3542,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 2",
@@ -3219,6 +3551,7 @@ const rawData = {
             max: 4,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 3",
@@ -3227,6 +3560,7 @@ const rawData = {
             max: 8,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 4",
@@ -3235,6 +3569,7 @@ const rawData = {
             max: 10,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 5",
@@ -3244,6 +3579,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 6",
@@ -3252,6 +3588,7 @@ const rawData = {
             max: 2,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 7",
@@ -3260,6 +3597,7 @@ const rawData = {
             max: 7,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 8",
@@ -3268,6 +3606,7 @@ const rawData = {
             max: 2,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 9",
@@ -3276,6 +3615,7 @@ const rawData = {
             max: 3,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Phase 10",
@@ -3284,10 +3624,12 @@ const rawData = {
             max: 9,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },
         ],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "monster",
         sprite: "baby",
@@ -3297,6 +3639,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -3312,6 +3655,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "barrier",
         name: "Varia Suit",
@@ -3321,6 +3665,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         name: "Gravity Suit",
@@ -3330,6 +3675,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "chargeBeam",
         name: "Charge Beam",
@@ -3339,6 +3685,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         name: "Wave Beam",
@@ -3348,6 +3695,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "wideBeam",
         name: "Spazer Beam",
@@ -3357,6 +3705,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeam",
         name: "Plasma Beam",
@@ -3368,6 +3717,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         name: "Ice Beam",
@@ -3379,6 +3729,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         name: "Bombs",
@@ -3388,6 +3739,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -3397,6 +3749,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         name: "Spring Ball",
@@ -3408,6 +3761,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerGrip",
         name: "Power Grip",
@@ -3417,6 +3771,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "highJump",
         name: "High Jump Boots",
@@ -3426,6 +3781,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         name: "Space Jump",
@@ -3437,6 +3793,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -3446,6 +3803,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -3455,6 +3813,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTank",
         name: "Energy Tanks",
@@ -3464,15 +3823,17 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Tanks",
         sprite: "missile",
         start: 0,
-        max: 45,
+        max: 44,
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         name: "Super Missile Tanks",
@@ -3482,6 +3843,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         name: "Power Bomb Tanks",
@@ -3493,6 +3855,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -3514,6 +3877,7 @@ const rawData = {
             max: 1,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Golden Temple",
@@ -3522,6 +3886,7 @@ const rawData = {
             max: 4,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Hydro Station",
@@ -3530,6 +3895,7 @@ const rawData = {
             max: 8,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Industrial Complex",
@@ -3538,6 +3904,7 @@ const rawData = {
             max: 10,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Research Site",
@@ -3547,6 +3914,7 @@ const rawData = {
             max: 2,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Mining Facility",
@@ -3555,6 +3923,7 @@ const rawData = {
             max: 2,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "The Tower",
@@ -3563,6 +3932,7 @@ const rawData = {
             max: 6,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Distribution Center",
@@ -3571,6 +3941,7 @@ const rawData = {
             max: 8,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },/* {
             id: "monsterDna",
             name: "Upper Areas",
@@ -3579,6 +3950,7 @@ const rawData = {
             max: 38,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           }, */{
             id: "monsterDna",
             name: "Rescue Team Campsite",
@@ -3587,6 +3959,7 @@ const rawData = {
             max: 2,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "The Nest",
@@ -3595,6 +3968,7 @@ const rawData = {
             max: 3,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },{
             id: "monsterDna",
             name: "Genetics Laboratory",
@@ -3603,10 +3977,12 @@ const rawData = {
             max: 9,
             bg: "ffffff",
             nodeType: "goal",
+            value: 0,
           },
         ],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "am2rPowerOrb",
         name: "Power Orbs Distributed",
@@ -3616,6 +3992,7 @@ const rawData = {
         segments: [],
         bg: "887878",
         nodeType: "goal",
+        value: 0,
       },{
         id: "monster",
         name: "Baby Metroid",
@@ -3625,6 +4002,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -3639,6 +4017,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "bomb",
         name: "Bombs",
@@ -3647,6 +4026,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spiderBallA",
         name: "Spider Ball",
@@ -3655,6 +4035,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "springBall",
         name: "Spring Ball",
@@ -3665,6 +4046,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "powerBomb",
         name: "Power Bomb",
@@ -3675,6 +4057,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "barrier",
         name: "Varia Suit",
@@ -3683,6 +4066,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "gravitySuit",
         name: "Gravity Suit",
@@ -3691,6 +4075,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "scanPulse",
         name: "Scan Pulse",
@@ -3699,6 +4084,7 @@ const rawData = {
         segments: [],
         bg: "00c7ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "lightningShield",
         name: "Lightning Shield",
@@ -3707,6 +4093,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "beamBurst",
         name: "Beam Burst",
@@ -3715,6 +4102,7 @@ const rawData = {
         segments: [],
         bg: "ffbc15",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "phaseDrift",
         name: "Phase Drift",
@@ -3723,6 +4111,7 @@ const rawData = {
         segments: [],
         bg: "e900ff",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -3735,6 +4124,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spaceJump",
         name: "Space Jump",
@@ -3745,6 +4135,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "chargeBeamD",
         name: "Charge Beam",
@@ -3753,6 +4144,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "iceBeamB",
         name: "Ice Beam",
@@ -3761,6 +4153,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "waveBeam",
         name: "Wave Beam",
@@ -3769,6 +4162,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "wideBeamD",
         name: "Spazer Beam",
@@ -3777,6 +4171,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "plasmaBeamC",
         name: "Plasma Beam",
@@ -3785,6 +4180,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -3793,6 +4189,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -3801,6 +4198,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "energyTank",
         name: "Energy Tanks",
@@ -3809,6 +4207,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Tanks",
@@ -3817,6 +4216,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         name: "Super Missile Tanks",
@@ -3825,6 +4225,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         name: "Power Bomb Tanks",
@@ -3833,6 +4234,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "aeionExpansion",
         name: "Aeion Expansion",
@@ -3841,6 +4243,7 @@ const rawData = {
         segments: [],
         bg: "bfbf00",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "monsterDna",
         name: "Metroids defeated",
@@ -3917,6 +4320,7 @@ const rawData = {
         ],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "monster",
         name: "Baby Metroid",
@@ -3925,6 +4329,7 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -3942,6 +4347,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -3953,6 +4359,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         sprite: "spring",
@@ -3964,6 +4371,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -3975,6 +4383,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -3986,6 +4395,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         sprite: "gravity",
@@ -3997,6 +4407,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "xRayScope",
         sprite: "xray",
@@ -4008,6 +4419,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "grappleBeam",
         sprite: "grapple",
@@ -4019,6 +4431,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "chargeBeam",
         name: "Charge Beam",
@@ -4030,6 +4443,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "wideBeam",
         sprite: "wide",
@@ -4041,6 +4455,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -4052,6 +4467,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -4063,6 +4479,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeam",
         sprite: "plasma",
@@ -4074,6 +4491,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -4085,6 +4503,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "speedBooster",
         sprite: "speed",
@@ -4096,6 +4515,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         sprite: "space",
@@ -4107,6 +4527,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -4116,6 +4537,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -4125,6 +4547,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         sprite: "smissile",
@@ -4134,6 +4557,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         sprite: "pbombs",
@@ -4143,6 +4567,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "reserveTank",
         sprite: "reserve",
@@ -4152,6 +4577,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4165,6 +4591,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "etedach",
         sprite: "animals",
@@ -4174,6 +4601,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -4191,6 +4619,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -4202,6 +4631,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         sprite: "spring",
@@ -4213,6 +4643,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         sprite: "screw",
@@ -4224,6 +4655,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4232,7 +4664,7 @@ const rawData = {
         id: "bow",
         name: "Bow", // "",
         start: 0,
-        max: 1,
+        max: 1, // 2
         over: "MC_Chest",
         overText: "L1 Big Chest",
         segments: [ // assuming progressive bow
@@ -4243,13 +4675,16 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L1 Big Chest",
+            value: 1,
           },{
             id: "bowSilver",
             name: "Bow and Silver Arrows",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }*/
-        ]
+        ],
+        value: 1,
       },{ // in case of nonprogressive bow
         id: "silverArrows",
         name: "", // "Silver Arrows",
@@ -4261,18 +4696,21 @@ const rawData = {
             name: "Arrows",
             start: 0,
             max: 1,
+            value: 0,
           },{
             id: "silverArrows",
             name: "Silver Arrows",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       }, /* { // assuming progressive Boomerang
         id: "boomerang",
         name: "", // "Boomerang",
         start: 0,
-        max: 1,
+        max: 2,
         over: "MC_Chest",
         overText: "HC Basement Chest",
         segments: [ */ // in case of nonprogressive Boomerang
@@ -4283,13 +4721,16 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "HC Basement Chest",
+            value: 1,
           },{
             id: "magicRang",
             name: "Magical Boomerang",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }/* 
-        ]
+        ],
+        value: 1,
       } */,{
         id: "hookshot",
         name: "Hookshot",
@@ -4297,31 +4738,36 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D2 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },/*{
         id: "powder",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           */{
             id: "mushroom",
             name: "Mushroom",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "powder",
             name: "Magic Powder",
             start: 0,
             max: 1,
+            value: 1,
           }/*
-        ]
+        ],
+        value: 1,
       }*/,{
         id: "-",
         name: "",
@@ -4341,6 +4787,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         sprite: "gravity",
@@ -4352,6 +4799,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "xRayScope",
         sprite: "xray",
@@ -4363,6 +4811,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "grappleBeam",
         sprite: "grapple",
@@ -4374,6 +4823,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4385,31 +4835,36 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "iceRod",
         name: "Ice Rod",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombos",
         name: "Bombos",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "ether",
         name: "Ether",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "quake",
         name: "Quake",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4441,6 +4896,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "wideBeam",
         sprite: "wide",
@@ -4452,6 +4908,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         sprite: "ice",
@@ -4463,6 +4920,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         sprite: "wave",
@@ -4474,6 +4932,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4483,7 +4942,8 @@ const rawData = {
         name: "Lamp",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "hammer",
         name: "Magic Hammer",
@@ -4491,13 +4951,15 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D1 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "shovel",
         name: "Shovel",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "flute",
         name: "", // "Flute",
@@ -4509,25 +4971,30 @@ const rawData = {
             name: "Flute",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "bird",
             name: "Flute (Warping enabled)",
             start: 0,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "net",
         name: "Bug-Catching Net",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "book",
         name: "Book of Mudora",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4555,6 +5022,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         sprite: "high",
@@ -4566,6 +5034,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "speedBooster",
         sprite: "speed",
@@ -4577,6 +5046,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         sprite: "space",
@@ -4588,6 +5058,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4597,7 +5068,8 @@ const rawData = {
         name: "Bottle",
         start: 0,
         max: 4,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "somaria",
         name: "Cane of Somaria",
@@ -4605,25 +5077,29 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D6 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "byrna",
         name: "Cane of Byrna",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "cape",
         name: "Magic Cape",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "mirror",
         name: "Magic Mirror",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4632,46 +5108,53 @@ const rawData = {
         id: "sword",
         name: "",
         start: 0,
-        max: 1,
+        max: 4,
         segments: [
           {
             id: "sword",
             name: "Fighter's Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "masterSword",
             name: "Master Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "temperedSword",
             name: "Tempered Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "goldenSword",
             name: "Golden Sword",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "shield",
         name: "",
         start: 0,
-        max: 1,
+        max: 3,
         segments: [
           {
             id: "shield",
             name: "Fighter's Shield",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redShield",
             name: "Red Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "mirrorShield",
             name: "Mirror Sword",
@@ -4679,26 +5162,24 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D7 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "greenJerkin",
         name: "",
-        start: 1,
-        max: 1,
+        start: 0,
+        max: 2,
         segments: [
           {
-            id: "greenJerkin",
-            name: "Green Jerkin",
-            start: 1,
-            max: 1,
-          },{
             id: "blueMail",
             name: "Blue Mail",
             start: 0,
             max: 1,
             over: "MC_Chest",
             overText: "D5 Big Chest",
+            value: 1,
           },{
             id: "redMail",
             name: "Red Mail",
@@ -4706,8 +5187,10 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "GT Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4721,6 +5204,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -4730,6 +5214,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         sprite: "smissile",
@@ -4739,6 +5224,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         sprite: "pbombs",
@@ -4748,6 +5234,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4757,12 +5244,13 @@ const rawData = {
         name: "Pegasus Boots",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "glove",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "glove",
@@ -4771,6 +5259,7 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L2 Big Chest",
+            value: 1,
           },{
             id: "mitt",
             name: "Titan's Mitt",
@@ -4778,14 +5267,17 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D4 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "flipper",
         name: "Zora Flipper",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "pearl",
         name: "Moon Pearl",
@@ -4793,7 +5285,8 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "L3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4806,32 +5299,37 @@ const rawData = {
         id: "halfMagic",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "halfMagic",
             name: "Half Magic",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "quarterMagic",
             name: "Quarter Magic",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "arrowsExp",
         name: "Arrow Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "bombsExp",
         name: "Bomb Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -4845,6 +5343,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -4862,6 +5361,7 @@ const rawData = {
         segments: [],
         bg: "747474",
         nodeType: "boss",
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -4883,6 +5383,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -4890,6 +5391,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -4897,6 +5399,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -4904,6 +5407,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -4911,6 +5415,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -4918,8 +5423,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "dp",
         name: "Desert Palace",
@@ -4937,6 +5444,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -4944,6 +5452,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -4951,6 +5460,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -4958,6 +5468,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -4965,6 +5476,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -4972,8 +5484,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "toh",
         name: "Tower of Hera",
@@ -4991,6 +5505,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -4998,6 +5513,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5005,6 +5521,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5012,6 +5529,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5019,6 +5537,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5026,8 +5545,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "pod",
         name: "Palace of Darkness",
@@ -5045,6 +5566,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5052,6 +5574,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5059,6 +5582,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5066,6 +5590,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5073,6 +5598,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5080,8 +5606,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "sp",
         name: "Swamp Palace",
@@ -5099,6 +5627,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5106,6 +5635,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5113,6 +5643,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5120,6 +5651,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5127,6 +5659,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5134,8 +5667,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "sw",
         name: "Skull Woods",
@@ -5153,6 +5688,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5160,6 +5696,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5167,6 +5704,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5174,6 +5712,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5181,6 +5720,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5188,8 +5728,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "tt",
         name: "Thieves' Town",
@@ -5207,6 +5749,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5214,6 +5757,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5221,6 +5765,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5228,6 +5773,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5235,6 +5781,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5242,8 +5789,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "ip",
         name: "Ice Palace",
@@ -5261,6 +5810,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5268,6 +5818,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5275,6 +5826,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5282,6 +5834,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5289,6 +5842,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5296,8 +5850,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "mm",
         name: "Misery Mire",
@@ -5315,6 +5871,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5322,6 +5879,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5329,6 +5887,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5336,6 +5895,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5343,6 +5903,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5350,8 +5911,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "tr",
         name: "Turtle Rock",
@@ -5369,6 +5932,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -5376,6 +5940,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -5383,6 +5948,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -5390,6 +5956,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -5397,6 +5964,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -5404,8 +5972,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },
     ]
   },
@@ -5420,6 +5990,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "bombA",
         name: "Bombs",
@@ -5428,6 +5999,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "missile",
         name: "Missiles",
@@ -5436,6 +6008,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "superMissile",
         name: "Super Missiles",
@@ -5444,6 +6017,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "seekerLauncher",
         name: "Seeker Missiles",
@@ -5452,6 +6026,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "barrier",
         name: "Varia Feature",
@@ -5460,6 +6035,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "gravitySuit",
         name: "Gravity Feature",
@@ -5468,6 +6044,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -5476,6 +6053,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "diffusionBeamA",
         name: "Diffusion Beam",
@@ -5484,6 +6062,7 @@ const rawData = {
         segments: [],
         bg: "7f2800",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "iceBeam",
         name: "Ice Beam",
@@ -5492,6 +6071,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "waveBeam",
         name: "Wave Beam",
@@ -5500,6 +6080,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "plasmaBeam",
         name: "Plasma Beam",
@@ -5508,6 +6089,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "speedBoosterA",
         name: "Speed Booster",
@@ -5516,6 +6098,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spaceJump",
         name: "Space Jump",
@@ -5524,6 +6107,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -5532,6 +6116,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "powerBomb",
         name: "Power Bombs",
@@ -5540,6 +6125,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "energyTank",
         name: "Energy Tanks",
@@ -5548,6 +6134,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Tanks",
@@ -5556,6 +6143,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "chargeAccel",
         name: "Accel Charges",
@@ -5564,6 +6152,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "energyPart",
         name: "Energy Parts",
@@ -5572,6 +6161,7 @@ const rawData = {
         segments: [],
         bg: "fcc4d8",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "eRecoveryTank",
         name: "E-Recovery Tanks",
@@ -5580,6 +6170,7 @@ const rawData = {
         segments: [],
         bg: "6f3198",
         nodeType: "expansion",
+        value: 1,
       },
     ]
   },
@@ -5594,6 +6185,7 @@ const rawData = {
         segments: [],
         bg: "ff7e00",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "gravitySuit",
         name: "Gravity Suit",
@@ -5602,6 +6194,7 @@ const rawData = {
         segments: [],
         bg: "602880",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "phazonSuit",
         name: "Phazon Suit",
@@ -5610,6 +6203,7 @@ const rawData = {
         segments: [],
         bg: "282018",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "zeroSuit",
         name: "Zero Suit",
@@ -5618,6 +6212,7 @@ const rawData = {
         segments: [],
         bg: "007098",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "fullPowerSuit",
         name: "Black Zero Suit",
@@ -5626,6 +6221,7 @@ const rawData = {
         segments: [],
         bg: "80d0ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "zeroSuitA",
         name: "Equipment recovered",
@@ -5634,6 +6230,7 @@ const rawData = {
         segments: [],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "chargeBeamA",
         name: "Charge Module",
@@ -5642,6 +6239,7 @@ const rawData = {
         segments: [],
         bg: "808000",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "flameShot",
         name: "Fire Beam",
@@ -5650,6 +6248,7 @@ const rawData = {
         segments: [],
         bg: "ff4a4a",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "wideBeam",
         name: "Spazer",
@@ -5658,6 +6257,7 @@ const rawData = {
         segments: [],
         bg: "ffff80",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "waveBeam",
         name: "Wave Beam",
@@ -5666,6 +6266,7 @@ const rawData = {
         segments: [],
         bg: "92278f",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "plasmaBeam",
         name: "Plasma Beam",
@@ -5674,6 +6275,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "iceBeam",
         name: "Ice Beam",
@@ -5682,6 +6284,7 @@ const rawData = {
         segments: [],
         bg: "2038ec",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -5690,6 +6293,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bomb",
         name: "Bomb",
@@ -5698,6 +6302,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "springBall",
         name: "Jump Ball",
@@ -5706,6 +6311,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spiderBall",
         name: "Spider Ball",
@@ -5714,6 +6320,7 @@ const rawData = {
         segments: [],
         bg: "bca470",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "bombA",
         name: "Bomb-Beam Adapter",
@@ -5722,6 +6329,7 @@ const rawData = {
         segments: [],
         bg: "887878",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -5734,6 +6342,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "highJump",
         name: "Hi-Jump Boots",
@@ -5742,6 +6351,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "spaceJump",
         name: "Space Jump",
@@ -5750,6 +6360,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerGrip",
         name: "Power Grip",
@@ -5758,6 +6369,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -5766,6 +6378,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -5778,6 +6391,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Tanks",
@@ -5786,6 +6400,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "superMissileTank",
         name: "Super Missile Tanks",
@@ -5794,6 +6409,7 @@ const rawData = {
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "magneticShieldTank",
         name: "Magnetic Shield Tanks",
@@ -5802,6 +6418,7 @@ const rawData = {
         segments: [],
         bg: "007098",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         name: "Power Bomb Tanks",
@@ -5810,6 +6427,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "monsterDna",
         name: "Metroids defeated",
@@ -5874,6 +6492,7 @@ const rawData = {
         ],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },
     ]
   },
@@ -5884,7 +6503,7 @@ const rawData = {
         id: "missile",
         name: "",
         start: 0,
-        max: 1,
+        max: 4,
         segments: [*/
           {
             id: "missileA",
@@ -5896,6 +6515,7 @@ const rawData = {
             overText: "Operations Deck - Data Room",
             bg: "d82800",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "missile",
             name: "Super Missiles",
@@ -5906,6 +6526,7 @@ const rawData = {
             overText: "Sector 3 PYR - Data Room",
             bg: "007f0e",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "iceMissile",
             name: "Ice Missiles",
@@ -5916,6 +6537,7 @@ const rawData = {
             overText: "Sector 5 ARC - Data Room",
             bg: "2038ec",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "superMissile",
             name: "Diffusion Effect",
@@ -5926,8 +6548,10 @@ const rawData = {
             overText: "Sector 4 AQA - Data Room",
             bg: "7f2800",
             nodeType: "upgrade",
+            value: 0,
           },/*
-        ]
+        ],
+        value: 0,
       },*/{
         id: "morphBall",
         name: "Morph Ball",
@@ -5939,6 +6563,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "bomb",
         name: "Bombs",
@@ -5950,6 +6575,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "powerBomb",
         name: "Power Bombs",
@@ -5961,22 +6587,15 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 0,
       },/*{ // in case of progressive beams
         id: "powerBeam",
         name: "", // "Power Beam",
-        start: 1,
-        max: 1,
+        start: 0,
+        max: 5,
         sprite: "powerBeam",
-        segments: [
+        segments: [*/
           {
-            id: "powerBeamB",
-            name: "Power Beam",
-            start: 1,
-            max: 1,
-            sprite: "powerBeam",
-            bg: "ffb508",
-            nodeType: "upgrade",
-          },*/{
             id: "chargeBeam", // "chargeBeamC",
             name: "Charge Beam",
             start: 0,
@@ -5986,6 +6605,7 @@ const rawData = {
             overText: "Elephant Bird Defeated",
             bg: "808000",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "wideBeamA", // "wideBeamB",
             name: "Wide Beam",
@@ -5996,6 +6616,7 @@ const rawData = {
             overText: "Wide Laser Core-X Defeated",
             bg: "ffff80",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "plasmaBeam", // "plasmaBeamA",
             name: "Plasma Beam",
@@ -6006,6 +6627,7 @@ const rawData = {
             overText: "Nettori Defeated",
             bg: "00ff08",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "waveBeam", // "waveBeamB",
             name: "Wave Beam",
@@ -6016,6 +6638,7 @@ const rawData = {
             overText: "SR-BOX 2 Defeated",
             bg: "92278f",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "iceBeam", // "iceBeamC",
             name: "Ice Beam",
@@ -6024,10 +6647,12 @@ const rawData = {
             sprite: "iceBeam",
             bg: "2038ec",
             nodeType: "upgrade",
+            value: 0,
           },/*
         ],
         bg: "ffb508",
         nodeType: "upgrade",
+        value: 0,
       },*/{
         id: "-",
         name: "",
@@ -6047,6 +6672,7 @@ const rawData = {
         segments: [],
         bg: "c0a8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -6058,6 +6684,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "spaceJump",
         name: "Space Jump",
@@ -6069,6 +6696,7 @@ const rawData = {
         segments: [],
         bg: "00a0e0",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -6080,22 +6708,15 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 0,
       },/*{ // in case of progressive suits
         id: "fusionSuit",
         name: "Fusion Suit",
-        start: 1,
-        max: 1,
+        start: 0,
+        max: 2,
         sprite: "fusion",
-        segments: [
+        segments: [*/
           {
-            id: "fusionSuit",
-            name: "Fusion Suit",
-            start: 1,
-            max: 1,
-            sprite: "fusion",
-            bg: "007098",
-            nodeType: "upgrade",
-          },*/{
             id: "barrier",
             name: "Varia Suit",
             start: 0,
@@ -6105,6 +6726,7 @@ const rawData = {
             overText: "Barrier Core-X Defeated",
             bg: "c8f048",
             nodeType: "upgrade",
+            value: 0,
           },{
             id: "gravitySuit",
             name: "Gravity Suit",
@@ -6115,6 +6737,7 @@ const rawData = {
             overText: "Nightmare Defeated",
             bg: "602880",
             nodeType: "upgrade",
+            value: 0,
           },/*{
             id: "fullPowerSuit",
             name: "Final Suit",
@@ -6123,8 +6746,10 @@ const rawData = {
             sprite: "final",
             bg: "ff7e00",
             nodeType: "upgrade",
+            value: 0,
           },
-        ]
+        ],
+        value: 0,
       },*/{
         id: "-",
         name: "",
@@ -6138,6 +6763,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -6147,6 +6773,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "powerBombTank",
         sprite: "pbomb",
@@ -6156,6 +6783,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -6180,6 +6808,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "mainBoiler",
         name: "Sector 3 - Cooling unit operational.",
@@ -6188,6 +6817,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "etedach",
         sprite: "animals",
@@ -6197,6 +6827,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       },{
         id: "reactorCore",
         name: "Main Deck - Auxiliary power engaged.",
@@ -6205,6 +6836,7 @@ const rawData = {
         segments: [],
         bg: "ffffff",
         nodeType: "goal",
+        value: 0,
       }, *//* {
         id: "mainDeck",
         name: "Main Deck",
@@ -6319,6 +6951,7 @@ const rawData = {
         segments: [],
         bg: "c8d8d8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "securityL1",
         sprite: "securityL1",
@@ -6328,6 +6961,7 @@ const rawData = {
         segments: [],
         bg: "28d8f8",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "securityL2",
         sprite: "securityL2",
@@ -6337,6 +6971,7 @@ const rawData = {
         segments: [],
         bg: "90f890",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "securityL3",
         sprite: "securityL3",
@@ -6346,6 +6981,7 @@ const rawData = {
         segments: [],
         bg: "f8f838",
         nodeType: "upgrade",
+        value: 0,
       },{
         id: "securityL4",
         sprite: "securityL4",
@@ -6355,6 +6991,7 @@ const rawData = {
         segments: [],
         bg: "f82828",
         nodeType: "upgrade",
+        value: 0,
       },
     ]
   },
@@ -6365,7 +7002,7 @@ const rawData = {
         id: "powerBeam",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "wideBeamA",
@@ -6374,6 +7011,7 @@ const rawData = {
             max: 1,
             bg: "ffff80",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "plasmaBeam",
             name: "Plasma Beam",
@@ -6381,6 +7019,7 @@ const rawData = {
             max: 1,
             bg: "00ff08",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "waveBeam",
             name: "Wave Beam",
@@ -6388,13 +7027,15 @@ const rawData = {
             max: 1,
             bg: "92278f",
             nodeType: "upgrade",
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "chargeBeam",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "chargeBeam",
@@ -6403,6 +7044,7 @@ const rawData = {
             max: 1,
             bg: "808000",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "diffusionBeamA",
             name: "Diffusion Beam",
@@ -6410,8 +7052,10 @@ const rawData = {
             max: 1,
             bg: "9b9b9b",
             nodeType: "upgrade",
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -6420,11 +7064,12 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "missile",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "superMissile",
@@ -6433,6 +7078,7 @@ const rawData = {
             max: 1,
             bg: "007f0e",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "freezeShot",
             name: "Ice Missiles",
@@ -6440,16 +7086,19 @@ const rawData = {
             max: 1,
             bg: "2038ec",
             nodeType: "upgrade",
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
-        id: "seekerLauncher",
+        id: "seekerLauncherB",
         name: "Storm Missile",
         start: 0,
         max: 1,
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "invisibility",
         name: "Phantom Cloak",
@@ -6458,14 +7107,16 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
+        value: 1,
       },{
-        id: "speedBoosterA",
+        id: "flashShift",
         name: "Flash Shift",
         start: 0,
         max: 1,
         segments: [],
         bg: "e900ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "scanPulse",
         name: "Pulse Radar",
@@ -6474,11 +7125,12 @@ const rawData = {
         segments: [],
         bg: "00c7ff",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerSuit",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "barrier",
@@ -6487,6 +7139,7 @@ const rawData = {
             max: 1,
             bg: "ff7e00",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "gravitySuit",
             name: "Gravity Suit",
@@ -6494,8 +7147,10 @@ const rawData = {
             max: 1,
             bg: "602880",
             nodeType: "upgrade",
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -6504,14 +7159,16 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
+        value: 1,
       },{
-        id: "bombC",
+        id: "bombD",
         name: "Bombs",
         start: 0,
         max: 1,
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "crossBombs",
         name: "Cross Bomb",
@@ -6520,6 +7177,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBomb",
         name: "Power Bombs",
@@ -6528,14 +7186,16 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },{
-        id: "powerGrip",
+        id: "spiderMagnet",
         name: "Spider Magnet",
         start: 0,
         max: 1,
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -6544,11 +7204,12 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "jumpBoots",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "spinBoost",
@@ -6557,6 +7218,7 @@ const rawData = {
             max: 1,
             bg: "c0a8d8",
             nodeType: "upgrade",
+            value: 1,
           },{
             id: "spaceJump",
             name: "Space Jump",
@@ -6564,8 +7226,10 @@ const rawData = {
             max: 1,
             bg: "00a0e0",
             nodeType: "upgrade",
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -6574,6 +7238,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -6586,6 +7251,7 @@ const rawData = {
         segments: [],
         bg: "78a4bc",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "energyPart",
         name: "Energy Parts",
@@ -6594,6 +7260,7 @@ const rawData = {
         segments: [],
         bg: "fcc4d8",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "missileTank",
         name: "Missile Tanks",
@@ -6602,6 +7269,7 @@ const rawData = {
         segments: [],
         bg: "d82800",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "doubleMissileTank",
         name: "Missile+ Tanks",
@@ -6610,6 +7278,7 @@ const rawData = {
         segments: [],
         bg: "007098",
         nodeType: "upgrade",
+        value: 1,
       },{
         id: "powerBombTank",
         name: "Power Bomb Tanks",
@@ -6618,6 +7287,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
+        value: 1,
       },
     ]
   },
@@ -6629,120 +7299,134 @@ const rawData = {
         name: "Raft",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "book",
         name: "Magic Book",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "green",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
-            id: "green",
-            name: "Green Jerkin",
-            start: 1,
-            max: 1,
-          },{
             id: "blueRing",
             name: "Blue Ring",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redRing",
             name: "Red Ring",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "ladder",
         name: "Ladder",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicKey",
         name: "Magic Key",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bracelets",
         name: "Power Bracelet",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "boomerang",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "boomerang",
             name: "Boomerang",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "magicRang",
             name: "Magical Boomerang",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "arrow",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "arrow",
             name: "Arrow",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "silverArrows",
             name: "Silver Arrow",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "heroBow",
         name: "Bow",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "candle",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "candle",
             name: "Blue Candle",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redCandle",
             name: "Red Candle",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -6752,25 +7436,29 @@ const rawData = {
         name: "Whistle",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bait",
         name: "Bait",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "note",
         name: "Note",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicRod",
         name: "Magic Rod",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -6783,43 +7471,50 @@ const rawData = {
         id: "sword",
         name: "",
         start: 0,
-        max: 1,
+        max: 3,
         segments: [
           {
             id: "woodenSword",
             name: "Wooden Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "whiteSword",
             name: "White Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "magicalSword",
             name: "Magical Sword",
             start: 0,
             max: 1,
+            value: 1,
           },
-        ]
+        ],
+        value: 1,
       },{
         id: "magicalShield",
         name: "Magical Shield",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "heartContainer",
         name: "Heart Containers",
         start: 3,
         max: 16,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombsExp",
         name: "I bet you'd like to carry more Bombs",
         start: 0,
         max: 2,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -6829,7 +7524,8 @@ const rawData = {
         name: "Triforce Pieces",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 1,
       },
     ]
   },
@@ -6841,49 +7537,57 @@ const rawData = {
         name: "Shield Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "jumpSpell",
         name: "Jump Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "lifeSpell",
         name: "Life Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "fairySpell",
         name: "Fairy Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "fireSpell",
         name: "Fire Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "reflectSpell",
         name: "Reflect Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "spellSpell",
         name: "Spell Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "thunderSpell",
         name: "Thunder Spell",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -6893,31 +7597,36 @@ const rawData = {
         name: "Trophy",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "mirror",
         name: "Mirror",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "waterOfLife",
         name: "Water of Life",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "water",
         name: "Water",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "child",
         name: "Child",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -6927,55 +7636,64 @@ const rawData = {
         name: "Bagu's Note",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "candle",
         name: "Candle",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "glove",
         name: "Glove",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "raft",
         name: "Raft",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "boots",
         name: "Boots",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "whistle",
         name: "Flute",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "cross",
         name: "Cross",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "hammer",
         name: "Hammer",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicKey",
         name: "Magic Key",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },/* {
         id: "-",
         name: "",
@@ -6985,37 +7703,43 @@ const rawData = {
         name: "Parapa Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "midoro", // "palace",
         name: "Midoro Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "island", // "palace",
         name: "Island Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "maze", // "palace",
         name: "Maze Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "onthesea", // "palace",
         name: "Palace On The Sea Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "hidden", // "palace",
         name: "Hidden Palace Crystal",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7025,61 +7749,71 @@ const rawData = {
         name: "Heart Containers",
         start: 4,
         max: 8,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "magicContainer",
         name: "Magic Containers",
         start: 4,
         max: 8,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "downStab",
         name: "Down Stab",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "upStab",
         name: "Up Stab",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "life",
         name: "Life",
         start: 1,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "magic",
         name: "Magic",
         start: 1,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "attack",
         name: "Attack",
         start: 1,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "palace",
         name: "",
         start: 0,
-        max: 1,
+        max: 0,
         segments: [
           {
             id: "palace",
             name: "Palace Crystals",
             start: 0,
             max: 6,
+            value: 0,
           },{
             id: "triforce",
             name: "Great Palace open",
             start: 0,
             max: 1,
+            value: 0,
           },
-        ]
+        ],
+        value: 0,
       },
     ]
   },
@@ -7090,7 +7824,7 @@ const rawData = {
         id: "bowArrows",
         name: "Bow",
         start: 0,
-        max: 1,
+        max: 2,
         over: "MC_Chest",
         overText: "L1 Big Chest",
         segments: [ // assumes progressive bows
@@ -7101,18 +7835,21 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L1 Big Chest",
+            value: 1,
           },{
             id: "bowSilver",
             name: "Silver Arrows",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{ // assuming progressive Boomerang
         id: "boomerang",
         name: "", // "Boomerang",
         start: 0,
-        max: 1,
+        max: 2,
         over: "MC_Chest",
         overText: "HC Basement Chest",
         segments: [ // in case of nonprogressive Boomerang
@@ -7123,13 +7860,16 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "HC Basement Chest",
+            value: 1,
           },{
             id: "magicRang",
             name: "Magical Boomerang",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "hookshot",
         name: "Hookshot",
@@ -7137,31 +7877,36 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D2 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "powder",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [ // assumes progressive mushroom/powder
           {
             id: "mushroom",
             name: "Mushroom",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "powder",
             name: "Magic Powder",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7172,7 +7917,8 @@ const rawData = {
         start: 0,
         max: 1,
         back: "toh",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7184,38 +7930,44 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "iceRod",
         name: "Ice Rod",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombos",
         name: "Bombos",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "ether",
         name: "Ether",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "quake",
         name: "Quake",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "wisdom",
         name: "Desert Palace - Pendent of Wisdom",
         start: 0,
         max: 1,
         back: "dp",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7226,13 +7978,15 @@ const rawData = {
         start: 0,
         max: 1,
         back: "ep",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "lamp",
         name: "Lamp",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "hammer",
         name: "Magic Hammer",
@@ -7240,42 +7994,49 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D1 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "flute",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [ // assumes progressive shovel/flute
           {
             id: "shovel",
             name: "Shovel",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "flute",
             name: "Flute",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "bird",
             name: "Flute (Warping enabled)",
             start: 0,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "net",
         name: "Bug-Catching Net",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "book",
         name: "Book of Mudora",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7286,7 +8047,8 @@ const rawData = {
         start: 0,
         max: 1,
         back: "at",
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -7296,7 +8058,8 @@ const rawData = {
         name: "Bottle",
         start: 0,
         max: 4,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "somaria",
         name: "Cane of Somaria",
@@ -7304,69 +8067,80 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D6 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "byrna",
         name: "Cane of Byrna",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "cape",
         name: "Magic Cape",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "mirror",
         name: "Magic Mirror",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "sword",
         name: "",
         start: 0,
-        max: 1,
+        max: 4,
         segments: [
           {
             id: "sword",
             name: "Fighter's Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "masterSword",
             name: "Master Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "temperedSword",
             name: "Tempered Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "goldenSword",
             name: "Golden Sword",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "shield",
         name: "",
         start: 0,
-        max: 1,
+        max: 3,
         segments: [
           {
             id: "shield",
             name: "Fighter's Shield",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redShield",
             name: "Red Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "mirrorShield",
             name: "Mirror Sword",
@@ -7374,26 +8148,24 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D7 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "greenJerkin",
         name: "",
-        start: 1,
-        max: 1,
+        start: 0,
+        max: 2,
         segments: [
           {
-            id: "greenJerkin",
-            name: "Green Jerkin",
-            start: 1,
-            max: 1,
-          },{
             id: "blueMail",
             name: "Blue Mail",
             start: 0,
             max: 1,
             over: "MC_Chest",
             overText: "D5 Big Chest",
+            value: 1,
           },{
             id: "redMail",
             name: "Red Mail",
@@ -7401,19 +8173,22 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "GT Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "boots",
         name: "Pegasus Boots",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "glove",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "glove",
@@ -7422,6 +8197,7 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L2 Big Chest",
+            value: 1,
           },{
             id: "mitt",
             name: "Titan's Mitt",
@@ -7429,14 +8205,17 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D4 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "flipper",
         name: "Zora Flipper",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "pearl",
         name: "Moon Pearl",
@@ -7444,7 +8223,8 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "L3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7454,68 +8234,78 @@ const rawData = {
         name: "Half Magic",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "arrowsExp",
         name: "Arrow Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "bombsExp",
         name: "Bomb Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "crystal",
         name: "Palace of Darkness - Crystal",
         start: 0,
         max: 1,
         back: "pod",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Swamp Palace - Crystal",
         start: 0,
         max: 1,
         back: "sp",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Skull Woods - Crystal",
         start: 0,
         max: 1,
         back: "sw",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Thieves' Town - Crystal",
         start: 0,
         max: 1,
         back: "tt",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Ice Palace - Crystal",
         start: 0,
         max: 1,
         back: "ip",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Misery Mire - Crystal",
         start: 0,
         max: 1,
         back: "mm",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "crystal",
         name: "Turtle Rock - Crystal",
         start: 0,
         max: 1,
         back: "tr",
-        segments: []
+        segments: [],
+        value: 1,
       },
     ]
   },
@@ -7526,7 +8316,7 @@ const rawData = {
         id: "bow",
         name: "Bow", // "",
         start: 0,
-        max: 1,
+        max: 1, // 2
         over: "MC_Chest",
         overText: "L1 Big Chest",
         segments: [ // assuming progressive bow
@@ -7537,13 +8327,16 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L1 Big Chest",
+            value: 1,
           },{
             id: "bowSilver",
             name: "Bow and Silver Arrows",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }*/
-        ]
+        ],
+        value: 1,
       },{ // in case of nonprogressive bow
         id: "silverArrows",
         name: "", // "Silver Arrows",
@@ -7555,18 +8348,21 @@ const rawData = {
             name: "Arrows",
             start: 0,
             max: 1,
+            value: 0,
           },{
             id: "silverArrows",
             name: "Silver Arrows",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       }, /* { // assuming progressive Boomerang
         id: "boomerang",
         name: "", // "Boomerang",
         start: 0,
-        max: 1,
+        max: 2,
         over: "MC_Chest",
         overText: "HC Basement Chest",
         segments: [ */ // in case of nonprogressive Boomerang
@@ -7577,13 +8373,16 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "HC Basement Chest",
+            value: 1,
           },{
             id: "magicRang",
             name: "Magical Boomerang",
             start: 0,
-            max: 1
+            max: 1,
+            value: 1,
           }/* 
-        ]
+        ],
+        value: 1,
       } */,{
         id: "hookshot",
         name: "Hookshot",
@@ -7591,31 +8390,36 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D2 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 0,
       },/*{
         id: "powder",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           */{
             id: "mushroom",
             name: "Mushroom",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "powder",
             name: "Magic Powder",
             start: 0,
             max: 1,
+            value: 1,
           }/*
-        ]
+        ],
+        value: 1,
       }*/,/*{
         id: "-",
         name: "",
@@ -7635,31 +8439,36 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "iceRod",
         name: "Ice Rod",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "bombos",
         name: "Bombos",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "ether",
         name: "Ether",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "quake",
         name: "Quake",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7685,7 +8494,8 @@ const rawData = {
         name: "Lamp",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "hammer",
         name: "Magic Hammer",
@@ -7693,13 +8503,15 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D1 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "shovel",
         name: "Shovel",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "flute",
         name: "",
@@ -7711,25 +8523,30 @@ const rawData = {
             name: "Flute",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "bird",
             name: "Flute (Warping enabled)",
             start: 0,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "net",
         name: "Bug-Catching Net",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "book",
         name: "Book of Mudora",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7751,7 +8568,8 @@ const rawData = {
         name: "Bottle",
         start: 0,
         max: 4,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "somaria",
         name: "Cane of Somaria",
@@ -7759,25 +8577,29 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "D6 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "byrna",
         name: "Cane of Byrna",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "cape",
         name: "Magic Cape",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "mirror",
         name: "Magic Mirror",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7786,46 +8608,53 @@ const rawData = {
         id: "sword",
         name: "",
         start: 0,
-        max: 1,
+        max: 4,
         segments: [
           {
             id: "sword",
             name: "Fighter's Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "masterSword",
             name: "Master Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "temperedSword",
             name: "Tempered Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "goldenSword",
             name: "Golden Sword",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "shield",
         name: "",
         start: 0,
-        max: 1,
+        max: 3,
         segments: [
           {
             id: "shield",
             name: "Fighter's Shield",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "redShield",
             name: "Red Sword",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "mirrorShield",
             name: "Mirror Sword",
@@ -7833,26 +8662,24 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D7 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "greenJerkin",
         name: "",
-        start: 1,
-        max: 1,
+        start: 0,
+        max: 2,
         segments: [
           {
-            id: "greenJerkin",
-            name: "Green Jerkin",
-            start: 1,
-            max: 1,
-          },{
             id: "blueMail",
             name: "Blue Mail",
             start: 0,
             max: 1,
             over: "MC_Chest",
             overText: "D5 Big Chest",
+            value: 1,
           },{
             id: "redMail",
             name: "Red Mail",
@@ -7860,8 +8687,10 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "GT Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7871,12 +8700,13 @@ const rawData = {
         name: "Pegasus Boots",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "glove",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "glove",
@@ -7885,6 +8715,7 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "L2 Big Chest",
+            value: 1,
           },{
             id: "mitt",
             name: "Titan's Mitt",
@@ -7892,14 +8723,17 @@ const rawData = {
             max: 1,
             over: "MC_Chest",
             overText: "D4 Big Chest",
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "flipper",
         name: "Zora Flipper",
         start: 0,
         max: 1,
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "pearl",
         name: "Moon Pearl",
@@ -7907,7 +8741,8 @@ const rawData = {
         max: 1,
         over: "MC_Chest",
         overText: "L3 Big Chest",
-        segments: []
+        segments: [],
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -7920,32 +8755,37 @@ const rawData = {
         id: "halfMagic",
         name: "",
         start: 0,
-        max: 1,
+        max: 2,
         segments: [
           {
             id: "halfMagic",
             name: "Half Magic",
             start: 0,
             max: 1,
+            value: 1,
           },{
             id: "quarterMagic",
             name: "Quarter Magic",
             start: 0,
             max: 1,
+            value: 1,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "arrowsExp",
         name: "Arrow Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "bombsExp",
         name: "Bomb Capacity",
         start: 0,
         max: 8,
-        segments: []
+        segments: [],
+        value: 0,
       },{
         id: "-",
         name: "",
@@ -7967,6 +8807,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -7974,6 +8815,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -7981,6 +8823,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -7988,6 +8831,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -7995,6 +8839,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8002,8 +8847,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "dp",
         name: "Desert Palace",
@@ -8021,6 +8868,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8028,6 +8876,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8035,6 +8884,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8042,6 +8892,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8049,6 +8900,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8056,8 +8908,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "toh",
         name: "Tower of Hera",
@@ -8075,6 +8929,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8082,6 +8937,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8089,6 +8945,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8096,6 +8953,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8103,6 +8961,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8110,8 +8969,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "pod",
         name: "Palace of Darkness",
@@ -8129,6 +8990,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8136,6 +8998,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8150,6 +9013,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8157,6 +9021,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8164,8 +9029,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "sp",
         name: "Swamp Palace",
@@ -8183,6 +9050,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8190,6 +9058,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8197,6 +9066,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8204,6 +9074,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8211,6 +9082,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8218,8 +9090,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "sw",
         name: "Skull Woods",
@@ -8237,6 +9111,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8244,6 +9119,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8251,6 +9127,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8258,6 +9135,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8265,6 +9143,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8272,8 +9151,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "tt",
         name: "Thieves' Town",
@@ -8291,6 +9172,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8298,6 +9180,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8305,6 +9188,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8312,6 +9196,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8319,6 +9204,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8326,8 +9212,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "ip",
         name: "Ice Palace",
@@ -8345,6 +9233,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8352,6 +9241,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8359,6 +9249,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8366,6 +9257,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8373,6 +9265,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8380,8 +9273,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "mm",
         name: "Misery Mire",
@@ -8399,6 +9294,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8406,6 +9302,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8420,6 +9317,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8427,6 +9325,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8434,8 +9333,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           }
-        ]
+        ],
+        value: 1,
       },{
         id: "tr",
         name: "Turtle Rock",
@@ -8453,6 +9354,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "courage",
             name: "Pendent of Courage",
@@ -8460,6 +9362,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 1,
           },{
             id: "wisdom",
             name: "Pendent of Wisdom",
@@ -8467,6 +9370,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "power",
             name: "Pendent of Power",
@@ -8474,6 +9378,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "crystal",
             name: "Crystal",
@@ -8481,6 +9386,7 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },{
             id: "fairyCrystal",
             name: "Fairy Crystal",
@@ -8488,8 +9394,10 @@ const rawData = {
             type: "dungeon",
             start: 1,
             max: 1,
+            value: 0,
           },
-        ]
+        ],
+        value: 1,
       },
     ]
   }

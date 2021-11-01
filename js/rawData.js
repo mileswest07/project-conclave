@@ -7141,7 +7141,7 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "gravitySuit",
+            id: "gravitySuitA",
             name: "Gravity Suit",
             start: 0,
             max: 1,

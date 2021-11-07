@@ -275,8 +275,8 @@ img.item-image.doubleMissileTank { background: url("images/m_graphics.png") -672
 img.item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -672px; }
 img.item-image.flashShift { background: url("images/m_graphics.png") -42px -672px; }
 img.item-image.gravitySuitA { background: url("images/m_graphics.png") -84px -672px; }
-img.item-image.unused { background: url("images/m_graphics.png") -126px -672px; }
-img.item-image.unused { background: url("images/m_graphics.png") -168px -672px; }
+img.item-image.phantomCloak { background: url("images/m_graphics.png") -126px -672px; }
+img.item-image.pulseRadar { background: url("images/m_graphics.png") -168px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -210px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -252px -672px; }
 img.item-image.unused { background: url("images/m_graphics.png") -294px -672px; }

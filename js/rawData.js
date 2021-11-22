@@ -33,7 +33,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -78,6 +83,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Prototype Wave Beam",
         start: 0,
@@ -175,7 +185,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "longBeam", // "longBeamA",
+        id: "longBeamA",
+        locale: {
+          'enUS': {
+            id: "longBeam"
+          }
+        },
         sprite: "long",
         name: "Long Beam",
         start: 0,
@@ -185,7 +200,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -227,6 +247,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -373,7 +398,12 @@ const rawData = {
         segments: [],
         value: 1,
       },{
-        id: "longBeam", // "longBeamA",
+        id: "longBeamA",
+        locale: {
+          'enUS': {
+            id: "longBeam"
+          }
+        },
         sprite: "long",
         name: "Long Beam",
         start: 0,
@@ -383,7 +413,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -394,6 +429,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -745,7 +785,12 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "longBeam", // "longBeamA",
+        id: "longBeamA",
+        locale: {
+          'enUS': {
+            id: "longBeam"
+          }
+        },
         sprite: "long",
         name: "Long Beam",
         start: 0,
@@ -757,7 +802,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeam", // "chargeBeamE",
+        id: "chargeBeamE",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         sprite: "charge",
         name: "Charge Beam",
         start: 0,
@@ -787,7 +837,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "plasmaBeam", // "plasmaBeamD",
+            id: "plasmaBeamD",
+            locale: {
+              'enUS': {
+                id: "plasmaBeam"
+              }
+            },
             sprite: "plasma",
             name: "Plasma Beam",
             start: 0,
@@ -801,7 +856,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -814,6 +874,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -3463,7 +3528,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -3475,6 +3545,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -3485,7 +3560,12 @@ const rawData = {
         slotType: "beam",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         sprite: "wide",
         name: "Spazer Beam",
         start: 0,
@@ -3496,7 +3576,12 @@ const rawData = {
         slotType: "beam",
         value: 1,
       },{
-        id: "plasmaBeam", // "plasmaBeamD",
+        id: "plasmaBeamD",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
@@ -3677,7 +3762,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeam", // "chargeBeamE",
+        id: "chargeBeamE",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         name: "Charge Beam",
         sprite: "charge",
         start: 0,
@@ -3688,6 +3778,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         name: "Wave Beam",
         sprite: "wave",
         start: 0,
@@ -3697,7 +3792,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         name: "Spazer Beam",
         sprite: "wide",
         start: 0,
@@ -3707,7 +3807,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeam", // "plasmaBeamD",
+        id: "plasmaBeamD",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         name: "Plasma Beam",
         sprite: "plasma",
         over: "F_Boss",
@@ -3719,7 +3824,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         name: "Ice Beam",
         sprite: "ice",
         over: "F_Boss",
@@ -4143,6 +4253,11 @@ const rawData = {
         value: 0,
       },{
         id: "chargeBeamD",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         name: "Charge Beam",
         start: 0,
         max: 1,
@@ -4152,6 +4267,11 @@ const rawData = {
         value: 0,
       },{
         id: "iceBeamB",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -4161,6 +4281,11 @@ const rawData = {
         value: 0,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -4170,6 +4295,11 @@ const rawData = {
         value: 0,
       },{
         id: "wideBeamD",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         name: "Spazer Beam",
         start: 0,
         max: 1,
@@ -4179,6 +4309,11 @@ const rawData = {
         value: 0,
       },{
         id: "plasmaBeamC",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -4438,7 +4573,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeam", // "chargeBeamE",
+        id: "chargeBeamE",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         name: "Charge Beam",
         sprite: "charge",
         start: 0,
@@ -4450,7 +4590,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         sprite: "wide",
         name: "Spazer",
         start: 0,
@@ -4462,7 +4607,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -4475,6 +4625,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -4486,7 +4641,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeam", // "plasmaBeamD",
+        id: "plasmaBeamD",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
@@ -4891,7 +5051,12 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "chargeBeam", // "chargeBeamE",
+        id: "chargeBeamE",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         name: "Charge Beam",
         sprite: "charge",
         start: 0,
@@ -4903,7 +5068,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         sprite: "wide",
         name: "Spazer",
         start: 0,
@@ -4915,7 +5085,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -4928,6 +5103,11 @@ const rawData = {
         value: 1,
       },{
         id: "waveBeam",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -5017,7 +5197,12 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "plasmaBeam", // "plasmaBeamD",
+        id: "plasmaBeamD",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
@@ -6060,7 +6245,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "diffusionBeamA",
+        id: "diffusionBeam",
+        locale: {
+          'enUS': {
+            id: "diffusionBeamA"
+          }
+        },
         name: "Diffusion Beam",
         start: 0,
         max: 1,
@@ -6069,7 +6259,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "iceBeam", // "iceBeamD",
+        id: "iceBeamD",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -6078,7 +6273,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "waveBeam", // "waveBeamC",
+        id: "waveBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -6087,7 +6287,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "plasmaBeam", // "plasmaBeamD",
+        id: "plasmaBeamD",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -6244,6 +6449,11 @@ const rawData = {
         value: 0,
       },{
         id: "chargeBeamA",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         sprite: "charge",
         name: "Charge Module",
         start: 0,
@@ -6253,7 +6463,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "flameShot", // "fireBeam", 
+        id: "fireBeam",
         sprite: "fire",
         name: "Fire Beam",
         start: 0,
@@ -6263,7 +6473,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         sprite: "wide",
         name: "Spazer",
         start: 0,
@@ -6273,7 +6488,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "waveBeam", // "waveBeamD",
+        id: "waveBeamD",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -6283,7 +6503,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeam", // "plasmaBeamE",
+        id: "plasmaBeamE",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
@@ -6293,7 +6518,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamE",
+        id: "iceBeamE",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -6614,7 +6844,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "longBeam", // "longBeamA",
+        id: "longBeamA",
+        locale: {
+          'enUS': {
+            id: "longBeam"
+          }
+        },
         sprite: "long",
         name: "Long Beam",
         start: 0,
@@ -6625,6 +6860,11 @@ const rawData = {
         value: 1,
       },{
         id: "chargeBeamA",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         sprite: "charge",
         name: "Charge Beam",
         start: 0,
@@ -6634,7 +6874,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeam", // "wideBeamC",
+        id: "wideBeamC",
+        locale: {
+          'enUS': {
+            id: "wideBeam"
+          }
+        },
         sprite: "wide",
         name: "Spazer Beam",
         start: 0,
@@ -6644,7 +6889,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "flameShot", // "fireBeam",
+        id: "fireBeam",
         sprite: "fire",
         name: "Fire Beam",
         start: 0,
@@ -6654,7 +6899,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "waveBeam", // "waveBeamD",
+        id: "waveBeamD",
+        locale: {
+          'enUS': {
+            id: "wideBeamA"
+          }
+        },
         sprite: "wave",
         name: "Wave Beam",
         start: 0,
@@ -6664,7 +6914,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeam", // "plasmaBeamE",
+        id: "plasmaBeamE",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
@@ -6674,7 +6929,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeam", // "iceBeamE",
+        id: "iceBeamE",
+        locale: {
+          'enUS': {
+            id: "iceBeam"
+          }
+        },
         sprite: "ice",
         name: "Ice Beam",
         start: 0,
@@ -7029,7 +7289,12 @@ const rawData = {
         sprite: "powerBeam",
         segments: [*/
           {
-            id: "chargeBeam", // "chargeBeamC",
+            id: "chargeBeamC",
+            locale: {
+              'enUS': {
+                id: "chargeBeam"
+              }
+            },
             name: "Charge Beam",
             start: 0,
             max: 1,
@@ -7040,7 +7305,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "wideBeamA", // "wideBeamB",
+            id: "wideBeamB",
+            locale: {
+              'enUS': {
+                id: "wideBeamA"
+              }
+            },
             name: "Wide Beam",
             start: 0,
             max: 1,
@@ -7051,7 +7321,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "plasmaBeam", // "plasmaBeamA",
+            id: "plasmaBeamA",
+            locale: {
+              'enUS': {
+                id: "plasmaBeam"
+              }
+            },
             name: "Plasma Beam",
             start: 0,
             max: 1,
@@ -7062,7 +7337,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "waveBeam", // "waveBeamB",
+            id: "waveBeamB",
+            locale: {
+              'enUS': {
+                id: "waveBeam"
+              }
+            },
             name: "Wave Beam",
             start: 0,
             max: 1,
@@ -7073,7 +7353,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "iceBeam", // "iceBeamC",
+            id: "iceBeamC",
+            locale: {
+              'enUS': {
+                id: "iceBeam"
+              }
+            },
             name: "Ice Beam",
             start: 0,
             max: 1,
@@ -7438,7 +7723,12 @@ const rawData = {
         max: 2,
         segments: [
           {
-            id: "wideBeamA", // "wideBeamC",
+            id: "wideBeamC",
+            locale: {
+              'enUS': {
+                id: "wideBeamA"
+              }
+            },
             name: "Wide Beam",
             start: 0,
             max: 1,
@@ -7446,7 +7736,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "plasmaBeam", // "plasmaBeamA",
+            id: "plasmaBeamA",
+            locale: {
+              'enUS': {
+                id: "plasmaBeam"
+              }
+            },
             name: "Plasma Beam",
             start: 0,
             max: 1,
@@ -7454,7 +7749,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "waveBeam", // "wideBeamD",
+            id: "wideBeamD",
+            locale: {
+              'enUS': {
+                id: "waveBeam"
+              }
+            },
             name: "Wave Beam",
             start: 0,
             max: 1,
@@ -7471,7 +7771,12 @@ const rawData = {
         max: 2,
         segments: [
           {
-            id: "chargeBeam", // "chargeBeamE",
+            id: "chargeBeamE",
+            locale: {
+              'enUS': {
+                id: "chargeBeam"
+              }
+            },
             name: "Charge Beam",
             start: 0,
             max: 1,
@@ -7479,7 +7784,12 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "diffusionBeamA", // "diffusionBeamB",
+            id: "diffusionBeamB",
+            locale: {
+              'enUS': {
+                id: "diffusionBeamA"
+              }
+            },
             name: "Diffusion Beam",
             start: 0,
             max: 1,

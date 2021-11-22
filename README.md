@@ -28,6 +28,7 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 
 * Rogue Dawn graphics: Grimlock, Optomon, snarfblam and team
 * Metroid: A New Galaxy: u/Kelly_Crystal
+* Metroid: The Threat Never Ends: also u/Kelly_Crystal
 * Prime2D: Team SCU
 * Z1M1: Metalmachine and team
 * SMZ3: tewtal and team

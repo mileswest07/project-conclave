@@ -375,9 +375,15 @@ let feature = {
       wrapper.setAttribute("typing", element.type);
     }
     
+    let elementId = element.id;
+    
+    if (main.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(main.useLocale)) {
+      elementId = element.locale[main.useLocale].id;
+    }
+    
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
     if (wrapper.classList) {
-      if (element.id === "-" && !isSegment) {
+      if (elementId === "-" && !isSegment) {
         wrapper.classList.add("blank");
       } else {
         wrapper.classList.add(classLabel);
@@ -389,7 +395,7 @@ let feature = {
         wrapper.classList.add("usesSprite");
       }
     } else {
-      if (element.id === "-" && !isSegment) {
+      if (elementId === "-" && !isSegment) {
         wrapper.className += " blank";
       } else {
         wrapper.className = classLabel;
@@ -419,7 +425,7 @@ let feature = {
       }
     }
     
-    if (!(element.id === "-" && !isSegment)) {
+    if (!(elementId === "-" && !isSegment)) {
       if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
@@ -427,14 +433,14 @@ let feature = {
       }
     }
     
-    if (element.id === "-") {
+    if (elementId === "-") {
       if (isSegment) {
         let interimText = JSON.stringify(elementName).split(' ');
         interimText[0] = interimText[0].toLowerCase();
         wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
       }
     } else {
-      let trimmedItemName = element.id;
+      let trimmedItemName = elementId;
       wrapper.id = classLabel + "-" + trimmedItemName + "-" + index;
       if (element.hasOwnProperty("sprite") && main.useSprites) {
         trimmedItemName = element.sprite;
@@ -466,7 +472,7 @@ let feature = {
     }
     
     wrapper.appendChild(image);
-    if (element.id !== "-" && (counterAnyway || element.max > 1)) {
+    if (elementId !== "-" && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");
       label.innerText = element.start + " / " + element.max;
       wrapper.appendChild(label);

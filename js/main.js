@@ -62,6 +62,9 @@ let main = {
     if (document.forms["startupMenu"]["showTimer"].checked) {
       searchString += "&t=true";
     }
+    if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
+      searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
+    }
     location.search = searchString;
   }
   
@@ -99,6 +102,9 @@ let main = {
       let willShowTimer = !!queryDict.t;
       willShowTimer = !!JSON.parse(willShowTimer);
       main.showTimer = willShowTimer;
+      
+      let selectedLocale = queryDict.l || '';
+      main.useLocale = selectedLocale.length ? selectedLocale : null;
       
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;

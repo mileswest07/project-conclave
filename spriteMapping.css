@@ -363,6 +363,28 @@ body.game-mzm .usesSprite img.item-image.smissile { background: url("images/mzm_
 body.game-mzm .usesSprite img.item-image.pbomb { background: url("images/mzm_spritesheet.png") -126px -126px; }
 body.game-mzm .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
 
+/********* MPH - METROID PRIME: HUNTERS (DS) *********/
+body.game-ph .usesSprite img.item-image.volt { background: url("images/mph_spritesheet.png") 0 0; }
+body.game-ph .usesSprite img.item-image.magmaul { background: url("images/mph_spritesheet.png") -42px 0; }
+body.game-ph .usesSprite img.item-image.coil { background: url("images/mph_spritesheet.png") -84px 0; }
+body.game-ph .usesSprite img.item-image.omega { background: url("images/mph_spritesheet.png") -126px 0; }
+body.game-ph .usesSprite img.item-image.octolith { background: url("images/mph_spritesheet.png") -168px 0; }
+body.game-ph .usesSprite img.item-image.hammer { background: url("images/mph_spritesheet.png") 0 -42px; }
+body.game-ph .usesSprite img.item-image.jud { background: url("images/mph_spritesheet.png") -42px -42px; }
+body.game-ph .usesSprite img.item-image.imp { background: url("images/mph_spritesheet.png") -84px -42px; }
+body.game-ph .usesSprite img.item-image.missile { background: url("images/mph_spritesheet.png") -126px -42px; }
+body.game-ph .usesSprite img.item-image.energy { background: url("images/mph_spritesheet.png") -168px -42px; }
+body.game-ph .usesSprite img.item-image.ca1 { background: url("images/mph_spritesheet.png") 0 -84px; }
+body.game-ph .usesSprite img.item-image.al1 { background: url("images/mph_spritesheet.png") -42px -84px; }
+body.game-ph .usesSprite img.item-image.vdo1 { background: url("images/mph_spritesheet.png") -84px -84px; }
+body.game-ph .usesSprite img.item-image.arc1 { background: url("images/mph_spritesheet.png") -126px -84px; }
+body.game-ph .usesSprite img.item-image.tank { background: url("images/mph_spritesheet.png") -168px -84px; }
+body.game-ph .usesSprite img.item-image.ca2 { background: url("images/mph_spritesheet.png") 0 -126px; }
+body.game-ph .usesSprite img.item-image.al2 { background: url("images/mph_spritesheet.png") -42px -126px; }
+body.game-ph .usesSprite img.item-image.vdo2 { background: url("images/mph_spritesheet.png") -84px -126px; }
+body.game-ph .usesSprite img.item-image.arc2 { background: url("images/mph_spritesheet.png") -126px -126px; }
+body.game-ph .usesSprite img.item-image.UNUSED { background: url("images/mph_spritesheet.png") -168px -126px; }
+
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
 body.game-m2ros .usesSprite img.item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }
 body.game-m2ros .usesSprite img.item-image.spider { background: url("images/m2ros_spritesheet.png") -84px 0; }
@@ -411,6 +433,38 @@ body.game-am2r .usesSprite img.item-image.gravityA { background: url("images/am2
 body.game-am2r .usesSprite img.item-image.gravityB { background: url("images/am2r_spritesheet.png") -126px -168px; }
 body.game-am2r .usesSprite img.item-image.fed { background: url("images/am2r_spritesheet.png") -168px -168px; }
 body.game-am2r .usesSprite img.item-image.fedA { background: url("images/am2r_spritesheet.png") -210px -168px; }
+
+/********* MSR - METROID: SAMUS RETURNS (3DS) *********/
+body.game-msr .usesSprite img.item-image.morph { background: url("images/msr_spritesheet.png") 0 0; }
+body.game-msr .usesSprite img.item-image.bombs { background: url("images/msr_spritesheet.png") -42px 0; }
+body.game-msr .usesSprite img.item-image.spider { background: url("images/msr_spritesheet.png") -84px 0; }
+body.game-msr .usesSprite img.item-image.spring { background: url("images/msr_spritesheet.png") -126px 0; }
+body.game-msr .usesSprite img.item-image.pbombs { background: url("images/msr_spritesheet.png") -168px 0; }
+body.game-msr .usesSprite img.item-image.barrier { background: url("images/msr_spritesheet.png") -210px 0; }
+body.game-msr .usesSprite img.item-image.gravity { background: url("images/msr_spritesheet.png") 0 -42px; }
+body.game-msr .usesSprite img.item-image.pulse { background: url("images/msr_spritesheet.png") -42px -42px; }
+body.game-msr .usesSprite img.item-image.shield { background: url("images/msr_spritesheet.png") -84px -42px; }
+body.game-msr .usesSprite img.item-image.burst { background: url("images/msr_spritesheet.png") -126px -42px; }
+body.game-msr .usesSprite img.item-image.drift { background: url("images/msr_spritesheet.png") -168px -42px; }
+body.game-msr .usesSprite img.item-image.missile { background: url("images/msr_spritesheet.png") -210px -42px; }
+body.game-msr .usesSprite img.item-image.superm { background: url("images/msr_spritesheet.png") 0 -84px; }
+body.game-msr .usesSprite img.item-image.high { background: url("images/msr_spritesheet.png") -42px -84px; }
+body.game-msr .usesSprite img.item-image.space { background: url("images/msr_spritesheet.png") -84px -84px; }
+body.game-msr .usesSprite img.item-image.beam { background: url("images/msr_spritesheet.png") -126px -84px; }
+body.game-msr .usesSprite img.item-image.charge { background: url("images/msr_spritesheet.png") -168px -84px; }
+body.game-msr .usesSprite img.item-image.ice { background: url("images/msr_spritesheet.png") -210px -84px; }
+body.game-msr .usesSprite img.item-image.wave { background: url("images/msr_spritesheet.png") 0 -126px; }
+body.game-msr .usesSprite img.item-image.wide { background: url("images/msr_spritesheet.png") -42px -126px; }
+body.game-msr .usesSprite img.item-image.plasma { background: url("images/msr_spritesheet.png") -84px -126px; }
+body.game-msr .usesSprite img.item-image.grapple { background: url("images/msr_spritesheet.png") -126px -126px; }
+body.game-msr .usesSprite img.item-image.screw { background: url("images/msr_spritesheet.png") -168px -126px; }
+body.game-msr .usesSprite img.item-image.baby { background: url("images/msr_spritesheet.png") -210px -126px; }
+body.game-msr .usesSprite img.item-image.energy { background: url("images/msr_spritesheet.png") 0 -168px; }
+body.game-msr .usesSprite img.item-image.mtank { background: url("images/msr_spritesheet.png") -42px -168px; }
+body.game-msr .usesSprite img.item-image.smtank { background: url("images/msr_spritesheet.png") -84px -168px; }
+body.game-msr .usesSprite img.item-image.pbtank { background: url("images/msr_spritesheet.png") -126px -168px; }
+body.game-msr .usesSprite img.item-image.aexp { background: url("images/msr_spritesheet.png") -168px -168px; }
+body.game-msr .usesSprite img.item-image.dna { background: url("images/msr_spritesheet.png") -210px -168px; }
 
 /********* M3 - SUPER METROID (SNES) *********/
 body.game-sm .usesSprite img.item-image.morph,

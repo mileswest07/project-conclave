@@ -2626,6 +2626,7 @@ const rawData = {
     items: [
       {
         id: "missileD",
+        sprite: "missile",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -2635,6 +2636,7 @@ const rawData = {
         value: 0,
       },{
         id: "voltDriver",
+        sprite: "volt",
         name: "Volt Driver",
         start: 0,
         max: 1,
@@ -2644,6 +2646,7 @@ const rawData = {
         value: 1,
       },{
         id: "magmaul",
+        sprite: "magmaul",
         name: "Magmaul",
         start: 0,
         max: 1,
@@ -2653,6 +2656,7 @@ const rawData = {
         value: 1,
       },{
         id: "shockCoil",
+        sprite: "coil",
         name: "Shock Coil",
         start: 0,
         max: 1,
@@ -2662,6 +2666,7 @@ const rawData = {
         value: 1,
       },{
         id: "battlehammer",
+        sprite: "hammer",
         name: "Battlehammer",
         start: 0,
         max: 1,
@@ -2671,6 +2676,7 @@ const rawData = {
         value: 1,
       },{
         id: "judicator",
+        sprite: "jud",
         name: "Judicator",
         start: 0,
         max: 1,
@@ -2680,6 +2686,7 @@ const rawData = {
         value: 1,
       },{
         id: "imperialist",
+        sprite: "imp",
         name: "Imperialist",
         start: 0,
         max: 1,
@@ -2689,6 +2696,7 @@ const rawData = {
         value: 1,
       },{
         id: "omegaCannon",
+        sprite: "omega",
         name: "Omega Cannon",
         start: 0,
         max: 1,
@@ -2698,6 +2706,7 @@ const rawData = {
         value: 0,
       },{
         id: "energyTankA",
+        sprite: "energy",
         name: "Energy Tanks",
         start: 0,
         max: 7,
@@ -2707,6 +2716,7 @@ const rawData = {
         value: 1,
       },{
         id: "missileTank",
+        sprite: "tank",
         name: "Missile Expansions",
         start: 0,
         max: 9,
@@ -2735,6 +2745,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactCA1",
+            sprite: "ca1",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2743,6 +2754,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2762,6 +2774,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactAl1",
+            sprite: "al1",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2770,6 +2783,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2789,6 +2803,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactVDO1",
+            sprite: "vdo1",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2797,6 +2812,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2816,6 +2832,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactArc1",
+            sprite: "arc1",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2824,6 +2841,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2843,6 +2861,7 @@ const rawData = {
         segments: [
           /* {
             id: "octolith",
+            // sprite: "octolith",
             name: "Octoliths",
             start: 0,
             max: 8,
@@ -2887,6 +2906,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactCA2",
+            sprite: "ca2",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2895,6 +2915,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2914,6 +2935,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactAl2",
+            sprite: "al2",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2922,6 +2944,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2941,6 +2964,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactVDO2",
+            sprite: "vdo2",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2949,6 +2973,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2968,6 +2993,7 @@ const rawData = {
         segments: [
           {
             id: "alimbicArtifactArc2",
+            sprite: "arc2",
             name: "Alimbic Artifacts",
             start: 0,
             max: 3,
@@ -2976,6 +3002,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
+            // sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -3003,7 +3030,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "chargeBeam", // "chargeBeamE",
+        id: "chargeBeamE",
+        locale: {
+          'enUS': {
+            id: "chargeBeam"
+          }
+        },
         name: "Charge Beam",
         start: 1,
         max: 1,
@@ -3012,7 +3044,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "hyperBeam", // "hypermode",
+        id: "hypermode",
+        locale: {
+          'enUS': {
+            id: "hyperBeam"
+          }
+        },
         name: "Hyper Beam",
         start: 0,
         max: 1,
@@ -3021,7 +3058,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeam", // "flameShot",
+        id: "flameShot",
+        locale: {
+          'enUS': {
+            id: "plasmaBeam"
+          }
+        },
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -3032,7 +3074,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "novaBeam", // "novaBeamA",
+        id: "novaBeamA",
+        locale: {
+          'enUS': {
+            id: "novaBeam"
+          }
+        },
         name: "Nova Beam",
         start: 0,
         max: 1,
@@ -4121,6 +4168,7 @@ const rawData = {
     items: [
       {
         id: "morphBall",
+        sprite: "morph",
         name: "Morph Ball",
         start: 0,
         max: 1,
@@ -4130,6 +4178,7 @@ const rawData = {
         value: 0,
       },{
         id: "bomb",
+        sprite: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -4139,6 +4188,7 @@ const rawData = {
         value: 0,
       },{
         id: "spiderBallA",
+        sprite: "spider",
         name: "Spider Ball",
         start: 0,
         max: 1,
@@ -4148,6 +4198,7 @@ const rawData = {
         value: 0,
       },{
         id: "springBall",
+        sprite: "spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
@@ -4159,6 +4210,7 @@ const rawData = {
         value: 0,
       },{
         id: "powerBomb",
+        sprite: "pbombs",
         name: "Power Bomb",
         start: 0,
         max: 1,
@@ -4170,6 +4222,7 @@ const rawData = {
         value: 0,
       },{
         id: "barrier",
+        sprite: "barrier",
         name: "Varia Suit",
         start: 0,
         max: 1,
@@ -4179,6 +4232,7 @@ const rawData = {
         value: 0,
       },{
         id: "gravitySuit",
+        sprite: "gravity",
         name: "Gravity Suit",
         start: 0,
         max: 1,
@@ -4188,6 +4242,7 @@ const rawData = {
         value: 0,
       },{
         id: "scanPulse",
+        sprite: "pulse",
         name: "Scan Pulse",
         start: 0,
         max: 1,
@@ -4197,6 +4252,7 @@ const rawData = {
         value: 0,
       },{
         id: "lightningShield",
+        sprite: "shield",
         name: "Lightning Shield",
         start: 0,
         max: 1,
@@ -4206,6 +4262,7 @@ const rawData = {
         value: 0,
       },{
         id: "beamBurst",
+        sprite: "burst",
         name: "Beam Burst",
         start: 0,
         max: 1,
@@ -4215,6 +4272,7 @@ const rawData = {
         value: 0,
       },{
         id: "phaseDrift",
+        sprite: "drift",
         name: "Phase Drift",
         start: 0,
         max: 1,
@@ -4224,6 +4282,7 @@ const rawData = {
         value: 0,
       },{
         id: "superMissile",
+        sprite: "superm",
         name: "Super Missiles",
         start: 0,
         max: 1,
@@ -4233,6 +4292,7 @@ const rawData = {
         value: 0,
       },{
         id: "highJump",
+        sprite: "high",
         name: "High Jump Boots",
         start: 0,
         max: 1,
@@ -4242,6 +4302,7 @@ const rawData = {
         value: 0,
       },{
         id: "spaceJump",
+        sprite: "space",
         name: "Space Jump",
         start: 0,
         max: 1,
@@ -4258,6 +4319,7 @@ const rawData = {
             id: "chargeBeam"
           }
         },
+        sprite: "charge",
         name: "Charge Beam",
         start: 0,
         max: 1,
@@ -4272,6 +4334,7 @@ const rawData = {
             id: "iceBeam"
           }
         },
+        sprite: "ice",
         name: "Ice Beam",
         start: 0,
         max: 1,
@@ -4286,6 +4349,7 @@ const rawData = {
             id: "wideBeamA"
           }
         },
+        sprite: "wave",
         name: "Wave Beam",
         start: 0,
         max: 1,
@@ -4300,6 +4364,7 @@ const rawData = {
             id: "wideBeam"
           }
         },
+        sprite: "wide",
         name: "Spazer Beam",
         start: 0,
         max: 1,
@@ -4314,6 +4379,7 @@ const rawData = {
             id: "plasmaBeam"
           }
         },
+        sprite: "plasma",
         name: "Plasma Beam",
         start: 0,
         max: 1,
@@ -4323,6 +4389,7 @@ const rawData = {
         value: 0,
       },{
         id: "grappleBeam",
+        sprite: "grapple",
         name: "Grapple Beam",
         start: 0,
         max: 1,
@@ -4332,6 +4399,7 @@ const rawData = {
         value: 0,
       },{
         id: "screwAttack",
+        sprite: "screw",
         name: "Screw Attack",
         start: 0,
         max: 1,
@@ -4341,6 +4409,7 @@ const rawData = {
         value: 0,
       },{
         id: "energyTank",
+        sprite: "energy",
         name: "Energy Tanks",
         start: 0,
         max: 9,
@@ -4350,6 +4419,7 @@ const rawData = {
         value: 1,
       },{
         id: "missileTank",
+        sprite: "mtank",
         name: "Missile Tanks",
         start: 0,
         max: 76,
@@ -4359,6 +4429,7 @@ const rawData = {
         value: 1,
       },{
         id: "superMissileTank",
+        sprite: "smtank",
         name: "Super Missile Tanks",
         start: 0,
         max: 29,
@@ -4368,6 +4439,7 @@ const rawData = {
         value: 1,
       },{
         id: "powerBombTank",
+        sprite: "pbtank",
         name: "Power Bomb Tanks",
         start: 0,
         max: 13,
@@ -4377,6 +4449,7 @@ const rawData = {
         value: 1,
       },{
         id: "aeionExpansion",
+        sprite: "aexp",
         name: "Aeion Expansion",
         start: 0,
         max: 14,
@@ -4392,6 +4465,7 @@ const rawData = {
         segments: [
           {
             id: "monsterDna",
+            sprite: "dna",
             name: "Surface",
             type: "counter",
             start: 0,
@@ -4400,6 +4474,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 1",
             start: 0,
             max: 4,
@@ -4407,6 +4482,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 2",
             start: 0,
             max: 8,
@@ -4414,6 +4490,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 3",
             start: 0,
             max: 10,
@@ -4421,6 +4498,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 4",
             type: "counter",
             start: 0,
@@ -4429,6 +4507,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 5",
             start: 0,
             max: 7,
@@ -4436,6 +4515,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 6",
             type: "counter",
             start: 0,
@@ -4444,6 +4524,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 7",
             start: 0,
             max: 3,
@@ -4451,6 +4532,7 @@ const rawData = {
             nodeType: "goal",
           },{
             id: "monsterDna",
+            sprite: "dna",
             name: "Area 8",
             start: 0,
             max: 11,
@@ -4463,6 +4545,7 @@ const rawData = {
         value: 0,
       },{
         id: "monster",
+        sprite: "baby",
         name: "Baby Metroid",
         start: 0,
         max: 1,

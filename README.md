@@ -33,6 +33,7 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 * SMZ3: tewtal and team
 * Randovania: Darkszero and team
 * AM2R: DoctorM64, team, and continuation team
+* Ripped Samus Returns graphics: [KhaosVoid](https://github.com/KhaosVoid/AMSRSE)
 * All randomizers: their respective teams
 
 All Metroid game sprites (with exception of Rogue Dawn and AM2R graphics) and Zelda Minish Cap sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit.

@@ -7,6 +7,9 @@ let feature = {
   }
 };
 
+let renderingKeyslotTypes = {}
+let keyslots = {};
+
 (() => {
   
   function am2r_extremeLabs(setOrReturn) {
@@ -48,15 +51,22 @@ let feature = {
     source.replaceChild(newP, source.children[1]);
   }
   
-  function fetchValueById(dom_id) {
+  function fetchValueById(dom_id, undo) {
     const splitValues = dom_id.split('-');
     let fetched = 0;
+    let foundItem;
+    let elementId;
     
     for (const item of feature.workingData.items) {
       if (item.hasOwnProperty("segments") && item.segments.length) {
         let earlyBreakout = false;
         for (const segment of item.segments) {
-          if (segment.id === splitValues[1]) {
+          foundItem = segment;
+          elementId = segment.id;
+          if (main.useLocale && segment.hasOwnProperty("locale") && segment.locale.hasOwnProperty(main.useLocale)) {
+            elementId = segment.locale[main.useLocale].id;
+          }
+          if (elementId === splitValues[1]) {
             earlyBreakout = true;
             if (segment.hasOwnProperty("value")) {
               fetched = segment.value;
@@ -69,8 +79,13 @@ let feature = {
         if (earlyBreakout) break;
         continue;
       }
+      foundItem = item;
+      elementId = item.id;
+      if (main.useLocale && item.hasOwnProperty("locale") && item.locale.hasOwnProperty(main.useLocale)) {
+        elementId = item.locale[main.useLocale].id;
+      }
       
-      if (item.id === splitValues[1]) {
+      if (elementId === splitValues[1]) {
         if (item.hasOwnProperty("value")) {
           fetched = item.value;
         } else {
@@ -80,7 +95,68 @@ let feature = {
       }
     }
     
+    if (main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
+      if (renderingKeyslotTypes.hasOwnProperty(foundItem.slotType)) {
+        fetched = renderingKeyslotTypes[foundItem.slotType] && !undo ? 0 : fetched;
+      }
+      renderingKeyslotTypes[foundItem.slotType] = undo ? "" : elementId;
+    }
+    
     return fetched;
+  }
+  
+  function setKeyslot(id) {
+    let filteringArray = [];
+    let filterAhead = false;
+    if (!main.useKeyslots) {
+      return;
+    }
+    
+    let strippedId = id.split("-")[1];
+    let found = feature.workingData.items.find((element) => {
+      if (element.hasOwnProperty("segments") && element.segments.length > 0) {
+        for (let j = 0; j < element.segments.length; j++) {
+          if (main.useLocale && element.segments[j].hasOwnProperty("locale") && element.segments[j].locale.hasOwnProperty(main.useLocale)) {
+            if (element.segments[j].locale[main.useLocale].id === strippedId) {
+              return true;
+            }
+          }
+          if (element.segments[j].id === strippedId) {
+            return true;
+          }
+        }
+      }
+      if (main.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(main.useLocale)) {
+        if (element.locale[main.useLocale].id === strippedId) {
+          return true;
+        }
+      }
+      return element.id === strippedId;
+    });
+    
+    if (keyslots && found.slotType && keyslots[found.slotType].includes(id)) {
+      filterAhead = true;
+      filteringArray = keyslots[found.slotType].filter(target => target != id);
+    }
+    if (filterAhead) {
+      for (let i = 0; i < filteringArray.length; i++) {
+        let target = document.getElementById(filteringArray[i]);
+        if (!target) {
+          continue;
+        }
+        if (target.firstChild.classList) { // browser compatibility logic
+          if (target.firstChild.classList.contains("deselected")) {
+            continue;
+          }
+          target.firstChild.classList.add("deselected");
+        } else {
+          let arr = target.firstChild.className.split(" ");
+          if (arr.indexOf("deselected") === -1) {
+            target.firstChild.className += " deselected";
+          }
+        }
+      }
+    }
   }
   
   function clickItem(e) {
@@ -100,13 +176,14 @@ let feature = {
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.classList.remove("hide-segment");
                 nextImage.classList.remove("deselected");
-                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id));
+                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id, false));
               }
             }
           }
           return;
         }
-        recycleTotals(fetchValueById(e.target.parentElement.id));
+        recycleTotals(fetchValueById(e.target.parentElement.id, false));
+        setKeyslot(e.target.parentElement.id);
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
@@ -121,13 +198,14 @@ let feature = {
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.className += nextItem.className.replace(/\bhide\-segment\b/g);
                 nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
-                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id));
+                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id, false));
               }
             }
           }
           return;
         }
-        recycleTotals(fetchValueById(e.target.parentElement.id));
+        recycleTotals(fetchValueById(e.target.parentElement.id, false));
+        setKeyslot(e.target.parentElement.id);
         e.target.className += e.target.className.replace(/\bdeselected\b/g);
       }
     } else if (e.which == 3) { // right click
@@ -153,10 +231,10 @@ let feature = {
           (e.target.parentElement.getAttribute("typing") === "toggle") ||
           (e.target.parentElement.getAttribute("typing") === "dungeon")
         ) {
-          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id, true)));
           return;
         } else {
-          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id, true)));
           e.target.classList.add("deselected");
         }
       } else {
@@ -181,10 +259,10 @@ let feature = {
           (e.target.parentElement.getAttribute("typing") === "toggle") ||
           (e.target.parentElement.getAttribute("typing") === "dungeon")
         ) {
-          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id, true)));
           return;
         } else {
-          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
+          recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id, true)));
           let arr = e.target.className.split(" ");
           if (arr.indexOf("deselected") === -1) {
             e.target.className += " deselected";
@@ -232,7 +310,8 @@ let feature = {
         }
         return;
       }
-      recycleTotals(fetchValueById(e.target.parentElement.id));
+      recycleTotals(fetchValueById(e.target.parentElement.id, false));
+      setKeyslot(e.target.parentElement.id);
       previous++;
     } else if (e.which === 3) { // right click
       if (previous <= 0) {
@@ -260,7 +339,8 @@ let feature = {
         }
         return;
       }
-      recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id)));
+      recycleTotals(0 - parseInt(fetchValueById(e.target.parentElement.id, true)));
+      setKeyslot(e.target.parentElement.id);
       previous--;
     } else if (e.which == 2) { // middle click
       if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
@@ -415,12 +495,12 @@ let feature = {
 
     if (image.classList) {
       image.classList.add("item-image");
-      if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
         image.classList.add("deselected");
       }
     } else {
       image.className = "item-image ";
-      if (!counterAnyway && element.max < 2 && element.start < 1 && element.id !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
         image.className += " deselected";
       }
     }
@@ -452,8 +532,15 @@ let feature = {
         image.className += " " + trimmedItemName;
       }
     }
-    image.src = "images/blank.png";
     
+    if (main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
+      if (!keyslots[element.slotType]) {
+        keyslots[element.slotType] = [];
+      }
+      keyslots[element.slotType].push(wrapper.id);
+    }
+    
+    image.src = "images/blank.png";
     image.alt = element.name || elementName;
     wrapper.title = elementName || element.name;
     
@@ -617,6 +704,12 @@ let feature = {
         startingItems += next.start;
       }
       if (next.hasOwnProperty("value") && next.hasOwnProperty("max")) {
+        if (main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
+          if (renderingKeyslotTypes.hasOwnProperty(next.slotType)) {
+            return acc;
+          }
+          renderingKeyslotTypes[next.slotType] = "";
+        }
         return acc + (parseInt(next.value) * parseInt(next.max));
       }
       return acc;

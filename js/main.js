@@ -150,6 +150,7 @@ let main = {
   main.useSprites = false;
   main.showTotals = false;
   main.showTimer = false;
+  main.useKeyslots = false;
   main.games = games;
   main.validateStartup = validateStartup;
   main.start = start;

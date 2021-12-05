@@ -7926,7 +7926,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "invisibility", // "phantomCloak",
+        id: "invisibility",
+        locale: {
+          'enUS': {
+            id: "phantomCloak"
+          }
+        },
         name: "Phantom Cloak",
         start: 0,
         max: 1,
@@ -7935,7 +7940,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "flashShift",
+        id: "flashShift", // TODO: find language-agnostic icon
+        locale: {
+          'enUS': {
+            id: "flashShift"
+          }
+        },
         name: "Flash Shift",
         start: 0,
         max: 1,
@@ -7944,7 +7954,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "scanPulse", // "pulseRadar",
+        id: "scanPulse",
+        locale: {
+          'enUS': {
+            id: "pulseRadar"
+          }
+        },
         name: "Pulse Radar",
         start: 0,
         max: 1,

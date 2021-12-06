@@ -16,6 +16,7 @@ let main = {
     "v": "e_rnd", // Metroid Prime 2: Echoes (Randovania settings)
     "h": "ph", // Metroid Prime Hunters
     "c": "mp3c", // Metroid Prime 3: Corruption
+    "ff": "mpff", // Metroid Prime: Federation Force
     "2": "m2ros", // Metroid II: Return of Samus
     "a": "am2r", // Another Metroid 2 Remake
     "r": "msr", // Metroid: Samus Returns

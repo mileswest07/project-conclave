@@ -1684,7 +1684,7 @@ const rawData = {
         name: "",
         max: 1,
       },{
-        id: "darkSuit",
+        id: "progressiveSuit",
         name: "Dark Suit",
         start: 0,
         max: 1,
@@ -1914,6 +1914,11 @@ const rawData = {
         segments: [
           {
             id: "darkAgonKey",
+            locale: {
+              'enUS': {
+                id: "darkSuit"
+              }
+            },
             name: "Dark Agon Keys",
             over: "F_Boss_Ex",
             overText: "Amorbis required",
@@ -1953,6 +1958,11 @@ const rawData = {
         segments: [
           {
             id: "darkTorvusKey",
+            locale: {
+              'enUS': {
+                id: "chykka"
+              }
+            },
             name: "Dark Torvus Keys",
             over: "F_Boss_Ex",
             overText: "Chykka required",
@@ -1992,6 +2002,11 @@ const rawData = {
         segments: [
           {
             id: "ingHiveKey",
+            locale: {
+              'enUS': {
+                id: "quadraxis"
+              }
+            },
             name: "Ing Hive Keys",
             over: "F_Boss_Ex",
             overText: "Quadraxis required",
@@ -2031,6 +2046,11 @@ const rawData = {
         segments: [
           {
             id: "skyTempleKey",
+            locale: {
+              'enUS': {
+                id: "aetherKey"
+              }
+            },
             name: "Sky Temple Keys",
             over: "E_Lumin_Ex",
             overText: "Hints acquired",
@@ -2214,7 +2234,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "darkSuit",
+        id: "progressiveSuit",
         name: "Dark Suit",
         start: 0,
         max: 1,
@@ -2480,6 +2500,11 @@ const rawData = {
         segments: [
           {
             id: "darkAgonKey",
+            locale: {
+              'enUS': {
+                id: "darkSuit"
+              }
+            },
             name: "Dark Agon Keys",
             over: "F_Boss_Ex",
             overText: "Amorbis required",
@@ -2519,6 +2544,11 @@ const rawData = {
         segments: [
           {
             id: "darkTorvusKey",
+            locale: {
+              'enUS': {
+                id: "chykka"
+              }
+            },
             name: "Dark Torvus Keys",
             over: "F_Boss_Ex",
             overText: "Chykka required",
@@ -2558,6 +2588,11 @@ const rawData = {
         segments: [
           {
             id: "ingHiveKey",
+            locale: {
+              'enUS': {
+                id: "quadraxis"
+              }
+            },
             name: "Ing Hive Keys",
             over: "F_Boss_Ex",
             overText: "Quadraxis required",
@@ -2597,6 +2632,11 @@ const rawData = {
         segments: [
           {
             id: "skyTempleKey",
+            locale: {
+              'enUS': {
+                id: "aetherKey"
+              }
+            },
             name: "Sky Temple Keys",
             over: "E_Lumin_Ex",
             overText: "Hints acquired",
@@ -3497,6 +3537,136 @@ const rawData = {
       },
     ]
   }, 
+  "mpff": {
+    width: 4,
+    items: [
+      {
+        id: "repairCapsule",
+        name: "Repair Capsule",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "9464e4",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "shieldGenerator",
+        name: "Shield Generator",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "9464e4",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "missileB",
+        name: "Missile",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "superMissileB",
+        name: "Super Missile",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "flameShot",
+        name: "Flame Shot",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "freezeShot",
+        name: "Freeze Shot",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "shockShot",
+        name: "Shock Shot",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "proximityBomb",
+        name: "Proximity Bomb",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "fea800",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "slowBeam",
+        name: "Slow Beam",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "b4ff00",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "decoy",
+        name: "Decoy",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "b4ff00",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "scanBolt",
+        name: "Scan Bolt",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "b4ff00",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "goldMedal",
+        name: "Gold Medals",
+        start: 0,
+        max: 75,
+        segments: [],
+        bg: "c0c6c0",
+        nodeType: "expansion",
+        value: 0,
+      },
+    ]
+  },
   "m2ros": {
     width: 4,
     items: [

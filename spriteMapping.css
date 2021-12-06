@@ -290,6 +290,24 @@ img.item-image.iceBeamE { background: url("images/m_graphics.png") -588px -672px
 img.item-image.diffusionBeamB { background: url("images/m_graphics.png") -630px -672px; }
 img.item-image.itemSphere { background: url("images/m_graphics.png") -672px -672px; }
 
+img.item-image.chykka { background: url("images/m_graphics.png") 0 -714px; }
+img.item-image.quadraxis { background: url("images/m_graphics.png") -42px -714px; }
+img.item-image.aetherKey { background: url("images/m_graphics.png") -84px -714px; }
+img.item-image.darkAetherKey { background: url("images/m_graphics.png") -126px -714px; }
+img.item-image.keyGate1 { background: url("images/m_graphics.png") -168px -714px; }
+img.item-image.keyGate2 { background: url("images/m_graphics.png") -210px -714px; }
+img.item-image.burstBeam { background: url("images/m_graphics.png") -252px -714px; }
+img.item-image.goldMedal { background: url("images/m_graphics.png") -294px -714px; }
+img.item-image.exelion { background: url("images/m_graphics.png") -336px -714px; }
+img.item-image.dreadEnergy { background: url("images/m_graphics.png") -378px -714px; }
+img.item-image.dreadPart { background: url("images/m_graphics.png") -420px -714px; }
+img.item-image.chozoCrest { background: url("images/m_graphics.png") -462px -714px; }
+img.item-image.modChipA { background: url("images/m_graphics.png") -504px -714px; }
+img.item-image.modChipB { background: url("images/m_graphics.png") -546px -714px; }
+img.item-image.modChipC { background: url("images/m_graphics.png") -588px -714px; }
+img.item-image.unused { background: url("images/m_graphics.png") -630px -714px; }
+img.item-image.unused { background: url("images/m_graphics.png") -672px -714px; }
+
 img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
 img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
 img.item-image.m_lock1 { background: url("images/rd_spritesheet.png") -294px 0; }

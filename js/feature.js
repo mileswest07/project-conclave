@@ -666,16 +666,23 @@ let keyslots = {};
   }
   
   function recalculatePercentage(textValues) {
+    let splitValues = textValues.split('/');
+    
+    if (textValues.length === 0 || parseInt(splitValues[1]) === 0 || splitValues.length === 0) {
+      return;
+    }
     const percentageWrapper = document.getElementById("percentage-wrapper");
     let percentageText = percentageWrapper.querySelector("p");
-    
-    let splitValues = textValues.split('/');
     let calculatedAmount = parseInt(splitValues[1]) != 0 ? 100 * parseInt(splitValues[0]) / parseInt(splitValues[1]) : 0;
     percentageText.innerText = "" + calculatedAmount.toFixed(0) + '%';
   }
   
   function recalculateTotals(already, delta) {
     let splitValues = already.split('/');
+    if (already.length === 0 || parseInt(splitValues[1]) === 0 || splitValues.length === 0) {
+      return "";
+    }
+    
     let changedValue = parseInt(splitValues[0]) + parseInt(delta);
     if (changedValue < 0) {
       changedValue = 0;
@@ -722,8 +729,8 @@ let keyslots = {};
     let pwrapper = document.createElement("div");
     pwrapper.id = "percentage-wrapper";
     let percentagetext = document.createElement("p");
-    let calculatedAmount = totalItems != 0 ? 100 * startingItems / totalItems : 0;
-    percentagetext.innerText = "" + calculatedAmount.toFixed(0) + '%';
+    let calculatedAmount = totalItems != 0 ? 100 * startingItems / totalItems : "";
+    percentagetext.innerText = totalItems !== 0 ? "" + calculatedAmount.toFixed(0) + "%" : "";
     pwrapper.appendChild(percentagetext);
     destination.appendChild(pwrapper);
     

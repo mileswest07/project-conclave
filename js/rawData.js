@@ -1440,6 +1440,7 @@ const rawData = {
     items: [
       {
         id: "powerGrip",
+        sprite: "elevator",
         name: "Power Grip",
         start: 0,
         max: 1,
@@ -1451,6 +1452,7 @@ const rawData = {
         value: 0,
       },{
         id: "missileC",
+        sprite: "missile",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1462,6 +1464,7 @@ const rawData = {
         value: 1,
       },{
         id: "morphBall",
+        sprite: "morph",
         name: "Morph Ball",
         start: 0,
         max: 1,
@@ -1471,6 +1474,7 @@ const rawData = {
         value: 1,
       },{
         id: "bombB",
+        sprite: "bombs",
         name: "Bombs",
         start: 0,
         max: 1,
@@ -1480,6 +1484,7 @@ const rawData = {
         value: 1,
       },{
         id: "boostBall",
+        sprite: "boost",
         name: "Boost Ball",
         start: 0,
         max: 1,
@@ -1489,6 +1494,7 @@ const rawData = {
         value: 1,
       },{
         id: "springBall",
+        sprite: "spring",
         name: "Spring Ball",
         start: 0,
         max: 1,
@@ -1498,6 +1504,7 @@ const rawData = {
         value: 1,
       },{
         id: "energyTankA",
+        sprite: "energy",
         name: "Energy Tanks",
         start: 0,
         max: 2,
@@ -1507,6 +1514,7 @@ const rawData = {
         value: 1,
       },{
         id: "missileTank",
+        sprite: "missile",
         name: "Missile Expansions",
         start: 0,
         max: 7,
@@ -1516,6 +1524,7 @@ const rawData = {
         value: 1,
       },{
         id: "chozoArtifact",
+        sprite: "artifact",
         name: "Chozo Artifacts",
         start: 0,
         max: 12,

@@ -37,10 +37,14 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 * Ripped Samus Returns graphics: [KhaosVoid](https://github.com/KhaosVoid/AMSRSE)
 * All randomizers: their respective teams
 
-All Metroid game sprites (with exception of Rogue Dawn and AM2R graphics) and Zelda Minish Cap sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit.
+All Metroid game sprites (with exception of fangames and derivative works) and Zelda Minish Cap sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit.
 
 Rogue Dawn sprites were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
 
 AM2R sprites were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.
 
-All Metroid placeholder icons and remainder Zelda sprites were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.
+Prime 2D sprites were made by Team SCU, ripped by me (admittedly not very cleanly), and are used here without express permission and without intent to profit.
+
+All Metroid placeholder icons were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Metroid: Other M graphical style) without intent to profit.
+
+All Zelda sprites were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.

@@ -7996,7 +7996,7 @@ const rawData = {
             max: 1,
             bg: "ffff80",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "plasmaBeamA",
             locale: {
@@ -8009,7 +8009,7 @@ const rawData = {
             max: 1,
             bg: "00ff08",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "wideBeamD",
             locale: {
@@ -8022,10 +8022,10 @@ const rawData = {
             max: 1,
             bg: "92278f",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },
         ],
-        value: 1,
+        value: 0,
       },{
         id: "chargeBeam",
         name: "",
@@ -8044,7 +8044,7 @@ const rawData = {
             max: 1,
             bg: "808000",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "diffusionBeamB",
             locale: {
@@ -8057,10 +8057,10 @@ const rawData = {
             max: 1,
             bg: "9b9b9b",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },
         ],
-        value: 1,
+        value: 0,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -8069,7 +8069,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "missile",
         name: "",
@@ -8083,7 +8083,7 @@ const rawData = {
             max: 1,
             bg: "007f0e",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "freezeShot",
             name: "Ice Missiles",
@@ -8091,10 +8091,10 @@ const rawData = {
             max: 1,
             bg: "2038ec",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },
         ],
-        value: 1,
+        value: 0,
       },{
         id: "seekerLauncherB", // "combatVisor",
         name: "Storm Missile",
@@ -8103,7 +8103,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "invisibility",
         locale: {
@@ -8117,7 +8117,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "flashShift", // TODO: find language-agnostic icon
         locale: {
@@ -8131,7 +8131,7 @@ const rawData = {
         segments: [],
         bg: "e900ff",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "scanPulse",
         locale: {
@@ -8145,7 +8145,7 @@ const rawData = {
         segments: [],
         bg: "00c7ff",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "powerSuit",
         name: "",
@@ -8159,7 +8159,7 @@ const rawData = {
             max: 1,
             bg: "ff7e00",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "gravitySuitA",
             name: "Gravity Suit",
@@ -8167,10 +8167,10 @@ const rawData = {
             max: 1,
             bg: "602880",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },
         ],
-        value: 1,
+        value: 0,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -8179,7 +8179,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "bombD",
         name: "Bombs",
@@ -8188,7 +8188,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "crossBombs",
         name: "Cross Bomb",
@@ -8197,7 +8197,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "powerBomb",
         name: "Power Bombs",
@@ -8206,7 +8206,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "spiderMagnet",
         name: "Spider Magnet",
@@ -8215,7 +8215,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -8224,7 +8224,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "jumpBoots",
         name: "",
@@ -8238,7 +8238,7 @@ const rawData = {
             max: 1,
             bg: "c0a8d8",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },{
             id: "spaceJump",
             name: "Space Jump",
@@ -8246,10 +8246,10 @@ const rawData = {
             max: 1,
             bg: "00a0e0",
             nodeType: "upgrade",
-            value: 1,
+            value: 0,
           },
         ],
-        value: 1,
+        value: 0,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -8258,7 +8258,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
-        value: 1,
+        value: 0,
       },{
         id: "-",
         name: "",

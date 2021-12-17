@@ -289,7 +289,6 @@ img.item-image.plasmaBeamE { background: url("images/m_graphics.png") -546px -67
 img.item-image.iceBeamE { background: url("images/m_graphics.png") -588px -672px; }
 img.item-image.diffusionBeamB { background: url("images/m_graphics.png") -630px -672px; }
 img.item-image.itemSphere { background: url("images/m_graphics.png") -672px -672px; }
-
 img.item-image.chykka { background: url("images/m_graphics.png") 0 -714px; }
 img.item-image.quadraxis { background: url("images/m_graphics.png") -42px -714px; }
 img.item-image.aetherKey { background: url("images/m_graphics.png") -84px -714px; }
@@ -394,8 +393,6 @@ body.game-p2d .usesSprite img.item-image.combat { background: url("images/p2d_sp
 body.game-p2d .usesSprite img.item-image.powerBeam { background: url("images/p2d_spritesheet.png") -42px -84px; }
 body.game-p2d .usesSprite img.item-image.scan { background: url("images/p2d_spritesheet.png") -84px -84px; }
 body.game-p2d .usesSprite img.item-image.scanPoint { background: url("images/p2d_spritesheet.png") -126px -84px; }
-
-
 
 /********* MPH - METROID PRIME: HUNTERS (DS) *********/
 body.game-ph .usesSprite img.item-image.volt { background: url("images/mph_spritesheet.png") 0 0; }
@@ -580,6 +577,8 @@ body.game-mf .usesSprite img.item-image.morph { background: url("images/mf_sprit
 body.game-mf .usesSprite img.item-image.securityL4 { background: url("images/mf_spritesheet.png") -210px -168px; }
 
 /********* METROID: A NEW GALAXY and METROID: THE THREAT NEVER ENDS (PC) *********/
+body.game-mng img.item-image.wallJumpBoots,
+body.game-mttne img.item-image.wallJumpBoots { transform: rotate(90deg); }
 body.game-mng .usesSprite img.item-image.suit,
 body.game-mttne .usesSprite img.item-image.suit { background: url("images/mkc_spritesheet.png") 0 0; }
 body.game-mng .usesSprite img.item-image.barrier,

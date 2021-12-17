@@ -304,7 +304,7 @@ img.item-image.chozoCrest { background: url("images/m_graphics.png") -462px -714
 img.item-image.modChipA { background: url("images/m_graphics.png") -504px -714px; }
 img.item-image.modChipB { background: url("images/m_graphics.png") -546px -714px; }
 img.item-image.modChipC { background: url("images/m_graphics.png") -588px -714px; }
-img.item-image.unused { background: url("images/m_graphics.png") -630px -714px; }
+img.item-image.deathalt { background: url("images/m_graphics.png") -630px -714px; }
 img.item-image.unused { background: url("images/m_graphics.png") -672px -714px; }
 
 img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }

@@ -54,19 +54,21 @@ let keyslots = {};
   function fetchValueById(dom_id, undo) {
     const splitValues = dom_id.split('-');
     let fetched = 0;
+    let iteratedAcc = 0;
     let foundItem;
     let elementId;
     
     for (const item of feature.workingData.items) {
       if (item.hasOwnProperty("segments") && item.segments.length) {
         let earlyBreakout = false;
+        let segmentAcc = 0;
         for (const segment of item.segments) {
           foundItem = segment;
           elementId = segment.id;
           if (main.useLocale && segment.hasOwnProperty("locale") && segment.locale.hasOwnProperty(main.useLocale)) {
             elementId = segment.locale[main.useLocale].id;
           }
-          if (elementId === splitValues[1]) {
+          if (elementId === splitValues[1] && iteratedAcc === parseInt(splitValues[2]) && segmentAcc === parseInt(splitValues[3])) {
             earlyBreakout = true;
             if (segment.hasOwnProperty("value")) {
               fetched = segment.value;
@@ -75,7 +77,9 @@ let keyslots = {};
             }
             break;
           }
+          segmentAcc++;
         }
+        iteratedAcc++;
         if (earlyBreakout) break;
         continue;
       }
@@ -85,7 +89,7 @@ let keyslots = {};
         elementId = item.locale[main.useLocale].id;
       }
       
-      if (elementId === splitValues[1]) {
+      if (elementId === splitValues[1] && iteratedAcc === parseInt(splitValues[2])) {
         if (item.hasOwnProperty("value")) {
           fetched = item.value;
         } else {
@@ -93,6 +97,7 @@ let keyslots = {};
         }
         break;
       }
+      iteratedAcc++;
     }
     
     if (main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
@@ -176,7 +181,7 @@ let keyslots = {};
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.classList.remove("hide-segment");
                 nextImage.classList.remove("deselected");
-                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id, false));
+                recycleTotals(fetchValueById(nextItem.id, false));
               }
             }
           }
@@ -198,7 +203,7 @@ let keyslots = {};
                 let nextImage = nextItem.querySelectorAll(".item-image")[0];
                 nextItem.className += nextItem.className.replace(/\bhide\-segment\b/g);
                 nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
-                recycleTotals(fetchValueById(e.target.parentElement.nextSibling.id, false));
+                recycleTotals(fetchValueById(nextItem.id, false));
               }
             }
           }
@@ -305,6 +310,7 @@ let keyslots = {};
                 nextItem.className += nextImage.className.replace(/\bhide\-segment\b/g);
                 nextImage.className += nextImage.className.replace(/\bdeselected\b/g);
               }
+              recycleTotals(fetchValueById(nextItem.id, false));
             }
           }
         }

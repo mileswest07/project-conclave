@@ -143,6 +143,8 @@ body {
 }
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
+#item-fireSpell-4:hover > .item-image ~ .hint-image,
+#item-dashSpell-4x:hover > .item-image ~ .hint-image,
 .item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
 .item.can-level-down:hover > .item-image:not(.deselected) ~ .level-down-image,
 .expansion.unlocked-up.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,

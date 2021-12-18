@@ -51,6 +51,46 @@ let keyslots = {};
     source.replaceChild(newP, source.children[1]);
   }
   
+  function aol_dashSpell(setOrReturn) {
+    let targetId = "";
+    if (setOrReturn) {
+      targetId = "item-fireSpell-4";
+    } else {
+      targetId = "item-dashSpell-4x";
+    }
+    const source = document.getElementById(targetId);
+    let hintImage = source.querySelector(".hint-image");
+    if (setOrReturn) {
+      hintImage.alt = "Click middle mouse button to toggle Fire Spell";
+    } else {
+      hintImage.alt = "Click middle mouse button to toggle Dash Spell";
+    }
+    hintImage.title = hintImage.alt;
+    
+    source.id = setOrReturn ? "item-dashSpell-4x" : "item-fireSpell-4";
+    source.title = setOrReturn ? "Dash Spell" : "Fire Spell";
+    
+    if (main.useSprites) {
+      if (source.firstChild.classList) { // browser compatibility logic
+        if (!setOrReturn || source.firstChild.classList.contains("dashSpell")) {
+          source.firstChild.classList.remove("dashSpell");
+          source.firstChild.classList.add("fireSpell");
+        } else {
+          source.firstChild.classList.remove("fireSpell");
+          source.firstChild.classList.add("dashSpell");
+        }
+      } else {
+        if (!setOrReturn || source.firstChild.className.has("dashSpell")) {
+          source.firstChild.className += source.firstChild.className.replace(/\bdashSpell\b/g);
+          source.firstChild.className += " fireSpell";
+        } else {
+          source.firstChild.className += source.firstChild.className.replace(/\bfireSpell\b/g);
+          source.firstChild.className += " dashSpell";
+        }
+      }
+    }
+  }
+  
   function fetchValueById(dom_id, undo) {
     const splitValues = dom_id.split('-');
     let fetched = 0;
@@ -277,6 +317,8 @@ let keyslots = {};
     } else if (e.which == 2) { // middle click
       if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
+      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+        aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
       }
@@ -351,6 +393,8 @@ let keyslots = {};
     } else if (e.which == 2) { // middle click
       if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
+      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+        aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
       }
@@ -664,7 +708,23 @@ let keyslots = {};
         hint.className = "overlay-image";
         hint.className += " hint-image";
       }
-      hint.alt = "Toggle Extreme Labs";
+      hint.alt = "Click middle mouse button to toggle Extreme Labs";
+      hint.title = hint.alt;
+      wrapper.appendChild(hint);
+    }
+    
+    if (feature.currentGame === "aol" && wrapper.id === "item-fireSpell-4") {
+      let hint = document.createElement("img");
+      hint.src = "images/blank.png";
+      if (hint.classList) {
+        hint.classList.add("overlay-image");
+        hint.classList.add("hint-image");
+      } else {
+        hint.className = "overlay-image";
+        hint.className += " hint-image";
+      }
+      hint.alt = "Click middle mouse button to toggle Dash Spell";
+      hint.title = hint.alt;
       wrapper.appendChild(hint);
     }
     

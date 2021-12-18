@@ -730,6 +730,7 @@ body.game-aol img.item-image.jumpSpell { background: url("images/zelda_graphics.
 body.game-aol img.item-image.lifeSpell { background: url("images/zelda_graphics.png") -210px -168px; }
 body.game-aol img.item-image.fairySpell { background: url("images/zelda_graphics.png") -252px -168px; }
 body.game-aol img.item-image.fireSpell { background: url("images/zelda_graphics.png") -294px 0; }
+body.game-aol img.item-image.dashSpell { background: url("images/zelda_graphics.png") 0 -294px; }
 body.game-aol img.item-image.reflectSpell { background: url("images/zelda_graphics.png") -336px 0; }
 body.game-aol img.item-image.spellSpell { background: url("images/zelda_graphics.png") -378px 0; }
 body.game-aol img.item-image.thunderSpell { background: url("images/zelda_graphics.png") -420px 0; }
@@ -972,7 +973,7 @@ img.overlay-image.E_Lumin_Ex { background: url("images/overlays.png") -16px -16p
 img.overlay-image.F_Boss { background: url("images/overlays.png") -32px -16px; }
 img.overlay-image.F_Boss_Ex { background: url("images/overlays.png") -48px -16px; }
 img.overlay-image.C_Fuse { background: url("images/overlays.png") 0 -32px; }
-img.overlay-image.or { background: url("images/overlays.png") -16px -32px; }
+img.overlay-image.hint-image { background: url("images/overlays.png") -16px -32px; }
 img.overlay-image.Level_Up_Alt { background: url("images/overlays.png") -32px -32px; }
 img.overlay-image.Level_Up { background: url("images/overlays.png") -48px -32px; }
 img.overlay-image.MC_Chest { background: url("images/overlays.png") 0 -48px; }

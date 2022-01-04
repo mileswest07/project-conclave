@@ -70,23 +70,21 @@ let keyslots = {};
     source.id = setOrReturn ? "item-dashSpell-4x" : "item-fireSpell-4";
     source.title = setOrReturn ? "Dash Spell" : "Fire Spell";
     
-    if (main.useSprites) {
-      if (source.firstChild.classList) { // browser compatibility logic
-        if (!setOrReturn || source.firstChild.classList.contains("dashSpell")) {
-          source.firstChild.classList.remove("dashSpell");
-          source.firstChild.classList.add("fireSpell");
-        } else {
-          source.firstChild.classList.remove("fireSpell");
-          source.firstChild.classList.add("dashSpell");
-        }
+    if (source.firstChild.classList) { // browser compatibility logic
+      if (!setOrReturn || source.firstChild.classList.contains("dashSpell")) {
+        source.firstChild.classList.remove("dashSpell");
+        source.firstChild.classList.add("fireSpell");
       } else {
-        if (!setOrReturn || source.firstChild.className.has("dashSpell")) {
-          source.firstChild.className += source.firstChild.className.replace(/\bdashSpell\b/g);
-          source.firstChild.className += " fireSpell";
-        } else {
-          source.firstChild.className += source.firstChild.className.replace(/\bfireSpell\b/g);
-          source.firstChild.className += " dashSpell";
-        }
+        source.firstChild.classList.remove("fireSpell");
+        source.firstChild.classList.add("dashSpell");
+      }
+    } else {
+      if (!setOrReturn || source.firstChild.className.has("dashSpell")) {
+        source.firstChild.className += source.firstChild.className.replace(/\bdashSpell\b/g);
+        source.firstChild.className += " fireSpell";
+      } else {
+        source.firstChild.className += source.firstChild.className.replace(/\bfireSpell\b/g);
+        source.firstChild.className += " dashSpell";
       }
     }
   }

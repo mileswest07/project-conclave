@@ -4591,7 +4591,7 @@ const rawData = {
         sprite: "energy",
         name: "Energy Tanks",
         start: 0,
-        max: 9,
+        max: 10,
         segments: [],
         bg: "78a4bc",
         nodeType: "expansion",
@@ -4601,7 +4601,7 @@ const rawData = {
         sprite: "mtank",
         name: "Missile Tanks",
         start: 0,
-        max: 76,
+        max: 80,
         segments: [],
         bg: "d82800",
         nodeType: "expansion",
@@ -4611,7 +4611,7 @@ const rawData = {
         sprite: "smtank",
         name: "Super Missile Tanks",
         start: 0,
-        max: 29,
+        max: 30,
         segments: [],
         bg: "007f0e",
         nodeType: "expansion",
@@ -4621,7 +4621,7 @@ const rawData = {
         sprite: "pbtank",
         name: "Power Bomb Tanks",
         start: 0,
-        max: 13,
+        max: 15,
         segments: [],
         bg: "98b830",
         nodeType: "expansion",
@@ -4631,7 +4631,7 @@ const rawData = {
         sprite: "aexp",
         name: "Aeion Expansion",
         start: 0,
-        max: 14,
+        max: 15,
         segments: [],
         bg: "bfbf00",
         nodeType: "expansion",
@@ -8264,7 +8264,12 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "energyTank",
+        id: "dreadEnergy",
+        locale: {
+          'enUS': {
+            id: "energyTank"
+          }
+        },
         name: "Energy Tanks",
         start: 0,
         max: 8,
@@ -8273,7 +8278,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "energyPart",
+        id: "dreadPart",
+        locale: {
+          'enUS': {
+            id: "energyPart"
+          }
+        },
         name: "Energy Parts",
         start: 0,
         max: 16,

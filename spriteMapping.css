@@ -325,25 +325,6 @@ img.item-image.unused { background: url("images/m_graphics.png") -645px -731px; 
 img.item-image.unused { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
 img.item-image.unused { background: url("images/m_graphics.png") -731px -731px; }
 
-
-img.item-image.morphBall { background: url("images/m_graphics.png") 0 0; }
-img.item-image.bomb { background: url("images/m_graphics.png") -43px 0; }
-img.item-image.bombA { background: url("images/m_graphics.png") -86px 0; }
-img.item-image.bombB { background: url("images/m_graphics.png") -129px 0; }
-img.item-image.bombC { background: url("images/m_graphics.png") -172px 0; }
-img.item-image.powerBomb { background: url("images/m_graphics.png") -215px 0; }
-img.item-image.powerBombA { background: url("images/m_graphics.png") -258px 0; }
-img.item-image.powerBombB { background: url("images/m_graphics.png") -301px 0; }
-img.item-image.powerBombTank { background: url("images/m_graphics.png") -344px 0; }
-img.item-image.powerBombExp { background: url("images/m_graphics.png") -387px 0; }
-img.item-image.powerBombExpA { background: url("images/m_graphics.png") -430px 0; }
-img.item-image.springBall { background: url("images/m_graphics.png") -473px 0; }
-img.item-image.spiderBall { background: url("images/m_graphics.png") -516px 0; }
-img.item-image.boostBall { background: url("images/m_graphics.png") -559px 0; }
-img.item-image.cannonball { background: url("images/m_graphics.png") -602px 0; }
-img.item-image.hyperBall { background: url("images/m_graphics.png") -645px 0; }
-img.item-image.forceBall { background: url("images/m_graphics.png") -688px 0; }
-
 img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
 img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }
 img.item-image.m_lock1 { background: url("images/rd_spritesheet.png") -294px 0; }

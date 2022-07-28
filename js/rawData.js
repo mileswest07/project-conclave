@@ -1398,6 +1398,7 @@ const rawData = {
     items: [
       {
         id: "chozoArtifact",
+        sprite: "artifact",
         name: "Artifacts",
         start: 0,
         max: 12,
@@ -1407,6 +1408,7 @@ const rawData = {
         value: 1,
       },{
         id: "powerBombA",
+        //sprite: "powerBombs",
         name: "Power Bombs",
         start: 0,
         max: 1,
@@ -1416,6 +1418,7 @@ const rawData = {
         value: 0,
       },{
         id: "missileC",
+        //sprite: "missile",
         name: "Missile Launcher",
         start: 0,
         max: 1,
@@ -1425,6 +1428,7 @@ const rawData = {
         value: 0,
       },{
         id: "forceBall",
+        //sprite: "force",
         name: "Force Ball",
         start: 0,
         max: 1,
@@ -2775,6 +2779,7 @@ const rawData = {
         value: 1,
       },{
         id: "uaExpansion",
+        // sprite: "uatank",
         name: "UA Expansions",
         start: 0,
         max: 12,
@@ -2803,7 +2808,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2832,7 +2837,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2861,7 +2866,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2890,7 +2895,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2904,13 +2909,13 @@ const rawData = {
         value: 0,
       },{
         id: "oubliette",
-        name: "Oubliette unlocked",
+        name: "", //"Oubliette unlocked",
         start: 0,
         max: 1,
         segments: [
-          /* {
+          {
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "bigocto",
             name: "Octoliths",
             start: 0,
             max: 8,
@@ -2930,7 +2935,7 @@ const rawData = {
             max: 1,
             bg: "402c00",
             nodeType: "goal",
-          } */
+          }
         ],
         bg: "402c00",
         nodeType: "goal",
@@ -2964,7 +2969,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -2993,7 +2998,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -3022,7 +3027,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,
@@ -3051,7 +3056,7 @@ const rawData = {
             value: 0,
           },{
             id: "octolith",
-            // sprite: "octolith",
+            sprite: "octolith",
             name: "Octolith",
             start: 0,
             max: 1,

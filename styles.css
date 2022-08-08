@@ -52,6 +52,10 @@ body {
   background-color: #f80000;
 }
 
+.sliderResponse.hidden {
+  display: none;
+} 
+
 #selection:not(.show-menu),
 #selection .gameError.hide-error,
 .hide-menu,
@@ -121,7 +125,7 @@ body {
   right: 0;
   margin: 0;
   position: absolute;
-  top: 26px;
+  bottom: 0;
   z-index: 100;
 }
 

@@ -148,6 +148,47 @@ let main = {
     }
   }
   
+  function handleTimerSelection(e) {
+    let target = document.getElementById("ifShowingTimer");
+    if (e.target.checked) {
+      if (target.classList) { // browser compatibility logic
+        target.classList.remove("hidden");
+      } else {
+        target.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (target.classList) { // browser compatibility logic
+        target.classList.add("hidden");
+      } else {
+        target.className += " hidden";
+      }
+    }
+  }
+  
+  function handleSpriteSelection(e) {
+    let targetA = document.getElementById("ifShowingSprites");
+    let targetB = document.getElementById("ifNotShowingSprites");
+    if (e.target.checked) {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.remove("hidden");
+        targetB.classList.add("hidden");
+      } else {
+        targetA.className += target.className.replace(/\bhidden\b/g);
+        targetB.className += " hidden";
+      }
+    } else {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.add("hidden");
+        targetB.classList.remove("hidden");
+      } else {
+        targetA.className += " hidden";
+        targetB.className += target.className.replace(/\bhidden\b/g);
+      }
+    }
+  }
+  
+  main.handleTimerSelection = handleTimerSelection;
+  main.handleSpriteSelection = handleSpriteSelection;
   main.useSprites = false;
   main.showTotals = false;
   main.showTimer = false;

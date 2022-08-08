@@ -34,17 +34,16 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 * SMZ3: tewtal and team
 * Randovania: Darkszero and team
 * AM2R: DoctorM64, team, and continuation team
-* Ripped Samus Returns graphics: [KhaosVoid](https://github.com/KhaosVoid/AMSRSE)
 * All randomizers: their respective teams
 
-All Metroid game sprites (with exception of fangames and derivative works) and Zelda Minish Cap sprites were made by Nintendo, ripped by me, and are used here without express permission and without intent to profit.
+All Metroid game graphics (with exception of fangames and derivative works) and Zelda Minish Cap graphics were made and owned by Nintendo Co., Ltd., Mercury Steam Entertainment S.L., and Capcom Co., Ltd., respectively. Graphics werew ripped by me, and are used here without express permission and without intent to profit.
 
-Rogue Dawn sprites were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
+Rogue Dawn graphics were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
 
-AM2R sprites were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.
+AM2R graphics were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.
 
-Prime 2D sprites were made by Team SCU, ripped by me (admittedly not very cleanly), and are used here without express permission and without intent to profit.
+Prime 2D graphics were made by Team SCU, ripped by me (admittedly not very cleanly), and are used here without express permission and without intent to profit.
 
 All Metroid placeholder icons were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Metroid: Other M graphical style) without intent to profit.
 
-All Zelda sprites were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.
+Remainder Zelda graphics were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.

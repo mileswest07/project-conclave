@@ -572,6 +572,12 @@ let keyslots = {};
       wrapper.id = classLabel + "-" + trimmedItemName + "-" + index;
       if (element.hasOwnProperty("sprite") && main.useSprites) {
         trimmedItemName = element.sprite;
+      } else if (main.useSprites) {
+        if (wrapper.classList) {
+          wrapper.classList.add("trimmed");
+        } else {
+          wrapper.className += " trimmed";
+        }
       }
     
       if (image.classList) {
@@ -866,7 +872,15 @@ let keyslots = {};
   
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
-    destination.style.width = "" + ((parseInt(feature.workingData.width) * 42) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
+    let itemWidth = 42;
+    if (main.useSprites && (feature.currentGame == "msr")) {
+      itemWidth = 50;
+    } else if (main.useSprites && (feature.currentGame == "md")) {
+      itemWidth = 64;
+    } else if (main.useSprites && (feature.currentGame == "mom")) {
+      itemWidth = 60;
+    }
+    destination.style.width = "" + ((parseInt(feature.workingData.width) * itemWidth) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));

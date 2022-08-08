@@ -66,9 +66,11 @@
           <p>
             Use sprites if applicable?
             <label class="slider-switch">
-              <input type="checkbox" name="useSprites" value="useSprites">
+              <input type="checkbox" name="useSprites" value="useSprites" checked>
               <span class="slider"></span>
             </label>
+            <span id="ifNotShowingSprites" class="sliderResponse hidden">For colorblind option</span>
+            <span id="ifShowingSprites" class="sliderResponse">In color!</span>
           </p>
           <p>
             Use Dark Mode?
@@ -90,12 +92,13 @@
               <input type="checkbox" name="showTimer" value="showTimer">
               <span class="slider"></span>
             </label>
+            <span id="ifShowingTimer" class="sliderResponse hidden">Click the timer to start and stop.</span>
           </p>
           <p>
-            Specify a language to use certain icons: 
+            Specify a language for placeholder icons: 
             <select name="selectedLocale">
-              <option value="en-US" selected>EN-US (default)</option>
-              <option value="other">Other</option>
+              <option value="other" selected>None (default)</option>
+              <option value="en-US">EN-US</option>
             </select>
           </p>
         </div>
@@ -116,6 +119,13 @@
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     document.addEventListener("DOMContentLoaded", () => { main.start(); });
+    
+    let spriteCheckbox = document.querySelector("input[name=useSprites]");
+    let timerCheckbox = document.querySelector("input[name=showTimer]");
+    spriteCheckbox.addEventListener('change', main.handleSpriteSelection);
+    timerCheckbox.addEventListener('change', main.handleTimerSelection);
+    main.handleSpriteSelection({target: spriteCheckbox});
+    main.handleTimerSelection({target: timerCheckbox});
   </script>
 </body>
 </html>

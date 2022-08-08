@@ -6451,6 +6451,7 @@ const rawData = {
       },{
         id: "bombA",
         name: "Bombs",
+        sprite: "bomb",
         start: 0,
         max: 1,
         segments: [],
@@ -6460,6 +6461,7 @@ const rawData = {
       },{
         id: "missile",
         name: "Missiles",
+        sprite: "missile",
         start: 0,
         max: 1,
         segments: [],
@@ -6469,6 +6471,7 @@ const rawData = {
       },{
         id: "superMissile",
         name: "Super Missiles",
+        sprite: "super",
         start: 0,
         max: 1,
         segments: [],
@@ -6478,6 +6481,7 @@ const rawData = {
       },{
         id: "seekerLauncher",
         name: "Seeker Missiles",
+        sprite: "unknown",
         start: 0,
         max: 1,
         segments: [],
@@ -6505,6 +6509,7 @@ const rawData = {
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
+        sprite: "grapple",
         start: 0,
         max: 1,
         segments: [],
@@ -6519,6 +6524,7 @@ const rawData = {
           }
         },
         name: "Diffusion Beam",
+        sprite: "unknown",
         start: 0,
         max: 1,
         segments: [],
@@ -6570,6 +6576,7 @@ const rawData = {
       },{
         id: "speedBoosterA",
         name: "Speed Booster",
+        sprite: "speed",
         start: 0,
         max: 1,
         segments: [],
@@ -6597,6 +6604,7 @@ const rawData = {
       },{
         id: "powerBomb",
         name: "Power Bombs",
+        sprite: "pbomb",
         start: 0,
         max: 1,
         segments: [],
@@ -6606,6 +6614,7 @@ const rawData = {
       },{
         id: "energyTank",
         name: "Energy Tanks",
+        sprite: "energy",
         start: 0,
         max: 5,
         segments: [],
@@ -6615,6 +6624,7 @@ const rawData = {
       },{
         id: "missileTank",
         name: "Missile Tanks",
+        sprite: "tank",
         start: 0,
         max: 70,
         segments: [],
@@ -6624,6 +6634,7 @@ const rawData = {
       },{
         id: "chargeAccel",
         name: "Accel Charges",
+        sprite: "accel",
         start: 0,
         max: 6,
         segments: [],
@@ -6633,6 +6644,7 @@ const rawData = {
       },{
         id: "energyPart",
         name: "Energy Parts",
+        sprite: "part",
         start: 0,
         max: 16,
         segments: [],
@@ -6642,6 +6654,7 @@ const rawData = {
       },{
         id: "eRecoveryTank",
         name: "E-Recovery Tanks",
+        sprite: "erec",
         start: 0,
         max: 3,
         segments: [],
@@ -8023,6 +8036,8 @@ const rawData = {
               }
             },
             name: "Wave Beam",
+            over: "Z_Orb",
+            overText: "E.M.M.I.-06WB Defeated",
             start: 0,
             max: 1,
             bg: "92278f",
@@ -8060,6 +8075,8 @@ const rawData = {
             name: "Diffusion Beam",
             start: 0,
             max: 1,
+            over: "F_Boss_Ex",
+            overText: "Kraid Defeated",
             bg: "9b9b9b",
             nodeType: "upgrade",
             value: 0,
@@ -8069,6 +8086,7 @@ const rawData = {
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
+        //sprite: "grapple",
         start: 0,
         max: 1,
         segments: [],
@@ -8092,6 +8110,8 @@ const rawData = {
           },{
             id: "freezeShot",
             name: "Ice Missiles",
+            over: "Z_Orb",
+            overText: "E.M.M.I.-05IM Defeated",
             start: 0,
             max: 1,
             bg: "2038ec",
@@ -8105,50 +8125,10 @@ const rawData = {
         name: "Storm Missile",
         start: 0,
         max: 1,
+        over: "F_Boss",
+        overText: "Escue Defeated",
         segments: [],
         bg: "644080",
-        nodeType: "upgrade",
-        value: 0,
-      },{
-        id: "invisibility",
-        locale: {
-          'enUS': {
-            id: "phantomCloak"
-          }
-        },
-        name: "Phantom Cloak",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "00ff08",
-        nodeType: "upgrade",
-        value: 0,
-      },{
-        id: "flashShift", // TODO: find language-agnostic icon
-        locale: {
-          'enUS': {
-            id: "flashShift"
-          }
-        },
-        name: "Flash Shift",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "e900ff",
-        nodeType: "upgrade",
-        value: 0,
-      },{
-        id: "scanPulse",
-        locale: {
-          'enUS': {
-            id: "pulseRadar"
-          }
-        },
-        name: "Pulse Radar",
-        start: 0,
-        max: 1,
-        segments: [],
-        bg: "00c7ff",
         nodeType: "upgrade",
         value: 0,
       },{
@@ -8177,10 +8157,59 @@ const rawData = {
         ],
         value: 0,
       },{
+        id: "invisibility",
+        locale: {
+          'enUS': {
+            id: "phantomCloak"
+          }
+        },
+        name: "Phantom Cloak",
+        sprite: "phantom",
+        start: 0,
+        max: 1,
+        over: "F_Boss_Ex",
+        overText: "Corpius Defeated",
+        segments: [],
+        bg: "00ff08",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "flashShift", // TODO: find language-agnostic icon
+        locale: {
+          'enUS': {
+            id: "flashShift"
+          }
+        },
+        name: "Flash Shift",
+        sprite: "flash",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "e900ff",
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "scanPulse",
+        locale: {
+          'enUS': {
+            id: "pulseRadar"
+          }
+        },
+        name: "Pulse Radar",
+        sprite: "radar",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "00c7ff",
+        nodeType: "upgrade",
+        value: 0,
+      },{
         id: "morphBall",
         name: "Morph Ball",
         start: 0,
         max: 1,
+        over: "Z_Orb",
+        overText: "E.M.M.I.-03MB Defeated",
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
@@ -8188,6 +8217,7 @@ const rawData = {
       },{
         id: "bombD",
         name: "Bombs",
+        //sprite: "bombs",
         start: 0,
         max: 1,
         segments: [],
@@ -8199,6 +8229,8 @@ const rawData = {
         name: "Cross Bomb",
         start: 0,
         max: 1,
+        over: "F_Boss",
+        overText: "Golzuna Defeated",
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
@@ -8208,6 +8240,8 @@ const rawData = {
         name: "Power Bombs",
         start: 0,
         max: 1,
+        over: "Z_Orb",
+        overText: "E.M.M.I.-07PB Defeated",
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
@@ -8217,6 +8251,8 @@ const rawData = {
         name: "Spider Magnet",
         start: 0,
         max: 1,
+        over: "Z_Orb",
+        overText: "E.M.M.I.-02SM Defeated",
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
@@ -8226,6 +8262,8 @@ const rawData = {
         name: "Speed Booster",
         start: 0,
         max: 1,
+        over: "Z_Orb",
+        overText: "E.M.M.I.-04SB Defeated",
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
@@ -8276,6 +8314,7 @@ const rawData = {
           }
         },
         name: "Energy Tanks",
+        sprite: "energy",
         start: 0,
         max: 8,
         segments: [],
@@ -8290,6 +8329,7 @@ const rawData = {
           }
         },
         name: "Energy Parts",
+        sprite: "part",
         start: 0,
         max: 16,
         segments: [],
@@ -8299,6 +8339,7 @@ const rawData = {
       },{
         id: "missileTank",
         name: "Missile Tanks",
+        sprite: "missile",
         start: 0,
         max: 75,
         segments: [],
@@ -8308,6 +8349,7 @@ const rawData = {
       },{
         id: "doubleMissileTank",
         name: "Missile+ Tanks",
+        sprite: "missilePlus",
         start: 0,
         max: 11,
         segments: [],
@@ -8317,6 +8359,7 @@ const rawData = {
       },{
         id: "powerBombTank",
         name: "Power Bomb Tanks",
+        sprite: "pbombs",
         start: 0,
         max: 13,
         segments: [],

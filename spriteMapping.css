@@ -436,7 +436,7 @@ body.game-ph .usesSprite img.item-image.al2 { background: url("images/mph_sprite
 body.game-ph .usesSprite img.item-image.vdo2 { background: url("images/mph_spritesheet.png") -84px -126px; }
 body.game-ph .usesSprite img.item-image.arc2 { background: url("images/mph_spritesheet.png") -126px -126px; }
 body.game-ph .usesSprite img.item-image.uatank { background: url("images/mph_spritesheet.png") -168px -126px; }
-body.game-ph .usesSprite img.item-image.UNUSED { background: url("images/mph_spritesheet.png") -210px -126px; }
+body.game-ph .usesSprite img.item-image.UNUSED { background: url("images/mph_spritesheet.png") -210px -126px; } /* UNUSED */
 body.game-ph .usesSprite img.item-image.combat { background: url("images/mph_spritesheet.png") 0 -168px; }
 body.game-ph .usesSprite img.item-image.scan { background: url("images/mph_spritesheet.png") -42px -168px; }
 body.game-ph .usesSprite img.item-image.bomb { background: url("images/mph_spritesheet.png") -84px -168px; }
@@ -447,7 +447,7 @@ body.game-ph .usesSprite img.item-image.lore { background: url("images/mph_sprit
 body.game-ph .usesSprite img.item-image.bioform { background: url("images/mph_spritesheet.png") -42px -210px; }
 body.game-ph .usesSprite img.item-image.object { background: url("images/mph_spritesheet.png") -84px -210px; }
 body.game-ph .usesSprite img.item-image.equipment { background: url("images/mph_spritesheet.png") -126px -210px; }
-body.game-ph .usesSprite img.item-image.UNUSED { background: url("images/mph_spritesheet.png") -168px -210px; }
+body.game-ph .usesSprite img.item-image.important { background: url("images/mph_spritesheet.png") -168px -210px; }
 body.game-pb .usesSprite img.item-image.artifact { background: url("images/mph_spritesheet.png") -210px -210px; }
 
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/

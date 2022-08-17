@@ -47,3 +47,5 @@ Prime 2D graphics were made by Team SCU, ripped by me (admittedly not very clean
 All Metroid placeholder icons were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Metroid: Other M graphical style) without intent to profit.
 
 Remainder Zelda graphics were custom-made or kitbashed by me, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Zelda Minish Cap graphical style) without intent to profit.
+
+![In loving memory of SpaghettiToastBook](images/spaghettitoastbook_icon.png)

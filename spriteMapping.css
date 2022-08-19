@@ -313,14 +313,14 @@ img.item-image.darkAetherKey { background: url("images/m_graphics.png") -129px -
 img.item-image.burstBeam { background: url("images/m_graphics.png") -172px -731px; }
 img.item-image.smallAmmo { background: url("images/m_graphics.png") -215px -731px; }
 img.item-image.largeAmmo { background: url("images/m_graphics.png") -258px -731px; }
-img.item-image.unused { background: url("images/m_graphics.png") -301px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -344px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -387px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -430px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -473px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -516px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -559px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -602px -731px; } /* UNUSED */
+img.item-image.meleeCounter { background: url("images/m_graphics.png") -301px -731px; }
+img.item-image.dashMelee { background: url("images/m_graphics.png") -344px -731px; }
+img.item-image.overblast { background: url("images/m_graphics.png") -387px -731px; }
+img.item-image.concentration { background: url("images/m_graphics.png") -430px -731px; }
+img.item-image.lethalStrike { background: url("images/m_graphics.png") -473px -731px; }
+img.item-image.slide { background: url("images/m_graphics.png") -516px -731px; }
+img.item-image.omegaBlast { background: url("images/m_graphics.png") -559px -731px; }
+img.item-image.senseMove { background: url("images/m_graphics.png") -602px -731px; }
 img.item-image.unused { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
 img.item-image.unused { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
 img.item-image.unused { background: url("images/m_graphics.png") -731px -731px; }
@@ -436,7 +436,7 @@ body.game-ph .usesSprite img.item-image.al2 { background: url("images/mph_sprite
 body.game-ph .usesSprite img.item-image.vdo2 { background: url("images/mph_spritesheet.png") -84px -126px; }
 body.game-ph .usesSprite img.item-image.arc2 { background: url("images/mph_spritesheet.png") -126px -126px; }
 body.game-ph .usesSprite img.item-image.uatank { background: url("images/mph_spritesheet.png") -168px -126px; }
-body.game-ph .usesSprite img.item-image.UNUSED { background: url("images/mph_spritesheet.png") -210px -126px; } /* UNUSED */
+body.game-ph .usesSprite img.item-image.unused { background: url("images/mph_spritesheet.png") -210px -126px; } /* UNUSED */
 body.game-ph .usesSprite img.item-image.combat { background: url("images/mph_spritesheet.png") 0 -168px; }
 body.game-ph .usesSprite img.item-image.scan { background: url("images/mph_spritesheet.png") -42px -168px; }
 body.game-ph .usesSprite img.item-image.bomb { background: url("images/mph_spritesheet.png") -84px -168px; }

@@ -1030,6 +1030,7 @@ const rawData = {
       },{
         id: "boss",
         name: "Bosses",
+        sprite: "bosses",
         start: 0,
         max: 2,
         segments: [],
@@ -7745,7 +7746,7 @@ const rawData = {
             bg: "ff7e00",
             nodeType: "upgrade",
             value: 0,
-          },
+          },*//*
         ],
         value: 0,
       },*/{

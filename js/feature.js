@@ -21,7 +21,12 @@ let keyslots = {};
     }
     const source = document.getElementById(targetId);
     let hintImage = source.querySelector(".hint-image");
-    if (hintImage) source.removeChild(hintImage);
+    if (setOrReturn) {
+      hintImage.alt = "Click middle mouse button to toggle Normal Labs";
+    } else {
+      hintImage.alt = "Click middle mouse button to toggle Extreme Labs";
+    }
+    hintImage.title = hintImage.alt;
     
     source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
     source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');

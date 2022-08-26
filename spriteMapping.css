@@ -397,6 +397,7 @@ body.game-mzm .usesSprite img.item-image.missile { background: url("images/mzm_s
 body.game-mzm .usesSprite img.item-image.smissile { background: url("images/mzm_spritesheet.png") -84px -126px; }
 body.game-mzm .usesSprite img.item-image.pbomb { background: url("images/mzm_spritesheet.png") -126px -126px; }
 body.game-mzm .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
+body.game-mzm .usesSprite img.item-image.bosses { background: url("images/mzm_spritesheet.png") -210px -126px; }
 
 /********* P2D - PRIME 2D (PC) *********/
 body.game-p2d .usesSprite img.item-image.missile { background: url("images/p2d_spritesheet.png") 0 0; }

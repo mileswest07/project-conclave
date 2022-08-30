@@ -235,12 +235,22 @@ body {
   mix-blend-mode: multiply;
 }
 
+.go-mode-item > .item-image:not(.deselected),
+.go-mode-item:hover > .item-image {
+  outline: 2px solid black;
+  outline-offset: -2px;
+}
+
 .blank {
   opacity: 0.0 !important;
 }
-
+  
 .blank .item-image {
   cursor: default;
+}
+
+.item-image:not(.deselected) {
+  filter: drop-shadow(0 0 5px #fff);
 }
 
 .dark-mode {
@@ -258,6 +268,11 @@ body {
 
 .dark-mode .item-image:not(.deselected) {
   filter: drop-shadow(0 0 5px #fff);
+}
+
+.dark-mode .go-mode-item > .item-image:not(.deselected),
+.dark-mode .go-mode-item:hover > .item-image {
+  outline: 2px solid white;
 }
 
 .dark-mode .deselected {

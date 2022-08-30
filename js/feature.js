@@ -551,10 +551,16 @@ let keyslots = {};
       if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
         image.classList.add("deselected");
       }
+      if (element.hasOwnProperty("isGo") && element.isGo) {
+        wrapper.classList.add("go-mode-item");
+      }
     } else {
       image.className = "item-image ";
       if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
         image.className += " deselected";
+      }
+      if (element.hasOwnProperty("isGo") && element.isGo) {
+        wrapper.className += " go-mode-item";
       }
     }
     

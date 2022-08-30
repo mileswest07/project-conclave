@@ -7,21 +7,21 @@ let main = {
   const games = {
     "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
     "m": "m1", // Metroid
-    "1": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
+    "mz": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
     "z": "mzm", // Metroid: Zero Mission
     "p": "mp", // Metroid Prime
     "b": "pb", // Metroid Prime Pinball
     "p2d": "p2d", // Prime 2D
+    "h": "ph", // Metroid Prime Hunters
     "e": "mp2e", // Metroid Prime 2: Echoes
     "v": "e_rnd", // Metroid Prime 2: Echoes (Randovania settings)
-    "h": "ph", // Metroid Prime Hunters
     "c": "mp3c", // Metroid Prime 3: Corruption
     "ff": "mpff", // Metroid Prime: Federation Force
-    "2": "m2ros", // Metroid II: Return of Samus
+    "ros": "m2ros", // Metroid II: Return of Samus
     "a": "am2r", // Another Metroid 2 Remake
     "r": "msr", // Metroid: Samus Returns
     "s": "sm", // Super Metroid
-    "3": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
+    "smz": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
     "n": "mng", // Metroid: A New Galaxy
@@ -32,6 +32,24 @@ let main = {
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
   };
+  
+  const noFangamesFilter = ["rd", "a", "t", "p2d", "n",];
+  const noRandomizersFilter = ["v", "mz", "smz", "z3r",];
+  const noZeldaFilter = ["mz", "smz", "z1", "z2", "z3", "z3r",];
+  const noSamusFilter = ["m", "mz", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "a", "r", "s", "smz", "o", "f", "n", "t", "d",];
+  const noPrimeFilter = ["p", "b", "p2d", "h", "e", "v", "c", "ff",];
+  const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
+  const masterFilter = [...Object.keys(games)];
+  
+  function filterOut([...filter]) {
+    let copy = {...this};
+    
+    filter.forEach(prop => {
+      delete copy[prop];
+    });
+    
+    return {...copy};
+  }
   
   function validateStartup(e) {
     e.preventDefault();
@@ -49,7 +67,13 @@ let main = {
       return;
     }
     
-    let searchString = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
+    let searchString = "?game=";
+    
+    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
+      searchString += "scramble";
+    } else {
+      searchString += games[document.forms["startupMenu"]["selectedGame"].value];
+    }
     
     if (document.forms["startupMenu"]["useSprites"].checked) {
       searchString += "&s=true";
@@ -69,6 +93,74 @@ let main = {
     location.search = searchString;
   }
   
+  // scrambleStart
+  function scrambleStart(filterOutList) {
+    main.showTotals = false;
+    main.showTimer = false;
+    main.useLocale = null;
+    
+    const targetingData = document.forms["startupMenu"]["selectedGame"].options;
+    
+    let masterGames = {...games};
+    masterGames.fOut = filterOut;
+    masterGames = masterGames.fOut(filterOutList);
+    
+    let targetSection = document.getElementById("itemField");
+    if (targetSection.classList) {
+      targetSection.classList.add("parent-flex");
+    } else {
+      targetSection.className = "parent-flex";
+    }
+    
+    for (const [key, value] of Object.entries(masterGames)) {
+      if (typeof value === "function") {
+        continue;
+      }
+      feature.currentGame = value;
+      const itemFieldName = "itemField" + key;
+      
+      let foundItem = null;
+      let gameName = "";
+      for (let i = 0; i < targetingData.length; i++) {
+        if (targetingData[i].value == key) {
+          foundItem = targetingData[i];
+        }
+      }
+      if (foundItem) {
+        gameName += foundItem.innerHTML;
+      }
+      
+      let newSection = document.createElement("section");
+      if (newSection.classList) {
+        newSection.classList.add("flex-field");
+        newSection.classList.add("child-field");
+        newSection.classList.add("game-" + feature.currentGame);
+      } else {
+        newSection.className = "flex-field child-field game-" + feature.currentGame
+      }
+      newSection.id = itemFieldName;
+      
+      let gameTitle = document.createElement("h4");
+      gameTitle.innerText = gameName;
+      newSection.appendChild(gameTitle);
+      
+      targetSection.appendChild(newSection);
+      
+      feature.workingData = rawData[feature.currentGame];
+      feature.generate(itemFieldName);
+    }
+    
+    let target = document.getElementById("itemField");
+    if (target.classList) { // browser compatibility logic
+      target.classList.remove("hide-section");
+    } else {
+      target.className += target.className.replace(/\bhide-section\b/g);
+    }
+    let menuPointer = document.getElementById("selection");
+    menuPointer.remove();
+    feature.currentGame = "am2r"; // to make Extreme Labs work
+  }
+  
   function start() {
     if (location.search.length) {
       const queryParams = location.search.split('?')[1].split('&');
@@ -83,6 +175,7 @@ let main = {
         queryDict[k] = val;
       }
       let incomingGame = queryDict.game;
+      
       let willUseDarkMode = !!queryDict.d;
       willUseDarkMode = !!JSON.parse(willUseDarkMode);
       if (willUseDarkMode) {
@@ -95,6 +188,13 @@ let main = {
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;
+      
+      if (incomingGame === "scramble") {
+        //let gamesList = queryDict.games.split(',');
+        //main.scrambleStart(gamesList);
+        main.scrambleStart([...noRandomizersFilter, ...noZeldaFilter]);
+        return;
+      }
       
       let willShowTotals = !!queryDict.pt;
       willShowTotals = !!JSON.parse(willShowTotals);
@@ -195,5 +295,6 @@ let main = {
   main.useKeyslots = false;
   main.games = games;
   main.validateStartup = validateStartup;
+  main.scrambleStart = scrambleStart;
   main.start = start;
 })();

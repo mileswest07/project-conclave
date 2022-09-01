@@ -4438,7 +4438,7 @@ const rawData = {
       },{
         id: "lightningShield",
         sprite: "shield",
-        name: "Lightning Shield",
+        name: "Lightning Armor",
         start: 0,
         max: 1,
         segments: [],

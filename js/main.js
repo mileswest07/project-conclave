@@ -87,6 +87,9 @@ let main = {
     if (document.forms["startupMenu"]["showTimer"].checked) {
       searchString += "&t=true";
     }
+    if (document.forms["startupMenu"]["useKeyslots"].checked) {
+      searchString += "&k=true";
+    }
     if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
       searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
     }
@@ -203,6 +206,10 @@ let main = {
       let willShowTimer = !!queryDict.t;
       willShowTimer = !!JSON.parse(willShowTimer);
       main.showTimer = willShowTimer;
+      
+      let willUseKeyslots = !!queryDict.k;
+      willUseKeyslots = !!JSON.parse(willUseKeyslots);
+      main.useKeyslots = willUseKeyslots;
       
       let selectedLocale = queryDict.l || '';
       main.useLocale = selectedLocale.length ? selectedLocale : null;

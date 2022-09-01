@@ -108,7 +108,7 @@ let main = {
       document.body.className += " game-scramble";
     }
     main.isScramble = true;
-    main.scrambleSync = true;
+    main.scrambleSync = false;
     
     const targetingData = document.forms["startupMenu"]["selectedGame"].options;
     

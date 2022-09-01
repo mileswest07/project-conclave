@@ -212,10 +212,10 @@ let keyslots = {};
     
     if (main.scrambleSync && !e.dontDoAgain) {
       let itemName = e.target.parentElement.id.split('-')[1];
-      const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "-]");
+      const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "]");
       if (allMatchingItems) {
         for (let i = 0; i < allMatchingItems.length; i++) {
-          let findChild = allMatchingItems[i].querySelector("." + itemName);
+          let findChild = [...allMatchingItems[i].childNodes].filter(el => el.className.split(" ").some(n => n.includes(itemName)))[0];
           let eventProp = {
             preventDefault: () => {},
             which: e.which,
@@ -230,7 +230,7 @@ let keyslots = {};
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
-          if (e.target.parentElement.nextSibling) {
+          if (!main.isScramble && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id && e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -252,7 +252,7 @@ let keyslots = {};
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
-          if (e.target.parentElement.nextSibling) {
+          if (!main.isScramble && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -278,7 +278,7 @@ let keyslots = {};
         if (e.target.classList.contains("deselected")) {
           return;
         }
-        if (e.target.parentElement.previousSibling) {
+        if (!main.isScramble && e.target.parentElement.previousSibling) {
           if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
             if (
               parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -304,7 +304,7 @@ let keyslots = {};
         }
       } else {
         if (e.target.className.has("deselected")) {
-          if (e.target.parentElement.previousSibling) {
+          if (!main.isScramble && e.target.parentElement.previousSibling) {
             if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 

@@ -102,6 +102,14 @@ let main = {
     main.showTimer = false;
     main.useLocale = null;
     
+    if (document.body.classList) {
+      document.body.classList.add("game-scramble");
+    } else {
+      document.body.className += " game-scramble";
+    }
+    main.isScramble = true;
+    main.scrambleSync = true;
+    
     const targetingData = document.forms["startupMenu"]["selectedGame"].options;
     
     let masterGames = {...games};
@@ -300,6 +308,8 @@ let main = {
   main.showTotals = false;
   main.showTimer = false;
   main.useKeyslots = false;
+  main.isScramble = false;
+  main.scrambleSync = false;
   main.games = games;
   main.validateStartup = validateStartup;
   main.scrambleStart = scrambleStart;

@@ -784,6 +784,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "longBeamA",
         locale: {
@@ -893,6 +894,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "powerGrip",
         sprite: "grip",
@@ -977,6 +979,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -7737,7 +7740,7 @@ const rawData = {
             bg: "602880",
             nodeType: "upgrade",
             value: 0,
-          },/*{
+          },{
             id: "fullPowerSuit",
             name: "Final Suit",
             start: 0,
@@ -7746,13 +7749,14 @@ const rawData = {
             bg: "ff7e00",
             nodeType: "upgrade",
             value: 0,
-          },*//*
+          },/*
         ],
         value: 0,
       },*/{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "energyTank",
         sprite: "energy",

@@ -210,6 +210,23 @@ let keyslots = {};
   function clickItem(e) {
     e.preventDefault();
     
+    if (main.scrambleSync && !e.dontDoAgain) {
+      let itemName = e.target.parentElement.id.split('-')[1];
+      const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "-]");
+      if (allMatchingItems) {
+        for (let i = 0; i < allMatchingItems.length; i++) {
+          let findChild = allMatchingItems[i].querySelector("." + itemName);
+          let eventProp = {
+            preventDefault: () => {},
+            which: e.which,
+            dontDoAgain: true,
+            target: findChild,
+          }
+          clickItem(eventProp);
+        }
+      }
+    }
+    
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
@@ -479,6 +496,10 @@ let keyslots = {};
   }
   
   function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
+    if (element.hasOwnProperty("clearIfScramble") && element.clearIfScramble && main.isScramble) {
+      return;
+    }
+    
     if (!isSegment) {
       if (element.hasOwnProperty("segments") && element.segments.length > 0) {
         let segmentProgress = element.start;
@@ -504,9 +525,12 @@ let keyslots = {};
     
     const counterAnyway = (element.hasOwnProperty("type") && element.type === "counter");
     
-    if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
+    const isToggleAnyway = element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon");
+    if (isToggleAnyway) {
       wrapper.setAttribute("typing", element.type);
     }
+    
+    const isKeyOrGoal = element.hasOwnProperty("nodeType") && (element.nodeType === "key" || element.nodeType === "goal");
     
     let elementId = element.id;
     
@@ -521,7 +545,7 @@ let keyslots = {};
       } else {
         wrapper.classList.add(classLabel);
       }
-      if (isSegmentHidden) {
+      if (isSegmentHidden && (!main.isScramble || (main.isScramble && classLabel === "expansion") || (main.isScramble && isToggleAnyway) || (main.isScramble && isKeyOrGoal))) {
         wrapper.classList.add("hide-segment");
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
@@ -533,7 +557,7 @@ let keyslots = {};
       } else {
         wrapper.className = classLabel;
       }
-      if (isSegmentHidden) {
+      if (isSegmentHidden && (!main.isScramble || (main.isScramble && classLabel === "expansion") || (main.isScramble && isToggleAnyway) || (main.isScramble && isKeyOrGoal))) {
         wrapper.className += " hide-segment";
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
@@ -655,10 +679,7 @@ let keyslots = {};
           levelUp.className += " overlay-image";
           wrapper.className += " can-level-up";
         }
-        if (
-          element.hasOwnProperty("type") && 
-          (element.type === "toggle" || element.type == "dungeon")
-        ) {
+        if (isToggleAnyway) {
           if (levelUp.classList) {
             levelUp.classList.add("Level_Up_Alt");
           } else {
@@ -686,10 +707,7 @@ let keyslots = {};
           levelDown.className += " overlay-image";
           wrapper.className += "can-level-down";
         }
-        if (
-          element.hasOwnProperty("type") && 
-          (element.type === "toggle" || element.type == "dungeon")
-        ) {
+        if (isToggleAnyway) {
           if (levelDown.classList) {
             levelDown.classList.add("Level_Down_Alt");
           } else {

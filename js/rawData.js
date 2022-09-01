@@ -23,7 +23,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "barrier",
+        id: "barrierA",
         sprite: "barrier",
         name: "Varia Suit",
         start: 0,
@@ -33,10 +33,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -175,7 +175,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "barrier",
+        id: "barrierA",
         sprite: "barrier",
         name: "Varia Suit",
         start: 0,
@@ -200,10 +200,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -324,7 +324,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "barrier",
+        id: "barrierA",
         sprite: "barrier",
         name: "Varia Suit",
         start: 0,
@@ -413,10 +413,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -727,7 +727,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "barrier",
+        id: "barrierB",
         sprite: "barrier",
         name: "Varia Suit",
         start: 0,
@@ -803,10 +803,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeamE",
+        id: "chargeBeam",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         sprite: "charge",
@@ -838,10 +838,10 @@ const rawData = {
             nodeType: "upgrade",
             value: 1,
           },{
-            id: "plasmaBeamD",
+            id: "plasmaBeam",
             locale: {
               'enUS': {
-                id: "plasmaBeam"
+                id: "plasmaBeamD"
               }
             },
             sprite: "plasma",
@@ -857,10 +857,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -1086,7 +1086,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "gravitySuit",
+        id: "gravitySuitB",
         name: "Gravity Suit",
         start: 0,
         max: 1,
@@ -1108,7 +1108,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spaceJumpBoots",
+        id: "spinBoost",
         name: "Space Jump Boots",
         start: 0,
         max: 1,
@@ -1205,7 +1205,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "freezeShot",
+        id: "iceMissileB",
         name: "Ice Spreader",
         start: 0,
         max: 1,
@@ -1260,7 +1260,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spiderBall",
+        id: "spiderBallA",
         name: "Spider Ball",
         start: 0,
         max: 1,
@@ -1611,7 +1611,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spaceJumpBoots",
+        id: "spinBoost",
         name: "Space Jump Boots",
         start: 0,
         max: 1,
@@ -1767,7 +1767,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spiderBall",
+        id: "spiderBallA",
         name: "Spider Ball",
         start: 0,
         max: 1,
@@ -1778,7 +1778,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "primeGrapple",
+        id: "grappleBeamA",
         name: "Grapple Beam",
         start: 0,
         max: 1,
@@ -2156,7 +2156,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "spaceJumpBoots",
+        id: "spinBoost",
         name: "Space Jump Boots",
         start: 1,
         max: 1,
@@ -2317,7 +2317,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spiderBall",
+        id: "spiderBallA",
         name: "Spider Ball",
         start: 0,
         max: 1,
@@ -2328,7 +2328,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "primeGrapple",
+        id: "grappleBeamA",
         name: "Grapple Beam",
         start: 0,
         max: 1,
@@ -3088,10 +3088,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "chargeBeamE",
+        id: "chargeBeam",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         name: "Charge Beam",
@@ -3119,7 +3119,7 @@ const rawData = {
         id: "flameShot",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         name: "Plasma Beam",
@@ -3166,7 +3166,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "spaceJumpBoots",
+        id: "spinBoost",
         name: "Space Jump Boots",
         start: 1,
         max: 1,
@@ -3184,7 +3184,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "freezeShot",
+        id: "iceMissileB",
         name: "Ice Missile",
         start: 0,
         max: 1,
@@ -3286,7 +3286,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "spiderBall",
+        id: "spiderBallA",
         name: "Spider Ball",
         start: 0,
         max: 1,
@@ -3616,7 +3616,7 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "freezeShot",
+        id: "iceMissileB",
         name: "Freeze Shot",
         start: 0,
         max: 1,
@@ -3763,10 +3763,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -3795,10 +3795,10 @@ const rawData = {
         slotType: "beam",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -3811,10 +3811,10 @@ const rawData = {
         slotType: "beam",
         value: 1,
       },{
-        id: "plasmaBeamD",
+        id: "plasmaBeam",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -3977,7 +3977,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "barrier",
+        id: "barrierA",
         name: "Varia Suit",
         sprite: "barrier",
         start: 0,
@@ -3997,10 +3997,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeamE",
+        id: "chargeBeam",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         name: "Charge Beam",
@@ -4027,10 +4027,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         name: "Spazer Beam",
@@ -4042,10 +4042,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeamD",
+        id: "plasmaBeam",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         name: "Plasma Beam",
@@ -4059,10 +4059,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         name: "Ice Beam",
@@ -4375,7 +4375,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "spiderBallA",
+        id: "spiderBall",
         sprite: "spider",
         name: "Spider Ball",
         start: 0,
@@ -4439,7 +4439,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "lightningShield",
+        id: "lightningArmor",
         sprite: "shield",
         name: "Lightning Armor",
         start: 0,
@@ -4504,7 +4504,7 @@ const rawData = {
         id: "chargeBeamD",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         sprite: "charge",
@@ -4519,7 +4519,7 @@ const rawData = {
         id: "iceBeamB",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -4549,7 +4549,7 @@ const rawData = {
         id: "wideBeamD",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -4564,7 +4564,7 @@ const rawData = {
         id: "plasmaBeamC",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -4844,10 +4844,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "chargeBeamE",
+        id: "chargeBeam",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         name: "Charge Beam",
@@ -4861,10 +4861,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -4878,10 +4878,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -4912,10 +4912,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "plasmaBeamD",
+        id: "plasmaBeam",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -5322,10 +5322,10 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "chargeBeamE",
+        id: "chargeBeam",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         name: "Charge Beam",
@@ -5339,10 +5339,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -5356,10 +5356,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -5468,10 +5468,10 @@ const rawData = {
         name: "",
         max: 0,
       },{
-        id: "plasmaBeamD",
+        id: "plasmaBeam",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -6502,7 +6502,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "gravitySuit",
+        id: "gravitySuitC",
         name: "Gravity Feature",
         start: 0,
         max: 1,
@@ -6536,10 +6536,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "iceBeamD",
+        id: "iceBeam",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         name: "Ice Beam",
@@ -6564,10 +6564,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },{
-        id: "plasmaBeamD",
+        id: "plasmaBeam",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         name: "Plasma Beam",
@@ -6735,7 +6735,7 @@ const rawData = {
         id: "chargeBeamA",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         sprite: "charge",
@@ -6747,7 +6747,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "fireBeam",
+        id: "flameShotA",
         sprite: "fire",
         name: "Fire Beam",
         start: 0,
@@ -6757,10 +6757,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -6790,7 +6790,7 @@ const rawData = {
         id: "plasmaBeamE",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -6805,7 +6805,7 @@ const rawData = {
         id: "iceBeamE",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -6857,7 +6857,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "bombA",
+        id: "adapter",
         sprite: "adapter",
         name: "Bomb-Beam Adapter",
         start: 0,
@@ -7064,7 +7064,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "gravitySuit",
+        id: "gravitySuitD",
         sprite: "gravity",
         name: "Gravity Suit",
         start: 0,
@@ -7146,7 +7146,7 @@ const rawData = {
         id: "chargeBeamA",
         locale: {
           'enUS': {
-            id: "chargeBeam"
+            id: "chargeBeamE"
           }
         },
         sprite: "charge",
@@ -7158,10 +7158,10 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "wideBeamC",
+        id: "wideBeam",
         locale: {
           'enUS': {
-            id: "wideBeam"
+            id: "wideBeamC"
           }
         },
         sprite: "wide",
@@ -7173,7 +7173,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "fireBeam",
+        id: "flameShotA",
         sprite: "fire",
         name: "Fire Beam",
         start: 0,
@@ -7201,7 +7201,7 @@ const rawData = {
         id: "plasmaBeamE",
         locale: {
           'enUS': {
-            id: "plasmaBeam"
+            id: "plasmaBeamD"
           }
         },
         sprite: "plasma",
@@ -7216,7 +7216,7 @@ const rawData = {
         id: "iceBeamE",
         locale: {
           'enUS': {
-            id: "iceBeam"
+            id: "iceBeamD"
           }
         },
         sprite: "ice",
@@ -7318,7 +7318,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "combatVisor",
+        id: "seekerLauncherC",
         sprite: "seeker",
         name: "Seeker Missiles",
         start: 0,
@@ -7348,7 +7348,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "bombA",
+        id: "adapter",
         sprite: "adapter",
         name: "Bomb-Beam Adapter",
         start: 0,
@@ -7576,7 +7576,7 @@ const rawData = {
             id: "chargeBeamC",
             locale: {
               'enUS': {
-                id: "chargeBeam"
+                id: "chargeBeamE"
               }
             },
             name: "Charge Beam",
@@ -7608,7 +7608,7 @@ const rawData = {
             id: "plasmaBeamA",
             locale: {
               'enUS': {
-                id: "plasmaBeam"
+                id: "plasmaBeamD"
               }
             },
             name: "Plasma Beam",
@@ -7640,7 +7640,7 @@ const rawData = {
             id: "iceBeamC",
             locale: {
               'enUS': {
-                id: "iceBeam"
+                id: "iceBeamD"
               }
             },
             name: "Ice Beam",
@@ -7719,7 +7719,7 @@ const rawData = {
         sprite: "fusion",
         segments: [*/
           {
-            id: "barrier",
+            id: "barrierC",
             name: "Varia Suit",
             start: 0,
             max: 1,
@@ -8008,7 +8008,7 @@ const rawData = {
         max: 2,
         segments: [
           {
-            id: "wideBeamC",
+            id: "wideBeam",
             locale: {
               'enUS': {
                 id: "wideBeamA"
@@ -8024,7 +8024,7 @@ const rawData = {
             id: "plasmaBeamA",
             locale: {
               'enUS': {
-                id: "plasmaBeam"
+                id: "plasmaBeamD"
               }
             },
             name: "Plasma Beam",
@@ -8034,7 +8034,7 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "wideBeamD",
+            id: "waveBeamE",
             locale: {
               'enUS': {
                 id: "waveBeam"
@@ -8058,10 +8058,10 @@ const rawData = {
         max: 2,
         segments: [
           {
-            id: "chargeBeamE",
+            id: "chargeBeam",
             locale: {
               'enUS': {
-                id: "chargeBeam"
+                id: "chargeBeamE"
               }
             },
             name: "Charge Beam",
@@ -8113,7 +8113,7 @@ const rawData = {
             nodeType: "upgrade",
             value: 0,
           },{
-            id: "freezeShot",
+            id: "iceMissileB",
             name: "Ice Missiles",
             over: "Z_Orb",
             overText: "E.M.M.I.-05IM Defeated",
@@ -8280,7 +8280,7 @@ const rawData = {
         max: 2,
         segments: [
           {
-            id: "spinBoost",
+            id: "spinBoostA",
             name: "Spin Boost",
             start: 0,
             max: 1,

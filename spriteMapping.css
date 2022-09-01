@@ -2,7 +2,8 @@
 
 img.item-image.morphBall { background: url("images/m_graphics.png") 0 0; }
 img.item-image.bomb { background: url("images/m_graphics.png") -43px 0; }
-img.item-image.bombA { background: url("images/m_graphics.png") -86px 0; }
+img.item-image.bombA,
+img.item-image.adapter { background: url("images/m_graphics.png") -86px 0; }
 img.item-image.bombB { background: url("images/m_graphics.png") -129px 0; }
 img.item-image.bombC { background: url("images/m_graphics.png") -172px 0; }
 img.item-image.powerBomb { background: url("images/m_graphics.png") -215px 0; }
@@ -12,7 +13,7 @@ img.item-image.powerBombTank { background: url("images/m_graphics.png") -344px 0
 img.item-image.powerBombExp { background: url("images/m_graphics.png") -387px 0; }
 img.item-image.powerBombExpA { background: url("images/m_graphics.png") -430px 0; }
 img.item-image.springBall { background: url("images/m_graphics.png") -473px 0; }
-img.item-image.spiderBall { background: url("images/m_graphics.png") -516px 0; }
+img.item-image.spiderBallA { background: url("images/m_graphics.png") -516px 0; }
 img.item-image.boostBall { background: url("images/m_graphics.png") -559px 0; }
 img.item-image.cannonball { background: url("images/m_graphics.png") -602px 0; }
 img.item-image.hyperBall { background: url("images/m_graphics.png") -645px 0; }
@@ -22,25 +23,26 @@ img.item-image.powerBeam { background: url("images/m_graphics.png") 0 -43px; }
 img.item-image.powerBeamA { background: url("images/m_graphics.png") -43px -43px; }
 img.item-image.powerBeamB { background: url("images/m_graphics.png") -86px -43px; }
 img.item-image.longBeam { background: url("images/m_graphics.png") -129px -43px; }
-img.item-image.chargeBeam { background: url("images/m_graphics.png") -172px -43px; }
+img.item-image.chargeBeamE { background: url("images/m_graphics.png") -172px -43px; }
 img.item-image.chargeBeamA { background: url("images/m_graphics.png") -215px -43px; }
 img.item-image.chargeBeamB { background: url("images/m_graphics.png") -258px -43px; }
 img.item-image.chargeBeamC { background: url("images/m_graphics.png") -301px -43px; }
 img.item-image.chargeBeamD { background: url("images/m_graphics.png") -344px -43px; }
-img.item-image.wideBeam { background: url("images/m_graphics.png") -387px -43px; }
+img.item-image.wideBeamC { background: url("images/m_graphics.png") -387px -43px; }
 img.item-image.wideBeamA { background: url("images/m_graphics.png") -430px -43px; }
 img.item-image.wideBeamB { background: url("images/m_graphics.png") -473px -43px; }
-img.item-image.wideBeamC { background: url("images/m_graphics.png") -516px -43px; }
-img.item-image.wideBeamD { background: url("images/m_graphics.png") -559px -43px; }
+img.item-image.wideBeam { background: url("images/m_graphics.png") -516px -43px; }
+img.item-image.wideBeamD,
+img.item-image.waveBeamE { background: url("images/m_graphics.png") -559px -43px; }
 img.item-image.waveBeam { background: url("images/m_graphics.png") -602px -43px; }
 img.item-image.waveBeamA { background: url("images/m_graphics.png") -645px -43px; }
 img.item-image.waveBeamB { background: url("images/m_graphics.png") -688px -43px; }
 img.item-image.luminothMessage { background: url("images/m_graphics.png") -731px -43px; }
-img.item-image.iceBeam { background: url("images/m_graphics.png") 0 -86px; }
+img.item-image.iceBeamD { background: url("images/m_graphics.png") 0 -86px; }
 img.item-image.iceBeamA { background: url("images/m_graphics.png") -43px -86px; }
 img.item-image.iceBeamB { background: url("images/m_graphics.png") -86px -86px; }
 img.item-image.iceBeamC { background: url("images/m_graphics.png") -129px -86px; }
-img.item-image.plasmaBeam { background: url("images/m_graphics.png") -172px -86px; }
+img.item-image.plasmaBeamD { background: url("images/m_graphics.png") -172px -86px; }
 img.item-image.plasmaBeamA { background: url("images/m_graphics.png") -215px -86px; }
 img.item-image.plasmaBeamB { background: url("images/m_graphics.png") -258px -86px; }
 img.item-image.plasmaBeamC { background: url("images/m_graphics.png") -301px -86px; }
@@ -58,7 +60,8 @@ img.item-image.judicator { background: url("images/m_graphics.png") 0 -129px; }
 img.item-image.shockCoil { background: url("images/m_graphics.png") -43px -129px; }
 img.item-image.imperialist { background: url("images/m_graphics.png") -86px -129px; }
 img.item-image.omegaCannon { background: url("images/m_graphics.png") -129px -129px; }
-img.item-image.freezeShot { background: url("images/m_graphics.png") -172px -129px; }
+img.item-image.freezeShot,
+img.item-image.iceMissileB { background: url("images/m_graphics.png") -172px -129px; }
 img.item-image.flameShot { background: url("images/m_graphics.png") -215px -129px; }
 img.item-image.shockShot { background: url("images/m_graphics.png") -258px -129px; }
 img.item-image.beamAmmoExpansion { background: url("images/m_graphics.png") -301px -129px; }
@@ -72,7 +75,8 @@ img.item-image.hyperGrapple { background: url("images/m_graphics.png") -602px -1
 img.item-image.shipGrapple { background: url("images/m_graphics.png") -645px -129px; }
 img.item-image.uaExpansion { background: url("images/m_graphics.png") -688px -129px; }
 img.item-image.echoKey { background: url("images/m_graphics.png") -731px -129px; }
-img.item-image.combatVisor { background: url("images/m_graphics.png") 0 -172px; }
+img.item-image.combatVisor,
+img.item-image.seekerLauncherC { background: url("images/m_graphics.png") 0 -172px; }
 img.item-image.combatVisorA { background: url("images/m_graphics.png") -43px -172px; }
 img.item-image.scanVisor { background: url("images/m_graphics.png") -86px -172px; }
 img.item-image.scanVisorA { background: url("images/m_graphics.png") -129px -172px; }
@@ -91,8 +95,14 @@ img.item-image.cobaltTranslator { background: url("images/m_graphics.png") -645p
 img.item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; }
 img.item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; }
 img.item-image.fullPowerSuit { background: url("images/m_graphics.png") 0 -215px; }
-img.item-image.barrier { background: url("images/m_graphics.png") -43px -215px; }
-img.item-image.gravitySuit { background: url("images/m_graphics.png") -86px -215px; }
+img.item-image.barrier,
+img.item-image.barrierA,
+img.item-image.barrierB,
+img.item-image.barrierC { background: url("images/m_graphics.png") -43px -215px; }
+img.item-image.gravitySuit,
+img.item-image.gravitySuitB,
+img.item-image.gravitySuitC,
+img.item-image.gravitySuitD { background: url("images/m_graphics.png") -86px -215px; }
 img.item-image.zeroSuit { background: url("images/m_graphics.png") -129px -215px; }
 img.item-image.zeroSuitA { background: url("images/m_graphics.png") -172px -215px; }
 img.item-image.samus { background: url("images/m_graphics.png") -215px -215px; }
@@ -135,9 +145,10 @@ img.item-image.screwAttack { background: url("images/m_graphics.png") -215px -30
 img.item-image.screwAttackA { background: url("images/m_graphics.png") -258px -301px; }
 img.item-image.powerGrip { background: url("images/m_graphics.png") -301px -301px; }
 img.item-image.zipline { background: url("images/m_graphics.png") -344px -301px; }
-img.item-image.spaceJumpBoots { background: url("images/m_graphics.png") -387px -301px; }
+img.item-image.spaceJumpBoots,
+img.item-image.spinBoost { background: url("images/m_graphics.png") -387px -301px; }
 img.item-image.scanPulse { background: url("images/m_graphics.png") -430px -301px; }
-img.item-image.lightningShield { background: url("images/m_graphics.png") -473px -301px; }
+img.item-image.lightningArmor { background: url("images/m_graphics.png") -473px -301px; }
 img.item-image.beamBurst { background: url("images/m_graphics.png") -516px -301px; }
 img.item-image.phaseDrift { background: url("images/m_graphics.png") -559px -301px; }
 img.item-image.aeionExpansion { background: url("images/m_graphics.png") -602px -301px; }
@@ -265,17 +276,17 @@ img.item-image.slowBeam { background: url("images/m_graphics.png") -387px -602px
 img.item-image.scanBolt { background: url("images/m_graphics.png") -430px -602px; }
 img.item-image.progressiveBeam { background: url("images/m_graphics.png") -473px -602px; }
 img.item-image.progressiveBeamA { background: url("images/m_graphics.png") -516px -602px; }
-img.item-image.primeGrapple { background: url("images/m_graphics.png") -559px -602px; }
+img.item-image.grappleBeamA { background: url("images/m_graphics.png") -559px -602px; }
 img.item-image.progressiveMissile { background: url("images/m_graphics.png") -602px -602px; }
 img.item-image.crossBombs { background: url("images/m_graphics.png") -645px -602px; }
 img.item-image.mapMarker { background: url("images/m_graphics.png") -688px -602px; }
 img.item-image.modChipB { background: url("images/m_graphics.png") -731px -602px; }
-img.item-image.spinBoost { background: url("images/m_graphics.png") 0 -645px; }
-img.item-image.chargeBeamE { background: url("images/m_graphics.png") -43px -645px; }
+img.item-image.spinBoostA { background: url("images/m_graphics.png") 0 -645px; }
+img.item-image.chargeBeam { background: url("images/m_graphics.png") -43px -645px; }
 img.item-image.infiniteBeamAmmo { background: url("images/m_graphics.png") -86px -645px; }
 img.item-image.infiniteMissiles { background: url("images/m_graphics.png") -129px -645px; }
 img.item-image.superMissileC { background: url("images/m_graphics.png") -172px -645px; }
-img.item-image.spiderBallA { background: url("images/m_graphics.png") -215px -645px; }
+img.item-image.spiderBall { background: url("images/m_graphics.png") -215px -645px; }
 img.item-image.bountyCoin { background: url("images/m_graphics.png") -258px -645px; }
 img.item-image.bountyCoin1 { background: url("images/m_graphics.png") -301px -645px; }
 img.item-image.bountyCoin5 { background: url("images/m_graphics.png") -344px -645px; }
@@ -296,10 +307,11 @@ img.item-image.pulseRadar { background: url("images/m_graphics.png") -172px -688
 img.item-image.aquadiaKey { background: url("images/m_graphics.png") -215px -688px; }
 img.item-image.steelarisGear { background: url("images/m_graphics.png") -258px -688px; }
 img.item-image.longBeamA { background: url("images/m_graphics.png") -301px -688px; }
-img.item-image.iceBeamD { background: url("images/m_graphics.png") -344px -688px; }
-img.item-image.plasmaBeamD { background: url("images/m_graphics.png") -387px -688px; }
+img.item-image.iceBeam { background: url("images/m_graphics.png") -344px -688px; }
+img.item-image.plasmaBeam { background: url("images/m_graphics.png") -387px -688px; }
 img.item-image.waveBeamC { background: url("images/m_graphics.png") -430px -688px; }
-img.item-image.fireBeam { background: url("images/m_graphics.png") -473px -688px; }
+img.item-image.fireBeam,
+img.item-image.flameShotA { background: url("images/m_graphics.png") -473px -688px; }
 img.item-image.waveBeamD { background: url("images/m_graphics.png") -516px -688px; }
 img.item-image.plasmaBeamE { background: url("images/m_graphics.png") -559px -688px; }
 img.item-image.iceBeamE { background: url("images/m_graphics.png") -602px -688px; }

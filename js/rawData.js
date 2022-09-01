@@ -3723,7 +3723,7 @@ const rawData = {
         nodeType: "upgrade",
         value: 1,
       },{
-        id: "barrier",
+        id: "barrierA",
         sprite: "barrier",
         name: "Varia Suit",
         start: 0,

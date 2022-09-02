@@ -213,8 +213,12 @@ let keyslots = {};
     if (main.scrambleSync && !e.dontDoAgain) {
       let itemName = e.target.parentElement.id.split('-')[1];
       const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "]");
+      const spriteElement = e.target.parentElement.classList.contains("usesSprite");
+      const isItemElement = e.target.parentElement.classList.contains("item");
+      const isExpansionElement = e.target.parentElement.classList.contains("expansion");
       if (allMatchingItems) {
         for (let i = 0; i < allMatchingItems.length; i++) {
+          itemName = spriteElement ? (isItemElement ? "item" : "expansion") : itemName;
           let findChild = [...allMatchingItems[i].childNodes].filter(el => el.className.split(" ").some(n => n.includes(itemName)))[0];
           let eventProp = {
             preventDefault: () => {},

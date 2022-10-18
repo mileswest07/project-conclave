@@ -1121,6 +1121,7 @@ const rawData = {
       },{
         id: "powerBeam",
         name: "Power Beam",
+        sprite: "power",
         start: 1,
         max: 1,
         segments: [],
@@ -1141,6 +1142,7 @@ const rawData = {
       },{
         id: "waveBeamA",
         name: "Wave Beam",
+        sprite: "wave",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1152,6 +1154,7 @@ const rawData = {
       },{
         id: "iceBeamA",
         name: "Ice Beam",
+        sprite: "ice",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1163,6 +1166,7 @@ const rawData = {
       },{
         id: "plasmaBeamB",
         name: "Plasma Beam",
+        sprite: "plasma",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1284,6 +1288,7 @@ const rawData = {
       },{
         id: "combatVisor",
         name: "Combat Visor",
+        sprite: "combat",
         start: 1,
         max: 1,
         segments: [],
@@ -1293,6 +1298,7 @@ const rawData = {
       },{
         id: "scanVisor",
         name: "Scan Visor",
+        sprite: "scan",
         start: 1,
         max: 1,
         segments: [],
@@ -1302,6 +1308,7 @@ const rawData = {
       },{
         id: "thermalVisor",
         name: "Thermal Visor",
+        sprite: "thermal",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1313,6 +1320,7 @@ const rawData = {
       },{
         id: "xRayVisor",
         name: "X-Ray Visor",
+        sprite: "xray",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1551,6 +1559,7 @@ const rawData = {
       {
         id: "combatVisorA",
         name: "Combat Visor",
+        sprite: "combat",
         start: 1,
         max: 1,
         segments: [],
@@ -1571,6 +1580,7 @@ const rawData = {
       },{
         id: "powerBeamA",
         name: "Power Beam",
+        sprite: "power",
         start: 1,
         max: 1,
         segments: [],
@@ -1635,6 +1645,7 @@ const rawData = {
       },{
         id: "scanVisorA",
         name: "Scan Visor",
+        sprite: "scan",
         start: 1,
         max: 1,
         segments: [],
@@ -1655,6 +1666,7 @@ const rawData = {
       },{
         id: "darkBeam",
         name: "Dark Beam",
+        sprite: "darkbeam",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1714,6 +1726,7 @@ const rawData = {
       },{
         id: "darkVisor",
         name: "Dark Visor",
+        sprite: "darkvisor",
         start: 0,
         max: 1,
         over: "F_Boss",
@@ -1736,6 +1749,7 @@ const rawData = {
       },{
         id: "lightBeam",
         name: "Light Beam",
+        sprite: "light",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1802,6 +1816,7 @@ const rawData = {
       },{
         id: "echoVisor",
         name: "Echo Visor",
+        sprite: "echo",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -1824,6 +1839,7 @@ const rawData = {
       },{
         id: "annihilatorBeam",
         name: "Annihilator Beam",
+        sprite: "annihilator",
         start: 0,
         max: 1,
         over: "F_Boss",
@@ -3561,6 +3577,7 @@ const rawData = {
       {
         id: "repairCapsule",
         name: "Repair Capsule",
+        sprite: "repair",
         start: 0,
         max: 1,
         segments: [],
@@ -3570,6 +3587,7 @@ const rawData = {
       },{
         id: "shieldGenerator",
         name: "Shield Generator",
+        sprite: "shield",
         start: 0,
         max: 1,
         segments: [],
@@ -3587,6 +3605,7 @@ const rawData = {
       },{
         id: "missileB",
         name: "Missile",
+        sprite: "missile",
         start: 0,
         max: 1,
         segments: [],
@@ -3596,6 +3615,7 @@ const rawData = {
       },{
         id: "superMissileB",
         name: "Super Missile",
+        sprite: "super",
         start: 0,
         max: 1,
         segments: [],
@@ -3605,6 +3625,7 @@ const rawData = {
       },{
         id: "flameShot",
         name: "Flame Shot",
+        sprite: "flame",
         start: 0,
         max: 1,
         segments: [],
@@ -3618,6 +3639,7 @@ const rawData = {
       },{
         id: "iceMissileB",
         name: "Freeze Shot",
+        sprite: "freeze",
         start: 0,
         max: 1,
         segments: [],
@@ -3627,6 +3649,7 @@ const rawData = {
       },{
         id: "shockShot",
         name: "Shock Shot",
+        sprite: "shock",
         start: 0,
         max: 1,
         segments: [],
@@ -3636,6 +3659,7 @@ const rawData = {
       },{
         id: "proximityBomb",
         name: "Proximity Bomb",
+        sprite: "mine",
         start: 0,
         max: 1,
         segments: [],
@@ -3649,6 +3673,7 @@ const rawData = {
       },{
         id: "slowBeam",
         name: "Slow Beam",
+        sprite: "slow",
         start: 0,
         max: 1,
         segments: [],
@@ -3658,6 +3683,7 @@ const rawData = {
       },{
         id: "decoy",
         name: "Decoy",
+        sprite: "decoy",
         start: 0,
         max: 1,
         segments: [],
@@ -3667,6 +3693,7 @@ const rawData = {
       },{
         id: "scanBolt",
         name: "Scan Bolt",
+        sprite: "scan",
         start: 0,
         max: 1,
         segments: [],

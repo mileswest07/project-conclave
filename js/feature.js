@@ -546,6 +546,9 @@ let keyslots = {};
     if (wrapper.classList) {
       if (elementId === "-" && !isSegment) {
         wrapper.classList.add("blank");
+        if (main.useSprites) {
+          wrapper.classList.add("trimmed");
+        }
       } else {
         wrapper.classList.add(classLabel);
       }
@@ -558,6 +561,9 @@ let keyslots = {};
     } else {
       if (elementId === "-" && !isSegment) {
         wrapper.className += " blank";
+        if (main.useSprites) {
+          wrapper.className += " trimmed";
+        }
       } else {
         wrapper.className = classLabel;
       }
@@ -902,7 +908,7 @@ let keyslots = {};
     let itemWidth = 42;
     if (main.useSprites && (feature.currentGame == "msr")) {
       itemWidth = 50;
-    } else if (main.useSprites && (feature.currentGame == "md")) {
+    } else if (main.useSprites && (feature.currentGame == "md" || feature.currentGame == "mpff" || feature.currentGame == "mp" || feature.currentGame == "mp2e")) {
       itemWidth = 64;
     } else if (main.useSprites && (feature.currentGame == "mom")) {
       itemWidth = 60;

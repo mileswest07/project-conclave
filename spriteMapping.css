@@ -411,6 +411,38 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-mzm .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
 .game-mzm .usesSprite img.item-image.bosses { background: url("images/mzm_spritesheet.png") -210px -126px; }
 
+/********* METROID PRIME (GCN) *********/
+.game-mp .usesSprite { width: 64px; height: 64px; }
+.game-mp .usesSprite.expansion { height: 84px; }
+.game-mp .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
+.game-mp .trimmed { width: 64px; height: 64px; }
+.game-mp .trimmed .item-image { margin: 11px; }
+.game-mp .usesSprite img.item-image.power { background: url("images/mp_spritesheet.png") 0 0; }
+.game-mp .usesSprite img.item-image.wave { background: url("images/mp_spritesheet.png") -64px 0; }
+.game-mp .usesSprite img.item-image.ice { background: url("images/mp_spritesheet.png") -128px 0; }
+.game-mp .usesSprite img.item-image.plasma { background: url("images/mp_spritesheet.png") -192px 0; }
+.game-mp .usesSprite img.item-image.combat { background: url("images/mp_spritesheet.png") 0 -64px; }
+.game-mp .usesSprite img.item-image.scan { background: url("images/mp_spritesheet.png") -64px -64px; }
+.game-mp .usesSprite img.item-image.thermal { background: url("images/mp_spritesheet.png") -128px -64px; }
+.game-mp .usesSprite img.item-image.xray { background: url("images/mp_spritesheet.png") -192px -64px; }
+
+/********* METROID PRIME 2 ECHOES (GCN) *********/
+.game-mp2e .usesSprite { width: 64px; height: 64px; }
+.game-mp2e .usesSprite.expansion { height: 84px; }
+.game-mp2e .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
+.game-mp2e .trimmed { width: 64px; height: 64px; }
+.game-mp2e .trimmed .item-image { margin: 11px; }
+.game-mp2e .usesSprite img.item-image.power { background: url("images/mp_spritesheet.png") 0 -128px; }
+.game-mp2e .usesSprite img.item-image.darkbeam { background: url("images/mp_spritesheet.png") -64px -128px; }
+.game-mp2e .usesSprite img.item-image.light { background: url("images/mp_spritesheet.png") -128px -128px; }
+.game-mp2e .usesSprite img.item-image.annihilator { background: url("images/mp_spritesheet.png") -192px -128px; }
+.game-mp2e .usesSprite img.item-image.unused { background: url("images/mp_spritesheet.png") 0 -192px; } /* UNUSED */
+.game-mp2e .usesSprite img.item-image.unused { background: url("images/mp_spritesheet.png") -64px -192px; } /* UNUSED */
+.game-mp2e .usesSprite img.item-image.combat { background: url("images/mp_spritesheet.png") 0 -64px; }
+.game-mp2e .usesSprite img.item-image.scan { background: url("images/mp_spritesheet.png") -64px -64px; }
+.game-mp2e .usesSprite img.item-image.darkvisor { background: url("images/mp_spritesheet.png") -128px -192px; }
+.game-mp2e .usesSprite img.item-image.echo { background: url("images/mp_spritesheet.png") -192px -192px; }
+
 /********* P2D - PRIME 2D (PC) *********/
 .game-p2d .usesSprite img.item-image.missile { background: url("images/p2d_spritesheet.png") 0 0; }
 .game-p2d .usesSprite img.item-image.artifact { background: url("images/p2d_spritesheet.png") -42px 0; }
@@ -463,6 +495,25 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-ph .usesSprite img.item-image.important { background: url("images/mph_spritesheet.png") -168px -210px; }
 .game-pb .usesSprite img.item-image.artifact { background: url("images/mph_spritesheet.png") -210px -210px; }
 
+/********* METROID PRIME: FEDERATION FORCE (N3DS) *********/
+.game-mpff .usesSprite { width: 64px; height: 64px; }
+.game-mpff .usesSprite.expansion { height: 84px; }
+.game-mpff .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
+.game-mpff .trimmed { width: 64px; height: 64px; }
+.game-mpff .trimmed .item-image { margin: 11px; }
+.game-mpff .usesSprite img.item-image.repair { background: url("images/mpff_spritesheet.png") 0 0; }
+.game-mpff .usesSprite img.item-image.shield { background: url("images/mpff_spritesheet.png") -64px 0; }
+.game-mpff .usesSprite img.item-image.missile { background: url("images/mpff_spritesheet.png") -128px 0; }
+.game-mpff .usesSprite img.item-image.super { background: url("images/mpff_spritesheet.png") -192px 0; }
+.game-mpff .usesSprite img.item-image.flame { background: url("images/mpff_spritesheet.png") 0 -64px; }
+.game-mpff .usesSprite img.item-image.freeze { background: url("images/mpff_spritesheet.png") -64px -64px; }
+.game-mpff .usesSprite img.item-image.shock { background: url("images/mpff_spritesheet.png") -128px -64px; }
+.game-mpff .usesSprite img.item-image.mine { background: url("images/mpff_spritesheet.png") -192px -64px; }
+.game-mpff .usesSprite img.item-image.slow { background: url("images/mpff_spritesheet.png") 0 -128px; }
+.game-mpff .usesSprite img.item-image.decoy { background: url("images/mpff_spritesheet.png") -64px -128px; }
+.game-mpff .usesSprite img.item-image.scan { background: url("images/mpff_spritesheet.png") -128px -128px; }
+.game-mpff .usesSprite img.item-image.unused { background: url("images/mpff_spritesheet.png") -192px -128px; } /* UNUSED */
+
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
 .game-m2ros .usesSprite img.item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }
 .game-m2ros .usesSprite img.item-image.spider { background: url("images/m2ros_spritesheet.png") -84px 0; }
@@ -511,6 +562,12 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-am2r .usesSprite img.item-image.gravityB { background: url("images/am2r_spritesheet.png") -126px -168px; }
 .game-am2r .usesSprite img.item-image.fed { background: url("images/am2r_spritesheet.png") -168px -168px; }
 .game-am2r .usesSprite img.item-image.fedA { background: url("images/am2r_spritesheet.png") -210px -168px; }
+.game-am2r .usesSprite img.item-image.trooper { background: url("images/am2r_spritesheet.png") 0 -210px; }
+.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -42px -210px; } /* UNUSED */
+.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -84px -210px; } /* UNUSED */
+.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -126px -210px; } /* UNUSED */
+.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -168px -210px; } /* UNUSED */
+.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -210px -210px; } /* UNUSED */
 
 /********* MSR - METROID: SAMUS RETURNS (3DS) *********/
 .game-msr .usesSprite { width: 50px; height: 50px; }

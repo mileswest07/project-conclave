@@ -756,6 +756,7 @@ const rawData = {
             bg: "887878",
             nodeType: "upgrade",
             value: 1,
+            clearIfScramble: true,
           },{
             id: "gravitySuit",
             sprite: "gravity",
@@ -784,7 +785,6 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
-        clearIfScramble: true,
       },{
         id: "longBeamA",
         locale: {
@@ -837,6 +837,7 @@ const rawData = {
             bg: "887878",
             nodeType: "upgrade",
             value: 1,
+            clearIfScramble: true,
           },{
             id: "plasmaBeam",
             locale: {
@@ -894,7 +895,6 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
-        clearIfScramble: true,
       },{
         id: "powerGrip",
         sprite: "grip",
@@ -925,6 +925,7 @@ const rawData = {
             bg: "887878",
             nodeType: "upgrade",
             value: 1,
+            clearIfScramble: true,
           },{
             id: "spaceJump",
             sprite: "space",
@@ -979,7 +980,6 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
-        clearIfScramble: true,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -1069,11 +1069,17 @@ const rawData = {
             max: 1,
             nodeType: "toggle",
             value: 0,
-          }
+          },
         ],
         bg: "ffffff",
         nodeType: "toggle",
         value: 0,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "barrier",
         name: "Varia Suit",
@@ -1397,6 +1403,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -1968,6 +1975,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Agon Energy Restored",
@@ -1976,6 +1984,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "ad6a40",
@@ -2012,6 +2021,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Torvus Energy Restored",
@@ -2020,6 +2030,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "4b9467",
@@ -2056,6 +2067,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Sanctuary Energy Restored",
@@ -2064,6 +2076,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "5c819e",
@@ -2100,6 +2113,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2114,6 +2128,7 @@ const rawData = {
       {
         id: "combatVisorA",
         name: "Combat Visor",
+        sprite: "combat",
         start: 1,
         max: 1,
         segments: [],
@@ -2134,6 +2149,7 @@ const rawData = {
       },{
         id: "powerBeamA",
         name: "Power Beam",
+        sprite: "power",
         start: 1,
         max: 1,
         segments: [],
@@ -2196,6 +2212,7 @@ const rawData = {
       },{
         id: "scanVisorA",
         name: "Scan Visor",
+        sprite: "scan",
         start: 1,
         max: 1,
         segments: [],
@@ -2216,6 +2233,7 @@ const rawData = {
       },{
         id: "darkBeam",
         name: "Dark Beam",
+        sprite: "darkbeam",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -2280,6 +2298,7 @@ const rawData = {
       },{
         id: "darkVisor",
         name: "Dark Visor",
+        sprite: "darkvisor",
         start: 0,
         max: 1,
         over: "F_Boss",
@@ -2302,6 +2321,7 @@ const rawData = {
       },{
         id: "lightBeam",
         name: "Light Beam",
+        sprite: "light",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -2368,6 +2388,7 @@ const rawData = {
       },{
         id: "echoVisor",
         name: "Echo Visor",
+        sprite: "echo",
         start: 0,
         max: 1,
         over: "Z_Orb",
@@ -2390,6 +2411,7 @@ const rawData = {
       },{
         id: "annihilatorBeam",
         name: "Annihilator Beam",
+        sprite: "annihilator",
         start: 0,
         max: 1,
         over: "F_Boss",
@@ -2554,6 +2576,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Agon Energy Restored",
@@ -2562,6 +2585,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "ad6a40",
@@ -2598,6 +2622,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Torvus Energy Restored",
@@ -2606,6 +2631,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "4b9467",
@@ -2642,6 +2668,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "lightOfAetherA",
             name: "Sanctuary Energy Restored",
@@ -2650,6 +2677,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "5c819e",
@@ -2686,6 +2714,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2835,6 +2864,7 @@ const rawData = {
             bg: "008080", // "00f0c8", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2864,6 +2894,7 @@ const rawData = {
             bg: "008080", // "f09000", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2893,6 +2924,7 @@ const rawData = {
             bg: "008080", // "2090a8", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2922,6 +2954,7 @@ const rawData = {
             bg: "008080", // "2858a0", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -2948,6 +2981,7 @@ const rawData = {
             max: 1,
             bg: "402c00",
             nodeType: "goal",
+            clearIfScramble: true,
           },{
             id: "oubliette",
             name: "Oubliette unlocked",
@@ -2955,6 +2989,7 @@ const rawData = {
             max: 1,
             bg: "402c00",
             nodeType: "goal",
+            clearIfScramble: true,
           }
         ],
         bg: "402c00",
@@ -2996,6 +3031,7 @@ const rawData = {
             bg: "008080", // "b8e008", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -3025,6 +3061,7 @@ const rawData = {
             bg: "008080", // "f00000", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -3054,6 +3091,7 @@ const rawData = {
             bg: "008080", // "0868e0", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -3083,6 +3121,7 @@ const rawData = {
             bg: "008080", // "184898", // "008080"
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
@@ -3469,6 +3508,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },/*{
         id: "norion",
         name: "Norion Complete",
@@ -3515,6 +3555,7 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },
         ],
         value: 0,
@@ -3555,6 +3596,7 @@ const rawData = {
             bg: "887878",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           },{
             id: "phaaze",
             name: "Phaaze accessible",
@@ -3563,11 +3605,22 @@ const rawData = {
             bg: "ffffff",
             nodeType: "goal",
             value: 0,
+            clearIfScramble: true,
           }
         ],
         bg: "008080",
         nodeType: "key",
         value: 1,
+      },{
+        id: "pirateCode",
+        name: "Pirate Code",
+        start: 0,
+        max: 1,
+        segments: [],
+        bg: "887878",
+        nodeType: "goal",
+        value: 0,
+        displayIfScramble: true,
       },
     ]
   }, 
@@ -3709,6 +3762,7 @@ const rawData = {
         bg: "c0c6c0",
         nodeType: "expansion",
         value: 0,
+        clearIfScramble: true,
       },
     ]
   },
@@ -7776,6 +7830,7 @@ const rawData = {
             bg: "ff7e00",
             nodeType: "upgrade",
             value: 0,
+            displayIfScramble: true,
           },/*
         ],
         value: 0,
@@ -8921,6 +8976,7 @@ const rawData = {
             start: 0,
             max: 1,
             value: 0,
+            clearIfScramble: true,
           },
         ],
         value: 0,

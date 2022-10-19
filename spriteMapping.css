@@ -412,11 +412,16 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-mzm .usesSprite img.item-image.bosses { background: url("images/mzm_spritesheet.png") -210px -126px; }
 
 /********* METROID PRIME (GCN) *********/
-.game-mp .usesSprite { width: 64px; height: 64px; }
-.game-mp .usesSprite.expansion { height: 84px; }
-.game-mp .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
-.game-mp .trimmed { width: 64px; height: 64px; }
+.game-mp .usesSprite,
+.game-mp .usesSprite:not(.trimmed) .item-image,
+.game-mp .trimmed:not(.usesSprite) { width: 64px; }
+.game-mp .usesSprite,
+.game-mp .usesSprite:not(.trimmed) .item-image,
+.game-mp .trimmed:not(.usesSprite) { height: 64px; }
+.game-mp .usesSprite.expansion,
+.game-mp .trimmed.expansion { height: 84px; }
 .game-mp .trimmed .item-image { margin: 11px; }
+
 .game-mp .usesSprite img.item-image.power { background: url("images/mp_spritesheet.png") 0 0; }
 .game-mp .usesSprite img.item-image.wave { background: url("images/mp_spritesheet.png") -64px 0; }
 .game-mp .usesSprite img.item-image.ice { background: url("images/mp_spritesheet.png") -128px 0; }
@@ -427,21 +432,41 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-mp .usesSprite img.item-image.xray { background: url("images/mp_spritesheet.png") -192px -64px; }
 
 /********* METROID PRIME 2 ECHOES (GCN) *********/
-.game-mp2e .usesSprite { width: 64px; height: 64px; }
-.game-mp2e .usesSprite.expansion { height: 84px; }
-.game-mp2e .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
-.game-mp2e .trimmed { width: 64px; height: 64px; }
-.game-mp2e .trimmed .item-image { margin: 11px; }
-.game-mp2e .usesSprite img.item-image.power { background: url("images/mp_spritesheet.png") 0 -128px; }
-.game-mp2e .usesSprite img.item-image.darkbeam { background: url("images/mp_spritesheet.png") -64px -128px; }
-.game-mp2e .usesSprite img.item-image.light { background: url("images/mp_spritesheet.png") -128px -128px; }
-.game-mp2e .usesSprite img.item-image.annihilator { background: url("images/mp_spritesheet.png") -192px -128px; }
-.game-mp2e .usesSprite img.item-image.unused { background: url("images/mp_spritesheet.png") 0 -192px; } /* UNUSED */
-.game-mp2e .usesSprite img.item-image.unused { background: url("images/mp_spritesheet.png") -64px -192px; } /* UNUSED */
-.game-mp2e .usesSprite img.item-image.combat { background: url("images/mp_spritesheet.png") 0 -64px; }
-.game-mp2e .usesSprite img.item-image.scan { background: url("images/mp_spritesheet.png") -64px -64px; }
-.game-mp2e .usesSprite img.item-image.darkvisor { background: url("images/mp_spritesheet.png") -128px -192px; }
-.game-mp2e .usesSprite img.item-image.echo { background: url("images/mp_spritesheet.png") -192px -192px; }
+.game-mp2e .usesSprite,
+.game-mp2e .usesSprite:not(.trimmed) .item-image,
+.game-mp2e .trimmed:not(.usesSprite),
+.game-e_rnd .usesSprite,
+.game-e_rnd .usesSprite:not(.trimmed) .item-image,
+.game-e_rnd .trimmed:not(.usesSprite) { width: 64px; }
+.game-mp2e .usesSprite,
+.game-mp2e .usesSprite:not(.trimmed) .item-image,
+.game-mp2e .trimmed:not(.usesSprite),
+.game-e_rnd .usesSprite,
+.game-e_rnd .usesSprite:not(.trimmed) .item-image,
+.game-e_rnd .trimmed:not(.usesSprite) { height: 64px; }
+.game-mp2e .usesSprite.expansion,
+.game-mp2e .trimmed.expansion,
+.game-e_rnd .usesSprite.expansion,
+.game-e_rnd .trimmed.expansion { height: 84px; }
+.game-mp2e .trimmed .item-image,
+.game-e_rnd .trimmed .item-image { margin: 11px; }
+
+.game-mp2e .usesSprite img.item-image.power,
+.game-e_rnd .usesSprite img.item-image.power { background: url("images/mp_spritesheet.png") 0 -128px; }
+.game-mp2e .usesSprite img.item-image.darkbeam,
+.game-e_rnd .usesSprite img.item-image.darkbeam { background: url("images/mp_spritesheet.png") -64px -128px; }
+.game-mp2e .usesSprite img.item-image.light,
+.game-e_rnd .usesSprite img.item-image.light { background: url("images/mp_spritesheet.png") -128px -128px; }
+.game-mp2e .usesSprite img.item-image.annihilator,
+.game-e_rnd .usesSprite img.item-image.annihilator { background: url("images/mp_spritesheet.png") -192px -128px; }
+.game-mp2e .usesSprite img.item-image.combat,
+.game-e_rnd .usesSprite img.item-image.combat { background: url("images/mp_spritesheet.png") 0 -64px; }
+.game-mp2e .usesSprite img.item-image.scan,
+.game-e_rnd .usesSprite img.item-image.scan { background: url("images/mp_spritesheet.png") -64px -64px; }
+.game-mp2e .usesSprite img.item-image.darkvisor,
+.game-e_rnd .usesSprite img.item-image.darkvisor { background: url("images/mp_spritesheet.png") -128px -192px; }
+.game-mp2e .usesSprite img.item-image.echo,
+.game-e_rnd .usesSprite img.item-image.echo { background: url("images/mp_spritesheet.png") -192px -192px; }
 
 /********* P2D - PRIME 2D (PC) *********/
 .game-p2d .usesSprite img.item-image.missile { background: url("images/p2d_spritesheet.png") 0 0; }
@@ -496,11 +521,16 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-pb .usesSprite img.item-image.artifact { background: url("images/mph_spritesheet.png") -210px -210px; }
 
 /********* METROID PRIME: FEDERATION FORCE (N3DS) *********/
-.game-mpff .usesSprite { width: 64px; height: 64px; }
-.game-mpff .usesSprite.expansion { height: 84px; }
-.game-mpff .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
-.game-mpff .trimmed { width: 64px; height: 64px; }
+.game-mpff .usesSprite,
+.game-mpff .usesSprite:not(.trimmed) .item-image,
+.game-mpff .trimmed:not(.usesSprite) { width: 64px; }
+.game-mpff .usesSprite,
+.game-mpff .usesSprite:not(.trimmed) .item-image,
+.game-mpff .trimmed:not(.usesSprite) { height: 64px; }
+.game-mpff .usesSprite.expansion,
+.game-mpff .trimmed.expansion { height: 84px; }
 .game-mpff .trimmed .item-image { margin: 11px; }
+
 .game-mpff .usesSprite img.item-image.repair { background: url("images/mpff_spritesheet.png") 0 0; }
 .game-mpff .usesSprite img.item-image.shield { background: url("images/mpff_spritesheet.png") -64px 0; }
 .game-mpff .usesSprite img.item-image.missile { background: url("images/mpff_spritesheet.png") -128px 0; }
@@ -570,11 +600,16 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -210px -210px; } /* UNUSED */
 
 /********* MSR - METROID: SAMUS RETURNS (3DS) *********/
-.game-msr .usesSprite { width: 50px; height: 50px; }
-.game-msr .usesSprite.expansion { height: 70px; }
-.game-msr .usesSprite:not(.trimmed) .item-image { width: 50px; height: 50px; }
-.game-msr .trimmed { width: 50px; height: 50px; }
+.game-msr .usesSprite,
+.game-msr .usesSprite:not(.trimmed) .item-image,
+.game-msr .trimmed:not(.usesSprite) { width: 50px; }
+.game-msr .usesSprite,
+.game-msr .usesSprite:not(.trimmed) .item-image,
+.game-msr .trimmed:not(.usesSprite) { height: 50px; }
+.game-msr .usesSprite.expansion,
+.game-msr .trimmed.expansion { height: 70px; }
 .game-msr .trimmed .item-image { margin: 3px; }
+
 .game-msr .usesSprite img.item-image.morph { background: url("images/msr_spritesheet.png") 0 0; }
 .game-msr .usesSprite img.item-image.bombs { background: url("images/msr_spritesheet.png") -50px 0; }
 .game-msr .usesSprite img.item-image.spider { background: url("images/msr_spritesheet.png") -100px 0; }
@@ -666,11 +701,16 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-sm .usesSprite img.item-image.animals { background: url("images/mf_spritesheet.png") -43px -43px; }
 
 /********* METROID: OTHER M (Wii) *********/
-.game-mom .usesSprite { width: 60px; height: 60px; }
-.game-mom .usesSprite:not(.trimmed) .item-image { width: 60px; height: 60px; }
-.game-mom .usesSprite.expansion { height: 80px; }
-.game-mom .trimmed { width: 60px; height: 60px; }
+.game-mom .usesSprite,
+.game-mom .usesSprite:not(.trimmed) .item-image,
+.game-mom .trimmed:not(.usesSprite) { width: 60px; }
+.game-mom .usesSprite,
+.game-mom .usesSprite:not(.trimmed) .item-image,
+.game-mom .trimmed:not(.usesSprite) { height: 60px; }
+.game-mom .usesSprite.expansion,
+.game-mom .trimmed.expansion { height: 80px; }
 .game-mom .trimmed .item-image { margin: 9px; }
+
 .game-mom .usesSprite img.item-image.missile { background: url("images/mom_spritesheet.png") 0 0; }
 .game-mom .usesSprite img.item-image.bomb { background: url("images/mom_spritesheet.png") -60px 0; }
 .game-mom .usesSprite img.item-image.grapple { background: url("images/mom_spritesheet.png") -120px 0; }
@@ -721,11 +761,16 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-mf .usesSprite img.item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
 
 /********* M5 - METROID DREAD (NS) *********/
-.game-md .usesSprite { width: 64px; height: 64px; }
-.game-md .usesSprite.expansion { height: 84px; }
-.game-md .usesSprite:not(.trimmed) .item-image { width: 64px; height: 64px; }
-.game-md .trimmed { width: 64px; height: 64px; }
+.game-md .usesSprite,
+.game-md .usesSprite:not(.trimmed) .item-image,
+.game-md .trimmed:not(.usesSprite) { width: 64px; }
+.game-md .usesSprite,
+.game-md .usesSprite:not(.trimmed) .item-image,
+.game-md .trimmed:not(.usesSprite) { height: 64px; }
+.game-md .usesSprite.expansion,
+.game-md .trimmed.expansion { height: 84px; }
 .game-md .trimmed .item-image { margin: 11px; }
+
 .game-md .usesSprite img.item-image.pbombs { background: url("images/md_spritesheet.png") 0 0; }
 .game-md .usesSprite img.item-image.bombs { background: url("images/md_spritesheet.png") -64px 0; }
 .game-md .usesSprite img.item-image.missile { background: url("images/md_spritesheet.png") -128px 0; }

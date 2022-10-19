@@ -218,7 +218,7 @@ let keyslots = {};
       const isExpansionElement = e.target.parentElement.classList.contains("expansion");
       if (allMatchingItems) {
         for (let i = 0; i < allMatchingItems.length; i++) {
-          itemName = spriteElement ? (isItemElement ? "item" : "expansion") : itemName;
+          itemName = isItemElement ? "item" : "expansion";
           let findChild = [...allMatchingItems[i].childNodes].filter(el => el.className.split(" ").some(n => n.includes(itemName)))[0];
           let eventProp = {
             preventDefault: () => {},
@@ -234,7 +234,7 @@ let keyslots = {};
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
-          if (!main.isScramble && e.target.parentElement.nextSibling) {
+          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.classList.contains("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id && e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -256,7 +256,7 @@ let keyslots = {};
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
-          if (!main.isScramble && e.target.parentElement.nextSibling) {
+          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.className.has("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -282,7 +282,7 @@ let keyslots = {};
         if (e.target.classList.contains("deselected")) {
           return;
         }
-        if (!main.isScramble && e.target.parentElement.previousSibling) {
+        if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.classList.contains("hide-segment"))) && e.target.parentElement.previousSibling) {
           if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
             if (
               parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -308,7 +308,7 @@ let keyslots = {};
         }
       } else {
         if (e.target.className.has("deselected")) {
-          if (!main.isScramble && e.target.parentElement.previousSibling) {
+          if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.className.has("hide-segment"))) && e.target.parentElement.previousSibling) {
             if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -500,6 +500,10 @@ let keyslots = {};
   }
   
   function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
+    if (!main.isScramble && element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) {
+      return;
+    }
+    
     if (element.hasOwnProperty("clearIfScramble") && element.clearIfScramble && main.isScramble) {
       return;
     }
@@ -543,8 +547,9 @@ let keyslots = {};
     }
     
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
+    const scrambleCondition = (!main.isScramble || (main.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
     if (wrapper.classList) {
-      if (elementId === "-" && !isSegment) {
+      if (elementId === "-" && (!isSegment || main.isScramble)) {
         wrapper.classList.add("blank");
         if (main.useSprites) {
           wrapper.classList.add("trimmed");
@@ -552,14 +557,14 @@ let keyslots = {};
       } else {
         wrapper.classList.add(classLabel);
       }
-      if (isSegmentHidden && (!main.isScramble || (main.isScramble && classLabel === "expansion") || (main.isScramble && isToggleAnyway) || (main.isScramble && isKeyOrGoal))) {
+      if (isSegmentHidden && scrambleCondition) {
         wrapper.classList.add("hide-segment");
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
         wrapper.classList.add("usesSprite");
       }
     } else {
-      if (elementId === "-" && !isSegment) {
+      if (elementId === "-" && (!isSegment || main.isScramble)) {
         wrapper.className += " blank";
         if (main.useSprites) {
           wrapper.className += " trimmed";
@@ -567,7 +572,7 @@ let keyslots = {};
       } else {
         wrapper.className = classLabel;
       }
-      if (isSegmentHidden && (!main.isScramble || (main.isScramble && classLabel === "expansion") || (main.isScramble && isToggleAnyway) || (main.isScramble && isKeyOrGoal))) {
+      if (isSegmentHidden && scrambleCondition) {
         wrapper.className += " hide-segment";
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
@@ -592,7 +597,7 @@ let keyslots = {};
       }
     }
     
-    if (!(elementId === "-" && !isSegment)) {
+    if (!(elementId === "-" && (!isSegment || main.isScramble))) {
       if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
@@ -675,7 +680,7 @@ let keyslots = {};
       wrapper.appendChild(overlayImage);
     }
     
-    if (isSegment) {
+    if (isSegment && scrambleCondition) {
       const currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");
@@ -906,11 +911,11 @@ let keyslots = {};
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     let itemWidth = 42;
-    if (main.useSprites && (feature.currentGame == "msr")) {
+    if (main.useSprites && ["msr"].includes(feature.currentGame)) {
       itemWidth = 50;
-    } else if (main.useSprites && (feature.currentGame == "md" || feature.currentGame == "mpff" || feature.currentGame == "mp" || feature.currentGame == "mp2e")) {
+    } else if (main.useSprites && ["md", "mpff", "mp", "mp2e", "e_rnd"].includes(feature.currentGame)) {
       itemWidth = 64;
-    } else if (main.useSprites && (feature.currentGame == "mom")) {
+    } else if (main.useSprites && ["mom"].includes(feature.currentGame)) {
       itemWidth = 60;
     }
     destination.style.width = "" + ((parseInt(feature.workingData.width) * itemWidth) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";

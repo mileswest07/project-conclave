@@ -4,8 +4,11 @@
 
 body {
   margin: 0;
-  overflow: hidden;
   padding: 10px;
+}
+
+.game-mode {
+  overflow: hidden;
 }
 
 .slider-switch {
@@ -52,7 +55,8 @@ body {
   background-color: #f80000;
 }
 
-.sliderResponse.hidden {
+.sliderResponse.hidden,
+.instructionPrompt.hidden {
   display: none;
 } 
 
@@ -62,6 +66,19 @@ body {
 .hide-section,
 .hide-segment {
   display: none !important;
+}
+
+.scramble-selection-container {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px;
+}
+
+.scramble-selection-container > div {
+  padding: 10px;
+}
+
+.scramble-selection-container .selection-label {
+  font-size: 0.83em;
 }
 
 .flex-field {

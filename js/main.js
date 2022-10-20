@@ -90,6 +90,26 @@ let main = {
     if (document.forms["startupMenu"]["useKeyslots"].checked) {
       searchString += "&k=true";
     }
+    if (document.forms["startupMenu"]["scrambleSync"].checked) {
+      searchString += "&sync=true";
+    }
+    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
+      let formToFind = document.forms["startupMenu"];
+      let selectedGames = [];
+      
+      for (let i = 0; i < masterFilter.length; i++) {
+        let formItem = formToFind[masterFilter[i]];
+        if (formItem.checked) {
+          selectedGames.push(formItem.value);
+        }
+      }
+      if (selectedGames.length) {
+        searchString += "&games=" + selectedGames.join(',');
+      } else {
+        searchString += "&games=" + masterFilter.join(',');
+      }
+    }
+    
     if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
       searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
     }
@@ -97,7 +117,7 @@ let main = {
   }
   
   // scrambleStart
-  function scrambleStart(filterOutList) {
+  function scrambleStart(gamesList) {
     main.showTotals = false;
     main.showTimer = false;
     main.useLocale = null;
@@ -108,13 +128,8 @@ let main = {
       document.body.className += " game-scramble";
     }
     main.isScramble = true;
-    main.scrambleSync = false;
     
     const targetingData = document.forms["startupMenu"]["selectedGame"].options;
-    
-    let masterGames = {...games};
-    masterGames.fOut = filterOut;
-    masterGames = masterGames.fOut(filterOutList);
     
     let targetSection = document.getElementById("itemField");
     if (targetSection.classList) {
@@ -123,10 +138,10 @@ let main = {
       targetSection.className = "parent-flex";
     }
     
-    for (const [key, value] of Object.entries(masterGames)) {
-      if (typeof value === "function") {
-        continue;
-      }
+    for (let i = 0; i < gamesList.length; i++) {
+      const key = gamesList[i];
+      const value = games[key];
+      
       feature.currentGame = value;
       const itemFieldName = "itemField" + key;
       
@@ -187,6 +202,12 @@ let main = {
       }
       let incomingGame = queryDict.game;
       
+      if (document.body.classList) {
+        document.body.classList.add("game-mode");
+      } else {
+        document.body.className += "game-mode";
+      }
+      
       let willUseDarkMode = !!queryDict.d;
       willUseDarkMode = !!JSON.parse(willUseDarkMode);
       if (willUseDarkMode) {
@@ -201,9 +222,11 @@ let main = {
       main.useSprites = willUseSprites;
       
       if (incomingGame === "scramble") {
-        //let gamesList = queryDict.games.split(',');
-        //main.scrambleStart(gamesList);
-        main.scrambleStart([...noRandomizersFilter, ...noZeldaFilter]);
+        let gamesList = queryDict.games.split(',');
+        let willSyncClicks = !!queryDict.sync;
+        willSyncClicks = !!JSON.parse(willSyncClicks);
+        main.scrambleSync = willSyncClicks;
+        main.scrambleStart(gamesList);
         return;
       }
       
@@ -302,8 +325,108 @@ let main = {
     }
   }
   
+  function handleDropdownSelection(e) {
+    let keyslotTarget = document.getElementById("ifKeyslotsExist");
+    let scrambleSyncTarget = document.getElementById("ifScrambleSelected");
+    let scrambleSelectionTarget = document.getElementById("scrambleSelectionGroup");
+    
+    if (["m", "ros"].includes(e.target.value)) {
+      if (keyslotTarget.classList) {
+        keyslotTarget.classList.remove("hidden");
+      } else {
+        keyslotTarget.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (keyslotTarget.classList) {
+        keyslotTarget.classList.add("hidden");
+      } else {
+        keyslotTarget.className += " hidden";
+      }
+    }
+    
+    if (e.target.value === "scramble") {
+      if (scrambleSyncTarget.classList) {
+        scrambleSyncTarget.classList.remove("hidden");
+        scrambleSelectionTarget.classList.remove("hidden");
+      } else {
+        scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
+        scrambleSelectionTarget.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (scrambleSyncTarget.classList) {
+        scrambleSyncTarget.classList.add("hidden");
+        scrambleSelectionTarget.classList.add("hidden");
+      } else {
+        scrambleSyncTarget.className += " hidden";
+        scrambleSelectionTarget.className += " hidden";
+      }
+    }
+  }
+  
+  function handlePresetSelection(e) {
+    if (e.type === "change") {
+      let newValue = e.target.value;
+      let filterOutList = [];
+    
+      let selectedGames = {...games};
+      selectedGames.fOut = filterOut;
+      
+      switch (newValue) {
+        case 'primary':
+          filterOutList = [...noRandomizersFilter, ...noZeldaFilter];
+          break;
+        case 'no_fangames':
+          filterOutList = [...noFangamesFilter];
+          break;
+        case 'no_randos':
+          filterOutList = [...noRandomizersFilter];
+          break;
+        case 'no_zelda':
+          filterOutList = [...noZeldaFilter];
+          break;
+        case 'no_samus':
+          filterOutList = [...noSamusFilter];
+          break;
+        case 'no_prime':
+          filterOutList = [...noPrimeFilter];
+          break;
+        case 'no_main':
+          filterOutList = [...noMainlineFilter];
+          break;
+        case 'none':
+          filterOutList = [...masterFilter];
+          break;
+        case 'all':
+          filterOutList = [];
+          break;
+        default:
+          break;
+      }
+      
+      selectedGames = selectedGames.fOut(filterOutList);
+      
+      let cleanedSelection = [];
+    
+      for (const [key, value] of Object.entries(selectedGames)) {
+        if (typeof value === "function") {
+          continue;
+        }
+        cleanedSelection.push(key);
+      }
+      
+      let formToFind = document.forms["startupMenu"];
+      
+      for (let i = 0; i < masterFilter.length; i++) {
+        let formItem = formToFind[masterFilter[i]];
+        formItem.checked = cleanedSelection.includes(masterFilter[i]);
+      }
+    }
+  }
+  
   main.handleTimerSelection = handleTimerSelection;
   main.handleSpriteSelection = handleSpriteSelection;
+  main.handleDropdownSelection = handleDropdownSelection;
+  main.handlePresetSelection = handlePresetSelection;
   main.useSprites = false;
   main.showTotals = false;
   main.showTimer = false;

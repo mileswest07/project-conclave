@@ -339,7 +339,7 @@ let keyslots = {};
         }
       }
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
       } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
@@ -415,7 +415,7 @@ let keyslots = {};
       setKeyslot(e.target.parentElement.id);
       previous--;
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
       } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));

@@ -118,9 +118,9 @@ let main = {
   
   // scrambleStart
   function scrambleStart(gamesList) {
-    main.showTotals = false;
-    main.showTimer = false;
-    main.useLocale = null;
+    main.showTotals = false; // CURRENTLY UNDER CONSTRUCTION
+    main.showTimer = false; // CURRENTLY UNDER CONSTRUCTION
+    main.useKeyslots = false;
     
     if (document.body.classList) {
       document.body.classList.add("game-scramble");
@@ -174,6 +174,13 @@ let main = {
       
       feature.workingData = rawData[feature.currentGame];
       feature.generate(itemFieldName);
+      
+      // CURRENTLY UNDER CONSTRUCTION
+      /* if (main.showTotals) {
+        let targetHeader = targetSection.getElementsByTagName("h4");
+        targetHeader = targetHeader[targetHeader.length - 1];
+        feature.renderPercentage(targetHeader);
+      } */
     }
     
     let target = document.getElementById("itemField");
@@ -184,7 +191,7 @@ let main = {
     }
     let menuPointer = document.getElementById("selection");
     menuPointer.remove();
-    feature.currentGame = "am2r"; // to make Extreme Labs work
+    feature.currentGame = "scramble"; // to make Extreme Labs and Dash Spell work
   }
   
   function start() {
@@ -221,15 +228,6 @@ let main = {
       willUseSprites = !!JSON.parse(willUseSprites);
       main.useSprites = willUseSprites;
       
-      if (incomingGame === "scramble") {
-        let gamesList = queryDict.games.split(',');
-        let willSyncClicks = !!queryDict.sync;
-        willSyncClicks = !!JSON.parse(willSyncClicks);
-        main.scrambleSync = willSyncClicks;
-        main.scrambleStart(gamesList);
-        return;
-      }
-      
       let willShowTotals = !!queryDict.pt;
       willShowTotals = !!JSON.parse(willShowTotals);
       main.showTotals = willShowTotals;
@@ -244,6 +242,15 @@ let main = {
       
       let selectedLocale = queryDict.l || '';
       main.useLocale = selectedLocale.length ? selectedLocale : null;
+      
+      if (incomingGame === "scramble") {
+        let gamesList = queryDict.games.split(',');
+        let willSyncClicks = !!queryDict.sync;
+        willSyncClicks = !!JSON.parse(willSyncClicks);
+        main.scrambleSync = willSyncClicks;
+        main.scrambleStart(gamesList);
+        return;
+      }
       
       if (rawData.hasOwnProperty(incomingGame)) {
         let game = null;
@@ -325,9 +332,28 @@ let main = {
     }
   }
   
+  function handleSyncSelection(e) {
+    let targetA = document.getElementById("isSyncingItems");
+    if (e.target.checked) {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.remove("hidden");
+      } else {
+        targetA.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.add("hidden");
+      } else {
+        targetA.className += " hidden";
+      }
+    }
+  }
+  
   function handleDropdownSelection(e) {
     let keyslotTarget = document.getElementById("ifKeyslotsExist");
     let scrambleSyncTarget = document.getElementById("ifScrambleSelected");
+    let showTotalsPrompt = document.getElementById("showTotalsPrompt");
+    let showTimerTarget = document.getElementById("showTimerPrompt");
     let scrambleSelectionTarget = document.getElementById("scrambleSelectionGroup");
     
     if (["m", "ros"].includes(e.target.value)) {
@@ -348,17 +374,25 @@ let main = {
       if (scrambleSyncTarget.classList) {
         scrambleSyncTarget.classList.remove("hidden");
         scrambleSelectionTarget.classList.remove("hidden");
+        showTotalsPrompt.classList.add("hidden");
+        showTimerTarget.classList.add("hidden");
       } else {
         scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
         scrambleSelectionTarget.className += target.className.replace(/\bhidden\b/g);
+        showTotalsPrompt.className += " hidden";
+        showTimerTarget.className += " hidden";
       }
     } else {
       if (scrambleSyncTarget.classList) {
         scrambleSyncTarget.classList.add("hidden");
         scrambleSelectionTarget.classList.add("hidden");
+        showTotalsPrompt.classList.remove("hidden");
+        showTimerTarget.classList.remove("hidden");
       } else {
         scrambleSyncTarget.className += " hidden";
         scrambleSelectionTarget.className += " hidden";
+        showTotalsPrompt.className += target.className.replace(/\bhidden\b/g);
+        showTimerTarget.className += target.className.replace(/\bhidden\b/g);
       }
     }
   }
@@ -425,6 +459,7 @@ let main = {
   
   main.handleTimerSelection = handleTimerSelection;
   main.handleSpriteSelection = handleSpriteSelection;
+  main.handleSyncSelection = handleSyncSelection;
   main.handleDropdownSelection = handleDropdownSelection;
   main.handlePresetSelection = handlePresetSelection;
   main.useSprites = false;

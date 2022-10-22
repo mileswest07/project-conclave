@@ -80,14 +80,14 @@
               <span class="slider"></span>
             </label>
           </p>
-          <p class="instructionPrompt">
+          <p id="showTotalsPrompt" class="instructionPrompt">
             Include item totals and percentage tracking?
             <label class="slider-switch">
               <input type="checkbox" name="showTotals" value="showTotals">
               <span class="slider"></span>
             </label>
           </p>
-          <p class="instructionPrompt">
+          <p id="showTimerPrompt" class="instructionPrompt">
             Show timer?
             <label class="slider-switch">
               <input type="checkbox" name="showTimer" value="showTimer">
@@ -116,7 +116,7 @@
               <input type="checkbox" name="scrambleSync" value="scrambleSync">
               <span class="slider"></span>
             </label>
-            Same items will be clicked simultaneously.
+            <span id="isSyncingItems" class="sliderResponse hidden">Same items will be clicked simultaneously.</span>
           </p>
           <div id="scrambleSelectionGroup" class="instructionPrompt hidden">
             Presets:
@@ -340,14 +340,17 @@
     let timerCheckbox = document.querySelector("input[name=showTimer]");
     let gameDropdown = document.querySelector("select[name=selectedGame]");
     let scramblePresetDropdown = document.querySelector("select[name=scrambledPreset]");
+    let scrambleSyncCheckbox = document.querySelector("input[name=scrambleSync]");
     spriteCheckbox.addEventListener('change', main.handleSpriteSelection);
     timerCheckbox.addEventListener('change', main.handleTimerSelection);
     gameDropdown.addEventListener('change', main.handleDropdownSelection);
     scramblePresetDropdown.addEventListener('change', main.handlePresetSelection);
+    scrambleSyncCheckbox.addEventListener('change', main.handleSyncSelection);
     main.handleSpriteSelection({target: spriteCheckbox});
     main.handleTimerSelection({target: timerCheckbox});
     main.handleDropdownSelection({target: gameDropdown});
     main.handlePresetSelection({target: scramblePresetDropdown});
+    main.handleSyncSelection({target: scrambleSyncCheckbox});
   </script>
 </body>
 </html>

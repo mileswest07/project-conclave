@@ -143,7 +143,7 @@ let keyslots = {};
       iteratedAcc++;
     }
     
-    if (main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
+    if (!main.isScramble && main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
       if (renderingKeyslotTypes.hasOwnProperty(foundItem.slotType)) {
         fetched = renderingKeyslotTypes[foundItem.slotType] && !undo ? 0 : fetched;
       }
@@ -156,7 +156,7 @@ let keyslots = {};
   function setKeyslot(id) {
     let filteringArray = [];
     let filterAhead = false;
-    if (!main.useKeyslots) {
+    if (main.isScramble || !main.useKeyslots) {
       return;
     }
     
@@ -341,7 +341,7 @@ let keyslots = {};
     } else if (e.which == 2) { // middle click
       if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -417,7 +417,7 @@ let keyslots = {};
     } else if (e.which == 2) { // middle click
       if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -631,7 +631,7 @@ let keyslots = {};
       }
     }
     
-    if (main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
+    if (!main.isScramble && main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
       if (!keyslots[element.slotType]) {
         keyslots[element.slotType] = [];
       }
@@ -740,7 +740,7 @@ let keyslots = {};
       }
     }
     
-    if (feature.currentGame === "am2r" && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r"].includes(feature.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -755,7 +755,7 @@ let keyslots = {};
       wrapper.appendChild(hint);
     }
     
-    if (feature.currentGame === "aol" && wrapper.id === "item-fireSpell-4") {
+    if (["aol"].includes(feature.currentGame) && wrapper.id === "item-fireSpell-4") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -779,7 +779,22 @@ let keyslots = {};
     if (textValues.length === 0 || parseInt(splitValues[1]) === 0 || splitValues.length === 0) {
       return;
     }
-    const percentageWrapper = document.getElementById("percentage-wrapper");
+    let percentageWrapper;
+    
+    if (main.isScramble) {
+      // UNDER CONSTRUCTION!
+      let gameKey;
+      for (const [key, value] of Object.entries(main.games)) {
+        if (value == feature.currentGame) { // TODO: it can't be currentGame!
+          gameKey = key;
+          break;
+        }
+      }
+      percentageWrapper = document.getElementById("" + gameKey + "-percentage-wrapper");
+    } else {
+      percentageWrapper = document.getElementById("percentage-wrapper");
+    }
+    
     let percentageText = percentageWrapper.querySelector("p");
     let calculatedAmount = parseInt(splitValues[1]) != 0 ? 100 * parseInt(splitValues[0]) / parseInt(splitValues[1]) : 0;
     percentageText.innerText = "" + calculatedAmount.toFixed(0) + '%';
@@ -803,7 +818,20 @@ let keyslots = {};
   
   function recycleTotals(change) {
     if (main.showTotals) {
-      const totalWrapper = document.getElementById("total-wrapper");
+      let totalWrapper;
+      if (main.isScramble) {
+        // UNDER CONSTRUCTION!
+        let gameKey;
+        for (const [key, value] of Object.entries(main.games)) {
+          if (value == feature.currentGame) { // TODO: it can't be currentGame!
+            gameKey = key;
+            break;
+          }
+        }
+        totalWrapper = document.getElementById("" + gameKey + "-total-wrapper");
+      } else {
+        totalWrapper = document.getElementById("total-wrapper");
+      }
       let totalText = totalWrapper.querySelector("p");
       totalText.innerText = recalculateTotals(totalText.innerText, change);
       recalculatePercentage(totalText.innerText);
@@ -812,14 +840,35 @@ let keyslots = {};
   
   function renderPercentage(destination) {
     let twrapper = document.createElement("div");
-    twrapper.id = "total-wrapper";
+    let pwrapper = document.createElement("div");
+    if (main.isScramble) {
+      for (const [key, value] of Object.entries(main.games)) {
+        if (value == feature.currentGame) {
+          twrapper.id = "" + key + "-total-wrapper";
+          pwrapper.id = "" + key + "-percentage-wrapper";
+          break;
+        }
+      }
+    } else {
+      twrapper.id = "total-wrapper";
+      pwrapper.id = "percentage-wrapper";
+    }
+    
+    if (twrapper.classList) {
+      twrapper.classList.add("addon-wrapper");
+      pwrapper.classList.add("addon-wrapper");
+    } else {
+      twrapper.className = "addon-wrapper";
+      pwrapper.className = "addon-wrapper";
+    }
+    
     let startingItems = 0;
     let totalItems = feature.workingData.items.reduce((acc=0, next) => {
       if (next.hasOwnProperty("start") && next.hasOwnProperty("value") && next.value) {
         startingItems += next.start;
       }
       if (next.hasOwnProperty("value") && next.hasOwnProperty("max")) {
-        if (main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
+        if (!main.isScramble && main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
           if (renderingKeyslotTypes.hasOwnProperty(next.slotType)) {
             return acc;
           }
@@ -834,8 +883,6 @@ let keyslots = {};
     twrapper.appendChild(totaltext);
     destination.appendChild(twrapper);
     
-    let pwrapper = document.createElement("div");
-    pwrapper.id = "percentage-wrapper";
     let percentagetext = document.createElement("p");
     let calculatedAmount = totalItems != 0 ? 100 * startingItems / totalItems : "";
     percentagetext.innerText = totalItems !== 0 ? "" + calculatedAmount.toFixed(0) + "%" : "";
@@ -922,7 +969,7 @@ let keyslots = {};
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
-    if (main.showTotals || main.showTimer) {
+    if (!main.isScramble && (main.showTotals || main.showTimer)) {
       let breakRow = document.createElement("div");
       if (breakRow.classList) {
         breakRow.classList.add("flex-break");
@@ -931,13 +978,15 @@ let keyslots = {};
       }
       destination.appendChild(breakRow);
     }
-    if (main.showTotals) {
+    if (!main.isScramble && main.showTotals) {
       renderPercentage(destination);
     }
-    if (main.showTimer) {
+    if (!main.isScramble && main.showTimer) {
       renderTimer(destination, parseInt(feature.workingData.width));
     }
   }
 
+  feature.renderTimer = renderTimer;
+  feature.renderPercentage = renderPercentage;
   feature.generate = generate;
 })();

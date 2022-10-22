@@ -122,13 +122,12 @@ body {
   height: 0;
 }
 
-#percentage-wrapper,
 #timer-wrapper,
-#total-wrapper {
+.addon-wrapper {
   height: 42px;
 }
 
-#percentage-wrapper, #total-wrapper {
+.addon-wrapper {
   flex-grow: 1;
 }
 
@@ -218,17 +217,15 @@ body {
   text-align: center;
 }
 
-#percentage-wrapper p,
 #timer-wrapper p,
-#reset-wrapper *, 
-#total-wrapper p {
+#reset-wrapper *,
+.addon-wrapper p {
   font-weight: bold;
   text-align: center;
 }
 
-#percentage-wrapper p,
 #timer-wrapper p,
-#total-wrapper p {
+.addon-wrapper p {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -267,9 +264,8 @@ body {
 .dark-mode #startupMenu p,
 .dark-mode .item p,
 .dark-mode .expansion p,
-.dark-mode #percentage-wrapper p,
 .dark-mode #timer-wrapper p,
-.dark-mode #total-wrapper p,
+.dark-mode .addon-wrapper p,
 .dark-mode h4 {
   color: white;
 }
@@ -291,6 +287,16 @@ body {
 
 .child-field {
   border: 1px solid purple;
+}
+
+.child-field .addon-wrapper {
+  display: inline;
+}
+
+.child-field .addon-wrapper p {
+  margin: 0;
+  margin-left: 1em;
+  display: inline;
 }
 
 h4 {

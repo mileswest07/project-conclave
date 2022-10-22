@@ -4,8 +4,11 @@
 
 body {
   margin: 0;
-  overflow: hidden;
   padding: 10px;
+}
+
+.game-mode {
+  overflow: hidden;
 }
 
 .slider-switch {
@@ -52,7 +55,8 @@ body {
   background-color: #f80000;
 }
 
-.sliderResponse.hidden {
+.sliderResponse.hidden,
+.instructionPrompt.hidden {
   display: none;
 } 
 
@@ -62,6 +66,19 @@ body {
 .hide-section,
 .hide-segment {
   display: none !important;
+}
+
+.scramble-selection-container {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px;
+}
+
+.scramble-selection-container > div {
+  padding: 10px;
+}
+
+.scramble-selection-container .selection-label {
+  font-size: 0.83em;
 }
 
 .flex-field {
@@ -105,18 +122,17 @@ body {
   height: 0;
 }
 
-#percentage-wrapper,
 #timer-wrapper,
-#total-wrapper {
+.addon-wrapper {
   height: 42px;
 }
 
-#percentage-wrapper, #total-wrapper {
+.addon-wrapper {
   flex-grow: 1;
 }
 
 .expansion {
-  height: 80px;
+  height: 64px;
 }
 
 .hint-image,
@@ -149,7 +165,7 @@ body {
 .expansion .level-down-image,
 .expansion .hint-image,
 .expansion .overlay-image {
-  bottom: 38px;
+  bottom: 26px;
 }
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
@@ -201,17 +217,15 @@ body {
   text-align: center;
 }
 
-#percentage-wrapper p,
 #timer-wrapper p,
-#reset-wrapper *, 
-#total-wrapper p {
+#reset-wrapper *,
+.addon-wrapper p {
   font-weight: bold;
   text-align: center;
 }
 
-#percentage-wrapper p,
 #timer-wrapper p,
-#total-wrapper p {
+.addon-wrapper p {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -250,9 +264,9 @@ body {
 .dark-mode #startupMenu p,
 .dark-mode .item p,
 .dark-mode .expansion p,
-.dark-mode #percentage-wrapper p,
 .dark-mode #timer-wrapper p,
-.dark-mode #total-wrapper p {
+.dark-mode .addon-wrapper p,
+.dark-mode h4 {
   color: white;
 }
 
@@ -263,4 +277,29 @@ body {
 .dark-mode .deselected {
   opacity: 0.5;
   mix-blend-mode: normal;
+}
+
+.parent-flex {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.child-field {
+  border: 1px solid purple;
+}
+
+.child-field .addon-wrapper {
+  display: inline;
+}
+
+.child-field .addon-wrapper p {
+  margin: 0;
+  margin-left: 1em;
+  display: inline;
+}
+
+h4 {
+  flex: 100%;
+  margin: 0;
 }

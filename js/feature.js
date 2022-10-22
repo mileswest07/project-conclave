@@ -143,7 +143,7 @@ let keyslots = {};
       iteratedAcc++;
     }
     
-    if (main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
+    if (!main.isScramble && main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
       if (renderingKeyslotTypes.hasOwnProperty(foundItem.slotType)) {
         fetched = renderingKeyslotTypes[foundItem.slotType] && !undo ? 0 : fetched;
       }
@@ -156,7 +156,7 @@ let keyslots = {};
   function setKeyslot(id) {
     let filteringArray = [];
     let filterAhead = false;
-    if (!main.useKeyslots) {
+    if (main.isScramble || !main.useKeyslots) {
       return;
     }
     
@@ -210,10 +210,31 @@ let keyslots = {};
   function clickItem(e) {
     e.preventDefault();
     
+    if (main.scrambleSync && !e.dontDoAgain) {
+      let itemName = e.target.parentElement.id.split('-')[1];
+      const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "]");
+      const spriteElement = e.target.parentElement.classList.contains("usesSprite");
+      const isItemElement = e.target.parentElement.classList.contains("item");
+      const isExpansionElement = e.target.parentElement.classList.contains("expansion");
+      if (allMatchingItems) {
+        for (let i = 0; i < allMatchingItems.length; i++) {
+          itemName = isItemElement ? "item" : "expansion";
+          let findChild = [...allMatchingItems[i].childNodes].filter(el => el.className.split(" ").some(n => n.includes(itemName)))[0];
+          let eventProp = {
+            preventDefault: () => {},
+            which: e.which,
+            dontDoAgain: true,
+            target: findChild,
+          }
+          clickItem(eventProp);
+        }
+      }
+    }
+    
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
-          if (e.target.parentElement.nextSibling) {
+          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.classList.contains("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id && e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -235,7 +256,7 @@ let keyslots = {};
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
-          if (e.target.parentElement.nextSibling) {
+          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.className.has("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -261,7 +282,7 @@ let keyslots = {};
         if (e.target.classList.contains("deselected")) {
           return;
         }
-        if (e.target.parentElement.previousSibling) {
+        if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.classList.contains("hide-segment"))) && e.target.parentElement.previousSibling) {
           if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
             if (
               parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -287,7 +308,7 @@ let keyslots = {};
         }
       } else {
         if (e.target.className.has("deselected")) {
-          if (e.target.parentElement.previousSibling) {
+          if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.className.has("hide-segment"))) && e.target.parentElement.previousSibling) {
             if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -318,9 +339,9 @@ let keyslots = {};
         }
       }
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -394,9 +415,9 @@ let keyslots = {};
       setKeyslot(e.target.parentElement.id);
       previous--;
     } else if (e.which == 2) { // middle click
-      if (feature.currentGame === "am2r" && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (feature.currentGame === "aol" && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -479,6 +500,14 @@ let keyslots = {};
   }
   
   function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
+    if (!main.isScramble && element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) {
+      return;
+    }
+    
+    if (element.hasOwnProperty("clearIfScramble") && element.clearIfScramble && main.isScramble) {
+      return;
+    }
+    
     if (!isSegment) {
       if (element.hasOwnProperty("segments") && element.segments.length > 0) {
         let segmentProgress = element.start;
@@ -504,9 +533,12 @@ let keyslots = {};
     
     const counterAnyway = (element.hasOwnProperty("type") && element.type === "counter");
     
-    if (element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon")) {
+    const isToggleAnyway = element.hasOwnProperty("type") && (element.type === "toggle" || element.type === "dungeon");
+    if (isToggleAnyway) {
       wrapper.setAttribute("typing", element.type);
     }
+    
+    const isKeyOrGoal = element.hasOwnProperty("nodeType") && (element.nodeType === "key" || element.nodeType === "goal");
     
     let elementId = element.id;
     
@@ -515,25 +547,32 @@ let keyslots = {};
     }
     
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
+    const scrambleCondition = (!main.isScramble || (main.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
     if (wrapper.classList) {
-      if (elementId === "-" && !isSegment) {
+      if (elementId === "-" && (!isSegment || main.isScramble)) {
         wrapper.classList.add("blank");
+        if (main.useSprites) {
+          wrapper.classList.add("trimmed");
+        }
       } else {
         wrapper.classList.add(classLabel);
       }
-      if (isSegmentHidden) {
+      if (isSegmentHidden && scrambleCondition) {
         wrapper.classList.add("hide-segment");
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
         wrapper.classList.add("usesSprite");
       }
     } else {
-      if (elementId === "-" && !isSegment) {
+      if (elementId === "-" && (!isSegment || main.isScramble)) {
         wrapper.className += " blank";
+        if (main.useSprites) {
+          wrapper.className += " trimmed";
+        }
       } else {
         wrapper.className = classLabel;
       }
-      if (isSegmentHidden) {
+      if (isSegmentHidden && scrambleCondition) {
         wrapper.className += " hide-segment";
       }
       if (element.hasOwnProperty("sprite") && main.useSprites) {
@@ -558,7 +597,7 @@ let keyslots = {};
       }
     }
     
-    if (!(elementId === "-" && !isSegment)) {
+    if (!(elementId === "-" && (!isSegment || main.isScramble))) {
       if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
@@ -592,7 +631,7 @@ let keyslots = {};
       }
     }
     
-    if (main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
+    if (!main.isScramble && main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
       if (!keyslots[element.slotType]) {
         keyslots[element.slotType] = [];
       }
@@ -641,7 +680,7 @@ let keyslots = {};
       wrapper.appendChild(overlayImage);
     }
     
-    if (isSegment) {
+    if (isSegment && scrambleCondition) {
       const currentStep = parseInt(index.split('-')[1]);
       if (currentStep + 1 < maxSegments) {
         let levelUp = document.createElement("img");
@@ -655,10 +694,7 @@ let keyslots = {};
           levelUp.className += " overlay-image";
           wrapper.className += " can-level-up";
         }
-        if (
-          element.hasOwnProperty("type") && 
-          (element.type === "toggle" || element.type == "dungeon")
-        ) {
+        if (isToggleAnyway) {
           if (levelUp.classList) {
             levelUp.classList.add("Level_Up_Alt");
           } else {
@@ -686,10 +722,7 @@ let keyslots = {};
           levelDown.className += " overlay-image";
           wrapper.className += "can-level-down";
         }
-        if (
-          element.hasOwnProperty("type") && 
-          (element.type === "toggle" || element.type == "dungeon")
-        ) {
+        if (isToggleAnyway) {
           if (levelDown.classList) {
             levelDown.classList.add("Level_Down_Alt");
           } else {
@@ -707,7 +740,7 @@ let keyslots = {};
       }
     }
     
-    if (feature.currentGame === "am2r" && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r"].includes(feature.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -722,7 +755,7 @@ let keyslots = {};
       wrapper.appendChild(hint);
     }
     
-    if (feature.currentGame === "aol" && wrapper.id === "item-fireSpell-4") {
+    if (["aol"].includes(feature.currentGame) && wrapper.id === "item-fireSpell-4") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -746,7 +779,22 @@ let keyslots = {};
     if (textValues.length === 0 || parseInt(splitValues[1]) === 0 || splitValues.length === 0) {
       return;
     }
-    const percentageWrapper = document.getElementById("percentage-wrapper");
+    let percentageWrapper;
+    
+    if (main.isScramble) {
+      // UNDER CONSTRUCTION!
+      let gameKey;
+      for (const [key, value] of Object.entries(main.games)) {
+        if (value == feature.currentGame) { // TODO: it can't be currentGame!
+          gameKey = key;
+          break;
+        }
+      }
+      percentageWrapper = document.getElementById("" + gameKey + "-percentage-wrapper");
+    } else {
+      percentageWrapper = document.getElementById("percentage-wrapper");
+    }
+    
     let percentageText = percentageWrapper.querySelector("p");
     let calculatedAmount = parseInt(splitValues[1]) != 0 ? 100 * parseInt(splitValues[0]) / parseInt(splitValues[1]) : 0;
     percentageText.innerText = "" + calculatedAmount.toFixed(0) + '%';
@@ -770,7 +818,20 @@ let keyslots = {};
   
   function recycleTotals(change) {
     if (main.showTotals) {
-      const totalWrapper = document.getElementById("total-wrapper");
+      let totalWrapper;
+      if (main.isScramble) {
+        // UNDER CONSTRUCTION!
+        let gameKey;
+        for (const [key, value] of Object.entries(main.games)) {
+          if (value == feature.currentGame) { // TODO: it can't be currentGame!
+            gameKey = key;
+            break;
+          }
+        }
+        totalWrapper = document.getElementById("" + gameKey + "-total-wrapper");
+      } else {
+        totalWrapper = document.getElementById("total-wrapper");
+      }
       let totalText = totalWrapper.querySelector("p");
       totalText.innerText = recalculateTotals(totalText.innerText, change);
       recalculatePercentage(totalText.innerText);
@@ -779,14 +840,35 @@ let keyslots = {};
   
   function renderPercentage(destination) {
     let twrapper = document.createElement("div");
-    twrapper.id = "total-wrapper";
+    let pwrapper = document.createElement("div");
+    if (main.isScramble) {
+      for (const [key, value] of Object.entries(main.games)) {
+        if (value == feature.currentGame) {
+          twrapper.id = "" + key + "-total-wrapper";
+          pwrapper.id = "" + key + "-percentage-wrapper";
+          break;
+        }
+      }
+    } else {
+      twrapper.id = "total-wrapper";
+      pwrapper.id = "percentage-wrapper";
+    }
+    
+    if (twrapper.classList) {
+      twrapper.classList.add("addon-wrapper");
+      pwrapper.classList.add("addon-wrapper");
+    } else {
+      twrapper.className = "addon-wrapper";
+      pwrapper.className = "addon-wrapper";
+    }
+    
     let startingItems = 0;
     let totalItems = feature.workingData.items.reduce((acc=0, next) => {
       if (next.hasOwnProperty("start") && next.hasOwnProperty("value") && next.value) {
         startingItems += next.start;
       }
       if (next.hasOwnProperty("value") && next.hasOwnProperty("max")) {
-        if (main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
+        if (!main.isScramble && main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
           if (renderingKeyslotTypes.hasOwnProperty(next.slotType)) {
             return acc;
           }
@@ -801,8 +883,6 @@ let keyslots = {};
     twrapper.appendChild(totaltext);
     destination.appendChild(twrapper);
     
-    let pwrapper = document.createElement("div");
-    pwrapper.id = "percentage-wrapper";
     let percentagetext = document.createElement("p");
     let calculatedAmount = totalItems != 0 ? 100 * startingItems / totalItems : "";
     percentagetext.innerText = totalItems !== 0 ? "" + calculatedAmount.toFixed(0) + "%" : "";
@@ -878,18 +958,18 @@ let keyslots = {};
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     let itemWidth = 42;
-    if (main.useSprites && (feature.currentGame == "msr")) {
+    if (main.useSprites && ["msr"].includes(feature.currentGame)) {
       itemWidth = 50;
-    } else if (main.useSprites && (feature.currentGame == "md")) {
+    } else if (main.useSprites && ["md", "mpff", "mp", "mp2e", "e_rnd"].includes(feature.currentGame)) {
       itemWidth = 64;
-    } else if (main.useSprites && (feature.currentGame == "mom")) {
+    } else if (main.useSprites && ["mom"].includes(feature.currentGame)) {
       itemWidth = 60;
     }
     destination.style.width = "" + ((parseInt(feature.workingData.width) * itemWidth) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
     
     // section for main items
     feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
-    if (main.showTotals || main.showTimer) {
+    if (!main.isScramble && (main.showTotals || main.showTimer)) {
       let breakRow = document.createElement("div");
       if (breakRow.classList) {
         breakRow.classList.add("flex-break");
@@ -898,13 +978,15 @@ let keyslots = {};
       }
       destination.appendChild(breakRow);
     }
-    if (main.showTotals) {
+    if (!main.isScramble && main.showTotals) {
       renderPercentage(destination);
     }
-    if (main.showTimer) {
+    if (!main.isScramble && main.showTimer) {
       renderTimer(destination, parseInt(feature.workingData.width));
     }
   }
 
+  feature.renderTimer = renderTimer;
+  feature.renderPercentage = renderPercentage;
   feature.generate = generate;
 })();

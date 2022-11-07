@@ -18,6 +18,7 @@ let main = {
     "c": "mp3c", // Metroid Prime 3: Corruption
     "ff": "mpff", // Metroid Prime: Federation Force
     "ros": "m2ros", // Metroid II: Return of Samus
+    "mc": "mcon", // Metroid Confrontation
     "a": "am2r", // Another Metroid 2 Remake
     "r": "msr", // Metroid: Samus Returns
     "s": "sm", // Super Metroid
@@ -33,10 +34,10 @@ let main = {
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
   };
   
-  const noFangamesFilter = ["rd", "a", "t", "p2d", "n",];
+  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n",];
   const noRandomizersFilter = ["v", "mz", "smz", "z3r",];
   const noZeldaFilter = ["mz", "smz", "z1", "z2", "z3", "z3r",];
-  const noSamusFilter = ["m", "mz", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "a", "r", "s", "smz", "o", "f", "n", "t", "d",];
+  const noSamusFilter = ["m", "mz", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "mc", "a", "r", "s", "smz", "o", "f", "n", "t", "d",];
   const noPrimeFilter = ["p", "b", "p2d", "h", "e", "v", "c", "ff",];
   const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
   const masterFilter = [...Object.keys(games)];

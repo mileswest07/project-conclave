@@ -561,6 +561,35 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-m2ros .usesSprite img.item-image.monsters { background: url("images/m2ros_spritesheet.png") -84px -126px; }
 .game-m2ros .usesSprite img.item-image.baby { background: url("images/m2ros_spritesheet.png") -126px -126px; }
 
+/********* METROID CONFRONTATION (PC) *********/
+.game-mcon .usesSprite img.item-image.morph { background: url("images/mzm_spritesheet.png") 0 0; }
+.game-mcon .usesSprite img.item-image.bomb { background: url("images/mzm_spritesheet.png") -42px 0; }
+.game-mcon .usesSprite img.item-image.barrier { background: url("images/mzm_spritesheet.png") -84px 0; }
+.game-mcon .usesSprite img.item-image.ui3 { background: url("images/mzm_spritesheet.png") -126px 0; }
+.game-mcon .usesSprite img.item-image.gravity { background: url("images/mzm_spritesheet.png") -168px 0; }
+.game-mcon .usesSprite img.item-image.full { background: url("images/mzm_spritesheet.png") -210px 0; }
+.game-mcon .usesSprite img.item-image.long { background: url("images/mzm_spritesheet.png") 0 -42px; }
+.game-mcon .usesSprite img.item-image.charge { background: url("images/mzm_spritesheet.png") -42px -42px; }
+.game-mcon .usesSprite img.item-image.ui1 { background: url("images/mzm_spritesheet.png") -84px -42px; }
+.game-mcon .usesSprite img.item-image.plasma { background: url("images/mzm_spritesheet.png") -126px -42px; }
+.game-mcon .usesSprite img.item-image.ice { background: url("images/mzm_spritesheet.png") -168px -42px; }
+.game-mcon .usesSprite img.item-image.wave { background: url("images/mzm_spritesheet.png") -210px -42px; }
+.game-mcon .usesSprite img.item-image.grip { background: url("images/mzm_spritesheet.png") 0 -84px; }
+.game-mcon .usesSprite img.item-image.ui2 { background: url("images/mzm_spritesheet.png") -42px -84px; }
+.game-mcon .usesSprite img.item-image.space { background: url("images/mzm_spritesheet.png") -84px -84px; }
+.game-mcon .usesSprite img.item-image.speed { background: url("images/mzm_spritesheet.png") -126px -84px; }
+.game-mcon .usesSprite img.item-image.high { background: url("images/mzm_spritesheet.png") -168px -84px; }
+.game-mcon .usesSprite img.item-image.screw { background: url("images/mzm_spritesheet.png") -210px -84px; }
+.game-mcon .usesSprite img.item-image.energy { background: url("images/mzm_spritesheet.png") 0 -126px; }
+.game-mcon .usesSprite img.item-image.missile { background: url("images/mzm_spritesheet.png") -42px -126px; }
+.game-mcon .usesSprite img.item-image.smissile { background: url("images/mzm_spritesheet.png") -84px -126px; }
+.game-mcon .usesSprite img.item-image.pbomb { background: url("images/mzm_spritesheet.png") -126px -126px; }
+.game-mcon .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
+.game-mcon .usesSprite img.item-image.bosses { background: url("images/mzm_spritesheet.png") -210px -126px; }
+.game-mcon .usesSprite img.item-image.charge { background: url("images/sm_spritesheet.png") -42px -42px; }
+.game-mcon .usesSprite img.item-image.wide { background: url("images/sm_spritesheet.png") -84px -42px; }
+.game-mcon .usesSprite img.item-image.fuelcell { background: url("images/am2r_spritesheet.png") -42px -210px; }
+
 /********* AM2R - ANOTHER METROID 2 REMAKE (PC) *********/
 .game-am2r .usesSprite img.item-image.morph { background: url("images/am2r_spritesheet.png") 0 0; }
 .game-am2r .usesSprite img.item-image.barrier { background: url("images/am2r_spritesheet.png") -42px 0; }
@@ -593,7 +622,7 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-am2r .usesSprite img.item-image.fed { background: url("images/am2r_spritesheet.png") -168px -168px; }
 .game-am2r .usesSprite img.item-image.fedA { background: url("images/am2r_spritesheet.png") -210px -168px; }
 .game-am2r .usesSprite img.item-image.trooper { background: url("images/am2r_spritesheet.png") 0 -210px; }
-.game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -42px -210px; } /* UNUSED */
+.game-am2r .usesSprite img.item-image.fuelcell { background: url("images/am2r_spritesheet.png") -42px -210px; } /* UNUSED */
 .game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -84px -210px; } /* UNUSED */
 .game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -126px -210px; } /* UNUSED */
 .game-am2r .usesSprite img.item-image.unused { background: url("images/am2r_spritesheet.png") -168px -210px; } /* UNUSED */

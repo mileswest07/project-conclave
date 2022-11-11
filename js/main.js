@@ -453,7 +453,9 @@ let main = {
       
       for (let i = 0; i < masterFilter.length; i++) {
         let formItem = formToFind[masterFilter[i]];
-        formItem.checked = cleanedSelection.includes(masterFilter[i]);
+        if (formItem) {
+          formItem.checked = cleanedSelection.includes(masterFilter[i]);
+        }
       }
     }
   }

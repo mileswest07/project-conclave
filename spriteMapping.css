@@ -410,6 +410,12 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-mzm .usesSprite img.item-image.pbomb { background: url("images/mzm_spritesheet.png") -126px -126px; }
 .game-mzm .usesSprite img.item-image.zipline { background: url("images/mzm_spritesheet.png") -168px -126px; }
 .game-mzm .usesSprite img.item-image.bosses { background: url("images/mzm_spritesheet.png") -210px -126px; }
+.game-mzm .usesSprite img.item-image.kraid { background: url("images/mzm_spritesheet.png") 0 -168px; }
+.game-mzm .usesSprite img.item-image.ridley { background: url("images/mzm_spritesheet.png") -42px -168px; }
+.game-mzm .usesSprite img.item-image.unused { background: url("images/mzm_spritesheet.png") -84px -168px; } /* UNUSED */
+.game-mzm .usesSprite img.item-image.unused { background: url("images/mzm_spritesheet.png") -126px -168px; } /* UNUSED */
+.game-mzm .usesSprite img.item-image.unused { background: url("images/mzm_spritesheet.png") -168px -168px; } /* UNUSED */
+.game-mzm .usesSprite img.item-image.unused { background: url("images/mzm_spritesheet.png") -210px -168px; } /* UNUSED */
 
 /********* METROID PRIME (GCN) *********/
 .game-mp .usesSprite,
@@ -463,6 +469,10 @@ img.item-image.m_lock2 { background: url("images/rd_spritesheet.png") -252px -42
 .game-e_rnd .usesSprite img.item-image.combat { background: url("images/mp_spritesheet.png") 0 -64px; }
 .game-mp2e .usesSprite img.item-image.scan,
 .game-e_rnd .usesSprite img.item-image.scan { background: url("images/mp_spritesheet.png") -64px -64px; }
+.game-mp2e .usesSprite img.item-image.redKey,
+.game-e_rnd .usesSprite img.item-image.redKey { background: url("images/mp_spritesheet.png") 0 -192px; }
+.game-mp2e .usesSprite img.item-image.skyKey,
+.game-e_rnd .usesSprite img.item-image.skyKey { background: url("images/mp_spritesheet.png") -64px -192px; }
 .game-mp2e .usesSprite img.item-image.darkvisor,
 .game-e_rnd .usesSprite img.item-image.darkvisor { background: url("images/mp_spritesheet.png") -128px -192px; }
 .game-mp2e .usesSprite img.item-image.echo,
@@ -1205,6 +1215,7 @@ img.overlay-image.Z_Orb { background: url("images/overlays.png") 0 0; }
 img.overlay-image.Z_Chozo { background: url("images/overlays.png") -17px 0; }
 img.overlay-image.S_Boss { background: url("images/overlays.png") -34px 0; }
 img.overlay-image.F_Data { background: url("images/overlays.png") -51px 0; }
+img.overlay-image.Z_Mirror { background: url("images/overlays.png") -68px 0; }
 img.overlay-image.E_Lumin { background: url("images/overlays.png") 0 -17px; }
 img.overlay-image.E_Lumin_Ex { background: url("images/overlays.png") -17px -17px; }
 img.overlay-image.F_Boss { background: url("images/overlays.png") -34px -17px; }

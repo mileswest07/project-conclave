@@ -311,7 +311,7 @@ const rawData = {
     ]
   },
   "z1m1": {
-    width: 10,
+    width: 12,
     items: [
       {
         id: "morphBall",
@@ -397,6 +397,11 @@ const rawData = {
         max: 1,
         segments: [],
         value: 1,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "longBeamA",
         locale: {
@@ -527,6 +532,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "bomb",
         sprite: "bomb",
@@ -597,6 +603,16 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "energyTank",
         sprite: "energy",
@@ -1960,6 +1976,7 @@ const rawData = {
               }
             },
             name: "Dark Agon Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Amorbis required",
             start: 0,
@@ -2006,6 +2023,7 @@ const rawData = {
               }
             },
             name: "Dark Torvus Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Chykka required",
             start: 0,
@@ -2052,6 +2070,7 @@ const rawData = {
               }
             },
             name: "Ing Hive Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Quadraxis required",
             start: 0,
@@ -2098,6 +2117,7 @@ const rawData = {
               }
             },
             name: "Sky Temple Keys",
+            sprite: "skyKey",
             over: "E_Lumin_Ex",
             overText: "Hints acquired",
             start: 0,
@@ -2561,6 +2581,7 @@ const rawData = {
               }
             },
             name: "Dark Agon Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Amorbis required",
             start: 0,
@@ -2607,6 +2628,7 @@ const rawData = {
               }
             },
             name: "Dark Torvus Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Chykka required",
             start: 0,
@@ -2653,6 +2675,7 @@ const rawData = {
               }
             },
             name: "Ing Hive Keys",
+            sprite: "redKey",
             over: "F_Boss_Ex",
             overText: "Quadraxis required",
             start: 0,
@@ -2699,6 +2722,7 @@ const rawData = {
               }
             },
             name: "Sky Temple Keys",
+            sprite: "skyKey",
             over: "E_Lumin_Ex",
             overText: "Hints acquired",
             start: 0,
@@ -5447,6 +5471,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "barrier",
         sprite: "barrier",
@@ -5702,6 +5727,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "plasmaBeam",
         locale: {
@@ -5796,6 +5822,74 @@ const rawData = {
         max: 1,
         segments: [],
         value: 1,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "energyTank",
+        sprite: "energy",
+        name: "Energy Tanks",
+        start: 0,
+        max: 14,
+        segments: [],
+        bg: "78a4bc",
+        nodeType: "expansion",
+        value: 1,
+        displayIfScramble: true,
+      },{
+        id: "missileTank",
+        sprite: "missile",
+        name: "Missile Tanks",
+        start: 0,
+        max: 46,
+        segments: [],
+        bg: "d82800",
+        nodeType: "expansion",
+        value: 1,
+        displayIfScramble: true,
+      },{
+        id: "superMissileTank",
+        sprite: "smissile",
+        name: "Super Missile Tanks",
+        start: 0,
+        max: 10,
+        segments: [],
+        bg: "007f0e",
+        nodeType: "expansion",
+        value: 1,
+        displayIfScramble: true,
+      },{
+        id: "powerBombTank",
+        sprite: "pbombs",
+        name: "Power Bomb Tanks",
+        start: 0,
+        max: 10,
+        segments: [],
+        bg: "98b830",
+        nodeType: "expansion",
+        value: 1,
+        displayIfScramble: true,
       },{
         id: "-",
         name: "",
@@ -5901,6 +5995,7 @@ const rawData = {
         bg: "78a4bc",
         nodeType: "expansion",
         value: 1,
+        clearIfScramble: true,
       },{
         id: "missileTank",
         sprite: "missile",
@@ -5911,6 +6006,7 @@ const rawData = {
         bg: "d82800",
         nodeType: "expansion",
         value: 1,
+        clearIfScramble: true,
       },{
         id: "superMissileTank",
         sprite: "smissile",
@@ -5921,6 +6017,7 @@ const rawData = {
         bg: "007f0e",
         nodeType: "expansion",
         value: 1,
+        clearIfScramble: true,
       },{
         id: "powerBombTank",
         sprite: "pbombs",
@@ -5931,6 +6028,39 @@ const rawData = {
         bg: "98b830",
         nodeType: "expansion",
         value: 1,
+        clearIfScramble: true,
+      },{
+        id: "reserveTank",
+        name: "Reserve Tanks",
+        sprite: "reserve",
+        start: 0,
+        max: 4,
+        segments: [],
+        bg: "7f2800",
+        nodeType: "expansion",
+        value: 1,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "boss",
+        name: "Bosses",
+        sprite: "boss",
+        start: 0,
+        max: 4,
+        segments: [],
+        bg: "747474",
+        nodeType: "boss",
+        value: 0,
+        displayIfScramble: true,
       },{
         id: "-",
         name: "",
@@ -5987,10 +6117,12 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "halfMagic",
         name: "",
@@ -6030,6 +6162,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "reserveTank",
         name: "Reserve Tanks",
@@ -6040,14 +6173,17 @@ const rawData = {
         bg: "7f2800",
         nodeType: "expansion",
         value: 1,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "boss",
         name: "Bosses",
@@ -6058,10 +6194,12 @@ const rawData = {
         bg: "747474",
         nodeType: "boss",
         value: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "ep",
         name: "Eastern Palace",
@@ -6122,6 +6260,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "dp",
@@ -6183,6 +6322,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "toh",
@@ -6244,6 +6384,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "pod",
@@ -6305,6 +6446,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "sp",
@@ -6366,6 +6508,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "sw",
@@ -6427,6 +6570,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "tt",
@@ -6488,6 +6632,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "ip",
@@ -6549,6 +6694,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "mm",
@@ -6610,6 +6756,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },{
         id: "tr",
@@ -6671,6 +6818,7 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
         value: 1,
       },
     ]
@@ -8611,7 +8759,7 @@ const rawData = {
     ]
   },
   "thf": {
-    width: 6,
+    width: 7,
     items: [
       {
         id: "raft",
@@ -8670,6 +8818,11 @@ const rawData = {
         segments: [],
         value: 1,
       },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
+      },{
         id: "boomerang",
         name: "",
         start: 0,
@@ -8726,6 +8879,11 @@ const rawData = {
         segments: [],
         value: 1,
       },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
         id: "candle",
         name: "",
         start: 0,
@@ -8750,6 +8908,12 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
       },{
         id: "recorder",
         name: "Whistle",
@@ -8786,6 +8950,12 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
       },{
         id: "sword",
         name: "",
@@ -8838,6 +9008,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "triforce",
         name: "Triforce Pieces",
@@ -9138,7 +9309,7 @@ const rawData = {
     ]
   },
   "alttp": {
-    width: 8,
+    width: 9,
     items: [
       {
         id: "bowArrows",
@@ -9239,10 +9410,17 @@ const rawData = {
         back: "toh",
         segments: [],
         value: 1,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -9288,6 +9466,7 @@ const rawData = {
         back: "dp",
         segments: [],
         value: 1,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
@@ -9300,6 +9479,21 @@ const rawData = {
         back: "ep",
         segments: [],
         value: 1,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "lamp",
         name: "Lamp",
@@ -9362,6 +9556,11 @@ const rawData = {
         name: "",
         max: 0,
       },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
         id: "agahnim",
         name: "Agahnim's Tower - Agahnim defeated",
         start: 0,
@@ -9369,10 +9568,17 @@ const rawData = {
         back: "at",
         segments: [],
         value: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
       },{
         id: "bottle",
         name: "Bottle",
@@ -9410,6 +9616,26 @@ const rawData = {
         max: 1,
         segments: [],
         value: 1,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "sword",
         name: "",
@@ -9498,6 +9724,11 @@ const rawData = {
         ],
         value: 1,
       },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
+      },{
         id: "boots",
         name: "Pegasus Boots",
         start: 0,
@@ -9570,6 +9801,11 @@ const rawData = {
         max: 8,
         segments: [],
         value: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        clearIfScramble: true,
       },{
         id: "crystal",
         name: "Palace of Darkness - Crystal",
@@ -9752,6 +9988,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -9883,6 +10120,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "bottle",
         name: "Bottle",
@@ -9924,6 +10162,26 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
+      },{
+        id: "-",
+        name: "",
+        max: 0,
+        displayIfScramble: true,
       },{
         id: "sword",
         name: "",
@@ -10067,10 +10325,12 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "halfMagic",
         name: "",
@@ -10170,6 +10430,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "courage",
+        name: "Pendent of Courage",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Armos Knights Defeated",
+        back: "ep",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "dp",
@@ -10231,6 +10503,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "wisdom",
+        name: "Pendent of Wisdom",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Lanmolas Defeated",
+        back: "dp",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "toh",
@@ -10292,6 +10576,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "power",
+        name: "Pendent of Power",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Moldorm Defeated",
+        back: "toh",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "pod",
@@ -10352,6 +10648,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "crystal",
+        name: "Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Helmasaur King Defeated",
+        back: "pod",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "sp",
@@ -10413,6 +10721,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "crystal",
+        name: "Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Arrghus Defeated",
+        back: "sp",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "sw",
@@ -10474,6 +10794,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "crystal",
+        name: "Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Mothula Defeated",
+        back: "sw",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "tt",
@@ -10535,6 +10867,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "crystal",
+        name: "Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Blind Defeated",
+        back: "tt",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "ip",
@@ -10596,6 +10940,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "fairyCrystal",
+        name: "Fairy Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Kholdstare Defeated",
+        back: "ip",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "mm",
@@ -10656,6 +11012,18 @@ const rawData = {
             value: 0,
           }
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "fairyCrystal",
+        name: "Fairy Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Vitreous Defeated",
+        back: "mm",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },{
         id: "tr",
@@ -10717,6 +11085,18 @@ const rawData = {
             value: 0,
           },
         ],
+        clearIfScramble: true,
+        value: 1,
+      },{
+        id: "crystal",
+        name: "Crystal",
+        start: 0,
+        max: 1,
+        over: "MC_Skull",
+        overText: "Trinexx Defeated",
+        back: "tr",
+        segments: [],
+        displayIfScramble: true,
         value: 1,
       },
     ]

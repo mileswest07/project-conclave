@@ -7,7 +7,7 @@ let main = {
   const games = {
     "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
     "m": "m1", // Metroid
-    "mz": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
+    //"mz": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
     "z": "mzm", // Metroid: Zero Mission
     "p": "mp", // Metroid Prime
     "b": "pb", // Metroid Prime Pinball
@@ -22,7 +22,7 @@ let main = {
     "a": "am2r", // Another Metroid 2 Remake
     "r": "msr", // Metroid: Samus Returns
     "s": "sm", // Super Metroid
-    "smz": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
+    //"smz": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
     "n": "mng", // Metroid: A New Galaxy
@@ -34,10 +34,12 @@ let main = {
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
   };
   
+  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "v", "c", "ff","ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z3", "z3r",];
+  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "v", "c", "ff","ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z3",];
   const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n",];
-  const noRandomizersFilter = ["v", "mz", "smz", "z3r",];
-  const noZeldaFilter = ["mz", "smz", "z1", "z2", "z3", "z3r",];
-  const noSamusFilter = ["m", "mz", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "mc", "a", "r", "s", "smz", "o", "f", "n", "t", "d",];
+  const noRandomizersFilter = ["v", "z3r",];
+  const noZeldaFilter = ["z1", "z2", "z3", "z3r",];
+  const noSamusFilter = ["m", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
   const noPrimeFilter = ["p", "b", "p2d", "h", "e", "v", "c", "ff",];
   const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
   const masterFilter = [...Object.keys(games)];
@@ -100,7 +102,7 @@ let main = {
       
       for (let i = 0; i < masterFilter.length; i++) {
         let formItem = formToFind[masterFilter[i]];
-        if (formItem.checked) {
+        if (formItem && formItem.checked) {
           selectedGames.push(formItem.value);
         }
       }
@@ -408,13 +410,16 @@ let main = {
       
       switch (newValue) {
         case 'primary':
-          filterOutList = [...noRandomizersFilter, ...noZeldaFilter];
+          filterOutList = [...noZeldaFilter];
+          break;
+        case 'z1m1':
+          filterOutList = [...z1m1Filter];
+          break;
+        case 'smz3':
+          filterOutList = [...smz3Filter];
           break;
         case 'no_fangames':
           filterOutList = [...noFangamesFilter];
-          break;
-        case 'no_randos':
-          filterOutList = [...noRandomizersFilter];
           break;
         case 'no_zelda':
           filterOutList = [...noZeldaFilter];

@@ -147,7 +147,8 @@ img.item-image.powerGrip { background: url("images/m_graphics.png") -301px -301p
 img.item-image.zipline { background: url("images/m_graphics.png") -344px -301px; }
 img.item-image.spaceJumpBoots,
 img.item-image.spinBoost { background: url("images/m_graphics.png") -387px -301px; }
-img.item-image.scanPulse { background: url("images/m_graphics.png") -430px -301px; }
+img.item-image.scanPulse,
+img.item-image.radar { background: url("images/m_graphics.png") -430px -301px; }
 img.item-image.lightningArmor { background: url("images/m_graphics.png") -473px -301px; }
 img.item-image.beamBurst { background: url("images/m_graphics.png") -516px -301px; }
 img.item-image.phaseDrift { background: url("images/m_graphics.png") -559px -301px; }
@@ -254,9 +255,10 @@ img.item-image.darkVisorA { background: url("images/m_graphics.png") -215px -559
 img.item-image.hint { background: url("images/m_graphics.png") -258px -559px; }
 img.item-image.bsl { background: url("images/m_graphics.png") -301px -559px; }
 img.item-image.datapack { background: url("images/m_graphics.png") -344px -559px; }
-img.item-image.doubleDamage { background: url("images/m_graphics.png") -387px -559px; }
-img.item-image.doubleDamageA { background: url("images/m_graphics.png") -430px -559px; }
-img.item-image.invisibility { background: url("images/m_graphics.png") -473px -559px; }
+img.item-image.doubleDamageA { background: url("images/m_graphics.png") -387px -559px; }
+img.item-image.doubleDamage { background: url("images/m_graphics.png") -430px -559px; }
+img.item-image.invisibilityA,
+img.item-image.cloakA { background: url("images/m_graphics.png") -473px -559px; }
 img.item-image.chargeBomb { background: url("images/m_graphics.png") -516px -559px; }
 img.item-image.iceChargeShot { background: url("images/m_graphics.png") -559px -559px; }
 img.item-image.spikeBomb { background: url("images/m_graphics.png") -602px -559px; }
@@ -302,8 +304,10 @@ img.item-image.modChipC { background: url("images/m_graphics.png") -731px -645px
 img.item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -688px; }
 img.item-image.flashShift { background: url("images/m_graphics.png") -43px -688px; }
 img.item-image.gravitySuitA { background: url("images/m_graphics.png") -86px -688px; }
-img.item-image.phantomCloak { background: url("images/m_graphics.png") -129px -688px; }
-img.item-image.pulseRadar { background: url("images/m_graphics.png") -172px -688px; }
+img.item-image.phantomCloak,
+img.item-image.cloakB { background: url("images/m_graphics.png") -129px -688px; }
+img.item-image.pulseRadar,
+img.item-image.radarA { background: url("images/m_graphics.png") -172px -688px; }
 img.item-image.aquadiaKey { background: url("images/m_graphics.png") -215px -688px; }
 img.item-image.steelarisGear { background: url("images/m_graphics.png") -258px -688px; }
 img.item-image.longBeamA { background: url("images/m_graphics.png") -301px -688px; }
@@ -316,7 +320,8 @@ img.item-image.waveBeamD { background: url("images/m_graphics.png") -516px -688p
 img.item-image.plasmaBeamE { background: url("images/m_graphics.png") -559px -688px; }
 img.item-image.iceBeamE { background: url("images/m_graphics.png") -602px -688px; }
 img.item-image.diffusionBeamB { background: url("images/m_graphics.png") -645px -688px; }
-img.item-image.itemSphere { background: url("images/m_graphics.png") -688px -688px; }
+img.item-image.itemSphere,
+img.item-image.unused { background: url("images/m_graphics.png") -688px -688px; }
 img.item-image.chozoCrest { background: url("images/m_graphics.png") -731px -688px; }
 img.item-image.chykka { background: url("images/m_graphics.png") 0 -731px; }
 img.item-image.quadraxis { background: url("images/m_graphics.png") -43px -731px; }
@@ -333,9 +338,10 @@ img.item-image.lethalStrike { background: url("images/m_graphics.png") -473px -7
 img.item-image.slide { background: url("images/m_graphics.png") -516px -731px; }
 img.item-image.omegaBlast { background: url("images/m_graphics.png") -559px -731px; }
 img.item-image.senseMove { background: url("images/m_graphics.png") -602px -731px; }
-img.item-image.unused { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
-img.item-image.unused { background: url("images/m_graphics.png") -731px -731px; }
+img.item-image.invisibility,
+img.item-image.cloak { background: url("images/m_graphics.png") -645px -731px; }
+img.item-image.unusedA { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
+img.item-image.unusedA { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
 
 img.item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
 img.item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }

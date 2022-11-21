@@ -1226,6 +1226,7 @@ img.overlay-image.E_Lumin { background: url("images/overlays.png") 0 -17px; }
 img.overlay-image.E_Lumin_Ex { background: url("images/overlays.png") -17px -17px; }
 img.overlay-image.F_Boss { background: url("images/overlays.png") -34px -17px; }
 img.overlay-image.F_Boss_Ex { background: url("images/overlays.png") -51px -17px; }
+img.overlay-image.MC_Heart { background: url("images/overlays.png") -68px -17px; }
 img.overlay-image.C_Fuse { background: url("images/overlays.png") 0 -34px; }
 img.overlay-image.hint-image { background: url("images/overlays.png") -17px -34px; }
 img.overlay-image.Level_Up_Alt { background: url("images/overlays.png") -34px -34px; }

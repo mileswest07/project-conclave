@@ -9899,13 +9899,13 @@ const rawData = {
         start: 0,
         max: 1,
         segments: [
-          {
+          /*{
             id: "arrow",
             name: "Arrows",
-            start: 0,
+            start: 1,
             max: 1,
             value: 0,
-          },{
+          },*/{
             id: "silverArrows",
             name: "Silver Arrows",
             start: 0,
@@ -9988,7 +9988,6 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
-        clearIfScramble: true,
       },{
         id: "fireRod",
         name: "Fire Rod",
@@ -10273,6 +10272,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "boots",
         name: "Pegasus Boots",
@@ -10327,11 +10327,6 @@ const rawData = {
         max: 0,
         clearIfScramble: true,
       },{
-        id: "-",
-        name: "",
-        max: 0,
-        clearIfScramble: true,
-      },{
         id: "halfMagic",
         name: "",
         start: 0,
@@ -10367,9 +10362,21 @@ const rawData = {
         segments: [],
         value: 0,
       },{
-        id: "-",
-        name: "",
-        max: 0,
+        id: "pieceOfHeart",
+        name: "Pieces of Heart",
+        start: 0,
+        max: 24,
+        segments: [],
+        value: 0,
+      },{
+        id: "heartContainer",
+        name: "Heart Containers",
+        start: 0,
+        max: 11,
+        over: "MC_Heart",
+        overText: "Sanctuary Heart Obtained",
+        segments: [],
+        value: 0,
       },{
         id: "ep",
         name: "Eastern Palace",

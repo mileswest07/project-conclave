@@ -159,6 +159,59 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "kraid",
+        name: "Jungle Beast",
+      },{
+        id: "ridley",
+        name: "GF Soldier",
+      },{
+        id: "shaktool",
+        name: "Shaktool",
+      },{
+        id: "guardian",
+        name: "Shaktool 2.0",
+      },{
+        id: "mbrain",
+        name: "Alpha Metroid",
+      }
+    ],
+    areas: [
+      {
+        id: "mothership",
+        name: "Space Pirate Mothership",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "surface",
+        name: "Desolate Surface",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "boneyard",
+        name: "Bone Yard",
+        starting: false,
+        color: "009700",
+      },{
+        id: "jungle",
+        name: "Chozo Jungle",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "scienceship",
+        name: "Federation Science Ship",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "hive",
+        name: "Metroid Hive",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "m1": {
@@ -308,6 +361,48 @@ const rawData = {
         bg: "747474",
         nodeType: "boss",
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "kraid",
+        name: "Kraid",
+      },{
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "mbrain",
+        name: "Mother Brain",
+      }
+    ],
+    areas: [
+      {
+        id: "brinstar",
+        name: "Brinstar",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "norfair",
+        name: "Norfair",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "kraid",
+        name: "Kraid",
+        starting: false,
+        color: "009700",
+      },{
+        id: "ridley",
+        name: "Ridley",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "tourian",
+        name: "Tourian",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "z1m1": {
@@ -1057,6 +1152,83 @@ const rawData = {
         nodeType: "boss",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "beambeast",
+        name: "Beam Beast",
+      },{
+        id: "acidworm",
+        name: "Acid Worm",
+      },{
+        id: "acidworm",
+        name: "Acid Worm",
+      },{
+        id: "kraid",
+        name: "Kraid",
+      },{
+        id: "kirugiru",
+        name: "Kiru Giru",
+      },{
+        id: "imago",
+        name: "Imago",
+      },{
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "mbrain",
+        name: "Mother Brain",
+      },{
+        id: "chozoghost",
+        name: "Ruins Test",
+      },{
+        id: "mridley",
+        name: "Mecha Ridley",
+      }
+    ],
+    areas: [
+      {
+        id: "brinstar",
+        name: "Brinstar",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "norfair",
+        name: "Norfair",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "crateria",
+        name: "Crateria",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "kraid",
+        name: "Kraid",
+        starting: false,
+        color: "009700",
+      },{
+        id: "ridley",
+        name: "Ridley",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "tourian",
+        name: "Tourian",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "chozodia",
+        name: "Chozodia",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
+      {
+        id: "hint",
+        name: "Chozo Hint Statue",
+      }
     ]
   },
   "mp": {
@@ -1426,6 +1598,85 @@ const rawData = {
         nodeType: "key",
         value: 1,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "pqueen",
+        name: "Parasite Queen",
+      },{
+        id: "hivemecha",
+        name: "Hive Mecha",
+      },{
+        id: "morphbeetle",
+        name: "Plated Beetle",
+      },{
+        id: "zoid",
+        name: "Incinerator Drone",
+      },{
+        id: "flaahgra",
+        name: "Flaahgra",
+      },{
+        id: "thardus",
+        name: "Thardus",
+      },{
+        id: "cdrone",
+        name: "Cloaked Drone",
+      },{
+        id: "phelite",
+        name: "Phazon Elite",
+      },{
+        id: "opirate",
+        name: "Omega Pirate",
+      },{
+        id: "metaridley",
+        name: "Meta Ridley",
+      },{
+        id: "mprime",
+        name: "Metroid Prime",
+      },{
+        id: "mprimecore",
+        name: "Metroid Prime (Core)",
+      }
+    ],
+    areas: [
+      {
+        id: "orpheon",
+        name: "Pirate Frigate",
+        starting: false,
+        color: "2038ec",
+      },{
+        id: "overworld",
+        name: "Tallon Overworld",
+        starting: true,
+        color: "db2b00",
+      },{
+        id: "ruins",
+        name: "Chozo Ruins",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "lavacaves",
+        name: "Magmoor Caverns",
+        starting: false,
+        color: "009700",
+      },{
+        id: "showdrifts",
+        name: "Phendrana Drifts",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "phmines",
+        name: "Phazon Mines",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "impact",
+        name: "Impact Crater",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "pb": {
@@ -1472,6 +1723,12 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "p2d": {
@@ -1574,6 +1831,30 @@ const rawData = {
         nodeType: "key",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "hivemecha",
+        name: "Hive Mecha",
+      },{
+        id: "geemerbrain",
+        name: "Geemer Brain",
+      }
+    ],
+    areas: [
+      {
+        id: "overworld",
+        name: "Tallon Overworld",
+        starting: true,
+        color: "db2b00",
+      },{
+        id: "ruins",
+        name: "Chozo Ruins",
+        starting: false,
+        color: "db2b00",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mp2e": {
@@ -2140,6 +2421,106 @@ const rawData = {
         nodeType: "key",
         value: 0,
       },
+  /*"GFMC Cutscene",
+  "Agon Interdimensional Bomb Slot",
+  "Pirate Facility Access",
+  "Vigilance Class Turret",
+  "Torvus Interdimensional Bomb Slot / Lagoon Bridge",
+  "Interdimensional Spinner",
+  "Temple Cannon",
+  "Scan Node",
+  "Crypt Access",
+  "Wind Chamber Access",*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "splinter",
+        name: "Alpha Splinter",
+      },{
+        id: "bombguard",
+        name: "Bomb Guardian",
+      },{
+        id: "jumpguard",
+        name: "Jump Guardian",
+      },{
+        id: "missileguard",
+        name: "Missile Trooper",
+      },{
+        id: "dsamusa",
+        name: "Dark Samus 1",
+      },{
+        id: "amorbis",
+        name: "Amorbis",
+      },{
+        id: "torvuspirates",
+        name: "Pirate Ambush",
+      },{
+        id: "boostguard",
+        name: "Boost Guardian",
+      },{
+        id: "alphablogg",
+        name: "Alpha Blogg",
+      },{
+        id: "grappleguard",
+        name: "Grapple Guardian",
+      },{
+        id: "chykka",
+        name: "Chykka",
+      },{
+        id: "reactorquad",
+        name: "Quad",
+      },{
+        id: "spiderguard",
+        name: "Spider Guardian",
+      },{
+        id: "pbombguard",
+        name: "Power Bomb Guardian",
+      },{
+        id: "dsamusb",
+        name: "Dark Samus 2",
+      },{
+        id: "caretaker",
+        name: "Caretaker Class Drone",
+      },{
+        id: "quadraxis",
+        name: "Quadraxis",
+      },{
+        id: "emperoring",
+        name: "Emperor Ing",
+      },{
+        id: "dsamusc",
+        name: "Dark Samus 3 and 4",
+      }
+    ],
+    areas: [
+      {
+        id: "tgrounds",
+        name: "Temple Grounds",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "gtemple",
+        name: "Great Temple",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "agon",
+        name: "Agon Wastes",
+        starting: false,
+        color: "009700",
+      },{
+        id: "torvus",
+        name: "Torvus Bog",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "sanctuary",
+        name: "Sanctuary Fortress",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "e_rnd": {
@@ -2745,6 +3126,106 @@ const rawData = {
         nodeType: "key",
         value: 1,
       },
+  /*"GFMC Cutscene",
+  "Agon Interdimensional Bomb Slot",
+  "Pirate Facility Access",
+  "Vigilance Class Turret",
+  "Torvus Interdimensional Bomb Slot / Lagoon Bridge",
+  "Interdimensional Spinner",
+  "Temple Cannon",
+  "Scan Node",
+  "Crypt Access",
+  "Wind Chamber Access",*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "splinter",
+        name: "Alpha Splinter",
+      },{
+        id: "bombguard",
+        name: "Bomb Guardian",
+      },{
+        id: "jumpguard",
+        name: "Jump Guardian",
+      },{
+        id: "missileguard",
+        name: "Missile Trooper",
+      },{
+        id: "dsamusa",
+        name: "Dark Samus 1",
+      },{
+        id: "amorbis",
+        name: "Amorbis",
+      },{
+        id: "torvuspirates",
+        name: "Pirate Ambush",
+      },{
+        id: "boostguard",
+        name: "Boost Guardian",
+      },{
+        id: "alphablogg",
+        name: "Alpha Blogg",
+      },{
+        id: "grappleguard",
+        name: "Grapple Guardian",
+      },{
+        id: "chykka",
+        name: "Chykka",
+      },{
+        id: "reactorquad",
+        name: "Quad",
+      },{
+        id: "spiderguard",
+        name: "Spider Guardian",
+      },{
+        id: "pbombguard",
+        name: "Power Bomb Guardian",
+      },{
+        id: "dsamusb",
+        name: "Dark Samus 2",
+      },{
+        id: "caretaker",
+        name: "Caretaker Class Drone",
+      },{
+        id: "quadraxis",
+        name: "Quadraxis",
+      },{
+        id: "emperoring",
+        name: "Emperor Ing",
+      },{
+        id: "dsamusc",
+        name: "Dark Samus 3 and 4",
+      }
+    ],
+    areas: [
+      {
+        id: "tgrounds",
+        name: "Temple Grounds",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "gtemple",
+        name: "Great Temple",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "agon",
+        name: "Agon Wastes",
+        starting: false,
+        color: "009700",
+      },{
+        id: "torvus",
+        name: "Torvus Bog",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "sanctuary",
+        name: "Sanctuary Fortress",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "ph": {
@@ -3152,6 +3633,76 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+  /*"Spire Event",*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "magmaspawn",
+        name: "Magma Spawn",
+      },{
+        id: "arcticspawn",
+        name: "Arctic Spawn",
+      },{
+        id: "bossaa",
+        name: "Cretaphid 1",
+      },{
+        id: "bossab",
+        name: "Cretaphid 2",
+      },{
+        id: "bossac",
+        name: "Cretaphid 3",
+      },{
+        id: "bossad",
+        name: "Cretaphid 4",
+      },{
+        id: "bossba",
+        name: "Slench 1",
+      },{
+        id: "bossbb",
+        name: "Slench 2",
+      },{
+        id: "bossbc",
+        name: "Slench 3",
+      },{
+        id: "bossbd",
+        name: "Slench 4",
+      },{
+        id: "goreaa",
+        name: "Gorea 1",
+      },{
+        id: "goreab",
+        name: "Gorea 2",
+      }
+    ],
+    areas: [
+      {
+        id: "carchives",
+        name: "Celestial Archives",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "alinos",
+        name: "Alinos",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "vesperdo",
+        name: "Vesper Defense Outpost",
+        starting: false,
+        color: "009700",
+      },{
+        id: "arcterra",
+        name: "Arcterra",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "oubliette",
+        name: "Oubliette",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mp3c": {
@@ -3646,6 +4197,206 @@ const rawData = {
         value: 0,
         displayIfScramble: true,
       },
+  /*"Mission Briefing",
+  "Lab Access Breach",
+  "Dock A Access",
+  "Generator A",
+  "Generator B",
+  "Generator C",
+  "Save Event",
+  "Bryyo Mission",
+  "Fire Access",
+  "Thorn Jungle Access",
+  "Shield Destroyed",
+  "Turret Destroyed",
+  "Fed Dock",
+  "Ghor Event",
+  "AU Online",
+  "Site A Access",
+  "Valhalla Access",
+  "Site B Access",
+  "Xenoresearch Cells Open",
+  "Escape Pod",
+  "Shield Down",
+  "Pirate Homeworld Access",
+  "Fans Off",
+  "Access to Research",
+  "Scrap Access",
+  "Metroids Loose",
+  "Mine Loop Open",
+  "Shield Core Down",
+  "Seed Door",
+  "Hidden Court Grapple",
+  "Bridge Access A",
+  "Large Generator",
+  "Golem Head",
+  "Bridge Access B",
+  "Dock B Access",
+  "Mines Unlocked",
+  "Phaaze Mission",
+  "Gold Credit"*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "berserkerlorda", // olympus
+        name: "Berserker Lord",
+      },{
+        id: "mridley",
+        name: "Meta Ridley",
+      },{
+        id: "rundas",
+        name: "Rundas",
+      },{
+        id: "korakk",
+        name: "Pirate Hussar & Korakk Beast",
+      },{
+        id: "mogenar",
+        name: "Mogenar",
+      },{
+        id: "steamlorda", // barracks
+        name: "Steamlord",
+      },{
+        id: "steamlordb", // skybridge
+        name: "Steamlord",
+      },{
+        id: "steamlordc", // def drone
+        name: "Steamlord",
+      },{
+        id: "defdrone",
+        name: "Defense Drone",
+      },{
+        id: "ghor",
+        name: "Ghor",
+      },{
+        id: "berserkerlordb", // skytown
+        name: "Berserker Lord",
+      },{
+        id: "helios",
+        name: "Helios",
+      },{
+        id: "gandrayda",
+        name: "Gandrayda",
+      },{
+        id: "mhatchera", // norion
+        name: "Metroid Hatcher",
+      },{
+        id: "mhatcherb", // homeworld
+        name: "Metroid Hatcher",
+      },{
+        id: "mhatcherc", // valhalla
+        name: "Metroid Hatcher",
+      },{
+        id: "mhatcherd", // 
+        name: "Metroid Hatcher",
+      },{
+        id: "phharvester",
+        name: "Phazon Harvester",
+      },{
+        id: "pircommander",
+        name: "Pirate Commander",
+      },{
+        id: "oridley",
+        name: "Omega Ridley",
+      },{
+        id: "levinfant",
+        name: "Leviathan Infant",
+      },{
+        id: "dsamusd",
+        name: "Final Dark Samus",
+      },{
+        id: "au313",
+        name: "Aurora Unit 313",
+      }
+    ],
+    areas: [
+      {
+        id: "olympus",
+        name: "GFS Olympus",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "olympusb",
+        name: "GFS Olympus 2",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "norion",
+        name: "Norion",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "bryyocliff",
+        name: "Bryyo - Cliffside",
+        starting: false,
+        color: "009700",
+      },{
+        id: "bryyofire",
+        name: "Bryyo - Fire",
+        starting: false,
+        color: "009700",
+      },{
+        id: "bryyojungle",
+        name: "Bryyo - Thorn Jungle",
+        starting: false,
+        color: "009700",
+      },{
+        id: "bryyoice",
+        name: "Bryyo - Ice",
+        starting: false,
+        color: "009700",
+      },{
+        id: "bryyoseed",
+        name: "Bryyo - Seed",
+        starting: false,
+        color: "009700",
+      },{
+        id: "elysiaa",
+        name: "Elysia - Skytown West",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "elysiab",
+        name: "Elysia - Skytown East",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "elysiaseed",
+        name: "Elysia - Seed",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "valhalla",
+        name: "GFS Valhalla",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "homeworldcommand",
+        name: "Pirate Homeworld - Command Center",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "homeworldresearch",
+        name: "Pirate Homeworld - Research",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "homeworldmines",
+        name: "Pirate Homeworld - Phazon Mines",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "homeworldcommand",
+        name: "Pirate Homeworld - Seed",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "phaaze",
+        name: "Phaaze",
+        starting: false,
+        color: "db2b00",
+      },
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   }, 
   "mpff": {
@@ -3788,6 +4539,12 @@ const rawData = {
         value: 0,
         clearIfScramble: true,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "m2ros": {
@@ -4066,6 +4823,65 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "alpha",
+        name: "Alpha Metroid",
+      },{
+        id: "gamma",
+        name: "Gamma Metroid",
+      },{
+        id: "zeta",
+        name: "Zeta Metroid",
+      },{
+        id: "omega",
+        name: "Omega Metroid",
+      },{
+        id: "larval",
+        name: "Larval Metroid",
+      },{
+        id: "queen",
+        name: "Queen Metroid",
+      },{
+        id: "arachnus",
+        name: "Arachnus",
+      }
+    ],
+    areas: [
+      {
+        id: "maintunnel",
+        name: "Main Tunnel",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "areaa",
+        name: "Area 1",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areab",
+        name: "Area 2",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areac",
+        name: "Area 3",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "aread",
+        name: "Area 5",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areaz",
+        name: "Final Area",
+        starting: false,
+        color: "db2b00",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mcon": {
@@ -4080,7 +4896,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "bomb",
         name: "Bombs",
@@ -4218,9 +5034,31 @@ const rawData = {
         segments: [],
         bg: "008080",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },
     ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "crocomire",
+        name: "Crocomire",
+      },{
+        id: "kraid",
+        name: "Kraid",
+      }
+    ],
+    areas: [
+      {
+        id: "simulation",
+        name: "Simulation",
+        starting: true,
+        color: "2038ec",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
+    ]
   },
   "am2r": {
     width: 8,
@@ -4608,6 +5446,92 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+  /*"Power Orb Key #1",
+  "Power Orb Key #2",
+  "Tower Power",
+  "Power Core Destroyed",
+  "Nest Cleared",*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "alpha",
+        name: "Alpha Metroid",
+      },{
+        id: "gamma",
+        name: "Gamma Metroid",
+      },{
+        id: "zeta",
+        name: "Zeta Metroid",
+      },{
+        id: "omega",
+        name: "Omega Metroid",
+      },{
+        id: "larval",
+        name: "Larval Metroid",
+      },{
+        id: "queen",
+        name: "Queen Metroid",
+      },{
+        id: "ancientguard",
+        name: "Ancient Guardian",
+      },{
+        id: "arachnus",
+        name: "Arachnus",
+      },{
+        id: "tester",
+        name: "The Tester",
+      },{
+        id: "chozotank",
+        name: "Chozo Tank",
+      },{
+        id: "serris",
+        name: "Serris",
+      }
+    ],
+    areas: [
+      {
+        id: "maintunnel",
+        name: "Main Tunnel",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "areaa",
+        name: "Golden Temple",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areab",
+        name: "Hydro Station",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areac",
+        name: "Industrial Complex",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "aread",
+        name: "The Tower + Power Plant",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areaq",
+        name: "Distribution Center",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "arear",
+        name: "GFS Thoth",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areaz",
+        name: "The Nest + Genetics Lab",
+        starting: false,
+        color: "db2b00",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "msr": {
@@ -5000,7 +5924,96 @@ const rawData = {
         bg: "008080",
         nodeType: "goal",
         value: 0,
+        clearIfScramble: true,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "alpha",
+        name: "Alpha Metroid",
+      },{
+        id: "gamma",
+        name: "Gamma Metroid",
+      },{
+        id: "zeta",
+        name: "Zeta Metroid",
+      },{
+        id: "omega",
+        name: "Omega Metroid",
+      },{
+        id: "larval",
+        name: "Larval Metroid",
+      },{
+        id: "queen",
+        name: "Queen Metroid",
+      },{
+        id: "arachnus",
+        name: "Arachnus",
+      },{
+        id: "diggernauta",
+        name: "Diggernaut Chase",
+      },{
+        id: "diggernautb",
+        name: "Diggernaut",
+      },{
+        id: "pridley",
+        name: "Proteus Ridley",
+      }
+    ],
+    areas: [
+      {
+        id: "surface",
+        name: "Surface",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "areaa",
+        name: "Area 1",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areab",
+        name: "Area 2",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areac",
+        name: "Area 3",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "aread",
+        name: "Area 4",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areae",
+        name: "Area 5",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areaf",
+        name: "Area 6",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areag",
+        name: "Area 7",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "areah",
+        name: "Area 8",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "surfaceb",
+        name: "Surface (Post-Extinction)",
+        starting: false,
+        color: "db2b00",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "sm": {
@@ -5298,6 +6311,74 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "torizo",
+        name: "Torizo",
+      },{
+        id: "spospaw",
+        name: "Spore Spawn",
+      },{
+        id: "kraid",
+        name: "Kraid",
+      },{
+        id: "crocomire",
+        name: "Crocomire",
+      },{
+        id: "phantoon",
+        name: "Phantoon",
+      },{
+        id: "botwoon",
+        name: "Botwoon",
+      },{
+        id: "draygon",
+        name: "Draygon",
+      },{
+        id: "goldtorizo",
+        name: "Golden Torizo",
+      },{
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "mbrain",
+        name: "Mother Brain",
+      }
+    ],
+    areas: [
+      {
+        id: "crateria",
+        name: "Crateria",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "brinstar",
+        name: "Brinstar",
+        starting: false,
+        color: "2038ec",
+      },{
+        id: "norfair",
+        name: "Norfair",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "shipwreck",
+        name: "Wrecked Ship",
+        starting: false,
+        color: "009700",
+      },{
+        id: "maridia",
+        name: "Maridia",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "tourian",
+        name: "Tourian",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "smz3": {
@@ -7049,6 +8130,104 @@ const rawData = {
         nodeType: "expansion",
         value: 1,
       },
+    ],
+  /*"System Management",
+  "Breeding Room",
+  "East Access",
+  "Exam Center Ops",
+  "Sector 2 Access",
+  "Deleter Hint",
+  "Desert Access",
+  "Meeting Madeline",
+  "Sector Zero",
+  "Post-Game",
+  "Adam's Helmet",*/
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "brugmass",
+        name: "Brug Mass",
+      },{
+        id: "funetwins",
+        name: "Fune and Nahime",
+      },{
+        id: "kihive",
+        name: "King Ki Hunter",
+      },{
+        id: "mcridley",
+        name: "Mystery Creature",
+      },{
+        id: "goyagma",
+        name: "Goyagma",
+      },{
+        id: "deleter",
+        name: "Ferro Crusher",
+      },{
+        id: "rhedogiana",
+        name: "Rhedogian",
+      },{
+        id: "vorash",
+        name: "Vorash",
+      },{
+        id: "rhedogianb",
+        name: "Rhedogian",
+      },{
+        id: "rhedogianc",
+        name: "Rhedogian",
+      },{
+        id: "rhedogiand",
+        name: "Rhedogian",
+      },{
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "nightmarea",
+        name: "Nightmare",
+      },{
+        id: "nightmareb",
+        name: "Nightmare Reprise",
+      },{
+        id: "qmetroid",
+        name: "Queen Metroid",
+      },{
+        id: "mb",
+        name: "MB",
+      },{
+        id: "gauntlet",
+        name: "Final Gauntlet",
+      },{
+        id: "phantoon",
+        name: "Phantoon",
+      }
+    ],
+    areas: [
+      {
+        id: "maindeck",
+        name: "Main Sector",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "biosector",
+        name: "Sector 1 - Biosphere",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "cryosector",
+        name: "Sector 2 - Cryosphere",
+        starting: false,
+        color: "009700",
+      },{
+        id: "pyrosector",
+        name: "Sector 3 - Pyrosphere",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "research",
+        name: "Bioweapon Research Center",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mng": {
@@ -7431,6 +8610,108 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "alpha",
+        name: "Alpha Metroid",
+      },{
+        id: "gamma",
+        name: "Gamma Metroid",
+      },{
+        id: "delta",
+        name: "Grabber Gamma Metroid",
+      },{
+        id: "zeta",
+        name: "Zeta Metroid",
+      },{
+        id: "omega",
+        name: "Omega Metroid",
+      },{
+        id: "torizo",
+        name: "Torizo",
+      },{
+        id: "spospaw",
+        name: "Spore Spawn",
+      },{
+        id: "kraid",
+        name: "Kraid",
+      },{
+        id: "diorm",
+        name: "Diorm",
+      },{
+        id: "draygon",
+        name: "Draygon",
+      },{
+        id: "crocomice",
+        name: "Crocomice",
+      },{
+        id: "chozoguard",
+        name: "Chozo Guardian",
+      },{
+        id: "ridley",
+        name: "Ridley",
+      },{
+        id: "phantoon",
+        name: "Phantoon",
+      },{
+        id: "gtorizo",
+        name: "Golden Torizo",
+      },{
+        id: "larval",
+        name: "Larval Metroid",
+      },{
+        id: "mbrain",
+        name: "Mother Brain",
+      },{
+        id: "queen",
+        name: "Queen Metroid",
+      }
+    ],
+    areas: [
+      {
+        id: "srx88",
+        name: "SRX88",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "trozodia",
+        name: "Trozodia",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "pyrfair",
+        name: "Pyrfair",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "aqastar",
+        name: "Aqastar",
+        starting: false,
+        color: "009700",
+      },{
+        id: "arcteria",
+        name: "Arcteria",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "noctian",
+        name: "Noctian",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "phazondim",
+        name: "Phazon Dimension",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "galaxyheart",
+        name: "Heart of the Galaxy",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mttne": {
@@ -7854,6 +9135,12 @@ const rawData = {
         nodeType: "goal",
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "mf": {
@@ -8380,6 +9667,101 @@ const rawData = {
         nodeType: "upgrade",
         value: 0,
       },
+  /*"First Mission",
+  "Quarantine Bay",
+  "Atmospheric Stabilizer",
+  "Water Pump",
+  "Final Mission",*/
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+      {
+        id: "arachnus",
+        name: "Arachnus",
+      },{
+        id: "elephantbird",
+        name: "Core-X",
+      },{
+        id: "zazabi",
+        name: "Zazabi",
+      },{
+        id: "serris",
+        name: "Serris",
+      },{
+        id: "srboxa",
+        name: "Security Robot B.O.X.",
+      },{
+        id: "variacorex",
+        name: "Mega Core-X",
+      },{
+        id: "boilersci",
+        name: "Core-X",
+      },{
+        id: "nightmare",
+        name: "Nightmare",
+      },{
+        id: "yakuza",
+        name: "Yakuza",
+      },{
+        id: "nettori",
+        name: "Nettori",
+      },{
+        id: "srboxb",
+        name: "Security Robot B.O.X.",
+      },{
+        id: "ridley",
+        name: "Ridley-X",
+      },{
+        id: "saxfinal",
+        name: "SA-X",
+      },{
+        id: "omega",
+        name: "Omega Metroid",
+      }
+    ],
+    areas: [
+      {
+        id: "maindeck",
+        name: "Main Deck",
+        starting: true,
+        color: "2038ec",
+      },{
+        id: "srx",
+        name: "Sector 1 - SRX",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "tro",
+        name: "Sector 2 - TRO",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "pyr",
+        name: "Sector 3 - PYR",
+        starting: false,
+        color: "db2b00",
+      },{
+        id: "aqa",
+        name: "Sector 4 - AQA",
+        starting: false,
+        color: "009700",
+      },{
+        id: "arc",
+        name: "Sector 5 - ARC",
+        starting: false,
+        color: "bf00bf",
+      },{
+        id: "noc",
+        name: "Sector 6 - NOC",
+        starting: false,
+        color: "bcbcbc",
+      },{
+        id: "reslab",
+        name: "Restricted Lab",
+        starting: false,
+        color: "bcbcbc",
+      }
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "md": {
@@ -8389,7 +9771,7 @@ const rawData = {
         id: "powerBeam",
         name: "",
         start: 0,
-        max: 2,
+        max: 3,
         segments: [
           {
             id: "wideBeam",
@@ -8403,7 +9785,7 @@ const rawData = {
             max: 1,
             bg: "ffff80",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "plasmaBeamA",
             locale: {
@@ -8416,7 +9798,7 @@ const rawData = {
             max: 1,
             bg: "00ff08",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "waveBeamE",
             locale: {
@@ -8431,10 +9813,10 @@ const rawData = {
             max: 1,
             bg: "92278f",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },
         ],
-        value: 0,
+        value: 1,
       },{
         id: "chargeBeam",
         name: "",
@@ -8453,7 +9835,7 @@ const rawData = {
             max: 1,
             bg: "808000",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "diffusionBeamB",
             locale: {
@@ -8468,10 +9850,10 @@ const rawData = {
             overText: "Kraid Defeated",
             bg: "9b9b9b",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },
         ],
-        value: 0,
+        value: 1,
       },{
         id: "grappleBeam",
         name: "Grapple Beam",
@@ -8481,7 +9863,7 @@ const rawData = {
         segments: [],
         bg: "00e8d8",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "missile",
         name: "",
@@ -8495,7 +9877,7 @@ const rawData = {
             max: 1,
             bg: "007f0e",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "iceMissileB",
             name: "Ice Missiles",
@@ -8505,10 +9887,10 @@ const rawData = {
             max: 1,
             bg: "2038ec",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },
         ],
-        value: 0,
+        value: 1,
       },{
         id: "seekerLauncherB", // "combatVisor",
         name: "Storm Missile",
@@ -8519,7 +9901,7 @@ const rawData = {
         segments: [],
         bg: "644080",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "powerSuit",
         name: "",
@@ -8533,7 +9915,7 @@ const rawData = {
             max: 1,
             bg: "ff7e00",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "gravitySuitA",
             name: "Gravity Suit",
@@ -8541,10 +9923,10 @@ const rawData = {
             max: 1,
             bg: "602880",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },
         ],
-        value: 0,
+        value: 1,
       },{
         id: "invisibility",
         locale: {
@@ -8561,7 +9943,7 @@ const rawData = {
         segments: [],
         bg: "00ff08",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "flashShift", // TODO: find language-agnostic icon
         locale: {
@@ -8576,7 +9958,7 @@ const rawData = {
         segments: [],
         bg: "e900ff",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "scanPulse",
         locale: {
@@ -8591,7 +9973,7 @@ const rawData = {
         segments: [],
         bg: "00c7ff",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "morphBall",
         name: "Morph Ball",
@@ -8602,7 +9984,7 @@ const rawData = {
         segments: [],
         bg: "d8a480",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "bombD",
         name: "Bombs",
@@ -8612,7 +9994,7 @@ const rawData = {
         segments: [],
         bg: "3800a8",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "crossBombs",
         name: "Cross Bomb",
@@ -8623,7 +10005,7 @@ const rawData = {
         segments: [],
         bg: "886848",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "powerBomb",
         name: "Power Bombs",
@@ -8634,7 +10016,7 @@ const rawData = {
         segments: [],
         bg: "98b830",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "spiderMagnet",
         name: "Spider Magnet",
@@ -8645,7 +10027,7 @@ const rawData = {
         segments: [],
         bg: "ff7b7b",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "speedBooster",
         name: "Speed Booster",
@@ -8656,7 +10038,7 @@ const rawData = {
         segments: [],
         bg: "ff0094",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "jumpBoots",
         name: "",
@@ -8670,7 +10052,7 @@ const rawData = {
             max: 1,
             bg: "c0a8d8",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },{
             id: "spaceJump",
             name: "Space Jump",
@@ -8678,10 +10060,10 @@ const rawData = {
             max: 1,
             bg: "00a0e0",
             nodeType: "upgrade",
-            value: 0,
+            value: 1,
           },
         ],
-        value: 0,
+        value: 1,
       },{
         id: "screwAttack",
         name: "Screw Attack",
@@ -8690,7 +10072,7 @@ const rawData = {
         segments: [],
         bg: "69cd69",
         nodeType: "upgrade",
-        value: 0,
+        value: 1,
       },{
         id: "-",
         name: "",
@@ -8755,7 +10137,24 @@ const rawData = {
         bg: "98b830",
         nodeType: "upgrade",
         value: 1,
+      },{
+        id: "monsterDna",
+        name: "Metroid DNA",
+        sprite: "dna",
+        start: 0,
+        max: 3,
+        segments: [],
+        bg: "ffffff",
+        nodeType: "goal",
+        value: 1,
+        displayIfScramble: true,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "thf": {
@@ -8849,7 +10248,7 @@ const rawData = {
         start: 0,
         max: 1,
         segments: [],
-        value: 1,
+        value: 0,
       },{
         id: "arrow",
         name: "",
@@ -9017,6 +10416,12 @@ const rawData = {
         segments: [],
         value: 1,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "aol": {
@@ -9306,6 +10711,12 @@ const rawData = {
         ],
         value: 0,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "alttp": {
@@ -9863,6 +11274,12 @@ const rawData = {
         segments: [],
         value: 1,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   },
   "z3_rnd": {
@@ -10353,21 +11770,21 @@ const rawData = {
         start: 0,
         max: 8,
         segments: [],
-        value: 0,
+        value: 1,
       },{
         id: "bombsExp",
         name: "Bomb Capacity",
         start: 0,
         max: 8,
         segments: [],
-        value: 0,
+        value: 1,
       },{
         id: "pieceOfHeart",
         name: "Pieces of Heart",
         start: 0,
         max: 24,
         segments: [],
-        value: 0,
+        value: 1,
       },{
         id: "heartContainer",
         name: "Heart Containers",
@@ -10376,7 +11793,7 @@ const rawData = {
         over: "MC_Heart",
         overText: "Sanctuary Heart Obtained",
         segments: [],
-        value: 0,
+        value: 1,
       },{
         id: "ep",
         name: "Eastern Palace",
@@ -11106,6 +12523,12 @@ const rawData = {
         displayIfScramble: true,
         value: 1,
       },
+    ],
+    bosses: [ // nodeType: "boss", bg: "747474",
+    ],
+    areas: [
+    ],
+    extras: [ // nodeType: "goal", bg: "ffffff",
     ]
   }
 };

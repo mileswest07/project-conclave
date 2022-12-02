@@ -864,6 +864,16 @@ let keyslots = {};
     
     let startingItems = 0;
     let totalItems = feature.workingData.items.reduce((acc=0, next) => {
+      if (next.hasOwnProperty("displayIfScramble")) {
+        if (!main.isScramble || next.displayIfScramble !== true) {
+          return acc;
+        }
+      }
+      if (next.hasOwnProperty("clearIfScramble")) {
+        if (main.isScramble && next.clearIfScramble === true) {
+          return acc;
+        }
+      }
       if (next.hasOwnProperty("start") && next.hasOwnProperty("value") && next.value) {
         startingItems += next.start;
       }

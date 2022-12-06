@@ -16,6 +16,15 @@
     <div class="selection-form">
       <form id="startupMenu">
         <div class="float-left">
+          <!-- <ul class="mode-change">
+            <li>
+              Tracker Mode
+            </li>
+            <li>
+              <a href="explorer.html">Explorer Mode</a>
+            </li>
+          </ul> -->
+          <div class="clear-both"></div>
           <p class="menu-query-section">
             Select game:
             <select name="selectedGame">
@@ -28,7 +37,6 @@
                 <option value="b">Metroid Prime Pinball (NDS)</option>
                 <option value="p2d">Prime 2D (PC)</option>
                 <option value="e">Metroid Prime 2: Echoes (GCN)</option>
-                <option value="v">Echoes Randovania</option>
                 <option value="h">Metroid Prime: Hunters (NDS)</option>
                 <option value="c">Metroid Prime 3: Corruption (Wii)</option>
                 <option value="ff">Metroid Prime: Federation Force (3DS)</option>
@@ -49,7 +57,7 @@
                 <option value="z3">The Legend of Zelda: A Link to the Past (SNES)</option>
                 <option value="z3r">ALTTP Randomized</option>
               </optgroup>
-              <option value="scramble">Game Scramble</option>
+              <option value="scramble">Randomizer Mode</option>
             </select>
           </p>
           <p class="gameError hide-error">
@@ -110,7 +118,7 @@
             </select>
           </p>
           <p id="ifScrambleSelected" class="instructionPrompt hidden">
-            Sync up items in Scramble Mode?
+            Sync up items in Randomizer Mode?
             <label class="slider-switch">
               <input type="checkbox" name="scrambleSync" value="scrambleSync">
               <span class="slider"></span>
@@ -177,7 +185,7 @@
               </div>
               <div>
                 <label class="slider-switch">
-                  <input type="checkbox" name="v" value="v">
+                  <input type="checkbox" name="e" value="e">
                   <span class="slider"></span>
                 </label>
                 <span class="selection-label">Metroid Prime 2: Echoes (GCN)</span>
@@ -300,36 +308,36 @@
       </form>
     </div>
     <div class="startup-button float-left">
-      <input type="button" onclick="main.validateStartup(event)" value="Ready">
+      <input type="button" onclick="tracker.validateStartup(event)" value="Ready">
     </div>
     <div class="clear-both"></div>
   </section>
-  <section id="itemField" class="hide-section flex-field">
+  <section id="itemField" class="tracker hide-section flex-field">
     
   </section>
   <script src="js/rawData.js" type="application/javascript"></script>
-  <script src="js/feature.js" type="application/javascript"></script>
+  <script src="js/track.js" type="application/javascript"></script>
   <script src="js/main.js" type="application/javascript"></script>
   <script type="application/javascript">
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-    document.addEventListener("DOMContentLoaded", () => { main.start(); });
+    document.addEventListener("DOMContentLoaded", () => { tracker.start(); });
     
     let spriteCheckbox = document.querySelector("input[name=useSprites]");
     let timerCheckbox = document.querySelector("input[name=showTimer]");
     let gameDropdown = document.querySelector("select[name=selectedGame]");
     let scramblePresetDropdown = document.querySelector("select[name=scrambledPreset]");
     let scrambleSyncCheckbox = document.querySelector("input[name=scrambleSync]");
-    spriteCheckbox.addEventListener('change', main.handleSpriteSelection);
-    timerCheckbox.addEventListener('change', main.handleTimerSelection);
-    gameDropdown.addEventListener('change', main.handleDropdownSelection);
-    scramblePresetDropdown.addEventListener('change', main.handlePresetSelection);
-    scrambleSyncCheckbox.addEventListener('change', main.handleSyncSelection);
-    main.handleSpriteSelection({target: spriteCheckbox});
-    main.handleTimerSelection({target: timerCheckbox});
-    main.handleDropdownSelection({target: gameDropdown});
-    main.handlePresetSelection({target: scramblePresetDropdown});
-    main.handleSyncSelection({target: scrambleSyncCheckbox});
+    spriteCheckbox.addEventListener('change', tracker.handleSpriteSelection);
+    timerCheckbox.addEventListener('change', tracker.handleTimerSelection);
+    gameDropdown.addEventListener('change', tracker.handleDropdownSelection);
+    scramblePresetDropdown.addEventListener('change', tracker.handlePresetSelection);
+    scrambleSyncCheckbox.addEventListener('change', tracker.handleSyncSelection);
+    tracker.handleSpriteSelection({target: spriteCheckbox});
+    tracker.handleTimerSelection({target: timerCheckbox});
+    tracker.handleDropdownSelection({target: gameDropdown});
+    tracker.handlePresetSelection({target: scramblePresetDropdown});
+    tracker.handleSyncSelection({target: scrambleSyncCheckbox});
   </script>
 </body>
 </html>

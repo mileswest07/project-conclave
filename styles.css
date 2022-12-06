@@ -7,6 +7,22 @@ body {
   padding: 10px;
 }
 
+/***** selection-form *****/
+
+ul.mode-change {
+  list-style-type: none;
+}
+
+ul.mode-change li {
+  float: left;
+  margin-right: 1em;
+}
+
+ul.mode-change li + li::before {
+  content: "|";
+  margin-right: calc(1em - 2.45px);
+}
+
 .game-mode {
   overflow: hidden;
 }
@@ -80,6 +96,8 @@ body {
 .scramble-selection-container .selection-label {
   font-size: 0.83em;
 }
+
+/***** tracker *****/
 
 .flex-field {
   display: flex;

@@ -18,10 +18,10 @@ img.item-image.boostBall { background: url("images/m_graphics.png") -559px 0; }
 img.item-image.cannonball { background: url("images/m_graphics.png") -602px 0; }
 img.item-image.hyperBall { background: url("images/m_graphics.png") -645px 0; }
 img.item-image.forceBall { background: url("images/m_graphics.png") -688px 0; }
-img.item-image.missileOrb { background: url("images/m_graphics.png") -731px 0; }
+img.item-image.missileOrb { background: url("images/m_graphics.png") -731px 0; } /* UNUSED */
 img.item-image.powerBeam { background: url("images/m_graphics.png") 0 -43px; }
 img.item-image.powerBeamA { background: url("images/m_graphics.png") -43px -43px; }
-img.item-image.powerBeamB { background: url("images/m_graphics.png") -86px -43px; }
+img.item-image.powerBeamB { background: url("images/m_graphics.png") -86px -43px; } /* UNUSED */
 img.item-image.longBeam { background: url("images/m_graphics.png") -129px -43px; }
 img.item-image.chargeBeamE { background: url("images/m_graphics.png") -172px -43px; }
 img.item-image.chargeBeamA { background: url("images/m_graphics.png") -215px -43px; }
@@ -37,7 +37,7 @@ img.item-image.waveBeamE { background: url("images/m_graphics.png") -559px -43px
 img.item-image.waveBeam { background: url("images/m_graphics.png") -602px -43px; }
 img.item-image.waveBeamA { background: url("images/m_graphics.png") -645px -43px; }
 img.item-image.waveBeamB { background: url("images/m_graphics.png") -688px -43px; }
-img.item-image.luminothMessage { background: url("images/m_graphics.png") -731px -43px; }
+img.item-image.luminothMessage { background: url("images/m_graphics.png") -731px -43px; } /* UNUSED */
 img.item-image.iceBeamD { background: url("images/m_graphics.png") 0 -86px; }
 img.item-image.iceBeamA { background: url("images/m_graphics.png") -43px -86px; }
 img.item-image.iceBeamB { background: url("images/m_graphics.png") -86px -86px; }
@@ -55,12 +55,12 @@ img.item-image.diffusionBeam { background: url("images/m_graphics.png") -559px -
 img.item-image.voltDriver { background: url("images/m_graphics.png") -602px -86px; }
 img.item-image.battlehammer { background: url("images/m_graphics.png") -645px -86px; }
 img.item-image.magmaul { background: url("images/m_graphics.png") -688px -86px; }
-img.item-image.echoKeyBeam { background: url("images/m_graphics.png") -731px -86px; }
+img.item-image.echoKeyBeam { background: url("images/m_graphics.png") -731px -86px; } /* UNUSED */
 img.item-image.judicator { background: url("images/m_graphics.png") 0 -129px; }
 img.item-image.shockCoil { background: url("images/m_graphics.png") -43px -129px; }
 img.item-image.imperialist { background: url("images/m_graphics.png") -86px -129px; }
 img.item-image.omegaCannon { background: url("images/m_graphics.png") -129px -129px; }
-img.item-image.freezeShot,
+img.item-image.freezeShot, /* UNUSED */
 img.item-image.iceMissileB { background: url("images/m_graphics.png") -172px -129px; }
 img.item-image.flameShot { background: url("images/m_graphics.png") -215px -129px; }
 img.item-image.shockShot { background: url("images/m_graphics.png") -258px -129px; }
@@ -74,7 +74,7 @@ img.item-image.grappleVoltage { background: url("images/m_graphics.png") -559px 
 img.item-image.hyperGrapple { background: url("images/m_graphics.png") -602px -129px; }
 img.item-image.shipGrapple { background: url("images/m_graphics.png") -645px -129px; }
 img.item-image.uaExpansion { background: url("images/m_graphics.png") -688px -129px; }
-img.item-image.echoKey { background: url("images/m_graphics.png") -731px -129px; }
+img.item-image.echoKey { background: url("images/m_graphics.png") -731px -129px; } /* UNUSED */
 img.item-image.combatVisor,
 img.item-image.seekerLauncherC { background: url("images/m_graphics.png") 0 -172px; }
 img.item-image.combatVisorA { background: url("images/m_graphics.png") -43px -172px; }
@@ -92,8 +92,8 @@ img.item-image.violetTranslator { background: url("images/m_graphics.png") -516p
 img.item-image.amberTranslator { background: url("images/m_graphics.png") -559px -172px; }
 img.item-image.emeraldTranslator { background: url("images/m_graphics.png") -602px -172px; }
 img.item-image.cobaltTranslator { background: url("images/m_graphics.png") -645px -172px; }
-img.item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; }
-img.item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; }
+img.item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; } /* UNUSED */
+img.item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; } /* UNUSED */
 img.item-image.fullPowerSuit { background: url("images/m_graphics.png") 0 -215px; }
 img.item-image.barrier,
 img.item-image.barrierA,
@@ -115,9 +115,9 @@ img.item-image.gravityBoost { background: url("images/m_graphics.png") -473px -2
 img.item-image.lightSuit { background: url("images/m_graphics.png") -516px -215px; }
 img.item-image.ped { background: url("images/m_graphics.png") -559px -215px; }
 img.item-image.hazardShield { background: url("images/m_graphics.png") -602px -215px; }
-img.item-image.magneticShield { background: url("images/m_graphics.png") -645px -215px; }
-img.item-image.armCannon { background: url("images/m_graphics.png") -688px -215px; }
-img.item-image.altform { background: url("images/m_graphics.png") -731px -215px; }
+img.item-image.magneticShield { background: url("images/m_graphics.png") -645px -215px; } /* UNUSED */
+img.item-image.armCannon { background: url("images/m_graphics.png") -688px -215px; } /* UNUSED */
+img.item-image.altform { background: url("images/m_graphics.png") -731px -215px; } /* UNUSED */
 img.item-image.missile { background: url("images/m_graphics.png") 0 -258px; }
 img.item-image.missileTank { background: url("images/m_graphics.png") -43px -258px; }
 img.item-image.missileA { background: url("images/m_graphics.png") -86px -258px; }
@@ -134,8 +134,8 @@ img.item-image.sonicBoom { background: url("images/m_graphics.png") -516px -258p
 img.item-image.hyperMissile { background: url("images/m_graphics.png") -559px -258px; }
 img.item-image.shipMissile { background: url("images/m_graphics.png") -602px -258px; }
 img.item-image.shipMissileExpansion { background: url("images/m_graphics.png") -645px -258px; }
-img.item-image.affinityWeapon { background: url("images/m_graphics.png") -688px -258px; }
-img.item-image.deathalt { background: url("images/m_graphics.png") -731px -258px; }
+img.item-image.affinityWeapon { background: url("images/m_graphics.png") -688px -258px; } /* UNUSED */
+img.item-image.deathalt { background: url("images/m_graphics.png") -731px -258px; } /* UNUSED */
 img.item-image.highJump { background: url("images/m_graphics.png") 0 -301px; }
 img.item-image.speedBooster { background: url("images/m_graphics.png") -43px -301px; }
 img.item-image.speedBoosterA { background: url("images/m_graphics.png") -86px -301px; }
@@ -145,23 +145,23 @@ img.item-image.screwAttack { background: url("images/m_graphics.png") -215px -30
 img.item-image.screwAttackA { background: url("images/m_graphics.png") -258px -301px; }
 img.item-image.powerGrip { background: url("images/m_graphics.png") -301px -301px; }
 img.item-image.zipline { background: url("images/m_graphics.png") -344px -301px; }
-img.item-image.spaceJumpBoots,
+img.item-image.spaceJumpBoots, /* UNUSED */
 img.item-image.spinBoost { background: url("images/m_graphics.png") -387px -301px; }
 img.item-image.scanPulse,
-img.item-image.radar { background: url("images/m_graphics.png") -430px -301px; }
+img.item-image.radar { background: url("images/m_graphics.png") -430px -301px; } /* UNUSED */
 img.item-image.lightningArmor { background: url("images/m_graphics.png") -473px -301px; }
 img.item-image.beamBurst { background: url("images/m_graphics.png") -516px -301px; }
 img.item-image.phaseDrift { background: url("images/m_graphics.png") -559px -301px; }
 img.item-image.aeionExpansion { background: url("images/m_graphics.png") -602px -301px; }
-img.item-image.jumpBoots { background: url("images/m_graphics.png") -645px -301px; }
-img.item-image.speedBoosterB { background: url("images/m_graphics.png") -688px -301px; }
-img.item-image.exelion { background: url("images/m_graphics.png") -731px -301px; }
+img.item-image.jumpBoots { background: url("images/m_graphics.png") -645px -301px; } /* UNUSED */
+img.item-image.speedBoosterB { background: url("images/m_graphics.png") -688px -301px; } /* UNUSED */
+img.item-image.exelion { background: url("images/m_graphics.png") -731px -301px; } /* UNUSED */
 img.item-image.energyTank { background: url("images/m_graphics.png") 0 -344px; }
 img.item-image.energyTankA { background: url("images/m_graphics.png") -43px -344px; }
 img.item-image.reserveTank { background: url("images/m_graphics.png") -86px -344px; }
 img.item-image.energyPart { background: url("images/m_graphics.png") -129px -344px; }
 img.item-image.eRecoveryTank { background: url("images/m_graphics.png") -172px -344px; }
-img.item-image.unknownItem { background: url("images/m_graphics.png") -215px -344px; }
+img.item-image.unknownItem { background: url("images/m_graphics.png") -215px -344px; } /* UNUSED */
 img.item-image.unknownItem1 { background: url("images/m_graphics.png") -258px -344px; }
 img.item-image.unknownItem2 { background: url("images/m_graphics.png") -301px -344px; }
 img.item-image.unknownItem3 { background: url("images/m_graphics.png") -344px -344px; }
@@ -174,7 +174,7 @@ img.item-image.energyTransferModule { background: url("images/m_graphics.png") -
 img.item-image.energyCell { background: url("images/m_graphics.png") -645px -344px; }
 img.item-image.pirateCode { background: url("images/m_graphics.png") -688px -344px; }
 img.item-image.dreadEnergy { background: url("images/m_graphics.png") -731px -344px; }
-img.item-image.templeKey { background: url("images/m_graphics.png") 0 -387px; }
+img.item-image.templeKey { background: url("images/m_graphics.png") 0 -387px; } /* UNUSED */
 img.item-image.lightOfAether { background: url("images/m_graphics.png") -43px -387px; }
 img.item-image.lightOfAetherA { background: url("images/m_graphics.png") -86px -387px; }
 img.item-image.cipher { background: url("images/m_graphics.png") -129px -387px; }
@@ -193,7 +193,7 @@ img.item-image.oubliette { background: url("images/m_graphics.png") -645px -387p
 img.item-image.am2rPowerOrb { background: url("images/m_graphics.png") -688px -387px; }
 img.item-image.dreadPart { background: url("images/m_graphics.png") -731px -387px; }
 img.item-image.securityL0 { background: url("images/m_graphics.png") 0 -430px; }
-img.item-image.energyPickup { background: url("images/m_graphics.png") -43px -430px; }
+img.item-image.energyPickup { background: url("images/m_graphics.png") -43px -430px; } /* UNUSED */
 img.item-image.securityL1 { background: url("images/m_graphics.png") -86px -430px; }
 img.item-image.missileC { background: url("images/m_graphics.png") -129px -430px; }
 img.item-image.securityL2 { background: url("images/m_graphics.png") -172px -430px; }
@@ -201,73 +201,73 @@ img.item-image.missileD { background: url("images/m_graphics.png") -215px -430px
 img.item-image.securityL3 { background: url("images/m_graphics.png") -258px -430px; }
 img.item-image.alimbicCannon { background: url("images/m_graphics.png") -301px -430px; }
 img.item-image.securityL4 { background: url("images/m_graphics.png") -344px -430px; }
-img.item-image.friendVoucher { background: url("images/m_graphics.png") -387px -430px; }
+img.item-image.friendVoucher { background: url("images/m_graphics.png") -387px -430px; } /* UNUSED */
 img.item-image.etedach { background: url("images/m_graphics.png") -430px -430px; }
 img.item-image.skyTempleAccess { background: url("images/m_graphics.png") -473px -430px; }
-img.item-image.norion { background: url("images/m_graphics.png") -516px -430px; }
-img.item-image.bryyo { background: url("images/m_graphics.png") -559px -430px; }
-img.item-image.elysia { background: url("images/m_graphics.png") -602px -430px; }
-img.item-image.urtraghus { background: url("images/m_graphics.png") -645px -430px; }
-img.item-image.spireDock { background: url("images/m_graphics.png") -688px -430px; }
-img.item-image.keyGate1 { background: url("images/m_graphics.png") -731px -430px; }
+img.item-image.norion { background: url("images/m_graphics.png") -516px -430px; } /* UNUSED */
+img.item-image.bryyo { background: url("images/m_graphics.png") -559px -430px; } /* UNUSED */
+img.item-image.elysia { background: url("images/m_graphics.png") -602px -430px; } /* UNUSED */
+img.item-image.urtraghus { background: url("images/m_graphics.png") -645px -430px; } /* UNUSED */
+img.item-image.spireDock { background: url("images/m_graphics.png") -688px -430px; } /* UNUSED */
+img.item-image.keyGate1 { background: url("images/m_graphics.png") -731px -430px; } /* UNUSED */
 img.item-image.boss { background: url("images/m_graphics.png") 0 -473px; }
 img.item-image.monster { background: url("images/m_graphics.png") -43px -473px; }
 img.item-image.monsterDna { background: url("images/m_graphics.png") -86px -473px; }
 img.item-image.monsterCapsule { background: url("images/m_graphics.png") -129px -473px; }
 img.item-image.magneticShieldTank { background: url("images/m_graphics.png") -172px -473px; }
-img.item-image.pumpControlUnit { background: url("images/m_graphics.png") -215px -473px; }
-img.item-image.mainBoiler { background: url("images/m_graphics.png") -258px -473px; }
-img.item-image.reactorCore { background: url("images/m_graphics.png") -301px -473px; }
-img.item-image.mainDeck { background: url("images/m_graphics.png") -344px -473px; }
-img.item-image.sector1SRX { background: url("images/m_graphics.png") -387px -473px; }
-img.item-image.sector2TRO { background: url("images/m_graphics.png") -430px -473px; }
-img.item-image.sector3PYR { background: url("images/m_graphics.png") -473px -473px; }
-img.item-image.sector4AQA { background: url("images/m_graphics.png") -516px -473px; }
-img.item-image.sector5ARC { background: url("images/m_graphics.png") -559px -473px; }
-img.item-image.sector6NOC { background: url("images/m_graphics.png") -602px -473px; }
-img.item-image.restrictedLab { background: url("images/m_graphics.png") -645px -473px; }
-img.item-image.quarantineBay { background: url("images/m_graphics.png") -688px -473px; }
-img.item-image.keyGate2 { background: url("images/m_graphics.png") -731px -473px; }
-img.item-image.towerPower { background: url("images/m_graphics.png") 0 -516px; }
-img.item-image.chozoStatue { background: url("images/m_graphics.png") -43px -516px; }
-img.item-image.federationArmy { background: url("images/m_graphics.png") -86px -516px; }
-img.item-image.federationMarines { background: url("images/m_graphics.png") -129px -516px; }
-img.item-image.xenoresearch { background: url("images/m_graphics.png") -172px -516px; }
-img.item-image.adam { background: url("images/m_graphics.png") -215px -516px; }
-img.item-image.powerBeamC { background: url("images/m_graphics.png") -258px -516px; }
-img.item-image.darkBeamA { background: url("images/m_graphics.png") -301px -516px; }
-img.item-image.lightBeamA { background: url("images/m_graphics.png") -344px -516px; }
-img.item-image.annihilatorBeamA { background: url("images/m_graphics.png") -387px -516px; }
-img.item-image.shieldKey { background: url("images/m_graphics.png") -430px -516px; }
-img.item-image.commandVisorA { background: url("images/m_graphics.png") -473px -516px; }
-img.item-image.crystalFlash { background: url("images/m_graphics.png") -516px -516px; }
-img.item-image.alimbicArtifact { background: url("images/m_graphics.png") -559px -516px; }
-img.item-image.translatorModule { background: url("images/m_graphics.png") -602px -516px; }
-img.item-image.securityUnlock { background: url("images/m_graphics.png") -645px -516px; }
-img.item-image.randomizer { background: url("images/m_graphics.png") -688px -516px; }
+img.item-image.pumpControlUnit { background: url("images/m_graphics.png") -215px -473px; } /* UNUSED */
+img.item-image.mainBoiler { background: url("images/m_graphics.png") -258px -473px; } /* UNUSED */
+img.item-image.reactorCore { background: url("images/m_graphics.png") -301px -473px; } /* UNUSED */
+img.item-image.mainDeck { background: url("images/m_graphics.png") -344px -473px; } /* UNUSED */
+img.item-image.sector1SRX { background: url("images/m_graphics.png") -387px -473px; } /* UNUSED */
+img.item-image.sector2TRO { background: url("images/m_graphics.png") -430px -473px; } /* UNUSED */
+img.item-image.sector3PYR { background: url("images/m_graphics.png") -473px -473px; } /* UNUSED */
+img.item-image.sector4AQA { background: url("images/m_graphics.png") -516px -473px; } /* UNUSED */
+img.item-image.sector5ARC { background: url("images/m_graphics.png") -559px -473px; } /* UNUSED */
+img.item-image.sector6NOC { background: url("images/m_graphics.png") -602px -473px; } /* UNUSED */
+img.item-image.restrictedLab { background: url("images/m_graphics.png") -645px -473px; } /* UNUSED */
+img.item-image.quarantineBay { background: url("images/m_graphics.png") -688px -473px; } /* UNUSED */
+img.item-image.keyGate2 { background: url("images/m_graphics.png") -731px -473px; } /* UNUSED */
+img.item-image.towerPower { background: url("images/m_graphics.png") 0 -516px; } /* UNUSED */
+img.item-image.chozoStatue { background: url("images/m_graphics.png") -43px -516px; } /* UNUSED */
+img.item-image.federationArmy { background: url("images/m_graphics.png") -86px -516px; } /* UNUSED */
+img.item-image.federationMarines { background: url("images/m_graphics.png") -129px -516px; } /* UNUSED */
+img.item-image.xenoresearch { background: url("images/m_graphics.png") -172px -516px; } /* UNUSED */
+img.item-image.adam { background: url("images/m_graphics.png") -215px -516px; } /* UNUSED */
+img.item-image.powerBeamC { background: url("images/m_graphics.png") -258px -516px; } /* UNUSED */
+img.item-image.darkBeamA { background: url("images/m_graphics.png") -301px -516px; } /* UNUSED */
+img.item-image.lightBeamA { background: url("images/m_graphics.png") -344px -516px; } /* UNUSED */
+img.item-image.annihilatorBeamA { background: url("images/m_graphics.png") -387px -516px; } /* UNUSED */
+img.item-image.shieldKey { background: url("images/m_graphics.png") -430px -516px; } /* UNUSED */
+img.item-image.commandVisorA { background: url("images/m_graphics.png") -473px -516px; } /* UNUSED */
+img.item-image.crystalFlash { background: url("images/m_graphics.png") -516px -516px; } /* UNUSED */
+img.item-image.alimbicArtifact { background: url("images/m_graphics.png") -559px -516px; } /* UNUSED */
+img.item-image.translatorModule { background: url("images/m_graphics.png") -602px -516px; } /* UNUSED */
+img.item-image.securityUnlock { background: url("images/m_graphics.png") -645px -516px; } /* UNUSED */
+img.item-image.randomizer { background: url("images/m_graphics.png") -688px -516px; } /* UNUSED */
 img.item-image.goldMedal { background: url("images/m_graphics.png") -731px -516px; }
 img.item-image.bombD { background: url("images/m_graphics.png") 0 -559px; }
-img.item-image.monsterDnaA { background: url("images/m_graphics.png") -43px -559px; }
-img.item-image.lightBeamB { background: url("images/m_graphics.png") -86px -559px; }
-img.item-image.annihilatorBeamB { background: url("images/m_graphics.png") -129px -559px; }
-img.item-image.electroLob { background: url("images/m_graphics.png") -172px -559px; }
-img.item-image.darkVisorA { background: url("images/m_graphics.png") -215px -559px; }
-img.item-image.hint { background: url("images/m_graphics.png") -258px -559px; }
-img.item-image.bsl { background: url("images/m_graphics.png") -301px -559px; }
-img.item-image.datapack { background: url("images/m_graphics.png") -344px -559px; }
+img.item-image.monsterDnaA { background: url("images/m_graphics.png") -43px -559px; } /* UNUSED */
+img.item-image.lightBeamB { background: url("images/m_graphics.png") -86px -559px; } /* UNUSED */
+img.item-image.annihilatorBeamB { background: url("images/m_graphics.png") -129px -559px; } /* UNUSED */
+img.item-image.electroLob { background: url("images/m_graphics.png") -172px -559px; } /* UNUSED */
+img.item-image.darkVisorA { background: url("images/m_graphics.png") -215px -559px; } /* UNUSED */
+img.item-image.hint { background: url("images/m_graphics.png") -258px -559px; } /* UNUSED */
+img.item-image.bsl { background: url("images/m_graphics.png") -301px -559px; } /* UNUSED */
+img.item-image.datapack { background: url("images/m_graphics.png") -344px -559px; } /* UNUSED */
 img.item-image.doubleDamageA { background: url("images/m_graphics.png") -387px -559px; }
-img.item-image.doubleDamage { background: url("images/m_graphics.png") -430px -559px; }
-img.item-image.invisibilityA,
-img.item-image.cloakA { background: url("images/m_graphics.png") -473px -559px; }
-img.item-image.chargeBomb { background: url("images/m_graphics.png") -516px -559px; }
-img.item-image.iceChargeShot { background: url("images/m_graphics.png") -559px -559px; }
-img.item-image.spikeBomb { background: url("images/m_graphics.png") -602px -559px; }
-img.item-image.modSlot { background: url("images/m_graphics.png") -645px -559px; }
-img.item-image.modChip { background: url("images/m_graphics.png") -688px -559px; }
-img.item-image.modChipA { background: url("images/m_graphics.png") -731px -559px; }
-img.item-image.shield { background: url("images/m_graphics.png") 0 -602px; }
-img.item-image.adrenaline { background: url("images/m_graphics.png") -43px -602px; }
-img.item-image.eject { background: url("images/m_graphics.png") -86px -602px; }
+img.item-image.doubleDamage { background: url("images/m_graphics.png") -430px -559px; } /* UNUSED */
+img.item-image.invisibilityA, /* UNUSED */
+img.item-image.cloakA { background: url("images/m_graphics.png") -473px -559px; } /* UNUSED */
+img.item-image.chargeBomb { background: url("images/m_graphics.png") -516px -559px; } /* UNUSED */
+img.item-image.iceChargeShot { background: url("images/m_graphics.png") -559px -559px; } /* UNUSED */
+img.item-image.spikeBomb { background: url("images/m_graphics.png") -602px -559px; } /* UNUSED */
+img.item-image.modSlot { background: url("images/m_graphics.png") -645px -559px; } /* UNUSED */
+img.item-image.modChip { background: url("images/m_graphics.png") -688px -559px; } /* UNUSED */
+img.item-image.modChipA { background: url("images/m_graphics.png") -731px -559px; } /* UNUSED */
+img.item-image.shield { background: url("images/m_graphics.png") 0 -602px; } /* UNUSED */
+img.item-image.adrenaline { background: url("images/m_graphics.png") -43px -602px; } /* UNUSED */
+img.item-image.eject { background: url("images/m_graphics.png") -86px -602px; } /* UNUSED */
 img.item-image.repairCapsule { background: url("images/m_graphics.png") -129px -602px; }
 img.item-image.shieldGenerator { background: url("images/m_graphics.png") -172px -602px; }
 img.item-image.missileB { background: url("images/m_graphics.png") -215px -602px; }
@@ -276,70 +276,70 @@ img.item-image.proximityBomb { background: url("images/m_graphics.png") -301px -
 img.item-image.decoy { background: url("images/m_graphics.png") -344px -602px; }
 img.item-image.slowBeam { background: url("images/m_graphics.png") -387px -602px; }
 img.item-image.scanBolt { background: url("images/m_graphics.png") -430px -602px; }
-img.item-image.progressiveBeam { background: url("images/m_graphics.png") -473px -602px; }
-img.item-image.progressiveBeamA { background: url("images/m_graphics.png") -516px -602px; }
+img.item-image.progressiveBeam { background: url("images/m_graphics.png") -473px -602px; } /* UNUSED */
+img.item-image.progressiveBeamA { background: url("images/m_graphics.png") -516px -602px; } /* UNUSED */
 img.item-image.grappleBeamA { background: url("images/m_graphics.png") -559px -602px; }
-img.item-image.progressiveMissile { background: url("images/m_graphics.png") -602px -602px; }
+img.item-image.progressiveMissile { background: url("images/m_graphics.png") -602px -602px; } /* UNUSED */
 img.item-image.crossBombs { background: url("images/m_graphics.png") -645px -602px; }
-img.item-image.mapMarker { background: url("images/m_graphics.png") -688px -602px; }
-img.item-image.modChipB { background: url("images/m_graphics.png") -731px -602px; }
+img.item-image.mapMarker { background: url("images/m_graphics.png") -688px -602px; } /* UNUSED */
+img.item-image.modChipB { background: url("images/m_graphics.png") -731px -602px; } /* UNUSED */
 img.item-image.spinBoostA { background: url("images/m_graphics.png") 0 -645px; }
 img.item-image.chargeBeam { background: url("images/m_graphics.png") -43px -645px; }
 img.item-image.infiniteBeamAmmo { background: url("images/m_graphics.png") -86px -645px; }
 img.item-image.infiniteMissiles { background: url("images/m_graphics.png") -129px -645px; }
 img.item-image.superMissileC { background: url("images/m_graphics.png") -172px -645px; }
 img.item-image.spiderBall { background: url("images/m_graphics.png") -215px -645px; }
-img.item-image.bountyCoin { background: url("images/m_graphics.png") -258px -645px; }
-img.item-image.bountyCoin1 { background: url("images/m_graphics.png") -301px -645px; }
-img.item-image.bountyCoin5 { background: url("images/m_graphics.png") -344px -645px; }
-img.item-image.bountyCoin10 { background: url("images/m_graphics.png") -387px -645px; }
-img.item-image.bountyCoin50 { background: url("images/m_graphics.png") -430px -645px; }
-img.item-image.bountyCoin100 { background: url("images/m_graphics.png") -473px -645px; }
+img.item-image.bountyCoin { background: url("images/m_graphics.png") -258px -645px; } /* UNUSED */
+img.item-image.bountyCoin1 { background: url("images/m_graphics.png") -301px -645px; } /* UNUSED */
+img.item-image.bountyCoin5 { background: url("images/m_graphics.png") -344px -645px; } /* UNUSED */
+img.item-image.bountyCoin10 { background: url("images/m_graphics.png") -387px -645px; } /* UNUSED */
+img.item-image.bountyCoin50 { background: url("images/m_graphics.png") -430px -645px; } /* UNUSED */
+img.item-image.bountyCoin100 { background: url("images/m_graphics.png") -473px -645px; } /* UNUSED */
 img.item-image.diffusionBeamA { background: url("images/m_graphics.png") -516px -645px; }
 img.item-image.novaBeamA { background: url("images/m_graphics.png") -559px -645px; }
 img.item-image.hypermode { background: url("images/m_graphics.png") -602px -645px; }
-img.item-image.iceMissileA { background: url("images/m_graphics.png") -645px -645px; }
+img.item-image.iceMissileA { background: url("images/m_graphics.png") -645px -645px; } /* UNUSED */
 img.item-image.doubleMissileTank { background: url("images/m_graphics.png") -688px -645px; }
-img.item-image.modChipC { background: url("images/m_graphics.png") -731px -645px; }
+img.item-image.modChipC { background: url("images/m_graphics.png") -731px -645px; } /* UNUSED */
 img.item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -688px; }
 img.item-image.flashShift { background: url("images/m_graphics.png") -43px -688px; }
 img.item-image.gravitySuitA { background: url("images/m_graphics.png") -86px -688px; }
 img.item-image.phantomCloak,
-img.item-image.cloakB { background: url("images/m_graphics.png") -129px -688px; }
+img.item-image.cloakB { background: url("images/m_graphics.png") -129px -688px; } /* UNUSED */
 img.item-image.pulseRadar,
-img.item-image.radarA { background: url("images/m_graphics.png") -172px -688px; }
+img.item-image.radarA { background: url("images/m_graphics.png") -172px -688px; } /* UNUSED */
 img.item-image.aquadiaKey { background: url("images/m_graphics.png") -215px -688px; }
 img.item-image.steelarisGear { background: url("images/m_graphics.png") -258px -688px; }
 img.item-image.longBeamA { background: url("images/m_graphics.png") -301px -688px; }
 img.item-image.iceBeam { background: url("images/m_graphics.png") -344px -688px; }
 img.item-image.plasmaBeam { background: url("images/m_graphics.png") -387px -688px; }
 img.item-image.waveBeamC { background: url("images/m_graphics.png") -430px -688px; }
-img.item-image.fireBeam,
+img.item-image.fireBeam, /* UNUSED */
 img.item-image.flameShotA { background: url("images/m_graphics.png") -473px -688px; }
 img.item-image.waveBeamD { background: url("images/m_graphics.png") -516px -688px; }
 img.item-image.plasmaBeamE { background: url("images/m_graphics.png") -559px -688px; }
 img.item-image.iceBeamE { background: url("images/m_graphics.png") -602px -688px; }
 img.item-image.diffusionBeamB { background: url("images/m_graphics.png") -645px -688px; }
-img.item-image.itemSphere,
+img.item-image.itemSphere, /* UNUSED */
 img.item-image.unused { background: url("images/m_graphics.png") -688px -688px; }
-img.item-image.chozoCrest { background: url("images/m_graphics.png") -731px -688px; }
+img.item-image.chozoCrest { background: url("images/m_graphics.png") -731px -688px; } /* UNUSED */
 img.item-image.chykka { background: url("images/m_graphics.png") 0 -731px; }
 img.item-image.quadraxis { background: url("images/m_graphics.png") -43px -731px; }
 img.item-image.aetherKey { background: url("images/m_graphics.png") -86px -731px; }
-img.item-image.darkAetherKey { background: url("images/m_graphics.png") -129px -731px; }
-img.item-image.burstBeam { background: url("images/m_graphics.png") -172px -731px; }
-img.item-image.smallAmmo { background: url("images/m_graphics.png") -215px -731px; }
-img.item-image.largeAmmo { background: url("images/m_graphics.png") -258px -731px; }
-img.item-image.meleeCounter { background: url("images/m_graphics.png") -301px -731px; }
-img.item-image.dashMelee { background: url("images/m_graphics.png") -344px -731px; }
-img.item-image.overblast { background: url("images/m_graphics.png") -387px -731px; }
-img.item-image.concentration { background: url("images/m_graphics.png") -430px -731px; }
-img.item-image.lethalStrike { background: url("images/m_graphics.png") -473px -731px; }
-img.item-image.slide { background: url("images/m_graphics.png") -516px -731px; }
-img.item-image.omegaBlast { background: url("images/m_graphics.png") -559px -731px; }
-img.item-image.senseMove { background: url("images/m_graphics.png") -602px -731px; }
+img.item-image.darkAetherKey { background: url("images/m_graphics.png") -129px -731px; } /* UNUSED */
+img.item-image.burstBeam { background: url("images/m_graphics.png") -172px -731px; } /* UNUSED */
+img.item-image.smallAmmo { background: url("images/m_graphics.png") -215px -731px; } /* UNUSED */
+img.item-image.largeAmmo { background: url("images/m_graphics.png") -258px -731px; } /* UNUSED */
+img.item-image.meleeCounter { background: url("images/m_graphics.png") -301px -731px; } /* UNUSED */
+img.item-image.dashMelee { background: url("images/m_graphics.png") -344px -731px; } /* UNUSED */
+img.item-image.overblast { background: url("images/m_graphics.png") -387px -731px; } /* UNUSED */
+img.item-image.concentration { background: url("images/m_graphics.png") -430px -731px; } /* UNUSED */
+img.item-image.lethalStrike { background: url("images/m_graphics.png") -473px -731px; } /* UNUSED */
+img.item-image.slide { background: url("images/m_graphics.png") -516px -731px; } /* UNUSED */
+img.item-image.omegaBlast { background: url("images/m_graphics.png") -559px -731px; } /* UNUSED */
+img.item-image.senseMove { background: url("images/m_graphics.png") -602px -731px; } /* UNUSED */
 img.item-image.invisibility,
-img.item-image.cloak { background: url("images/m_graphics.png") -645px -731px; }
+img.item-image.cloak { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
 img.item-image.unusedA { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
 img.item-image.unusedA { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
 

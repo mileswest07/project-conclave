@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Metroid Item Explorer</title>
+<title>Project Conclave - Metroid Item Explorer</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <meta name="Keywords" content=""> -->
 <!-- <meta name="Description" content=""> -->
 <!-- <link rel="icon" href="/images/samus.png" type="image/x-icon"/> -->
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="explorer.css">
 <link rel="stylesheet" href="spriteMapping.css">
 </head>
 
@@ -29,47 +30,32 @@
             Select game:
             <select name="selectedGame">
               <option value="" selected disabled>Select from the menu...</option>
-              <optgroup label="== METROID ==">
-                <option value="m">Metroid (NES)</option>
-                <option value="rd">Rogue Dawn (NES)</option>
-                <option value="z">Metroid: Zero Mission (GBA)</option>
-                <option value="p">Metroid Prime (GCN)</option>
-                <option value="b">Metroid Prime Pinball (NDS)</option>
-                <option value="p2d">Prime 2D (PC)</option>
-                <option value="e">Metroid Prime 2: Echoes (GCN)</option>
-                <option value="h">Metroid Prime: Hunters (NDS)</option>
-                <option value="c">Metroid Prime 3: Corruption (Wii)</option>
-                <option value="ff">Metroid Prime: Federation Force (3DS)</option>
-                <option value="ros">Metroid II: Return of Samus (GB)</option>
-                <option value="mc">Metroid Confrontation (PC)</option>
-                <option value="a">AM2R (PC)</option>
-                <option value="r">Metroid: Samus Returns (3DS)</option>
-                <option value="s">Super Metroid (SNES)</option>
-                <option value="o">Metroid: Other M (Wii)</option>
-                <option value="f">Metroid: Fusion (GBA)</option>
-                <option value="n">Metroid: A New Galaxy (PC)</option>
-                <option value="t">Metroid: The Threat Never Ends (PC)</option>
-                <option value="d">Metroid: Dread (Switch)</option>
-              </optgroup>
-              <optgroup label="==  ZELDA  ==">
-                <option value="z1">The Legend of Zelda (NES)</option>
-                <option value="z2">Zelda II: The Adventure of Link (NES)</option>
-                <option value="z3">The Legend of Zelda: A Link to the Past (SNES)</option>
-                <option value="z3r">ALTTP Randomized</option>
+              <option value="m">Metroid (NES)</option>
+              <option value="rd" disabled>Rogue Dawn (NES)</option>
+              <option value="z" disabled>Metroid: Zero Mission (GBA)</option>
+              <option value="p" disabled>Metroid Prime (GCN)</option>
+              <!-- <option value="b" disabled>Metroid Prime Pinball (NDS)</option> -->
+              <option value="p2d" disabled>Prime 2D (PC)</option>
+              <option value="e" disabled>Metroid Prime 2: Echoes (GCN)</option>
+              <option value="h" disabled>Metroid Prime: Hunters (NDS)</option>
+              <option value="c" disabled>Metroid Prime 3: Corruption (Wii)</option>
+              <!-- <option value="ff" disabled>Metroid Prime: Federation Force (3DS)</option> -->
+              <option value="ros" disabled>Metroid II: Return of Samus (GB)</option>
+              <option value="mc" disabled>Metroid Confrontation (PC)</option>
+              <option value="a" disabled>AM2R (PC)</option>
+              <option value="r" disabled>Metroid: Samus Returns (3DS)</option>
+              <option value="s" disabled>Super Metroid (SNES)</option>
+              <option value="o" disabled>Metroid: Other M (Wii)</option>
+              <option value="f" disabled>Metroid: Fusion (GBA)</option>
+              <option value="n" disabled>Metroid: A New Galaxy (PC)</option>
+              <option value="t" disabled>Metroid: The Threat Never Ends (PC)</option>
+              <option value="d" disabled>Metroid: Dread (Switch)</option>
               </optgroup>
             </select>
           </p>
           <p class="gameError hide-error">
             You need to specify a game from the dropdown menu first.
           </p>
-          <!-- <p>
-            <strong>Instructions:</strong>
-          </p>
-          <p>
-            Left-click to add or activate. Right-click to remove or deactivate.<br>
-            Middle-click, if you have it, will toggle hint collection icons on some items.<br>
-            Some items have progressive upgrades, shown with arrows.
-          </p> -->
           <p class="instructionPrompt">
             Use sprites if applicable?
             <label class="slider-switch">
@@ -77,20 +63,13 @@
               <span class="slider"></span>
             </label>
           </p>
-          <p class="instructionPrompt">
-            Use Dark Mode?
-            <label class="slider-switch">
-              <input type="checkbox" name="useDarkMode" value="useDarkMode">
-              <span class="slider"></span>
-            </label>
-          </p>
-          <p class="instructionPrompt">
+          <!-- <p class="instructionPrompt">
             Is randomized run?
             <label class="slider-switch">
               <input type="checkbox" name="isRandom" value="isRandom">
               <span class="slider"></span>
             </label>
-          </p>
+          </p> -->
           <p class="instructionPrompt">
             Colorblind Mode?
             <label class="slider-switch">
@@ -104,9 +83,10 @@
               <input type="checkbox" name="useAdvancedColors" value="useAdvancedColors">
               <span class="slider"></span>
             </label>
-            Shows a grid, and colors elevators and lines based on locations
+            <!-- Shows a grid, and colors elevators and lines based on locations -->
+            Colors elevators and path lines based on locations
           </p>
-          <p class="instructionPrompt">
+          <!-- <p class="instructionPrompt">
             Consolidate map into one?
             <label class="slider-switch">
               <input type="checkbox" name="separateAreas" value="separateAreas">
@@ -114,14 +94,14 @@
             </label>
             Disabling this enables a map for each location.<br>
             Click on elevators to go from map to map.
-          </p>
-          <p class="instructionPrompt">
+          </p> -->
+          <!-- <p class="instructionPrompt">
             Specify a language for placeholder icons: 
             <select name="selectedLocale">
               <option value="other" selected>None (default)</option>
               <option value="en-US">EN-US</option>
             </select>
-          </p>
+          </p> -->
         </div>
       </form>
     </div>
@@ -130,9 +110,45 @@
     </div>
     <div class="clear-both"></div>
   </section>
-  <section id="itemField" class="explorer hide-section flex-field">
-    
+  <section id="mapField" class="explorer hide-section">
+    <svg id="playground" class="" style="display:none;" width="100%" height="100%" viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      Your browser won't support this app. Please try another browser.
+      <g id="templatesArea">
+        <defs id="iconsDefs"></defs>
+        <circle id="circle_template" x="0" y="0" cx="0" cy="0" r="60" stroke="black" stroke-width="4"></circle>
+        <path id="arrow_up_template" d="M -5 15 l 0 -15 l -10 0 l 15 -30 l 15 30 l -10 0 l 0 15" stroke="black" stroke-width="3" fill="white"></path>
+        <polygon id="hex_up_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="hex_block_up_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="hex_down_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="hex_block_down_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
+        <rect id="square_template" x="-60" y="-60" rx="12.5" ry="12.5" width="120" height="120" stroke="black" stroke-width="4"></rect>
+        <path id="arrow_down_template" d="M -5 -15 l 0 15 l -10 0 l 15 30 l 15 -30 l -10 0 l 0 -15" stroke="black" stroke-width="3" fill="white"></path>
+        <polygon id="dia_template" points="0 -60,60 0,0 60,-60 0" d="M -7.5 -52.5 c 7.5 -7.5, 7.5 -7.5, 15 0 l 45 45 c 7.5 7.5, 7.5 7.5, 0 15 l -45 45 c -7.5 7.5, -7.5 7.5, -15 0 l -45 -45 c -7.5 -7.5, -7.5 -7.5, 0 -15 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="penta_template" points="0 -60,60 -18,35 48,-35 48,-60 -18" d="M 0 -60 l 60 42 l -25 66 l -70 0 l -25 -66 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="tri_template" points="0 -60,60 45,-60 45" d="M -3.75 -60 c 3.75 -6.5, 3.75 -6.5, 7.5 0 l 52.5 91 c 3.75 6.5, 3.75 6.5, -3.75 6.5 l -105 0 c -7.5 0, -7.5 0, -3.75 -6.5 Z" stroke="black" stroke-width="4"></polygon>
+        <rect id="rect_template" x="-60" y="-40" rx="12.5" ry="12.5" width="120" height="80" stroke="black" stroke-width="4"></rect>
+        <polygon id="wedge_template" points="0 60,60 -60,-60 -60" d="M -3.75 -60 c 3.75 -6.5, 3.75 -6.5, 7.5 0 l 52.5 91 c 3.75 6.5, 3.75 6.5, -3.75 6.5 l -105 0 c -7.5 0, -7.5 0, -3.75 -6.5 Z" stroke="black" stroke-width="4"></polygon>
+        <circle id="junction_template" class="junction" x="0" y="0" cx="0" cy="0" r="20" stroke="black" stroke-width="3" fill="white"></circle>
+        <g id="grid_line_h_left_template" class="path-left">
+          <rect x="-72" y="-5" width="72" height="10" fill="white"></rect>
+          <path d="M -72 -5 h 72 m 0 10 h -72 m 0 -10" stroke="black" stroke-width="3" stroke-linecap="butt"></path>
+        </g>
+        <g id="grid_line_h_right_template" class="path-right">
+          <rect x="0" y="-5" width="72" height="10" fill="white"></rect>
+          <path d="M 0 -5 h 72 m 0 10 h -72 m 0 -10" stroke="black" stroke-width="3" stroke-linecap="butt"></path>
+        </g>
+        <g id="grid_line_v_up_template" class="path-up">
+          <rect x="-5" y="-72" width="10" height="72" fill="white"></rect>
+          <path d="M -5 -72 v 72 m 10 0 v -72 m -10 0" stroke="black" stroke-width="3" stroke-linecap="butt"></path>
+        </g>
+        <g id="grid_line_v_down_template" class="path-down">
+          <rect x="-5" y="0" width="10" height="72" fill="white"></rect>
+          <path d="M -5 0 v 72 m 10 0 v -72 m -10 0" stroke="black" stroke-width="3" stroke-linecap="butt"></path>
+        </g>
+      </g>
+    </svg>
   </section>
+  <!-- <canvas id="background" width="500" height="500" class="">Your browser won't support this app. Please try another browser.</canvas> -->
   <script src="js/rawData.js" type="application/javascript"></script>
   <script src="js/cursor.js" type="text/javascript"></script>
   <script src="js/explore.js" type="application/javascript"></script>
@@ -140,9 +156,8 @@
   <script type="application/javascript">
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-    document.addEventListener("DOMContentLoaded", () => { 
+    document.addEventListener("DOMContentLoaded", () => {
       explorer.start();
-      main.scanDataForLint();
     });
   </script>
 </body>

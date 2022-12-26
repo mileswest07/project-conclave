@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Conclave - Metroid Item Tracker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="Keywords" content=""> -->
+<!-- <meta name="Description" content=""> -->
+<!-- <link rel="icon" href="/images/samus.png" type="image/x-icon"/> -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="tracker.css">
+<link rel="stylesheet" href="spriteMapping.css">
+</head>
+
+<body>
+  <section id="selection" class="show-menu">
+    <div class="selection-form">
+      <form id="startupMenu">
+        <div class="float-left">
+          <ul class="mode-change">
+            <li>
+              Tracker Mode
+            </li>
+            <li>
+              <a href="explorer.html">Explorer Mode</a>
+            </li>
+          </ul>
+          <div class="clear-both"></div>
+          <p class="menu-query-section">
+            Select game:
+            <select name="selectedGame">
+              <option value="" selected disabled>Select from the menu...</option>
+              <optgroup label="== METROID ==">
+                <option value="m">Metroid (NES)</option>
+                <option value="rd">Rogue Dawn (NES)</option>
+                <option value="z">Metroid: Zero Mission (GBA)</option>
+                <option value="p">Metroid Prime (GCN)</option>
+                <option value="b">Metroid Prime Pinball (NDS)</option>
+                <option value="p2d">Prime 2D (PC)</option>
+                <option value="e">Metroid Prime 2: Echoes (GCN)</option>
+                <option value="h">Metroid Prime: Hunters (NDS)</option>
+                <option value="c">Metroid Prime 3: Corruption (Wii)</option>
+                <option value="ff">Metroid Prime: Federation Force (3DS)</option>
+                <option value="ros">Metroid II: Return of Samus (GB)</option>
+                <option value="mc">Metroid Confrontation (PC)</option>
+                <option value="a">AM2R (PC)</option>
+                <option value="r">Metroid: Samus Returns (3DS)</option>
+                <option value="s">Super Metroid (SNES)</option>
+                <option value="o">Metroid: Other M (Wii)</option>
+                <option value="f">Metroid: Fusion (GBA)</option>
+                <option value="n">Metroid: A New Galaxy (PC)</option>
+                <option value="t">Metroid: The Threat Never Ends (PC)</option>
+                <option value="d">Metroid: Dread (Switch)</option>
+              </optgroup>
+              <optgroup label="==  ZELDA  ==">
+                <option value="z1">The Legend of Zelda (NES)</option>
+                <option value="z2">Zelda II: The Adventure of Link (NES)</option>
+                <option value="z3">The Legend of Zelda: A Link to the Past (SNES)</option>
+                <option value="z3r">ALTTP Randomized</option>
+              </optgroup>
+              <option value="scramble">Randomizer Mode</option>
+            </select>
+          </p>
+          <p class="gameError hide-error">
+            You need to specify a game from the dropdown menu first.
+          </p>
+          <p>
+            <strong>Instructions:</strong>
+          </p>
+          <p>
+            Left-click to add or activate. Right-click to remove or deactivate.<br>
+            Middle-click, if you have it, will toggle hint collection icons on some items.<br>
+            Some items have progressive upgrades, shown with arrows.
+          </p>
+          <p class="instructionPrompt">
+            Use sprites if applicable?
+            <label class="slider-switch">
+              <input type="checkbox" name="useSprites" value="useSprites" checked>
+              <span class="slider"></span>
+            </label>
+            <span id="ifNotShowingSprites" class="sliderResponse hidden">For colorblind option</span>
+            <span id="ifShowingSprites" class="sliderResponse">In color!</span>
+          </p>
+          <p class="instructionPrompt">
+            Use Dark Mode?
+            <label class="slider-switch">
+              <input type="checkbox" name="useDarkMode" value="useDarkMode">
+              <span class="slider"></span>
+            </label>
+          </p>
+          <p id="showTotalsPrompt" class="instructionPrompt">
+            Include item totals and percentage tracking?
+            <label class="slider-switch">
+              <input type="checkbox" name="showTotals" value="showTotals">
+              <span class="slider"></span>
+            </label>
+          </p>
+          <p id="showTimerPrompt" class="instructionPrompt">
+            Show timer?
+            <label class="slider-switch">
+              <input type="checkbox" name="showTimer" value="showTimer">
+              <span class="slider"></span>
+            </label>
+            <span id="ifShowingTimer" class="sliderResponse hidden">Click the timer to start and stop.</span>
+          </p>
+          <p id="ifKeyslotsExist" class="instructionPrompt hidden">
+            Include Keyslot functionality?
+            <label class="slider-switch">
+              <input type="checkbox" name="useKeyslots" value="useKeyslots">
+              <span class="slider"></span>
+            </label>
+            Only affects some items.
+          </p>
+          <p class="instructionPrompt">
+            Specify a language for placeholder icons: 
+            <select name="selectedLocale">
+              <option value="other" selected>None (default)</option>
+              <option value="en-US">EN-US</option>
+            </select>
+          </p>
+          <p id="ifScrambleSelected" class="instructionPrompt hidden">
+            Sync up items in Randomizer Mode?
+            <label class="slider-switch">
+              <input type="checkbox" name="scrambleSync" value="scrambleSync">
+              <span class="slider"></span>
+            </label>
+            <span id="isSyncingItems" class="sliderResponse hidden">Same items will be clicked simultaneously.</span>
+          </p>
+          <div id="scrambleSelectionGroup" class="instructionPrompt hidden">
+            Presets:
+            <select name="scrambledPreset">
+              <option value="all" selected>All</option>
+              <option value="primary">Primary Metroid selection</option>
+              <option value="z1m1">Z1M1 Crossrandomizer</option>
+              <option value="smz3">SMZ3 Crossrandomizer</option>
+              <option value="no_fangames">No fangames</option>
+              <option value="no_zelda">No Zelda</option>
+              <option value="no_samus">No Samus</option>
+              <option value="no_prime">No Prime</option>
+              <option value="no_main">No Mainline</option>
+              <option value="none">None</option>
+            </select>
+            <br>
+            <fieldset id="scrambleSelection" class="scramble-selection-container">
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="m" value="m">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid (NES)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="rd" value="rd">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Rogue Dawn (NES)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="z" value="z">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: Zero Mission (GBA)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="p" value="p">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime (GCN)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="b" value="b">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime Pinball (NDS)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="p2d" value="p2d">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Prime 2D (PC)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="e" value="e">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime 2: Echoes (GCN)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="h" value="h">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime: Hunters (NDS)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="c" value="c">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime 3: Corruption (Wii)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="ff" value="ff">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Prime: Federation Force (3DS)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="ros" value="ros">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid II: Return of Samus (GB)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="mc" value="mc">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid Confrontation (PC)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="a" value="a">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">AM2R (PC)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="r" value="r">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: Samus Returns (3DS)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="s" value="s">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Super Metroid (SNES)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="o" value="o">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: Other M (Wii)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="f" value="f">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: Fusion (GBA)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="n" value="n">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: A New Galaxy (PC)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="t" value="t">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: The Threat Never Ends (PC)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="d" value="d">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Metroid: Dread (Switch)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="z1" value="z1">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">The Legend of Zelda (NES)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="z2" value="z2">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">Zelda II: The Adventure of Link (NES)</span>
+              </div>
+              <div>
+                <label class="slider-switch">
+                  <input type="checkbox" name="z3r" value="z3r">
+                  <span class="slider"></span>
+                </label>
+                <span class="selection-label">The Legend of Zelda: A Link to the Past (SNES)</span>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="startup-button float-left">
+      <input type="button" onclick="tracker.validateStartup(event)" value="Ready">
+    </div>
+    <div class="clear-both"></div>
+  </section>
+  <section id="itemField" class="tracker hide-section flex-field">
+    
+  </section>
+  <script src="js/rawData.js" type="application/javascript"></script>
+  <script src="js/track.js" type="application/javascript"></script>
+  <script src="js/main.js" type="application/javascript"></script>
+  <script type="application/javascript">
+    document.addEventListener('wheel', (e) => { e.preventDefault(); });
+    document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+    document.addEventListener("DOMContentLoaded", () => { tracker.start(); });
+    
+    let spriteCheckbox = document.querySelector("input[name=useSprites]");
+    let timerCheckbox = document.querySelector("input[name=showTimer]");
+    let gameDropdown = document.querySelector("select[name=selectedGame]");
+    let scramblePresetDropdown = document.querySelector("select[name=scrambledPreset]");
+    let scrambleSyncCheckbox = document.querySelector("input[name=scrambleSync]");
+    spriteCheckbox.addEventListener('change', tracker.handleSpriteSelection);
+    timerCheckbox.addEventListener('change', tracker.handleTimerSelection);
+    gameDropdown.addEventListener('change', tracker.handleDropdownSelection);
+    scramblePresetDropdown.addEventListener('change', tracker.handlePresetSelection);
+    scrambleSyncCheckbox.addEventListener('change', tracker.handleSyncSelection);
+    tracker.handleSpriteSelection({target: spriteCheckbox});
+    tracker.handleTimerSelection({target: timerCheckbox});
+    tracker.handleDropdownSelection({target: gameDropdown});
+    tracker.handlePresetSelection({target: scramblePresetDropdown});
+    tracker.handleSyncSelection({target: scrambleSyncCheckbox});
+  </script>
+</body>
+</html>

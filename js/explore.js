@@ -128,6 +128,7 @@ let interaction = {
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.name || "";
         returnCore.completionPercentageValue = isPostConversion ? coreData.completionPercentageValue || 0 : coreData.value || 0;
         returnCore.bossRequiresItems = isPostConversion ? coreData.bossRequiresItems : (coreData.requires ? [...coreData.requires] : []);
+        returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         break;
       case "artifact":
       case "upgrade":
@@ -144,7 +145,7 @@ let interaction = {
         }
         returnCore.progressionToItemId = coreData.progressionToItemId || 0;
         returnCore.isRandomizableItem = isPostConversion ? coreData.isRandomizableItem || false : coreData.random || false;
-        returnCore.isInverseCollection = isPostConversion ? coreData.isInverseCollection || false : coreData.inverse || false;
+        returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         break;
       case "start":
       case "end":
@@ -167,6 +168,7 @@ let interaction = {
         returnCore.bg = coreData.bg || "ffffff";
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
         returnCore.completionPercentageValue = isPostConversion ? coreData.completionPercentageValue || 0 : coreData.value || 0;
+        returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         if (returnCore.nodeType === "toggle") {
           returnCore.slotToggleId = isPostConversion ? coreData.slotToggleId : coreData.slotType;
         }
@@ -214,7 +216,8 @@ let interaction = {
     let returnLock = {
       ...coreNodeData,
       ...leafData,
-      lockIds: new Set()
+      lockIds: new Set(),
+      inverse: !!leafData.inverse,
     };
     returnLock.lockIds.add(coreNodeData.id);
     if (leafData.id) returnLock.lockIds.add(leafData.id);
@@ -366,8 +369,8 @@ let interaction = {
               let attemptToGetImageUrl = step1[0];
               let fileName = attemptToGetImageUrl.split("/")[1].split(".")[0];
               let positions = step1[1].split(' ');
-              let xpos = Math.abs(parseInt(positions[0])) * -1 + 1 - 1;
-              let ypos = Math.abs(parseInt(positions[1])) * -1 + 1 - 1;
+              let xpos = 0 - Math.abs(parseInt(positions[0]));
+              let ypos = 0 - Math.abs(parseInt(positions[1]));
               
               let measurement = 42;
               if (explorer.useSprites && usesSpriteAfterAll) {
@@ -502,9 +505,9 @@ let interaction = {
     let processBranch = (parentNodeId, branchData, altpathIndex, branchProgress, parentHubId, mapId, lengthOverride) => {
       let returnIds = [];
       
-      let branchRoot = branchData.nodesChain;
-      if (altpathIndex !== -1) {
-        branchRoot = branchData.altChains[altpathIndex];
+      let branchRoot = branchData.branches[altpathIndex];
+      if (!branchRoot) {
+        console.error(branchData);
       }
       let branchSegment = branchRoot[branchProgress];
       let getItemCoreId = branchSegment.id;
@@ -522,10 +525,8 @@ let interaction = {
       itemNode.cardId = "";
       itemNode.children = [];
       itemNode.isHubDirectChild = branchProgress === 0;
-      if (altpathIndex !== -1) {
-        itemNode.altpathIndex = altpathIndex;
-        itemNode.altpathCount = branchData.altChains.length;
-      }
+      itemNode.altpathIndex = altpathIndex;
+      itemNode.altpathCount = branchData.branches.length;
       
       if (branchSegment.transportToMapId) {
         let destinationName = explorer.workingData.areas.find(area => area.id === branchSegment.transportToMapId)?.name || "TRANSPORT";
@@ -541,7 +542,7 @@ let interaction = {
       
       if (branchRoot.length <= branchProgress + 1) {
         if (branchData.toHubId) {
-          if (altpathIndex !== -1) {
+          if (lengthOverride > -1) {
             itemNode.extraVerticalLength = lengthOverride;
           }
           let foundHub = explorer.workingData.map.find(el => el.hubId === branchData.toHubId);
@@ -576,17 +577,10 @@ let interaction = {
         hubsProcessed.add(hubData.hubId);
         for (let i = 0; i < hubData.paths.length; i++) {
           let pathData = hubData.paths[i];
-          
-          if (pathData.altChains) {
-            let maxLength = pathData.altChains.reduce((acc, curr) => Math.max(acc, curr.length), 1);
-            for (let j = 0; j < pathData.altChains.length; j++) {
-              let altChainPathData = pathData.altChains[j];
-              let altpathChild = processBranch(parentNodeId, pathData, j, 0, hubData.hubId, mapId, maxLength - 1);
-              returnChildrenIds.push(altpathChild);
-            }
-          } else {
-            let hubChild = processBranch(parentNodeId, pathData, -1, 0, hubData.hubId, mapId, pathData.length - 1);
-            returnChildrenIds.push(hubChild);
+          let maxLength = pathData.branches.reduce((acc, curr) => Math.max(acc, curr.length), 1);
+          for (let j = 0; j < pathData.branches.length; j++) {
+            let altpathChild = processBranch(parentNodeId, pathData, j, 0, hubData.hubId, mapId, maxLength - 1);
+            returnChildrenIds.push(altpathChild);
           }
         } 
       } else {
@@ -695,7 +689,7 @@ let interaction = {
     
     if (!cardData.expanded) {
       cardData.expanded = true;
-      animateChildren(domElement.id, cardData, { val: 1 }, true);
+      animateChildren(cardData, { val: 1 });
     }
     
     if (cardData.toMapId && cardData.mapId !== cardData.toMapId) {
@@ -872,7 +866,8 @@ let interaction = {
     let clickCapture = doNothing;
     let selectedShape = "";
     let runningNodeId = cardData.nodeType + cardData.nodeId;
-    groupObject.id = "mapSVG-" + explorer.currentMap + "_" + runningNodeId;
+    cardData.cardId = "mapSVG-" + explorer.currentMap + "_" + runningNodeId;
+    groupObject.id = cardData.cardId;
     
     switch(cardData.nodeType) {
       case "start":
@@ -1086,16 +1081,16 @@ let interaction = {
           }
           
           rollingText += innerStr[isw];
-          if (rollingText.length >= 5 || isw + 1 === innerStr.length) {
+          if (rollingText.length >= 5 || isw + 1 === innerStr.length || (isw + 1 < innerStr.length && innerStr[isw+1].length >= 5)) {
             linesOfText++;
             let tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-            if (rollingText.length > 12 || cardData.textSize === "xs") {
+            if (rollingText.length > 12 || cardData.textSize === "xs" || (isw + 1 < innerStr.length && innerStr[isw+1].length > 10)) {
               tspan.classList.add("text-xs");
               deltaY += 12 * 5 / 6;
-            } else if (rollingText.length > 10 || cardData.textSize === "sm") {
+            } else if (rollingText.length > 10 || cardData.textSize === "sm" || (isw + 1 < innerStr.length && innerStr[isw+1].length > 7)) {
               tspan.classList.add("text-sm");
               deltaY += 16 * 5 / 6;
-            } else if (rollingText.length > 7 || cardData.textSize === "md") {
+            } else if (rollingText.length > 7 || cardData.textSize === "md" || (isw + 1 < innerStr.length && innerStr[isw+1].length > 4)) {
               tspan.classList.add("text-md");
               deltaY += 20 * 4 / 5;
             } else {
@@ -1210,17 +1205,25 @@ let interaction = {
       let escapeArrow = document.getElementById("arrow_down_template").cloneNode(true);
       escapeArrow.removeAttribute("id");
       escapeArrow.setAttribute("fill", fillColor);
+      let firstLine;
       let lastLine;
       if (x && y) {
-        insertPathLine("d", x, y);
+        firstLine = insertPathLine("d", x, y);
         lastLine = insertPathLine("u", x, (y + 144));
       } else {
-        insertPathLine("d", cursor.get().x, cursor.get().y);
+        firstLine = insertPathLine("d", cursor.get().x, cursor.get().y);
         lastLine = insertPathLine("u", cursor.get().x, (cursor.get().y + 144));
       }
       escapeArrow.setAttribute("transform", "translate(0 144)");
+      firstLine.children[0].setAttribute("fill", fillColor);
       lastLine.children[0].setAttribute("fill", fillColor);
       groupObject.appendChild(escapeArrow);
+    }
+    
+    if (cardData.inverse) {
+      let revLock = document.getElementById("rev_lock_template").cloneNode(true);
+      revLock.removeAttribute("id");
+      groupObject.appendChild(revLock);
     }
     
     hoverShape.setAttribute("class", "card-hover-overlay");
@@ -1319,125 +1322,114 @@ let interaction = {
     //return document.getElement();
   }
   
-  function animateChildren(elementId, card, accumulator, willMakeCard) {
-    if (willMakeCard) {
-      centerCursorOnElement(elementId);
-    } else {
-      //console.warn(elementId, card, accumulator, willMakeCard);
-    }
+  function getWidthFrom(card) {
+    let savedCursor = cursor.get();
+    let returnValue = 0;
     
-    if (willMakeCard) {
-      expandViewbox();
-    }
-    
-    if (card.children.length === 0) {
-      accumulator.val = 1;
-    }
-    
-    if (card.children.length === 0) {
-      return;
-    }
-    
-    if ((card.parentIds === [-1] && explorer.separateAreas) || explorer.mapNodes.find(n => n.nodeId === card.nodeId && n.nodeType === "start")) {
-      willMakeCard ? makeLineInDirectionByUnits("r", 1) : cursor.shift(1, 0);
-    } else {
-      willMakeCard ? makeLineInDirectionByUnits("d", 1) : cursor.shift(0, 1);
-    }
-    
+    centerCursorOnElement(card.cardId);
     let cardChildren = card.children.reverse();
+    let nChildren = card.children.length;
     
-    accumulator.val = card.children.length;
-    
-    let prevAccumulator = {
-      val: accumulator.val
-    };
+    let prevSiblingWidth = 1;
+    let chunkSize = 0;
     
     for (let i = 0; i < card.children.length; i++) {
       let childId = cardChildren[i];
+      let previousSiblingId = i > 0 ? cardChildren[i - 1] : null;
       let childNode = explorer.mapNodes.find(n => n.nodeId === childId);
+      let previousSibling = previousSiblingId ? explorer.mapNodes.find(n => n.nodeId === previousSiblingId) : null;
       
-      //TODO: !explorer.separateAreas && childNode.nodeType === "elevator"
       
-      if (childNode.parentIds.length > 1) {
-        if (card.hasOwnProperty("extraVerticalLength")) {
-          if (willMakeCard) {
-            makeLineInDirectionByUnits("d", card.extraVerticalLength);
-            insertJunctionDot();
-          } else {
-            cursor.shift(0, card.extraVerticalLength);
-          }
-        }
-        if (childNode.parentIds.length > 1) {
-          if (card.children.length < card.altpathCount - card.altpathIndex) {
-            if (willMakeCard) {
-              makeLineInDirectionByUnits("l", card.altpathCount - card.altpathIndex - card.children.length);
-              cursor.shift(card.altpathCount - card.altpathIndex - card.children.length, 0);
-            }
-          }
-        }
+      
+      
+      
+      
+      let childCardWidth = getWidthFrom(childNode);
+      returnValue += childCardWidth;
+    }
+    cursor.set(savedCursor.x, savedCursor.y);
+    return returnValue;
+  }
+  
+  function animateChildren(card, accumulator) {
+    centerCursorOnElement(card.cardId);
+    expandViewbox();
+    let cardChildren = card.children.reverse();
+    let nChildren = card.children.length;
+    
+    let prevSiblingWidth = 1;
+    let chunkSize = 0;
+    
+    for (let i = 0; i < card.children.length; i++) {
+      let childId = cardChildren[i];
+      let previousSiblingId = i > 0 ? cardChildren[i - 1] : null;
+      let childNode = explorer.mapNodes.find(n => n.nodeId === childId);
+      let previousSibling = previousSiblingId ? explorer.mapNodes.find(n => n.nodeId === previousSiblingId) : null;
+      
+      
+      if (card.altpathIndex + 1 < card.altpathCount) {
+        console.warn(card, childNode, accumulator.val, prevSiblingWidth, nChildren, card.altpathCount, chunkSize);
       }
       
-      if (willMakeCard && document.getElementById("mapSVG-" + childNode.mapId + "_" + childNode.nodeType + childNode.nodeId)) {
-        if (card.altpathIndex === 0) {
-          let nGhostChildren = {
-            val: 1
-          };
-          animateChildren("mapSVG-" + card.mapId + "_" + card.nodeType + card.nodeId, card, nGhostChildren, false);
+      if (childNode.cardId && document.getElementById(childNode.cardId)) {
+        if (card.hasOwnProperty("extraVerticalLength")) {
           
-          if (nGhostChildren.val <= card.altpathCount) {
-            accumulator.val = 1;
+          makeLineInDirectionByUnits("d", card.extraVerticalLength + 1);
+          insertJunctionDot();
+        }
+        
+        
+        if (childNode.altpathIndex === 0) {
+          if (childNode.altpathCount > childNode.children.length) {
+            makeLineInDirectionByUnits("l", Math.max(childNode.altpathCount - childNode.children.length - 1, 1));
           }
         }
+        
+        
+        
+        accumulator.val = Math.max(accumulator.val - 1, 1);
+        chunkSize = 0;
         break;
       }
       
-      if (card.children.length > 1) {
-        if (i > 0) {
-          let revisedWidth = prevAccumulator.val;
-          if (revisedWidth > 1 && childNode.altpathCount > 0 && childNode.altpathIndex > -1) {
-            willMakeCard ? makeLineInDirectionByUnits("r", 1) : cursor.shift(1, 0);
-          } else {
-            willMakeCard ? makeLineInDirectionByUnits("r", revisedWidth) : cursor.shift(revisedWidth, 0);
-          }
-        }
-        if (willMakeCard) {
-          insertJunctionDot();
-          makeLineInDirectionByUnits("d", 1);
+      if (card.nodeType === "start" || i > 0) {
+        if (previousSiblingId && previousSibling.altpathIndex === childNode.altpathIndex + 1) {
+          prevSiblingWidth--;
+          makeLineInDirectionByUnits("r", 1);
         } else {
-          cursor.shift(0, 1);
+          makeLineInDirectionByUnits("r", prevSiblingWidth);
         }
-      } else if (card.parentIds === [-1]) {
-        if (willMakeCard) {
-          insertJunctionDot();
-          makeLineInDirectionByUnits("d", 1);
+        insertJunctionDot();
+      } else if (nChildren > 1 || childNode.parentIds.length > 1) {
+        if (card.hasOwnProperty("extraVerticalLength")) {
+          makeLineInDirectionByUnits("d", card.extraVerticalLength + 1);
         } else {
-          cursor.shift(0, 1);
-        }
-      } else if (childNode.parentIds.length > 1) {
-        if (willMakeCard) {
-          insertJunctionDot();
           makeLineInDirectionByUnits("d", 1);
-        } else {
-          cursor.shift(0, 1);
         }
+        insertJunctionDot();
       }
-      let newCard = null;
-      if (willMakeCard) {
-        newCard = makeCard(childNode);
+      makeLineInDirectionByUnits("d", 1);
+      
+      makeCard(childNode);
+      if (childNode.nodeType === "elevator") {
+        cursor.shift(0, 1);
+        expandViewbox();
+        cursor.shift(0, -1);
       }
-      let nChildren = {
-        val: 1
+      let childrenWidth = {
+        val: Math.max(childNode.children.length, 1)
       };
-      animateChildren("mapSVG-" + childNode.mapId + "_" + childNode.nodeType + childNode.nodeId, childNode, nChildren, willMakeCard);
-      prevAccumulator.val = nChildren.val;
-      accumulator.val += nChildren.val - 1;
+      animateChildren(childNode, childrenWidth);
+      prevSiblingWidth = childrenWidth.val;
+      if (card.altpathIndex + 1 === card.altpathCount && card.altpathCount > 1) {
+        chunkSize = childrenWidth.val;
+        //console.info(card, childNode, chunkSize, prevSiblingWidth);
+      }
+      accumulator.val += Math.max(prevSiblingWidth - 1, 0);
       
       cursor.shift(0, -1);
     }
-    
-    if (willMakeCard) {
-      centerCursorOnElement(elementId);
-    }
+    centerCursorOnElement(card.cardId);
   }
   
   function hideMap(mapId) {
@@ -1505,7 +1497,7 @@ let interaction = {
       let startCard = makeCard(startNode, 0, 0);
       if (!explorer.workingData.areas.find(ar => ar.id === startNode.mapId).hasGameStart) {
         startNode.expanded = true;
-        animateChildren("mapSVG-" + mapId + "_" + startNode.nodeType + startNode.nodeId, startNode, { val: 1 }, true);
+        animateChildren(startNode, { val: 1 });
       }
     } else {
       showMap(explorer.currentMap);

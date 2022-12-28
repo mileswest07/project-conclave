@@ -208,12 +208,12 @@ const rawData = {
         startNodeId: 1,
       },{
         id: 2,
-        name: "Desolate Surface",
+        name: "Desolate Surface East",
         color: "db2b00",
         startNodeId: 11,
       },{
         id: 3,
-        name: "Desolate Surface",
+        name: "Desolate Surface West",
         color: "db2b00",
         startNodeId: 21,
       },{
@@ -288,68 +288,73 @@ const rawData = {
         id: "unused",
         extraId: 1010,
         name: "Escape Sequence",
-        nodeType: "area",
+        nodeType: "event",
       },
     ],
     map: [
       { hubId: 1,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "recharge", id: 1007 },
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 2,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 3,
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "branch",
-            toHubId: 3,
-            nodesChain: [
-              { nodeType: "lock", id: 7, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
-            ]
-          },{
-            pathType: "branch",
             toHubId: 4,
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
             ]
           },
         ],
@@ -357,15 +362,17 @@ const rawData = {
       { hubId: 2,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },
         ],
@@ -373,14 +380,16 @@ const rawData = {
       { hubId: 3,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 4, isRandomizableItem: true },
+              ]
             ]
           },
         ],
@@ -388,16 +397,18 @@ const rawData = {
       { hubId: 4,
         paths: [
           {
-            pathType: "branch",
             toHubId: 5,
-            nodesChain: [
-              { nodeType: "lock", id: 1, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 6,
-            nodesChain: [
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
             ]
           },
         ],
@@ -405,21 +416,24 @@ const rawData = {
       { hubId: 5,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 1, reqdItemCount: 1 },
-              { nodeType: "upgrade", id: 9, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+                { nodeType: "upgrade", id: 9, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 7,
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
             ]
           },
         ],
@@ -427,16 +441,18 @@ const rawData = {
       { hubId: 6,
         paths: [
           {
-            pathType: "branch",
             toHubId: 8,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              { nodeType: "easter", id: 1005 },
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "easter", id: 1005 },
+              ]
             ]
           },
         ],
@@ -444,14 +460,16 @@ const rawData = {
       { hubId: 7,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "recharge", id: 1007 },
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 7, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 7, isRandomizableItem: true },
+              ]
             ]
           },
         ],
@@ -459,14 +477,16 @@ const rawData = {
       { hubId: 8,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 10, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 10, isRandomizableItem: true },
+              ]
             ]
           },
         ],
@@ -474,74 +494,820 @@ const rawData = {
       { hubId: 11,
         paths: [
           {
-            pathType: "branch",
             toHubId: 12,
-            nodesChain: [
-              { nodeType: "area", extraId: 1008 },
+            branches: [
+              [
+                { nodeType: "area", id: 1008 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 13,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
-            toHubId: 13,
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "elevator", transportToMapId: 6, toStartNodeId: 51 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
-            ]
-          },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              { nodeType: "elevator", transportToMapId: 6, toStartNodeId: 51 },
-            ]
-          },{
-            pathType: "branch",
             toHubId: 14,
-            nodesChain: [
-              { nodeType: "lock", id: 4, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
-            toHubId: 14,
-            nodesChain: [
-              { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              
+            branches: [
+              [
+                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
-            ]
-          },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 1, isRandomizableItem: true },
-            ]
-          },{
-            pathType: "branch",
             toHubId: 15,
-            nodesChain: [
-              { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 16,
-            nodesChain: [
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "dropdown" },
+              ],[
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
             ]
+          },
+        ],
+      },
+      { hubId: 12,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "upgrade", id: 2, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 13,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "upgrade", id: 4, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 14,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "upgrade", id: 6, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 15,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 16,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 26 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 21,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 22,
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 22,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "upgrade", id: 5, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 25,
+            branches: [
+              [
+                { nodeType: "dropdown" },
+              ],[
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            toHubId: 28,
+            branches: [
+              [
+                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 24,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "upgrade", id: 5, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 25,
+            branches: [
+              [
+                { nodeType: "dropdown" },
+              ],[
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 25,
+        paths: [
+          {
+            toHubId: 26,
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          }
+        ],
+      },
+      { hubId: 26,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 16 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 28,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 31,
+        paths: [
+          {
+            toHubId: 32,
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "boss", id: 103 },
+              ]
+            ]
+          },{
+            toHubId: 33,
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "lock", id: 11, reqdItemCount: 1 },
+                { nodeType: "lock", id: 12, reqdItemCount: 1 },
+                { nodeType: "boss", id: 104 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 32,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "upgrade", id: 5, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 33,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 7, toStartNodeId: 61 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 41,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 8, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 42,
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            toHubId: 43,
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 42,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 43,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 44,
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 44,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 45,
+            branches: [
+              [
+                { nodeType: "area", id: 1009 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 45,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 46,
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 46,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 47,
+            branches: [
+              [
+                { nodeType: "boss", id: 101 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 47,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "upgrade", id: 12 },
+              ]
+            ]
+          },
+        ],
+      },
+      { hubId: 51,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lore", id: 1001 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 52,
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
+            ],
+          },{
+            toHubId: 53,
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
+            ],
+          },{
+            toHubId: 54,
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ]
+          },{
+            toHubId: 55,
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+              ]
+            ]
+          },{
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "easter", id: 1006 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
+            ]
+          },{
+            toHubId: 56,
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ],[
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+              ],
+            ]
+          },
+        ],
+      },
+      { hubId: 52,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 53,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 7, isRandomizableItem: true },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 54,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lore", id: 1002 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "lore", id: 1003 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ],
+          }
+        ],
+      },
+      { hubId: 55,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "lore", id: 1004 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ]
+            ],
+          }
+        ],
+      },
+      { hubId: 56,
+        paths: [
+          {
+            toHubId: 57,
+            branches: [
+              [
+                { nodeType: "boss", id: 102 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 57,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "upgrade", id: 11 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "upgrade", id: 13 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 61,
+        paths: [
+          {
+            toHubId: 62,
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 62,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ],
+          },{
+            toHubId: 63,
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 63,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ],
+          },{
+            toHubId: 64,
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
+            ],
+          },
+        ],
+      },
+      { hubId: 64,
+        paths: [
+          {
+            branches: [
+              [
+                { nodeType: "recharge", id: 1007 },
+              ]
+            ],
+          },{
+            branches: [
+              [
+                { nodeType: "boss", id: 105 },
+                { nodeType: "event", id: 1010 },
+                { nodeType: "end" },
+              ]
+            ],
           },
         ],
       },
@@ -769,89 +1535,98 @@ const rawData = {
       { hubId: 1,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "upgrade", id: 1, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "upgrade", id: 1, isRandomizableItem: true },
+              ]
             ]
           },
           {
-            pathType: "branch",
             toHubId: 2,
-            nodesChain: [
-              { nodeType: "lock", id: 1, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 1, reqdItemCount: 1 },
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
+            branches: [
+              [
+                { nodeType: "lock", id: 1, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 3, isRandomizableItem: true }
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           }
         ],
       },
       { hubId: 2,
         paths: [
-          { pathType: "leaf",
-            nodesChain: [
-              { nodeType: "upgrade", id: 2, isRandomizableItem: true },
+          {
+            branches: [
+              [
+                { nodeType: "upgrade", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 4, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "upgrade", id: 5, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "upgrade", id: 5, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "lock", id: 101, reqdItemCount: 1 },
-              { nodeType: "lock", id: 102, reqdItemCount: 1 },
-              { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 101, reqdItemCount: 1 },
+                { nodeType: "lock", id: 102, reqdItemCount: 1 },
+                { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "slot", id: 6, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "slot", id: 6, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 3,
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 4,
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-            ],
-            altChains: [
+            branches: [
               [
                 { nodeType: "lock", id: 5, reqdItemCount: 1 },
               ],[
@@ -865,16 +1640,18 @@ const rawData = {
       { hubId: 3,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 10, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 10, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -882,9 +1659,10 @@ const rawData = {
       { hubId: 4,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -892,35 +1670,40 @@ const rawData = {
       { hubId: 11,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 12,
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 13,
-            nodesChain: [
-              { nodeType: "lock", id: 5, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 5, reqdItemCount: 1 },
+              ]
             ]
           },
         ],
@@ -928,23 +1711,26 @@ const rawData = {
       { hubId: 12,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "slot", id: 6, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "slot", id: 6, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -952,15 +1738,17 @@ const rawData = {
       { hubId: 13,
         paths: [
           {
-            pathType: "branch",
             toHubId: 14,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
+            branches: [
+              [
+                { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
+              ]
             ]
           },
         ]
@@ -968,15 +1756,17 @@ const rawData = {
       { hubId: 14,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 7, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 7, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 15,
-            nodesChain: [
-              { nodeType: "lock", id: 6, reqdItemCount: 1 },
+            branches: [
+              [
+                { nodeType: "lock", id: 6, reqdItemCount: 1 },
+              ]
             ]
           },
         ]
@@ -984,30 +1774,35 @@ const rawData = {
       { hubId: 15,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 8, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 8, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 9, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 9, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -1015,34 +1810,34 @@ const rawData = {
       { hubId: 21,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 22,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-            ],
-            altChains: [
+            branches: [
               [
                 { nodeType: "dropdown" },
               ],[
@@ -1059,16 +1854,18 @@ const rawData = {
       { hubId: 22,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 23,
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "boss", id: 101 },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "boss", id: 101 },
+              ]
             ]
           },
         ]
@@ -1076,14 +1873,16 @@ const rawData = {
       { hubId: 23,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, count: 15 },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, count: 15 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -1091,24 +1890,27 @@ const rawData = {
       { hubId: 31,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              { nodeType: "expansion", id: 2, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+                { nodeType: "expansion", id: 2, isRandomizableItem: true },
+              ]
             ]
           },{
-            pathType: "branch",
             toHubId: 32,
-            nodesChain: [
-              { nodeType: "boss", id: 102 },
+            branches: [
+              [
+                { nodeType: "boss", id: 102 },
+              ]
             ]
           },
         ]
@@ -1116,15 +1918,17 @@ const rawData = {
       { hubId: 32,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "expansion", id: 2, count: 15 },
+            branches: [
+              [
+                { nodeType: "expansion", id: 2, count: 15 },
+              ]
             ]
           },{
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 2 },
-              { nodeType: "expansion", id: 3, isRandomizableItem: true },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 2 },
+                { nodeType: "expansion", id: 3, isRandomizableItem: true },
+              ]
             ]
           },
         ]
@@ -1132,12 +1936,13 @@ const rawData = {
       { hubId: 41,
         paths: [
           {
-            pathType: "leaf",
-            nodesChain: [
-              { nodeType: "lock", id: 2, reqdItemCount: 2 },
-              { nodeType: "boss", id: 103 },
-              { nodeType: "event", id: 1001, },
-              { nodeType: "end" },
+            branches: [
+              [
+                { nodeType: "lock", id: 2, reqdItemCount: 2 },
+                { nodeType: "boss", id: 103 },
+                { nodeType: "event", id: 1001, },
+                { nodeType: "end" },
+              ]
             ]
           },
         ]
@@ -2372,7 +3177,7 @@ const rawData = {
         overText: "Artifact of Truth acquired",
         segments: [],
         bg: "00e8d8",
-        itemId: 1,
+        itemId: 3,
         nodeType: "upgrade",
         value: 0,
       },{
@@ -2385,7 +3190,7 @@ const rawData = {
         overText: "Hive Mecha Defeated",
         segments: [],
         bg: "d82800",
-        itemId: 2,
+        itemId: 4,
         nodeType: "upgrade",
         value: 1,
       },{
@@ -2396,7 +3201,7 @@ const rawData = {
         max: 1,
         segments: [],
         bg: "d8a480",
-        itemId: 5,
+        itemId: 7,
         nodeType: "upgrade",
         value: 1,
       },{
@@ -2407,7 +3212,7 @@ const rawData = {
         max: 1,
         segments: [],
         bg: "3800a8",
-        itemId: 6,
+        itemId: 8,
         nodeType: "upgrade",
         value: 1,
       },{
@@ -2418,7 +3223,7 @@ const rawData = {
         max: 1,
         segments: [],
         bg: "ff0094",
-        itemId: 7,
+        itemId: 9,
         nodeType: "upgrade",
         value: 1,
       },{
@@ -2429,7 +3234,7 @@ const rawData = {
         max: 1,
         segments: [],
         bg: "886848",
-        itemId: 8,
+        itemId: 10,
         nodeType: "upgrade",
         value: 1,
       },{
@@ -2441,7 +3246,7 @@ const rawData = {
         max: 2,
         segments: [],
         bg: "78a4bc",
-        itemId: 4,
+        itemId: 6,
         nodeType: "expansion",
         value: 1,
       },{
@@ -2454,7 +3259,7 @@ const rawData = {
         max: 7,
         segments: [],
         bg: "d82800",
-        itemId: 3,
+        itemId: 5,
         nodeType: "expansion",
         value: 1,
       },{
@@ -2468,7 +3273,7 @@ const rawData = {
         overText: "Hints Acquired",
         segments: [],
         bg: "008080",
-        itemId: 9,
+        itemId: 11,
         nodeType: "artifact",
         value: 0,
       },
@@ -2554,6 +3359,25 @@ const rawData = {
         name: "Save Station",
         nodeType: "save",
         extraId: 1002,
+      },{
+        id: "scanVisor",
+        name: "Scan Visor",
+        sprite: "scan",
+        start: 1,
+        max: 1,
+        bg: "bca470",
+        itemId: 1,
+        nodeType: "upgrade",
+        value: 0,
+      },{
+        id: "wallJumpBoots",
+        name: "Wall Jump",
+        start: 1,
+        max: 1,
+        bg: "ff7e00",
+        itemId: 2,
+        nodeType: "upgrade",
+        value: 0,
       },
     ],
     map: [

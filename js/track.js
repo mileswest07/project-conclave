@@ -1,16 +1,41 @@
-let feature = {
+let tracker = {
   timerState: {
     running: false,
     time: 0,
     timeBeforeLastStart: 0,
     timeOfLastStart: Date.now()
-  }
+  },
+  useSprites: false,
+  showTotals: false,
+  showTimer: false,
+  useKeyslots: false,
+  isScramble: false,
+  scrambleSync: false,
 };
 
 let renderingKeyslotTypes = {}
 let keyslots = {};
 
 (() => {
+  
+  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "c", "ff","ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z3", "z3r",];
+  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff","ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z3",];
+  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n",];
+  const noRandomizersFilter = ["z3r",];
+  const noZeldaFilter = ["z1", "z2", "z3", "z3r",];
+  const noSamusFilter = ["m", "z", "p", "b", "p2d", "h", "e", "c", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
+  const noPrimeFilter = ["p", "b", "p2d", "h", "e", "c", "ff",];
+  const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
+  
+  function filterOut([...filter]) {
+    let copy = {...this};
+    
+    filter.forEach(prop => {
+      delete copy[prop];
+    });
+    
+    return {...copy};
+  }
   
   function am2r_extremeLabs(setOrReturn) {
     let targetId = "";
@@ -31,7 +56,7 @@ let keyslots = {};
     source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
     source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');
     
-    if (main.useSprites) {
+    if (tracker.useSprites) {
       if (source.firstChild.classList) { // browser compatibility logic
         if (!setOrReturn || source.firstChild.classList.contains("monsterEL")) {
           source.firstChild.classList.remove("monsterEL");
@@ -101,15 +126,15 @@ let keyslots = {};
     let foundItem;
     let elementId;
     
-    for (const item of feature.workingData.items) {
+    for (const item of tracker.workingData.items) {
       if (item.hasOwnProperty("segments") && item.segments.length) {
         let earlyBreakout = false;
         let segmentAcc = 0;
         for (const segment of item.segments) {
           foundItem = segment;
           elementId = segment.id;
-          if (main.useLocale && segment.hasOwnProperty("locale") && segment.locale.hasOwnProperty(main.useLocale)) {
-            elementId = segment.locale[main.useLocale].id;
+          if (tracker.useLocale && segment.hasOwnProperty("locale") && segment.locale.hasOwnProperty(tracker.useLocale)) {
+            elementId = segment.locale[tracker.useLocale].id;
           }
           if (elementId === splitValues[1] && iteratedAcc === parseInt(splitValues[2]) && segmentAcc === parseInt(splitValues[3])) {
             earlyBreakout = true;
@@ -128,8 +153,8 @@ let keyslots = {};
       }
       foundItem = item;
       elementId = item.id;
-      if (main.useLocale && item.hasOwnProperty("locale") && item.locale.hasOwnProperty(main.useLocale)) {
-        elementId = item.locale[main.useLocale].id;
+      if (tracker.useLocale && item.hasOwnProperty("locale") && item.locale.hasOwnProperty(tracker.useLocale)) {
+        elementId = item.locale[tracker.useLocale].id;
       }
       
       if (elementId === splitValues[1] && iteratedAcc === parseInt(splitValues[2])) {
@@ -143,7 +168,7 @@ let keyslots = {};
       iteratedAcc++;
     }
     
-    if (!main.isScramble && main.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
+    if (!tracker.isScramble && tracker.useKeyslots && foundItem.hasOwnProperty("nodeType") && foundItem.nodeType === "slot") {
       if (renderingKeyslotTypes.hasOwnProperty(foundItem.slotType)) {
         fetched = renderingKeyslotTypes[foundItem.slotType] && !undo ? 0 : fetched;
       }
@@ -156,16 +181,16 @@ let keyslots = {};
   function setKeyslot(id) {
     let filteringArray = [];
     let filterAhead = false;
-    if (main.isScramble || !main.useKeyslots) {
+    if (tracker.isScramble || !tracker.useKeyslots) {
       return;
     }
     
     let strippedId = id.split("-")[1];
-    let found = feature.workingData.items.find((element) => {
+    let found = tracker.workingData.items.find((element) => {
       if (element.hasOwnProperty("segments") && element.segments.length > 0) {
         for (let j = 0; j < element.segments.length; j++) {
-          if (main.useLocale && element.segments[j].hasOwnProperty("locale") && element.segments[j].locale.hasOwnProperty(main.useLocale)) {
-            if (element.segments[j].locale[main.useLocale].id === strippedId) {
+          if (tracker.useLocale && element.segments[j].hasOwnProperty("locale") && element.segments[j].locale.hasOwnProperty(tracker.useLocale)) {
+            if (element.segments[j].locale[tracker.useLocale].id === strippedId) {
               return true;
             }
           }
@@ -174,8 +199,8 @@ let keyslots = {};
           }
         }
       }
-      if (main.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(main.useLocale)) {
-        if (element.locale[main.useLocale].id === strippedId) {
+      if (tracker.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(tracker.useLocale)) {
+        if (element.locale[tracker.useLocale].id === strippedId) {
           return true;
         }
       }
@@ -210,7 +235,7 @@ let keyslots = {};
   function clickItem(e) {
     e.preventDefault();
     
-    if (main.scrambleSync && !e.dontDoAgain) {
+    if (tracker.scrambleSync && !e.dontDoAgain) {
       let itemName = e.target.parentElement.id.split('-')[1];
       const allMatchingItems = document.querySelectorAll("[id*=-" + itemName + "]");
       const spriteElement = e.target.parentElement.classList.contains("usesSprite");
@@ -234,7 +259,7 @@ let keyslots = {};
     if (e.which === 1) { // left click
       if (e.target.classList) { // browser compatibility logic
         if (!e.target.classList.contains("deselected")) {
-          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.classList.contains("hide-segment"))) && e.target.parentElement.nextSibling) {
+          if ((!tracker.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.classList.contains("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id && e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -256,7 +281,7 @@ let keyslots = {};
         e.target.classList.remove("deselected");
       } else {
         if (e.target.className.has("deselected")) {
-          if ((!main.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.className.has("hide-segment"))) && e.target.parentElement.nextSibling) {
+          if ((!tracker.isScramble || (e.target.parentElement.nextSibling && e.target.parentElement.nextSibling.className.has("hide-segment"))) && e.target.parentElement.nextSibling) {
             if (e.target.parentElement.nextSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.nextSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -282,7 +307,7 @@ let keyslots = {};
         if (e.target.classList.contains("deselected")) {
           return;
         }
-        if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.classList.contains("hide-segment"))) && e.target.parentElement.previousSibling) {
+        if ((!tracker.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.classList.contains("hide-segment"))) && e.target.parentElement.previousSibling) {
           if (e.target.parentElement.previousSibling.id && e.target.parentElement.previousSibling.id.split('-').length === 4) {
             if (
               parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -308,7 +333,7 @@ let keyslots = {};
         }
       } else {
         if (e.target.className.has("deselected")) {
-          if ((!main.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.className.has("hide-segment"))) && e.target.parentElement.previousSibling) {
+          if ((!tracker.isScramble || (e.target.parentElement.previousSibling && e.target.parentElement.previousSibling.className.has("hide-segment"))) && e.target.parentElement.previousSibling) {
             if (e.target.parentElement.previousSibling.id.split('-').length === 4) {
               if (
                 parseInt(e.target.parentElement.previousSibling.id.split('-')[2]) === parseInt(e.target.parentElement.id.split('-')[2]) && 
@@ -339,9 +364,9 @@ let keyslots = {};
         }
       }
     } else if (e.which == 2) { // middle click
-      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -415,9 +440,9 @@ let keyslots = {};
       setKeyslot(e.target.parentElement.id);
       previous--;
     } else if (e.which == 2) { // middle click
-      if (["am2r", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
+      if (["am2r", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
         am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
-      } else if (["aol", "scramble"].includes(feature.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
+      } else if (["aol", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
         clickOverlay(e);
@@ -500,11 +525,11 @@ let keyslots = {};
   }
   
   function renderEntry(destination, element, index, elementName, isSegment, isSegmentHidden, maxSegments) {
-    if (!main.isScramble && element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) {
+    if (!tracker.isScramble && element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) {
       return;
     }
     
-    if (element.hasOwnProperty("clearIfScramble") && element.clearIfScramble && main.isScramble) {
+    if (element.hasOwnProperty("clearIfScramble") && element.clearIfScramble && tracker.isScramble) {
       return;
     }
     
@@ -542,16 +567,16 @@ let keyslots = {};
     
     let elementId = element.id;
     
-    if (main.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(main.useLocale)) {
-      elementId = element.locale[main.useLocale].id;
+    if (tracker.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(tracker.useLocale)) {
+      elementId = element.locale[tracker.useLocale].id;
     }
     
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
-    const scrambleCondition = (!main.isScramble || (main.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
+    const scrambleCondition = (!tracker.isScramble || (tracker.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
     if (wrapper.classList) {
-      if (elementId === "-" && (!isSegment || main.isScramble)) {
+      if (elementId === "-" && (!isSegment || tracker.isScramble)) {
         wrapper.classList.add("blank");
-        if (main.useSprites) {
+        if (tracker.useSprites) {
           wrapper.classList.add("trimmed");
         }
       } else {
@@ -560,13 +585,13 @@ let keyslots = {};
       if (isSegmentHidden && scrambleCondition) {
         wrapper.classList.add("hide-segment");
       }
-      if (element.hasOwnProperty("sprite") && main.useSprites) {
+      if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.classList.add("usesSprite");
       }
     } else {
-      if (elementId === "-" && (!isSegment || main.isScramble)) {
+      if (elementId === "-" && (!isSegment || tracker.isScramble)) {
         wrapper.className += " blank";
-        if (main.useSprites) {
+        if (tracker.useSprites) {
           wrapper.className += " trimmed";
         }
       } else {
@@ -575,12 +600,12 @@ let keyslots = {};
       if (isSegmentHidden && scrambleCondition) {
         wrapper.className += " hide-segment";
       }
-      if (element.hasOwnProperty("sprite") && main.useSprites) {
+      if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.className += " usesSprite";
       }
     }
     
-    /* if (!main.useSprites && element.hasOwnProperty("bg")) {
+    /* if (!tracker.useSprites && element.hasOwnProperty("bg")) {
       wrapper.style.backgroundColor = ("#" + element.bg + "80") || "white";
       wrapper.style.backgroundBlendMode = "multiply";
     } */
@@ -597,7 +622,7 @@ let keyslots = {};
       }
     }
     
-    if (!(elementId === "-" && (!isSegment || main.isScramble))) {
+    if (!(elementId === "-" && (!isSegment || tracker.isScramble))) {
       if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
@@ -614,9 +639,9 @@ let keyslots = {};
     } else {
       let trimmedItemName = elementId;
       wrapper.id = classLabel + "-" + trimmedItemName + "-" + index;
-      if (element.hasOwnProperty("sprite") && main.useSprites) {
+      if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         trimmedItemName = element.sprite;
-      } else if (main.useSprites) {
+      } else if (tracker.useSprites) {
         if (wrapper.classList) {
           wrapper.classList.add("trimmed");
         } else {
@@ -631,7 +656,7 @@ let keyslots = {};
       }
     }
     
-    if (!main.isScramble && main.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
+    if (!tracker.isScramble && tracker.useKeyslots && element.hasOwnProperty("nodeType") && element.nodeType === "slot" && element.hasOwnProperty("slotType")) {
       if (!keyslots[element.slotType]) {
         keyslots[element.slotType] = [];
       }
@@ -740,7 +765,7 @@ let keyslots = {};
       }
     }
     
-    if (["am2r"].includes(feature.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -755,7 +780,7 @@ let keyslots = {};
       wrapper.appendChild(hint);
     }
     
-    if (["aol"].includes(feature.currentGame) && wrapper.id === "item-fireSpell-4") {
+    if (["aol"].includes(tracker.currentGame) && wrapper.id === "item-fireSpell-4") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -781,11 +806,11 @@ let keyslots = {};
     }
     let percentageWrapper;
     
-    if (main.isScramble) {
+    if (tracker.isScramble) {
       // UNDER CONSTRUCTION!
       let gameKey;
       for (const [key, value] of Object.entries(main.games)) {
-        if (value == feature.currentGame) { // TODO: it can't be currentGame!
+        if (value == tracker.currentGame) { // TODO: it can't be currentGame!
           gameKey = key;
           break;
         }
@@ -817,13 +842,13 @@ let keyslots = {};
   }
   
   function recycleTotals(change) {
-    if (main.showTotals) {
+    if (tracker.showTotals) {
       let totalWrapper;
-      if (main.isScramble) {
+      if (tracker.isScramble) {
         // UNDER CONSTRUCTION!
         let gameKey;
         for (const [key, value] of Object.entries(main.games)) {
-          if (value == feature.currentGame) { // TODO: it can't be currentGame!
+          if (value == tracker.currentGame) { // TODO: it can't be currentGame!
             gameKey = key;
             break;
           }
@@ -841,9 +866,9 @@ let keyslots = {};
   function renderPercentage(destination) {
     let twrapper = document.createElement("div");
     let pwrapper = document.createElement("div");
-    if (main.isScramble) {
+    if (tracker.isScramble) {
       for (const [key, value] of Object.entries(main.games)) {
-        if (value == feature.currentGame) {
+        if (value == tracker.currentGame) {
           twrapper.id = "" + key + "-total-wrapper";
           pwrapper.id = "" + key + "-percentage-wrapper";
           break;
@@ -863,12 +888,22 @@ let keyslots = {};
     }
     
     let startingItems = 0;
-    let totalItems = feature.workingData.items.reduce((acc=0, next) => {
+    let totalItems = tracker.workingData.items.reduce((acc=0, next) => {
+      if (next.hasOwnProperty("displayIfScramble")) {
+        if (!tracker.isScramble || next.displayIfScramble !== true) {
+          return acc;
+        }
+      }
+      if (next.hasOwnProperty("clearIfScramble")) {
+        if (tracker.isScramble && next.clearIfScramble === true) {
+          return acc;
+        }
+      }
       if (next.hasOwnProperty("start") && next.hasOwnProperty("value") && next.value) {
         startingItems += next.start;
       }
       if (next.hasOwnProperty("value") && next.hasOwnProperty("max")) {
-        if (!main.isScramble && main.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
+        if (!tracker.isScramble && tracker.useKeyslots && next.hasOwnProperty("nodeType") && next.nodeType === "slot") {
           if (renderingKeyslotTypes.hasOwnProperty(next.slotType)) {
             return acc;
           }
@@ -898,9 +933,9 @@ let keyslots = {};
   }
   
   function updateTimer() {
-    feature.timerState.time = feature.timerState.timeBeforeLastStart + (feature.timerState.running ? (Date.now() - feature.timerState.timeOfLastStart) : 0);
+    tracker.timerState.time = tracker.timerState.timeBeforeLastStart + (tracker.timerState.running ? (Date.now() - tracker.timerState.timeOfLastStart) : 0);
     
-    let time = feature.timerState.time;
+    let time = tracker.timerState.time;
     let h, m, s, ms;
     [h, time] = divmod(time, 60 * 60 * 1000);
     [m, time] = divmod(time, 60 * 1000);
@@ -916,18 +951,18 @@ let keyslots = {};
   }
   
   function onTimerToggle(e) {
-    feature.timerState.running = !feature.timerState.running;
-    if (feature.timerState.running) {
-      feature.timerState.timeOfLastStart = Date.now();
+    tracker.timerState.running = !tracker.timerState.running;
+    if (tracker.timerState.running) {
+      tracker.timerState.timeOfLastStart = Date.now();
     } else {
-      feature.timerState.timeBeforeLastStart = feature.timerState.time;
+      tracker.timerState.timeBeforeLastStart = tracker.timerState.time;
     }
   }
   
   function onTimerReset(e) {
-    feature.timerState.running = false;
-    feature.timerState.timeBeforeLastStart = 0;
-    feature.timerState.timeOfLastStart = Date.now();
+    tracker.timerState.running = false;
+    tracker.timerState.timeBeforeLastStart = 0;
+    tracker.timerState.timeOfLastStart = Date.now();
     updateTimer();
   }
   
@@ -955,21 +990,269 @@ let keyslots = {};
     destination.appendChild(resetWrapper);
   }
   
+  // scrambleStart
+  function scrambleStart(gamesList) {
+    tracker.showTotals = false; // CURRENTLY UNDER CONSTRUCTION
+    tracker.showTimer = false; // CURRENTLY UNDER CONSTRUCTION
+    tracker.useKeyslots = false;
+    
+    if (document.body.classList) {
+      document.body.classList.add("game-scramble");
+    } else {
+      document.body.className += " game-scramble";
+    }
+    tracker.isScramble = true;
+    
+    const targetingData = document.forms["startupMenu"]["selectedGame"].options;
+    
+    let targetSection = document.getElementById("itemField");
+    if (targetSection.classList) {
+      targetSection.classList.add("parent-flex");
+    } else {
+      targetSection.className = "parent-flex";
+    }
+    
+    for (let i = 0; i < gamesList.length; i++) {
+      const key = gamesList[i];
+      const value = main.games[key];
+      
+      tracker.currentGame = value;
+      const itemFieldName = "itemField" + key;
+      
+      let foundItem = null;
+      let gameName = "";
+      for (let i = 0; i < targetingData.length; i++) {
+        if (targetingData[i].value == key) {
+          foundItem = targetingData[i];
+        }
+      }
+      if (foundItem) {
+        gameName += foundItem.innerHTML;
+      }
+      
+      let newSection = document.createElement("section");
+      if (newSection.classList) {
+        newSection.classList.add("flex-field");
+        newSection.classList.add("child-field");
+        newSection.classList.add("game-" + tracker.currentGame);
+      } else {
+        newSection.className = "flex-field child-field game-" + tracker.currentGame
+      }
+      newSection.id = itemFieldName;
+      
+      let gameTitle = document.createElement("h4");
+      gameTitle.innerText = gameName;
+      newSection.appendChild(gameTitle);
+      
+      targetSection.appendChild(newSection);
+      
+      tracker.workingData = rawData[tracker.currentGame];
+      tracker.generate(itemFieldName);
+      
+      // CURRENTLY UNDER CONSTRUCTION
+      /* if (tracker.showTotals) {
+        let targetHeader = targetSection.getElementsByTagName("h4");
+        targetHeader = targetHeader[targetHeader.length - 1];
+        tracker.renderPercentage(targetHeader);
+      } */
+    }
+    
+    let target = document.getElementById("itemField");
+    if (target.classList) { // browser compatibility logic
+      target.classList.remove("hide-section");
+    } else {
+      target.className += target.className.replace(/\bhide-section\b/g);
+    }
+    let menuPointer = document.getElementById("selection");
+    menuPointer.remove();
+    tracker.currentGame = "scramble"; // to make Extreme Labs and Dash Spell work
+  }
+  
+  function handleTimerSelection(e) {
+    let target = document.getElementById("ifShowingTimer");
+    if (e.target.checked) {
+      if (target.classList) { // browser compatibility logic
+        target.classList.remove("hidden");
+      } else {
+        target.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (target.classList) { // browser compatibility logic
+        target.classList.add("hidden");
+      } else {
+        target.className += " hidden";
+      }
+    }
+  }
+  
+  function handleSpriteSelection(e) {
+    let targetA = document.getElementById("ifShowingSprites");
+    let targetB = document.getElementById("ifNotShowingSprites");
+    if (e.target.checked) {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.remove("hidden");
+        targetB.classList.add("hidden");
+      } else {
+        targetA.className += target.className.replace(/\bhidden\b/g);
+        targetB.className += " hidden";
+      }
+    } else {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.add("hidden");
+        targetB.classList.remove("hidden");
+      } else {
+        targetA.className += " hidden";
+        targetB.className += target.className.replace(/\bhidden\b/g);
+      }
+    }
+  }
+  
+  function handleSyncSelection(e) {
+    let targetA = document.getElementById("isSyncingItems");
+    if (e.target.checked) {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.remove("hidden");
+      } else {
+        targetA.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.add("hidden");
+      } else {
+        targetA.className += " hidden";
+      }
+    }
+  }
+  
+  function handleDropdownSelection(e) {
+    let keyslotTarget = document.getElementById("ifKeyslotsExist");
+    let scrambleSyncTarget = document.getElementById("ifScrambleSelected");
+    let showTotalsPrompt = document.getElementById("showTotalsPrompt");
+    let showTimerTarget = document.getElementById("showTimerPrompt");
+    let scrambleSelectionTarget = document.getElementById("scrambleSelectionGroup");
+    
+    if (["m", "ros"].includes(e.target.value)) {
+      if (keyslotTarget.classList) {
+        keyslotTarget.classList.remove("hidden");
+      } else {
+        keyslotTarget.className += target.className.replace(/\bhidden\b/g);
+      }
+    } else {
+      if (keyslotTarget.classList) {
+        keyslotTarget.classList.add("hidden");
+      } else {
+        keyslotTarget.className += " hidden";
+      }
+    }
+    
+    if (e.target.value === "scramble") {
+      if (scrambleSyncTarget.classList) {
+        scrambleSyncTarget.classList.remove("hidden");
+        scrambleSelectionTarget.classList.remove("hidden");
+        showTotalsPrompt.classList.add("hidden");
+        showTimerTarget.classList.add("hidden");
+      } else {
+        scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
+        scrambleSelectionTarget.className += target.className.replace(/\bhidden\b/g);
+        showTotalsPrompt.className += " hidden";
+        showTimerTarget.className += " hidden";
+      }
+    } else {
+      if (scrambleSyncTarget.classList) {
+        scrambleSyncTarget.classList.add("hidden");
+        scrambleSelectionTarget.classList.add("hidden");
+        showTotalsPrompt.classList.remove("hidden");
+        showTimerTarget.classList.remove("hidden");
+      } else {
+        scrambleSyncTarget.className += " hidden";
+        scrambleSelectionTarget.className += " hidden";
+        showTotalsPrompt.className += target.className.replace(/\bhidden\b/g);
+        showTimerTarget.className += target.className.replace(/\bhidden\b/g);
+      }
+    }
+  }
+  
+  function handlePresetSelection(e) {
+    if (e.type === "change") {
+      let newValue = e.target.value;
+      let filterOutList = [];
+    
+      let selectedGames = {...main.games};
+      selectedGames.fOut = filterOut;
+      const masterFilter = [...Object.keys(main.games)];
+      
+      switch (newValue) {
+        case 'primary':
+          filterOutList = [...noZeldaFilter];
+          break;
+        case 'z1m1':
+          filterOutList = [...z1m1Filter];
+          break;
+        case 'smz3':
+          filterOutList = [...smz3Filter];
+          break;
+        case 'no_fangames':
+          filterOutList = [...noFangamesFilter];
+          break;
+        case 'no_zelda':
+          filterOutList = [...noZeldaFilter];
+          break;
+        case 'no_samus':
+          filterOutList = [...noSamusFilter];
+          break;
+        case 'no_prime':
+          filterOutList = [...noPrimeFilter];
+          break;
+        case 'no_main':
+          filterOutList = [...noMainlineFilter];
+          break;
+        case 'none':
+          filterOutList = [...masterFilter];
+          break;
+        case 'all':
+          filterOutList = [];
+          break;
+        default:
+          break;
+      }
+      
+      selectedGames = selectedGames.fOut(filterOutList);
+      
+      let cleanedSelection = [];
+    
+      for (const [key, value] of Object.entries(selectedGames)) {
+        if (typeof value === "function") {
+          continue;
+        }
+        cleanedSelection.push(key);
+      }
+      
+      let formToFind = document.forms["startupMenu"];
+      
+      for (let i = 0; i < masterFilter.length; i++) {
+        let formItem = formToFind[masterFilter[i]];
+        if (formItem) {
+          formItem.checked = cleanedSelection.includes(masterFilter[i]);
+        }
+      }
+    }
+  }
+  
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     let itemWidth = 42;
-    if (main.useSprites && ["msr"].includes(feature.currentGame)) {
+    if (tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;
-    } else if (main.useSprites && ["md", "mpff", "mp", "mp2e", "e_rnd"].includes(feature.currentGame)) {
+    } else if (tracker.useSprites && ["md", "mpff", "mp", "mp2e", "e_rnd"].includes(tracker.currentGame)) {
       itemWidth = 64;
-    } else if (main.useSprites && ["mom"].includes(feature.currentGame)) {
+    } else if (tracker.useSprites && ["mom"].includes(tracker.currentGame)) {
       itemWidth = 60;
     }
-    destination.style.width = "" + ((parseInt(feature.workingData.width) * itemWidth) + ((parseInt(feature.workingData.width) - 1) * 6)) + "px";
+    destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * itemWidth) + ((parseInt(tracker.workingData.checklistWidth) - 1) * 6)) + "px";
     
     // section for main items
-    feature.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
-    if (!main.isScramble && (main.showTotals || main.showTimer)) {
+    tracker.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
+    if (!tracker.isScramble && (tracker.showTotals || tracker.showTimer)) {
       let breakRow = document.createElement("div");
       if (breakRow.classList) {
         breakRow.classList.add("flex-break");
@@ -978,15 +1261,188 @@ let keyslots = {};
       }
       destination.appendChild(breakRow);
     }
-    if (!main.isScramble && main.showTotals) {
+    if (!tracker.isScramble && tracker.showTotals) {
       renderPercentage(destination);
     }
-    if (!main.isScramble && main.showTimer) {
-      renderTimer(destination, parseInt(feature.workingData.width));
+    if (!tracker.isScramble && tracker.showTimer) {
+      renderTimer(destination, parseInt(tracker.workingData.checklistWidth));
+    }
+  }
+  
+  function validateStartup(e) {
+    e.preventDefault();
+    let gameInput = document.forms["startupMenu"]["selectedGame"].value;
+    const masterFilter = [...Object.keys(main.games)];
+    
+    if (gameInput === "") {
+      let error = document.getElementsByClassName("gameError")[0];
+      
+      if (error.classList) { // browser compatibility logic
+        error.classList.remove("hide-error");
+      } else {
+        error.className += error.className.replace(/\bhide-error\b/g);
+      }
+      
+      return;
+    }
+    
+    let searchString = "?game=";
+    
+    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
+      searchString += "scramble";
+    } else {
+      searchString += main.games[document.forms["startupMenu"]["selectedGame"].value];
+    }
+    
+    if (document.forms["startupMenu"]["useSprites"].checked) {
+      searchString += "&s=true";
+    }
+    if (document.forms["startupMenu"]["useDarkMode"].checked) {
+      searchString += "&d=true";
+    }
+    if (document.forms["startupMenu"]["showTotals"].checked) {
+      searchString += "&pt=true";
+    }
+    if (document.forms["startupMenu"]["showTimer"].checked) {
+      searchString += "&t=true";
+    }
+    if (document.forms["startupMenu"]["useKeyslots"].checked) {
+      searchString += "&k=true";
+    }
+    if (document.forms["startupMenu"]["scrambleSync"].checked) {
+      searchString += "&sync=true";
+    }
+    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
+      let formToFind = document.forms["startupMenu"];
+      let selectedGames = [];
+      
+      for (let i = 0; i < masterFilter.length; i++) {
+        let formItem = formToFind[masterFilter[i]];
+        if (formItem && formItem.checked) {
+          selectedGames.push(formItem.value);
+        }
+      }
+      if (selectedGames.length) {
+        searchString += "&games=" + selectedGames.join(',');
+      } else {
+        searchString += "&games=" + masterFilter.join(',');
+      }
+    }
+    
+    if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
+      searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
+    }
+    location.search = searchString;
+  }
+  
+  function start() {
+    if (location.search.length) {
+      const queryParams = location.search.split('?')[1].split('&');
+      let queryDict = {};
+      for (let i = 0; i < queryParams.length; i++) {
+        const kv = queryParams[i].split('=');
+        let k = kv[0];
+        let val = kv[1];
+        val = decodeURIComponent(val);
+        val = val.replace(/\+/g, ' ');
+        
+        queryDict[k] = val;
+      }
+      let incomingGame = queryDict.game;
+      
+      if (document.body.classList) {
+        document.body.classList.add("game-mode");
+      } else {
+        document.body.className += "game-mode";
+      }
+      
+      let willUseDarkMode = !!queryDict.d;
+      willUseDarkMode = !!JSON.parse(willUseDarkMode);
+      if (willUseDarkMode) {
+        if (document.body.classList) {
+          document.body.classList.add("dark-mode");
+        } else {
+          document.body.className += "dark-mode";
+        }
+      }
+      let willUseSprites = !!queryDict.s;
+      willUseSprites = !!JSON.parse(willUseSprites);
+      tracker.useSprites = willUseSprites;
+      
+      let willShowTotals = !!queryDict.pt;
+      willShowTotals = !!JSON.parse(willShowTotals);
+      tracker.showTotals = willShowTotals;
+      
+      let willShowTimer = !!queryDict.t;
+      willShowTimer = !!JSON.parse(willShowTimer);
+      tracker.showTimer = willShowTimer;
+      
+      let willUseKeyslots = !!queryDict.k;
+      willUseKeyslots = !!JSON.parse(willUseKeyslots);
+      tracker.useKeyslots = willUseKeyslots;
+      
+      let selectedLocale = queryDict.l || '';
+      tracker.useLocale = selectedLocale.length ? selectedLocale : null;
+      
+      if (incomingGame === "scramble") {
+        let gamesList = queryDict.games.split(',');
+        let willSyncClicks = !!queryDict.sync;
+        willSyncClicks = !!JSON.parse(willSyncClicks);
+        tracker.scrambleSync = willSyncClicks;
+        tracker.scrambleStart(gamesList);
+        return;
+      }
+      
+      if (rawData.hasOwnProperty(incomingGame)) {
+        let game = null;
+        for (const [key, value] of Object.entries(main.games)) {
+          if (value == incomingGame) {
+            game = key;
+            break;
+          }
+        }
+        tracker.currentGame = incomingGame;
+        if (document.body.classList) {
+          document.body.classList.add("game-" + tracker.currentGame);
+        } else {
+          document.body.className += " game-" + tracker.currentGame;
+        }
+        tracker.workingData = rawData[tracker.currentGame];
+        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
+        let foundItem = null;
+        for (let i = 0; i < targetingData.length; i++) {
+          if (targetingData[i].value == game) {
+            foundItem = targetingData[i];
+          }
+        }
+        if (foundItem) {
+          document.title += " - " + foundItem.innerHTML;
+        }
+        
+        let menuPointer = document.getElementById("selection");
+        menuPointer.remove();
+        
+        let target = document.getElementById("itemField");
+        if (target.classList) { // browser compatibility logic
+          target.classList.remove("hide-section");
+        } else {
+          target.className += target.className.replace(/\bhide-section\b/g);
+        }
+        
+        tracker.generate("itemField");
+      }
     }
   }
 
-  feature.renderTimer = renderTimer;
-  feature.renderPercentage = renderPercentage;
-  feature.generate = generate;
+  tracker.renderTimer = renderTimer;
+  tracker.renderPercentage = renderPercentage;
+  tracker.handleTimerSelection = handleTimerSelection;
+  tracker.handleSpriteSelection = handleSpriteSelection;
+  tracker.handleSyncSelection = handleSyncSelection;
+  tracker.handleDropdownSelection = handleDropdownSelection;
+  tracker.handlePresetSelection = handlePresetSelection;
+  tracker.validateStartup = validateStartup;
+  tracker.scrambleStart = scrambleStart;
+  tracker.generate = generate;
+  tracker.start = start;
 })();

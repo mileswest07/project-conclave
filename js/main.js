@@ -1,20 +1,13 @@
 let main = {
-  
-};
-
-(() => {
-  
-  const games = {
+  games: {
     "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
     "m": "m1", // Metroid
-    //"mz": "z1m1", // Metroid + The Legend of Zelda Cross-Randomizer
     "z": "mzm", // Metroid: Zero Mission
     "p": "mp", // Metroid Prime
     "b": "pb", // Metroid Prime Pinball
     "p2d": "p2d", // Prime 2D
     "h": "ph", // Metroid Prime Hunters
     "e": "mp2e", // Metroid Prime 2: Echoes
-    "v": "e_rnd", // Metroid Prime 2: Echoes (Randovania settings)
     "c": "mp3c", // Metroid Prime 3: Corruption
     "ff": "mpff", // Metroid Prime: Federation Force
     "ros": "m2ros", // Metroid II: Return of Samus
@@ -22,462 +15,242 @@ let main = {
     "a": "am2r", // Another Metroid 2 Remake
     "r": "msr", // Metroid: Samus Returns
     "s": "sm", // Super Metroid
-    //"smz": "smz3", // Super Metroid + The Legend of Zelda: A Link to the Past Cross-Randomizer
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
     "n": "mng", // Metroid: A New Galaxy
-    "t": "mttne", // Metroid: A New Galaxy
+    "t": "mttne", // Metroid: The Threat Never Ends
     "d": "md", // Metroid Dread
     "z1": "thf", // The Legend of Zelda
     "z2": "aol", // Zelda 2: The Adventure of Link
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
-  };
+  }
+};
+
+(() => {
   
-  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "v", "c", "ff","ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z3", "z3r",];
-  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "v", "c", "ff","ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z3",];
-  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n",];
-  const noRandomizersFilter = ["v", "z3r",];
-  const noZeldaFilter = ["z1", "z2", "z3", "z3r",];
-  const noSamusFilter = ["m", "z", "p", "b", "p2d", "h", "e", "v", "c", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
-  const noPrimeFilter = ["p", "b", "p2d", "h", "e", "v", "c", "ff",];
-  const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
-  const masterFilter = [...Object.keys(games)];
+  const masterIDList = ["morphBall", "bomb", "bombA", "adapter", "bombB", "bombC", "powerBomb", "powerBombA", "powerBombB", "powerBombTank", "powerBombExp", "powerBombExpA", "springBall", "spiderBallA", "boostBall", "cannonball", "hyperBall", "forceBall", "missileOrb", "powerBeam", "powerBeamA", "powerBeamB", "longBeam", "chargeBeamE", "chargeBeamA", "chargeBeamB", "chargeBeamC", "chargeBeamD", "wideBeamC", "wideBeamA", "wideBeamB", "wideBeam", "wideBeamD", "waveBeamE", "waveBeam", "waveBeamA", "waveBeamB", "luminothMessage", "iceBeamD", "iceBeamA", "iceBeamB", "iceBeamC", "plasmaBeamD", "plasmaBeamA", "plasmaBeamB", "plasmaBeamC", "novaBeam", "darkBeam", "lightBeam", "annihilatorBeam", "hyperBeam", "diffusionBeam", "voltDriver", "battlehammer", "magmaul", "echoKeyBeam", "judicator", "shockCoil", "imperialist", "omegaCannon", "freezeShot", "iceMissileB", "flameShot", "shockShot", "beamAmmoExpansion", "darkAmmoExpansion", "lightAmmoExpansion", "chargeAccel", "grappleBeam", "grappleLasso", "grappleVoltage", "hyperGrapple", "shipGrapple", "uaExpansion", "echoKey", "combatVisor", "seekerLauncherC", "combatVisorA", "scanVisor", "scanVisorA", "scanVisorB", "thermalVisor", "xRayScope", "xRayVisor", "corruptionXRayVisor", "darkVisor", "echoVisor", "commandVisor", "violetTranslator", "amberTranslator", "emeraldTranslator", "cobaltTranslator", "thermalPositioner", "echoLock", "fullPowerSuit", "barrier", "barrierA", "barrierB", "barrierC", "gravitySuit", "gravitySuitB", "gravitySuitC", "gravitySuitD", "zeroSuit", "zeroSuitA", "progressiveSuit", "primeSuit", "fusionSuit", "phazonSuit", "darkSuit", "gravityBoost", "lightSuit", "ped", "hazardShield", "magneticShield", "armCannon", "altform", "missile", "missileTank", "missileA", "superMissile", "superMissileA", "superMissileTank", "iceMissile", "seekerLauncher", "seekerLauncherA", "seekerLauncherB", "darkburst", "sunburst", "sonicBoom", "hyperMissile", "shipMissile", "shipMissileExpansion", "affinityWeapon", "deathalt", "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "speedBoosterB", "exelion", "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1", "unknownItem2", "unknownItem3", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "templeKey", "lightOfAether", "lightOfAetherA", "cipher", "theronianBomb", "phaaze", "alimbicArtifactCA1", "alimbicArtifactCA2", "alimbicArtifactAl1", "alimbicArtifactAl2", "alimbicArtifactVDO1", "alimbicArtifactVDO2", "alimbicArtifactArc1", "alimbicArtifactArc2", "octolith", "oubliette", "am2rPowerOrb", "dreadPart", "securityL0", "energyPickup", "securityL1", "missileC", "securityL2", "missileD", "securityL3", "alimbicCannon", "securityL4", "friendVoucher", "etedach", "skyTempleAccess", "norion", "bryyo", "elysia", "urtraghus", "spireDock", "keyGate1", "boss", "monster", "monsterDna", "monsterCapsule", "magneticShieldTank", "pumpControlUnit", "mainBoiler", "reactorCore", "mainDeck", "sector1SRX", "sector2TRO", "sector3PYR", "sector4AQA", "sector5ARC", "sector6NOC", "restrictedLab", "quarantineBay", "keyGate2", "towerPower", "chozoStatue", "federationArmy", "federationMarines", "xenoresearch", "adam", "powerBeamC", "darkBeamA", "lightBeamA", "annihilatorBeamA", "shieldKey", "commandVisorA", "crystalFlash", "alimbicArtifact", "translatorModule", "securityUnlock", "randomizer", "goldMedal", "bombD", "monsterDnaA", "lightBeamB", "annihilatorBeamB", "electroLob", "darkVisorA", "hint", "bsl", "datapack", "doubleDamageA", "doubleDamage", "invisibilityA", "cloakA", "chargeBomb", "iceChargeShot", "spikeBomb", "modSlot", "modChip", "modChipA", "shield", "adrenaline", "eject", "repairCapsule", "shieldGenerator", "missileB", "superMissileB", "proximityBomb", "decoy", "slowBeam", "scanBolt", "progressiveBeam", "progressiveBeamA", "grappleBeamA", "progressiveMissile", "crossBombs", "mapMarker", "modChipB", "spinBoostA", "chargeBeam", "infiniteBeamAmmo", "infiniteMissiles", "superMissileC", "spiderBall", "bountyCoin", "bountyCoin1", "bountyCoin5", "bountyCoin10", "bountyCoin50", "bountyCoin100", "diffusionBeamA", "novaBeamA", "hypermode", "iceMissileA", "doubleMissileTank", "modChipC", "spiderMagnet", "flashShift", "gravitySuitA", "phantomCloak", "cloakB", "pulseRadar", "radarA", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "chykka", "quadraxis", "aetherKey", "darkAetherKey", "burstBeam", "smallAmmo", "largeAmmo", "meleeCounter", "dashMelee", "overblast", "concentration", "lethalStrike", "slide", "omegaBlast", "senseMove", "invisibility", "cloak", "kraid", "ridley",];
   
-  function filterOut([...filter]) {
-    let copy = {...this};
-    
-    filter.forEach(prop => {
-      delete copy[prop];
-    });
-    
-    return {...copy};
+  function partition(baseArray, predicate) {
+    return baseArray.reduce((accumulator, value, i, list) => {
+        accumulator[predicate(value, i, list) ? 0 : 1].push(value);
+        return accumulator;
+      },
+      [[], []]
+    );
   }
   
-  function validateStartup(e) {
-    e.preventDefault();
-    let gameInput = document.forms["startupMenu"]["selectedGame"].value;
+  function scanDataForLint() {
+    let greaterItemSet = new Set();
+    let typeCount = {};
+    let dupesPerGame = {};
+    let totalItemCount = 0;
+    let totalExtraCount = 0;
+    let totalBossCount = 0;
+    let totalTypeCount = 0;
     
-    if (gameInput === "") {
-      let error = document.getElementsByClassName("gameError")[0];
+    let gamesKeys = [...Object.values(games)];
+    
+    for (let i = 0; i < gamesKeys.length; i++) {
+      let currentGame = gamesKeys[i];
+      let currentData = rawData[currentGame];
+      let itemCount = {};
+      let itemOrder = [];
+      let missingItems = [];
+      let allSegments = [];
       
-      if (error.classList) { // browser compatibility logic
-        error.classList.remove("hide-error");
-      } else {
-        error.className += error.className.replace(/\bhide-error\b/g);
-      }
-      
-      return;
-    }
-    
-    let searchString = "?game=";
-    
-    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
-      searchString += "scramble";
-    } else {
-      searchString += games[document.forms["startupMenu"]["selectedGame"].value];
-    }
-    
-    if (document.forms["startupMenu"]["useSprites"].checked) {
-      searchString += "&s=true";
-    }
-    if (document.forms["startupMenu"]["useDarkMode"].checked) {
-      searchString += "&d=true";
-    }
-    if (document.forms["startupMenu"]["showTotals"].checked) {
-      searchString += "&pt=true";
-    }
-    if (document.forms["startupMenu"]["showTimer"].checked) {
-      searchString += "&t=true";
-    }
-    if (document.forms["startupMenu"]["useKeyslots"].checked) {
-      searchString += "&k=true";
-    }
-    if (document.forms["startupMenu"]["scrambleSync"].checked) {
-      searchString += "&sync=true";
-    }
-    if (document.forms["startupMenu"]["selectedGame"].value === "scramble") {
-      let formToFind = document.forms["startupMenu"];
-      let selectedGames = [];
-      
-      for (let i = 0; i < masterFilter.length; i++) {
-        let formItem = formToFind[masterFilter[i]];
-        if (formItem && formItem.checked) {
-          selectedGames.push(formItem.value);
+      for (let j = 0; j < currentData.items.length; j++) {
+        let item = currentData.items[j];
+        if (item.id === "-") {
+          continue;
+        }
+        if (item.nodeType === undefined && (item.segments === undefined || item.segments.length <= 0)) {
+          console.warn(item);
+        }
+        if (item.segments && item.segments.length > 0) {
+          allSegments = [...allSegments, ...item.segments];
+        }
+        if (item.segments && item.segments.length > 0) {
+          let idsAddedDuringTheseSegments = new Set();
+          for (let k = 0; k < item.segments.length; k++) {
+            let segment = item.segments[k];
+            if (segment.id === "-") {
+              continue;
+            }
+            if (segment.nodeType === undefined) {
+              console.warn(item, segment);
+            }
+            if (["boss", "battle"].includes(segment.nodeType)) {
+              ++totalBossCount;
+            } else {
+              ++totalItemCount;
+            }
+            if (segment.itemId) {
+              itemOrder.push(segment);
+              itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
+            } else {
+              missingItems.push(segment);
+            }
+            if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
+              if (itemCount[segment.id]) {
+                itemCount[segment.id] += 1;
+              } else {
+                itemCount[segment.id] = 1;
+              }
+              idsAddedDuringTheseSegments.add(segment.id);
+            }
+            if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+              greaterItemSet.add(segment.id);
+            }
+            if (segment.locale) {
+              for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
+                let localeId = localeObj.id;
+                if (localeId === "-") {
+                  continue;
+                }
+                if (!idsAddedDuringTheseSegments.has(localeId)) {
+                  if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
+                    if (itemCount[localeId]) {
+                      itemCount[localeId] += 1;
+                    } else {
+                      itemCount[localeId] = 1;
+                    }
+                  }
+                  idsAddedDuringTheseSegments.add(localeId);
+                  if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+                    greaterItemSet.add(localeId);
+                  }
+                }
+              }
+            }
+            if (typeCount[segment.nodeType]) {
+              typeCount[segment.nodeType] += 1;
+            } else {
+              typeCount[segment.nodeType] = 1;
+            }
+          }
+        } else {
+          if (["boss", "battle"].includes(item.nodeType)) {
+            ++totalBossCount;
+          } else {
+            ++totalItemCount;
+          }
+          if (item.itemId) {
+            itemOrder.push(item);
+            itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
+          } else {
+            missingItems.push(item);
+          }
+          if (!(!!item.clearIfScramble)) {
+            if (itemCount[item.id]) {
+              itemCount[item.id] += 1;
+            } else {
+              itemCount[item.id] = 1;
+            }
+          }
+          if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+            greaterItemSet.add(item.id);
+          }
+          if (item.locale) {
+            for (const [localeKey, localeObj] of Object.entries(item.locale)) {
+              let localeId = localeObj.id;
+              if (localeId === "-") {
+                continue;
+              }
+              if (!(!!item.clearIfScramble) && item.id !== localeId) {
+                if (itemCount[localeId]) {
+                  itemCount[localeId] += 1;
+                } else {
+                  itemCount[localeId] = 1;
+                }
+              }
+              if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+                greaterItemSet.add(localeId);
+              }
+            }
+          }
+          if (typeCount[item.nodeType]) {
+            typeCount[item.nodeType] += 1;
+          } else {
+            typeCount[item.nodeType] = 1;
+          }
         }
       }
-      if (selectedGames.length) {
-        searchString += "&games=" + selectedGames.join(',');
-      } else {
-        searchString += "&games=" + masterFilter.join(',');
-      }
-    }
-    
-    if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
-      searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
-    }
-    location.search = searchString;
-  }
-  
-  // scrambleStart
-  function scrambleStart(gamesList) {
-    main.showTotals = false; // CURRENTLY UNDER CONSTRUCTION
-    main.showTimer = false; // CURRENTLY UNDER CONSTRUCTION
-    main.useKeyslots = false;
-    
-    if (document.body.classList) {
-      document.body.classList.add("game-scramble");
-    } else {
-      document.body.className += " game-scramble";
-    }
-    main.isScramble = true;
-    
-    const targetingData = document.forms["startupMenu"]["selectedGame"].options;
-    
-    let targetSection = document.getElementById("itemField");
-    if (targetSection.classList) {
-      targetSection.classList.add("parent-flex");
-    } else {
-      targetSection.className = "parent-flex";
-    }
-    
-    for (let i = 0; i < gamesList.length; i++) {
-      const key = gamesList[i];
-      const value = games[key];
-      
-      feature.currentGame = value;
-      const itemFieldName = "itemField" + key;
-      
-      let foundItem = null;
-      let gameName = "";
-      for (let i = 0; i < targetingData.length; i++) {
-        if (targetingData[i].value == key) {
-          foundItem = targetingData[i];
+      for (let j = 0; j < currentData.extras.length; j++) {
+        let item = currentData.extras[j];
+        ++totalExtraCount;
+        if (typeCount[item.nodeType]) {
+          typeCount[item.nodeType] += 1;
+        } else {
+          typeCount[item.nodeType] = 1;
         }
       }
-      if (foundItem) {
-        gameName += foundItem.innerHTML;
+      for (let j = 0; j < currentData.bosses.length; j++) {
+        let boss = currentData.bosses[j];
+        ++totalBossCount;
+        let type = boss.nodeType || "boss";
+        if (typeCount[type]) {
+          typeCount[type] += 1;
+        } else {
+          typeCount[type] = 1;
+        }
       }
       
-      let newSection = document.createElement("section");
-      if (newSection.classList) {
-        newSection.classList.add("flex-field");
-        newSection.classList.add("child-field");
-        newSection.classList.add("game-" + feature.currentGame);
-      } else {
-        newSection.className = "flex-field child-field game-" + feature.currentGame
+      let duplicateCollection = new Set();
+      
+      for (const [keyid, count] of Object.entries(itemCount)) {
+        if (count > 1) {
+          duplicateCollection.add(keyid);
+        }
       }
-      newSection.id = itemFieldName;
       
-      let gameTitle = document.createElement("h4");
-      gameTitle.innerText = gameName;
-      newSection.appendChild(gameTitle);
+      duplicateCollection = [...duplicateCollection];
+      if (duplicateCollection.length > 0) {
+        if (dupesPerGame[currentGame]) {
+          dupesPerGame[currentGame] = dupesPerGame[currentGame].concat(duplicateCollection);
+        } else {
+          dupesPerGame[currentGame] = duplicateCollection;
+        }
+      }
       
-      targetSection.appendChild(newSection);
-      
-      feature.workingData = rawData[feature.currentGame];
-      feature.generate(itemFieldName);
-      
-      // CURRENTLY UNDER CONSTRUCTION
-      /* if (main.showTotals) {
-        let targetHeader = targetSection.getElementsByTagName("h4");
-        targetHeader = targetHeader[targetHeader.length - 1];
-        feature.renderPercentage(targetHeader);
-      } */
+      console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
+      if (!["mpff", "thf", "aol", "alttp", "z3_rnd"].includes(currentGame) && missingItems.length) {
+        console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
+      }
+      if (!["mpff", "thf", "aol", "alttp", "z3_rnd"].includes(currentGame) && allSegments.length) {
+        console.debug("   segments:", allSegments);
+        //console.debug(`segments for game ${currentGame}`, allSegments);
+      }
     }
     
-    let target = document.getElementById("itemField");
-    if (target.classList) { // browser compatibility logic
-      target.classList.remove("hide-section");
-    } else {
-      target.className += target.className.replace(/\bhide-section\b/g);
+    for (const [keytype, count] of Object.entries(typeCount)) {
+      totalTypeCount += count;
     }
-    let menuPointer = document.getElementById("selection");
-    menuPointer.remove();
-    feature.currentGame = "scramble"; // to make Extreme Labs and Dash Spell work
+    
+    greaterItemSet = [...greaterItemSet];
+    
+    let itemIdResults = partition(masterIDList, (eachItem, index, allItems) => greaterItemSet.includes(eachItem));
+    let itemIdsWithoutGraphics = partition(greaterItemSet, (eachItem, index, allItems) => !masterIDList.includes(eachItem));
+    
+    console.debug("items list:", greaterItemSet);
+    console.debug("total item count:", totalItemCount);
+    console.debug("dupes per game:", dupesPerGame);
+    console.debug("types and count:", typeCount);
+    console.debug("total number by type count:", totalTypeCount);
+    if (totalItemCount + totalBossCount + totalExtraCount !== totalTypeCount) {
+      console.warn(`count mismatch: ${totalItemCount + totalExtraCount} vs ${totalTypeCount}; please investigate!`);
+    }
+    console.debug("item IDs not used:", itemIdResults[1]);
+    if (itemIdsWithoutGraphics[0].length > 0) {
+      console.warn("doublecheck graphics for:", itemIdsWithoutGraphics[0]);
+    }
   }
   
   function start() {
-    if (location.search.length) {
-      const queryParams = location.search.split('?')[1].split('&');
-      let queryDict = {};
-      for (let i = 0; i < queryParams.length; i++) {
-        const kv = queryParams[i].split('=');
-        let k = kv[0];
-        let val = kv[1];
-        val = decodeURIComponent(val);
-        val = val.replace(/\+/g, ' ');
-        
-        queryDict[k] = val;
-      }
-      let incomingGame = queryDict.game;
-      
-      if (document.body.classList) {
-        document.body.classList.add("game-mode");
-      } else {
-        document.body.className += "game-mode";
-      }
-      
-      let willUseDarkMode = !!queryDict.d;
-      willUseDarkMode = !!JSON.parse(willUseDarkMode);
-      if (willUseDarkMode) {
-        if (document.body.classList) {
-          document.body.classList.add("dark-mode");
-        } else {
-          document.body.className += "dark-mode";
-        }
-      }
-      let willUseSprites = !!queryDict.s;
-      willUseSprites = !!JSON.parse(willUseSprites);
-      main.useSprites = willUseSprites;
-      
-      let willShowTotals = !!queryDict.pt;
-      willShowTotals = !!JSON.parse(willShowTotals);
-      main.showTotals = willShowTotals;
-      
-      let willShowTimer = !!queryDict.t;
-      willShowTimer = !!JSON.parse(willShowTimer);
-      main.showTimer = willShowTimer;
-      
-      let willUseKeyslots = !!queryDict.k;
-      willUseKeyslots = !!JSON.parse(willUseKeyslots);
-      main.useKeyslots = willUseKeyslots;
-      
-      let selectedLocale = queryDict.l || '';
-      main.useLocale = selectedLocale.length ? selectedLocale : null;
-      
-      if (incomingGame === "scramble") {
-        let gamesList = queryDict.games.split(',');
-        let willSyncClicks = !!queryDict.sync;
-        willSyncClicks = !!JSON.parse(willSyncClicks);
-        main.scrambleSync = willSyncClicks;
-        main.scrambleStart(gamesList);
-        return;
-      }
-      
-      if (rawData.hasOwnProperty(incomingGame)) {
-        let game = null;
-        for (const [key, value] of Object.entries(games)) {
-          if (value == incomingGame) {
-            game = key;
-            break;
-          }
-        }
-        feature.currentGame = incomingGame;
-        if (document.body.classList) {
-          document.body.classList.add("game-" + feature.currentGame);
-        } else {
-          document.body.className += " game-" + feature.currentGame;
-        }
-        feature.workingData = rawData[feature.currentGame];
-        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
-        let foundItem = null;
-        for (let i = 0; i < targetingData.length; i++) {
-          if (targetingData[i].value == game) {
-            foundItem = targetingData[i];
-          }
-        }
-        if (foundItem) {
-          document.title += " - " + foundItem.innerHTML;
-        }
-        
-        let menuPointer = document.getElementById("selection");
-        menuPointer.remove();
-        
-        let target = document.getElementById("itemField");
-        if (target.classList) { // browser compatibility logic
-          target.classList.remove("hide-section");
-        } else {
-          target.className += target.className.replace(/\bhide-section\b/g);
-        }
-        
-        feature.generate("itemField");
-      }
-    }
-  }
-  
-  function handleTimerSelection(e) {
-    let target = document.getElementById("ifShowingTimer");
-    if (e.target.checked) {
-      if (target.classList) { // browser compatibility logic
-        target.classList.remove("hidden");
-      } else {
-        target.className += target.className.replace(/\bhidden\b/g);
-      }
-    } else {
-      if (target.classList) { // browser compatibility logic
-        target.classList.add("hidden");
-      } else {
-        target.className += " hidden";
-      }
-    }
-  }
-  
-  function handleSpriteSelection(e) {
-    let targetA = document.getElementById("ifShowingSprites");
-    let targetB = document.getElementById("ifNotShowingSprites");
-    if (e.target.checked) {
-      if (targetA.classList) { // browser compatibility logic
-        targetA.classList.remove("hidden");
-        targetB.classList.add("hidden");
-      } else {
-        targetA.className += target.className.replace(/\bhidden\b/g);
-        targetB.className += " hidden";
-      }
-    } else {
-      if (targetA.classList) { // browser compatibility logic
-        targetA.classList.add("hidden");
-        targetB.classList.remove("hidden");
-      } else {
-        targetA.className += " hidden";
-        targetB.className += target.className.replace(/\bhidden\b/g);
-      }
-    }
-  }
-  
-  function handleSyncSelection(e) {
-    let targetA = document.getElementById("isSyncingItems");
-    if (e.target.checked) {
-      if (targetA.classList) { // browser compatibility logic
-        targetA.classList.remove("hidden");
-      } else {
-        targetA.className += target.className.replace(/\bhidden\b/g);
-      }
-    } else {
-      if (targetA.classList) { // browser compatibility logic
-        targetA.classList.add("hidden");
-      } else {
-        targetA.className += " hidden";
-      }
-    }
-  }
-  
-  function handleDropdownSelection(e) {
-    let keyslotTarget = document.getElementById("ifKeyslotsExist");
-    let scrambleSyncTarget = document.getElementById("ifScrambleSelected");
-    let showTotalsPrompt = document.getElementById("showTotalsPrompt");
-    let showTimerTarget = document.getElementById("showTimerPrompt");
-    let scrambleSelectionTarget = document.getElementById("scrambleSelectionGroup");
     
-    if (["m", "ros"].includes(e.target.value)) {
-      if (keyslotTarget.classList) {
-        keyslotTarget.classList.remove("hidden");
-      } else {
-        keyslotTarget.className += target.className.replace(/\bhidden\b/g);
-      }
-    } else {
-      if (keyslotTarget.classList) {
-        keyslotTarget.classList.add("hidden");
-      } else {
-        keyslotTarget.className += " hidden";
-      }
-    }
-    
-    if (e.target.value === "scramble") {
-      if (scrambleSyncTarget.classList) {
-        scrambleSyncTarget.classList.remove("hidden");
-        scrambleSelectionTarget.classList.remove("hidden");
-        showTotalsPrompt.classList.add("hidden");
-        showTimerTarget.classList.add("hidden");
-      } else {
-        scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
-        scrambleSelectionTarget.className += target.className.replace(/\bhidden\b/g);
-        showTotalsPrompt.className += " hidden";
-        showTimerTarget.className += " hidden";
-      }
-    } else {
-      if (scrambleSyncTarget.classList) {
-        scrambleSyncTarget.classList.add("hidden");
-        scrambleSelectionTarget.classList.add("hidden");
-        showTotalsPrompt.classList.remove("hidden");
-        showTimerTarget.classList.remove("hidden");
-      } else {
-        scrambleSyncTarget.className += " hidden";
-        scrambleSelectionTarget.className += " hidden";
-        showTotalsPrompt.className += target.className.replace(/\bhidden\b/g);
-        showTimerTarget.className += target.className.replace(/\bhidden\b/g);
-      }
-    }
   }
   
-  function handlePresetSelection(e) {
-    if (e.type === "change") {
-      let newValue = e.target.value;
-      let filterOutList = [];
-    
-      let selectedGames = {...games};
-      selectedGames.fOut = filterOut;
-      
-      switch (newValue) {
-        case 'primary':
-          filterOutList = [...noZeldaFilter];
-          break;
-        case 'z1m1':
-          filterOutList = [...z1m1Filter];
-          break;
-        case 'smz3':
-          filterOutList = [...smz3Filter];
-          break;
-        case 'no_fangames':
-          filterOutList = [...noFangamesFilter];
-          break;
-        case 'no_zelda':
-          filterOutList = [...noZeldaFilter];
-          break;
-        case 'no_samus':
-          filterOutList = [...noSamusFilter];
-          break;
-        case 'no_prime':
-          filterOutList = [...noPrimeFilter];
-          break;
-        case 'no_main':
-          filterOutList = [...noMainlineFilter];
-          break;
-        case 'none':
-          filterOutList = [...masterFilter];
-          break;
-        case 'all':
-          filterOutList = [];
-          break;
-        default:
-          break;
-      }
-      
-      selectedGames = selectedGames.fOut(filterOutList);
-      
-      let cleanedSelection = [];
-    
-      for (const [key, value] of Object.entries(selectedGames)) {
-        if (typeof value === "function") {
-          continue;
-        }
-        cleanedSelection.push(key);
-      }
-      
-      let formToFind = document.forms["startupMenu"];
-      
-      for (let i = 0; i < masterFilter.length; i++) {
-        let formItem = formToFind[masterFilter[i]];
-        if (formItem) {
-          formItem.checked = cleanedSelection.includes(masterFilter[i]);
-        }
-      }
-    }
-  }
-  
-  main.handleTimerSelection = handleTimerSelection;
-  main.handleSpriteSelection = handleSpriteSelection;
-  main.handleSyncSelection = handleSyncSelection;
-  main.handleDropdownSelection = handleDropdownSelection;
-  main.handlePresetSelection = handlePresetSelection;
-  main.useSprites = false;
-  main.showTotals = false;
-  main.showTimer = false;
-  main.useKeyslots = false;
-  main.isScramble = false;
-  main.scrambleSync = false;
-  main.games = games;
-  main.validateStartup = validateStartup;
-  main.scrambleStart = scrambleStart;
+  main.partition = partition;
+  main.scanDataForLint = scanDataForLint;
   main.start = start;
 })();

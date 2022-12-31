@@ -1506,6 +1506,7 @@ let interaction = {
   }
   
   function validateStartup(e) {
+    return; /// WHILE OUT OF ORDER
     e.preventDefault();
     let gameInput = document.forms["startupMenu"]["selectedGame"].value;
     const masterFilter = [...Object.keys(games)];
@@ -1559,6 +1560,7 @@ let interaction = {
   }
   
   function start() {
+    return; /// WHILE OUT OF ORDER
     if (location.search.length) {
       const queryParams = location.search.split('?')[1].split('&');
       let queryDict = {};

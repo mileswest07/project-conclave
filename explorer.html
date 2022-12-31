@@ -157,10 +157,11 @@
   <script src="js/explore.js" type="application/javascript"></script>
   <script src="js/main.js" type="application/javascript"></script>
   <script type="application/javascript">
+    window.location.href = "tracker.html"; // WHILE OUT OF ORDER
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     document.addEventListener("DOMContentLoaded", () => {
-      explorer.start();
+      // explorer.start();
     });
   </script>
 </body>

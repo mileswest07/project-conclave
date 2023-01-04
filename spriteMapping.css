@@ -341,7 +341,7 @@
 .item-image.senseMove { background: url("images/m_graphics.png") -602px -731px; } /* UNUSED */
 .item-image.invisibility,
 .item-image.cloak { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
-.item-image.unused { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
+.item-image.rundas { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
 .item-image.unused { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
 
 .item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }

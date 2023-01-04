@@ -126,7 +126,7 @@ let keyslots = {};
     let foundItem;
     let elementId;
     
-    for (const item of tracker.workingData.items) {
+    for (const item of tracker.readyPanels) {
       if (item.hasOwnProperty("segments") && item.segments.length) {
         let earlyBreakout = false;
         let segmentAcc = 0;
@@ -186,7 +186,7 @@ let keyslots = {};
     }
     
     let strippedId = id.split("-")[1];
-    let found = tracker.workingData.items.find((element) => {
+    let found = tracker.readyPanels.find((element) => {
       if (element.hasOwnProperty("segments") && element.segments.length > 0) {
         for (let j = 0; j < element.segments.length; j++) {
           if (tracker.useLocale && element.segments[j].hasOwnProperty("locale") && element.segments[j].locale.hasOwnProperty(tracker.useLocale)) {
@@ -574,7 +574,7 @@ let keyslots = {};
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
     const scrambleCondition = (!tracker.isScramble || (tracker.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
     if (wrapper.classList) {
-      if (elementId === "-" && (!isSegment || tracker.isScramble)) {
+      if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
         wrapper.classList.add("blank");
         if (tracker.useSprites) {
           wrapper.classList.add("trimmed");
@@ -589,7 +589,7 @@ let keyslots = {};
         wrapper.classList.add("usesSprite");
       }
     } else {
-      if (elementId === "-" && (!isSegment || tracker.isScramble)) {
+      if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
         wrapper.className += " blank";
         if (tracker.useSprites) {
           wrapper.className += " trimmed";
@@ -612,17 +612,17 @@ let keyslots = {};
 
     if (image.classList) {
       image.classList.add("item-image");
-      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-" && element.lookupId !== -1) {
         image.classList.add("deselected");
       }
     } else {
       image.className = "item-image ";
-      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-") {
+      if (!counterAnyway && element.max < 2 && element.start < 1 && elementId !== "-" && element.lookupId !== -1) {
         image.className += " deselected";
       }
     }
     
-    if (!(elementId === "-" && (!isSegment || tracker.isScramble))) {
+    if (!((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble))) {
       if (!counterAnyway && element.max < 2) {
         image.addEventListener("mousedown", clickItem);
       } else {
@@ -630,7 +630,7 @@ let keyslots = {};
       }
     }
     
-    if (elementId === "-") {
+    if (elementId === "-" || element.lookupId === -1) {
       if (isSegment) {
         let interimText = JSON.stringify(elementName).split(' ');
         interimText[0] = interimText[0].toLowerCase();
@@ -664,8 +664,8 @@ let keyslots = {};
     }
     
     image.src = "images/blank.png";
-    image.alt = element.name || elementName;
-    wrapper.title = elementName || element.name;
+    image.alt = element.name || elementName || "";
+    wrapper.title = elementName || element.name || "";
     
     if (element.hasOwnProperty("back")) {
       let backImage = document.createElement("img");
@@ -682,7 +682,7 @@ let keyslots = {};
     }
     
     wrapper.appendChild(image);
-    if (elementId !== "-" && (counterAnyway || element.max > 1)) {
+    if (elementId !== "-" && element.lookupId !== -1 && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");
       label.innerText = element.start + " / " + element.max;
       wrapper.appendChild(label);
@@ -888,7 +888,7 @@ let keyslots = {};
     }
     
     let startingItems = 0;
-    let totalItems = tracker.workingData.items.reduce((acc=0, next) => {
+    let totalItems = tracker.readyPanels.reduce((acc=0, next) => {
       if (next.hasOwnProperty("displayIfScramble")) {
         if (!tracker.isScramble || next.displayIfScramble !== true) {
           return acc;
@@ -1238,6 +1238,140 @@ let keyslots = {};
     }
   }
   
+  
+  
+  function makePanel(coreData, overrideData = {}, isPostConversion = false) {
+    if (coreData.id === "-" || coreData.lookupId === -1) {
+      return;
+    }
+    
+    let returnCore = {
+      ...coreData,
+      ...overrideData,
+    };
+    
+    return returnCore;
+  }
+  
+  function makePanelsOutOfList(incomingArray, overrideData = {}) {
+    let returnArray = [];
+    for (let i = 0; i < incomingArray.length; i++) {
+      let entry = incomingArray[i];
+      if (entry.id === "-" || entry.lookupId === -1) {
+        continue;
+      }
+      
+      let panel = makePanel(entry, overrideData);
+      if (panel) {
+        returnArray.push(panel);
+      }
+    }
+    return returnArray;
+  }
+  
+  function makePanels() {
+    if (tracker.currentGame && tracker.workingData) {
+      let allPanels = [];
+      let totalCount = 0;
+      
+      for (let j = 0; j < tracker.workingData.items.length; j++) {
+        let item = tracker.workingData.items[j];
+        if (item.segments && item.segments.length) {
+          allPanels = [...allPanels, ...makePanelsOutOfList(item.segments)];
+        } else if (item.id === "-" || item.lookupId === -1) {
+          continue;
+        } else {
+          allPanels = [...allPanels, makePanel(item)];
+        }
+      }
+      
+      allPanels = [...allPanels, ...makePanelsOutOfList(tracker.workingData.bosses, { nodeType:"boss", })];
+      allPanels = [...allPanels, ...makePanelsOutOfList(tracker.workingData.extras)];
+      
+      totalCount += allPanels.length;
+      
+      let [bossArray, remainderArray5] = main.partition(allPanels, panel => ["boss", "battle"].includes(panel.nodeType));
+      let [itemArray, remainderArray7] = main.partition(remainderArray5, panel => ["artifact", "upgrade", "slot", "expansion"].includes(panel.nodeType));
+      let [eventArray, remainderArray8] = main.partition(remainderArray7, panel => ["event", "trigger", "toggle", "lore", "easter"].includes(panel.nodeType));
+      
+      //let tempTotal = bossArray.length + itemArray.length + eventArray.length;
+      //if (totalCount !== tempTotal) {
+      //  console.warn("count mismatch:", totalCount, "vs", tempTotal, '((', bossArray.length, itemArray.length, eventArray.length, '))');
+      //}
+      
+      //console.debug(bossArray, itemArray, eventArray);
+      
+      let hierarchy = [...bossArray, ...itemArray, ...eventArray];
+      
+      let panels = [];
+      
+      for (let lo = 0; lo < tracker.workingData.checklistLayout.length; lo++) {
+        let entry = tracker.workingData.checklistLayout[lo];
+        let panel = {};
+        let hierarchyLookup = hierarchy.find(source => {
+          let lookupCode = -1;
+          switch (source.nodeType) {
+            case "boss":
+            case "battle":
+              lookupCode = source.bossId;
+              break;
+            case "artifact":
+            case "upgrade":
+            case "slot":
+            case "expansion":
+              lookupCode = source.itemId;
+              break;
+            case "event":
+            case "trigger":
+            case "toggle":
+            case "lore":
+            case "easter":
+              lookupCode = source.extraId;
+              break;
+          }
+          return lookupCode === entry.lookupId;
+        });
+        panel = {...hierarchyLookup, ...entry};
+        
+        if (panel.hasOwnProperty("segments") && panel.segments.length) {
+          for (let slo = 0; slo < panel.segments.length; slo++) {
+            let segmentBase = panel.segments[slo];
+            let segmentLookup = hierarchy.find(source => {
+              let lookupCode = -1;
+              switch (source.nodeType) {
+                case "boss":
+                case "battle":
+                  lookupCode = source.bossId;
+                  break;
+                case "artifact":
+                case "upgrade":
+                case "slot":
+                case "expansion":
+                  lookupCode = source.itemId;
+                  break;
+                case "event":
+                case "trigger":
+                case "toggle":
+                case "lore":
+                case "easter":
+                  lookupCode = source.extraId;
+                  break;
+              }
+              return lookupCode === segmentBase.lookupId;
+            });
+            panel.segments[slo] = {...segmentLookup, ...segmentBase};
+          }
+        }
+        
+        panels.push(panel);
+      }
+      
+      return panels;
+    }
+    console.warn("game and rawData not specified");
+    return [];
+  }
+  
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     let itemWidth = 42;
@@ -1251,7 +1385,13 @@ let keyslots = {};
     destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * itemWidth) + ((parseInt(tracker.workingData.checklistWidth) - 1) * 6)) + "px";
     
     // section for main items
-    tracker.workingData.items.forEach((element, i) => renderEntry(destination, element, i, element.name, false, false, -1));
+    if (tracker.workingData.checklistLayout) {
+      tracker.readyPanels = makePanels();
+    } else {
+      tracker.readyPanels = [...tracker.workingData.items];
+    }
+    tracker.readyPanels.forEach((element, i) => renderEntry(destination, element, i, element.name || "", false, false, -1));
+    
     if (!tracker.isScramble && (tracker.showTotals || tracker.showTimer)) {
       let breakRow = document.createElement("div");
       if (breakRow.classList) {

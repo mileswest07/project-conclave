@@ -126,7 +126,6 @@ let interaction = {
         returnCore.spriteImage = isPostConversion ? coreData.spriteImage || "" : ""; //coreData.sprite || "";
         returnCore.bg = coreData.bg || "747474";
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.name || "";
-        returnCore.completionPercentageValue = isPostConversion ? coreData.completionPercentageValue || 0 : coreData.value || 0;
         returnCore.bossRequiresItems = isPostConversion ? coreData.bossRequiresItems : (coreData.requires ? [...coreData.requires] : []);
         returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         break;
@@ -139,7 +138,6 @@ let interaction = {
         returnCore.spriteImage = isPostConversion ? coreData.spriteImage || "" : coreData.sprite || "";
         returnCore.bg = coreData.bg || "ffffff";
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
-        returnCore.completionPercentageValue = isPostConversion ? coreData.completionPercentageValue || 0 : coreData.value || 0;
         if (returnCore.nodeType === "slot") {
           returnCore.slotToggleId = isPostConversion ? coreData.slotToggleId : coreData.slotType;
         }
@@ -167,7 +165,6 @@ let interaction = {
         returnCore.spriteImage = isPostConversion ? coreData.spriteImage || "" : coreData.sprite || "";
         returnCore.bg = coreData.bg || "ffffff";
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
-        returnCore.completionPercentageValue = isPostConversion ? coreData.completionPercentageValue || 0 : coreData.value || 0;
         returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         if (returnCore.nodeType === "toggle") {
           returnCore.slotToggleId = isPostConversion ? coreData.slotToggleId : coreData.slotType;
@@ -233,7 +230,6 @@ let interaction = {
     switch (bossCore.nodeType) {
       case "boss":
       case "battle":
-        returnCore.completionPercentageValue = spliceIn.completionPercentageValue;
         break;
     }
     return returnCore;

@@ -22,6 +22,7 @@ let main = {
     "d": "md", // Metroid Dread
     "z1": "thf", // The Legend of Zelda
     "z2": "aol", // Zelda 2: The Adventure of Link
+    "z2pc": "ziiaol", // Zelda 2: The Adventure of Link
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
   }
@@ -29,7 +30,7 @@ let main = {
 
 (() => {
   
-  const masterIDList = ["morphBall", "bomb", "bombA", "adapter", "bombB", "bombC", "powerBomb", "powerBombA", "powerBombB", "powerBombTank", "powerBombExp", "powerBombExpA", "springBall", "spiderBallA", "boostBall", "cannonball", "hyperBall", "forceBall", "missileOrb", "powerBeam", "powerBeamA", "powerBeamB", "longBeam", "chargeBeamE", "chargeBeamA", "chargeBeamB", "chargeBeamC", "chargeBeamD", "wideBeamC", "wideBeamA", "wideBeamB", "wideBeam", "wideBeamD", "waveBeamE", "waveBeam", "waveBeamA", "waveBeamB", "luminothMessage", "iceBeamD", "iceBeamA", "iceBeamB", "iceBeamC", "plasmaBeamD", "plasmaBeamA", "plasmaBeamB", "plasmaBeamC", "novaBeam", "darkBeam", "lightBeam", "annihilatorBeam", "hyperBeam", "diffusionBeam", "voltDriver", "battlehammer", "magmaul", "echoKeyBeam", "judicator", "shockCoil", "imperialist", "omegaCannon", "freezeShot", "iceMissileB", "flameShot", "shockShot", "beamAmmoExpansion", "darkAmmoExpansion", "lightAmmoExpansion", "chargeAccel", "grappleBeam", "grappleLasso", "grappleVoltage", "hyperGrapple", "shipGrapple", "uaExpansion", "echoKey", "combatVisor", "seekerLauncherC", "combatVisorA", "scanVisor", "scanVisorA", "scanVisorB", "thermalVisor", "xRayScope", "xRayVisor", "corruptionXRayVisor", "darkVisor", "echoVisor", "commandVisor", "violetTranslator", "amberTranslator", "emeraldTranslator", "cobaltTranslator", "thermalPositioner", "echoLock", "fullPowerSuit", "barrier", "barrierA", "barrierB", "barrierC", "gravitySuit", "gravitySuitB", "gravitySuitC", "gravitySuitD", "zeroSuit", "zeroSuitA", "progressiveSuit", "primeSuit", "fusionSuit", "phazonSuit", "darkSuit", "gravityBoost", "lightSuit", "ped", "hazardShield", "magneticShield", "armCannon", "altform", "missile", "missileTank", "missileA", "superMissile", "superMissileA", "superMissileTank", "iceMissile", "seekerLauncher", "seekerLauncherA", "seekerLauncherB", "darkburst", "sunburst", "sonicBoom", "hyperMissile", "shipMissile", "shipMissileExpansion", "affinityWeapon", "deathalt", "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "speedBoosterB", "exelion", "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1", "unknownItem2", "unknownItem3", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "templeKey", "lightOfAether", "lightOfAetherA", "cipher", "theronianBomb", "phaaze", "alimbicArtifactCA1", "alimbicArtifactCA2", "alimbicArtifactAl1", "alimbicArtifactAl2", "alimbicArtifactVDO1", "alimbicArtifactVDO2", "alimbicArtifactArc1", "alimbicArtifactArc2", "octolith", "oubliette", "am2rPowerOrb", "dreadPart", "securityL0", "energyPickup", "securityL1", "missileC", "securityL2", "missileD", "securityL3", "alimbicCannon", "securityL4", "friendVoucher", "etedach", "skyTempleAccess", "norion", "bryyo", "elysia", "urtraghus", "spireDock", "keyGate1", "boss", "monster", "monsterDna", "monsterCapsule", "magneticShieldTank", "pumpControlUnit", "mainBoiler", "reactorCore", "mainDeck", "sector1SRX", "sector2TRO", "sector3PYR", "sector4AQA", "sector5ARC", "sector6NOC", "restrictedLab", "quarantineBay", "keyGate2", "towerPower", "chozoStatue", "federationArmy", "federationMarines", "xenoresearch", "adam", "powerBeamC", "darkBeamA", "lightBeamA", "annihilatorBeamA", "shieldKey", "commandVisorA", "crystalFlash", "alimbicArtifact", "translatorModule", "securityUnlock", "randomizer", "goldMedal", "bombD", "monsterDnaA", "lightBeamB", "annihilatorBeamB", "electroLob", "darkVisorA", "hint", "bsl", "datapack", "doubleDamageA", "doubleDamage", "invisibilityA", "cloakA", "chargeBomb", "iceChargeShot", "spikeBomb", "modSlot", "modChip", "modChipA", "shield", "adrenaline", "eject", "repairCapsule", "shieldGenerator", "missileB", "superMissileB", "proximityBomb", "decoy", "slowBeam", "scanBolt", "progressiveBeam", "progressiveBeamA", "grappleBeamA", "progressiveMissile", "crossBombs", "mapMarker", "modChipB", "spinBoostA", "chargeBeam", "infiniteBeamAmmo", "infiniteMissiles", "superMissileC", "spiderBall", "bountyCoin", "bountyCoin1", "bountyCoin5", "bountyCoin10", "bountyCoin50", "bountyCoin100", "diffusionBeamA", "novaBeamA", "hypermode", "iceMissileA", "doubleMissileTank", "modChipC", "spiderMagnet", "flashShift", "gravitySuitA", "phantomCloak", "cloakB", "pulseRadar", "radarA", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "chykka", "quadraxis", "aetherKey", "darkAetherKey", "burstBeam", "smallAmmo", "largeAmmo", "meleeCounter", "dashMelee", "overblast", "concentration", "lethalStrike", "slide", "omegaBlast", "senseMove", "invisibility", "cloak", "rundas", "kraid", "ridley",];
+  const masterIDList = ["morphBall", "bomb", "bombA", "adapter", "bombB", "bombC", "powerBomb", "powerBombA", "powerBombB", "powerBombTank", "powerBombExp", "powerBombExpA", "springBall", "spiderBallA", "boostBall", "cannonball", "hyperBall", "forceBall", "missileOrb", "powerBeam", "powerBeamA", "powerBeamB", "longBeam", "chargeBeamE", "chargeBeamA", "chargeBeamB", "chargeBeamC", "chargeBeamD", "saveRoom", "wideBeamC", "wideBeamA", "wideBeamB", "wideBeam", "wideBeamD", "waveBeamE", "waveBeam", "waveBeamA", "waveBeamB", "luminothMessage", "iceBeamD", "iceBeamA", "iceBeamB", "iceBeamC", "plasmaBeamD", "plasmaBeamA", "plasmaBeamB", "plasmaBeamC", "navigationRoom", "novaBeam", "darkBeam", "lightBeam", "annihilatorBeam", "hyperBeam", "diffusionBeam", "voltDriver", "battlehammer", "magmaul", "echoKeyBeam", "judicator", "shockCoil", "imperialist", "omegaCannon", "freezeShot", "iceMissileB", "flameShot", "shockShot", "beamAmmoExpansion", "darkAmmoExpansion", "lightAmmoExpansion", "chargeAccel", "grappleBeam", "grappleLasso", "grappleVoltage", "hyperGrapple", "shipGrapple", "uaExpansion", "echoKey", "combatVisor", "seekerLauncherC", "combatVisorA", "scanVisor", "scanVisorA", "scanVisorB", "thermalVisor", "xRayScope", "xRayVisor", "corruptionXRayVisor", "darkVisor", "echoVisor", "commandVisor", "violetTranslator", "amberTranslator", "emeraldTranslator", "cobaltTranslator", "thermalPositioner", "echoLock", "fullPowerSuit", "barrier", "barrierA", "barrierB", "barrierC", "gravitySuit", "gravitySuitB", "gravitySuitC", "gravitySuitD", "zeroSuit", "zeroSuitA", "progressiveSuit", "primeSuit", "fusionSuit", "phazonSuit", "darkSuit", "gravityBoost", "lightSuit", "ped", "hazardShield", "magneticShield", "armCannon", "altform", "missile", "missileTank", "missileA", "superMissile", "superMissileA", "superMissileTank", "iceMissile", "seekerLauncher", "seekerLauncherA", "seekerLauncherB", "darkburst", "sunburst", "sonicBoom", "hyperMissile", "shipMissile", "shipMissileExpansion", "affinityWeapon", "deathalt", "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "speedBoosterB", "exelion", "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1", "unknownItem2", "unknownItem3", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "templeKey", "lightOfAether", "lightOfAetherA", "cipher", "theronianBomb", "phaaze", "alimbicArtifactCA1", "alimbicArtifactCA2", "alimbicArtifactAl1", "alimbicArtifactAl2", "alimbicArtifactVDO1", "alimbicArtifactVDO2", "alimbicArtifactArc1", "alimbicArtifactArc2", "octolith", "oubliette", "am2rPowerOrb", "dreadPart", "securityL0", "energyPickup", "securityL1", "missileC", "securityL2", "missileD", "securityL3", "alimbicCannon", "securityL4", "friendVoucher", "etedach", "skyTempleAccess", "norion", "bryyo", "elysia", "urtraghus", "spireDock", "keyGate1", "boss", "monster", "monsterDna", "monsterCapsule", "magneticShieldTank", "pumpControlUnit", "mainBoiler", "reactorCore", "mainDeck", "sector1SRX", "sector2TRO", "sector3PYR", "sector4AQA", "sector5ARC", "sector6NOC", "restrictedLab", "quarantineBay", "keyGate2", "towerPower", "chozoStatue", "federationArmy", "federationMarines", "xenoresearch", "adam", "powerBeamC", "darkBeamA", "lightBeamA", "annihilatorBeamA", "shieldKey", "commandVisorA", "crystalFlash", "alimbicArtifact", "translatorModule", "securityUnlock", "randomizer", "goldMedal", "bombD", "monsterDnaA", "lightBeamB", "annihilatorBeamB", "electroLob", "darkVisorA", "hint", "bsl", "datapack", "doubleDamageA", "doubleDamage", "invisibilityA", "cloakA", "chargeBomb", "iceChargeShot", "spikeBomb", "modSlot", "modChip", "modChipA", "shield", "adrenaline", "eject", "repairCapsule", "shieldGenerator", "missileB", "superMissileB", "proximityBomb", "decoy", "slowBeam", "scanBolt", "progressiveBeam", "progressiveBeamA", "grappleBeamA", "progressiveMissile", "crossBombs", "mapMarker", "modChipB", "spinBoostA", "chargeBeam", "infiniteBeamAmmo", "infiniteMissiles", "superMissileC", "spiderBall", "bountyCoin", "bountyCoin1", "bountyCoin5", "bountyCoin10", "bountyCoin50", "bountyCoin100", "dataRoom", "diffusionBeamA", "novaBeamA", "hypermode", "iceMissileA", "doubleMissileTank", "modChipC", "spiderMagnet", "flashShift", "gravitySuitA", "phantomCloak", "cloakB", "pulseRadar", "radarA", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "chykka", "quadraxis", "aetherKey", "darkAetherKey", "burstBeam", "smallAmmo", "largeAmmo", "meleeCounter", "dashMelee", "overblast", "concentration", "lethalStrike", "slide", "omegaBlast", "senseMove", "invisibility", "cloak", "rundas", "kraid", "ridley",];
   
   function partition(baseArray, predicate) {
     return baseArray.reduce((accumulator, value, i, list) => {
@@ -99,7 +100,7 @@ let main = {
               }
               idsAddedDuringTheseSegments.add(segment.id);
             }
-            if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+            if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
               greaterItemSet.add(segment.id);
             }
             if (segment.locale) {
@@ -117,7 +118,7 @@ let main = {
                     }
                   }
                   idsAddedDuringTheseSegments.add(localeId);
-                  if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+                  if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
                     greaterItemSet.add(localeId);
                   }
                 }
@@ -148,7 +149,7 @@ let main = {
               itemCount[item.id] = 1;
             }
           }
-          if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+          if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
             greaterItemSet.add(item.id);
           }
           if (item.locale) {
@@ -164,7 +165,7 @@ let main = {
                   itemCount[localeId] = 1;
                 }
               }
-              if (!["thf", "aol", "alttp", "z3_rnd"].includes(currentGame)) {
+              if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
                 greaterItemSet.add(localeId);
               }
             }
@@ -214,10 +215,10 @@ let main = {
       }
       
       console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
-      if (!["mpff", "thf", "aol", "alttp", "z3_rnd"].includes(currentGame) && missingItems.length) {
+      if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame) && missingItems.length) {
         console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
       }
-      if (!["mpff", "thf", "aol", "alttp", "z3_rnd"].includes(currentGame) && allSegments.length) {
+      if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame) && allSegments.length) {
         console.debug("   segments:", allSegments);
         //console.debug(`segments for game ${currentGame}`, allSegments);
       }

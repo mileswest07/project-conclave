@@ -121,6 +121,11 @@
         <polygon id="hex_block_up_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
         <polygon id="hex_down_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
         <polygon id="hex_block_down_template" points="0 -60,52 -30,52 30,0 60,-52 30,-52 -30" d="M 0 -60 l 52 30 l 0 60 l -52 30 l -52 -30 l 0 -60 Z" stroke="black" stroke-width="4"></polygon>
+        <polygon id="bolt_template" points="-60 0,-30 52,30 52,60 0,30 -52,-30 -52" d="M -60 0 l 30 52 l 60 0 l 30 -52 l -30 -52 l -60 0 Z" stroke="black" stroke-width="4"></polygon>
+        <g id="bracketed_template">
+          <rect x="-60" y="-60" rx="12.5" ry="12.5" width="120" height="120" stroke="black" stroke-width="4"></rect>
+          <polygon points="-60 0,-25 60,25 60,60 0,25 -60,-25 -60" stroke="black" stroke-width="4"></polygon>
+        </g>
         <rect id="square_template" x="-60" y="-60" rx="12.5" ry="12.5" width="120" height="120" stroke="black" stroke-width="4"></rect>
         <path id="arrow_down_template" d="M -5 -15 l 0 15 l -10 0 l 15 30 l 15 -30 l -10 0 l 0 -15" stroke="black" stroke-width="3" fill="white"></path>
         <polygon id="dia_template" points="0 -60,60 0,0 60,-60 0" d="M -7.5 -52.5 c 7.5 -7.5, 7.5 -7.5, 15 0 l 45 45 c 7.5 7.5, 7.5 7.5, 0 15 l -45 45 c -7.5 7.5, -7.5 7.5, -15 0 l -45 -45 c -7.5 -7.5, -7.5 -7.5, 0 -15 Z" stroke="black" stroke-width="4"></polygon>
@@ -161,7 +166,7 @@
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     document.addEventListener("DOMContentLoaded", () => {
-      // explorer.start();
+      //explorer.start();
     });
   </script>
 </body>

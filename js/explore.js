@@ -51,6 +51,8 @@ let interaction = {
     "return", //        *> oneway_inwards, pointing up
     "shortcut", //      A access_inwards, pointing up
     "access", //        A access_outwards, pointing down
+    "bolt", //           
+    "bracketed", //     
     "lock", //          *l
     "dropdown", //      *> oneway_outwards, pointing down
   ];
@@ -280,7 +282,7 @@ let interaction = {
       let [onewayArray, remainderArray3] = main.partition(remainderArray2, core => ["return", "dropdown"].includes(core.nodeType));
       onewayArray = onewayArray.sort(sortingDescIds);
       
-      let [accessArray, remainderArray4] = main.partition(remainderArray3, core => ["shortcut", "access"].includes(core.nodeType));
+      let [accessArray, remainderArray4] = main.partition(remainderArray3, core => ["shortcut", "bolt", "access", "bracketed"].includes(core.nodeType));
       accessArray = accessArray.sort(sortingDescIds);
       
       let [bossArray, remainderArray5] = main.partition(remainderArray4, core => ["boss", "battle"].includes(core.nodeType));
@@ -884,6 +886,20 @@ let interaction = {
         break;
       case "shortcut":
         selectedShape = cardData.block ? "hex_block_up" : "hex_up";
+        if (explorer.allowColors) imageClasses.add("lock-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
+      case "bracketed":
+        selectedShape = "bracketed";
+        if (explorer.allowColors) imageClasses.add("lock-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
+      case "bolt":
+        selectedShape = "bolt";
         if (explorer.allowColors) imageClasses.add("lock-image");
         hoverCapture = doNothing;
         clickCapture = doNothing;

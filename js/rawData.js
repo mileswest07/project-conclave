@@ -6023,7 +6023,7 @@ const rawData = {
     grid: "m2ros",
   },
   "msr": {
-    checklistWidth: 7,
+    checklistWidth: 6,
     checklistLayout: [
       { lookupId: 1, value: 0, start: 0, max: 1, segments: [], },
       { lookupId: 6, value: 0, start: 0, max: 1, segments: [], },
@@ -6912,7 +6912,7 @@ const rawData = {
           }
         },
         name: "Diffusion Beam",
-        sprite: "unknown",
+        sprite: "diffusion",
         bg: "7f2800",
         itemId: 8,
         nodeType: "upgrade",
@@ -6999,7 +6999,7 @@ const rawData = {
       },{
         id: "seekerLauncher",
         name: "Seeker Missiles",
-        sprite: "unknown",
+        sprite: "seeker",
         bg: "644080",
         itemId: 19,
         nodeType: "upgrade",

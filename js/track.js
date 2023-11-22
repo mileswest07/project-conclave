@@ -6,6 +6,7 @@ let tracker = {
     timeOfLastStart: Date.now()
   },
   useSprites: false,
+  useAllSprites: true,
   showTotals: false,
   showTimer: false,
   useKeyslots: false,
@@ -588,6 +589,9 @@ let keyslots = {};
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.classList.add("usesSprite");
       }
+      if (tracker.useAllSprites) {
+        wrapper.classList.add("usesAllSprites");
+      }
     } else {
       if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
         wrapper.className += " blank";
@@ -602,6 +606,9 @@ let keyslots = {};
       }
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.className += " usesSprite";
+      }
+      if (tracker.useAllSprites) {
+        wrapper.className += " usesAllSprites";
       }
     }
     

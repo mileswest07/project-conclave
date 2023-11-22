@@ -764,6 +764,8 @@
 .game-mom .usesSprite .item-image.pbomb { background: url("images/mom_spritesheet.png") 0 -120px; }
 .game-mom .usesSprite .item-image.super { background: url("images/mom_spritesheet.png") -60px -120px; }
 .game-mom .usesSprite .item-image.erec { background: url("images/mom_spritesheet.png") -120px -120px; }
+.game-mom .usesSprite .item-image.diffusion,
+.game-mom .usesSprite .item-image.seeker,
 .game-mom .usesSprite .item-image.unknown { background: url("images/mom_spritesheet.png") -180px -120px; }
 .game-mom .usesSprite .item-image.hudMissileA { background: url("images/mom_spritesheet.png") 0 -180px; }
 .game-mom .usesSprite .item-image.hudPBomb { background: url("images/mom_spritesheet.png") -60px -180px; }

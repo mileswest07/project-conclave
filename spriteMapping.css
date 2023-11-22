@@ -101,7 +101,7 @@
 .item-image.cobaltTranslator { background: url("images/m_graphics.png") -645px -172px; }
 .item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; } /* UNUSED */
 .item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -172px; } /* UNUSED */
+.item-image.generator { background: url("images/m_graphics.png") -774px -172px; } /* UNUSED */
 .item-image.fullPowerSuit { background: url("images/m_graphics.png") 0 -215px; }
 .item-image.barrier,
 .item-image.barrierA,
@@ -126,7 +126,7 @@
 .item-image.magneticShield { background: url("images/m_graphics.png") -645px -215px; } /* UNUSED */
 .item-image.armCannon { background: url("images/m_graphics.png") -688px -215px; } /* UNUSED */
 .item-image.altform { background: url("images/m_graphics.png") -731px -215px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -215px; } /* UNUSED */
+.item-image.observatory { background: url("images/m_graphics.png") -774px -215px; } /* UNUSED */
 .item-image.missile { background: url("images/m_graphics.png") 0 -258px; }
 .item-image.missileTank { background: url("images/m_graphics.png") -43px -258px; }
 .item-image.missileA { background: url("images/m_graphics.png") -86px -258px; }
@@ -145,7 +145,7 @@
 .item-image.shipMissileExpansion { background: url("images/m_graphics.png") -645px -258px; }
 .item-image.affinityWeapon { background: url("images/m_graphics.png") -688px -258px; } /* UNUSED */
 .item-image.deathalt { background: url("images/m_graphics.png") -731px -258px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -258px; } /* UNUSED */
+.item-image.golemHead { background: url("images/m_graphics.png") -774px -258px; } /* UNUSED */
 .item-image.highJump { background: url("images/m_graphics.png") 0 -301px; }
 .item-image.speedBooster { background: url("images/m_graphics.png") -43px -301px; }
 .item-image.speedBoosterA { background: url("images/m_graphics.png") -86px -301px; }

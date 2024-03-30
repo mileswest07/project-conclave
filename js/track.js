@@ -6,7 +6,7 @@ let tracker = {
     timeOfLastStart: Date.now()
   },
   useSprites: false,
-  useAllSprites: true,
+  useAllSprites: false,
   showTotals: false,
   showTimer: false,
   useKeyslots: false,
@@ -595,7 +595,7 @@ let keyslots = {};
     } else {
       if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
         wrapper.className += " blank";
-        if (tracker.useSprites) {
+        if (element.hasOwnProperty("sprite") && tracker.useSprites) {
           wrapper.className += " trimmed";
         }
       } else {
@@ -1095,21 +1095,26 @@ let keyslots = {};
   function handleSpriteSelection(e) {
     let targetA = document.getElementById("ifShowingSprites");
     let targetB = document.getElementById("ifNotShowingSprites");
+    let targetC = document.getElementById("showAllSpritesPrompt");
     if (e.target.checked) {
       if (targetA.classList) { // browser compatibility logic
         targetA.classList.remove("hidden");
         targetB.classList.add("hidden");
+        targetC.classList.remove("hidden");
       } else {
         targetA.className += target.className.replace(/\bhidden\b/g);
         targetB.className += " hidden";
+        targetC.className += target.className.replace(/\bhidden\b/g);
       }
     } else {
       if (targetA.classList) { // browser compatibility logic
         targetA.classList.add("hidden");
         targetB.classList.remove("hidden");
+        targetC.classList.add("hidden");
       } else {
         targetA.className += " hidden";
         targetB.className += target.className.replace(/\bhidden\b/g);
+        targetC.className += " hidden";
       }
     }
   }
@@ -1382,11 +1387,13 @@ let keyslots = {};
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
     let itemWidth = 42;
-    if (tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
+    if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;
-    } else if (tracker.useSprites && ["md", "mpff", "mp", "mp2e", "e_rnd"].includes(tracker.currentGame)) {
+    } else if (!tracker.useAllSprites && tracker.useSprites && ["md", "mp", "mp2e"].includes(tracker.currentGame)) {
       itemWidth = 64;
-    } else if (tracker.useSprites && ["mom"].includes(tracker.currentGame)) {
+    } else if (tracker.useSprites && ["mpff"].includes(tracker.currentGame)) {
+      itemWidth = 64;
+    } else if (!tracker.useAllSprites && tracker.useSprites && ["mom"].includes(tracker.currentGame)) {
       itemWidth = 60;
     }
     destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * itemWidth) + ((parseInt(tracker.workingData.checklistWidth) - 1) * 6)) + "px";
@@ -1443,6 +1450,9 @@ let keyslots = {};
     
     if (document.forms["startupMenu"]["useSprites"].checked) {
       searchString += "&s=true";
+    }
+    if (document.forms["startupMenu"]["useAllSprites"].checked) {
+      searchString += "&as=true";
     }
     if (document.forms["startupMenu"]["useDarkMode"].checked) {
       searchString += "&d=true";
@@ -1515,6 +1525,10 @@ let keyslots = {};
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       tracker.useSprites = willUseSprites;
+      
+      let willUseAllSprites = !!queryDict.as;
+      willUseAllSprites = !!JSON.parse(willUseAllSprites);
+      tracker.useAllSprites = willUseAllSprites;
       
       let willShowTotals = !!queryDict.pt;
       willShowTotals = !!JSON.parse(willShowTotals);

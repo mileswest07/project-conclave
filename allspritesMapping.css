@@ -4,6 +4,8 @@
 .usesAllSprites.trimmed .item-image { width: 42px; height: 42px; margin: 0; }
 .usesAllSprites.expansion { height: 64px; }
 
+.usesAllSprites .deselected { mix-blend-mode: normal; }
+
 .game-mpff .usesSprite.usesAllSprites,
 .game-mpff .usesSprite.usesAllSprites .item-image { width: 64px; height: 64px; margin: 0; }
 .game-mpff .usesAllSprites.expansion { height: 84px; }

@@ -19,12 +19,12 @@ let keyslots = {};
 
 (() => {
   
-  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "c", "ff","ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z3", "z3r",];
-  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff","ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z3",];
-  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n",];
-  const noRandomizersFilter = ["z3r",];
-  const noZeldaFilter = ["z1", "z2", "z3", "z3r",];
-  const noSamusFilter = ["m", "z", "p", "b", "p2d", "h", "e", "c", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
+  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z2pc", "z3", "z3r",];
+  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z2pc", "z3",];
+  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
+  const noRandomizersFilter = ["z2pc", "z3r",];
+  const noZeldaFilter = ["z1", "z2", "z2pc", "z3", "z3r",];
+  const noSamusFilter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
   const noPrimeFilter = ["p", "b", "p2d", "h", "e", "c", "ff",];
   const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
   

@@ -76,6 +76,7 @@ body {
   display: none;
 } 
 
+.permahide,
 #selection:not(.show-menu),
 #selection .gameError.hide-error,
 .hide-menu,

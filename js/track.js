@@ -1189,26 +1189,26 @@ let keyslots = {};
     }
     
     if (e.target.value === "scramble") {
-      if (scrambleSyncTarget.classList) {
-        scrambleSyncTarget.classList.remove("hidden");
+      if (scrambleSelectionTarget.classList) {
         scrambleSelectionTarget.classList.remove("hidden");
+        scrambleSyncTarget.classList.remove("hidden");
         showTotalsPrompt.classList.add("hidden");
         showTimerTarget.classList.add("hidden");
       } else {
-        scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
         scrambleSelectionTarget.className += target.className.replace(/\bhidden\b/g);
+        scrambleSyncTarget.className += target.className.replace(/\bhidden\b/g);
         showTotalsPrompt.className += " hidden";
         showTimerTarget.className += " hidden";
       }
     } else {
-      if (scrambleSyncTarget.classList) {
-        scrambleSyncTarget.classList.add("hidden");
+      if (scrambleSelectionTarget.classList) {
         scrambleSelectionTarget.classList.add("hidden");
+        scrambleSyncTarget.classList.add("hidden");
         showTotalsPrompt.classList.remove("hidden");
         showTimerTarget.classList.remove("hidden");
       } else {
-        scrambleSyncTarget.className += " hidden";
         scrambleSelectionTarget.className += " hidden";
+        scrambleSyncTarget.className += " hidden";
         showTotalsPrompt.className += target.className.replace(/\bhidden\b/g);
         showTimerTarget.className += target.className.replace(/\bhidden\b/g);
       }

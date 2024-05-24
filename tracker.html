@@ -85,11 +85,13 @@
             <span id="ifShowingSprites" class="sliderResponse">In color!</span>
           </p>
           <p id="showAllSpritesPrompt" class="instructionPrompt hidden">
-            Use custom-made Zero Mission-style sprites if applicable?
+            Use custom-made sprites if applicable?
             <label class="slider-switch">
               <input type="checkbox" name="useAllSprites" value="useAllSprites" checked>
               <span class="slider"></span>
             </label>
+            <span id="ifNotUsingMZMSprites" class="sliderResponse hidden">Using original sprites if available</span>
+            <span id="ifUsingMZMSprites" class="sliderResponse">Using custom Zero Mission-style sprites if available</span>
           </p>
           <p class="instructionPrompt">
             Use Dark Mode?
@@ -140,14 +142,11 @@
             Presets:
             <select name="scrambledPreset">
               <option value="all">All</option>
-              <option value="primary">Primary Metroid selection</option>
+              <option value="all_metroid">Entire Metroid franchise</option>
+              <option value="all_zelda">All available Zelda games</option>
               <option value="z1m1">Z1M1 Crossrandomizer</option>
               <option value="smz3">SMZ3 Crossrandomizer</option>
               <option value="no_fangames">No fangames</option>
-              <option value="no_zelda">No Zelda</option>
-              <option value="no_samus">No Samus</option>
-              <option value="no_prime">No Prime</option>
-              <option value="no_main">No Mainline</option>
               <option value="none" selected>None</option>
             </select>
             <br>
@@ -342,16 +341,19 @@
     document.addEventListener("DOMContentLoaded", () => { tracker.start(); });
     
     let spriteCheckbox = document.querySelector("input[name=useSprites]");
+    let allSpritesCheckbox = document.querySelector("input[name=useAllSprites]");
     let timerCheckbox = document.querySelector("input[name=showTimer]");
     let gameDropdown = document.querySelector("select[name=selectedGame]");
     let scramblePresetDropdown = document.querySelector("select[name=scrambledPreset]");
     let scrambleSyncCheckbox = document.querySelector("input[name=scrambleSync]");
     spriteCheckbox.addEventListener('change', tracker.handleSpriteSelection);
+    allSpritesCheckbox.addEventListener('change', tracker.handleSpriteTypeSelection);
     timerCheckbox.addEventListener('change', tracker.handleTimerSelection);
     gameDropdown.addEventListener('change', tracker.handleDropdownSelection);
     scramblePresetDropdown.addEventListener('change', tracker.handlePresetSelection);
     scrambleSyncCheckbox.addEventListener('change', tracker.handleSyncSelection);
     tracker.handleSpriteSelection({target: spriteCheckbox});
+    tracker.handleSpriteTypeSelection({target: allSpritesCheckbox});
     tracker.handleTimerSelection({target: timerCheckbox});
     tracker.handleDropdownSelection({target: gameDropdown});
     tracker.handlePresetSelection({target: scramblePresetDropdown});

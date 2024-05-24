@@ -219,7 +219,7 @@ const rawData = {
         extraId: 1005,
         nodeType: "easter",
       },{
-        id: "unused",
+        id: "rechargeRoom",
         name: "Full Restore",
         extraId: 1007,
         nodeType: "recharge",
@@ -1846,32 +1846,32 @@ const rawData = {
   "mzm": {
     checklistWidth: 6,
     checklistLayout: [
-      { lookupId: 3, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Morph Ball Orb Acquired", },
-      { lookupId: 8, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Bombs Orb Acquired", },
-      { lookupId: 15, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Varia Suit Orb Acquired", },
+      { lookupId: 3, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Brinstar Morph Ball Orb Acquired", },
+      { lookupId: 8, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Brinstar Bombs Orb Acquired", },
+      { lookupId: 15, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Brinstar Varia Suit Orb Acquired", },
       { value: 1, start: 0, max: 1, segments: [
-        { lookupId: 18, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Vanilla Unknown Item 3 Orb Acquired", clearIfScramble: true, },
+        { lookupId: 18, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Ridley Unknown Item 3 Orb Acquired", clearIfScramble: true, },
         { lookupId: 23, value: 0, start: 0, max: 1, },
       ]},
       { lookupId: 20, value: 0, start: 0, max: 1, segments: [], },
       { lookupId: -1, value: 0, start: 0, max: 0, segments: [], },
-      { lookupId: 4, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Long Beam Orb Acquired", },
+      { lookupId: 4, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Brinstar Long Beam Orb Acquired", },
       { lookupId: 6, value: 1, start: 0, max: 1, segments: [], over: "F_Boss", overText: "Beam Beast Defeated", },
       { value: 1, start: 0, max: 1, segments: [
-        { lookupId: 9, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Vanilla Unknown Item 1 Orb Acquired", clearIfScramble: true, },
+        { lookupId: 9, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Crateria Unknown Item 1 Orb Acquired", clearIfScramble: true, },
         { lookupId: 21, value: 0, start: 0, max: 1, },
       ]},
-      { lookupId: 11, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Ice Beam Orb Acquired", },
-      { lookupId: 16, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Wave Beam Orb Acquired", },
+      { lookupId: 11, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Norfair Ice Beam Orb Acquired", },
+      { lookupId: 16, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Norfair Wave Beam Orb Acquired", },
       { lookupId: -1, value: 0, start: 0, max: 0, segments: [], },
-      { lookupId: 10, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Power Grip Orb Acquired", },
+      { lookupId: 10, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Crateria Power Grip Orb Acquired", },
       { value: 1, start: 0, max: 1, segments: [
-        { lookupId: 12, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Vanilla Unknown Item 2 Orb Acquired", clearIfScramble: true, },
+        { lookupId: 12, value: 1, start: 0, max: 1, over: "Z_Orb", overText: "Kraid Unknown Item 2 Orb Acquired", clearIfScramble: true, },
         { lookupId: 22, value: 0, start: 0, max: 1, },
       ]},
-      { lookupId: 13, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Speed Booster Orb Acquired", },
-      { lookupId: 14, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla High Jump Boots Orb Acquired", },
-      { lookupId: 19, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Vanilla Screw Attack Orb Acquired", },
+      { lookupId: 13, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Kraid Speed Booster Orb Acquired", },
+      { lookupId: 14, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Norfair High Jump Boots Orb Acquired", },
+      { lookupId: 19, value: 1, start: 0, max: 1, segments: [], over: "Z_Orb", overText: "Norfair Screw Attack Orb Acquired", },
       { lookupId: -1, value: 0, start: 0, max: 0, segments: [], },
       { lookupId: 7, value: 1, start: 0, max: 12, segments: [], },
       { lookupId: 5, value: 1, start: 0, max: 50, segments: [], },
@@ -2201,12 +2201,12 @@ const rawData = {
         extraId: 1001,
         nodeType: "lore",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1002,
         nodeType: "save",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station", // with Full Restore
         extraId: 1003,
         nodeType: "recharge",
@@ -2639,12 +2639,12 @@ const rawData = {
         nodeType: "area",
         extraId: 1009,
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1010,
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         nodeType: "recharge",
         extraId: 1011,
@@ -2926,7 +2926,7 @@ const rawData = {
         nodeType: "lore",
         extraId: 1004,
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1002,
@@ -3063,7 +3063,7 @@ const rawData = {
         itemId: 9,
         nodeType: "upgrade",
       },{
-        id: "violetTranslator",
+        id: "violetTranslatorA",
         name: "Violet Translator",
         bg: "a36fb1",
         itemId: 10,
@@ -3088,7 +3088,7 @@ const rawData = {
         itemId: 13,
         nodeType: "upgrade",
       },{
-        id: "amberTranslator",
+        id: "amberTranslatorA",
         name: "Amber Translator",
         bg: "ad6a40",
         itemId: 14,
@@ -3151,7 +3151,7 @@ const rawData = {
         itemId: 21,
         nodeType: "artifact",
       },{
-        id: "progressiveSuit",
+        id: "darkSuitA",
         name: "Dark Suit",
         bg: "6c0204",
         itemId: 22,
@@ -3163,7 +3163,7 @@ const rawData = {
         itemId: 23,
         nodeType: "upgrade",
       },{
-        id: "emeraldTranslator",
+        id: "emeraldTranslatorA",
         name: "Emerald Translator",
         bg: "4b9467",
         itemId: 24,
@@ -3226,7 +3226,7 @@ const rawData = {
         itemId: 32,
         nodeType: "upgrade",
       },{
-        id: "cobaltTranslator",
+        id: "cobaltTranslatorA",
         name: "Cobalt Translator",
         bg: "5c819e",
         itemId: 33,
@@ -3543,12 +3543,12 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1007,
       },{
-        id: "seekerMissiles",
+        id: "seekerLauncherA",
         name: "Ing Windchamber Cobalt Seeker Lock", // unlocks grapple points
         nodeType: "trigger",
         extraId: 1008,
       },{
-        id: "seekerMissiles",
+        id: "seekerLauncherA",
         name: "Ing Windchamber Amber Seeker Lock",
         nodeType: "trigger",
         extraId: 1009,
@@ -3673,7 +3673,7 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1033,
       },{
-        id: "seekerMissile",
+        id: "seekerLauncherA",
         name: "Reactor Access Gate", // Sanctuary, first Rezbit encounter
         nodeType: "trigger",
         extraId: 1034,
@@ -3763,17 +3763,17 @@ const rawData = {
         nodeType: "area",
         extraId: 1051,
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1052,
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         nodeType: "recharge",
         extraId: 1053,
       },{
-        id: "unused",
+        id: "ammoStation",
         name: "Ammo Refilled",
         nodeType: "recharge",
         extraId: 1054,
@@ -4741,7 +4741,7 @@ const rawData = {
         extraId: 1103,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Event 1", // Olympus 1
         extraId: 1104,
         nodeType: "trigger",
@@ -4771,7 +4771,7 @@ const rawData = {
         extraId: 1115,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Event 2", // Olympus 2
         extraId: 1105,
         nodeType: "trigger",
@@ -4952,7 +4952,7 @@ const rawData = {
         extraId: 1201,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1001,
         nodeType: "save",
@@ -5374,17 +5374,17 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1003,
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         nodeType: "recharge",
         extraId: 1001,
       },{
-        id: "unused",
+        id: "energyRefill",
         name: "Energy Recharge",
         nodeType: "recharge",
         extraId: 1002,
@@ -5532,7 +5532,7 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1002,
@@ -5860,7 +5860,7 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1001,
         nodeType: "save",
@@ -6404,25 +6404,30 @@ const rawData = {
         nodeType: "event",
         extraId: 1008,
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         nodeType: "recharge",
         extraId: 1004,
       },{
-        id: "unused",
+        id: "energyRefill",
         name: "Energy Recharge",
         nodeType: "recharge",
         extraId: 1005,
       },{
-        id: "unused",
+        id: "ammoStation",
         name: "Aeion Refilled",
         nodeType: "recharge",
         extraId: 1003,
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
         extraId: 1002,
+      },{
+        id: "meleeCounter",
+        name: "Melee Counter tutorial",
+        nodeType: "event",
+        extraId: 1009,
       },
     ],
     map: [
@@ -6741,8 +6746,9 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "etedach",
         name: "Save The Animals",
+        sprite: "animals",
         extraId: 1021,
         nodeType: "easter",
       },{
@@ -6801,17 +6807,17 @@ const rawData = {
         extraId: 1014,
         nodeType: "map",
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         extraId: 1001,
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "energyRefill",
         name: "Energy Recharge",
         extraId: 1002,
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1003,
         nodeType: "save",
@@ -7226,7 +7232,7 @@ const rawData = {
         extraId: 1002,
         nodeType: "lore",
       },{
-        id: "unused",
+        id: "navigationRoom",
         name: "Navigation Room",
         extraId: 1001,
         nodeType: "save",
@@ -7701,7 +7707,7 @@ const rawData = {
         extraId: 1008,
         nodeType: "event", // must always be locks, as they are dead ends
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1001,
         nodeType: "save",
@@ -8051,7 +8057,7 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         extraId: 1001,
         nodeType: "save",
@@ -8627,25 +8633,35 @@ const rawData = {
         extraId: 1075,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Room",
         extraId: 1002,
         nodeType: "save",
       },{
-        id: "unused",
+        id: "rechargeRoom",
         name: "Recharge Room",
         extraId: 1001,
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "dataRoom",
         name: "Data Room",
         extraId: 1004,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "navigationRoom",
         name: "Navigation Room",
         extraId: 1003,
         nodeType: "lore",
+      },{
+        id: "energyRefill",
+        name: "Energy Refill Station",
+        extraId: 1081,
+        nodeType: "recharge",
+      },{
+        id: "missileRefill",
+        name: "Missile Restock Station",
+        extraId: 1082,
+        nodeType: "recharge",
       },
     ],
     map: [
@@ -9189,15 +9205,15 @@ const rawData = {
         name: "Thermal Channel", // Cataris 4, might need to be retoggled?
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "chargeBeam",
         name: "Charge Beam Generator", // Cataris 1
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "chargeBeam",
         name: "Charge Beam Generator", // Cataris 2
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "chargeBeam",
         name: "Charge Beam Generator", // Cataris 3
         nodeType: "trigger",
       },{
@@ -9210,7 +9226,7 @@ const rawData = {
         nodeType: "trigger",
       },{
         id: "unused",
-        name: "Burenia Hatch", // Burenia, opened by Quiet Robe just before his assassination
+        name: "Burenia Hatch", // Burenia, opened by Quiet Robe cutscene
         nodeType: "trigger",
       },{
         id: "powerBomb",
@@ -9251,11 +9267,11 @@ const rawData = {
         // 0 in Itorash
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Door Lowered", // Artaria, in EMMI Zone, near Missile Tank, allows passage onwards to Corpius
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Platform Lowered", // Artaria, in EMMI Zone, allows escape from CU and EMMI Battle area
         nodeType: "trigger",
       },{
@@ -9263,11 +9279,11 @@ const rawData = {
         name: "Spinner Rotated", // Artaria, in EMMI Zone
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Artaria, in EMMI Zone, only for convenient shortcut?
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "slide",
         name: "Slide Escape", // Artaria, in EMMI Zone, one-time use only?
         nodeType: "trigger", // one-way toll?
       },{
@@ -9283,7 +9299,7 @@ const rawData = {
         name: "Bridge Rotated", // Artaria, near Screw Attack area
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Wall Lowered", // Cataris
         nodeType: "trigger",
       },{
@@ -9295,35 +9311,35 @@ const rawData = {
         name: "Magnet Walls Pump", // Cataris, might be Charge Beam Generator 2?
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Cataris, on path leading towards Dairon tram
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Cataris, in hot zone
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Platform Lowered", // Cataris, for Power Bomb Tank
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Ferenia, first one escaping Escue arena
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Ferenia, leading to Twin Robot arena
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Ferenia, leading to Space Jump
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Ferenia, in cold zone, on the way to EMMI-06WB and CU showdown
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Ghavoran, blocking Green teleportal
         nodeType: "trigger",
       },{
@@ -9331,79 +9347,79 @@ const rawData = {
         name: "Bridge Rotated", // Ghavoran, allowing access to Super Missiles
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Platform Lowered", // Ghavoran, allowing access to Super Missiles
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "grappleBeam",
         name: "Big Grapple Box Pulled and in Place", // Ghavoran, near elevator to Burenia
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "grappleBeam",
         name: "Big Grapple Box Pulled and in Place", // Ghavoran, near tram to Ferenia
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Burenia, near cyan Teleportal
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Burenia, near Energy Tank, in underwater sector
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "spiderMagnet",
         name: "Magnet Wall Lowered", // Burenia
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "seekerLauncherB",
         name: "Storm Gate Destroyed", // Dairon, near THAT ONE SHINESPARKY Missile+ Tank
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Dairon, near western elevator to Ferenia
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Dairon, near tram to Cataris (first big room)
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Dairon, near first Save Room
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "wideBeam",
         name: "Wide Beam Block Moved", // Dairon, near early LARGE room
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "grappleBeam",
         name: "Big Grapple Box Pulled and in Place", // Dairon, near eastern elevator to Ferenia
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Dairon, near yellow teleportal
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Dairon, near storm gate
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Dairon, in cold zone (early Super Missiles route)
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Burenia, in first vanilla big room, over fan with Energy Part
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Burenia, near green teleportal, near Energy Part, required for getting a Missile+ Tank
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Burenia, trick for Gravity Suit without environmental destruction
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "speedBooster",
         name: "Speed Blocks Destroyed", // Cataris, for hotzone Energy Part, the one behind the Wave Beam Door
         nodeType: "trigger",
       },{
@@ -9427,31 +9443,31 @@ const rawData = {
         name: "Escape Sequence",
         nodeType: "event",
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Artaria 01P
         nodeType: "trigger", // special type for Omega Cannon?
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Artaria 02SM
         nodeType: "trigger", // special type for Omega Cannon?
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Cataris 03MB
         nodeType: "trigger", // special type for Omega Cannon?
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Dairon 04SB
         nodeType: "trigger", // special type for Omega Cannon?
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Ghavoran 05IM
         nodeType: "trigger", // special type for Omega Cannon?
       },{
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Ferenia 06WB
         nodeType: "trigger", // special type for Omega Cannon?
       },/*{ // is never collected
-        id: "unused",
+        id: "omegaBlast",
         name: "Omega Cannon", // Hanubia 07PB
         nodeType: "trigger", // special type for Omega Cannon?
       },*/{
@@ -9483,11 +9499,11 @@ const rawData = {
         name: "Map: Ghavoran",
         nodeType: "map",
       },{
-        id: "unused",
+        id: "missileRefill",
         name: "Missiles Reload",
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "energyRefill",
         name: "Energy Recharge",
         nodeType: "recharge",
       },{
@@ -9495,13 +9511,17 @@ const rawData = {
         name: "Full Restore",
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "navigationRoom",
         name: "Navigation Room",
         nodeType: "event",
       },{
-        id: "unused",
+        id: "saveRoom",
         name: "Save Station",
         nodeType: "save",
+      },{
+        id: "meleeCounter",
+        name: "Melee Counter tutorial",
+        nodeType: "event",
       },
     ],
     map: [
@@ -10160,10 +10180,27 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "chickenFairy",
-        name: "Fairy Spell",
+        name: "",
         start: 0,
         max: 1,
-        segments: [],
+        segments: [
+          {
+            id: "chickenFairy",
+            name: "Fairy Spell",
+            start: 0,
+            max: 1,
+            value: 0,
+            nodeType: "upgrade",
+          },{
+            id: "cuccoSpell",
+            name: "Cucco Spell",
+            start: 0,
+            max: 1,
+            value: 0,
+            nodeType: "upgrade",
+            clearIfScramble: true,
+          },
+        ],
         value: 0,
         nodeType: "upgrade",
       },{
@@ -10394,6 +10431,7 @@ const rawData = {
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",
@@ -10423,9 +10461,19 @@ const rawData = {
         value: 1,
         nodeType: "upgrade",
       },{
+        id: "cuccoSpell",
+        name: "Cucco Spell",
+        start: 0,
+        max: 1,
+        segments: [],
+        value: 0,
+        nodeType: "upgrade",
+        displayIfScramble: true,
+      },{
         id: "-",
         name: "",
         max: 0,
+        clearIfScramble: true,
       },{
         id: "-",
         name: "",

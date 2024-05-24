@@ -12,6 +12,7 @@
 .game-mpff .usesAllSprites.trimmed .item-image { margin: 11px; }
 
 .game-m1 .usesSprite.usesAllSprites .item-image.morph,
+.game-m2ros .usesSprite.usesAllSprites .item-image.morph,
 .game-mzm .usesSprite.usesAllSprites .item-image.morph,
 .game-msr .usesSprite.usesAllSprites .item-image.morph,
 .game-sm .usesSprite.usesAllSprites .item-image.morph,
@@ -283,7 +284,7 @@
 .game-md .usesSprite.usesAllSprites .item-image.missilePlus { background: url("images/mzm_full_spritesheet.png") -252px -294px; }
 .game-md .usesSprite.usesAllSprites .item-image.armCannon,
 .game-mp2e .usesSprite.usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -294px -294px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.progressiveSuit { background: url("images/mzm_full_spritesheet.png") -336px -294px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.darkSuitA { background: url("images/mzm_full_spritesheet.png") -336px -294px; }
 .game-mp2e .usesAllSprites.trimmed .item-image.gravityBoost { background: url("images/mzm_full_spritesheet.png") -378px -294px; }
 .game-mp2e .usesAllSprites.trimmed .item-image.lightSuit { background: url("images/mzm_full_spritesheet.png") -420px -294px; }
 .game-mp2e .usesAllSprites.trimmed .item-image.superMissileC { background: url("images/mzm_full_spritesheet.png") -462px -294px; }
@@ -395,22 +396,55 @@
 .game-mf .usesSprite.usesAllSprites .item-image.progressiveSuit,
 .game-md .usesSprite.usesAllSprites .item-image.progressiveSuit,
 .game-mp .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mp2e .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mp3c .usesSprite.usesAllSprites .item-image.progressiveSuit { background: url("images/mzm_full_spritesheet.png") -210px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.progressiveSuit,
+.game-mp3c .usesAllSprites.trimmed .item-image.progressiveSuit { background: url("images/mzm_full_spritesheet.png") -210px -546px; }
 .game-mom .usesSprite.usesAllSprites .item-image.progressiveMissile,
 .game-mf .usesSprite.usesAllSprites .item-image.progressiveMissile,
 .game-md .usesSprite.usesAllSprites .item-image.progressiveMissile,
-.game-mp2e .usesSprite.usesAllSprites .item-image.progressiveMissile,
-.game-mp3c .usesSprite.usesAllSprites .item-image.progressiveMissile { background: url("images/mzm_full_spritesheet.png") -252px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.progressiveMissile,
+.game-mp3c .usesAllSprites.trimmed .item-image.progressiveMissile { background: url("images/mzm_full_spritesheet.png") -252px -546px; }
 .game-md .usesSprite.usesAllSprites .item-image.progressiveBomb { background: url("images/mzm_full_spritesheet.png") -294px -546px; }
 .game-mp2e .usesSprite.usesAllSprites .item-image.progressiveGrapple { background: url("images/mzm_full_spritesheet.png") -336px -546px; }
 .game-md .usesSprite.usesAllSprites .item-image.progressiveSpin { background: url("images/mzm_full_spritesheet.png") -378px -546px; }
-/* .game-__game__ .usesSprite.usesAllSprites .item-image.__unused__ { background: url("images/mzm_full_spritesheet.png") -420px -546px; }
-.game-__game__ .usesSprite.usesAllSprites .item-image.__unused__ { background: url("images/mzm_full_spritesheet.png") -462px -546px; }
-.game-__game__ .usesSprite.usesAllSprites .item-image.__unused__ { background: url("images/mzm_full_spritesheet.png") -504px -546px; }
-.game-__game__ .usesSprite.usesAllSprites .item-image.__unused__ { background: url("images/mzm_full_spritesheet.png") -546px -546px; }
-.game-__game__ .usesSprite.usesAllSprites .item-image.__unused__ { background: url("images/mzm_full_spritesheet.png") -588px -546px; } */
-.usesSprite.usesAllSprites .item-image.unused { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.violetTranslatorA { background: url("images/mzm_full_spritesheet.png") -420px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.amberTranslatorA { background: url("images/mzm_full_spritesheet.png") -462px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.emeraldTranslatorA { background: url("images/mzm_full_spritesheet.png") -504px -546px; }
+.game-mp2e .usesAllSprites.trimmed .item-image.cobaltTranslatorA { background: url("images/mzm_full_spritesheet.png") -546px -546px; }
+.game-m2ros .usesSprite.usesAllSprites .item-image.baby,
+.game-md .usesSprite.usesAllSprites .item-image.monsterDna,
+.game-msr .usesSprite.usesAllSprites .item-image.baby { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
+.game-mp3c .usesAllSprites.trimmed .item-image.phazonSuit { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
+
+/*
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") 0 -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -42px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -84px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -126px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -168px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -210px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -252px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -294px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -336px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -378px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -420px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -462px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -504px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -546px -588px; }
+.game-__game__ .usesSprite.usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -588px -588px; }
+*/
+.usesSprite.usesAllSprites .item-image.unused { background: url("images/mzm_full_spritesheet.png") -630px -588px; }
+
+
+
+.game-mzm .usesSprite.usesAllSprites .item-image.ui1 { background: url("images/mzm_spritesheet.png") -84px -42px; }
+.game-mzm .usesSprite.usesAllSprites .item-image.ui2 { background: url("images/mzm_spritesheet.png") -42px -84px; }
+.game-mzm .usesSprite.usesAllSprites .item-image.ui3 { background: url("images/mzm_spritesheet.png") -126px 0; }
+.game-mf .usesSprite.usesAllSprites .item-image.securityL0 { background: url("images/mf_spritesheet.png") -215px 0; }
+.game-mf .usesSprite.usesAllSprites .item-image.securityL1 { background: url("images/mf_spritesheet.png") -215px -43px; }
+.game-mf .usesSprite.usesAllSprites .item-image.securityL2 { background: url("images/mf_spritesheet.png") -215px -86px; }
+.game-mf .usesSprite.usesAllSprites .item-image.securityL3 { background: url("images/mf_spritesheet.png") -215px -129px; }
+.game-mf .usesSprite.usesAllSprites .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
+
 
 /*
 Technical sprites missing:

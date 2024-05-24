@@ -19,20 +19,29 @@ let keyslots = {};
 
 (() => {
   
-  const z1m1Filter = ["z", "rd", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d", "z2", "z2pc", "z3", "z3r",];
-  const smz3Filter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "o", "f", "n", "t", "d", "z1", "z2", "z2pc", "z3",];
-  const noFangamesFilter = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
-  const noRandomizersFilter = ["z2pc", "z3r",];
-  const noZeldaFilter = ["z1", "z2", "z2pc", "z3", "z3r",];
-  const noSamusFilter = ["m", "rd", "z", "p", "b", "p2d", "h", "e", "c", "ff", "ros", "mc", "a", "r", "s", "o", "f", "n", "t", "d",];
-  const noPrimeFilter = ["p", "b", "p2d", "h", "e", "c", "ff",];
-  const noMainlineFilter = ["m", "z", "ros", "r", "s", "f", "d",];
+  const z1m1List = ["m", "z"];
+  const smz3List = ["s", "z3", "z3r",];
+  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
+  const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
+  const allZeldaList = ["z1", "z2", "z3", "z3r"];
   
   function filterOut([...filter]) {
     let copy = {...this};
     
     filter.forEach(prop => {
       delete copy[prop];
+    });
+    
+    return {...copy};
+  }
+  
+  function match([...list]) {
+    let copy = {...this};
+    
+    Object.keys(copy).forEach(prop => {
+      if (!list.includes(prop)) {
+        delete copy[prop];
+      }
     });
     
     return {...copy};
@@ -1119,6 +1128,28 @@ let keyslots = {};
     }
   }
   
+  function handleSpriteTypeSelection(e) {
+    let targetA = document.getElementById("ifUsingMZMSprites");
+    let targetB = document.getElementById("ifNotUsingMZMSprites");
+    if (e.target.checked) {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.remove("hidden");
+        targetB.classList.add("hidden");
+      } else {
+        targetA.className += target.className.replace(/\bhidden\b/g);
+        targetB.className += " hidden";
+      }
+    } else {
+      if (targetA.classList) { // browser compatibility logic
+        targetA.classList.add("hidden");
+        targetB.classList.remove("hidden");
+      } else {
+        targetA.className += " hidden";
+        targetB.className += target.className.replace(/\bhidden\b/g);
+      }
+    }
+  }
+  
   function handleSyncSelection(e) {
     let targetA = document.getElementById("isSyncingItems");
     if (e.target.checked) {
@@ -1187,48 +1218,36 @@ let keyslots = {};
   function handlePresetSelection(e) {
     if (e.type === "change") {
       let newValue = e.target.value;
-      let filterOutList = [];
-    
       let selectedGames = {...main.games};
+      selectedGames.fIn = match;
       selectedGames.fOut = filterOut;
       const masterFilter = [...Object.keys(main.games)];
       
       switch (newValue) {
-        case 'primary':
-          filterOutList = [...noZeldaFilter];
+        case 'all_metroid':
+          selectedGames = selectedGames.fIn(allMetroidList);
+          break;
+        case 'all_zelda':
+          selectedGames = selectedGames.fIn(allZeldaList);
           break;
         case 'z1m1':
-          filterOutList = [...z1m1Filter];
+          selectedGames = selectedGames.fIn(z1m1List);
           break;
         case 'smz3':
-          filterOutList = [...smz3Filter];
+          selectedGames = selectedGames.fIn(smz3List);
           break;
         case 'no_fangames':
-          filterOutList = [...noFangamesFilter];
-          break;
-        case 'no_zelda':
-          filterOutList = [...noZeldaFilter];
-          break;
-        case 'no_samus':
-          filterOutList = [...noSamusFilter];
-          break;
-        case 'no_prime':
-          filterOutList = [...noPrimeFilter];
-          break;
-        case 'no_main':
-          filterOutList = [...noMainlineFilter];
+          selectedGames = selectedGames.fOut(fangamesList);
           break;
         case 'none':
-          filterOutList = [...masterFilter];
+          selectedGames = selectedGames.fIn([]);
           break;
         case 'all':
-          filterOutList = [];
+          selectedGames = selectedGames.fIn(masterFilter);
           break;
         default:
           break;
       }
-      
-      selectedGames = selectedGames.fOut(filterOutList);
       
       let cleanedSelection = [];
     
@@ -1599,6 +1618,7 @@ let keyslots = {};
   tracker.renderPercentage = renderPercentage;
   tracker.handleTimerSelection = handleTimerSelection;
   tracker.handleSpriteSelection = handleSpriteSelection;
+  tracker.handleSpriteTypeSelection = handleSpriteTypeSelection;
   tracker.handleSyncSelection = handleSyncSelection;
   tracker.handleDropdownSelection = handleDropdownSelection;
   tracker.handlePresetSelection = handlePresetSelection;

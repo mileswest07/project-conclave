@@ -1,4 +1,4 @@
-# Project Conclave - A Metroid Item Tracker and Dependency Explorer
+# Project Conclave - A Video Game Item Collection Tracker and Dependency Explorer
 Item tracker for a number of games, vanilla and randomized.
 
 Please report any issues you may find [on Github!](https://github.com/mileswest07/project-conclave/issues)

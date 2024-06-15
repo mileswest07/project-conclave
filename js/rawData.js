@@ -5172,7 +5172,7 @@ const rawData = {
         { id: "monsterDna", name: "Phase 9", sprite: "monsters", type: "counter", value: 0, start: 0, max: 3, },
         { id: "monsterDna", name: "Phase 10", sprite: "monsters", type: "counter", value: 0, start: 0, max: 9, },
       ]},
-      { lookupId: 14, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 15, value: 0, start: 0, max: 1, segments: [], },
     ],
     items: [
       {
@@ -6567,7 +6567,12 @@ const rawData = {
         itemId: 12,
         nodeType: "expansion",
       },{
-        id: "reserveTank",
+        id: "reserveTankB",
+        locale: {
+          'enUS': {
+            id: "reserveTank"
+          }
+        },
         sprite: "reserve",
         name: "Reserve Tanks",
         singleItemName: "Reserve Tank",
@@ -6883,7 +6888,12 @@ const rawData = {
         itemId: 4,
         nodeType: "upgrade",
       },{
-        id: "energyPart",
+        id: "energyPartA",
+        locale: {
+          'enUS': {
+            id: "energyPart"
+          }
+        },
         name: "Energy Parts",
         singleItemName: "Energy Part",
         sprite: "part",
@@ -6943,7 +6953,12 @@ const rawData = {
         itemId: 11,
         nodeType: "upgrade",
       },{
-        id: "eRecoveryTank",
+        id: "eRecoveryTankA",
+        locale: {
+          'enUS': {
+            id: "eRecoveryTank"
+          }
+        },
         name: "E-Recovery Tanks",
         singleItemName: "E-Recovery Tank",
         sprite: "erec",

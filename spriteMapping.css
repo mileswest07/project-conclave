@@ -279,7 +279,8 @@
 .item-image.securityUnlock { background: url("images/m_graphics.png") -645px -516px; } /* UNUSED */
 .item-image.randomizer { background: url("images/m_graphics.png") -688px -516px; } /* UNUSED */
 .item-image.goldMedal { background: url("images/m_graphics.png") -731px -516px; }
-.item-image.empty { background: url("images/m_graphics.png") -774px -516px; } /* UNUSED */
+.item-image.emergencyPistol,
+.item-image.paralyzer { background: url("images/m_graphics.png") -774px -516px; } /* UNUSED */
 
 .item-image.bombD { background: url("images/m_graphics.png") 0 -559px; }
 .item-image.monsterDnaA { background: url("images/m_graphics.png") -43px -559px; } /* UNUSED */
@@ -300,7 +301,7 @@
 .item-image.modSlot { background: url("images/m_graphics.png") -645px -559px; } /* UNUSED */
 .item-image.modChip { background: url("images/m_graphics.png") -688px -559px; } /* UNUSED */
 .item-image.modChipA { background: url("images/m_graphics.png") -731px -559px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -559px; } /* UNUSED */
+.item-image.reserveTankA { background: url("images/m_graphics.png") -774px -559px; } /* UNUSED */
 
 .item-image.shield { background: url("images/m_graphics.png") 0 -602px; } /* UNUSED */
 .item-image.adrenaline { background: url("images/m_graphics.png") -43px -602px; } /* UNUSED */
@@ -320,7 +321,7 @@
 .item-image.crossBombs { background: url("images/m_graphics.png") -645px -602px; }
 .item-image.mapMarker { background: url("images/m_graphics.png") -688px -602px; } /* UNUSED */
 .item-image.modChipB { background: url("images/m_graphics.png") -731px -602px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -602px; } /* UNUSED */
+.item-image.reserveTankB { background: url("images/m_graphics.png") -774px -602px; }
 
 .item-image.spinBoostA { background: url("images/m_graphics.png") 0 -645px; }
 .item-image.chargeBeam { background: url("images/m_graphics.png") -43px -645px; }
@@ -341,7 +342,7 @@
 .item-image.iceMissileA { background: url("images/m_graphics.png") -645px -645px; } /* UNUSED */
 .item-image.doubleMissileTank { background: url("images/m_graphics.png") -688px -645px; }
 .item-image.modChipC { background: url("images/m_graphics.png") -731px -645px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -645px; } /* UNUSED */
+.item-image.energyPartA { background: url("images/m_graphics.png") -774px -645px; }
 
 .item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -688px; }
 .item-image.flashShift { background: url("images/m_graphics.png") -43px -688px; }
@@ -364,7 +365,7 @@
 .item-image.diffusionBeamB { background: url("images/m_graphics.png") -645px -688px; }
 .item-image.itemSphere { background: url("images/m_graphics.png") -688px -688px; } /* UNUSED */
 .item-image.chozoCrest { background: url("images/m_graphics.png") -731px -688px; } /* UNUSED */
-.item-image.empty { background: url("images/m_graphics.png") -774px -688px; } /* UNUSED */
+.item-image.eRecoveryTankA { background: url("images/m_graphics.png") -774px -688px; }
 
 .item-image.chykka { background: url("images/m_graphics.png") 0 -731px; }
 .item-image.quadraxis { background: url("images/m_graphics.png") -43px -731px; }
@@ -384,7 +385,9 @@
 .item-image.invisibility,
 .item-image.cloak { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
 .item-image.rundas { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
-.item-image.unused { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
+.item-image.emergencyPistolA,
+.item-image.paralyzerA { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
+.item-image.unused,
 .item-image.empty { background: url("images/m_graphics.png") -774px -731px; } /* UNUSED */
 
 .item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }

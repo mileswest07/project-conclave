@@ -99,14 +99,10 @@
 .item-image.darkVisor { background: url("images/m_graphics.png") -387px -172px; }
 .item-image.echoVisor { background: url("images/m_graphics.png") -430px -172px; }
 .item-image.commandVisor { background: url("images/m_graphics.png") -473px -172px; }
-.item-image.violetTranslator, /* UNUSED */
-.item-image.violetTranslatorA { background: url("images/m_graphics.png") -516px -172px; }
-.item-image.amberTranslator, /* UNUSED */
-.item-image.amberTranslatorA { background: url("images/m_graphics.png") -559px -172px; }
-.item-image.emeraldTranslator, /* UNUSED */
-.item-image.emeraldTranslatorA { background: url("images/m_graphics.png") -602px -172px; }
-.item-image.cobaltTranslator, /* UNUSED */
-.item-image.cobaltTranslatorA { background: url("images/m_graphics.png") -645px -172px; }
+.item-image.violetTranslator { background: url("images/m_graphics.png") -516px -172px; } /* UNUSED */
+.item-image.amberTranslator { background: url("images/m_graphics.png") -559px -172px; } /* UNUSED */
+.item-image.emeraldTranslator { background: url("images/m_graphics.png") -602px -172px; } /* UNUSED */
+.item-image.cobaltTranslator { background: url("images/m_graphics.png") -645px -172px; } /* UNUSED */
 .item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; } /* UNUSED */
 .item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; } /* UNUSED */
 .item-image.generator { background: url("images/m_graphics.png") -774px -172px; } /* UNUSED */
@@ -187,9 +183,9 @@
 .item-image.energyPart { background: url("images/m_graphics.png") -129px -344px; }
 .item-image.eRecoveryTank { background: url("images/m_graphics.png") -172px -344px; }
 .item-image.unknownItem { background: url("images/m_graphics.png") -215px -344px; } /* UNUSED */
-.item-image.unknownItem1 { background: url("images/m_graphics.png") -258px -344px; }
-.item-image.unknownItem2 { background: url("images/m_graphics.png") -301px -344px; }
-.item-image.unknownItem3 { background: url("images/m_graphics.png") -344px -344px; }
+.item-image.unknownItem1a { background: url("images/m_graphics.png") -258px -344px; } /* UNUSED */
+.item-image.unknownItem2a { background: url("images/m_graphics.png") -301px -344px; } /* UNUSED */
+.item-image.unknownItem3a { background: url("images/m_graphics.png") -344px -344px; } /* UNUSED */
 .item-image.chozoArtifact { background: url("images/m_graphics.png") -387px -344px; }
 .item-image.darkAgonKey { background: url("images/m_graphics.png") -430px -344px; }
 .item-image.darkTorvusKey { background: url("images/m_graphics.png") -473px -344px; }
@@ -345,7 +341,7 @@
 .item-image.energyPartA { background: url("images/m_graphics.png") -774px -645px; }
 
 .item-image.spiderMagnet { background: url("images/m_graphics.png") 0 -688px; }
-.item-image.flashShift { background: url("images/m_graphics.png") -43px -688px; }
+.item-image.flashShiftA { background: url("images/m_graphics.png") -43px -688px; }
 .item-image.gravitySuitA { background: url("images/m_graphics.png") -86px -688px; }
 .item-image.phantomCloak,
 .item-image.cloakB { background: url("images/m_graphics.png") -129px -688px; } /* UNUSED */
@@ -387,8 +383,33 @@
 .item-image.rundas { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
 .item-image.emergencyPistolA,
 .item-image.paralyzerA { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
+.item-image.flashShift { background: url("images/m_graphics.png") -774px -731px; } /* UNUSED */
+
+.item-image.unknownItem1 { background: url("images/m_graphics.png") 0 -774px; }
+.item-image.unknownItem2 { background: url("images/m_graphics.png") -43px -774px; }
+.item-image.unknownItem3 { background: url("images/m_graphics.png") -86px -774px; }
+
+.item-image.violetTranslatorA { background: url("images/m_graphics.png") -129px -774px; }
+.item-image.amberTranslatorA { background: url("images/m_graphics.png") -172px -774px; }
+.item-image.emeraldTranslatorA { background: url("images/m_graphics.png") -215px -774px; }
+.item-image.cobaltTranslatorA { background: url("images/m_graphics.png") -258px -774px; }
+
+/*
+.item-image.__item__ { background: url("images/m_graphics.png") -301px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -344px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -387px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -430px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -473px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -516px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -559px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -602px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -645px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -688px -774px; }
+.item-image.__item__ { background: url("images/m_graphics.png") -731px -774px; }
+*/
+
 .item-image.unused,
-.item-image.empty { background: url("images/m_graphics.png") -774px -731px; } /* UNUSED */
+.item-image.empty { background: url("images/m_graphics.png") -774px -774px; } /* UNUSED */
 
 .item-image.kraid { background: url("images/m1_spritesheet.png") -84px -84px; }
 .item-image.ridley { background: url("images/m1_spritesheet.png") -126px -84px; }

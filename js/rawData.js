@@ -1939,6 +1939,11 @@ const rawData = {
         id: "unknownItem1",
         sprite: "ui1",
         name: "Unknown Item 1",
+        locale: {
+          'enUS': {
+            id: "unknownItem1a"
+          }
+        },
         bg: "887878",
         itemId: 9,
         progressionToItemId: 19,
@@ -1966,6 +1971,11 @@ const rawData = {
         id: "unknownItem2",
         sprite: "ui2",
         name: "Unknown Item 2",
+        locale: {
+          'enUS': {
+            id: "unknownItem2a"
+          }
+        },
         bg: "887878",
         itemId: 12,
         progressionToItemId: 20,
@@ -2015,6 +2025,11 @@ const rawData = {
         id: "unknownItem3",
         sprite: "ui3",
         name: "Unknown Item 3",
+        locale: {
+          'enUS': {
+            id: "unknownItem3a"
+          }
+        },
         bg: "887878",
         itemId: 18,
         progressionToItemId: 21,
@@ -3065,6 +3080,11 @@ const rawData = {
       },{
         id: "violetTranslatorA",
         name: "Violet Translator",
+        locale: {
+          'enUS': {
+            id: "violetTranslator"
+          }
+        },
         bg: "a36fb1",
         itemId: 10,
         nodeType: "upgrade",
@@ -3090,6 +3110,11 @@ const rawData = {
       },{
         id: "amberTranslatorA",
         name: "Amber Translator",
+        locale: {
+          'enUS': {
+            id: "amberTranslator"
+          }
+        },
         bg: "ad6a40",
         itemId: 14,
         nodeType: "upgrade",
@@ -3165,6 +3190,11 @@ const rawData = {
       },{
         id: "emeraldTranslatorA",
         name: "Emerald Translator",
+        locale: {
+          'enUS': {
+            id: "emeraldTranslator"
+          }
+        },
         bg: "4b9467",
         itemId: 24,
         nodeType: "upgrade",
@@ -3228,6 +3258,11 @@ const rawData = {
       },{
         id: "cobaltTranslatorA",
         name: "Cobalt Translator",
+        locale: {
+          'enUS': {
+            id: "cobaltTranslator"
+          }
+        },
         bg: "5c819e",
         itemId: 33,
         nodeType: "upgrade",
@@ -8846,10 +8881,10 @@ const rawData = {
         itemId: 12,
         nodeType: "upgrade",
       },{
-        id: "flashShift", // TODO: find language-agnostic icon
+        id: "flashShift",
         locale: {
           'enUS': {
-            id: "flashShift"
+            id: "flashShiftA"
           }
         },
         name: "Flash Shift",

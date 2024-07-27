@@ -2045,7 +2045,7 @@ const rawData = {
         id: "fullPowerSuit",
         sprite: "full",
         name: "Fully Powered Suit", // "Chozo Power"
-        bg: "80d0ff",
+        bg: "ffb508",
         itemId: 20,
         specialCollectionBehavior: true,
         specialCollectionKey: "mzmFullPowerSuit",
@@ -3163,10 +3163,10 @@ const rawData = {
         itemId: 20,
         nodeType: "expansion",
       },{
-        id: "darkAgonKey",
+        id: "templeKey",
         locale: {
           'enUS': {
-            id: "darkSuit"
+            id: "darkAgonKey"
           }
         },
         name: "Dark Agon Keys",
@@ -3236,10 +3236,10 @@ const rawData = {
         itemId: 30,
         nodeType: "upgrade",
       },{
-        id: "darkTorvusKey",
+        id: "templeKey",
         locale: {
           'enUS': {
-            id: "chykka"
+            id: "darkTorvusKey"
           }
         },
         name: "Dark Torvus Keys",
@@ -3308,10 +3308,10 @@ const rawData = {
         itemId: 39,
         nodeType: "upgrade",
       },{
-        id: "ingHiveKey",
+        id: "templeKey",
         locale: {
           'enUS': {
-            id: "quadraxis"
+            id: "ingHiveKey"
           }
         },
         name: "Ing Hive Keys",
@@ -3358,10 +3358,10 @@ const rawData = {
         itemId: 46,
         nodeType: "upgrade",
       },{
-        id: "skyTempleKey",
+        id: "darkAetherKey",
         locale: {
           'enUS': {
-            id: "aetherKey"
+            id: "skyTempleKey"
           }
         },
         name: "Sky Temple Keys",
@@ -4256,13 +4256,13 @@ const rawData = {
         name: "Alimbic Cannon Control Room",
         nodeType: "event",
         extraId: 1019,
-        bg: "402c00",
+        bg: "ffffff",
       },{
         id: "oubliette",
         name: "Oubliette unlocked",
         nodeType: "event",
         extraId: 1020,
-        bg: "402c00",
+        bg: "ffffff",
       }
     ],
     map: [
@@ -4442,7 +4442,7 @@ const rawData = {
         itemId: 17,
         nodeType: "upgrade",
       },{
-        id: "iceMissileB",
+        id: "iceMissileA",
         name: "Ice Missile",
         bg: "2038ec",
         itemId: 18,
@@ -5119,7 +5119,7 @@ const rawData = {
         itemId: 5,
         nodeType: "upgrade",
       },{
-        id: "iceMissileB",
+        id: "freezeShot",
         name: "Freeze Shot",
         sprite: "freeze",
         bg: "fea800",
@@ -5263,7 +5263,7 @@ const rawData = {
         id: "barrierA",
         sprite: "barrier",
         name: "Varia Suit",
-        bg: "ff7e00",
+        bg: "ff7b7b",
         itemId: 7,
         nodeType: "upgrade",
       },{
@@ -5681,7 +5681,7 @@ const rawData = {
         itemId: 7,
         nodeType: "upgrade",
       },{
-        id: "barrierA",
+        id: "barrierB",
         name: "Varia Suit",
         sprite: "barrier",
         bg: "ff7e00",
@@ -7494,20 +7494,20 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "zeroSuit",
-        sprite: "black",
+        sprite: "chozo",
         name: "Zero Suit",
         bg: "007098",
         itemId: 29,
         nodeType: "upgrade",
       },{
-        id: "fullPowerSuit",
-        sprite: "chozo",
+        id: "zeroSuitA",
+        sprite: "black",
         name: "Black Zero Suit",
-        bg: "80d0ff",
+        bg: "6c0204",
         itemId: 30,
         nodeType: "upgrade",
       },{
-        id: "zeroSuitA",
+        id: "fullPowerSuit",
         sprite: "suit",
         name: "Equipment recovered",
         bg: "ffb508",
@@ -7984,10 +7984,10 @@ const rawData = {
         itemId: 20,
         nodeType: "upgrade",
       },{
-        id: "seekerLauncherC",
+        id: "seekerLauncher",
         sprite: "seeker",
         name: "Seeker Missiles",
-        bg: "d82800",
+        bg: "644080",
         itemId: 21,
         nodeType: "upgrade",
       },{
@@ -8061,7 +8061,7 @@ const rawData = {
         id: "fullPowerSuit",
         sprite: "chozo",
         name: "Chozo Charm",
-        bg: "78a4bc",
+        bg: "80d0ff",
         itemId: 30,
         nodeType: "upgrade",
       },{
@@ -8365,7 +8365,7 @@ const rawData = {
         id: "superMissile",
         name: "Diffusion Effect",
         sprite: "diffusion",
-        bg: "7f2800",
+        bg: "644080",
         itemId: 23,
         nodeType: "upgrade",
       },{

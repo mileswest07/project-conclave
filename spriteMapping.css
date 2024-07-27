@@ -86,8 +86,7 @@
 .item-image.echoKey { background: url("images/m_graphics.png") -731px -129px; } /* UNUSED */
 .item-image.dreadCapsule { background: url("images/m_graphics.png") -774px -129px; } /* UNUSED */
 
-.item-image.combatVisor,
-.item-image.seekerLauncherC { background: url("images/m_graphics.png") 0 -172px; }
+.item-image.combatVisor { background: url("images/m_graphics.png") 0 -172px; }
 .item-image.combatVisorA { background: url("images/m_graphics.png") -43px -172px; }
 .item-image.scanVisor { background: url("images/m_graphics.png") -86px -172px; }
 .item-image.scanVisorA { background: url("images/m_graphics.png") -129px -172px; }
@@ -99,10 +98,10 @@
 .item-image.darkVisor { background: url("images/m_graphics.png") -387px -172px; }
 .item-image.echoVisor { background: url("images/m_graphics.png") -430px -172px; }
 .item-image.commandVisor { background: url("images/m_graphics.png") -473px -172px; }
-.item-image.violetTranslator { background: url("images/m_graphics.png") -516px -172px; } /* UNUSED */
-.item-image.amberTranslator { background: url("images/m_graphics.png") -559px -172px; } /* UNUSED */
-.item-image.emeraldTranslator { background: url("images/m_graphics.png") -602px -172px; } /* UNUSED */
-.item-image.cobaltTranslator { background: url("images/m_graphics.png") -645px -172px; } /* UNUSED */
+.item-image.violetTranslator { background: url("images/m_graphics.png") -516px -172px; }
+.item-image.amberTranslator { background: url("images/m_graphics.png") -559px -172px; }
+.item-image.emeraldTranslator { background: url("images/m_graphics.png") -602px -172px; }
+.item-image.cobaltTranslator { background: url("images/m_graphics.png") -645px -172px; }
 .item-image.thermalPositioner { background: url("images/m_graphics.png") -688px -172px; } /* UNUSED */
 .item-image.echoLock { background: url("images/m_graphics.png") -731px -172px; } /* UNUSED */
 .item-image.generator { background: url("images/m_graphics.png") -774px -172px; } /* UNUSED */
@@ -124,7 +123,7 @@
 .item-image.primeSuit { background: url("images/m_graphics.png") -301px -215px; }
 .item-image.fusionSuit { background: url("images/m_graphics.png") -344px -215px; }
 .item-image.phazonSuit { background: url("images/m_graphics.png") -387px -215px; }
-.item-image.amorbis,
+.item-image.amorbis, /* UNUSED */
 .item-image.darkSuit { background: url("images/m_graphics.png") -430px -215px; }
 .item-image.gravityBoost { background: url("images/m_graphics.png") -473px -215px; }
 .item-image.lightSuit { background: url("images/m_graphics.png") -516px -215px; }
@@ -183,9 +182,9 @@
 .item-image.energyPart { background: url("images/m_graphics.png") -129px -344px; }
 .item-image.eRecoveryTank { background: url("images/m_graphics.png") -172px -344px; }
 .item-image.unknownItem { background: url("images/m_graphics.png") -215px -344px; } /* UNUSED */
-.item-image.unknownItem1a { background: url("images/m_graphics.png") -258px -344px; } /* UNUSED */
-.item-image.unknownItem2a { background: url("images/m_graphics.png") -301px -344px; } /* UNUSED */
-.item-image.unknownItem3a { background: url("images/m_graphics.png") -344px -344px; } /* UNUSED */
+.item-image.unknownItem1a { background: url("images/m_graphics.png") -258px -344px; }
+.item-image.unknownItem2a { background: url("images/m_graphics.png") -301px -344px; }
+.item-image.unknownItem3a { background: url("images/m_graphics.png") -344px -344px; }
 .item-image.chozoArtifact { background: url("images/m_graphics.png") -387px -344px; }
 .item-image.darkAgonKey { background: url("images/m_graphics.png") -430px -344px; }
 .item-image.darkTorvusKey { background: url("images/m_graphics.png") -473px -344px; }
@@ -275,7 +274,7 @@
 .item-image.securityUnlock { background: url("images/m_graphics.png") -645px -516px; } /* UNUSED */
 .item-image.randomizer { background: url("images/m_graphics.png") -688px -516px; } /* UNUSED */
 .item-image.goldMedal { background: url("images/m_graphics.png") -731px -516px; }
-.item-image.emergencyPistol,
+.item-image.emergencyPistol, /* UNUSED */
 .item-image.paralyzer { background: url("images/m_graphics.png") -774px -516px; } /* UNUSED */
 
 .item-image.bombD { background: url("images/m_graphics.png") 0 -559px; }
@@ -381,21 +380,21 @@
 .item-image.invisibility,
 .item-image.cloak { background: url("images/m_graphics.png") -645px -731px; } /* UNUSED */
 .item-image.rundas { background: url("images/m_graphics.png") -688px -731px; } /* UNUSED */
-.item-image.emergencyPistolA,
+.item-image.emergencyPistolA, /* UNUSED */
 .item-image.paralyzerA { background: url("images/m_graphics.png") -731px -731px; } /* UNUSED */
-.item-image.flashShift { background: url("images/m_graphics.png") -774px -731px; } /* UNUSED */
+.item-image.flashShift { background: url("images/m_graphics.png") -774px -731px; }
 
 .item-image.unknownItem1 { background: url("images/m_graphics.png") 0 -774px; }
 .item-image.unknownItem2 { background: url("images/m_graphics.png") -43px -774px; }
 .item-image.unknownItem3 { background: url("images/m_graphics.png") -86px -774px; }
-
 .item-image.violetTranslatorA { background: url("images/m_graphics.png") -129px -774px; }
 .item-image.amberTranslatorA { background: url("images/m_graphics.png") -172px -774px; }
 .item-image.emeraldTranslatorA { background: url("images/m_graphics.png") -215px -774px; }
 .item-image.cobaltTranslatorA { background: url("images/m_graphics.png") -258px -774px; }
+.item-image.itemCube, /* UNUSED */
+.item-image.aeionCube { background: url("images/m_graphics.png") -301px -774px; } /* UNUSED */
 
 /*
-.item-image.__item__ { background: url("images/m_graphics.png") -301px -774px; }
 .item-image.__item__ { background: url("images/m_graphics.png") -344px -774px; }
 .item-image.__item__ { background: url("images/m_graphics.png") -387px -774px; }
 .item-image.__item__ { background: url("images/m_graphics.png") -430px -774px; }

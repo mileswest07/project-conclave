@@ -480,7 +480,7 @@ let keyslots = {};
       if (e.target.classList) { // browser compatibility logic
           e.target.parentElement.classList.remove("unlocked-up");
       } else {
-          e.target.parentElement.className += e.target.parentElement.className.replace(/\unlocked-up\b/g);
+          e.target.parentElement.className += e.target.parentElement.className.replace(/\bunlocked-up\b/g);
       }
     }
     if (
@@ -499,7 +499,7 @@ let keyslots = {};
       if (e.target.classList) { // browser compatibility logic
         e.target.parentElement.classList.remove("unlocked-down");
       } else {
-        e.target.parentElement.className += e.target.parentElement.className.replace(/\unlocked-down\b/g);
+        e.target.parentElement.className += e.target.parentElement.className.replace(/\bunlocked-down\b/g);
       }
     }
   }

@@ -80,6 +80,8 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 
 All Metroid game graphics (with exception of fangames and derivative works) and Zelda Minish Cap graphics were made and owned by Nintendo Co., Ltd., Mercury Steam Entertainment S.L., and Capcom Co., Ltd., respectively. Graphics were ripped by me, and are used here without express permission and without intent to profit.
 
+All Castlevania: Symphony of the Night game graphics were made and owned by Konami Group Corporation. Graphics were ripped by online contributors, and are used here without express permission and without intent to profit.
+
 Rogue Dawn graphics were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
 
 AM2R graphics were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.

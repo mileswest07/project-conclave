@@ -3618,17 +3618,17 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1015,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 1", // Dark Agon, scan 3 nodes to open the way towards Watering Hole -> Feeding Pit -> Light Beam
         nodeType: "trigger",
         extraId: 1016,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 2",
         nodeType: "trigger",
         extraId: 1017,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 3",
         nodeType: "trigger",
         extraId: 1018,
@@ -3648,17 +3648,17 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1021,
       },{
-        id: "unused",
+        id: "cannonball",
         name: "Great Bridge Cannon", // Torvus, right outside the temple
         nodeType: "trigger",
         extraId: 1022,
       },{
-        id: "unused",
+        id: "bombC",
         name: "Forgotten Bridge Turned", // Forgotten Bridge <- Dark Forgotten Bridge, Interdimensional Bomb Slot
         nodeType: "trigger",
         extraId: 1023,
       },{
-        id: "unused",
+        id: "boostBall",
         name: "Forgotten Balcony Opened", // upper Forgotten Bridge <- upper Dark Forgotten Bridge, Interdimensional Spinner
         nodeType: "trigger",
         extraId: 1024,
@@ -3668,22 +3668,22 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1025,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 1", // Torvus Hydrodynamo, in front of Blue Door
         nodeType: "trigger",
         extraId: 1026,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 2", // Torvus Hydrodynamo, in front of Black Door
         nodeType: "trigger",
         extraId: 1027,
       },{
-        id: "unused",
+        id: "scanVisorA",
         name: "Scan Node 3", // Torvus Hydrodynamo, in front of White Door
         nodeType: "trigger",
         extraId: 1028,
       },{
-        id: "unused",
+        id: "bombC",
         name: "Training Chamber Bomb Slot", // Torvus Hydrodynamo, allows access to Sanctuary PB Door
         nodeType: "trigger",
         extraId: 1029,
@@ -3733,7 +3733,7 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1038,
       },{
-        id: "unused",
+        id: "grappleBeamA",
         name: "Watch Station Access Grapple Points", // Upper Sanctuary
         nodeType: "trigger",
         extraId: 1039,
@@ -3748,12 +3748,12 @@ const rawData = {
         nodeType: "trigger",
         extraId: 1041,
       },{
-        id: "unused",
+        id: "boostBall",
         name: "Main Gyro Chamber Spinner", // Upper Sanctuary, grants access to second half of the one half of the room / shortcut back
         nodeType: "trigger",
         extraId: 1042,
       },{
-        id: "unused",
+        id: "cannonball",
         name: "Temple Access Cannon", // Upper Sanctuary, need Dark Visor and Seekers to be able to go back up from the lower half of the room
         nodeType: "trigger",
         extraId: 1043,
@@ -4506,7 +4506,7 @@ const rawData = {
         id: "theronianBomb",
         name: "Theronian Bomb Components",
         singleItemName: "Theronian Bomb Component",
-        bg: "887878",
+        bg: "ac842f",
         itemId: 27,
         nodeType: "expansion",
       },{
@@ -4566,7 +4566,7 @@ const rawData = {
       },{
         id: "pirateCode",
         name: "Pirate Code",
-        bg: "887878",
+        bg: "ce6665",
         itemId: 36,
         nodeType: "artifact",
       },
@@ -4765,227 +4765,272 @@ const rawData = {
         name: "First Mission", // Olympus -> Norion
         extraId: 1101,
         nodeType: "event",
+        bg: "5298bc",
       },{
         id: "unused",
         name: "Mission Briefing", // Olympus 1
         extraId: 1102,
         nodeType: "event",
+        bg: "5298bc",
       },{
         id: "energyCell",
         name: "Lab Energy Cell", // Olympus 1 Escape
         extraId: 1103,
         nodeType: "event",
+        bg: "5298bc",
       },{
         id: "saveRoom",
         name: "Save Event 1", // Olympus 1
         extraId: 1104,
         nodeType: "trigger",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "norion",
         name: "Dock A Access", // Norion
         extraId: 1111,
         nodeType: "trigger",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "norion",
         name: "Dock B Access", // Norion
         extraId: 1112,
         nodeType: "trigger",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "norion",
         name: "Generator A Online", // Norion
         extraId: 1113,
         nodeType: "event",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "norion",
         name: "Generator B Online", // Norion, auto by Rundas
         extraId: 1114,
         nodeType: "event",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "norion",
         name: "Generator C Online", // Norion
         extraId: 1115,
         nodeType: "event",
+        bg: "5298bc",
       },{
         id: "saveRoom",
         name: "Save Event 2", // Olympus 2
         extraId: 1105,
         nodeType: "trigger",
+        bg: "5298bc",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Bryyo Mission", // Olympus -> Bryyo
         extraId: 1106,
         nodeType: "event",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Fed Dock", // Bryyo
         extraId: 1121,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Fire Access", // Bryyo
         extraId: 1122,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Thorn Jungle Access", // Bryyo
         extraId: 1123,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Shield Generator 1 Destroyed", // Bryyo
         extraId: 1124,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Turret 1 Destroyed", // Bryyo Thorn Jungle
         extraId: 1125,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Turret 2 Destroyed", // Bryyo Thorn Jungle
         extraId: 1126,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Shield Generator 2 Destroyed", // Bryyo
         extraId: 1127,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Hidden Court Grapple", // Bryyo Cliffside
         extraId: 1128,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Bridge Access A", // Bryyo Cliffside
         extraId: 1129,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
-        id: "unused",
+        id: "bryyo",
         name: "Bridge Access B", // Bryyo Thorn Jungle
         extraId: 1130,
         nodeType: "trigger",
+        bg: "6d9b6d",
       },{
         id: "unused",
         name: "Valhalla Access", // Bryyo Ice -> Fire -> Valhalla
         extraId: 1131,
         nodeType: "event",
+        bg: "ce6665",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Ghor Assault", // Skytown West
         extraId: 1141,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "AU 217 Online", // Skytown West
         extraId: 1142,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Site A Access", // Skytown West
         extraId: 1143,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Site B Access", // Skytown East
         extraId: 1144,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "xenoresearch",
         name: "Xenoresearch Cells Open", // Skytown East, Xenoresearch B
         extraId: 1145,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Shield Nuked", // Skytown West
         extraId: 1146,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Escape Pod", // Skytown West
         extraId: 1147,
         nodeType: "trigger",
+        bg: "ac842f",
       },{
-        id: "unused",
+        id: "elysia",
         name: "Pirate Homeworld Access", // -> Homeworld
         extraId: 1151,
         nodeType: "event",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Fans Off", // Pirate Homeworld, Command
         extraId: 1152,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Shield Core Sighted", // Pirate Homeworld, Command
         extraId: 1153,
         nodeType: "event",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Rescue Mission", // Pirate Homeworld, Command -> Research
         extraId: 1154,
         nodeType: "event",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Access to Research", // PH
         extraId: 1155,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Scrap Access", // Pirate Homeworld, Research
         extraId: 1156,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Mines Unlocked", // PH
         extraId: 1157,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Metroids Loose", // Pirate Homeworld, Research
         extraId: 1158,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
         id: "unused",
         name: "Dread Reference", // Pirate Homeworld, Research
         extraId: 1159,
         nodeType: "easter",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Mine Loop Open", // Pirate Homeworld, Phazon Mines
         extraId: 1160,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Shield Core Down", // Pirate Homeworld, Command -> Seed Train Line
         extraId: 1161,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Transit Tunnels", // Pirate Homeworld, Command -> Seed Train Line, protect the 12 demo troopers
         extraId: 1162,
         nodeType: "event",
+        bg: "b7746e",
       },{
-        id: "unused",
+        id: "urtraghus",
         name: "Seed Door", // PH
         extraId: 1163,
         nodeType: "trigger",
+        bg: "b7746e",
       },{
         id: "unused",
         name: "AU 313 Pad Code", // Valhalla
         extraId: 1171,
         nodeType: "easter",
+        bg: "ce6665",
       },{
         id: "unused",
         name: "AU 313 Message", // Valhalla
         extraId: 1172,
         nodeType: "easter",
+        bg: "ce6665",
       },{
         id: "phaaze",
         name: "Phaaze accessible",
         bg: "ffffff",
         extraId: 1201,
         nodeType: "event",
+        bg: "35a0d8",
       },{
         id: "saveRoom",
         name: "Save Station",
@@ -5042,12 +5087,12 @@ const rawData = {
         extraId: 1011,
         nodeType: "map",
       },{
-        id: "shipGrapple",
+        id: "golemHead",
         name: "Golem Head",
         extraId: 1021,
         nodeType: "slot", // "slot" -> "cargo" ?
       },{
-        id: "shipGrapple",
+        id: "generator",
         name: "Large Generator",
         extraId: 1022,
         nodeType: "slot",
@@ -5935,7 +5980,7 @@ const rawData = {
         extraId: 1027,
         nodeType: "area",
       },{
-        id: "unused",
+        id: "towerPower",
         name: "Tower Power", // The Tower
         extraId: 1002,
         nodeType: "trigger",
@@ -6792,12 +6837,12 @@ const rawData = {
         extraId: 1021,
         nodeType: "easter",
       },{
-        id: "unused",
+        id: "etedach",
         name: "Shine Spark Critter",
         extraId: 1022,
         nodeType: "easter",
       },{
-        id: "unused",
+        id: "etedach",
         name: "Wall Jump Critters",
         extraId: 1023,
         nodeType: "easter",
@@ -6807,17 +6852,17 @@ const rawData = {
         extraId: 1004,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "superMissileTank",
         name: "Green Shutter",
         extraId: 1005,
         nodeType: "trigger",
       },{
-        id: "powerBomb",
+        id: "powerBombTank",
         name: "Glass Tunnel Broken", // Maridia
         extraId: 1024,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "reserveTankB",
         name: "Reserve Tank Hint",
         extraId: 1025,
         nodeType: "lore",
@@ -7722,12 +7767,12 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "powerBeamD",
         name: "Phazon Portal",
         extraId: 1002,
         nodeType: "teleport",
       },{
-        id: "unused",
+        id: "rechargeRoom",
         name: "Return Portal",
         extraId: 1003,
         nodeType: "teleport",
@@ -8513,37 +8558,37 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
+        id: "mainDeck",
         name: "First Mission", // Main Deck, Docking Bays -> Quarantine Bay
         extraId: 1005,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "quarantineBay",
         name: "Quarantine Bay", // Main Deck, Quarantine Bay
         extraId: 1006,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector1SRX",
         name: "First Mission in Sector 1", // Sector 1 SRX -> Clear all 5 atmospheric stabilizers
         extraId: 1011,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector2TRO",
         name: "First Mission to Sector 2", // Sector 1 SRX mission 1 complete -> Sector 2 TRO visit 1
         extraId: 1012,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector2TRO",
         name: "First Mission in Sector 2", // Sector 2 TRO -> open L.1 doors, get Bomb Data
         extraId: 1021,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector4AQA",
         name: "First Mission to Sector 4", // Sector 2 TRO mission 1 complete -> Sector 4 AQA visit 1
         extraId: 1021,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector4AQA",
         name: "First Mission in Sector 4", // Sector 4 AQA -> defeat Serris
         extraId: 1041,
         nodeType: "event",
@@ -8554,37 +8599,37 @@ const rawData = {
         extraId: 1042,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "sector3PYR",
         name: "First Mission to Sector 3", // Sector 4 AQA mission 1 complete -> Sector 3 PYR visit 1
         extraId: 1043,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector3PYR",
         name: "First Mission in Sector 3", // Sector 3 PYR -> open L.2 doors, get Super Missile Data
         extraId: 1031,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector6NOC",
         name: "First Mission to Sector 6", // Sector 3 PYR mission 1 complete -> Sector 6 NOC visit 1
         extraId: 1032,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector6NOC",
         name: "First Mission in Sector 6", // Sector 6 NOC mission 1 -> get Varia Suit Data, avoid the Icy X
         extraId: 1061,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "First Mission to Sector 5", // Sector 6 NOC mission 1 complete -> Sector 5 ARC visit 1
         extraId: 1062,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "First Mission in Sector 5", // Sector 5 ARC mission 1 -> open L.3 doors, get Ice Missile Data
         extraId: 1051,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector3PYR",
         name: "Emergency in Sector 3", // Sector 5 ARC mission 1 complete -> RUSH TO SECTOR 3 PYR
         extraId: 1052,
         nodeType: "event",
@@ -8595,12 +8640,12 @@ const rawData = {
         extraId: 1033,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "mainDeck",
         name: "Main Elevator Power Restored", // Sector 3 PYR depths complete
         extraId: 1034,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "mainDeck", // might need a new one for this sub-sector?
         name: "To the Habitation Deck", // Sector 3 PYR depths complete -> Main Deck, Habitation Deck
         extraId: 1035,
         nodeType: "event",
@@ -8612,22 +8657,22 @@ const rawData = {
         extraId: 1007,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "Return to Sector 5", // Main Deck, Habitation Deck -> Sector 5 ARC visit 2
         extraId: 1008,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "Power Bomb Retrieval", // Sector 5 ARC mission 2 -> get Power Bomb Data
         extraId: 1053,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "mainDeck",
         name: "Nettori Power Down", // Sector 5 ARC mission 2 complete -> AI CO calls you back to the ship
         extraId: 1054,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "mainDeck",
         name: "Reactor Core Access", // Main Deck, Docking Bays -> Reactor Core, awakens Ki Hunters everywhere
         extraId: 1009,
         nodeType: "event",
@@ -8638,32 +8683,32 @@ const rawData = {
         extraId: 1071,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "To Sector 5 Nightmare", // Sector 2 TRO depths complete -> Sector 5 ARC visit 3
         extraId: 1022,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector5ARC",
         name: "Nightmare Hunting", // Sector 5 ARC mission 3 -> find and destroy the Nightmare, water from Sector 4 AQA has spilled into this sector
         extraId: 1055,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector6NOC",
         name: "To Sector 6 SR-BOX", // Sector 4 AQA depths complete -> Sector 6 NOC visit 2
         extraId: 1044,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector6NOC",
         name: "Track the SR-BOX", // Sector 6 NOC mission 2 -> find the Security Robot, escape before the SA-X finds you
         extraId: 1063,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "restrictedLab",
         name: "Metroid Habitat", // Restricted Lab
         extraId: 1072,
         nodeType: "event",
       },{
-        id: "unused",
+        id: "sector1SRX",
         name: "Through Sector 1 Depths", // Restricted Lab -> Sector 1 SRX depths
         extraId: 1073,
         nodeType: "event",
@@ -8678,7 +8723,7 @@ const rawData = {
         extraId: 1074,
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "mainDeck", // might need a new one for this sub-sector?
         name: "Operations Room", // Main Deck, Operations Deck -> triggers Escape Sequence
         extraId: 1075,
         nodeType: "trigger",
@@ -9195,32 +9240,32 @@ const rawData = {
     ],
     extras: [
       {
-        id: "unused",
-        name: "Red Teleportal",
+        id: "teleportalA",
+        name: "Red Teleportal", // Artaria-Cataris
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Orange Teleportal",
+        id: "teleportalY",
+        name: "Orange Teleportal", // Cataris-Ghavoran
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Yellow Teleportal",
+        id: "teleportalI",
+        name: "Yellow Teleportal", // Artaria-Dairon
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Green Teleportal",
+        id: "teleportalO",
+        name: "Green Teleportal", // Burenia-Ghavoran
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Cyan Teleportal",
+        id: "teleportalX",
+        name: "Cyan Teleportal", // Burenia-Ferenia
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Blue Teleportal",
+        id: "teleportalU",
+        name: "Blue Teleportal", // Artaria-Cataris
         nodeType: "teleport",
       },{
-        id: "unused",
-        name: "Purple Teleportal",
+        id: "teleportalE",
+        name: "Purple Teleportal", // Cataris-Dairon
         nodeType: "teleport",
       },{
         id: "unused",
@@ -9275,7 +9320,7 @@ const rawData = {
         name: "Power Generator", // Dairon 2
         nodeType: "trigger",
       },{
-        id: "unused",
+        id: "chozoStatue",
         name: "Burenia Hatch", // Burenia, opened by Quiet Robe cutscene
         nodeType: "trigger",
       },{
@@ -9557,12 +9602,12 @@ const rawData = {
         name: "Energy Recharge",
         nodeType: "recharge",
       },{
-        id: "unused",
+        id: "rechargeRoom",
         name: "Full Restore",
         nodeType: "recharge",
       },{
         id: "navigationRoom",
-        name: "Navigation Room",
+        name: "Network Station",
         nodeType: "event",
       },{
         id: "saveRoom",
@@ -12685,5 +12730,311 @@ const rawData = {
     ],
     map: [
     ],
-  }
+  },
+  "sotn": {
+    checklistWidth: 7,
+    checklistLayout: [
+      { lookupId: 4, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 5, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 6, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 9, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 10, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: -1, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 27, value: 0, start: 0, max: 0, segments: [], },
+      
+      { lookupId: 7, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 22, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 23, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 11, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 12, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 24, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: -1, value: 0, start: 0, max: 0, segments: [], },
+      
+      { lookupId: 14, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 20, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 31, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 15, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 21, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 26, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 30, value: 0, start: 0, max: 1, segments: [], },
+      
+      { lookupId: 16, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 17, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 18, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 13, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 19, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 35, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 34, value: 0, start: 0, max: 1, segments: [], },
+      
+      { lookupId: 36, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 37, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 38, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 39, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 40, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 33, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 32, value: 0, start: 0, max: 1, segments: [], },
+      
+      { lookupId: 3, value: 0, start: 0, max: 47, segments: [], },
+      { lookupId: 2, value: 0, start: 0, max: 33, segments: [], },
+      { lookupId: 25, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 28, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 29, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: -1, value: 0, start: 0, max: 1, segments: [], },
+      { lookupId: 1, value: 0, start: 0, max: 1, segments: [], },
+    ],
+    items: [
+      {
+        id: "castlemap",
+        name: "Castle Map",
+        itemId: 1,
+        nodeType: "upgrade",
+      },
+      {
+        id: "heartmax",
+        name: "Heart max up",
+        itemId: 2,
+        nodeType: "upgrade",
+      },
+      {
+        id: "lifemax",
+        name: "Life max up",
+        itemId: 3,
+        nodeType: "upgrade",
+      },
+      {
+        id: "cubezoe",
+        name: "Cube of Zoe",
+        itemId: 4,
+        nodeType: "upgrade",
+      },
+      {
+        id: "spiritorb",
+        name: "Spirit Orb",
+        itemId: 5,
+        nodeType: "upgrade",
+      },
+      {
+        id: "faeriescroll",
+        name: "Faerie Scroll",
+        itemId: 6,
+        nodeType: "upgrade",
+      },
+      {
+        id: "wolfsoul",
+        name: "Soul of Wolf",
+        itemId: 7,
+        nodeType: "upgrade",
+      },
+      {
+        id: "librarycard",
+        name: "Library Card",
+        itemId: 8,
+        nodeType: "upgrade",
+      },
+      {
+        id: "jewelopen",
+        name: "Jewel of Open",
+        itemId: 9,
+        nodeType: "upgrade",
+      },
+      {
+        id: "merman",
+        name: "Merman Statue",
+        itemId: 10,
+        nodeType: "upgrade",
+      },
+      {
+        id: "holysymbol",
+        name: "Holy Symbol",
+        itemId: 11,
+        nodeType: "upgrade",
+      },
+      {
+        id: "leapstone",
+        name: "Leap Stone",
+        itemId: 12,
+        nodeType: "upgrade",
+      },
+      {
+        id: "familiar",
+        name: "Demon Card",
+        itemId: 13,
+        nodeType: "upgrade",
+      },
+      {
+        id: "mistform",
+        name: "Form of Mist",
+        itemId: 14,
+        nodeType: "upgrade",
+      },
+      {
+        id: "batsoul",
+        name: "Soul of Bat",
+        itemId: 15,
+        nodeType: "upgrade",
+      },
+      {
+        id: "familiar",
+        name: "Faerie Card",
+        itemId: 16,
+        nodeType: "upgrade",
+      },
+      {
+        id: "familiar",
+        name: "Bat Card",
+        itemId: 17,
+        nodeType: "upgrade",
+      },
+      {
+        id: "familiar",
+        name: "Ghost Card",
+        itemId: 18,
+        nodeType: "upgrade",
+      },
+      {
+        id: "familiar",
+        name: "Sword Card",
+        itemId: 19,
+        nodeType: "upgrade",
+      },
+      {
+        id: "mistpower",
+        name: "Power of Mist",
+        itemId: 20,
+        nodeType: "upgrade",
+      },
+      {
+        id: "batfire",
+        name: "Fire of Bat",
+        itemId: 21,
+        nodeType: "upgrade",
+      },
+      {
+        id: "wolfpower",
+        name: "Power of Wolf",
+        itemId: 22,
+        nodeType: "upgrade",
+      },
+      {
+        id: "wolfskill",
+        name: "Skill of Wolf",
+        itemId: 23,
+        nodeType: "upgrade",
+      },
+      {
+        id: "gravboots",
+        name: "Gravity Boots",
+        itemId: 24,
+        nodeType: "upgrade",
+      },
+      {
+        id: "goldring",
+        name: "Gold Ring",
+        itemId: 25,
+        over: "hint-image",
+        overText: "Wear...Clock...",
+        nodeType: "upgrade",
+      },
+      {
+        id: "batecho",
+        name: "Echo of Bat",
+        itemId: 26,
+        nodeType: "upgrade",
+      },
+      {
+        id: "spikebreaker",
+        name: "Spike Breaker Armor",
+        itemId: 27,
+        nodeType: "upgrade",
+      },
+      {
+        id: "silverring",
+        name: "Silver Ring",
+        itemId: 28,
+        over: "hint-image",
+        overText: "...in...Tower",
+        nodeType: "upgrade",
+      },
+      {
+        id: "holyglasses",
+        name: "Holy Glasses",
+        itemId: 29,
+        nodeType: "upgrade",
+      },
+      {
+        id: "echoforce",
+        name: "Force of Echo",
+        itemId: 30,
+        nodeType: "upgrade",
+      },
+      {
+        id: "gascloud",
+        name: "Gas Cloud",
+        itemId: 31,
+        nodeType: "upgrade",
+      },
+      {
+        id: "alumail",
+        name: "Alucard Mail",
+        itemId: 32,
+        nodeType: "upgrade",
+      },
+      {
+        id: "dragonhelm",
+        name: "Dragon Helm",
+        itemId: 33,
+        nodeType: "upgrade",
+      },
+      {
+        id: "alushield",
+        name: "Alucard Shield",
+        itemId: 34,
+        nodeType: "upgrade",
+      },
+      {
+        id: "alusword",
+        name: "Alucard Sword",
+        itemId: 35,
+        nodeType: "upgrade",
+      },
+      {
+        id: "vladring",
+        name: "Ring of Vlad",
+        itemId: 36,
+        nodeType: "upgrade",
+      },
+      {
+        id: "vladheart",
+        name: "Heart of Vlad",
+        itemId: 37,
+        nodeType: "upgrade",
+      },
+      {
+        id: "vladbone",
+        name: "Rib of Vlad",
+        itemId: 38,
+        nodeType: "upgrade",
+      },
+      {
+        id: "vladfang",
+        name: "Tooth of Vlad",
+        itemId: 39,
+        nodeType: "upgrade",
+      },
+      {
+        id: "vladeye",
+        name: "Eye of Vlad",
+        itemId: 40,
+        nodeType: "upgrade",
+      },
+    ],
+    bosses: [
+    ],
+    areas: [
+    ],
+    extras: [
+    ],
+    map: [
+    ],
+  },
 };

@@ -194,6 +194,7 @@
 .item-image.energyCell { background: url("images/m_graphics.png") -645px -344px; }
 .item-image.pirateCode { background: url("images/m_graphics.png") -688px -344px; }
 .item-image.dreadEnergy { background: url("images/m_graphics.png") -731px -344px; }
+.item-image.teleporterA, /* UNUSED */
 .item-image.ammoStation { background: url("images/m_graphics.png") -774px -344px; }
 
 .item-image.templeKey { background: url("images/m_graphics.png") 0 -387px; } /* UNUSED */
@@ -393,17 +394,17 @@
 .item-image.cobaltTranslatorA { background: url("images/m_graphics.png") -258px -774px; }
 .item-image.itemCube, /* UNUSED */
 .item-image.aeionCube { background: url("images/m_graphics.png") -301px -774px; } /* UNUSED */
+.item-image.teleporterB { background: url("images/m_graphics.png") -344px -774px; } /* UNUSED */
+.item-image.teleportalA { background: url("images/m_graphics.png") -387px -774px; } /* UNUSED */
+.item-image.teleportalE { background: url("images/m_graphics.png") -430px -774px; } /* UNUSED */
+.item-image.teleportalI { background: url("images/m_graphics.png") -473px -774px; } /* UNUSED */
+.item-image.teleportalO { background: url("images/m_graphics.png") -516px -774px; } /* UNUSED */
+.item-image.teleportalU { background: url("images/m_graphics.png") -559px -774px; } /* UNUSED */
+.item-image.teleportalX { background: url("images/m_graphics.png") -602px -774px; } /* UNUSED */
+.item-image.teleportalY { background: url("images/m_graphics.png") -645px -774px; } /* UNUSED */
+.item-image.corruptionXRayVisorA { background: url("images/m_graphics.png") -688px -774px; } /* UNUSED */
 
 /*
-.item-image.__item__ { background: url("images/m_graphics.png") -344px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -387px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -430px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -473px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -516px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -559px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -602px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -645px -774px; }
-.item-image.__item__ { background: url("images/m_graphics.png") -688px -774px; }
 .item-image.__item__ { background: url("images/m_graphics.png") -731px -774px; }
 */
 
@@ -974,7 +975,7 @@
 .game-mng .usesSprite .item-image.unused,
 .game-mttne .usesSprite .item-image.unused { background: url("images/mkc_spritesheet.png") -294px -210px; } /* UNUSED */
 
-/********* THE LEGEND OF ZELDA (NES)) *********/
+/********* THE LEGEND OF ZELDA (NES) *********/
 .game-thf img.item-image.raft { background: url("images/zelda_graphics.png") 0 0; }
 .game-thf img.item-image.book { background: url("images/zelda_graphics.png") -42px 0; }
 .game-thf img.item-image.green { background: url("images/zelda_graphics.png") -84px 0; }
@@ -1007,7 +1008,7 @@
 .game-thf img.item-image.map { background: url("images/zelda_graphics.png") -42px -168px; }
 .game-thf img.item-image.compass { background: url("images/zelda_graphics.png") -84px -168px; }
 
-/********* ZELDA II: THE ADVENTURE OF LINK (NES)) *********/
+/********* ZELDA II: THE ADVENTURE OF LINK (NES) *********/
 .game-aol img.item-image.shieldSpell,
 .game-ziiaol img.item-image.shieldSpell { background: url("images/zelda_graphics.png") -126px -168px; }
 .game-aol img.item-image.jumpSpell,
@@ -1109,7 +1110,7 @@
 .game-ziiaol img.item-image.summon { background: url("images/zelda_graphics.png") -378px -336px; }
 .game-ziiaol img.item-image.linkPlush { background: url("images/zelda_graphics.png") -420px -336px; }
 
-/********* THE LEGEND OF ZELDA: A LINK TO THE PAST (SNES)) *********/
+/********* THE LEGEND OF ZELDA: A LINK TO THE PAST (SNES) *********/
 .game-alttp img.item-image.bowArrows,
 .game-z3_rnd img.item-image.bowArrows { background: url("images/zelda_graphics.png") -294px -168px; }
 .game-alttp img.item-image.bow,
@@ -1240,6 +1241,45 @@
 .game-z3_rnd img.item-image.arrows { background: url("images/zelda_graphics.png") -420px -294px; }
 .game-alttp img.item-image.apple,
 .game-z3_rnd img.item-image.apple { background: url("images/zelda_graphics.png") -462px -294px; }
+
+
+/********* CASTLEVANIA: SYMPHONY OF THE NIGHT (PSX) *********/
+.game-sotn img.item-image.cubezoe { background: url("images/cvsotn_spritesheet.png") 0 0; }
+.game-sotn img.item-image.familiar { background: url("images/cvsotn_spritesheet.png") 0 -42px; }
+.game-sotn img.item-image.spiritorb { background: url("images/cvsotn_spritesheet.png") 0 -84px; }
+.game-sotn img.item-image.faeriescroll { background: url("images/cvsotn_spritesheet.png") 0 -126px; }
+.game-sotn img.item-image.alumail { background: url("images/cvsotn_spritesheet.png") 0 -168px; }
+.game-sotn img.item-image.vladring { background: url("images/cvsotn_spritesheet.png") 0 -210px; }
+.game-sotn img.item-image.wolfsoul { background: url("images/cvsotn_spritesheet.png") -42px 0; }
+.game-sotn img.item-image.wolfpower { background: url("images/cvsotn_spritesheet.png") -42px -42px; }
+.game-sotn img.item-image.wolfskill { background: url("images/cvsotn_spritesheet.png") -42px -84px; }
+.game-sotn img.item-image.librarycard { background: url("images/cvsotn_spritesheet.png") -42px -126px; }
+.game-sotn img.item-image.alushield { background: url("images/cvsotn_spritesheet.png") -42px -168px; }
+.game-sotn img.item-image.vladheart { background: url("images/cvsotn_spritesheet.png") -42px -210px; }
+.game-sotn img.item-image.batsoul { background: url("images/cvsotn_spritesheet.png") -84px 0; }
+.game-sotn img.item-image.batfire { background: url("images/cvsotn_spritesheet.png") -84px -42px; }
+.game-sotn img.item-image.batecho { background: url("images/cvsotn_spritesheet.png") -84px -84px; }
+.game-sotn img.item-image.echoforce { background: url("images/cvsotn_spritesheet.png") -84px -126px; }
+.game-sotn img.item-image.dragonhelm { background: url("images/cvsotn_spritesheet.png") -84px -168px; }
+.game-sotn img.item-image.vladbone { background: url("images/cvsotn_spritesheet.png") -84px -210px; }
+.game-sotn img.item-image.leapstone { background: url("images/cvsotn_spritesheet.png") -126px 0; }
+.game-sotn img.item-image.gravboots { background: url("images/cvsotn_spritesheet.png") -126px -42px; }
+.game-sotn img.item-image.holysymbol { background: url("images/cvsotn_spritesheet.png") -126px -84px; }
+.game-sotn img.item-image.spikebreaker { background: url("images/cvsotn_spritesheet.png") -126px -126px; }
+.game-sotn img.item-image.alusword { background: url("images/cvsotn_spritesheet.png") -126px -168px; }
+.game-sotn img.item-image.vladfang { background: url("images/cvsotn_spritesheet.png") -126px -210px; }
+.game-sotn img.item-image.mistform { background: url("images/cvsotn_spritesheet.png") -168px 0; }
+.game-sotn img.item-image.mistpower { background: url("images/cvsotn_spritesheet.png") -168px -42px; }
+.game-sotn img.item-image.gascloud { background: url("images/cvsotn_spritesheet.png") -168px -84px; }
+.game-sotn img.item-image.heartmax { background: url("images/cvsotn_spritesheet.png") -168px -126px; }
+.game-sotn img.item-image.lifemax { background: url("images/cvsotn_spritesheet.png") -168px -168px; }
+.game-sotn img.item-image.vladeye { background: url("images/cvsotn_spritesheet.png") -168px -210px; }
+.game-sotn img.item-image.jewelopen { background: url("images/cvsotn_spritesheet.png") -210px 0; }
+.game-sotn img.item-image.merman { background: url("images/cvsotn_spritesheet.png") -210px -42px; }
+.game-sotn img.item-image.castlemap { background: url("images/cvsotn_spritesheet.png") -210px -84px; }
+.game-sotn img.item-image.goldring { background: url("images/cvsotn_spritesheet.png") -210px -126px; }
+.game-sotn img.item-image.silverring { background: url("images/cvsotn_spritesheet.png") -210px -168px; }
+.game-sotn img.item-image.holyglasses { background: url("images/cvsotn_spritesheet.png") -210px -210px; }
 
 /* == overlays == */
 

@@ -175,7 +175,7 @@
 
 .game-mf .usesSprite.usesAllSprites .item-image.iceMissile,
 .game-md .usesAllSprites.trimmed .item-image.iceMissileB,
-.game-mp3c .usesAllSprites.trimmed .item-image.iceMissileB { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
+.game-mp3c .usesAllSprites.trimmed .item-image.iceMissileA { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
 .game-mf .usesSprite.usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
 .game-mf .usesSprite.usesAllSprites .item-image.bombData { background: url("images/mzm_full_spritesheet.png") -84px -168px; }
 .game-mf .usesSprite.usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }

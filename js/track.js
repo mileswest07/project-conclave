@@ -24,6 +24,7 @@ let keyslots = {};
   const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
   const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
   const allZeldaList = ["z1", "z2", "z3", "z3r"];
+  const allCastlevaniaList = ["sotn"];
   
   function filterOut([...filter]) {
     let copy = {...this};

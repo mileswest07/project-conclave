@@ -29,6 +29,7 @@ Trademarked titles:
 - Metroid II: Return of Samus (GB)
 - The Legend of Zelda: A Link to the Past (SNES)
 - Super Metroid (SNES)
+- Castlevania: Symphony of the Night (PSX)
 - Metroid: Fusion (GBA)
 - Metroid Prime (GCN)
 - Metroid: Zero Mission (GBA)

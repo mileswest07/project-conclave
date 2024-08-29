@@ -25,6 +25,7 @@ let main = {
     "z2pc": "ziiaol", // Zelda 2: The Adventure of Link
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
+    "sotn": "sotn", // Castlevania: Symphony of the Night (PSX)
   }
 };
 
@@ -39,7 +40,7 @@ let main = {
     "fullPowerSuit", "barrier", "barrierA", "barrierB", "barrierC", "gravitySuit", "gravitySuitB", "gravitySuitC", "gravitySuitD", "zeroSuit", "zeroSuitA", "samus", "darkSuitA", "progressiveSuit", "primeSuit", "fusionSuit", "phazonSuit", "amorbis", "darkSuit", "gravityBoost", "lightSuit", "ped", "hazardShield", "magneticShield", "armCannon", "altform", "observatory",
     "missile", "missileTank", "missileA", "superMissile", "superMissileA", "superMissileTank", "iceMissile", "seekerLauncher", "seekerLauncherA", "seekerLauncherB", "darkburst", "sunburst", "sonicBoom", "hyperMissile", "shipMissile", "shipMissileExpansion", "affinityWeapon", "deathalt", "golemHead",
     "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "speedBoosterB", "exelion", "rechargeRoom",
-    "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1a", "unknownItem2a", "unknownItem3a", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "ammoStation",
+    "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1a", "unknownItem2a", "unknownItem3a", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "teleporterA", "ammoStation",
     "templeKey", "lightOfAether", "lightOfAetherA", "cipher", "theronianBomb", "phaaze", "alimbicArtifactCA1", "alimbicArtifactCA2", "alimbicArtifactAl1", "alimbicArtifactAl2", "alimbicArtifactVDO1", "alimbicArtifactVDO2", "alimbicArtifactArc1", "alimbicArtifactArc2", "octolith", "oubliette", "am2rPowerOrb", "dreadPart", "missileRefill",
     "securityL0", "energyPickup", "securityL1", "missileC", "securityL2", "missileD", "securityL3", "alimbicCannon", "securityL4", "friendVoucher", "etedach", "skyTempleAccess", "norion", "bryyo", "elysia", "urtraghus", "spireDock", "keyGate1", "translatorGate",
     "boss", "monster", "monsterDna", "monsterCapsule", "magneticShieldTank", "pumpControlUnit", "mainBoiler", "reactorCore", "mainDeck", "sector1SRX", "sector2TRO", "sector3PYR", "sector4AQA", "sector5ARC", "sector6NOC", "restrictedLab", "quarantineBay", "keyGate2", "energyRefill",
@@ -49,7 +50,7 @@ let main = {
     "spinBoostA", "chargeBeam", "infiniteBeamAmmo", "infiniteMissiles", "superMissileC", "spiderBall", "bountyCoin", "bountyCoin1", "bountyCoin5", "bountyCoin10", "bountyCoin50", "bountyCoin100", "dataRoom", "diffusionBeamA", "novaBeamA", "hypermode", "iceMissileA", "doubleMissileTank", "modChipC", "energyPartA",
     "spiderMagnet", "flashShiftA", "gravitySuitA", "phantomCloak", "cloakB", "pulseRadar", "radarA", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "eRecoveryTankA",
     "chykka", "quadraxis", "aetherKey", "darkAetherKey", "burstBeam", "smallAmmo", "largeAmmo", "meleeCounter", "dashMelee", "overblast", "concentration", "lethalStrike", "slide", "omegaBlast", "senseMove", "invisibility", "cloak", "rundas", "emergencyPistolA", "paralyzerA", "flashShift",
-    "unknownItem1", "unknownItem2", "unknownItem3", "violetTranslatorA", "amberTranslatorA", "emeraldTranslatorA", "cobaltTranslatorA", "itemCube", "aeionCube",
+    "unknownItem1", "unknownItem2", "unknownItem3", "violetTranslatorA", "amberTranslatorA", "emeraldTranslatorA", "cobaltTranslatorA", "itemCube", "aeionCube", "teleporterB", "teleportalA", "teleportalE", "teleportalI", "teleportalO", "teleportalU", "teleportalX", "teleportalY", "corruptionXRayVisorA",
     "unused", "empty", "kraid", "ridley", "m_lock1", "m_lock2"
   ];
   const unifiedIDCollection = {"m1":{"barrier":0,"bomb":0,"energy":0,"high":0,"ice":0,"long":0,"missile":0,"morph":0,"screw":0,"wave":0},"m2ros":{"baby":0,"barrier":0,"bomb":0,"energy":0,"high":0,"ice":0,"morphBall":0,"missile":0,"plasma":0,"powerbeam":0,"screw":0,"space":0,"spider":0,"spring":0,"wave":0,"wide":0},"md":{"armCannon":0,"barrier":0,"bombD":0,"chargeBeam":0,"crossBombs":0,"diffusionBeamB":0,"energy":0,"flash":0,"flashTank":0,"grappleBeam":0,"gravitySuitA":0,"iceMissileB":0,"missile":0,"missilePlus":0,"monsterDna":0,"morphBall":0,"omega":0,"part":0,"pbombs":0,"phantom":0,"plasmaBeamA":0,"powerBomb":0,"progressiveBeam":0,"progressiveBomb":0,"progressiveChargeBeam":0,"progressiveMissile":0,"progressiveSpin":0,"progressiveSuit":0,"radar":0,"screwAttack":0,"seekerLauncherB":0,"shine":0,"spaceJump":0,"speedBooster":0,"spiderMagnet":0,"spinBoostA":0,"superMissile":0,"waveBeamE":0,"wideBeam":0},"mf":{"barrier":0,"bombData":0,"chargeBeam":0,"diffusion":0,"energy":0,"final":0,"fusion":0,"gravity":0,"high":0,"iceBeam":0,"iceMissile":0,"missile":0,"missileData":0,"morph":0,"pbomb":0,"pbombData":0,"plasmaBeam":0,"powerbeam":0,"progressiveBeam":0,"progressiveMissile":0,"progressiveSuit":0,"screw":0,"securityL0":0,"securityL1":0,"securityL2":0,"securityL3":0,"securityL4":0,"space":0,"speed":0,"superMissile":0,"waveBeam":0,"wideBeam":0},"mom":{"accel":0,"barrier":0,"bomb":0,"diffusion":0,"energy":0,"erec":0,"grapple":0,"gravitySuitC":0,"iceBeam":0,"missile":0,"morphBall":0,"part":0,"pbomb":0,"plasmaBeam":0,"progressiveBeam":0,"progressiveMissile":0,"progressiveSuit":0,"screwAttack":0,"seeker":0,"spaceJump":0,"speed":0,"super":0,"tank":0,"unknown":0,"waveBeamC":0},"mp":{"aochozo":0,"aoelder":0,"aolifegiver":0,"aonature":0,"aonewborn":0,"aospirit":0,"aostrength":0,"aosun":0,"aotruth":0,"aowarrior":0,"aowild":0,"aoworld":0,"barrier":0,"bombB":0,"boost":0,"chargeBeamB":0,"chozoArtifact":0,"combat":0,"combatA":0,"energyTankA":0,"flameShot":0,"grappleBeamA":0,"gravity":0,"ice":0,"iceMissileB":0,"missile":0,"missileTank":0,"morph":0,"pbomb":0,"phazon":0,"plasma":0,"power":0,"powerBombExp":0,"powersuit":0,"progressiveSuit":0,"scan":0,"scanA":0,"shockShot":0,"spider":0,"spinBoost":0,"springBall":0,"superMissileA":0,"thermal":0,"thermalA":0,"wave":0,"xray":0,"xrayA":0},"mp2e":{"amberTranslator":0,"amberTranslatorA":0,"annihilator":0,"barrier":0,"beamAmmoExpansion":0,"bombC":0,"boost":0,"cannonball":0,"chargeBeamA":0,"cobaltTranslator":0,"cobaltTranslatorA":0,"coins":0,"combat":0,"combatA":0,"darkAmmoExpansion":0,"darkbeam":0,"darkburst":0,"darkSuitA":0,"darkvisor":0,"darkvisorA":0,"doubleDamageA":0,"echo":0,"echoA":0,"emeraldTranslator":0,"emeraldTranslatorA":0,"energyTankA":0,"energyTransferModule":0,"grappleBeamA":0,"gravityBoost":0,"infiniteBeamAmmo":0,"infiniteMissiles":0,"light":0,"lightAmmoExpansion":0,"lightSuit":0,"missile":0,"missileTank":0,"morph":0,"pbomb":0,"power":0,"powerBombExpA":0,"progressiveGrapple":0,"progressiveMissile":0,"progressiveSuit":0,"redKey":0,"scan":0,"scanA":0,"screwAttackA":0,"seekerLauncherA":0,"skyKey":0,"sonicBoom":0,"spider":0,"spinBoost":0,"springBall":0,"sunburst":0,"superMissileC":0,"violetTranslator":0,"violetTranslatorA":0},"mp3c":{"barrier":0,"bombC":0,"boostBall":0,"chargeBeam":0,"combatVisor":0,"commandVisor":0,"corruptionXRayVisor":0,"energyCell":0,"energyTankA":0,"flameShot":0,"friendVoucher":0,"goldCredit":0,"grappleBeam":0,"grappleLasso":0,"grappleVoltage":0,"hazardShield":0,"hyperBall":0,"hyperGrapple":0,"hyperMissile":0,"hypermode":0,"iceMissileB":0,"missileC":0,"missileTank":0,"morphBall":0,"novaBeamA":0,"ped":0,"phazonSuit":0,"powerBeamA":0,"progressiveMissile":0,"progressiveSuit":0,"scanVisorB":0,"screwAttackA":0,"seekerLauncherB":0,"shipGrapple":0,"shipMissile":0,"shipMissileExpansion":0,"shipsave":0,"spiderBallA":0,"spinBoost":0,"springBall":0},"msr":{"aexp":0,"baby":0,"barrier":0,"bombs":0,"burst":0,"charge":0,"drift":0,"energy":0,"grapple":0,"grapplesmall":0,"gravity":0,"high":0,"ice":0,"icesmall":0,"missile":0,"missilesmall":0,"morph":0,"mtank":0,"pbombs":0,"pbombsmall":0,"pbtank":0,"plasma":0,"plasmasmall":0,"progressiveBeam":0,"progressiveSuit":0,"pulse":0,"screw":0,"shield":0,"smtank":0,"space":0,"spider":0,"spring":0,"superm":0,"supermsmall":0,"wave":0,"wavesmall":0,"wide":0,"widesmall":0},"mzm":{"barrier":0,"bomb":0,"charge":0,"emergencyPistol":0,"energy":0,"full":0,"gravity":0,"grip":0,"high":0,"ice":0,"long":0,"missile":0,"morph":0,"pbomb":0,"plasma":0,"powerbeam":0,"screw":0,"smissile":0,"space":0,"speed":0,"ui1":0,"ui2":0,"ui3":0,"wave":0,"zeroSuit":0},"pb":{"artifact":0,"extra":0,"forceBall":0,"missileC":0,"powerBombA":0,"special":0,"templeball":0},"ph":{"affinityWeapon":0,"al1":0,"al2":0,"arc1":0,"arc2":0,"bigocto":0,"bomb":0,"boost":0,"ca1":0,"ca2":0,"coil":0,"combat":0,"deathalt":0,"doubleDamage":0,"doubleDamageA":0,"electroLob":0,"energy":0,"hammer":0,"imp":0,"invisibilityA":0,"jud":0,"magmaul":0,"missile":0,"morph":0,"octolith":0,"omega":0,"power":0,"scan":0,"shieldKey":0,"tank":0,"thermalPositioner":0,"uaExpansion":0,"vdo1":0,"vdo2":0,"volt":0},"sm":{"barrier":0,"bomb":0,"charge":0,"energy":0,"grapple":0,"gravity":0,"high":0,"hyperBeam":0,"ice":0,"missile":0,"morph":0,"pbombs":0,"plasma":0,"powerbeam":0,"reserve":0,"screw":0,"smissile":0,"space":0,"speed":0,"spring":0,"wave":0,"wide":0,"xray":0}};
@@ -64,6 +65,12 @@ let main = {
     );
   }
   
+  function addItemToSetIfGameNotInList(itemSet, gameExceptionList, currentGame, addThisValue) {
+    if (![...gameExceptionList].includes(currentGame)) {
+      itemSet.add(addThisValue);
+    }
+  }
+  
   function scanDataForLint(doProcessItemOrder = false, doProcessUnifiedSprites = false) {
     let greaterItemSet = new Set();
     let unifiedChecklist = {...unifiedIDCollection};
@@ -73,6 +80,7 @@ let main = {
     let totalExtraCount = 0;
     let totalBossCount = 0;
     let totalTypeCount = 0;
+    let gameExceptionList = ["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"];
     
     let gamesKeys = [...Object.values(main.games)];
     
@@ -125,9 +133,7 @@ let main = {
               }
               idsAddedDuringTheseSegments.add(segment.id);
             }
-            if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-              greaterItemSet.add(segment.id);
-            }
+            addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
             if (doesChecklist) {
               const useSprite = Object.hasOwn(segment, 'sprite');
               const propSprite = useSprite ? segment.sprite : segment.id;
@@ -148,9 +154,7 @@ let main = {
                     }
                   }
                   idsAddedDuringTheseSegments.add(localeId);
-                  if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-                    greaterItemSet.add(localeId);
-                  }
+                  addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
                 }
               }
             }
@@ -179,9 +183,7 @@ let main = {
               itemCount[item.id] = 1;
             }
           }
-          if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-            greaterItemSet.add(item.id);
-          }
+          addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
           if (doesChecklist) {
             const useSprite = Object.hasOwn(item, 'sprite');
             const propSprite = useSprite ? item.sprite : item.id;
@@ -200,9 +202,7 @@ let main = {
                   itemCount[localeId] = 1;
                 }
               }
-              if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-                greaterItemSet.add(localeId);
-              }
+              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
             }
           }
           if (typeCount[item.nodeType]) {
@@ -226,9 +226,7 @@ let main = {
               if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
                 idsAddedDuringTheseSegments.add(segment.id);
               }
-              if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-                greaterItemSet.add(segment.id);
-              }
+              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
               if (segment.locale) {
                 for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
                   let localeId = localeObj.id;
@@ -237,9 +235,7 @@ let main = {
                   }
                   if (!idsAddedDuringTheseSegments.has(localeId)) {
                     idsAddedDuringTheseSegments.add(localeId);
-                    if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-                      greaterItemSet.add(localeId);
-                    }
+                    addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
                   }
                 }
               }
@@ -248,18 +244,14 @@ let main = {
             if (!item.id || item.id === "-") {
               continue;
             }
-            if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-              greaterItemSet.add(item.id);
-            }
+            addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
             if (item.locale) {
               for (const [localeKey, localeObj] of Object.entries(item.locale)) {
                 let localeId = localeObj.id;
                 if (localeId === "-") {
                   continue;
                 }
-                if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-                  greaterItemSet.add(localeId);
-                }
+                addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
               }
             }
           }
@@ -272,9 +264,7 @@ let main = {
           continue;
         }
         ++totalExtraCount;
-        if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame)) {
-          greaterItemSet.add(item.id);
-        }
+        addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
         if (typeCount[item.nodeType]) {
           typeCount[item.nodeType] += 1;
         } else {
@@ -312,10 +302,10 @@ let main = {
       
       if (doProcessItemOrder) {
         console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
-        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame) && missingItems.length) {
+        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && missingItems.length) {
           console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
         }
-        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd"].includes(currentGame) && allSegments.length) {
+        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && allSegments.length) {
           console.debug("   segments:", allSegments);
           //console.debug(`segments for game ${currentGame}`, allSegments);
         }

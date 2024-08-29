@@ -41,6 +41,7 @@ Trademarked titles:
 - Metroid Prime: Federation Force (3DS)
 - Metroid: Samus Returns (3DS)
 - Metroid: Dread (Switch)
+- Metroid Prime 4: Beyond (Switch)
 
 Fangames and notable ROMhacks:
 

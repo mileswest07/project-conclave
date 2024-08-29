@@ -626,6 +626,8 @@
 .game-mpff .usesSprite .item-image.scan { background: url("images/mpff_spritesheet.png") -128px -128px; }
 .game-mpff .usesSprite .item-image.unused { background: url("images/mpff_spritesheet.png") -192px -128px; } /* UNUSED */
 
+/********* METROID PRIME 4: BEYOND (NS) *********/
+
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
 .game-m2ros .usesSprite .item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }
 .game-m2ros .usesSprite .item-image.spider { background: url("images/m2ros_spritesheet.png") -84px 0; }

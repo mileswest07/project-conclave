@@ -1,4 +1,7 @@
 # Project Conclave - A Video Game Item Collection Tracker and Dependency Explorer
+
+> _con·​clave_, noun, from Latin _con_ ("with") + _claves_ ("keys")
+
 Item tracker for a number of games, vanilla and randomized.
 
 Please report any issues you may find [on Github!](https://github.com/mileswest07/project-conclave/issues)

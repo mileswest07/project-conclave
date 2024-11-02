@@ -1,0 +1,603 @@
+{
+  "m2ros": {
+    "checklistWidth": 4,
+    "checklistLayout": [
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 6,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 22,
+        "segments": []
+      },
+      {
+        "name": "Metroids defeated",
+        "value": 0,
+        "start": 0,
+        "max": 49,
+        "segments": [
+          {
+            "id": "monsterDna",
+            "name": "Phase 1",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 2",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 4
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 3",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 8
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 4",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 10
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 5",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 6",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 7",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 7
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 8",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 9",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "id": "monsterDna",
+            "name": "Phase 10",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 9
+          }
+        ]
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bomb",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Pods",
+        "singleItemName": "Missile Pod",
+        "bg": "d82800",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "spiderBall",
+        "sprite": "spider",
+        "name": "Spider Ball",
+        "bg": "bca470",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 6,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "barrierA",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7b7b",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "sprite": "spring",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 10,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "sprite": "wide",
+        "name": "Spazer Beam",
+        "bg": "ffff80",
+        "itemId": 12,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "plasmaBeam",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 13,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "monster",
+        "sprite": "baby",
+        "name": "Baby Metroid",
+        "bg": "008080",
+        "itemId": 15,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "alpha",
+        "name": "Alpha Metroid",
+        "bossId": 103
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma Metroid",
+        "bossId": 104
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta Metroid",
+        "bossId": 105
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 106
+      },
+      {
+        "id": "larval",
+        "name": "Larval Metroid",
+        "bossId": 102
+      },
+      {
+        "id": "queen",
+        "name": "Queen Metroid",
+        "bossId": 107
+      },
+      {
+        "id": "arachnus",
+        "name": "Arachnus",
+        "bossId": 101
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Main Tunnel",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Area 1",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Area 2",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Area 3",
+        "color": "db2b00"
+      },
+      {
+        "id": 5,
+        "name": "Area 5",
+        "color": "db2b00"
+      },
+      {
+        "id": 6,
+        "name": "Final Area",
+        "color": "db2b00"
+      }
+    ],
+    "extras": [
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "nodeType": "save",
+        "extraId": 1003
+      },
+      {
+        "id": "missileRefill",
+        "name": "Missiles Reload",
+        "nodeType": "recharge",
+        "extraId": 1001
+      },
+      {
+        "id": "energyRefill",
+        "name": "Energy Recharge",
+        "nodeType": "recharge",
+        "extraId": 1002
+      },
+      {
+        "id": "monsterDna",
+        "name": "Metroids defeated",
+        "nodeType": "artifact",
+        "displayIcon": "monsterDna",
+        "sprite": "monsters",
+        "bg": "747474",
+        "extraId": 1004
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": [
+          {
+            "nodeType": "save",
+            "id": 1003
+          },
+          {
+            "nodeType": "battle",
+            "id": 103
+          },
+          {
+            "nodeType": "lock",
+            "id": 1004,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "elevator",
+                "transportToMapId": 2,
+                "toStartHubId": 11
+              },
+              {
+                "nodeType": "lock",
+                "id": 1004,
+                "reqdItemCount": 4,
+                "children": [
+                  {
+                    "nodeType": "elevator",
+                    "transportToMapId": 3,
+                    "toStartHubId": 21
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 1004,
+                    "reqdItemCount": 8,
+                    "children": [
+                      {
+                        "nodeType": "elevator",
+                        "transportToMapId": 4,
+                        "toStartHubId": 31
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 1004,
+                        "reqdItemCount": 4,
+                        "children": [
+                          {
+                            "nodeType": "battle",
+                            "id": 104
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 1004,
+                            "reqdItemCount": 2,
+                            "children": [
+                              {
+                                "nodeType": "elevator",
+                                "transportToMapId": 5,
+                                "toStartHubId": 41
+                              },
+                              {
+                                "nodeType": "lock",
+                                "id": 1004,
+                                "reqdItemCount": 4,
+                                "children": [
+                                  {
+                                    "nodeType": "lock",
+                                    "id": 1004,
+                                    "reqdItemCount": 7,
+                                    "children": [
+                                      {
+                                        "nodeType": "battle",
+                                        "id": 103
+                                      },
+                                      {
+                                        "nodeType": "lock",
+                                        "id": 1004,
+                                        "reqdItemCount": 1,
+                                        "children": [
+                                          {
+                                            "nodeType": "battle",
+                                            "id": 106
+                                          },
+                                          {
+                                            "nodeType": "lock",
+                                            "id": 1004,
+                                            "reqdItemCount": 1,
+                                            "children": [
+                                              {
+                                                "nodeType": "elevator",
+                                                "transportToMapId": 6,
+                                                "toStartHubId": 51
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 1004,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "battle",
+                            "id": 103
+                          },
+                          {
+                            "nodeType": "battle",
+                            "id": 104
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 11,
+        "nodeType": "start",
+        "mapId": 2,
+        "children": []
+      }
+    ],
+    "grid": "m2ros_grid.png"
+  }
+}

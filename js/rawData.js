@@ -1,3 +1,5 @@
+// To be kept for archival and organizational purposes
+// First convert to JSON object (js/rawdata.json), then split into component files (data/*.json)
 const rawData = {
   "mrd": {
     checklistWidth: 5,
@@ -1369,7 +1371,6 @@ const rawData = {
         bg: "808000",
         itemId: 9,
         nodeType: "upgrade",
-        nodeType: "expansion",
       },{
         id: "bombB",
         name: "Bombs",
@@ -4187,7 +4188,6 @@ const rawData = {
       },{
         id: "phaaze",
         name: "Phaaze accessible",
-        bg: "ffffff",
         extraId: 1201,
         nodeType: "event",
         bg: "35a0d8",
@@ -10703,7 +10703,6 @@ const rawData = {
         max: 1, // 2
         over: "MC_Chest",
         overText: "L1 Big Chest",
-        nodeType: "upgrade",
         segments: [ // assuming progressive bow
           /*{
             id: "bowArrows",

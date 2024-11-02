@@ -1,0 +1,648 @@
+{
+  "mzm": {
+    "checklistWidth": 6,
+    "checklistLayout": [
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Brinstar Morph Ball Orb Acquired"
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Brinstar Bombs Orb Acquired"
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Brinstar Varia Suit Orb Acquired"
+      },
+      {
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "lookupId": 18,
+            "value": 1,
+            "start": 0,
+            "max": 1,
+            "over": "Z_Orb",
+            "overText": "Ridley Unknown Item 3 Orb Acquired",
+            "clearIfScramble": true
+          },
+          {
+            "lookupId": 23,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 20,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Brinstar Long Beam Orb Acquired"
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Beam Beast Defeated"
+      },
+      {
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "lookupId": 9,
+            "value": 1,
+            "start": 0,
+            "max": 1,
+            "over": "Z_Orb",
+            "overText": "Crateria Unknown Item 1 Orb Acquired",
+            "clearIfScramble": true
+          },
+          {
+            "lookupId": 21,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Norfair Ice Beam Orb Acquired"
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Norfair Wave Beam Orb Acquired"
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Crateria Power Grip Orb Acquired"
+      },
+      {
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "lookupId": 12,
+            "value": 1,
+            "start": 0,
+            "max": 1,
+            "over": "Z_Orb",
+            "overText": "Kraid Unknown Item 2 Orb Acquired",
+            "clearIfScramble": true
+          },
+          {
+            "lookupId": 22,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Kraid Speed Booster Orb Acquired"
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Norfair High Jump Boots Orb Acquired"
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Norfair Screw Attack Orb Acquired"
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 12,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 50,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "lookupId": 24,
+        "value": 1,
+        "start": 0,
+        "max": 9,
+        "segments": []
+      },
+      {
+        "lookupId": 1004,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "value": 0,
+        "start": 0,
+        "max": 2,
+        "segments": [],
+        "id": "boss",
+        "name": "Bosses",
+        "sprite": "bosses",
+        "nodeType": "boss"
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "longBeamA",
+        "locale": {
+          "enUS": {
+            "id": "longBeam"
+          }
+        },
+        "sprite": "long",
+        "name": "Long Beam",
+        "bg": "7f2800",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Tanks",
+        "singleItemName": "Missiles",
+        "bg": "d82800",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeBeam",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "sprite": "charge",
+        "name": "Charge Beam",
+        "bg": "808000",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 7,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bomb",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "unknownItem1",
+        "sprite": "ui1",
+        "name": "Unknown Item 1",
+        "locale": {
+          "enUS": {
+            "id": "unknownItem1a"
+          }
+        },
+        "bg": "887878",
+        "itemId": 9,
+        "progressionToItemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "sprite": "grip",
+        "name": "Power Grip",
+        "bg": "00e8d8",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "unknownItem2",
+        "sprite": "ui2",
+        "name": "Unknown Item 2",
+        "locale": {
+          "enUS": {
+            "id": "unknownItem2a"
+          }
+        },
+        "bg": "887878",
+        "itemId": 12,
+        "progressionToItemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "sprite": "speed",
+        "name": "Speed Booster",
+        "bg": "ff0094",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierB",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "smissile",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missiles",
+        "bg": "007f0e",
+        "itemId": 17,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "unknownItem3",
+        "sprite": "ui3",
+        "name": "Unknown Item 3",
+        "locale": {
+          "enUS": {
+            "id": "unknownItem3a"
+          }
+        },
+        "bg": "887878",
+        "itemId": 18,
+        "progressionToItemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fullPowerSuit",
+        "sprite": "full",
+        "name": "Fully Powered Suit",
+        "bg": "ffb508",
+        "itemId": 20,
+        "specialCollectionBehavior": true,
+        "specialCollectionKey": "mzmFullPowerSuit",
+        "affectsItemIds": [
+          7,
+          10,
+          16
+        ],
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeam",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuit",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbomb",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bombs",
+        "bg": "98b830",
+        "itemId": 24,
+        "nodeType": "expansion"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "beambeast",
+        "name": "Beam Beast",
+        "bossId": 101,
+        "requires": [
+          "5x1|17x1"
+        ]
+      },
+      {
+        "id": "acidworm",
+        "name": "Acid Worm",
+        "bossId": 102
+      },
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 103
+      },
+      {
+        "id": "kirugiru",
+        "name": "Kiru Giru",
+        "bossId": 104
+      },
+      {
+        "id": "imago",
+        "name": "Imago",
+        "bossId": 105
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 106
+      },
+      {
+        "id": "mbrain",
+        "name": "Mother Brain",
+        "bossId": 107
+      },
+      {
+        "id": "chozoghost",
+        "name": "Ruins Test",
+        "bossId": 108
+      },
+      {
+        "id": "mridley",
+        "name": "Mecha Ridley",
+        "bossId": 109
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Brinstar",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Norfair",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Crateria",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Kraid",
+        "color": "009700"
+      },
+      {
+        "id": 5,
+        "name": "Ridley",
+        "color": "bf00bf"
+      },
+      {
+        "id": 6,
+        "name": "Tourian",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 7,
+        "name": "Chozodia",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 8,
+        "name": "Chozodia",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "chozoStatue",
+        "name": "Chozo Hint Statue",
+        "extraId": 1021,
+        "nodeType": "trigger",
+        "lockIds": [
+          1
+        ]
+      },
+      {
+        "id": "unused",
+        "name": "Map: Brinstar",
+        "extraId": 1011,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Norfair",
+        "extraId": 1012,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Kraid",
+        "extraId": 1013,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Ridley",
+        "extraId": 1014,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Mothership",
+        "extraId": 1015,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1001,
+        "nodeType": "lore"
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1003,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "zipline",
+        "name": "Zipline",
+        "sprite": "zipline",
+        "extraId": 1004,
+        "nodeType": "trigger",
+        "lockIds": [
+          1
+        ]
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "m1_grid.png"
+  }
+}

@@ -1,0 +1,816 @@
+{
+  "m1": {
+    "checklistWidth": 4,
+    "checklistLayout": [
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 8,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 21,
+        "segments": []
+      },
+      {
+        "lookupId": 101,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "boss",
+        "id": "kraid",
+        "sprite": "kraid",
+        "name": "Kraid Defeated"
+      },
+      {
+        "lookupId": 102,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "boss",
+        "id": "ridley",
+        "sprite": "ridley",
+        "name": "Ridley Defeated"
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Tanks",
+        "singleItemName": "Missiles",
+        "bg": "d82800",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "longBeamA",
+        "locale": {
+          "enUS": {
+            "id": "longBeam"
+          }
+        },
+        "sprite": "long",
+        "name": "Long Beam",
+        "bg": "7f2800",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bomb",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 8,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 11,
+        "nodeType": "slot",
+        "slotType": "beam"
+      },
+      {
+        "id": "barrierA",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7b7b",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 101
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 102
+      },
+      {
+        "id": "mbrain",
+        "name": "Mother Brain",
+        "bossId": 103
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Brinstar",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Norfair",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Kraid",
+        "color": "009700"
+      },
+      {
+        "id": 4,
+        "name": "Ridley",
+        "color": "bf00bf"
+      },
+      {
+        "id": 5,
+        "name": "Tourian",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1001,
+        "nodeType": "event"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": [
+          {
+            "nodeType": "upgrade",
+            "id": 3,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "lock",
+            "id": 3,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 4,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "expansion",
+                "id": 5,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "elevator",
+                "transportToMapId": 2,
+                "toStartHubId": 11
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 6,
+                    "isRandomizableItem": true
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "upgrade",
+                    "id": 7,
+                    "isRandomizableItem": true
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 101,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 102,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "elevator",
+                            "transportToMapId": 5,
+                            "toStartHubId": 41
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "slot",
+                        "id": 8,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 4,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 9,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 12,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 5,
+                    "isRandomizableItem": true,
+                    "hubId": 4
+                  }
+                ],
+                "vineToHubId": 4
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 9,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 3,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "elevator",
+                    "transportToMapId": 3,
+                    "toStartHubId": 21
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 5,
+                "isRandomizableItem": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 11,
+        "nodeType": "start",
+        "mapId": 2,
+        "children": [
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "slot",
+                    "id": 8,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 9,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 5,
+                        "isRandomizableItem": true
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 4,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 10,
+                        "isRandomizableItem": true
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 11,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "elevator",
+                "transportToMapId": 4,
+                "toStartHubId": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 21,
+        "nodeType": "start",
+        "mapId": 3,
+        "children": [
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 5,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "dropdown",
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 22
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "boss",
+                    "id": 101,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "count": 15
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 5,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ],
+                "hubId": 22
+              }
+            ],
+            "vineToHubId": 22
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 22
+              }
+            ]
+          },
+          {
+            "nodeType": "return",
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 31,
+        "nodeType": "start",
+        "mapId": 4,
+        "children": [
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 5,
+                "isRandomizableItem": true,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "boss",
+            "id": 102,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "count": 15
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 2,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 5,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 41,
+        "nodeType": "start",
+        "mapId": 5,
+        "children": [
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 2,
+            "children": [
+              {
+                "nodeType": "boss",
+                "id": 103,
+                "children": [
+                  {
+                    "nodeType": "event",
+                    "id": 1001,
+                    "children": [
+                      {
+                        "nodeType": "end"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "grid": "m1_grid.png"
+  }
+}

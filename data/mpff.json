@@ -1,0 +1,222 @@
+{
+  "mpff": {
+    "checklistWidth": 4,
+    "checklistLayout": [
+      {
+        "lookupId": 1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 0,
+        "start": 0,
+        "max": 75,
+        "segments": [],
+        "clearIfScramble": true
+      }
+    ],
+    "items": [
+      {
+        "id": "repairCapsule",
+        "name": "Repair Capsule",
+        "sprite": "repair",
+        "bg": "9464e4",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shieldGenerator",
+        "name": "Shield Generator",
+        "sprite": "shield",
+        "bg": "9464e4",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileB",
+        "name": "Missile",
+        "sprite": "missile",
+        "bg": "fea800",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileB",
+        "name": "Super Missile",
+        "sprite": "super",
+        "bg": "fea800",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "flameShot",
+        "name": "Flame Shot",
+        "sprite": "flame",
+        "bg": "fea800",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "freezeShot",
+        "name": "Freeze Shot",
+        "sprite": "freeze",
+        "bg": "fea800",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shockShot",
+        "name": "Shock Shot",
+        "sprite": "shock",
+        "bg": "fea800",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "proximityBomb",
+        "name": "Proximity Bomb",
+        "sprite": "mine",
+        "bg": "fea800",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "slowBeam",
+        "name": "Slow Beam",
+        "sprite": "slow",
+        "bg": "b4ff00",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "decoy",
+        "name": "Decoy",
+        "sprite": "decoy",
+        "bg": "b4ff00",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "scanBolt",
+        "name": "Scan Bolt",
+        "sprite": "scan",
+        "bg": "b4ff00",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "goldMedal",
+        "name": "Gold Medals",
+        "bg": "c0c6c0",
+        "itemId": 12,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": [],
+    "grid": "mp2e_grid.png"
+  }
+}

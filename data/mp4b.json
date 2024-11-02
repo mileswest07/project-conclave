@@ -1,0 +1,103 @@
+{
+  "mp4b": {
+    "checklistWidth": 4,
+    "checklistLayout": [
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "combatVisor",
+        "name": "Combat Visor",
+        "bg": "80d0ff",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBeamA",
+        "name": "Power Beam",
+        "bg": "ffb508",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "scanVisorB",
+        "name": "Scan Visor",
+        "bg": "bca470",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeam",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "name": "Charge Beam",
+        "bg": "808000",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombC",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileC",
+        "name": "Missile Launcher",
+        "bg": "d82800",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": [],
+    "grid": "mp2e"
+  }
+}

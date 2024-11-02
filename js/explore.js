@@ -410,7 +410,7 @@ let interaction = {
                 let imageSource = document.createElementNS("http://www.w3.org/2000/svg", "image");
                 imageSource.setAttribute("id", `source-${fileName}`);
                 
-                if (["mp, mp2e", "mcon"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
+                if (["mp, mp2e", "mcon", "sm"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
                   switch (fileName) {
                     case "m1_spritesheet":
                       sourcex = 168;
@@ -439,6 +439,10 @@ let interaction = {
                     case "sm_spritesheet":
                       sourcex = 252;
                       sourcey = 168;
+                      break;
+                    case "mf_spritesheet":
+                      sourcex = 258;
+                      sourcey = 215;
                       break;
                     default:
                       break;

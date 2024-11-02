@@ -1,0 +1,686 @@
+{
+  "alttp": {
+    "checklistWidth": 9,
+    "items": [
+      {
+        "id": "bowArrows",
+        "name": "Bow",
+        "start": 0,
+        "max": 2,
+        "over": "MC_Chest",
+        "overText": "L1 Big Chest",
+        "segments": [
+          {
+            "id": "bowArrows",
+            "name": "Arrows",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "L1 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "bowSilver",
+            "name": "Silver Arrows",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "boomerang",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "over": "MC_Chest",
+        "overText": "HC Basement Chest",
+        "segments": [
+          {
+            "id": "boomerang",
+            "name": "Boomerang",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "HC Basement Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "magicRang",
+            "name": "Magical Boomerang",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "hookshot",
+        "name": "Hookshot",
+        "start": 0,
+        "max": 1,
+        "over": "MC_Chest",
+        "overText": "D2 Big Chest",
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "bombs",
+        "name": "Bombs",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 0
+      },
+      {
+        "id": "powder",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "segments": [
+          {
+            "id": "mushroom",
+            "name": "Mushroom",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "powder",
+            "name": "Magic Powder",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "power",
+        "name": "Tower of Hera - Pendent of Power",
+        "start": 0,
+        "max": 1,
+        "back": "toh",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "fireRod",
+        "name": "Fire Rod",
+        "start": 0,
+        "max": 1,
+        "over": "MC_Chest",
+        "overText": "D3 Big Chest",
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "iceRod",
+        "name": "Ice Rod",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "bombos",
+        "name": "Bombos",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "ether",
+        "name": "Ether",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "quake",
+        "name": "Quake",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "wisdom",
+        "name": "Desert Palace - Pendent of Wisdom",
+        "start": 0,
+        "max": 1,
+        "back": "dp",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "courage",
+        "name": "Eastern Palace - Pendent of Courage",
+        "start": 0,
+        "max": 1,
+        "back": "ep",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "lamp",
+        "name": "Lamp",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "hammer",
+        "name": "Magic Hammer",
+        "start": 0,
+        "max": 1,
+        "over": "MC_Chest",
+        "overText": "D1 Big Chest",
+        "nodeType": "upgrade",
+        "segments": [],
+        "value": 1
+      },
+      {
+        "id": "flute",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "segments": [
+          {
+            "id": "shovel",
+            "name": "Shovel",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "flute",
+            "name": "Flute",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "bird",
+            "name": "Flute (Warping enabled)",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 0
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "net",
+        "name": "Bug-Catching Net",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "book",
+        "name": "Book of Mudora",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "agahnim",
+        "name": "Agahnim's Tower - Agahnim defeated",
+        "start": 0,
+        "max": 1,
+        "back": "at",
+        "segments": [],
+        "nodeType": "event",
+        "value": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "bottle",
+        "name": "Bottle",
+        "start": 0,
+        "max": 4,
+        "segments": [],
+        "nodeType": "expansion",
+        "value": 1
+      },
+      {
+        "id": "somaria",
+        "name": "Cane of Somaria",
+        "start": 0,
+        "max": 1,
+        "over": "MC_Chest",
+        "overText": "D6 Big Chest",
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "byrna",
+        "name": "Cane of Byrna",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "cape",
+        "name": "Magic Cape",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "mirror",
+        "name": "Magic Mirror",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "displayIfScramble": true
+      },
+      {
+        "id": "sword",
+        "name": "",
+        "start": 0,
+        "max": 4,
+        "segments": [
+          {
+            "id": "sword",
+            "name": "Fighter's Sword",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "masterSword",
+            "name": "Master Sword",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "temperedSword",
+            "name": "Tempered Sword",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "goldenSword",
+            "name": "Golden Sword",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "shield",
+        "name": "",
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "id": "shield",
+            "name": "Fighter's Shield",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "redShield",
+            "name": "Red Sword",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "mirrorShield",
+            "name": "Mirror Sword",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "D7 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "greenJerkin",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "segments": [
+          {
+            "id": "blueMail",
+            "name": "Blue Mail",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "D5 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "redMail",
+            "name": "Red Mail",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "GT Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "boots",
+        "name": "Pegasus Boots",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "glove",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "segments": [
+          {
+            "id": "glove",
+            "name": "Power Glove",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "L2 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          },
+          {
+            "id": "mitt",
+            "name": "Titan's Mitt",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "D4 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1
+          }
+        ],
+        "value": 1
+      },
+      {
+        "id": "flipper",
+        "name": "Zora Flipper",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "pearl",
+        "name": "Moon Pearl",
+        "start": 0,
+        "max": 1,
+        "over": "MC_Chest",
+        "overText": "L3 Big Chest",
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "halfMagic",
+        "name": "Half Magic",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 1
+      },
+      {
+        "id": "arrowsExp",
+        "name": "Arrow Capacity",
+        "start": 0,
+        "max": 8,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 0
+      },
+      {
+        "id": "bombsExp",
+        "name": "Bomb Capacity",
+        "start": 0,
+        "max": 8,
+        "segments": [],
+        "nodeType": "upgrade",
+        "value": 0
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "clearIfScramble": true
+      },
+      {
+        "id": "crystal",
+        "name": "Palace of Darkness - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "pod",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Swamp Palace - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "sp",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Skull Woods - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "sw",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Thieves' Town - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "tt",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Ice Palace - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "ip",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Misery Mire - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "mm",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      },
+      {
+        "id": "crystal",
+        "name": "Turtle Rock - Crystal",
+        "start": 0,
+        "max": 1,
+        "back": "tr",
+        "segments": [],
+        "nodeType": "artifact",
+        "value": 1
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": []
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "mf": {
+    "checklistWidth": 7,
+    "checklistLayout": [
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Data",
+        "overText": "Operations Deck - Data Room"
+      },
+      {
+        "lookupId": 12,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Data",
+        "overText": "Sector 3 PYR - Data Room"
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Data",
+        "overText": "Sector 5 ARC - Data Room"
+      },
+      {
+        "lookupId": 23,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Data",
+        "overText": "Sector 4 AQA - Data Room"
+      },
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Arachnus Defeated"
+      },
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Data",
+        "overText": "Sector 2 TRO - Data Room"
+      },
+      {
+        "lookupId": 17,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Data",
+        "overText": "Sector 5 ARC - Data Room"
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "Elephant Bird Defeated"
+      },
+      {
+        "lookupId": 16,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "Wide Laser Core-X Defeated"
+      },
+      {
+        "lookupId": 20,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "Nettori Defeated"
+      },
+      {
+        "lookupId": 24,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "SR-BOX 2 Defeated"
+      },
+      {
+        "lookupId": 27,
+        "value": 0,
+        "start": 0,
+        "max": 1
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Zazabi Defeated"
+      },
+      {
+        "lookupId": 10,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Serris Defeated"
+      },
+      {
+        "lookupId": 19,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Yakuza Defeated"
+      },
+      {
+        "lookupId": 25,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Neo-Ridley-X Defeated"
+      },
+      {
+        "lookupId": 13,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "Barrier Core-X Defeated"
+      },
+      {
+        "lookupId": 21,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "over": "F_Boss",
+        "overText": "Nightmare Defeated"
+      },
+      {
+        "lookupId": 26,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": [],
+        "clearIfScramble": true
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 20,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 48,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 32,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 22,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "securityL0",
+        "sprite": "securityL0",
+        "name": "Security Level 0",
+        "bg": "c8d8d8",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileA",
+        "name": "Missiles",
+        "sprite": "missileData",
+        "bg": "d82800",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "alreadyHasMainItem": true,
+        "bg": "d82800",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamC",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "name": "Charge Beam",
+        "sprite": "chargeBeam",
+        "bg": "808000",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "securityL1",
+        "sprite": "securityL1",
+        "name": "Security Level 1",
+        "bg": "28d8f8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "name": "Bombs",
+        "sprite": "bombData",
+        "bg": "3800a8",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "name": "Hi-Jump and Jumpball",
+        "sprite": "high",
+        "bg": "c0a8d8",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "name": "Speed Booster",
+        "sprite": "speed",
+        "bg": "ff0094",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "securityL2",
+        "sprite": "securityL2",
+        "name": "Security Level 2",
+        "bg": "90f890",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missile",
+        "name": "Super Missiles",
+        "sprite": "superMissile",
+        "bg": "007f0e",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierC",
+        "name": "Varia Suit",
+        "sprite": "barrier",
+        "bg": "c8f048",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "securityL3",
+        "sprite": "securityL3",
+        "name": "Security Level 3",
+        "bg": "f8f838",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceMissile",
+        "name": "Ice Missiles",
+        "sprite": "iceMissile",
+        "bg": "2038ec",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeamB",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "name": "Wide Beam",
+        "sprite": "wideBeam",
+        "bg": "ffff80",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBomb",
+        "name": "Power Bombs",
+        "sprite": "pbombData",
+        "bg": "98b830",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbomb",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "alreadyHasMainItem": true,
+        "bg": "98b830",
+        "itemId": 18,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "spaceJump",
+        "name": "Space Jump",
+        "sprite": "space",
+        "bg": "00a0e0",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeamA",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "name": "Plasma Beam",
+        "sprite": "plasmaBeam",
+        "bg": "00ff08",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuit",
+        "name": "Gravity Suit",
+        "sprite": "gravity",
+        "bg": "602880",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "securityL4",
+        "sprite": "securityL4",
+        "name": "Security Level 4",
+        "bg": "f82828",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissile",
+        "name": "Diffusion Effect",
+        "sprite": "diffusion",
+        "bg": "644080",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeamB",
+        "locale": {
+          "enUS": {
+            "id": "waveBeam"
+          }
+        },
+        "name": "Wave Beam",
+        "sprite": "waveBeam",
+        "bg": "92278f",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "name": "Screw Attack",
+        "sprite": "screw",
+        "bg": "69cd69",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fullPowerSuit",
+        "name": "Final Suit",
+        "sprite": "final",
+        "bg": "ff7e00",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeamC",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "name": "Ice Beam",
+        "sprite": "iceBeam",
+        "bg": "2038ec",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "arachnus",
+        "name": "Arachnus",
+        "bossId": 101
+      },
+      {
+        "id": "elephantbird",
+        "name": "Core-X",
+        "bossId": 102
+      },
+      {
+        "id": "zazabi",
+        "name": "Zazabi",
+        "bossId": 103
+      },
+      {
+        "id": "serris",
+        "name": "Serris",
+        "bossId": 104
+      },
+      {
+        "id": "srboxa",
+        "name": "Security Robot B.O.X.",
+        "bossId": 105
+      },
+      {
+        "id": "variacorex",
+        "name": "Mega Core-X",
+        "bossId": 106
+      },
+      {
+        "id": "boilersci",
+        "name": "Core-X",
+        "bossId": 107
+      },
+      {
+        "id": "nightmare",
+        "name": "Nightmare",
+        "bossId": 108
+      },
+      {
+        "id": "yakuza",
+        "name": "Yakuza",
+        "bossId": 109
+      },
+      {
+        "id": "nettori",
+        "name": "Nettori",
+        "bossId": 110
+      },
+      {
+        "id": "srboxb",
+        "name": "Security Robot B.O.X.",
+        "bossId": 111
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley-X",
+        "bossId": 112
+      },
+      {
+        "id": "saxfinal",
+        "name": "SA-X",
+        "bossId": 113
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 114
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Main Deck",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Sector 1 - SRX",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Sector 2 - TRO",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Sector 3 - PYR",
+        "color": "db2b00"
+      },
+      {
+        "id": 5,
+        "name": "Sector 4 - AQA",
+        "color": "009700"
+      },
+      {
+        "id": 6,
+        "name": "Sector 5 - ARC",
+        "color": "bf00bf"
+      },
+      {
+        "id": 7,
+        "name": "Sector 6 - NOC",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 8,
+        "name": "Restricted Lab",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "mainDeck",
+        "name": "First Mission",
+        "extraId": 1005,
+        "nodeType": "event"
+      },
+      {
+        "id": "quarantineBay",
+        "name": "Quarantine Bay",
+        "extraId": 1006,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector1SRX",
+        "name": "First Mission in Sector 1",
+        "extraId": 1011,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector2TRO",
+        "name": "First Mission to Sector 2",
+        "extraId": 1012,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector2TRO",
+        "name": "First Mission in Sector 2",
+        "extraId": 1021,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector4AQA",
+        "name": "First Mission to Sector 4",
+        "extraId": 1021,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector4AQA",
+        "name": "First Mission in Sector 4",
+        "extraId": 1041,
+        "nodeType": "event"
+      },
+      {
+        "id": "pumpControlUnit",
+        "name": "Water Pump Control",
+        "message": "Water level lowered.",
+        "extraId": 1042,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "sector3PYR",
+        "name": "First Mission to Sector 3",
+        "extraId": 1043,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector3PYR",
+        "name": "First Mission in Sector 3",
+        "extraId": 1031,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector6NOC",
+        "name": "First Mission to Sector 6",
+        "extraId": 1032,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector6NOC",
+        "name": "First Mission in Sector 6",
+        "extraId": 1061,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "First Mission to Sector 5",
+        "extraId": 1062,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "First Mission in Sector 5",
+        "extraId": 1051,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector3PYR",
+        "name": "Emergency in Sector 3",
+        "extraId": 1052,
+        "nodeType": "event"
+      },
+      {
+        "id": "mainBoiler",
+        "name": "Boiler Room",
+        "message": "Cooling unit operational.",
+        "extraId": 1033,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "mainDeck",
+        "name": "Main Elevator Power Restored",
+        "extraId": 1034,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "mainDeck",
+        "name": "To the Habitation Deck",
+        "extraId": 1035,
+        "nodeType": "event"
+      },
+      {
+        "id": "etedach",
+        "name": "Habitation Deck Shutters",
+        "sprite": "animals",
+        "message": "Lock disengaged. Gate opening.",
+        "extraId": 1007,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "Return to Sector 5",
+        "extraId": 1008,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "Power Bomb Retrieval",
+        "extraId": 1053,
+        "nodeType": "event"
+      },
+      {
+        "id": "mainDeck",
+        "name": "Nettori Power Down",
+        "extraId": 1054,
+        "nodeType": "event"
+      },
+      {
+        "id": "mainDeck",
+        "name": "Reactor Core Access",
+        "extraId": 1009,
+        "nodeType": "event"
+      },
+      {
+        "id": "reactorCore",
+        "name": "Auxiliary Power Station",
+        "message": "Auxiliary power engaged.",
+        "extraId": 1071,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "To Sector 5 Nightmare",
+        "extraId": 1022,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector5ARC",
+        "name": "Nightmare Hunting",
+        "extraId": 1055,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector6NOC",
+        "name": "To Sector 6 SR-BOX",
+        "extraId": 1044,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector6NOC",
+        "name": "Track the SR-BOX",
+        "extraId": 1063,
+        "nodeType": "event"
+      },
+      {
+        "id": "restrictedLab",
+        "name": "Metroid Habitat",
+        "extraId": 1072,
+        "nodeType": "event"
+      },
+      {
+        "id": "sector1SRX",
+        "name": "Through Sector 1 Depths",
+        "extraId": 1073,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Final Mission",
+        "extraId": 1013,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Beaten the Game Once",
+        "extraId": 1074,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "mainDeck",
+        "name": "Operations Room",
+        "extraId": 1075,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Room",
+        "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "rechargeRoom",
+        "name": "Recharge Room",
+        "extraId": 1001,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "dataRoom",
+        "name": "Data Room",
+        "extraId": 1004,
+        "nodeType": "event"
+      },
+      {
+        "id": "navigationRoom",
+        "name": "Navigation Room",
+        "extraId": 1003,
+        "nodeType": "lore"
+      },
+      {
+        "id": "energyRefill",
+        "name": "Energy Refill Station",
+        "extraId": 1081,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "missileRefill",
+        "name": "Missile Restock Station",
+        "extraId": 1082,
+        "nodeType": "recharge"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mf_grid.png"
+  }
+}

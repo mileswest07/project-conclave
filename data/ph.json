@@ -1,0 +1,718 @@
+{
+  "ph": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 24,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 7,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 9,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 12,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "name": "Celestial Archives 1",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 15,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1011,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "Alinos 1",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 16,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1012,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "VDO 1",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 17,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1013,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "Arcterra 1",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 18,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1014,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "lookupId": 23,
+            "value": 0,
+            "start": 0,
+            "max": 8
+          },
+          {
+            "lookupId": 1019,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          },
+          {
+            "lookupId": 1020,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "name": "Celestial Archives 2",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 19,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1015,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "Alinos 2",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 20,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1016,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "VDO 2",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 21,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1017,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      },
+      {
+        "name": "Arcterra 2",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 22,
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "lookupId": 1018,
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "clearIfScramble": true
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "powerBeam",
+        "name": "Power Beam",
+        "sprite": "power",
+        "bg": "ffb508",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombB",
+        "name": "Bombs",
+        "sprite": "bomb",
+        "bg": "3800a8",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostBall",
+        "name": "Boost Ball",
+        "sprite": "boost",
+        "bg": "ff0094",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "uaExpansion",
+        "name": "UA Expansions",
+        "singleItemName": "UA Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "98b830",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "missileTank",
+        "name": "Missile Expansions",
+        "sprite": "tank",
+        "singleItemName": "Missile Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "d82800",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTankA",
+        "name": "Energy Tanks",
+        "sprite": "energy",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 7,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "missileD",
+        "name": "Missile Launcher",
+        "sprite": "missile",
+        "bg": "886848",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "battlehammer",
+        "name": "Battlehammer",
+        "sprite": "hammer",
+        "bg": "22b14c",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "judicator",
+        "name": "Judicator",
+        "sprite": "jud",
+        "bg": "6f3198",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "voltDriver",
+        "name": "Volt Driver",
+        "sprite": "volt",
+        "bg": "ffbc15",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shockCoil",
+        "name": "Shock Coil",
+        "sprite": "coil",
+        "bg": "303898",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magmaul",
+        "name": "Magmaul",
+        "sprite": "magmaul",
+        "bg": "ff7e00",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "imperialist",
+        "name": "Imperialist",
+        "sprite": "imp",
+        "bg": "ed1c24",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "alimbicArtifactCA1",
+        "name": "Alimbic Artifacts",
+        "sprite": "ca1",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "00f0c8",
+        "itemId": 15,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactAl1",
+        "name": "Alimbic Artifacts",
+        "sprite": "al1",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "f09000",
+        "itemId": 16,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactVDO1",
+        "name": "Alimbic Artifacts",
+        "sprite": "vdo1",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "2090a8",
+        "itemId": 17,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactArc1",
+        "name": "Alimbic Artifacts",
+        "sprite": "arc1",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "2858a0",
+        "itemId": 18,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactCA2",
+        "name": "Alimbic Artifacts",
+        "sprite": "ca2",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "b8e008",
+        "itemId": 19,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactAl2",
+        "name": "Alimbic Artifacts",
+        "sprite": "al2",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "f00000",
+        "itemId": 20,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactVDO2",
+        "name": "Alimbic Artifacts",
+        "sprite": "vdo2",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "0868e0",
+        "itemId": 21,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "alimbicArtifactArc2",
+        "name": "Alimbic Artifacts",
+        "sprite": "arc2",
+        "singleItemName": "Alimbic Artifact",
+        "bg": "184898",
+        "itemId": 22,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "octolith",
+        "name": "Octoliths",
+        "sprite": "bigocto",
+        "singleItemName": "Octolith",
+        "bg": "008080",
+        "itemId": 23,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "omegaCannon",
+        "name": "Omega Cannon",
+        "sprite": "omega",
+        "bg": "c8d8d8",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "unused",
+        "name": "Possible Hunter Encounter",
+        "bossId": 101,
+        "nodeType": "battle"
+      },
+      {
+        "id": "magmaspawn",
+        "name": "Magma Spawn",
+        "bossId": 105
+      },
+      {
+        "id": "arcticspawn",
+        "name": "Arctic Spawn",
+        "bossId": 106
+      },
+      {
+        "id": "bossaa",
+        "name": "Cretaphid 1",
+        "bossId": 111
+      },
+      {
+        "id": "bossab",
+        "name": "Cretaphid 2",
+        "bossId": 113
+      },
+      {
+        "id": "bossac",
+        "name": "Cretaphid 3",
+        "bossId": 126
+      },
+      {
+        "id": "bossad",
+        "name": "Cretaphid 4",
+        "bossId": 128
+      },
+      {
+        "id": "bossba",
+        "name": "Slench 1",
+        "bossId": 112
+      },
+      {
+        "id": "bossbb",
+        "name": "Slench 2",
+        "bossId": 114
+      },
+      {
+        "id": "bossbc",
+        "name": "Slench 3",
+        "bossId": 125
+      },
+      {
+        "id": "bossbd",
+        "name": "Slench 4",
+        "bossId": 127
+      },
+      {
+        "id": "goreaa",
+        "name": "Gorea 1",
+        "bossId": 131
+      },
+      {
+        "id": "goreab",
+        "name": "Gorea 2",
+        "bossId": 132
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Celestial Archives",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Alinos",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Vesper Defense Outpost",
+        "color": "009700"
+      },
+      {
+        "id": 4,
+        "name": "Arcterra",
+        "color": "bf00bf"
+      },
+      {
+        "id": 5,
+        "name": "Oubliette",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Teleporter A",
+        "nodeType": "teleport",
+        "extraId": 1001
+      },
+      {
+        "id": "unused",
+        "name": "Teleporter B",
+        "nodeType": "teleport",
+        "extraId": 1002
+      },
+      {
+        "id": "unused",
+        "name": "Spire Event",
+        "nodeType": "event",
+        "extraId": 1003
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1011,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1012,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1013,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1014,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1015,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1016,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1017,
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "sprite": "octolith",
+        "name": "Octolith",
+        "nodeType": "event",
+        "extraId": 1018,
+        "bg": "008080"
+      },
+      {
+        "id": "alimbicCannon",
+        "name": "Alimbic Cannon Control Room",
+        "nodeType": "event",
+        "extraId": 1019,
+        "bg": "ffffff"
+      },
+      {
+        "id": "oubliette",
+        "name": "Oubliette unlocked",
+        "nodeType": "event",
+        "extraId": 1020,
+        "bg": "ffffff"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mph_grid.png"
+  }
+}

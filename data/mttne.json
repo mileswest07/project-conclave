@@ -1,0 +1,665 @@
+{
+  "mttne": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 20,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 25,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 22,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 26,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 23,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 29,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 27,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 30,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 21,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 32,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 31,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 28,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 14,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 50,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 20,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "lookupId": 24,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 11,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 5,
+        "segments": []
+      },
+      {
+        "name": "X-Metroids defeated",
+        "type": "counter",
+        "value": 0,
+        "start": 0,
+        "max": 25,
+        "segments": [
+          {
+            "id": "monsterDna",
+            "name": "First batch",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 5
+          },
+          {
+            "id": "monsterDna",
+            "name": "Second batch",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 5,
+            "max": 10
+          },
+          {
+            "id": "monsterDna",
+            "name": "Third batch",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 10,
+            "max": 15
+          },
+          {
+            "id": "monsterDna",
+            "name": "Final batch",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 15,
+            "max": 25
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "longBeamA",
+        "locale": {
+          "enUS": {
+            "id": "longBeam"
+          }
+        },
+        "sprite": "long",
+        "name": "Long Beam",
+        "bg": "7f2800",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missiles",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "bg": "d82800",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "wallJumpBoots",
+        "sprite": "wall",
+        "name": "Wall Jump Boots",
+        "bg": "ff7e00",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "aquadiaKey",
+        "sprite": "key",
+        "name": "Keys",
+        "singleItemName": "Key",
+        "bg": "ffffff",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "powerGrip",
+        "sprite": "grip",
+        "name": "Power Grip",
+        "bg": "00e8d8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "steelarisGear",
+        "sprite": "gear",
+        "name": "Gears",
+        "singleItemName": "Gear",
+        "bg": "ffffff",
+        "itemId": 8,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bombs",
+        "name": "Bomb",
+        "bg": "3800a8",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "flameShotA",
+        "sprite": "fire",
+        "name": "Fire Beam",
+        "bg": "ff4a4a",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "Hi-Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamA",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "sprite": "charge",
+        "name": "Charge Beam",
+        "bg": "808000",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "sprite": "spring",
+        "name": "Jump Ball",
+        "bg": "886848",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "sprite": "speed",
+        "name": "Speed Booster",
+        "bg": "ff0094",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "supers",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "bg": "007f0e",
+        "itemId": 16,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "waveBeamD",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "sprite": "wide",
+        "name": "Spazer Beam",
+        "bg": "ffff80",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magneticShieldTank",
+        "sprite": "shields",
+        "name": "Magnetic Shield Tanks",
+        "singleItemName": "Magnetic Shield Tank",
+        "bg": "007098",
+        "itemId": 19,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "gravitySuitD",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "seekerLauncher",
+        "sprite": "seeker",
+        "name": "Seeker Missiles",
+        "bg": "644080",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBall",
+        "sprite": "spider",
+        "name": "Spider Ball",
+        "bg": "bca470",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeamE",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbombs",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "bg": "98b830",
+        "itemId": 24,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "phazonSuit",
+        "sprite": "phazon",
+        "name": "Phazon Suit",
+        "bg": "282018",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeamE",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "adapter",
+        "sprite": "adapter",
+        "name": "Bomb-Beam Adapter",
+        "bg": "98b830",
+        "itemId": 28,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fullPowerSuit",
+        "sprite": "chozo",
+        "name": "Chozo Charm",
+        "bg": "80d0ff",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shieldGenerator",
+        "sprite": "hyper",
+        "name": "Hyper Shield",
+        "bg": "007098",
+        "itemId": 31,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileB",
+        "sprite": "mega",
+        "name": "Super Blast",
+        "bg": "007f0e",
+        "itemId": 32,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "alpha",
+        "name": "Alpha X-Metroid",
+        "bossId": 111
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma X-Metroid",
+        "bossId": 112
+      },
+      {
+        "id": "delta",
+        "name": "Grabber Gamma X-Metroid",
+        "bossId": 113
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta X-Metroid",
+        "bossId": 114
+      },
+      {
+        "id": "omega",
+        "name": "Omega X-Metroid",
+        "bossId": 115
+      }
+    ],
+    "areas": [],
+    "extras": [
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mph_grid.png"
+  }
+}

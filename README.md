@@ -66,6 +66,18 @@ Randomizers, Multiworlds, and Crossrandomizers:
 
 Currently not ready for use, and has been disabled. This is intended to be the next major upgrade of the tracker.
 
+## Development
+
+This project is meant to run on an internet browser. So far the tested browsers include Firefox and Chrome. Styling issues can be submitted as tickets and will be addressed accordingly.
+
+This platform reads a JSON file local to the server. To test it locally, make sure Node, NPM, and NPX are globally installed, then simply spin up a local server using:
+
+```
+$ npx http-server --proxy http://localhost:8080
+```
+
+In order to circumvent this, some code may be necessarily refactored in order to read `rawData.js` as an imported JS file, instead. It is recommended to sync changes between `rawdata.json` and `rawData.js` before submitting to main branch.
+
 ## Credits
 
 Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.

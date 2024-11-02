@@ -47,40 +47,36 @@ let interaction = {
     "d": "md", // Metroid Dread
   };
   
-  const lockNodeTypes = [
-    "return", //        *> oneway_inwards, pointing up
-    "shortcut", //      A access_inwards, pointing up
-    "access", //        A access_outwards, pointing down
-    "bolt", //           
-    "bracketed", //     
-    "lock", //          *l
-    "dropdown", //      *> oneway_outwards, pointing down
-  ];
-  
   const nodeTypes = [
     "none",
-    "start", //         *G
-    "end", //           *G
-    "return", //        *> oneway_inwards, pointing up
-    "lock", //          *l
-    "dropdown", //      *> oneway_outwards, pointing down
-    "boss", //          G battle_major, also for cinematic minibosses and unique battles
-    "elevator", //      G transport_major
-    "battle", //        G battle_minor, for noncinematic elite mooks, PH Hunter arenas, kill rooms, Echoes Grapple Pirates, etc
-    "teleport", //      G transport_minor
-    "artifact", //      r item_goal, item_major, treasure
-    "upgrade", //       r item_req
-    "slot", //          S item_slot
-    "expansion", //     u item_unreq
-    "event", //         G environ_goal
-    "area", //          G
-    "map", //           G
-    "trigger", //       r environ_req
-    "toggle", //        S environ_slot
-    "save", //          u
-    "recharge", //      u
-    "lore", //          u environ_unreq
-    "easter", //        u
+    "start", //         circle
+    "end", //           circle
+    "return", //        up arrow
+    "shortcut", //      hexagon, top and bottom sectors are barred
+    "bolt", //          hexagon, one vertex is outlined
+    "access", //        hexagon
+    "bracketed", //     hexagon sideways, side sectors are barred
+    "gateway", //       hexagon sideways
+    "lock", //          square; consumption - possession - unknown
+    "hazard", //        wedge
+    "dropdown", //      down arrow
+    "boss", //          circle
+    "elevator", //      circle
+    "battle", //        circle
+    "teleport", //      circle
+    "artifact", //      circle
+    "upgrade", //       rhombus; required - unknown
+    "slot", //          pentagon
+    "expansion", //     triangle
+    "event", //         circle OR signpost
+    "area", //          rectangle
+    "map", //           circle
+    "trigger", //       rhombus
+    "toggle", //        pentagon
+    "save", //          wedge
+    "recharge", //      wedge
+    "lore", //          circle
+    "easter", //        wedge
   ];
   
   const digitPattern = /\d+/g;
@@ -108,15 +104,15 @@ let interaction = {
   }
   
   function makeCore(coreData, overrideData = {}, isPostConversion = false) {
-    if (coreData.id === "-") {
-      return;
-    }
-    
     let returnCore = {
       ...overrideData,
-      nodeType: coreData.nodeType || overrideData.nodeType,
+      nodeType: overrideData.nodeType || coreData.nodeType,
       children: [],
     };
+    
+    if (["none", ""].includes(returnCore.nodeType)) {
+      return returnCore;
+    }
     
     switch (returnCore.nodeType) {
       case "boss":
@@ -135,29 +131,54 @@ let interaction = {
       case "upgrade":
       case "slot":
       case "expansion":
-        returnCore.id = isPostConversion ? coreData.id || 0 : coreData.itemId || 0;
-        returnCore.displayIcon = isPostConversion ? coreData.displayIcon || "itemSphere" : coreData.id || "itemSphere"; // TODO: add randomized mode
+        returnCore.id = isPostConversion ? coreData.id || 0 : coreData.extraId || coreData.itemId || 0;
+        returnCore.displayIcon = isPostConversion ? coreData.displayIcon || "itemSphere" : coreData.id || "itemSphere"; // TODO: add randomized mode, "randomizer"
         returnCore.spriteImage = isPostConversion ? coreData.spriteImage || "" : coreData.sprite || "";
         returnCore.bg = coreData.bg || "ffffff";
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
         if (returnCore.nodeType === "slot") {
-          returnCore.slotToggleId = isPostConversion ? coreData.slotToggleId : coreData.slotType;
+          returnCore.slotCategoryId = isPostConversion ? coreData.slotCategoryId : coreData.slotType;
         }
-        returnCore.progressionToItemId = coreData.progressionToItemId || 0;
         returnCore.isRandomizableItem = isPostConversion ? coreData.isRandomizableItem || false : coreData.random || false;
         returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         break;
+      case "return":
+      case "shortcut":
+      case "bolt":
+      case "access":
+      case "bracketed":
+      case "gateway":
+      case "lock":
+      case "hazard":
+      case "dropdown":
+        returnCore = {
+          ...returnCore,
+          ...coreData,
+          ...overrideData,
+          lockIds: isPostConversion ? new Set(returnCore.lockIds) || new Set([]) : new Set([]),
+          inverse: !!overrideData.inverse,
+        };
+        returnCore.id = isPostConversion ? coreData.id || 0 : coreData.extraId || coreData.bossId || coreData.itemId || 0;
+        returnCore.displayIcon = isPostConversion ? coreData.displayIcon || "" : coreData.id || "";
+        returnCore.spriteImage = isPostConversion ? coreData.spriteImage || "" : coreData.sprite || "";
+        returnCore.bg = coreData.bg || "ffffff";
+        returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
+        returnCore.inverse = isPostConversion ? !!coreData.inverse || !!overrideData.inverse || false : !!coreData.inverse || !!overrideData.inverse || false; // might need to reduce into pathData object
+        if (coreData.id) returnCore.lockIds.add(coreData.id);
+        if (overrideData.id) returnCore.lockIds.add(overrideData.id);
+        if (coreData.lockIds) returnCore.lockIds.add([...coreData.lockIds]);
+        if (overrideData.lockIds) returnCore.lockIds.add([...overrideData.lockIds]);
+        returnCore.lockIds = [...returnCore.lockIds];
+        break;
       case "start":
       case "end":
-      case "return":
-      case "dropdown":
       case "elevator":
       case "teleport":
       case "event":
+      case "area":
+      case "map":
       case "trigger":
       case "toggle":
-      case "map":
-      case "area":
       case "save":
       case "recharge":
       case "lore":
@@ -169,11 +190,15 @@ let interaction = {
         returnCore.itemHoverLabel = isPostConversion ? coreData.itemHoverLabel || "" : coreData.singleItemName || coreData.name || "";
         returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         if (returnCore.nodeType === "toggle") {
-          returnCore.slotToggleId = isPostConversion ? coreData.slotToggleId : coreData.slotType;
+          returnCore.slotCategoryId = isPostConversion ? coreData.slotCategoryId : coreData.slotType;
         }
         if (["elevator", "teleport"].includes(returnCore.nodeType)) {
-          returnCore.toStartNodeId = isPostConversion ? coreData.toStartNodeId : 0;
+          returnCore.toStartHubId = isPostConversion ? coreData.toStartHubId : 0;
           returnCore.transportToMapId = isPostConversion ? coreData.transportToMapId : 0;
+          returnCore.itemHoverLabel = explorer.workingData.areas.find(area => area.id === returnCore.transportToMapId)?.name || "TRANSPORT";
+          if (coreData.hasOwnProperty("hubId")) { // TODO: need to fix the explicit connection between transports and destination hubs
+            returnCore.hubId = coreData.hubId;
+          }
         }
         if (["start"].includes(returnCore.nodeType)) {
           returnCore.toMapId = isPostConversion ? coreData.toMapId : 0;
@@ -183,19 +208,8 @@ let interaction = {
         }
         break;
       case "":
+      case "none":
         break;
-    }
-    
-    if (returnCore.itemHoverLabel.length > 0) {
-      returnCore.textSize = isPostConversion ? coreData.textSize || "lg" : coreData.size || "lg";
-    }
-    
-    if (coreData.lockIds) {
-      returnCore.lockIds = new Set([...coreData.lockIds]);
-      if (overrideData.lockIds) {
-        returnCore.lockIds.add([...overrideData.lockIds]);
-      }
-      returnCore.lockIds = [...returnCore.lockIds];
     }
     
     if (coreData.specialCollectionBehavior) {
@@ -204,36 +218,6 @@ let interaction = {
       returnCore.affectsItemIds = [...coreData.affectsItemIds];
     }
     
-    return returnCore;
-  }
-  
-  function makeLock(coreNodeData, leafData = {}) {
-    if (coreNodeData.id === "-") {
-      return;
-    }
-    
-    let returnLock = {
-      ...coreNodeData,
-      ...leafData,
-      lockIds: new Set(),
-      inverse: !!leafData.inverse,
-    };
-    returnLock.lockIds.add(coreNodeData.id);
-    if (leafData.id) returnLock.lockIds.add(leafData.id);
-    if (coreNodeData.lockIds) returnLock.lockIds.add([...coreNodeData.lockIds]);
-    if (leafData.lockIds) returnLock.lockIds.add([...leafData.lockIds]);
-    returnLock.lockIds = [...returnLock.lockIds];
-    
-    return returnLock;
-  }
-  
-  function reconcileBossCore(bossCore, spliceIn) {
-    let returnCore = {...bossCore};
-    switch (bossCore.nodeType) {
-      case "boss":
-      case "battle":
-        break;
-    }
     return returnCore;
   }
   
@@ -252,76 +236,13 @@ let interaction = {
     return returnArray;
   }
   
-  function makeItemCores() {
+  function makeCores() {
     if (explorer.currentGame && explorer.workingData) {
-      let allCores = [];
-      let totalCount = 0;
-      
-      for (let j = 0; j < explorer.workingData.items.length; j++) {
-        let item = explorer.workingData.items[j];
-        if (item.segments && item.segments.length) {
-          allCores = [...allCores, ...makeCoresOutOfList(item.segments)];
-        } else if (item.id === "-") {
-          continue;
-        } else {
-          allCores = [...allCores, makeCore(item)];
-        }
-      }
-      
+      let itemCores = [...makeCoresOutOfList(explorer.workingData.items)]
       let bossCores = [...makeCoresOutOfList(explorer.workingData.bosses, { nodeType:"boss", bg: "747474", })];
-      allCores = [...allCores, ...makeCoresOutOfList(explorer.workingData.extras)];
-      
-      totalCount += allCores.length;
-      
-      let [startArray, remainderArray1] = main.partition(allCores, core => ["start"].includes(core.nodeType));
-      startArray = startArray.sort(sortingDescIds);
-      
-      let [endArray, remainderArray2] = main.partition(remainderArray1, core => ["end"].includes(core.nodeType));
-      endArray = endArray.sort(sortingDescIds);
-      
-      let [onewayArray, remainderArray3] = main.partition(remainderArray2, core => ["return", "dropdown"].includes(core.nodeType));
-      onewayArray = onewayArray.sort(sortingDescIds);
-      
-      let [accessArray, remainderArray4] = main.partition(remainderArray3, core => ["shortcut", "bolt", "access", "bracketed"].includes(core.nodeType));
-      accessArray = accessArray.sort(sortingDescIds);
-      
-      let [bossArray, remainderArray5] = main.partition(remainderArray4, core => ["boss", "battle"].includes(core.nodeType));
-      bossArray = bossArray.sort(sortingDescIds);
-      
-      totalCount -= bossArray.length;
-      
-      let bossArrayFixed = [...bossCores];
-      bossArrayFixed = bossArrayFixed.map(core => {
-        let foundCore = bossArray.find(el => el.id === core.id);
-        if (foundCore) {
-          return reconcileBossCore(core, foundCore);
-        }
-        return core;
-      });
-      bossArray = bossArrayFixed.sort(sortingDescIds);
-      
-      totalCount += bossArray.length;
-      
-      let [transportArray, remainderArray6] = main.partition(remainderArray5, core => ["elevator", "teleport"].includes(core.nodeType));
-      transportArray = transportArray.sort(sortingDescIds);
-      
-      let [itemArray, remainderArray7] = main.partition(remainderArray6, core => ["artifact", "upgrade", "slot", "expansion"].includes(core.nodeType));
-      itemArray = itemArray.sort(sortingDescIds);
-      
-      let [eventArray, remainderArray8] = main.partition(remainderArray7, core => ["event", "trigger", "toggle", "lore", "easter"].includes(core.nodeType));
-      eventArray = eventArray.sort(sortingDescIds);
-      
-      let [utilityArray, remainderArray9] = main.partition(remainderArray8, core => ["area", "map", "save", "recharge"].includes(core.nodeType));
-      utilityArray = utilityArray.sort(sortingDescIds);
-      
-      let tempTotal = startArray.length + endArray.length + onewayArray.length + accessArray.length + bossArray.length + transportArray.length + itemArray.length + eventArray.length + utilityArray.length;
-      if (totalCount !== tempTotal) {
-        console.warn("count mismatch:", totalCount, "vs", tempTotal, '((', startArray.length, endArray.length, onewayArray.length, accessArray.length, bossArray.length, transportArray.length, itemArray.length, eventArray.length, utilityArray.length, '))');
-      }
-      
-      //console.debug(startArray, endArray, onewayArray, accessArray, bossArray, transportArray, itemArray, eventArray, utilityArray);
-      
-      let hierarchy = [...startArray, ...endArray, ...onewayArray, ...accessArray, ...bossArray, ...transportArray, ...itemArray, ...eventArray, ...utilityArray];
+      let extraCores = [...makeCoresOutOfList(explorer.workingData.extras)];
+      let allCores = [...itemCores, ...bossCores, ...extraCores];
+      let hierarchy = allCores.sort((a,b) => a.nodeType === b.nodeType ? b.id - a.id : nodeTypes.indexOf(a.nodeType) - nodeTypes.indexOf(b.nodeType));
       
       let iconsDefsWrapper = document.getElementById("iconsDefs");
       
@@ -329,37 +250,136 @@ let interaction = {
       let imageSources = new Set();
       
       for (let r = 0; r < hierarchy.length; r++) {
-        let destination = document.getElementById("selection");
-        let wrapper = document.createElement("div");
-        let tempImage = document.createElement("img");
-        let usesSpriteAfterAll = explorer.useSprites && hierarchy[r].spriteImage;
-        let itemClassName = usesSpriteAfterAll ? hierarchy[r].spriteImage : hierarchy[r].displayIcon;
-        if (itemClassName.length) {
+        let usesSpriteAfterAll = 0;
+        let itemClassName = hierarchy[r].displayIcon;
+        let queryStringCheck = `.item-image.${itemClassName}`;
+        let measurement = 42;
+        let sourcex = 817;
+        let sourcey = 817;
+        let doRDAccessLockException = false;
+        let doM1BossLockException = false;
+        
+        if (explorer.currentGame === "mrd" && ["m_lock1", "m_lock2"].includes(itemClassName)) {
+          doRDAccessLockException = true;
+          sourcex = 336;
+          sourcey = 84;
+        }
+        
+        if (explorer.currentGame === "m1" && ["kraid", "ridley"].includes(itemClassName)) {
+          // TODO: need to test that this actually works; might need to see why Boss cores aren't passing sprite/ID images forward?
+          doM1BossLockException = true;
+          sourcex = 168;
+          sourcey = 126;
+        }
+        
+        if (explorer.useAllSprites) {
+          usesSpriteAfterAll = 2;
+          queryStringCheck = `.game-${explorer.currentGame} .usesAllSprites .item-image.${itemClassName}`;
+          if (hierarchy[r].spriteImage) {
+            itemClassName = hierarchy[r].spriteImage;
+          }
+          if (["random", "itemOrb", "unused"].includes(itemClassName)) {
+            queryStringCheck = `.usesAllSprites .item-image.${itemClassName}`;
+          }
+          sourcex = 672;
+          sourcey = 630;
+        } else if (explorer.useSprites && hierarchy[r].spriteImage) {
+          usesSpriteAfterAll = 1;
+          itemClassName = hierarchy[r].spriteImage;
+          queryStringCheck = `.game-${explorer.currentGame} .usesSprite .item-image.${itemClassName}`;
+          switch (explorer.currentGame) {
+            case "mrd":
+              sourcex = 336;
+              sourcey = 84;
+              break;
+            case "m1":
+            case "p2d":
+              sourcex = 168;
+              sourcey = 126;
+              break;
+            case "mzm":
+              sourcex = 252;
+              sourcey = 210;
+              break;
+            case "mp":
+            case "mp2e":
+            case "mp3c":
+              measurement = 64;
+              break;
+            case "m2ros":
+              sourcex = 168;
+              sourcey = 168;
+              break;
+            case "pb":
+            case "ph":
+            case "mcon":
+            case "am2r":
+              sourcex = 252;
+              sourcey = 252;
+              break;
+            case "msr":
+              measurement = 50;
+              sourcex = 350;
+              sourcey = 300;
+              break;
+            case "sm":
+              sourcex = 256;
+              sourcey = 168;
+              break;
+            case "mom":
+              measurement = 60;
+              sourcex = 240;
+              sourcey = 240;
+              break;
+            case "mf":
+              sourcex = 258;
+              sourcey = 215;
+              break;
+            case "mkc":
+            case "mng":
+            case "mttne":
+              sourcex = 336;
+              sourcey = 252;
+              break;
+            case "md":
+            case "mpff":
+              measurement = 64;
+              sourcex = 256;
+              sourcey = 192;
+              break;
+          }
+        }
+        
+        if (itemClassName.length && !["unused", "none", ""].includes(itemClassName)) {
+          let destination = document.getElementById("selection");
+          let wrapper = document.createElement("div");
+          let tempImage = document.createElement("img");
           if (tempImage.classList) {
             tempImage.classList.add("item-image");
             wrapper.classList.add("hide");
-            if (usesSpriteAfterAll) {
+            if (usesSpriteAfterAll > 0) {
               wrapper.classList.add("usesSprite");
+              if (usesSpriteAfterAll > 1) {
+                wrapper.classList.add("usesAllSprites");
+              }
             }
             tempImage.classList.add(itemClassName);
           } else {
             tempImage.className = "item-image ";
             wrapper.className = "hide";
-            if (usesSpriteAfterAll) {
+            if (usesSpriteAfterAll > 0) {
               wrapper.className += " usesSprite";
+              if (usesSpriteAfterAll > 1) {
+                wrapper.className += " usesAllSprites";
+              }
             }
             tempImage.className += " " + itemClassName;
           }
           wrapper.appendChild(tempImage);
           destination.appendChild(wrapper);
-          let queryStringCheck = "";
-          if (usesSpriteAfterAll) {
-            queryStringCheck = `.game-${explorer.currentGame} .usesSprite .item-image.${itemClassName}`;
-          } else {
-            queryStringCheck = `.item-image.${itemClassName}`;
-          }
+          
           let queryResult = document.querySelector(queryStringCheck);
-          if (queryResult && itemClassName !== "unused") {
+          if (queryResult) {
             let styleResult = getComputedStyle(queryResult);
             
             if (styleResult.background !== "none") {
@@ -369,24 +389,6 @@ let interaction = {
               let positions = step1[1].split(' ');
               let xpos = 0 - Math.abs(parseInt(positions[0]));
               let ypos = 0 - Math.abs(parseInt(positions[1]));
-              
-              let measurement = 42;
-              if (explorer.useSprites && usesSpriteAfterAll) {
-                switch (explorer.currentGame) {
-                  case "mp":
-                  case "mp2e":
-                  case "mpff":
-                  case "md":
-                    measurement = 64;
-                    break;
-                  case "msr":
-                    measurement = 50;
-                    break;
-                  case "mom":
-                    measurement = 60;
-                    break;
-                }
-              }
               
               if (!measurementSet.has(measurement)) {
                 measurementSet.add(measurement);
@@ -408,60 +410,27 @@ let interaction = {
                 let imageSource = document.createElementNS("http://www.w3.org/2000/svg", "image");
                 imageSource.setAttribute("id", `source-${fileName}`);
                 
-                let sourcex = 774;
-                let sourcey = 774;
-                switch (fileName) {
-                  case "m1_spritesheet":
-                  case "p2d_spritesheet":
-                    sourcex = 168;
-                    sourcey = 126;
-                    break;
-                  case "m2ros_spritesheet":
-                    sourcex = 168;
-                    sourcey = 168;
-                    break;
-                  case "am2r_spritesheet":
-                  case "mph_spritesheet":
-                    sourcex = 252;
-                    sourcey = 252;
-                    break;
-                  case "md_spritesheet":
-                  case "mpff_spritesheet":
-                    sourcex = 256;
-                    sourcey = 192;
-                    break;
-                  case "mf_spritesheet":
-                    sourcex = 258;
-                    sourcey = 215;
-                    break;
-                  case "mkc_spritesheet":
-                    sourcex = 336;
-                    sourcey = 210;
-                    break;
-                  case "mom_spritesheet":
-                    sourcex = 240;
-                    sourcey = 240;
-                    break;
-                  case "mp_spritesheet":
-                    sourcex = 256;
-                    sourcey = 256;
-                    break;
-                  case "msr_spritesheet":
-                    sourcex = 350;
-                    sourcey = 300;
-                    break;
-                  case "mzm_spritesheet":
-                    sourcex = 252;
-                    sourcey = 210;
-                    break;
-                  case "rd_spritesheet":
-                    sourcex = 336;
-                    sourcey = 84;
-                    break;
-                  case "sm_spritesheet":
-                    sourcex = 256;
-                    sourcey = 168;
-                    break;
+                if (["mp, mp2e"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
+                  switch (fileName) {
+                    case "m1_spritesheet":
+                      sourcex = 168;
+                      sourcey = 126;
+                      break;
+                    case "rd_spritesheet":
+                      sourcex = 336;
+                      sourcey = 84;
+                      break;
+                    case "mp_spritesheet":
+                      sourcex = 256;
+                      sourcey = 256;
+                      break;
+                    case "mpswf_spritesheet":
+                      sourcex = 320;
+                      sourcey = 320;
+                      break;
+                    default:
+                      break;
+                  }
                 }
                 
                 imageSource.setAttribute("width", sourcex);
@@ -485,10 +454,9 @@ let interaction = {
             }
           }
         }
-        
       }
       
-      return hierarchy.sort((a,b) => a.nodeType === b.nodeType ? b.id - a.id : nodeTypes.indexOf(a.nodeType) - nodeTypes.indexOf(b.nodeType));
+      return hierarchy;
     }
     console.warn("game and rawData not specified");
     return [];
@@ -496,134 +464,158 @@ let interaction = {
   
   function buildMaps() {
     let listOfNodes = [];
-    let listOfStartNodes = [];
-    let hubsProcessed = new Set();
     let runningNodeId = 1;
+    let setOfHubIds = new Set();
+    let hubsAndVines = [];
     
-    let processBranch = (parentNodeId, branchData, altpathIndex, branchProgress, parentHubId, mapId, lengthOverride) => {
-      let returnIds = [];
+    let processChildren = (parentNode) => {
+      // parent should already be processed, just needs its children assigned to it
+      let childrenIdList = new Set();
       
-      let branchRoot = branchData.branches[altpathIndex];
-      if (!branchRoot) {
-        console.error(branchData);
-      }
-      let branchSegment = branchRoot[branchProgress];
-      let getItemCoreId = branchSegment.id;
-      let getItemCore = explorer.itemCores.find(el => el.id === getItemCoreId);
-      let itemNode = getItemCore ? makeCore(getItemCore, branchSegment, true) : makeCore(branchSegment, {}, true);
-      itemNode.nodeId = runningNodeId++;
-      returnIds.push(itemNode.nodeId);
-      
-      if (lockNodeTypes.includes(branchSegment.nodeType)) {
-        itemNode = makeLock(itemNode, { ...branchSegment });
-      }
-      itemNode.parentIds = arrayCleanAdd(itemNode.parentIds, parentNodeId);
-      itemNode.mapId = mapId;
-      itemNode.hubId = parentHubId;
-      itemNode.cardId = "";
-      itemNode.children = [];
-      itemNode.isHubDirectChild = branchProgress === 0;
-      itemNode.altpathIndex = altpathIndex;
-      itemNode.altpathCount = branchData.branches.length;
-      
-      if (branchSegment.transportToMapId) {
-        let destinationName = explorer.workingData.areas.find(area => area.id === branchSegment.transportToMapId)?.name || "TRANSPORT";
-        itemNode.itemHoverLabel = destinationName;
-        let destination = listOfNodes.find(el => el.nodeType === "start" && el.mapId === branchSegment.transportToMapId && branchSegment.toStartNodeId === el.hubId);
-        if (destination) {
-          let departureName = explorer.workingData.areas.find(area => area.id === itemNode.mapId)?.name || "START";
-          destination.itemHoverLabel = departureName;
-          destination.toMapId = itemNode.mapId;
-          destination.bg = explorer.advancedColors ? explorer.workingData.areas.find(area => area.id === itemNode.mapId)?.color || "ffffff" : "ffffff";
+      if (parentNode.hasOwnProperty("children")) {
+        if (parentNode.children.length > 0) {
+          // process children
+          for (let i = 0; i < parentNode.children.length; i++) {
+            // if child is JUST the ID integer, no itemNode needed, just pass in the ID
+            const child = parentNode.children[i];
+            if (typeof child === 'integer') {
+              childrenIdList.add(child);
+              continue;
+            }
+            
+            // else, process the child as an object
+            const itemCore = explorer.itemCores.find(el => el.id === child.id);
+            let childItemNodeToSave = itemCore ? makeCore(itemCore, {...child}, true) : makeCore(child, {}, true);
+            childItemNodeToSave = {
+              ...childItemNodeToSave,
+              nodeId: runningNodeId++,
+              parentIds: [parentNode.nodeId], // will deal with vines after all nodes are processed
+              mapId: parentNode.mapId,
+              cardId: "",
+            };
+            childrenIdList.add(childItemNodeToSave.nodeId);
+            
+            // now recursively process children
+            let childItemNodeWithChildren = { ...childItemNodeToSave};
+            delete childItemNodeToSave.children;
+            if (child.hasOwnProperty("children")) {
+              childItemNodeWithChildren.children = [...child.children];
+            } else {
+              delete childItemNodeWithChildren.children;
+            }
+            
+            const childrenIds = processChildren(childItemNodeWithChildren);
+            childItemNodeToSave.children = arrayCleanAdd([], [...childrenIds]);
+            
+            listOfNodes.push(childItemNodeToSave);
+          }
+        } else {
+          // vine
         }
       }
+      // get vineToHubId info if applicable
+      if (parentNode.hasOwnProperty("vineToHubId")) {
+        // there are the parents of a vine
+        if (!hubsAndVines[parentNode.vineToHubId]) {
+          // create a new hub if it doesn't exist
+          hubsAndVines[parentNode.vineToHubId] = {
+            parents: new Set(),
+            children: new Set()
+          };
+        }
+        hubsAndVines[parentNode.vineToHubId].parents.add(parentNode.nodeId);
+      }
       
-      if (branchRoot.length <= branchProgress + 1) {
-        if (branchData.toHubId) {
-          if (lengthOverride > -1) {
-            itemNode.extraVerticalLength = lengthOverride;
+      // get hubId info if applicable
+      if (parentNode.hasOwnProperty("hubId")) {
+        console.log(parentNode, parentNode.hubId);
+        // there are the children of a vine
+        if (!hubsAndVines[parentNode.hubId]) {
+          // create a new hub if it doesn't exist
+          hubsAndVines[parentNode.hubId] = {
+            parents: new Set(),
+            children: new Set()
+          };
+        }
+        hubsAndVines[parentNode.hubId].children.add(parentNode.nodeId);
+      }
+      // save children ids to parent node
+      return [...childrenIdList];
+    };
+    
+    if (explorer.currentGame && explorer.workingData && explorer.workingData.mapTree && explorer.itemCores) {
+      // map all nodes with children
+      for (let i = 0; i < explorer.workingData.mapTree.length; i++) {
+        const startingHub = explorer.workingData.mapTree[i];
+        let startNode = {
+          ...makeCore({...startingHub, name: "START"}),
+          nodeId: runningNodeId++,
+          parentIds: [-1],
+          expanded: !(startingHub.hubId === 1 || startingHub.hubId === 0),
+          mapId: startingHub.mapId,
+          hubId: startingHub.hubId,
+          cardId: "",
+        };
+        let startNodeWithChildren = {...startNode };
+        delete startNode.children;
+        if (startingHub.hasOwnProperty("children")) {
+          startNodeWithChildren.children = [...startingHub.children];
+        } else {
+          delete startNodeWithChildren.children;
+        }
+        const childrenIds = processChildren(startNodeWithChildren);
+        
+        startNode.children = arrayCleanAdd(startNode.children, [...childrenIds]);
+        listOfNodes.push(startNode);
+      }
+      
+      // finalize vine connections
+      for (let hubId = 0; hubId < hubsAndVines.length; hubId++) {
+        if (hubsAndVines[hubId]) {
+          const vineData = hubsAndVines[hubId];
+          const parentList = [...vineData.parents];
+          const childList = [...vineData.children];
+          for (let i = 0; i < parentList.length; i++) {
+            const parentId = parentList[i];
+            const foundNodeIndex = listOfNodes.findIndex(node => node.nodeId === parentId);
+            if (foundNodeIndex > -1) {
+              listOfNodes[foundNodeIndex].children = arrayCleanAdd(listOfNodes[foundNodeIndex].children, childList);
+            }
           }
-          let foundHub = explorer.workingData.map.find(el => el.hubId === branchData.toHubId);
-          if (foundHub) {
-            // TODO: figure out vines
-            if (hubsProcessed.has(foundHub.hubId)) {
-              let foundHubChildren = listOfNodes.filter(el => el.hubId === foundHub.hubId && el.isHubDirectChild);
-              for (let i = 0; i < foundHubChildren.length; i++) {
-                foundHubChildren[i].parentIds = arrayCleanAdd(foundHubChildren[i].parentIds, itemNode.nodeId);
-                itemNode.children = arrayCleanAdd(itemNode.children, foundHubChildren[i].nodeId);
-              }
-            } else {
-              let hubChildren = processHub(foundHub, itemNode.nodeId, mapId);
-              itemNode.children = arrayCleanAdd(itemNode.children, hubChildren);
+          for (let i = 0; i < childList.length; i++) {
+            const childId = childList[i];
+            const foundNodeIndex = listOfNodes.findIndex(node => node.nodeId === childId);
+            if (foundNodeIndex > -1) {
+              listOfNodes[foundNodeIndex].parentIds = arrayCleanAdd(listOfNodes[foundNodeIndex].parentIds, parentList);
             }
           }
         }
-        listOfNodes.push(itemNode);
-        return returnIds;
       }
       
-      let nextChild = processBranch(itemNode.nodeId, branchData, altpathIndex, branchProgress + 1, parentHubId, mapId, lengthOverride - 1);
-      itemNode.children = arrayCleanAdd(itemNode.children, nextChild);
-      listOfNodes.push(itemNode);
-      
-      return itemNode.nodeId;
-    };
-    
-    let processHub = (hubData, parentNodeId, mapId) => {
-      let returnChildrenIds = [];
-      if (!hubsProcessed.has(hubData.hubId)) {
-        hubsProcessed.add(hubData.hubId);
-        for (let i = 0; i < hubData.paths.length; i++) {
-          let pathData = hubData.paths[i];
-          let maxLength = pathData.branches.reduce((acc, curr) => Math.max(acc, curr.length), 1);
-          for (let j = 0; j < pathData.branches.length; j++) {
-            let altpathChild = processBranch(parentNodeId, pathData, j, 0, hubData.hubId, mapId, maxLength - 1);
-            returnChildrenIds.push(altpathChild);
+      // finalize transporter nodes
+      for (let i = 0; i < listOfNodes.length; i++) {
+        if (listOfNodes[i].hasOwnProperty("transportToMapId")) {
+          for (let j = 0; j < listOfNodes.length; j++) {
+            if (listOfNodes[j].nodeType === "start" && 
+              listOfNodes[j].mapId === listOfNodes[i].transportToMapId &&
+              listOfNodes[j].hubId === listOfNodes[i].toStartHubId
+            ) {
+              let areaFound = explorer.workingData.areas.find(area => area.id === listOfNodes[i].mapId);
+              if (areaFound) {
+                let departureName = areaFound.name;
+                listOfNodes[j].itemHoverLabel = departureName;
+                listOfNodes[j].toMapId = listOfNodes[i].mapId;
+                listOfNodes[j].bg = explorer.advancedColors ? explorer.workingData.areas.find(area => area.id === listOfNodes[i].transportToMapId)?.color || "ffffff" : "ffffff";
+              }
+            }
           }
-        } 
-      } else {
-        console.warn("uh-oh... cannot find hubId", hubData.hubId);
-      }
-      return returnChildrenIds;
-    };
-    
-    if (explorer.currentGame && explorer.workingData && explorer.workingData.map && explorer.itemCores) {
-      for (let i = 0; i < explorer.workingData.areas.length; i++) {
-        let startNode = makeCore({ nodeType: "start", name: "START" });
-        startNode.nodeId = runningNodeId++;
-        startNode.parentIds = [-1];
-        startNode.children = [];
-        startNode.expanded = !explorer.workingData.areas[i].hasGameStart;
-        startNode.mapId = explorer.workingData.areas[i].id;
-        startNode.hubId = explorer.workingData.areas[i].startNodeId;
-        startNode.cardId = "";
-        startNode.bg = "ffffff";
-        listOfNodes.push(startNode);
-        listOfStartNodes.push(startNode);
-      }
-      for (let i = 0; i < listOfStartNodes.length; i++) {
-        let aStartingNode = listOfStartNodes[i];
-        let lookingForHubId = aStartingNode.hubId;
-        let foundHub = explorer.workingData.map.find(el => el.hubId === lookingForHubId);
-        if (foundHub) {
-          let hubChildren = processHub(foundHub, aStartingNode.nodeId, aStartingNode.mapId);
-          aStartingNode.children = arrayCleanAdd(aStartingNode.children, hubChildren);
         }
       }
+      
+      // order all nodes in the proper order
       return listOfNodes.sort((a,b) => explorer.workingData.areas.findIndex(area => area.id === a.mapId) - explorer.workingData.areas.findIndex(area => area.id === b.mapId) || a.nodeId - b.nodeId);
     }
     return [];
-  }
-  
-  function pivotNode(node, fromParentId) {
-    let parents = [...node.parentIds];
-    let children = [...node.children];
-    let fullList = new Set([...parents, ...children]);
-    if (fullList.has(fromParentId)) {
-      node.parentIds = [].push(fromParentId);
-      fullList.delete(fromParentId);
-      node.children = [...fullList];
-    }
   }
   
   function getCurrentCoordsOfNode(nodeObj) {
@@ -647,6 +639,12 @@ let interaction = {
   }
   
   function doNothing() {}
+  
+  
+  
+  
+  
+  
   
   function hoverBasic(e) {
     //console.log("hover started!", e);
@@ -677,21 +675,22 @@ let interaction = {
     let str = domElement.id.split("_")[1];
     let findId = str.match(digitPattern);
     findId = parseInt(findId[0]);
-    let findType = str.match(stringPattern);
-    findType = findType[0];
-    let cardData = explorer.mapNodes.find(n => n.nodeId === findId && n.nodeType === findType);
+    let departure = explorer.mapTree.find(n => n.nodeId === findId);
     
-    if (cardData === null) {
+    if (departure === null) {
       console.error("Could not find this root!");
     }
     
-    if (!cardData.expanded) {
-      cardData.expanded = true;
-      animateChildren(cardData, { val: 1 });
+    let destination = explorer.mapTree.find(n => n.mapId === departure.toMapId && n.nodeType === "start");
+    console.log(departure, destination);
+    if (!departure.expanded) {
+      departure.expanded = true;
+      animateChildren(departure, { val: 1 });
     }
     
-    if (cardData.toMapId && cardData.mapId !== cardData.toMapId) {
-      popMap(cardData.toMapId);
+    // TODO: fix issue with explicit connections between transports and start nodes
+    if (departure.mapId !== destination.mapId) {
+      popMap(destination);
     }
   }
   
@@ -700,13 +699,18 @@ let interaction = {
     let str = groupCard.id.split("_")[1];
     let findId = str.match(digitPattern);
     findId = parseInt(findId[0]);
-    let departure = explorer.mapNodes.find(n => n.nodeId === findId);
-    popMap(departure.transportToMapId);
+    let departure = explorer.mapTree.find(n => n.nodeId === findId);
+    let destination = explorer.mapTree.find(n => n.hubId === departure.toStartHubId && n.mapId === departure.transportToMapId);
+    console.log(departure, destination);
+     // TODO: fix issue with explicit connections between transports and start nodes
+    if (departure.mapId !== destination.mapId) {
+      popMap(destination);
+    }
   }
   
   function getCurrentMapElement(childCategory) {
     let returnValue = null;
-    let mapSearch = document.getElementById("mapSVG-" + explorer.currentMap);
+    let mapSearch = document.getElementById(`mapSVG-${explorer.currentMap}`);
     if (mapSearch !== null) {
       let index = -1;
       switch (childCategory) {
@@ -813,7 +817,7 @@ let interaction = {
   }
   
   function expandViewbox() {
-    let mapSearch = document.getElementById("mapSVG-" + explorer.currentMap);
+    let mapSearch = document.getElementById(`mapSVG-${explorer.currentMap}`);
     let viewBoxProps = mapSearch.getAttribute("viewBox").split(' ');
     let oldX = parseFloat(viewBoxProps[0]);
     let oldY = parseFloat(viewBoxProps[1]);
@@ -838,7 +842,7 @@ let interaction = {
       newHeight = 144;
     }
     
-    if (!explorer.mapNodes.find(n => n.mapId === explorer.currentMap && n.nodeType === "start")?.expanded) {
+    if (!explorer.mapTree.find(n => n.mapId === explorer.currentMap && n.nodeType === "start")?.expanded) {
       interaction.max[explorer.currentMap].x = 288;
       newWidth = 288;
       interaction.max[explorer.currentMap].y = 288;
@@ -863,10 +867,10 @@ let interaction = {
     let hoverCapture = doNothing;
     let clickCapture = doNothing;
     let selectedShape = "";
-    let runningNodeId = cardData.nodeType + cardData.nodeId;
-    cardData.cardId = "mapSVG-" + explorer.currentMap + "_" + runningNodeId;
+    let nodeName = cardData.nodeType + cardData.nodeId;
+    cardData.cardId = `mapSVG-${cardData.mapId}_${nodeName}`;
     groupObject.id = cardData.cardId;
-    
+  
     switch(cardData.nodeType) {
       case "start":
         selectedShape = "circle";
@@ -891,13 +895,6 @@ let interaction = {
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
         break;
-      case "bracketed":
-        selectedShape = "bracketed";
-        if (explorer.allowColors) imageClasses.add("lock-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
       case "bolt":
         selectedShape = "bolt";
         if (explorer.allowColors) imageClasses.add("lock-image");
@@ -912,9 +909,29 @@ let interaction = {
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
         break;
+      case "bracketed":
+        selectedShape = "bracketed";
+        if (explorer.allowColors) imageClasses.add("lock-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
+      case "gateway":
+        selectedShape = cardData.block ? "hex_block_down" : "hex_down";
+        if (explorer.allowColors) imageClasses.add("lock-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
       case "lock":
         selectedShape = "square";
         if (explorer.allowColors) imageClasses.add("lock-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
+      case "hazard":
+        selectedShape = "tri";
         hoverCapture = doNothing;
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
@@ -925,13 +942,20 @@ let interaction = {
         clickCapture = doNothing;
         fillColor = "#" + (explorer.advancedColors ? explorer.workingData.areas.find(ar => ar.id === cardData.mapId).color : cardData.bg);
         break;
+      case "boss":
+        selectedShape = "circle";
+        if (explorer.allowColors) imageClasses.add("key-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
       case "elevator":
         selectedShape = "circle";
         hoverCapture = hoverBasic;
         clickCapture = clickElevator;
         fillColor = "#" + (explorer.advancedColors ? explorer.workingData.areas.find(ar => ar.id === cardData.transportToMapId).color : cardData.bg);
         break;
-      case "boss":
+      case "battle":
         selectedShape = "circle";
         if (explorer.allowColors) imageClasses.add("key-image");
         hoverCapture = doNothing;
@@ -943,13 +967,6 @@ let interaction = {
         hoverCapture = doNothing;
         clickCapture = doNothing;
         fillColor = "#" + (explorer.advancedColors ? explorer.workingData.areas.find(ar => ar.id === cardData.transportToMapId).color : cardData.bg);
-        break;
-      case "battle":
-        selectedShape = "circle";
-        if (explorer.allowColors) imageClasses.add("key-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
         break;
       case "artifact":
         selectedShape = "dia";
@@ -986,16 +1003,8 @@ let interaction = {
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
         break;
-      case "trigger":
-        selectedShape = "dia";
-        if (explorer.allowColors) imageClasses.add("key-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
-      case "toggle":
-        selectedShape = "penta";
-        if (explorer.allowColors) imageClasses.add("key-image");
+      case "area":
+        selectedShape = "rect";
         hoverCapture = doNothing;
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
@@ -1006,8 +1015,16 @@ let interaction = {
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
         break;
-      case "area":
-        selectedShape = "rect";
+      case "trigger":
+        selectedShape = "dia";
+        if (explorer.allowColors) imageClasses.add("key-image");
+        hoverCapture = doNothing;
+        clickCapture = doNothing;
+        fillColor = "#" + cardData.bg;
+        break;
+      case "toggle":
+        selectedShape = "penta";
+        if (explorer.allowColors) imageClasses.add("key-image");
         hoverCapture = doNothing;
         clickCapture = doNothing;
         fillColor = "#" + cardData.bg;
@@ -1050,7 +1067,7 @@ let interaction = {
     shapeObject.setAttribute("fill", fillColor);
     groupObject.appendChild(shapeObject);
     
-    let imageName = explorer.useSprites ? cardData.spriteImage : cardData.displayIcon;
+    let imageName = explorer.useSprites || explorer.useAllSprites ? cardData.spriteImage : cardData.displayIcon;
     let innerText = "";
     let outerText = "";
     let innerCountText = "";
@@ -1129,7 +1146,6 @@ let interaction = {
         textObject.innerHTML = innerCountText;
         textOffset = 39;
       }
-      
     }
     
     if (outerText) {
@@ -1348,13 +1364,8 @@ let interaction = {
     for (let i = 0; i < card.children.length; i++) {
       let childId = cardChildren[i];
       let previousSiblingId = i > 0 ? cardChildren[i - 1] : null;
-      let childNode = explorer.mapNodes.find(n => n.nodeId === childId);
-      let previousSibling = previousSiblingId ? explorer.mapNodes.find(n => n.nodeId === previousSiblingId) : null;
-      
-      
-      
-      
-      
+      let childNode = explorer.mapTree.find(n => n.nodeId === childId);
+      let previousSibling = previousSiblingId ? explorer.mapTree.find(n => n.nodeId === previousSiblingId) : null;
       
       let childCardWidth = getWidthFrom(childNode);
       returnValue += childCardWidth;
@@ -1375,8 +1386,8 @@ let interaction = {
     for (let i = 0; i < card.children.length; i++) {
       let childId = cardChildren[i];
       let previousSiblingId = i > 0 ? cardChildren[i - 1] : null;
-      let childNode = explorer.mapNodes.find(n => n.nodeId === childId);
-      let previousSibling = previousSiblingId ? explorer.mapNodes.find(n => n.nodeId === previousSiblingId) : null;
+      let childNode = explorer.mapTree.find(n => n.nodeId === childId);
+      let previousSibling = previousSiblingId ? explorer.mapTree.find(n => n.nodeId === previousSiblingId) : null;
       
       
       if (card.altpathIndex + 1 < card.altpathCount) {
@@ -1390,14 +1401,11 @@ let interaction = {
           insertJunctionDot();
         }
         
-        
         if (childNode.altpathIndex === 0) {
           if (childNode.altpathCount > childNode.children.length) {
             makeLineInDirectionByUnits("l", Math.max(childNode.altpathCount - childNode.children.length - 1, 1));
           }
         }
-        
-        
         
         accumulator.val = Math.max(accumulator.val - 1, 1);
         chunkSize = 0;
@@ -1445,7 +1453,7 @@ let interaction = {
   }
   
   function hideMap(mapId) {
-    let mapSearch = document.getElementById("mapSVG-" + mapId);
+    let mapSearch = document.getElementById(`mapSVG-${mapId}`);
     if (mapSearch !== null) {
       if (mapSearch.classList) {
         mapSearch.classList.add("hide-map");
@@ -1458,8 +1466,21 @@ let interaction = {
     }
   }
   
+  function hideAllMaps() {
+    const mapSource = document.getElementById("mapField");
+    const mapSVGList = mapSource.getElementsByClassName("map-svg");
+    // console.log(mapSource, mapSVGList);
+    
+    for (let i = 0; i < mapSVGList.length; i++) {
+      const mapNode = mapSVGList[i];
+      const mapId = mapNode.id.split("-")[1];
+      // console.log(mapNode, mapId);
+      hideMap(mapId);
+    }
+  }
+  
   function showMap(mapId) {
-    let mapSearch = document.getElementById("mapSVG-" + mapId);
+    let mapSearch = document.getElementById(`mapSVG-${mapId}`);
     if (mapSearch !== null) {
       if (mapSearch.classList) {
         mapSearch.classList.remove("hide-map");
@@ -1469,14 +1490,20 @@ let interaction = {
     }
   }
   
-  function popMap(mapId) {
-    let mapSource = document.getElementById("mapField");
-    let mapSearch = document.getElementById("mapSVG-" + mapId);
-    hideMap(explorer.currentMap);
+  function popMap(startNode) {
+    hideAllMaps();
+    const mapId = startNode.mapId;
+    console.log(startNode);
+    const hubId = startNode.hubId;
     explorer.currentMap = mapId;
+    
+    let mapSource = document.getElementById("mapField");
+    let mapSearch = document.getElementById(`mapSVG-${mapId}`);
+    
+    // if map page doesn't already exist, create it
     if (!mapSearch) {
       mapSearch = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      mapSearch.setAttribute("id", "mapSVG-" + mapId);
+      mapSearch.setAttribute("id", `mapSVG-${mapId}`);
       mapSearch.setAttribute("class", "map-svg");
       mapSearch.setAttribute("width", "100%");
       mapSearch.setAttribute("height", "100%");
@@ -1504,8 +1531,61 @@ let interaction = {
         zoomX: 1,
         zoomY: 1
       }
+      let startCard = makeCard(startNode, 0, 0);
+      if (!(explorer.workingData.areas.find(ar => ar.id === startNode.mapId).hasGameStart && startNode.hubId === 1)) {
+        startNode.expanded = true;
+        
+        
+        
+        // WE ARE HERE
+        
+        
+        
+        animateChildren(startNode, { val: 1 });
+      }
+    } else { // otherwise, switch to it
+      showMap(mapId);
+    }
+    cursor.move(0, 0);
+  }
+  
+  function old__popMap(mapId) {
+    let mapSource = document.getElementById("mapField");
+    let mapSearch = document.getElementById(`mapSVG-${mapId}`);
+    hideAllMaps();
+    explorer.currentMap = mapId;
+    // if map page doesn't already exist, create it
+    if (!mapSearch) {
+      mapSearch = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      mapSearch.setAttribute("id", `mapSVG-${mapId}`);
+      mapSearch.setAttribute("class", "map-svg");
+      mapSearch.setAttribute("width", "100%");
+      mapSearch.setAttribute("height", "100%");
+      mapSearch.setAttribute("viewBox", "0 0 144 144");
+      mapSearch.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      mapSearch.setAttributeNS("http://www.w3.org/2000/svg", "xlink", "http://www.w3.org/1999/xlink");
       
-      let startNode = explorer.mapNodes.find(n => n.mapId === mapId && n.nodeType === "start");
+      let iconsDefs = document.getElementById("iconsDefs").cloneNode(true);
+      let gridPaths = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      gridPaths.setAttribute("class", "pathsField");
+      let junctions = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      junctions.setAttribute("class", "junctionsField");
+      let mainMeat = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      mainMeat.setAttribute("class", "cardsField");
+      
+      mapSearch.appendChild(iconsDefs);
+      mapSearch.appendChild(gridPaths);
+      mapSearch.appendChild(junctions);
+      mapSearch.appendChild(mainMeat);
+      mapSource.appendChild(mapSearch);
+      
+      interaction.max[mapId] = {
+        x: 288,
+        y: 288,
+        zoomX: 1,
+        zoomY: 1
+      }
+      let startNode = explorer.mapTree.find(n => n.mapId === mapId && n.nodeType === "start");
       let startCard = makeCard(startNode, 0, 0);
       if (!explorer.workingData.areas.find(ar => ar.id === startNode.mapId).hasGameStart) {
         startNode.expanded = true;
@@ -1518,7 +1598,7 @@ let interaction = {
   }
   
   function validateStartup(e) {
-    return; /// WHILE OUT OF ORDER
+    //return; /// WHILE OUT OF ORDER
     e.preventDefault();
     let gameInput = document.forms["startupMenu"]["selectedGame"].value;
     const masterFilter = [...Object.keys(games)];
@@ -1559,20 +1639,24 @@ let interaction = {
   }
   
   function generate() {
+    //explorer.useAllSprites = true;
     explorer.workingData = rawData[explorer.currentGame];
     explorer.currentMap = explorer.workingData.areas?.find(el => el.hasGameStart)?.id || 1;
     explorer.isAltworld = false; // will need this for Dark Aether traversal eventually
-    explorer.itemCores = makeItemCores();
-    explorer.mapNodes = buildMaps();
+    explorer.itemCores = makeCores();
+    explorer.mapTree = buildMaps();
     
-    //console.table(explorer.mapNodes);
+    console.table(explorer.mapTree);
+    
+    const startingNode = explorer.mapTree.find(n => n.mapId === explorer.currentMap && n.nodeType === "start" && n.hubId === 1);
     
     cursor.move(0, 0);
-    popMap(explorer.currentMap);
+    // TODO: make the grid background
+    popMap(startingNode);
   }
   
   function start() {
-    return; /// WHILE OUT OF ORDER
+    //return; /// WHILE OUT OF ORDER
     if (location.search.length) {
       const queryParams = location.search.split('?')[1].split('&');
       let queryDict = {};
@@ -1587,7 +1671,7 @@ let interaction = {
       }
       let incomingGame = queryDict.game;
       
-      if (!rawData.hasOwnProperty(incomingGame) || !rawData[incomingGame].hasOwnProperty("map") || !(rawData[incomingGame].map.length > 0)) {
+      if (!rawData.hasOwnProperty(incomingGame) || !rawData[incomingGame].hasOwnProperty("mapTree") || !(rawData[incomingGame].mapTree.length > 0)) {
         console.error("not ready");
         console.debug(incomingGame);
         console.debug(rawData[incomingGame]);
@@ -1603,6 +1687,10 @@ let interaction = {
       let willUseSprites = !!queryDict.s;
       willUseSprites = !!JSON.parse(willUseSprites);
       explorer.useSprites = willUseSprites;
+      
+      let willUseAllSprites = !!queryDict.as;
+      willUseAllSprites = !!JSON.parse(willUseAllSprites);
+      explorer.useAllSprites = willUseAllSprites;
       
       let willBeRandomized = !!queryDict.r;
       willBeRandomized = !!JSON.parse(willBeRandomized);
@@ -1658,12 +1746,12 @@ let interaction = {
         let target = document.getElementById("mapField");
         if (target.classList) { // browser compatibility logic
           target.classList.remove("hide-section");
-          if (explorer.useSprites) {
+          if (explorer.useSprites || explorer.useAllSprites) {
             target.classList.add("usesSprite");
           }
         } else {
           target.className += target.className.replace(/\bhide-section\b/g);
-          if (explorer.useSprites) {
+          if (explorer.useSprites || explorer.useAllSprites) {
             target.className += " usesSprite";
           }
         }
@@ -1673,26 +1761,6 @@ let interaction = {
         explorer.generate();
       }
     }
-    /* DEBUG W-I-P */
-    /* let gamesKeys = [...Object.values(games)];
-    
-    for (let i = 0; i < gamesKeys.length; i++) {
-      explorer.currentGame = gamesKeys[i];
-      explorer.workingData = rawData[explorer.currentGame];
-      explorer.currentMap = explorer.workingData.areas?.find(el => el.hasGameStart)?.id || 1;
-      explorer.itemCores = makeItemCores();
-      explorer.mapNodes = buildMaps();
-      //console.debug(gamesKeys[i]);
-      //console.table(explorer.mapNodes);
-    } */
-    /*
-    explorer.currentGame = "m1";
-    explorer.workingData = rawData[explorer.currentGame];
-    explorer.currentMap = explorer.workingData.areas?.find(el => el.hasGameStart)?.id || 1;
-    explorer.itemCores = makeItemCores();
-    explorer.mapNodes = buildMaps();
-    console.table(mapNodes);
-    */
   }
   
   explorer.nodeType = nodeTypes;

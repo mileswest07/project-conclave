@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="explorer.css">
 <link rel="stylesheet" href="spriteMapping.css">
+<link rel="stylesheet" href="allspritesMapping.css">
 </head>
 
 <body>
@@ -35,13 +36,13 @@
               <option value="z" disabled>Metroid: Zero Mission (GBA)</option>
               <option value="p" disabled>Metroid Prime (GCN)</option>
               <!-- <option value="b" disabled>Metroid Prime Pinball (NDS)</option> -->
-              <option value="p2d" disabled>Prime 2D (PC)</option>
+              <option value="p2d">Prime 2D (PC)</option>
               <option value="e" disabled>Metroid Prime 2: Echoes (GCN)</option>
               <option value="h" disabled>Metroid Prime: Hunters (NDS)</option>
               <option value="c" disabled>Metroid Prime 3: Corruption (Wii)</option>
               <!-- <option value="ff" disabled>Metroid Prime: Federation Force (3DS)</option> -->
-              <option value="ros" disabled>Metroid II: Return of Samus (GB)</option>
-              <option value="mc" disabled>Metroid Confrontation (PC)</option>
+              <option value="ros">Metroid II: Return of Samus (GB)</option>
+              <option value="mc">Metroid Confrontation (PC)</option>
               <option value="a" disabled>AM2R (PC)</option>
               <option value="r" disabled>Metroid: Samus Returns (3DS)</option>
               <option value="s" disabled>Super Metroid (SNES)</option>
@@ -162,11 +163,11 @@
   <script src="js/explore.js" type="application/javascript"></script>
   <script src="js/main.js" type="application/javascript"></script>
   <script type="application/javascript">
-    window.location.href = "tracker.html"; // WHILE OUT OF ORDER
+    //window.location.href = "tracker.html"; // WHILE OUT OF ORDER
     document.addEventListener('wheel', (e) => { e.preventDefault(); });
     document.addEventListener("contextmenu", (e) => { e.preventDefault(); });
     document.addEventListener("DOMContentLoaded", () => {
-      //explorer.start();
+      explorer.start();
     });
   </script>
 </body>

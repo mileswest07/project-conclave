@@ -19,7 +19,7 @@ let keyslots = {};
 
 (() => {
   
-  const z1m1List = ["m", "z"];
+  const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3", "z3r",];
   const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
   const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
@@ -1076,8 +1076,8 @@ let keyslots = {};
       try {
         // For now, this pulls the same file every single time
         // TODO: split rawdata.json into component files for each game?
-        const response = await fetch('js/rawdata.json');
-        // const response = await fetch(`js/${gameId}.json`);
+        // const response = await fetch('js/rawdata.json');
+        const response = await fetch(`${main.jsonDir}/${gameId}.json`);
         const data = await response.json();
         const dataStruct = data[gameId];
         tracker.workingData = dataStruct;
@@ -1090,7 +1090,7 @@ let keyslots = {};
           tracker.renderPercentage(targetHeader);
         } */
       } catch (e) {
-        console.error("failed to fetch!");
+        console.error(`failed to fetch JSON for game ${gameId}`);
         console.error(e);
       }
     }
@@ -1587,7 +1587,10 @@ let keyslots = {};
       }
       
       // add fetch here; can be sync because nothing else depends on it
-      fetch('js/rawdata.json')
+      // For now, this pulls the same file every single time
+      // TODO: split rawdata.json into component files for each game?
+      // fetch('js/rawdata.json')
+      fetch(`${main.jsonDir}/${incomingGame}.json`)
         .then(response => response.json())
         .then(data => {
           if (data.hasOwnProperty(incomingGame)) {
@@ -1630,7 +1633,7 @@ let keyslots = {};
           }
         })
         .catch(e => {
-          console.error("failed to fetch!");
+          console.error(`failed to fetch JSON for game ${incomingGame}`);
           console.error(e);
         });
     }

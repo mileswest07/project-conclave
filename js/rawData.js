@@ -1,3 +1,5 @@
+// To be kept for archival and organizational purposes
+// First convert to JSON object (js/rawdata.json), then split into component files (data/*.json)
 const rawData = {
   "mrd": {
     checklistWidth: 5,

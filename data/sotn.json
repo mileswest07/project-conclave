@@ -1,0 +1,551 @@
+{
+  "sotn": {
+    "checklistWidth": 7,
+    "checklistLayout": [
+      {
+        "lookupId": 4,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 27,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 22,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 23,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 24,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 20,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 31,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 21,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 26,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 30,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 35,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 34,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 36,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 37,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 38,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 39,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 40,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 33,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 32,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 0,
+        "max": 47,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 0,
+        "max": 33,
+        "segments": []
+      },
+      {
+        "lookupId": 25,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 28,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 29,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "castlemap",
+        "name": "Castle Map",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "heartmax",
+        "name": "Heart max up",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lifemax",
+        "name": "Life max up",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cubezoe",
+        "name": "Cube of Zoe",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiritorb",
+        "name": "Spirit Orb",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "faeriescroll",
+        "name": "Faerie Scroll",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wolfsoul",
+        "name": "Soul of Wolf",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "librarycard",
+        "name": "Library Card",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "jewelopen",
+        "name": "Jewel of Open",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "merman",
+        "name": "Merman Statue",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "holysymbol",
+        "name": "Holy Symbol",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "leapstone",
+        "name": "Leap Stone",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "familiar",
+        "name": "Demon Card",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mistform",
+        "name": "Form of Mist",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "batsoul",
+        "name": "Soul of Bat",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "familiar",
+        "name": "Faerie Card",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "familiar",
+        "name": "Bat Card",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "familiar",
+        "name": "Ghost Card",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "familiar",
+        "name": "Sword Card",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mistpower",
+        "name": "Power of Mist",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "batfire",
+        "name": "Fire of Bat",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wolfpower",
+        "name": "Power of Wolf",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wolfskill",
+        "name": "Skill of Wolf",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravboots",
+        "name": "Gravity Boots",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "goldring",
+        "name": "Gold Ring",
+        "itemId": 25,
+        "over": "hint-image",
+        "overText": "Wear...Clock...",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "batecho",
+        "name": "Echo of Bat",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spikebreaker",
+        "name": "Spike Breaker Armor",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "silverring",
+        "name": "Silver Ring",
+        "itemId": 28,
+        "over": "hint-image",
+        "overText": "...in...Tower",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "holyglasses",
+        "name": "Holy Glasses",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "echoforce",
+        "name": "Force of Echo",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gascloud",
+        "name": "Gas Cloud",
+        "itemId": 31,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "alumail",
+        "name": "Alucard Mail",
+        "itemId": 32,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "dragonhelm",
+        "name": "Dragon Helm",
+        "itemId": 33,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "alushield",
+        "name": "Alucard Shield",
+        "itemId": 34,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "alusword",
+        "name": "Alucard Sword",
+        "itemId": 35,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "vladring",
+        "name": "Ring of Vlad",
+        "itemId": 36,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "vladheart",
+        "name": "Heart of Vlad",
+        "itemId": 37,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "vladbone",
+        "name": "Rib of Vlad",
+        "itemId": 38,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "vladfang",
+        "name": "Tooth of Vlad",
+        "itemId": 39,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "vladeye",
+        "name": "Eye of Vlad",
+        "itemId": 40,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": []
+  }
+}

@@ -1029,50 +1029,56 @@ let keyslots = {};
       targetSection.className = "parent-flex";
     }
     
-    for (let i = 0; i < gamesList.length; i++) {
-      const key = gamesList[i];
-      const value = main.games[key];
-      
-      tracker.currentGame = value;
-      const itemFieldName = "itemField" + key;
-      
-      let foundItem = null;
-      let gameName = "";
-      for (let i = 0; i < targetingData.length; i++) {
-        if (targetingData[i].value == key) {
-          foundItem = targetingData[i];
+    // add fetch here
+    fetch('js/rawdata.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        for (let i = 0; i < gamesList.length; i++) {
+          const key = gamesList[i];
+          const value = main.games[key];
+          
+          tracker.currentGame = value;
+          const itemFieldName = "itemField" + key;
+          
+          let foundItem = null;
+          let gameName = "";
+          for (let i = 0; i < targetingData.length; i++) {
+            if (targetingData[i].value == key) {
+              foundItem = targetingData[i];
+            }
+          }
+          if (foundItem) {
+            gameName += foundItem.innerHTML;
+          }
+          
+          let newSection = document.createElement("section");
+          if (newSection.classList) {
+            newSection.classList.add("flex-field");
+            newSection.classList.add("child-field");
+            newSection.classList.add("game-" + tracker.currentGame);
+          } else {
+            newSection.className = "flex-field child-field game-" + tracker.currentGame
+          }
+          newSection.id = itemFieldName;
+          
+          let gameTitle = document.createElement("h4");
+          gameTitle.innerText = gameName;
+          newSection.appendChild(gameTitle);
+          
+          targetSection.appendChild(newSection);
+          
+          tracker.workingData = data[tracker.currentGame];
+          tracker.generate(itemFieldName);
+          
+          // CURRENTLY UNDER CONSTRUCTION
+          /* if (tracker.showTotals) {
+            let targetHeader = targetSection.getElementsByTagName("h4");
+            targetHeader = targetHeader[targetHeader.length - 1];
+            tracker.renderPercentage(targetHeader);
+          } */
         }
-      }
-      if (foundItem) {
-        gameName += foundItem.innerHTML;
-      }
-      
-      let newSection = document.createElement("section");
-      if (newSection.classList) {
-        newSection.classList.add("flex-field");
-        newSection.classList.add("child-field");
-        newSection.classList.add("game-" + tracker.currentGame);
-      } else {
-        newSection.className = "flex-field child-field game-" + tracker.currentGame
-      }
-      newSection.id = itemFieldName;
-      
-      let gameTitle = document.createElement("h4");
-      gameTitle.innerText = gameName;
-      newSection.appendChild(gameTitle);
-      
-      targetSection.appendChild(newSection);
-      
-      tracker.workingData = rawData[tracker.currentGame];
-      tracker.generate(itemFieldName);
-      
-      // CURRENTLY UNDER CONSTRUCTION
-      /* if (tracker.showTotals) {
-        let targetHeader = targetSection.getElementsByTagName("h4");
-        targetHeader = targetHeader[targetHeader.length - 1];
-        tracker.renderPercentage(targetHeader);
-      } */
-    }
+      });
     
     let target = document.getElementById("itemField");
     if (target.classList) { // browser compatibility logic
@@ -1574,44 +1580,56 @@ let keyslots = {};
         return;
       }
       
-      if (rawData.hasOwnProperty(incomingGame)) {
-        let game = null;
-        for (const [key, value] of Object.entries(main.games)) {
-          if (value == incomingGame) {
-            game = key;
-            break;
+      // add fetch here
+      fetch('js/rawdata.json')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          console.log(incomingGame);
+          console.log(data[incomingGame]);
+          if (data.hasOwnProperty(incomingGame)) {
+            let game = null;
+            for (const [key, value] of Object.entries(main.games)) {
+              if (value == incomingGame) {
+                game = key;
+                break;
+              }
+            }
+            tracker.currentGame = incomingGame;
+            if (document.body.classList) {
+              document.body.classList.add("game-" + tracker.currentGame);
+            } else {
+              document.body.className += " game-" + tracker.currentGame;
+            }
+            tracker.workingData = data[tracker.currentGame];
+            let targetingData = document.forms["startupMenu"]["selectedGame"].options;
+            let foundItem = null;
+            for (let i = 0; i < targetingData.length; i++) {
+              if (targetingData[i].value == game) {
+                foundItem = targetingData[i];
+              }
+            }
+            if (foundItem) {
+              document.title += " - " + foundItem.innerHTML;
+            }
+            
+            let menuPointer = document.getElementById("selection");
+            menuPointer.remove();
+            
+            let target = document.getElementById("itemField");
+            if (target.classList) { // browser compatibility logic
+              target.classList.remove("hide-section");
+            } else {
+              target.className += target.className.replace(/\bhide-section\b/g);
+            }
+            
+            tracker.generate("itemField");
           }
-        }
-        tracker.currentGame = incomingGame;
-        if (document.body.classList) {
-          document.body.classList.add("game-" + tracker.currentGame);
-        } else {
-          document.body.className += " game-" + tracker.currentGame;
-        }
-        tracker.workingData = rawData[tracker.currentGame];
-        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
-        let foundItem = null;
-        for (let i = 0; i < targetingData.length; i++) {
-          if (targetingData[i].value == game) {
-            foundItem = targetingData[i];
-          }
-        }
-        if (foundItem) {
-          document.title += " - " + foundItem.innerHTML;
-        }
-        
-        let menuPointer = document.getElementById("selection");
-        menuPointer.remove();
-        
-        let target = document.getElementById("itemField");
-        if (target.classList) { // browser compatibility logic
-          target.classList.remove("hide-section");
-        } else {
-          target.className += target.className.replace(/\bhide-section\b/g);
-        }
-        
-        tracker.generate("itemField");
-      }
+        })
+        .catch(e => {
+          console.error("failed to fetch!");
+          console.error(e);
+        });
     }
   }
 

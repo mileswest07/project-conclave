@@ -1,0 +1,137 @@
+{
+  "pb": {
+    "checklistWidth": 4,
+    "checklistLayout": [
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 12,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "chozoArtifact",
+        "sprite": "artifact",
+        "name": "Artifacts",
+        "singleItemName": "Artifact",
+        "bg": "008080",
+        "itemId": 1,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "powerBombA",
+        "name": "Power Bombs",
+        "bg": "98b830",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileC",
+        "name": "Missile Launcher",
+        "bg": "d82800",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "forceBall",
+        "name": "Force Ball",
+        "bg": "007f0e",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "thardus",
+        "name": "Thardus",
+        "bossId": 101
+      },
+      {
+        "id": "opirate",
+        "name": "Omega Pirate",
+        "bossId": 102
+      },
+      {
+        "id": "metaridley",
+        "name": "Meta Ridley",
+        "bossId": 103
+      },
+      {
+        "id": "mprime",
+        "name": "Metroid Prime",
+        "bossId": 104
+      },
+      {
+        "id": "mprimecore",
+        "name": "Metroid Prime (Core)",
+        "bossId": 105
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Pirate Frigate",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Tallon Overworld",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Phendrana Drifts",
+        "color": "bf00bf"
+      },
+      {
+        "id": 4,
+        "name": "Phazon Mines",
+        "color": "009700"
+      },
+      {
+        "id": 5,
+        "name": "Artifact Temple",
+        "color": "009700"
+      },
+      {
+        "id": 6,
+        "name": "Impact Crater",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "screwAttackB",
+        "name": "Special",
+        "extraId": 1001,
+        "nodeType": "lore"
+      }
+    ],
+    "mapTree": [],
+    "grid": "mp_grid.png"
+  }
+}

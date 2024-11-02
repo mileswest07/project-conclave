@@ -1,0 +1,615 @@
+{
+  "mom": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 1,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 20,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 21,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 5,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 70,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 6,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 16,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 3,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missile",
+        "name": "Missiles",
+        "sprite": "missile",
+        "bg": "d82800",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "sprite": "tank",
+        "alreadyHasMainItem": true,
+        "bg": "d82800",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bombA",
+        "name": "Bombs",
+        "sprite": "bomb",
+        "bg": "3800a8",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyPartA",
+        "locale": {
+          "enUS": {
+            "id": "energyPart"
+          }
+        },
+        "name": "Energy Parts",
+        "singleItemName": "Energy Part",
+        "sprite": "part",
+        "bg": "fcc4d8",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTank",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "sprite": "energy",
+        "bg": "78a4bc",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeAccel",
+        "name": "Accel Charges",
+        "singleItemName": "Accel Charge",
+        "sprite": "accel",
+        "bg": "808000",
+        "itemId": 7,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "diffusionBeam",
+        "locale": {
+          "enUS": {
+            "id": "diffusionBeamA"
+          }
+        },
+        "name": "Diffusion Beam",
+        "sprite": "diffusion",
+        "bg": "7f2800",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "name": "Varia Feature",
+        "bg": "ff7e00",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBoosterA",
+        "name": "Speed Booster",
+        "sprite": "speed",
+        "bg": "ff0094",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "eRecoveryTankA",
+        "locale": {
+          "enUS": {
+            "id": "eRecoveryTank"
+          }
+        },
+        "name": "E-Recovery Tanks",
+        "singleItemName": "E-Recovery Tank",
+        "sprite": "erec",
+        "bg": "6f3198",
+        "itemId": 12,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "waveBeamC",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "grappleBeam",
+        "name": "Grapple Beam",
+        "sprite": "grapple",
+        "bg": "00e8d8",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissile",
+        "name": "Super Missiles",
+        "sprite": "super",
+        "bg": "007f0e",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeam",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "seekerLauncher",
+        "name": "Seeker Missiles",
+        "sprite": "seeker",
+        "bg": "644080",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuitC",
+        "name": "Gravity Feature",
+        "bg": "602880",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBomb",
+        "name": "Power Bombs",
+        "sprite": "pbomb",
+        "bg": "98b830",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "brugmass",
+        "name": "Brug Mass",
+        "bossId": 101
+      },
+      {
+        "id": "funetwins",
+        "name": "Fune and Nahime",
+        "bossId": 102,
+        "nodeType": "battle"
+      },
+      {
+        "id": "kihive",
+        "name": "King Ki Hunter",
+        "bossId": 103
+      },
+      {
+        "id": "zebesians",
+        "name": "Cyborg Zebesians",
+        "bossId": 104,
+        "nodeType": "battle"
+      },
+      {
+        "id": "mcridley",
+        "name": "Mystery Creature",
+        "bossId": 105
+      },
+      {
+        "id": "goyagma",
+        "name": "Goyagma",
+        "bossId": 106
+      },
+      {
+        "id": "deleter",
+        "name": "Ferro Crusher",
+        "bossId": 107
+      },
+      {
+        "id": "rhedogiana",
+        "name": "Rhedogian",
+        "bossId": 108,
+        "nodeType": "battle"
+      },
+      {
+        "id": "vorash",
+        "name": "Vorash",
+        "bossId": 109
+      },
+      {
+        "id": "rhedogianb",
+        "name": "Rhedogian",
+        "bossId": 110,
+        "nodeType": "battle"
+      },
+      {
+        "id": "rhedogianc",
+        "name": "Rhedogian",
+        "bossId": 111,
+        "nodeType": "battle"
+      },
+      {
+        "id": "rhedogiand",
+        "name": "Rhedogian",
+        "bossId": 112,
+        "nodeType": "battle"
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 113
+      },
+      {
+        "id": "nightmarea",
+        "name": "Nightmare",
+        "bossId": 114
+      },
+      {
+        "id": "nightmareb",
+        "name": "Nightmare",
+        "bossId": 115
+      },
+      {
+        "id": "qmetroid",
+        "name": "Queen Metroid",
+        "bossId": 116
+      },
+      {
+        "id": "mb",
+        "name": "MB",
+        "bossId": 117
+      },
+      {
+        "id": "gauntlet",
+        "name": "Final Gauntlet",
+        "bossId": 121,
+        "nodeType": "battle"
+      },
+      {
+        "id": "phantoon",
+        "name": "Phantoon",
+        "bossId": 122
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Main Sector",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Sector 1 - Biosphere",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Sector 2 - Cryosphere",
+        "color": "009700"
+      },
+      {
+        "id": 4,
+        "name": "Sector 3 - Pyrosphere",
+        "color": "bf00bf"
+      },
+      {
+        "id": 5,
+        "name": "Bioweapon Research Center",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Mission 1",
+        "extraId": 1003,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "System Management",
+        "extraId": 1004,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Room",
+        "extraId": 1005,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Scrap Block",
+        "extraId": 1006,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "East Access",
+        "extraId": 1007,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Exam Center",
+        "extraId": 1008,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Cyborg Zebesian Found",
+        "extraId": 1009,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sector 2 Access",
+        "extraId": 1010,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Deleter Hint",
+        "extraId": 1011,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Glass",
+        "extraId": 1012,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Stairs",
+        "extraId": 1013,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Desert Access",
+        "extraId": 1014,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Meeting Madeline",
+        "extraId": 1015,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Gravity Block",
+        "extraId": 1016,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Sector Zero",
+        "extraId": 1017,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Final Mission",
+        "extraId": 1018,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Postgame",
+        "extraId": 1021,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Adam's Helmet",
+        "extraId": 1022,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1002,
+        "nodeType": "lore"
+      },
+      {
+        "id": "navigationRoom",
+        "name": "Navigation Room",
+        "extraId": 1001,
+        "nodeType": "save"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mom_grid.png"
+  }
+}

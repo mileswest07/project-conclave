@@ -1,0 +1,308 @@
+{
+  "aol": {
+    "checklistWidth": 8,
+    "items": [
+      {
+        "id": "shieldSpell",
+        "name": "Shield Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "jumpSpell",
+        "name": "Jump Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lifeSpell",
+        "name": "Life Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fairySpell",
+        "name": "Fairy Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireSpell",
+        "name": "Fire Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "reflectSpell",
+        "name": "Reflect Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spellSpell",
+        "name": "Spell Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "thunderSpell",
+        "name": "Thunder Spell",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "trophy",
+        "name": "Trophy",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mirror",
+        "name": "Mirror",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waterOfLife",
+        "name": "Water of Life",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "water",
+        "name": "Water",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "child",
+        "name": "Child",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0
+      },
+      {
+        "id": "note",
+        "name": "Bagu's Note",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "candle",
+        "name": "Candle",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "glove",
+        "name": "Glove",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "raft",
+        "name": "Raft",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boots",
+        "name": "Boots",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "whistle",
+        "name": "Flute",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cross",
+        "name": "Cross",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hammer",
+        "name": "Hammer",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicKey",
+        "name": "Magic Key",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "heartContainer",
+        "name": "Heart Containers",
+        "start": 4,
+        "max": 8,
+        "segments": [],
+        "value": 1,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "magicContainer",
+        "name": "Magic Containers",
+        "start": 4,
+        "max": 8,
+        "segments": [],
+        "value": 1,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "downStab",
+        "name": "Down Stab",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "upStab",
+        "name": "Up Stab",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 0,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "life",
+        "name": "Life",
+        "start": 1,
+        "max": 8,
+        "segments": [],
+        "value": 0,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "magic",
+        "name": "Magic",
+        "start": 1,
+        "max": 8,
+        "segments": [],
+        "value": 0,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "attack",
+        "name": "Attack",
+        "start": 1,
+        "max": 8,
+        "segments": [],
+        "value": 0,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "palace",
+        "name": "",
+        "start": 0,
+        "max": 0,
+        "segments": [
+          {
+            "id": "palace",
+            "name": "Palace Crystals",
+            "start": 0,
+            "max": 6,
+            "value": 0,
+            "nodeType": "artifact"
+          },
+          {
+            "id": "triforce",
+            "name": "Great Palace open",
+            "start": 0,
+            "max": 1,
+            "value": 0,
+            "nodeType": "event",
+            "clearIfScramble": true
+          }
+        ],
+        "value": 0
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": []
+  }
+}

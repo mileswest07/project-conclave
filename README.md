@@ -1,4 +1,7 @@
 # Project Conclave - A Video Game Item Collection Tracker and Dependency Explorer
+
+> _con·​clave_, noun, from Latin _con_ ("with") + _claves_ ("keys")
+
 Item tracker for a number of games, vanilla and randomized.
 
 Please report any issues you may find [on Github!](https://github.com/mileswest07/project-conclave/issues)
@@ -64,6 +67,18 @@ Randomizers, Multiworlds, and Crossrandomizers:
 
 Currently not ready for use, and has been disabled. This is intended to be the next major upgrade of the tracker.
 
+## Development
+
+This project is meant to run on an internet browser. So far the tested browsers include Firefox and Chrome. Styling issues can be submitted as tickets and will be addressed accordingly.
+
+This platform reads a JSON file local to the server. To test it locally, make sure Node, NPM, and NPX are globally installed, then simply spin up a local server using:
+
+```
+$ npx http-server --proxy http://localhost:8080
+```
+
+In order to circumvent this, some code may be necessarily refactored in order to read `rawData.js` as an imported JS file, instead. It is recommended to sync changes between `rawdata.json` and `rawData.js` before submitting to main branch.
+
 ## Credits
 
 Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.
@@ -80,6 +95,8 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 * All randomizers: their respective teams
 
 All Metroid game graphics (with exception of fangames and derivative works) and Zelda Minish Cap graphics were made and owned by Nintendo Co., Ltd., Mercury Steam Entertainment S.L., and Capcom Co., Ltd., respectively. Graphics were ripped by me, and are used here without express permission and without intent to profit.
+
+All Castlevania: Symphony of the Night game graphics were made and owned by Konami Group Corporation. Graphics were ripped by online contributors, and are used here without express permission and without intent to profit.
 
 Rogue Dawn graphics were made by the Rogue Dawn creators, ripped by me, and are used here without express permission and without intent to profit.
 

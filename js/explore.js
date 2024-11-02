@@ -254,8 +254,8 @@ let interaction = {
         let itemClassName = hierarchy[r].displayIcon;
         let queryStringCheck = `.item-image.${itemClassName}`;
         let measurement = 42;
-        let sourcex = 817;
-        let sourcey = 817;
+        let sourcex = 860;
+        let sourcey = 860;
         let doRDAccessLockException = false;
         let doM1BossLockException = false;
         
@@ -410,7 +410,7 @@ let interaction = {
                 let imageSource = document.createElementNS("http://www.w3.org/2000/svg", "image");
                 imageSource.setAttribute("id", `source-${fileName}`);
                 
-                if (["mp, mp2e"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
+                if (["mp, mp2e", "mcon"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
                   switch (fileName) {
                     case "m1_spritesheet":
                       sourcex = 168;
@@ -420,6 +420,10 @@ let interaction = {
                       sourcex = 336;
                       sourcey = 84;
                       break;
+                    case "mzm_spritesheet":
+                      sourcex = 252;
+                      sourcey = 210;
+                      break;
                     case "mp_spritesheet":
                       sourcex = 256;
                       sourcey = 256;
@@ -427,6 +431,14 @@ let interaction = {
                     case "mpswf_spritesheet":
                       sourcex = 320;
                       sourcey = 320;
+                      break;
+                    case "am2r_spritesheet":
+                      sourcex = 252;
+                      sourcey = 252;
+                      break;
+                    case "sm_spritesheet":
+                      sourcex = 252;
+                      sourcey = 168;
                       break;
                     default:
                       break;
@@ -689,7 +701,7 @@ let interaction = {
     }
     
     // TODO: fix issue with explicit connections between transports and start nodes
-    if (departure.mapId !== destination.mapId) {
+    if (departure.hubId !== 1 && departure.mapId !== destination.mapId) {
       popMap(destination);
     }
   }
@@ -1640,7 +1652,6 @@ let interaction = {
   
   function generate() {
     //explorer.useAllSprites = true;
-    explorer.workingData = rawData[explorer.currentGame];
     explorer.currentMap = explorer.workingData.areas?.find(el => el.hasGameStart)?.id || 1;
     explorer.isAltworld = false; // will need this for Dark Aether traversal eventually
     explorer.itemCores = makeCores();
@@ -1670,13 +1681,6 @@ let interaction = {
         queryDict[k] = val;
       }
       let incomingGame = queryDict.game;
-      
-      if (!rawData.hasOwnProperty(incomingGame) || !rawData[incomingGame].hasOwnProperty("mapTree") || !(rawData[incomingGame].mapTree.length > 0)) {
-        console.error("not ready");
-        console.debug(incomingGame);
-        console.debug(rawData[incomingGame]);
-        return;
-      }
       
       if (document.body.classList) {
         document.body.classList.add("game-mode");
@@ -1711,55 +1715,68 @@ let interaction = {
       let selectedLocale = queryDict.l || '';
       explorer.useLocale = selectedLocale.length ? selectedLocale : null;
       
-      if (rawData.hasOwnProperty(incomingGame)) {
-        let game = null;
-        for (const [key, value] of Object.entries(games)) {
-          if (value == incomingGame) {
-            game = key;
-            break;
+      // add fetch here; can be sync because nothing else depends on it
+      fetch(`${main.jsonDir}/${incomingGame}.json`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.hasOwnProperty(incomingGame)) {
+            if (!data[incomingGame].hasOwnProperty("mapTree") || !(data[incomingGame].mapTree.length > 0)) {
+              console.debug(data[incomingGame]);
+              throw "game is not ready for Explorer Mode";
+            }
+            let game = null;
+            for (const [key, value] of Object.entries(games)) {
+              if (value == incomingGame) {
+                game = key;
+                break;
+              }
+            }
+            explorer.currentGame = incomingGame;
+            if (document.body.classList) {
+              document.body.classList.add("game-" + incomingGame);
+            } else {
+              document.body.className += " game-" + incomingGame;
+            }
+            explorer.workingData = data[incomingGame];
+            let targetingData = document.forms["startupMenu"]["selectedGame"].options;
+            let foundItem = null;
+            for (let i = 0; i < targetingData.length; i++) {
+              if (targetingData[i].value == game) {
+                foundItem = targetingData[i];
+              }
+            }
+            if (foundItem) {
+              document.title += " - " + foundItem.innerHTML;
+            }
+            
+            let menuPointer = document.getElementById("selection");
+            if (menuPointer.classList) {
+              menuPointer.classList.add("hide-section");
+            } else {
+              menuPointer.className += " hide-section";
+            }
+            
+            let target = document.getElementById("mapField");
+            if (target.classList) { // browser compatibility logic
+              target.classList.remove("hide-section");
+              if (explorer.useSprites || explorer.useAllSprites) {
+                target.classList.add("usesSprite");
+              }
+            } else {
+              target.className += target.className.replace(/\bhide-section\b/g);
+              if (explorer.useSprites || explorer.useAllSprites) {
+                target.className += " usesSprite";
+              }
+            }
+            
+            //console.debug(queryDict, incomingGame);
+            explorer.generate();
           }
-        }
-        explorer.currentGame = incomingGame;
-        if (document.body.classList) {
-          document.body.classList.add("game-" + explorer.currentGame);
-        } else {
-          document.body.className += " game-" + explorer.currentGame;
-        }
-        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
-        let foundItem = null;
-        for (let i = 0; i < targetingData.length; i++) {
-          if (targetingData[i].value == game) {
-            foundItem = targetingData[i];
-          }
-        }
-        if (foundItem) {
-          document.title += " - " + foundItem.innerHTML;
-        }
-        
-        let menuPointer = document.getElementById("selection");
-        if (menuPointer.classList) {
-          menuPointer.classList.add("hide-section");
-        } else {
-          menuPointer.className += " hide-section";
-        }
-        
-        let target = document.getElementById("mapField");
-        if (target.classList) { // browser compatibility logic
-          target.classList.remove("hide-section");
-          if (explorer.useSprites || explorer.useAllSprites) {
-            target.classList.add("usesSprite");
-          }
-        } else {
-          target.className += target.className.replace(/\bhide-section\b/g);
-          if (explorer.useSprites || explorer.useAllSprites) {
-            target.className += " usesSprite";
-          }
-        }
-        
-        //console.debug(queryDict, incomingGame);
-        
-        explorer.generate();
-      }
+        })
+        .catch(e => {
+          console.error(`failed to fetch JSON for game ${incomingGame}`);
+          console.error(e);
+        });
     }
   }
   

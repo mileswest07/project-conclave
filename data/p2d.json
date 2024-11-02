@@ -1,0 +1,822 @@
+{
+  "p2d": {
+    "checklistWidth": 3,
+    "checklistLayout": [
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Chozo",
+        "overText": "Artifact of Truth Acquired"
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Hive Mecha Defeated"
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 2,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 7,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 12,
+        "segments": [],
+        "over": "Z_Chozo",
+        "overText": "Hints Acquired"
+      }
+    ],
+    "items": [
+      {
+        "id": "scanVisor",
+        "name": "Scan Visor",
+        "sprite": "scan",
+        "bg": "bca470",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wallJumpBoots",
+        "name": "Wall Jump",
+        "bg": "ff7e00",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "sprite": "elevator",
+        "name": "Power Grip",
+        "bg": "00e8d8",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileC",
+        "sprite": "missile",
+        "name": "Missile Launcher",
+        "bg": "d82800",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Expansions",
+        "singleItemName": "Missile Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "d82800",
+        "itemId": 8,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTankA",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 9,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombB",
+        "sprite": "bombs",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostBall",
+        "sprite": "boost",
+        "name": "Boost Ball",
+        "bg": "ff0094",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBallA",
+        "sprite": "spring",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chozoArtifact",
+        "sprite": "artifact",
+        "name": "Chozo Artifacts",
+        "singleItemName": "Artifact",
+        "bg": "008080",
+        "itemId": 14,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "hivemecha",
+        "name": "Hive Mecha",
+        "bossId": 101
+      },
+      {
+        "id": "unused",
+        "name": "Quill 1",
+        "nodeType": "battle",
+        "bossId": 102
+      },
+      {
+        "id": "unused",
+        "name": "Quill 2",
+        "nodeType": "battle",
+        "bossId": 103
+      },
+      {
+        "id": "unused",
+        "name": "Quill 3",
+        "nodeType": "battle",
+        "bossId": 104
+      },
+      {
+        "id": "unused",
+        "name": "Quill 4",
+        "nodeType": "battle",
+        "bossId": 105
+      },
+      {
+        "id": "geemerbrain",
+        "name": "Geemer Brain",
+        "bossId": 106
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Tallon Overworld",
+        "hasGameStart": true,
+        "color": "db2b00"
+      },
+      {
+        "id": 2,
+        "name": "Chozo Ruins",
+        "color": "db2b00"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "nodeType": "lore",
+        "extraId": 1001
+      },
+      {
+        "id": "unused",
+        "name": "Red Leaves",
+        "nodeType": "trigger",
+        "extraId": 1005
+      },
+      {
+        "id": "unused",
+        "name": "100% Scans",
+        "nodeType": "trigger",
+        "extraId": 1006
+      },
+      {
+        "id": "unused",
+        "name": "100% Items",
+        "nodeType": "trigger",
+        "extraId": 1007
+      },
+      {
+        "id": "unused",
+        "name": "Gully",
+        "nodeType": "area",
+        "extraId": 1003
+      },
+      {
+        "id": "unused",
+        "name": "Skull Grid",
+        "nodeType": "lore",
+        "extraId": 1004
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "nodeType": "save",
+        "extraId": 1002
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": [
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Newborn"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Elder"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Strength"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Sun"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 6,
+                "reqdItemCount": 0,
+                "children": [
+                  {
+                    "nodeType": "easter",
+                    "id": 1001
+                  },
+                  {
+                    "nodeType": "upgrade",
+                    "id": 7,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "dropdown",
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Truth",
+                "children": [
+                  {
+                    "nodeType": "upgrade",
+                    "id": 6,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 6,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "return",
+            "children": [],
+            "vineToHubId": 2
+          },
+          {
+            "nodeType": "lock",
+            "id": 6,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "easter",
+                "id": 1005
+              },
+              {
+                "nodeType": "lock",
+                "id": 102,
+                "children": [
+                  {
+                    "nodeType": "battle",
+                    "id": 103
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 103,
+                "children": [
+                  {
+                    "nodeType": "battle",
+                    "id": 104
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 105,
+                "children": [
+                  {
+                    "nodeType": "boss",
+                    "id": 106,
+                    "children": [
+                      {
+                        "nodeType": "artifact",
+                        "id": 14,
+                        "isRandomizableItem": true,
+                        "name": "Artifact of Wild"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 1006,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "artifact",
+                    "id": 14,
+                    "isRandomizableItem": true,
+                    "name": "Artifact of World"
+                  }
+                ]
+              },
+              {
+                "nodeType": "elevator",
+                "transportToMapId": 2,
+                "toStartHubId": 11
+              },
+              {
+                "nodeType": "lock",
+                "id": 10,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "upgrade",
+                    "id": 11,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 12,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 6,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 9,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "area",
+                            "id": 1003
+                          },
+                          {
+                            "nodeType": "battle",
+                            "id": 102
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 7,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "upgrade",
+                                "id": 13,
+                                "isRandomizableItem": true
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 104,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "battle",
+                                "id": 105
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 4,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "artifact",
+                                "id": 14,
+                                "isRandomizableItem": true,
+                                "name": "Artifact of Chozo"
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 4,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "artifact",
+                                "id": 14,
+                                "isRandomizableItem": true,
+                                "name": "Artifact of Lifegiver"
+                              }
+                            ]
+                          }
+                        ],
+                        "vineToHubId": 3
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 13,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 10,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 1001,
+                "reqdItemCount": 0,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 8,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 10,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 6,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 8,
+                        "isRandomizableItem": true,
+                        "hubId": 4
+                      }
+                    ],
+                    "vineToHubId": 4
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 11,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 4
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 13,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 6,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 10,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 11,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "upgrade",
+                        "id": 12,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "artifact",
+                    "id": 14,
+                    "isRandomizableItem": true,
+                    "name": "Artifact of Nature"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 14,
+            "reqdItemCount": 12,
+            "children": [
+              {
+                "nodeType": "end",
+                "name": "End (Good)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 11,
+        "nodeType": "start",
+        "mapId": 2,
+        "children": [
+          {
+            "nodeType": "easter",
+            "id": 1004
+          },
+          {
+            "nodeType": "lock",
+            "id": 1005,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Spirit"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 1007,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "artifact",
+                "id": 14,
+                "isRandomizableItem": true,
+                "name": "Artifact of Warrior"
+              }
+            ]
+          },
+          {
+            "nodeType": "boss",
+            "id": 101,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 7,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "expansion",
+                "id": 9,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "end",
+                "name": "End"
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 8,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 10,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 10,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 8,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 10,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 11,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 8,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 10,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 11,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 8,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 10,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 11,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 12,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 8,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "grid": "mp_grid.png"
+  }
+}

@@ -1,0 +1,769 @@
+{
+  "mng": {
+    "checklistWidth": 6,
+    "checklistLayout": [
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 40,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 29,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 30,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 31,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 44,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 43,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 42,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 14,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 50,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 20,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "lookupId": 41,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "name": "Metroids defeated",
+        "type": "counter",
+        "value": 0,
+        "start": 0,
+        "max": 80,
+        "segments": [
+          {
+            "id": "monsterDna",
+            "name": "To unlock Trozodia",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "id": "monsterDna",
+            "name": "To unlock Pyrfair",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 1,
+            "max": 5
+          },
+          {
+            "id": "monsterDna",
+            "name": "To unlock Aqastar",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 5,
+            "max": 10
+          },
+          {
+            "id": "monsterDna",
+            "name": "To unlock Arcteria",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 10,
+            "max": 20
+          },
+          {
+            "id": "monsterDna",
+            "name": "To power up your ship",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 20,
+            "max": 35
+          },
+          {
+            "id": "monsterDna",
+            "name": "To unlock the Heart of the Galaxy",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 35,
+            "max": 60
+          },
+          {
+            "id": "monsterDna",
+            "name": "Genocide",
+            "sprite": "monsters",
+            "type": "counter",
+            "value": 0,
+            "start": 60,
+            "max": 80
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "missileTank",
+        "sprite": "missiles",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "bg": "d82800",
+        "itemId": 1,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "sprite": "grip",
+        "name": "Power Grip",
+        "bg": "00e8d8",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "flameShotA",
+        "sprite": "fire",
+        "name": "Fire Beam",
+        "bg": "ff4a4a",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bombs",
+        "name": "Bomb",
+        "bg": "3800a8",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "sprite": "speed",
+        "name": "Speed Booster",
+        "bg": "ff0094",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamA",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "sprite": "charge",
+        "name": "Charge Module",
+        "bg": "808000",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "sprite": "spring",
+        "name": "Jump Ball",
+        "bg": "886848",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "Hi-Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "supers",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "bg": "007f0e",
+        "itemId": 12,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "waveBeamD",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magneticShieldTank",
+        "sprite": "shields",
+        "name": "Magnetic Shield Tanks",
+        "singleItemName": "Magnetic Shield Tank",
+        "bg": "007098",
+        "itemId": 14,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "gravitySuit",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBall",
+        "sprite": "spider",
+        "name": "Spider Ball",
+        "bg": "bca470",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "sprite": "wide",
+        "name": "Spazer",
+        "bg": "ffff80",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "adapter",
+        "sprite": "adapter",
+        "name": "Bomb-Beam Adapter",
+        "bg": "887878",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeamE",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "zeroSuit",
+        "sprite": "chozo",
+        "name": "Zero Suit",
+        "bg": "007098",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "zeroSuitA",
+        "sprite": "black",
+        "name": "Black Zero Suit",
+        "bg": "6c0204",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fullPowerSuit",
+        "sprite": "suit",
+        "name": "Equipment recovered",
+        "bg": "ffb508",
+        "itemId": 31,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "phazonSuit",
+        "sprite": "phazon",
+        "name": "Phazon Suit",
+        "bg": "282018",
+        "itemId": 40,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbombs",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "bg": "98b830",
+        "itemId": 41,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 42,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 43,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeamE",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 44,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "alpha",
+        "name": "Alpha Metroid",
+        "bossId": 102
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma Metroid",
+        "bossId": 103
+      },
+      {
+        "id": "delta",
+        "name": "Grabber Gamma Metroid",
+        "bossId": 104
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta Metroid",
+        "bossId": 105
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 106
+      },
+      {
+        "id": "torizo",
+        "name": "Torizo",
+        "bossId": 111
+      },
+      {
+        "id": "spospaw",
+        "name": "Spore Spawn",
+        "bossId": 112
+      },
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 113
+      },
+      {
+        "id": "diorm",
+        "name": "Diorm",
+        "bossId": 114
+      },
+      {
+        "id": "draygon",
+        "name": "Draygon",
+        "bossId": 115
+      },
+      {
+        "id": "crocomice",
+        "name": "Crocomice",
+        "bossId": 116
+      },
+      {
+        "id": "chozoguard",
+        "name": "Chozo Guardian",
+        "bossId": 117
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 118
+      },
+      {
+        "id": "phantoon",
+        "name": "Phantoon",
+        "bossId": 119
+      },
+      {
+        "id": "gtorizo",
+        "name": "Golden Torizo",
+        "bossId": 120
+      },
+      {
+        "id": "larval",
+        "name": "Larval Metroid",
+        "bossId": 101
+      },
+      {
+        "id": "mbrain",
+        "name": "Mother Brain",
+        "bossId": 131
+      },
+      {
+        "id": "queen",
+        "name": "Queen Metroid",
+        "bossId": 132
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "SRX88",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Trozodia",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Pyrfair",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Aqastar",
+        "color": "009700"
+      },
+      {
+        "id": 5,
+        "name": "Arcteria",
+        "color": "bf00bf"
+      },
+      {
+        "id": 6,
+        "name": "Noctian",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 7,
+        "name": "Phazon Dimension",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 8,
+        "name": "Phazon Trozodia",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 9,
+        "name": "Phazon Pyrfair",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 10,
+        "name": "Phazon Aqastar",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 11,
+        "name": "Phazon Arcteria",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 12,
+        "name": "Phazon Noctian",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 13,
+        "name": "Noctian",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 14,
+        "name": "Phazon SRX88",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 15,
+        "name": "Heart of the Galaxy",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 16,
+        "name": "Phazon Heart of the Galaxy",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 17,
+        "name": "Escape Sequence",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "powerBeamD",
+        "name": "Phazon Portal",
+        "extraId": 1002,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "rechargeRoom",
+        "name": "Return Portal",
+        "extraId": 1003,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "unused",
+        "name": "Shine Spark Hint",
+        "extraId": 1004,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Charge Bomb Hint",
+        "extraId": 1005,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1006,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Ship Rescued",
+        "extraId": 1007,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "X",
+        "extraId": 1008,
+        "nodeType": "event"
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mph_grid.png"
+  }
+}

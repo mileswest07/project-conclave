@@ -1,0 +1,760 @@
+{
+  "mcon": {
+    "checklistWidth": 5,
+    "checklistLayout": [
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "S_Boss",
+        "overText": "Crocomire Defeated"
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "S_Boss",
+        "overText": "Kraid Defeated"
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "S_Boss",
+        "overText": "Ridley Defeated"
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 3,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 12,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 2,
+        "segments": []
+      },
+      {
+        "id": "boss",
+        "name": "Bosses",
+        "sprite": "bosses",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "missileTank",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "sprite": "missile",
+        "bg": "d82800",
+        "itemId": 1,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "name": "Bombs",
+        "sprite": "bomb",
+        "bg": "3800a8",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "name": "Power Grip",
+        "sprite": "grip",
+        "bg": "00e8d8",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeam",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "name": "Charge Beam",
+        "sprite": "charge",
+        "bg": "808000",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "sprite": "energy",
+        "bg": "78a4bc",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "highJump",
+        "name": "High Jump Boots",
+        "sprite": "high",
+        "bg": "c0a8d8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "name": "Speed Booster",
+        "sprite": "speed",
+        "bg": "ff0094",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "sprite": "smissile",
+        "bg": "007f0e",
+        "itemId": 9,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "name": "Spazer Beam",
+        "sprite": "wide",
+        "bg": "ffff80",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyCell",
+        "name": "Fuel Cell",
+        "sprite": "fuelcell",
+        "bg": "008080",
+        "itemId": 11,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 103
+      },
+      {
+        "id": "crocomire",
+        "name": "Crocomire",
+        "bossId": 101
+      },
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 102
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Simulation",
+        "hasGameStart": true,
+        "color": "2038ec"
+      }
+    ],
+    "extras": [
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "nodeType": "save",
+        "extraId": 1002
+      },
+      {
+        "id": "unused",
+        "name": "Floor Switch",
+        "nodeType": "trigger",
+        "extraId": 1001
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": [
+          {
+            "nodeType": "save",
+            "id": 1002
+          },
+          {
+            "nodeType": "trigger",
+            "id": 1001
+          },
+          {
+            "nodeType": "lock",
+            "id": 1002,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 1,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "dropdown",
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 2,
+                "isRandomizableItem": true,
+                "hubId": 2
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 3,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 1,
+                        "isRandomizableItem": true
+                      }
+                    ],
+                    "hubId": 3
+                  }
+                ],
+                "hubId": 2,
+                "vineToHubId": 3
+              }
+            ],
+            "vineToHubId": 2
+          },
+          {
+            "nodeType": "lock",
+            "id": 1,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 2
+          },
+          {
+            "nodeType": "lock",
+            "id": 2,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 3
+          },
+          {
+            "nodeType": "lock",
+            "id": 1,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 1,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "expansion",
+                "id": 1,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "dropdown",
+                    "children": [
+                      {
+                        "nodeType": "upgrade",
+                        "id": 3,
+                        "isRandomizableItem": true,
+                        "hubId": 4
+                      }
+                    ],
+                    "vineToHubId": 4
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 3,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 4
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 4,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 4
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 3,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 5,
+                        "isRandomizableItem": true
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 4,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "save",
+                            "id": 1002,
+                            "hubId": 7
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 6,
+                            "isRandomizableItem": true,
+                            "hubId": 7
+                          },
+                          {
+                            "nodeType": "dropdown",
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              },
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              },
+                              {
+                                "nodeType": "dropdown",
+                                "children": [
+                                  {
+                                    "nodeType": "boss",
+                                    "id": 101,
+                                    "children": [
+                                      {
+                                        "nodeType": "upgrade",
+                                        "id": 7,
+                                        "isRandomizableItem": true,
+                                        "hubId": 8
+                                      }
+                                    ],
+                                    "vineToHubId": 8
+                                  }
+                                ]
+                              }
+                            ],
+                            "hubId": 7
+                          },
+                          {
+                            "nodeType": "return",
+                            "children": [
+                              {
+                                "nodeType": "lock",
+                                "id": 7,
+                                "reqdItemCount": 1,
+                                "children": [],
+                                "vineToHubId": 8
+                              }
+                            ],
+                            "hubId": 7
+                          }
+                        ],
+                        "vineToHubId": 7
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 7
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 7,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "save",
+                            "id": 1002
+                          },
+                          {
+                            "nodeType": "dropdown",
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true,
+                                "hubId": 9
+                              },
+                              {
+                                "nodeType": "expansion",
+                                "id": 6,
+                                "isRandomizableItem": true,
+                                "hubId": 9
+                              },
+                              {
+                                "nodeType": "dropdown",
+                                "children": [
+                                  {
+                                    "nodeType": "boss",
+                                    "id": 103,
+                                    "children": [
+                                      {
+                                        "nodeType": "upgrade",
+                                        "id": 8,
+                                        "isRandomizableItem": true,
+                                        "hubId": 10
+                                      }
+                                    ],
+                                    "vineToHubId": 10
+                                  }
+                                ],
+                                "hubId": 9
+                              },
+                              {
+                                "nodeType": "return",
+                                "children": [
+                                  {
+                                    "nodeType": "lock",
+                                    "id": 8,
+                                    "reqdItemCount": 1,
+                                    "children": [],
+                                    "vineToHubId": 10
+                                  }
+                                ],
+                                "hubId": 9
+                              },
+                              {
+                                "nodeType": "lock",
+                                "id": 8,
+                                "reqdItemCount": 1,
+                                "children": [
+                                  {
+                                    "nodeType": "expansion",
+                                    "id": 1,
+                                    "isRandomizableItem": true
+                                  }
+                                ],
+                                "hubId": 9
+                              },
+                              {
+                                "nodeType": "lock",
+                                "id": 8,
+                                "reqdItemCount": 1,
+                                "children": [
+                                  {
+                                    "nodeType": "expansion",
+                                    "id": 1,
+                                    "isRandomizableItem": true
+                                  }
+                                ],
+                                "hubId": 9
+                              }
+                            ],
+                            "vineToHubId": 9
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 8,
+                            "reqdItemCount": 1,
+                            "children": [],
+                            "vineToHubId": 9
+                          },
+                          {
+                            "nodeType": "return",
+                            "children": [],
+                            "vineToHubId": 9
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 7,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "save",
+                            "id": 1002
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 1,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 1,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 1,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 6,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 9,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "boss",
+                            "id": 103
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 103,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 10,
+                                "isRandomizableItem": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 9,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 9,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 1,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "dropdown",
+                    "children": [
+                      {
+                        "nodeType": "upgrade",
+                        "id": 4,
+                        "isRandomizableItem": true,
+                        "hubId": 6
+                      }
+                    ],
+                    "hubId": 5,
+                    "vineToHubId": 6
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 4,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "hubId": 5,
+                    "vineToHubId": 6
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "hubId": 5,
+                    "vineToHubId": 6
+                  }
+                ],
+                "vineToHubId": 5
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 2,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 5
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 1,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 101,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "lock",
+                            "id": 102,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "lock",
+                                "id": 103,
+                                "reqdItemCount": 1,
+                                "children": [
+                                  {
+                                    "nodeType": "artifact",
+                                    "id": 11,
+                                    "isRandomizableItem": true
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 11,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "end"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "grid": "m2ros_grid.png"
+  }
+}

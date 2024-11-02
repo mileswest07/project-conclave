@@ -1,0 +1,1508 @@
+{
+  "mp2e": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "E_Lumin",
+        "overText": "Great Temple - Main Energy Controller 1"
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 23,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Torvus Bog - Torvus Temple"
+      },
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Bomb Guardian Defeated"
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Jump Guardian Defeated"
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Dark Alpha Splinter Defeated"
+      },
+      {
+        "lookupId": 4,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "E_Lumin",
+        "overText": "Agon Wastes - Agon Energy Controller"
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Agon Wastes - Storage D"
+      },
+      {
+        "lookupId": 28,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Agon Wastes - Mining Station B"
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Temple Grounds - GFMC Compound"
+      },
+      {
+        "lookupId": 25,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Boost Guardian Defeated"
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": [],
+        "clearIfScramble": true
+      },
+      {
+        "lookupId": 26,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 22,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Amorbis Defeated"
+      },
+      {
+        "lookupId": 32,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Chykka Defeated"
+      },
+      {
+        "lookupId": 24,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "E_Lumin",
+        "overText": "Torvus Bog - Torvus Energy Controller"
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Dark Agon Wastes - Ing Cache 1"
+      },
+      {
+        "lookupId": 37,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Temple Grounds - Grand Windchamber"
+      },
+      {
+        "lookupId": 27,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Temple Grounds - Hall of Honored Dead"
+      },
+      {
+        "lookupId": 34,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Spider Guardian Defeated"
+      },
+      {
+        "lookupId": 30,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Grapple Guardian Defeated"
+      },
+      {
+        "lookupId": 29,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Torvus Bog - Hydrodynamo Storage"
+      },
+      {
+        "lookupId": 38,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Sanctuary Fortress - Aerie"
+      },
+      {
+        "lookupId": 33,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "E_Lumin",
+        "overText": "Sanctuary Fortress - Sanctuary Temple"
+      },
+      {
+        "lookupId": 41,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Quadraxis Defeated"
+      },
+      {
+        "lookupId": 42,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Dark Agon Wastes - Ing Cache 2"
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 35,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Power Bomb Guardian Defeated"
+      },
+      {
+        "lookupId": 39,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Sanctuary Fortress - Vault"
+      },
+      {
+        "lookupId": 43,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "E_Lumin",
+        "overText": "Great Temple - Main Energy Controller 2"
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 14,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 49,
+        "segments": [],
+        "clearIfScramble": true
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 30,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 20,
+        "value": 1,
+        "start": 0,
+        "max": 4,
+        "segments": [],
+        "clearIfScramble": true
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 36,
+        "value": 1,
+        "start": 0,
+        "max": 8,
+        "segments": []
+      },
+      {
+        "lookupId": 44,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 45,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "lookupId": 46,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "displayIfScramble": true
+      },
+      {
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "clearIfScramble": true,
+        "segments": [
+          {
+            "lookupId": 21,
+            "value": 0,
+            "start": 0,
+            "max": 3,
+            "over": "F_Boss_Ex",
+            "overText": "Amorbis required"
+          },
+          {
+            "lookupId": 1101,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "lookupId": 1102,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 21,
+        "value": 1,
+        "start": 0,
+        "max": 3,
+        "over": "F_Boss_Ex",
+        "overText": "Amorbis required",
+        "displayIfScramble": true
+      },
+      {
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "clearIfScramble": true,
+        "segments": [
+          {
+            "lookupId": 31,
+            "value": 0,
+            "start": 0,
+            "max": 3,
+            "over": "F_Boss_Ex",
+            "overText": "Chykka required"
+          },
+          {
+            "lookupId": 1103,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "lookupId": 1104,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 31,
+        "value": 1,
+        "start": 0,
+        "max": 3,
+        "over": "F_Boss_Ex",
+        "overText": "Chykka required",
+        "displayIfScramble": true
+      },
+      {
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "clearIfScramble": true,
+        "segments": [
+          {
+            "lookupId": 40,
+            "value": 0,
+            "start": 0,
+            "max": 3,
+            "over": "F_Boss_Ex",
+            "overText": "Quadraxis required"
+          },
+          {
+            "lookupId": 1105,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "lookupId": 1106,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 40,
+        "value": 1,
+        "start": 0,
+        "max": 3,
+        "over": "F_Boss_Ex",
+        "overText": "Quadraxis required",
+        "displayIfScramble": true
+      },
+      {
+        "value": 0,
+        "start": 0,
+        "max": 9,
+        "clearIfScramble": true,
+        "segments": [
+          {
+            "lookupId": 47,
+            "value": 0,
+            "start": 0,
+            "max": 9,
+            "over": "E_Lumin_Ex",
+            "overText": "Hints acquired"
+          },
+          {
+            "lookupId": 1107,
+            "value": 0,
+            "start": 0,
+            "max": 1
+          }
+        ]
+      },
+      {
+        "lookupId": 47,
+        "value": 1,
+        "start": 0,
+        "max": 9,
+        "over": "E_Lumin_Ex",
+        "overText": "Hints acquired",
+        "displayIfScramble": true
+      }
+    ],
+    "items": [
+      {
+        "id": "combatVisorA",
+        "name": "Combat Visor",
+        "sprite": "combat",
+        "bg": "80d0ff",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBeamA",
+        "name": "Power Beam",
+        "sprite": "power",
+        "bg": "ffb508",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Visor",
+        "sprite": "scan",
+        "bg": "bca470",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamA",
+        "name": "Charge Beam",
+        "bg": "808000",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileC",
+        "name": "Missile Launcher",
+        "sprite": "missile",
+        "bg": "d82800",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "name": "Missile Expansions",
+        "singleItemName": "Missile Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "d82800",
+        "itemId": 8,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTransferModule",
+        "name": "Energy Transfer Module",
+        "bg": "887878",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "violetTranslatorA",
+        "name": "Violet Translator",
+        "locale": {
+          "enUS": {
+            "id": "violetTranslator"
+          }
+        },
+        "bg": "a36fb1",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTankA",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 11,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bombC",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBallA",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "amberTranslatorA",
+        "name": "Amber Translator",
+        "locale": {
+          "enUS": {
+            "id": "amberTranslator"
+          }
+        },
+        "bg": "ad6a40",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spinBoost",
+        "name": "Space Jump Boots",
+        "bg": "00a0e0",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "darkBeam",
+        "name": "Dark Beam",
+        "sprite": "darkbeam",
+        "bg": "9c84ff",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "darkAmmoExpansion",
+        "name": "Dark Beam Ammo Expansions",
+        "singleItemName": "Dark Beam Ammo Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "9c84ff",
+        "itemId": 17,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "lightBeam",
+        "name": "Light Beam",
+        "sprite": "light",
+        "bg": "5ac7f7",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lightAmmoExpansion",
+        "name": "Light Beam Ammo Expansions",
+        "singleItemName": "Light Beam Ammo Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "5ac7f7",
+        "itemId": 19,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "beamAmmoExpansion",
+        "name": "Beam Ammo Expansions",
+        "singleItemName": "Beam Ammo Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "808000",
+        "itemId": 20,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "templeKey",
+        "locale": {
+          "enUS": {
+            "id": "darkAgonKey"
+          }
+        },
+        "name": "Dark Agon Keys",
+        "singleItemName": "Dark Agon Key",
+        "sprite": "redKey",
+        "bg": "ad6a40",
+        "itemId": 21,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "darkSuitA",
+        "name": "Dark Suit",
+        "bg": "6c0204",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileC",
+        "name": "Super Missile",
+        "bg": "ffb508",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "emeraldTranslatorA",
+        "name": "Emerald Translator",
+        "locale": {
+          "enUS": {
+            "id": "emeraldTranslator"
+          }
+        },
+        "bg": "4b9467",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostBall",
+        "name": "Boost Ball",
+        "sprite": "boost",
+        "bg": "ff0094",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cannonball",
+        "name": "Cannon Ball",
+        "bg": "ff0094",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "seekerLauncherA",
+        "name": "Seeker Launcher",
+        "bg": "644080",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "darkburst",
+        "name": "Darkburst",
+        "bg": "9c84ff",
+        "itemId": 28,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravityBoost",
+        "name": "Gravity Boost",
+        "bg": "602880",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "grappleBeamA",
+        "name": "Grapple Beam",
+        "bg": "00e8d8",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "templeKey",
+        "locale": {
+          "enUS": {
+            "id": "darkTorvusKey"
+          }
+        },
+        "name": "Dark Torvus Keys",
+        "singleItemName": "Dark Torvus Key",
+        "sprite": "redKey",
+        "bg": "4b9467",
+        "itemId": 31,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "darkVisor",
+        "name": "Dark Visor",
+        "sprite": "darkvisor",
+        "bg": "ff7b7b",
+        "itemId": 32,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cobaltTranslatorA",
+        "name": "Cobalt Translator",
+        "locale": {
+          "enUS": {
+            "id": "cobaltTranslator"
+          }
+        },
+        "bg": "5c819e",
+        "itemId": 33,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBallA",
+        "name": "Spider Ball",
+        "sprite": "spider",
+        "bg": "007f0e",
+        "itemId": 34,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombB",
+        "name": "Power Bombs",
+        "sprite": "pbomb",
+        "bg": "98b830",
+        "itemId": 35,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombExpA",
+        "name": "Power Bomb Expansions",
+        "singleItemName": "Power Bomb Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "98b830",
+        "itemId": 36,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "sunburst",
+        "name": "Sunburst",
+        "bg": "5ac7f7",
+        "itemId": 37,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "echoVisor",
+        "name": "Echo Visor",
+        "sprite": "echo",
+        "bg": "c8d8d8",
+        "itemId": 38,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttackA",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 39,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "templeKey",
+        "locale": {
+          "enUS": {
+            "id": "ingHiveKey"
+          }
+        },
+        "name": "Ing Hive Keys",
+        "singleItemName": "Ing Hive Key",
+        "sprite": "redKey",
+        "bg": "5c819e",
+        "itemId": 40,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "annihilatorBeam",
+        "name": "Annihilator Beam",
+        "sprite": "annihilator",
+        "bg": "9b9b9b",
+        "itemId": 41,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "sonicBoom",
+        "name": "Sonic Boom",
+        "bg": "9b9b9b",
+        "itemId": 42,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lightSuit",
+        "name": "Light Suit",
+        "bg": "ffff80",
+        "itemId": 43,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "doubleDamageA",
+        "name": "Double Damage",
+        "bg": "ffb508",
+        "itemId": 44,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "infiniteBeamAmmo",
+        "name": "Unlimited Beam Ammo",
+        "bg": "808000",
+        "itemId": 45,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "infiniteMissiles",
+        "name": "Unlimited Missiles",
+        "bg": "d82800",
+        "itemId": 46,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "darkAetherKey",
+        "locale": {
+          "enUS": {
+            "id": "skyTempleKey"
+          }
+        },
+        "name": "Sky Temple Keys",
+        "singleItemName": "Sky Temple Key",
+        "sprite": "skyKey",
+        "bg": "008080",
+        "itemId": 47,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "splinter",
+        "name": "Alpha Splinter",
+        "bossId": 101
+      },
+      {
+        "id": "bombguard",
+        "name": "Bomb Guardian",
+        "bossId": 102
+      },
+      {
+        "id": "jumpguard",
+        "name": "Jump Guardian",
+        "bossId": 103
+      },
+      {
+        "id": "missileguard",
+        "name": "Missile Trooper",
+        "bossId": 104
+      },
+      {
+        "id": "dsamusa",
+        "name": "Dark Samus 1",
+        "bossId": 105
+      },
+      {
+        "id": "amorbis",
+        "name": "Amorbis",
+        "bossId": 106,
+        "requires": [
+          "6x1",
+          "12x1"
+        ]
+      },
+      {
+        "id": "torvuspirates",
+        "name": "Pirate Ambush",
+        "nodeType": "battle",
+        "bossId": 107
+      },
+      {
+        "id": "boostguard",
+        "name": "Boost Guardian",
+        "bossId": 108,
+        "requires": [
+          "6x1",
+          "12x1"
+        ]
+      },
+      {
+        "id": "alphablogg",
+        "name": "Alpha Blogg",
+        "bossId": 109
+      },
+      {
+        "id": "grappleguard",
+        "name": "Grapple Guardian",
+        "bossId": 110
+      },
+      {
+        "id": "chykka",
+        "name": "Chykka",
+        "bossId": 111
+      },
+      {
+        "id": "reactorquad",
+        "name": "Quad",
+        "nodeType": "battle",
+        "bossId": 112,
+        "requires": [
+          "6x1",
+          "12x1|25x1"
+        ]
+      },
+      {
+        "id": "spiderguard",
+        "name": "Spider Guardian",
+        "bossId": 113,
+        "requires": [
+          "6x1",
+          "12x1",
+          "25x1"
+        ]
+      },
+      {
+        "id": "pbombguard",
+        "name": "Power Bomb Guardian",
+        "bossId": 114,
+        "requires": [
+          "6x1",
+          "12x1",
+          "34x1"
+        ]
+      },
+      {
+        "id": "dsamusb",
+        "name": "Dark Samus 2",
+        "bossId": 115
+      },
+      {
+        "id": "caretaker",
+        "name": "Caretaker Class Drone",
+        "bossId": 116,
+        "requires": [
+          "6x1",
+          "12x1",
+          "25x1",
+          "34x1"
+        ]
+      },
+      {
+        "id": "quadraxis",
+        "name": "Quadraxis",
+        "bossId": 117,
+        "requires": [
+          "6x1",
+          "12x1",
+          "25x1",
+          "34x1"
+        ]
+      },
+      {
+        "id": "emperoring",
+        "name": "Emperor Ing",
+        "bossId": 118,
+        "requires": [
+          "6x1",
+          "12x1",
+          "16x1",
+          "18x1",
+          "34x1"
+        ]
+      },
+      {
+        "id": "dsamusc",
+        "name": "Dark Samus 3",
+        "bossId": 119
+      },
+      {
+        "id": "dsamusd",
+        "name": "Dark Samus 4",
+        "bossId": 120
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Temple Grounds",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Sky Temple Grounds",
+        "color": "2038ec"
+      },
+      {
+        "id": 3,
+        "name": "Great Temple",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Sky Temple",
+        "color": "db2b00"
+      },
+      {
+        "id": 5,
+        "name": "Agon Wastes",
+        "color": "009700"
+      },
+      {
+        "id": 6,
+        "name": "Dark Agon Wastes",
+        "color": "009700"
+      },
+      {
+        "id": 7,
+        "name": "Torvus Bog",
+        "color": "bf00bf"
+      },
+      {
+        "id": 8,
+        "name": "Dark Torvus Bog",
+        "color": "bf00bf"
+      },
+      {
+        "id": 9,
+        "name": "Torvus Bog - Hydrodynamo",
+        "color": "bf00bf"
+      },
+      {
+        "id": 10,
+        "name": "Dark Torvus Bog - Hydrodynamo",
+        "color": "bf00bf"
+      },
+      {
+        "id": 11,
+        "name": "Sanctuary Fortress",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 12,
+        "name": "Ing Hive",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 13,
+        "name": "Sanctuary Fortress - Upper Level",
+        "color": "bcbcbc"
+      },
+      {
+        "id": 14,
+        "name": "Ing Hive - Upper Level",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "bombC",
+        "name": "Command Chamber Gate",
+        "nodeType": "trigger",
+        "extraId": 1001,
+        "blockType": true,
+        "lockIds": [
+          5,
+          11
+        ]
+      },
+      {
+        "id": "unused",
+        "name": "Item Loss",
+        "nodeType": "event",
+        "extraId": 1002
+      },
+      {
+        "id": "lightBeam",
+        "name": "Dynamo Chamber Lock",
+        "nodeType": "trigger",
+        "extraId": 1003
+      },
+      {
+        "id": "lightBeam",
+        "name": "Trooper Security Station Lock",
+        "nodeType": "trigger",
+        "extraId": 1004
+      },
+      {
+        "id": "unused",
+        "name": "GFMC Cutscene",
+        "nodeType": "event",
+        "extraId": 1005
+      },
+      {
+        "id": "lightBeam",
+        "name": "Light Block Moved",
+        "nodeType": "trigger",
+        "extraId": 1006
+      },
+      {
+        "id": "lightBeam",
+        "name": "Sacred Bridge Gate",
+        "nodeType": "trigger",
+        "extraId": 1007
+      },
+      {
+        "id": "seekerLauncherA",
+        "name": "Ing Windchamber Cobalt Seeker Lock",
+        "nodeType": "trigger",
+        "extraId": 1008
+      },
+      {
+        "id": "seekerLauncherA",
+        "name": "Ing Windchamber Amber Seeker Lock",
+        "nodeType": "trigger",
+        "extraId": 1009
+      },
+      {
+        "id": "lightBeam",
+        "name": "Light Block Moved",
+        "nodeType": "trigger",
+        "extraId": 1010
+      },
+      {
+        "id": "bombC",
+        "name": "Agon Interdimensional Bomb Slot",
+        "nodeType": "trigger",
+        "extraId": 1011
+      },
+      {
+        "id": "bombC",
+        "name": "Transport Center Bomb Slot",
+        "nodeType": "trigger",
+        "extraId": 1012
+      },
+      {
+        "id": "unused",
+        "name": "Mining Station A Sand Gate",
+        "nodeType": "trigger",
+        "extraId": 1013
+      },
+      {
+        "id": "unused",
+        "name": "Command Center Gate",
+        "nodeType": "trigger",
+        "extraId": 1014
+      },
+      {
+        "id": "unused",
+        "name": "Security Station B Gate",
+        "nodeType": "trigger",
+        "extraId": 1015
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 1",
+        "nodeType": "trigger",
+        "extraId": 1016
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 2",
+        "nodeType": "trigger",
+        "extraId": 1017
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 3",
+        "nodeType": "trigger",
+        "extraId": 1018
+      },
+      {
+        "id": "unused",
+        "name": "Sand Processing Cleaned",
+        "nodeType": "trigger",
+        "extraId": 1019
+      },
+      {
+        "id": "unused",
+        "name": "Vigilance Class Turret",
+        "nodeType": "event",
+        "extraId": 1020
+      },
+      {
+        "id": "unused",
+        "name": "Torvus Lagoon Gates",
+        "nodeType": "trigger",
+        "extraId": 1021
+      },
+      {
+        "id": "cannonball",
+        "name": "Great Bridge Cannon",
+        "nodeType": "trigger",
+        "extraId": 1022
+      },
+      {
+        "id": "bombC",
+        "name": "Forgotten Bridge Turned",
+        "nodeType": "trigger",
+        "extraId": 1023
+      },
+      {
+        "id": "boostBall",
+        "name": "Forgotten Balcony Opened",
+        "nodeType": "trigger",
+        "extraId": 1024
+      },
+      {
+        "id": "boostBall",
+        "name": "Torvus Interdimensional Spinner",
+        "nodeType": "trigger",
+        "extraId": 1025
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 1",
+        "nodeType": "trigger",
+        "extraId": 1026
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 2",
+        "nodeType": "trigger",
+        "extraId": 1027
+      },
+      {
+        "id": "scanVisorA",
+        "name": "Scan Node 3",
+        "nodeType": "trigger",
+        "extraId": 1028
+      },
+      {
+        "id": "bombC",
+        "name": "Training Chamber Bomb Slot",
+        "nodeType": "trigger",
+        "extraId": 1029
+      },
+      {
+        "id": "unused",
+        "name": "Gathering Hall Portal Gate Access",
+        "nodeType": "trigger",
+        "extraId": 1030
+      },
+      {
+        "id": "unused",
+        "name": "Catacombs Portal Gate Access",
+        "nodeType": "trigger",
+        "extraId": 1031
+      },
+      {
+        "id": "unused",
+        "name": "Crypt Barrier Access",
+        "nodeType": "trigger",
+        "extraId": 1032
+      },
+      {
+        "id": "boostBall",
+        "name": "Sanctuary Temple Transport Access",
+        "nodeType": "trigger",
+        "extraId": 1033
+      },
+      {
+        "id": "seekerLauncherA",
+        "name": "Reactor Access Gate",
+        "nodeType": "trigger",
+        "extraId": 1034
+      },
+      {
+        "id": "unused",
+        "name": "Minigyro Chamber Puzzle",
+        "nodeType": "trigger",
+        "extraId": 1035
+      },
+      {
+        "id": "powerBombB",
+        "name": "Glass Tunnel Broken",
+        "nodeType": "trigger",
+        "extraId": 1036
+      },
+      {
+        "id": "unused",
+        "name": "Watch Station Portal Gate",
+        "nodeType": "trigger",
+        "extraId": 1037
+      },
+      {
+        "id": "unused",
+        "name": "Hive Dynamo Works Portal Gate",
+        "nodeType": "trigger",
+        "extraId": 1038
+      },
+      {
+        "id": "grappleBeamA",
+        "name": "Watch Station Access Grapple Points",
+        "nodeType": "trigger",
+        "extraId": 1039
+      },
+      {
+        "id": "unused",
+        "name": "Main Gyro Chamber Puzzle 1",
+        "nodeType": "trigger",
+        "extraId": 1040
+      },
+      {
+        "id": "unused",
+        "name": "Main Gyro Chamber Puzzle 2",
+        "nodeType": "trigger",
+        "extraId": 1041
+      },
+      {
+        "id": "boostBall",
+        "name": "Main Gyro Chamber Spinner",
+        "nodeType": "trigger",
+        "extraId": 1042
+      },
+      {
+        "id": "cannonball",
+        "name": "Temple Access Cannon",
+        "nodeType": "trigger",
+        "extraId": 1043
+      },
+      {
+        "id": "unused",
+        "name": "Vigilance Class Turret",
+        "nodeType": "event",
+        "extraId": 1044
+      },
+      {
+        "id": "unused",
+        "name": "Map: Hive Tunnels",
+        "nodeType": "map",
+        "extraId": 1045
+      },
+      {
+        "id": "unused",
+        "name": "Map: GFMC Compound",
+        "nodeType": "map",
+        "extraId": 1046
+      },
+      {
+        "id": "unused",
+        "name": "Map: Agon Wastes",
+        "nodeType": "map",
+        "extraId": 1047
+      },
+      {
+        "id": "unused",
+        "name": "Map: Torvus Bog",
+        "nodeType": "map",
+        "extraId": 1048
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sanctuary Fortress",
+        "nodeType": "map",
+        "extraId": 1049
+      },
+      {
+        "id": "unused",
+        "name": "Hive Tunnels",
+        "nodeType": "area",
+        "extraId": 1050
+      },
+      {
+        "id": "unused",
+        "name": "Pirate Base",
+        "nodeType": "area",
+        "extraId": 1051
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "nodeType": "save",
+        "extraId": 1052
+      },
+      {
+        "id": "missileRefill",
+        "name": "Missiles Reload",
+        "nodeType": "recharge",
+        "extraId": 1053
+      },
+      {
+        "id": "ammoStation",
+        "name": "Ammo Refilled",
+        "nodeType": "recharge",
+        "extraId": 1054
+      },
+      {
+        "id": "lightOfAether",
+        "name": "Dark Agon Energy Retrieved",
+        "nodeType": "event",
+        "extraId": 1101
+      },
+      {
+        "id": "lightOfAetherA",
+        "name": "Agon Energy Restored",
+        "nodeType": "event",
+        "extraId": 1102
+      },
+      {
+        "id": "lightOfAether",
+        "name": "Dark Torvus Energy Retrieved",
+        "nodeType": "event",
+        "extraId": 1103
+      },
+      {
+        "id": "lightOfAetherA",
+        "name": "Torvus Energy Restored",
+        "nodeType": "event",
+        "extraId": 1104
+      },
+      {
+        "id": "lightOfAether",
+        "name": "Ing Hive Energy Retrieved",
+        "nodeType": "event",
+        "extraId": 1105
+      },
+      {
+        "id": "lightOfAetherA",
+        "name": "Sanctuary Energy Restored",
+        "nodeType": "event",
+        "extraId": 1106
+      },
+      {
+        "id": "skyTempleAccess",
+        "name": "Sky Temple Accessible",
+        "nodeType": "event",
+        "extraId": 1107
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mp2e_grid.png"
+  }
+}

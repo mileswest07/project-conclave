@@ -782,7 +782,7 @@ let keyslots = {};
       }
     }
     
-    if (["am2r"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r", "scramble"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -797,7 +797,7 @@ let keyslots = {};
       wrapper.appendChild(hint);
     }
     
-    if (["aol"].includes(tracker.currentGame) && wrapper.id === "item-fireSpell-4") {
+    if (["aol", "scramble"].includes(tracker.currentGame) && wrapper.id === "item-fireSpell-4") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -1008,7 +1008,7 @@ let keyslots = {};
   }
   
   // scrambleStart
-  function scrambleStart(gamesList) {
+  async function scrambleStart(gamesList) {
     tracker.showTotals = false; // CURRENTLY UNDER CONSTRUCTION
     tracker.showTimer = false; // CURRENTLY UNDER CONSTRUCTION
     tracker.useKeyslots = false;
@@ -1029,57 +1029,6 @@ let keyslots = {};
       targetSection.className = "parent-flex";
     }
     
-    // add fetch here
-    fetch('js/rawdata.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        for (let i = 0; i < gamesList.length; i++) {
-          const key = gamesList[i];
-          const value = main.games[key];
-          
-          tracker.currentGame = value;
-          const itemFieldName = "itemField" + key;
-          
-          let foundItem = null;
-          let gameName = "";
-          for (let i = 0; i < targetingData.length; i++) {
-            if (targetingData[i].value == key) {
-              foundItem = targetingData[i];
-            }
-          }
-          if (foundItem) {
-            gameName += foundItem.innerHTML;
-          }
-          
-          let newSection = document.createElement("section");
-          if (newSection.classList) {
-            newSection.classList.add("flex-field");
-            newSection.classList.add("child-field");
-            newSection.classList.add("game-" + tracker.currentGame);
-          } else {
-            newSection.className = "flex-field child-field game-" + tracker.currentGame
-          }
-          newSection.id = itemFieldName;
-          
-          let gameTitle = document.createElement("h4");
-          gameTitle.innerText = gameName;
-          newSection.appendChild(gameTitle);
-          
-          targetSection.appendChild(newSection);
-          
-          tracker.workingData = data[tracker.currentGame];
-          tracker.generate(itemFieldName);
-          
-          // CURRENTLY UNDER CONSTRUCTION
-          /* if (tracker.showTotals) {
-            let targetHeader = targetSection.getElementsByTagName("h4");
-            targetHeader = targetHeader[targetHeader.length - 1];
-            tracker.renderPercentage(targetHeader);
-          } */
-        }
-      });
-    
     let target = document.getElementById("itemField");
     if (target.classList) { // browser compatibility logic
       target.classList.remove("hide-section");
@@ -1088,6 +1037,63 @@ let keyslots = {};
     }
     let menuPointer = document.getElementById("selection");
     menuPointer.remove();
+    
+    for (let i = 0; i < gamesList.length; i++) {
+      const key = gamesList[i];
+      const gameId = main.games[key];
+      
+      tracker.currentGame = gameId;
+      const itemFieldName = "itemField" + key;
+      
+      let foundItem = null;
+      let gameName = "";
+      for (let i = 0; i < targetingData.length; i++) {
+        if (targetingData[i].value == key) {
+          foundItem = targetingData[i];
+        }
+      }
+      if (foundItem) {
+        gameName += foundItem.innerHTML;
+      }
+      
+      let newSection = document.createElement("section");
+      if (newSection.classList) {
+        newSection.classList.add("flex-field");
+        newSection.classList.add("child-field");
+        newSection.classList.add("game-" + gameId);
+      } else {
+        newSection.className = "flex-field child-field game-" + gameId
+      }
+      newSection.id = itemFieldName;
+      
+      let gameTitle = document.createElement("h4");
+      gameTitle.innerText = gameName;
+      newSection.appendChild(gameTitle);
+      
+      targetSection.appendChild(newSection);
+    
+      // add fetch here; must be async because each panel needs to be generated in order
+      try {
+        // For now, this pulls the same file every single time
+        // TODO: split rawdata.json into component files for each game?
+        const response = await fetch('js/rawdata.json');
+        // const response = await fetch(`js/${gameId}.json`);
+        const data = await response.json();
+        const dataStruct = data[gameId];
+        tracker.workingData = dataStruct;
+        tracker.generate(itemFieldName);
+        
+        // CURRENTLY UNDER CONSTRUCTION
+        /* if (tracker.showTotals) {
+          let targetHeader = targetSection.getElementsByTagName("h4");
+          targetHeader = targetHeader[targetHeader.length - 1];
+          tracker.renderPercentage(targetHeader);
+        } */
+      } catch (e) {
+        console.error("failed to fetch!");
+        console.error(e);
+      }
+    }
     tracker.currentGame = "scramble"; // to make Extreme Labs and Dash Spell work
   }
   
@@ -1580,13 +1586,10 @@ let keyslots = {};
         return;
       }
       
-      // add fetch here
+      // add fetch here; can be sync because nothing else depends on it
       fetch('js/rawdata.json')
         .then(response => response.json())
         .then(data => {
-          console.log(data);
-          console.log(incomingGame);
-          console.log(data[incomingGame]);
           if (data.hasOwnProperty(incomingGame)) {
             let game = null;
             for (const [key, value] of Object.entries(main.games)) {
@@ -1597,11 +1600,11 @@ let keyslots = {};
             }
             tracker.currentGame = incomingGame;
             if (document.body.classList) {
-              document.body.classList.add("game-" + tracker.currentGame);
+              document.body.classList.add("game-" + incomingGame);
             } else {
-              document.body.className += " game-" + tracker.currentGame;
+              document.body.className += " game-" + incomingGame;
             }
-            tracker.workingData = data[tracker.currentGame];
+            tracker.workingData = data[incomingGame];
             let targetingData = document.forms["startupMenu"]["selectedGame"].options;
             let foundItem = null;
             for (let i = 0; i < targetingData.length; i++) {

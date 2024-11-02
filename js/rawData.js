@@ -1,3 +1,5 @@
+// To be kept for archival and organizational purposes
+// First convert to JSON object (js/rawdata.json), then split into component files (data/*.json)
 const rawData = {
   "mrd": {
     checklistWidth: 5,
@@ -58,7 +60,7 @@ const rawData = {
         itemId: 8,
         nodeType: "upgrade",
       },{
-        id: "springBall",
+        id: "springBallA",
         sprite: "spring",
         name: "Spring Ball",
         bg: "886848",
@@ -154,37 +156,30 @@ const rawData = {
         name: "Space Pirate Mothership",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
-        name: "Desolate Surface East",
+        name: "Surface Caverns Lift 2", // "Desolate Surface East"
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
-        name: "Desolate Surface West",
+        name: "Surface Caverns Lift 1", // "Desolate Surface West"
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
-        name: "Bone Yard",
+        name: "Volga", // "Bone Yard"
         color: "009700",
-        startNodeId: 31,
       },{
         id: 5,
-        name: "Chozo Jungle",
+        name: "Vaara", // "Chozo Jungle"
         color: "bf00bf",
-        startNodeId: 41,
       },{
         id: 6,
-        name: "Federation Science Ship",
+        name: "Federation Ship", // "Federation Science Ship"
         color: "bf00bf",
-        startNodeId: 51,
       },{
         id: 7,
-        name: "Metroid Hive",
+        name: "Metroid Nest", // "Metroid Hive"
         color: "bcbcbc",
-        startNodeId: 61,
       }
     ],
     extras: [
@@ -215,12 +210,12 @@ const rawData = {
         nodeType: "easter",
       },{
         id: "unused",
-        name: "Word Search",
+        name: "Word Search Easter Egg",
         extraId: 1005,
         nodeType: "easter",
       },{
         id: "rechargeRoom",
-        name: "Full Restore",
+        name: "Restore Energy and Ammo",
         extraId: 1007,
         nodeType: "recharge",
       },{
@@ -240,1028 +235,325 @@ const rawData = {
         nodeType: "event",
       },
     ],
-    map: [
+    mapTree: [
       { hubId: 1,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
-              ]
-            ]
-          },{
-            toHubId: 2,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 3,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 10, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 4,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 2,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          { nodeType: "recharge", id: 1007 },
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "elevator", transportToMapId: 2, toStartHubId: 11 },
+          { nodeType: "elevator", transportToMapId: 3, toStartHubId: 21 },
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "elevator", transportToMapId: 5, toStartHubId: 41 },
+              { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
                 { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 3,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 7, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 4,
-        paths: [
-          {
-            toHubId: 5,
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 6,
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 5,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 3},
+            { nodeType: "upgrade", id: 7, isRandomizableItem: true, hubId: 3 },
+          ], vineToHubId: 3},
+          { nodeType: "lock", id: 10, reqdItemCount: 1, children: [], vineToHubId: 3},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "elevator", transportToMapId: 4, toStartHubId: 31 },
+              { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
                 { nodeType: "upgrade", id: 12, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 7,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 6,
-        paths: [
-          {
-            toHubId: 8,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "easter", id: 1005 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 7,
-        paths: [
-          {
-            branches: [
-              [
+              ]},
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
                 { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
                 { nodeType: "expansion", id: 10, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 8,
-        paths: [
-          {
-            branches: [
-              [
+              ]},
+            ]},
+            { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
                 { nodeType: "expansion", id: 13, isRandomizableItem: true },
-              ]
-            ]
-          },
+              ]},
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                { nodeType: "easter", id: 1005 },
+              ]},
+            ]},
+          ]},
         ],
       },
       { hubId: 11,
-        paths: [
-          {
-            toHubId: 12,
-            branches: [
-              [
-                { nodeType: "area", id: 1008 },
-              ]
-            ]
-          },{
-            toHubId: 13,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "elevator", transportToMapId: 6, toStartNodeId: 51 },
-              ]
-            ]
-          },{
-            toHubId: 14,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 10, reqdItemCount: 1 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 12, reqdItemCount: 1 },
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 15,
-            branches: [
-              [
-                { nodeType: "lock", id: 12, reqdItemCount: 1 },
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 12, reqdItemCount: 1 },
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 16,
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "dropdown" },
-              ],[
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 12,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "upgrade", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 13,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "upgrade", id: 7, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 14,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 9, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 15,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 16,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 26 },
-              ]
-            ]
-          },
+        nodeType: "start",
+        mapId: 2,
+        children: [
+          { nodeType: "area", id: 1008, children: [
+            { nodeType: "recharge", id: 1007, hubId: 12},
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 12},
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 12},
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 12},
+            { nodeType: "upgrade", id: 5, isRandomizableItem: true, hubId: 12},
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ], hubId: 12},
+          ]},
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 13},
+            { nodeType: "expansion", id: 6, isRandomizableItem: true, hubId: 13},
+            { nodeType: "upgrade", id: 7, isRandomizableItem: true, hubId: 13},
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ], hubId: 13},
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ], hubId: 13},
+          ], vineToHubId: 13},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [], vineToHubId: 13},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "elevator", transportToMapId: 6, toStartHubId: 51 },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "upgrade", id: 9, isRandomizableItem: true, hubId: 14},
+          ], vineToHubId: 14},
+          { nodeType: "lock", id: 10, reqdItemCount: 1, children: [], vineToHubId: 14},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 12, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 12, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 15},
+              ], vineToHubId: 15},
+              { nodeType: "lock", id: 9, reqdItemCount: 1, children: [], vineToHubId: 15},
+            ]},
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "dropdown", children: [
+              { nodeType: "elevator", transportToMapId: 3, toStartHubId: 21}, // toStartHubId: 26, hubId: 16}, // for connections that go between areas, we need to make sure the hubId and the toStartHubId of each connection, matches
+            ], vineToHubId: 16},
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 16},
+          ]},
         ],
       },
       { hubId: 21,
-        paths: [
-          {
-            branches: [
-              [
+        nodeType: "start",
+        mapId: 3,
+        children: [
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 6, isRandomizableItem: true },
+            { nodeType: "upgrade", id: 8, isRandomizableItem: true },
+            { nodeType: "dropdown", children: [
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                { nodeType: "recharge", id: 1007, hubId: 26},
+                { nodeType: "elevator", transportToMapId: 2, toStartHubId: 11}, // toStartHubId: 16, hubId: 26},
+              ], vineToHubId: 26},
+              { nodeType: "lock", id: 9, reqdItemCount: 1, children: [], vineToHubId: 26},
+              { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 22,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 22,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "upgrade", id: 8, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 25,
-            branches: [
-              [
-                { nodeType: "dropdown" },
-              ],[
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 28,
-            branches: [
-              [
-                { nodeType: "lock", id: 12, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 24,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 8, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 25,
-            branches: [
-              [
-                { nodeType: "dropdown" },
-              ],[
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 25,
-        paths: [
-          {
-            toHubId: 26,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          }
-        ],
-      },
-      { hubId: 26,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 16 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 28,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },
+              ]},
+            ], vineToHubId: 25},
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 25},
+            { nodeType: "lock", id: 12, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 28},
+                { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 4, isRandomizableItem: true },
+                ], hubId: 28},
+              ], vineToHubId: 28},
+            ]},
+            { nodeType: "lock", id: 9, reqdItemCount: 1, children: [], vineToHubId: 28},
+          ]},
         ],
       },
       { hubId: 31,
-        paths: [
-          {
-            toHubId: 32,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "boss", id: 103 },
-              ]
-            ]
-          },{
-            toHubId: 33,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "lock", id: 14, reqdItemCount: 1 },
-                { nodeType: "lock", id: 15, reqdItemCount: 1 },
-                { nodeType: "boss", id: 104 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 32,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 8, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 33,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 7, toStartNodeId: 61 },
-              ]
-            ]
-          },
+        nodeType: "start",
+        mapId: 4,
+        children: [
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "upgrade", id: 9, isRandomizableItem: true, hubId: 32},
+          ], vineToHubId: 32},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [], vineToHubId: 32},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "boss", id: 103 },
+            ]},
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 14, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 15, reqdItemCount: 1, children: [
+                  { nodeType: "boss", id: 104, children: [
+                    { nodeType: "recharge", id: 1007 },
+                    { nodeType: "elevator", transportToMapId: 7, toStartHubId: 61 },
+                  ]},
+                ]},
+              ]},
+            ]},
+          ]},
         ],
       },
       { hubId: 41,
-        paths: [
-          {
-            branches: [
-              [
+        nodeType: "start",
+        mapId: 5,
+        children: [
+          { nodeType: "recharge", id: 1007 },
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 11, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ], vineToHubId: 42},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 12, reqdItemCount: 1, children: [], vineToHubId: 42},
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ]},
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+              { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 6, isRandomizableItem: true },
+                ]},
+              ]},
+              { nodeType: "area", id: 1009, children: [
                 { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 11, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 42,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "lock", id: 12, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 43,
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 42,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 43,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 44,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 44,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 45,
-            branches: [
-              [
-                { nodeType: "area", id: 1009 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 45,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 46,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 46,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 47,
-            branches: [
-              [
-                { nodeType: "boss", id: 101 },
-              ]
-            ]
-          },
-        ],
-      },
-      { hubId: 47,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "upgrade", id: 15 },
-              ]
-            ]
-          },
+                { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 4, isRandomizableItem: true },
+                ]},
+                { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+                  { nodeType: "recharge", id: 1007 },
+                  { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                    { nodeType: "expansion", id: 4, isRandomizableItem: true },
+                  ]},
+                  { nodeType: "boss", id: 101, children: [
+                    { nodeType: "expansion", id: 6, isRandomizableItem: true },
+                    { nodeType: "upgrade", id: 15 },
+                    { nodeType: "dropdown", children: [], vineToHubId: 43 },
+                  ]},
+                ]},
+              ]},
+            ]},
+          ]},
+          { nodeType: "return", children: [], vineToHubId: 43},
         ],
       },
       { hubId: 51,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lore", id: 1001 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 52,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ],
-          },{
-            toHubId: 53,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ],
-          },{
-            toHubId: 54,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ]
-          },{
-            toHubId: 55,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "easter", id: 1006 },
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 56,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ],
-            ]
-          },
-        ],
-      },
-      { hubId: 52,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+        nodeType: "start",
+        mapId: 6,
+        children: [
+          { nodeType: "lore", id: 1001 },
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "recharge", id: 1007 },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 6, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 53,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 10, isRandomizableItem: true },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 54,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lore", id: 1002 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "lore", id: 1003 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ],
-          }
-        ],
-      },
-      { hubId: 55,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lore", id: 1004 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ],
-          }
-        ],
-      },
-      { hubId: 56,
-        paths: [
-          {
-            toHubId: 57,
-            branches: [
-              [
-                { nodeType: "boss", id: 102 },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 57,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 14 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "upgrade", id: 16 },
-              ]
-            ],
-          },
+              ]},
+            ], hubId: 52},
+          ], vineToHubId: 52},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 52},
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 10, isRandomizableItem: true },
+            ], hubId: 53},
+          ], vineToHubId: 53},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [], vineToHubId: 53},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lore", id: 1002 },
+            { nodeType: "lore", id: 1003 },
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "recharge", id: 1007 },
+            ]},
+          ]},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "lore", id: 1004 },
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                { nodeType: "easter", id: 1006, children: [
+                  { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+                    { nodeType: "expansion", id: 6, isRandomizableItem: true },
+                  ]},
+                ]},
+                { nodeType: "dropdown", children: [
+                  { nodeType: "boss", id: 102, children: [
+                    { nodeType: "dropdown", children: [
+                      { nodeType: "upgrade", id: 14 },
+                      { nodeType: "upgrade", id: 16 },
+                      { nodeType: "lock", id: 7, reqdItemCount: 1, children: [], vineToHubId: 56},
+                    ]},
+                  ], hubId: 55},
+                ], vineToHubId: 55},
+              ]},
+            ], hubId: 54},
+          ], vineToHubId: 54},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [], vineToHubId: 54},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [], vineToHubId: 55},
+          ]},
+          { nodeType: "return", children: [], vineToHubId: 56 },
         ],
       },
       { hubId: 61,
-        paths: [
-          {
-            toHubId: 62,
-            branches: [
-              [
-                { nodeType: "lock", id: 5, reqdItemCount: 1 },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 62,
-        paths: [
-          {
-            branches: [
-              [
+        nodeType: "start",
+        mapId: 7,
+        children: [
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "recharge", id: 1007 },
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+              { nodeType: "recharge", id: 1007 },
+              { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
                 { nodeType: "recharge", id: 1007 },
-              ]
-            ],
-          },{
-            toHubId: 63,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 63,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ],
-          },{
-            toHubId: 64,
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ],
-          },
-        ],
-      },
-      { hubId: 64,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "recharge", id: 1007 },
-              ]
-            ],
-          },{
-            branches: [
-              [
-                { nodeType: "boss", id: 105 },
-                { nodeType: "event", id: 1010 },
-                { nodeType: "end" },
-              ]
-            ],
-          },
+                { nodeType: "boss", id: 105, children: [
+                  { nodeType: "event", id: 1010, children: [
+                    { nodeType: "end" },
+                  ]},
+                ]},
+              ]},
+            ]},
+          ]},
         ],
       },
     ],
-    grid: "m1",
+    grid: "m1_grid.png",
   },
   "m1": {
     checklistWidth: 4,
@@ -1393,27 +685,22 @@ const rawData = {
         name: "Brinstar",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Norfair",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Kraid",
         color: "009700",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Ridley",
         color: "bf00bf",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Tourian",
         color: "bcbcbc",
-        startNodeId: 41,
       }
     ],
     extras: [
@@ -1424,424 +711,173 @@ const rawData = {
         nodeType: "event",
       }
     ],
-    map: [
-      { hubId: 1,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 3, isRandomizableItem: true },
-              ]
-            ]
-          },
-          {
-            toHubId: 2,
-            branches: [
-              [
-                { nodeType: "lock", id: 3, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 3, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "elevator", transportToMapId: 3, toStartNodeId: 21 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          }
-        ],
-      },
-      { hubId: 2,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "upgrade", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 2, toStartNodeId: 11 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 6, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "upgrade", id: 7, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "lock", id: 101, reqdItemCount: 1 },
-                { nodeType: "lock", id: 102, reqdItemCount: 1 },
-                { nodeType: "elevator", transportToMapId: 5, toStartNodeId: 41 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+    mapTree: [
+      { hubId: 1, // 1 = start of all nodes / start of the game; hubId will match to the toStartHubId of transporter nodes, necessary for areas with multiple transporter destinations
+        nodeType: "start", // indicates the start of a map, not necessarily the start of the game
+        mapId: 1, // will match to the transportToMapId of transporter nodes, necessary for areas with multiple transporter destinations
+        children: [
+          { nodeType: "upgrade", id: 3, isRandomizableItem: true}, // if children.length === 0, this is a leaf
+          { nodeType: "lock", id: 3, reqdItemCount: 1, children: [ // if children.length > 1, this is a hub
+            { nodeType: "upgrade", id: 4, isRandomizableItem: true },
+            { nodeType: "expansion", id: 5, isRandomizableItem: true }, // these will be sorted via nodeType and id, so they can be in any order for now
+            { nodeType: "elevator", transportToMapId: 2, toStartHubId: 11 }, // toStartHubId will need to point to an explicitly-set hubId; the rest of the hubs will have dynamic ids assigned that do not conflict with these preset values
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 6, isRandomizableItem: true },
+            ]},
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "upgrade", id: 7, isRandomizableItem: true },
+            ]},
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 101, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 102, reqdItemCount: 1, children: [
+                  { nodeType: "elevator", transportToMapId: 5, toStartHubId: 41 },
+                ]},
+              ]},
+            ]},
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
                 { nodeType: "slot", id: 8, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 3,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            toHubId: 4,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ],[
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 3,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 12, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 4,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
+              ]},
+            ]},
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+              { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 12, isRandomizableItem: true },
+                ]},
+              ]},
+            ]},
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 5, isRandomizableItem: true, hubId: 4 }, // hubId here denotes intended reference point for possible transporters, one-ways, or vines
+              // all affected children need the hubId, as they will be grouped together and sorted, while the code sorts the parents and determines the primary. As such, current nodemapping of vine-children is technically temporary
+            ], vineToHubId: 4}, // a vine, needs to explicitly reference a hub via vineToHubId; vine height and length will be dynamically determined by calculating parentage of all vine ends and determining positional differences between them
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+                // for a vine with zero children, expect that another vine-node (with vineToHubId property) has the children nodes. Else, finish the vine connection but render zero children, useful for deadends
+              ], vineToHubId: 4}, // note that vine connections are not between siblings, but direct parents of the vine
+            ]},
+          ]},
+          { nodeType: "lock", id: 3, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+              { nodeType: "elevator", transportToMapId: 3, toStartHubId: 21 }
+            ]}
+          ]},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 5, isRandomizableItem: true }
+          ]},
+        ],
       },
       { hubId: 11,
-        paths: [
-          {
-            branches: [
-              [
+        nodeType: "start",
+        mapId: 2,
+        children: [
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [ // yes, collectibles can have children, too; sometimes this is necessary for tying event flags to collection events, or for consolidating the view
+              { nodeType: "expansion", id: 4, isRandomizableItem: true }
+            ]},
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
+              ]},
+            ]},
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "slot", id: 8, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 12,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "expansion", id: 9, isRandomizableItem: true },
+              { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
                 { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 13,
-            branches: [
-              [
-                { nodeType: "lock", id: 7, reqdItemCount: 1 },
-              ]
-            ]
-          },
+                { nodeType: "expansion", id: 5, isRandomizableItem: true },
+                { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [
+                  { nodeType: "expansion", id: 4, isRandomizableItem: true },
+                ]},
+                { nodeType: "expansion", id: 10, isRandomizableItem: true },
+                { nodeType: "expansion", id: 11, isRandomizableItem: true },
+              ]},
+            ]},
+            { nodeType: "elevator", transportToMapId: 4, toStartHubId: 31 },
+          ]},
         ],
       },
-      { hubId: 12,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "slot", id: 8, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 13,
-        paths: [
-          {
-            toHubId: 14,
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "elevator", transportToMapId: 4, toStartNodeId: 31 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 14,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 9, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 15,
-            branches: [
-              [
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 15,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 10, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 11, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
-      },
       { hubId: 21,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 22,
-            branches: [
-              [
-                { nodeType: "dropdown" },
-              ],[
-                { nodeType: "lock", id: 8, reqdItemCount: 1 },
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ],[
-                { nodeType: "return" },
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 22,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 23,
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "boss", id: 101 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 23,
-        paths: [
-          {
-            branches: [
-              [
+        nodeType: "start",
+        mapId: 3,
+        children: [
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 5, isRandomizableItem: true },
+          ]},
+          { nodeType: "dropdown", children: [ // for nodes with path data, inject pathData object with the relevant properties; if no pathData, assume normal two-way pathing
+            { nodeType: "expansion", id: 4, isRandomizableItem: true, hubId: 22 },
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "boss", id: 101, children: [
                 { nodeType: "expansion", id: 4, count: 15 },
-              ]
-            ]
-          },{
-            branches: [
-              [
                 { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
+              ]},
+            ], hubId: 22},
+          ], vineToHubId: 22},
+          { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [  ], vineToHubId: 22},
+          ]},
+          { nodeType: "return", children: [
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [  ], vineToHubId: 22},
+          ]},
+        ],
       },
       { hubId: 31,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 9, reqdItemCount: 1 },
-                { nodeType: "expansion", id: 4, isRandomizableItem: true },
-              ]
-            ]
-          },{
-            toHubId: 32,
-            branches: [
-              [
-                { nodeType: "boss", id: 102 },
-              ]
-            ]
-          },
-        ]
-      },
-      { hubId: 32,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "expansion", id: 4, count: 15 },
-              ]
-            ]
-          },{
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 2 },
-                { nodeType: "expansion", id: 5, isRandomizableItem: true },
-              ]
-            ]
-          },
-        ]
+        nodeType: "start",
+        mapId: 4,
+        children: [
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 5, isRandomizableItem: true, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true, children: [
+              { nodeType: "expansion", id: 4, isRandomizableItem: true },
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 4, isRandomizableItem: true },
+          ]},
+          { nodeType: "boss", id: 102, children: [
+            { nodeType: "expansion", id: 4, count: 15 },
+            { nodeType: "lock", id: 4, reqdItemCount: 2, children: [
+              { nodeType: "expansion", id: 5, isRandomizableItem: true },
+            ]},
+          ]},
+        ],
       },
       { hubId: 41,
-        paths: [
-          {
-            branches: [
-              [
-                { nodeType: "lock", id: 4, reqdItemCount: 2 },
-                { nodeType: "boss", id: 103 },
-                { nodeType: "event", id: 1001, },
+        nodeType: "start",
+        mapId: 5,
+        children: [
+          { nodeType: "lock", id: 4, reqdItemCount: 2, children: [
+            { nodeType: "boss", id: 103, children: [
+              { nodeType: "event", id: 1001, children: [
                 { nodeType: "end" },
-              ]
-            ]
-          },
-        ]
+              ]},
+            ]},
+          ]},
+        ],
       },
     ],
-    grid: "m1",
+    grid: "m1_grid.png",
   },
   "mzm": {
     checklistWidth: 6,
@@ -2140,42 +1176,34 @@ const rawData = {
         name: "Brinstar",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Norfair",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Crateria",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Kraid",
         color: "009700",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Ridley",
         color: "bf00bf",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Tourian",
         color: "bcbcbc",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Chozodia", // Zero Suit Sequence
         color: "bcbcbc",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Chozodia",
         color: "bcbcbc",
-        startNodeId: 71,
       }
     ],
     extras: [
@@ -2234,9 +1262,16 @@ const rawData = {
         lockIds: [1],
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "m1",
+    grid: "m1_grid.png",
   },
   "mp": {
     checklistWidth: 5,
@@ -2336,7 +1371,6 @@ const rawData = {
         bg: "808000",
         itemId: 9,
         nodeType: "upgrade",
-        nodeType: "expansion",
       },{
         id: "bombB",
         name: "Bombs",
@@ -2344,7 +1378,7 @@ const rawData = {
         itemId: 10,
         nodeType: "upgrade",
       },{
-        id: "springBall",
+        id: "springBallA",
         name: "Spring Ball",
         bg: "886848",
         itemId: 11,
@@ -2555,53 +1589,44 @@ const rawData = {
         name: "Pirate Frigate",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Tallon Overworld",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Chozo Ruins",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Magmoor Caverns",
         color: "009700",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Phendrana Drifts",
         color: "bf00bf",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Phazon Mines L.1",
         color: "bcbcbc",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Phazon Mines L.2",
         color: "bcbcbc",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Phazon Mines L.3",
         color: "bcbcbc",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Impact Crater",
         color: "bcbcbc",
-        startNodeId: 81,
       }
     ],
     extras: [
       {
         id: "unused",
-        name: "Spilled Bag",
+        name: "Item Loss", // Spilled Bag
         nodeType: "event",
         extraId: 1001,
       },{
@@ -2670,9 +1695,16 @@ const rawData = {
         extraId: 1021,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mp",
+    grid: "mp_grid.png",
   },
   "pb": {
     checklistWidth: 4,
@@ -2763,10 +1795,16 @@ const rawData = {
       }
     ],
     extras: [
+      {
+        id: "screwAttackB",
+        name: "Special",
+        extraId: 1001,
+        nodeType: "lore",
+      },
     ],
-    map: [
+    mapTree: [
     ],
-    grid: "mp",
+    grid: "mp_grid.png",
   },
   "p2d": {
     checklistWidth: 3,
@@ -2848,7 +1886,7 @@ const rawData = {
         itemId: 12,
         nodeType: "upgrade",
       },{
-        id: "springBall",
+        id: "springBallA",
         sprite: "spring",
         name: "Spring Ball",
         bg: "886848",
@@ -2901,12 +1939,10 @@ const rawData = {
         name: "Tallon Overworld",
         hasGameStart: true,
         color: "db2b00",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Chozo Ruins",
         color: "db2b00",
-        startNodeId: 11,
       }
     ],
     extras: [
@@ -2947,9 +1983,156 @@ const rawData = {
         extraId: 1002,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Newborn" },
+          ]},
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Elder" },
+          ]},
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Strength" },
+          ]},
+          { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Sun" },
+          ]},
+          { nodeType: "lock", id: 5, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 6, reqdItemCount: 0, children: [
+              { nodeType: "easter", id: 1001 },
+              { nodeType: "upgrade", id: 7, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "dropdown", children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Truth", children: [
+              { nodeType: "upgrade", id: 6, isRandomizableItem: true },
+              { nodeType: "lock", id: 6, reqdItemCount: 1, children: [], vineToHubId: 2},
+            ]},
+          ]},
+          { nodeType: "return", children: [], vineToHubId: 2},
+          { nodeType: "lock", id: 6, reqdItemCount: 1, children: [
+            { nodeType: "easter", id: 1005 },
+            { nodeType: "lock", id: 102, children: [
+              { nodeType: "battle", id: 103 },
+            ]},
+            { nodeType: "lock", id: 103, children: [
+              { nodeType: "battle", id: 104 },
+            ]},
+            { nodeType: "lock", id: 105, children: [
+              { nodeType: "boss", id: 106, children: [
+                { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Wild" },
+              ]},
+            ]},
+            { nodeType: "lock", id: 1006, reqdItemCount: 1, children: [
+              { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of World" },
+            ]},
+            { nodeType: "elevator", transportToMapId: 2, toStartHubId: 11 },
+            { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+              { nodeType: "upgrade", id: 11, isRandomizableItem: true },
+              { nodeType: "lock", id: 12, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 6, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 9, isRandomizableItem: true },
+                  { nodeType: "area", id: 1003 },
+                  { nodeType: "battle", id: 102 },
+                  { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                    { nodeType: "upgrade", id: 13, isRandomizableItem: true },
+                  ]},
+                  { nodeType: "lock", id: 104, reqdItemCount: 1, children: [
+                    { nodeType: "battle", id: 105 },
+                  ]},
+                  { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+                    { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Chozo" },
+                  ]},
+                  { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+                    { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Lifegiver" },
+                  ]},
+                ], vineToHubId: 3},
+                { nodeType: "lock", id: 13, reqdItemCount: 1, children: [], vineToHubId: 3},
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 1001, reqdItemCount: 0, children: [
+              { nodeType: "expansion", id: 8, isRandomizableItem: true },
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 6, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 8, isRandomizableItem: true, hubId: 4},
+              ], vineToHubId: 4},
+              { nodeType: "lock", id: 11, reqdItemCount: 1, children: [], vineToHubId: 4},
+              { nodeType: "lock", id: 13, reqdItemCount: 1, children: [], vineToHubId: 4},
+            ]},
+          ]},
+          { nodeType: "lock", id: 6, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 11, reqdItemCount: 1, children: [
+                { nodeType: "upgrade", id: 12, isRandomizableItem: true },
+              ]},
+            ]},
+            { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+              { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Nature" },
+            ]},
+          ]},
+          { nodeType: "lock", id: 14, reqdItemCount: 12, children: [
+            { nodeType: "end", name: "End (Good)" },
+          ]},
+        ],
+      },
+      { hubId: 11,
+        nodeType: "start",
+        mapId: 2,
+        children: [
+          { nodeType: "easter", id: 1004 },
+          { nodeType: "lock", id: 1005, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Spirit" },
+          ]},
+          { nodeType: "lock", id: 1007, reqdItemCount: 1, children: [
+            { nodeType: "artifact", id: 14, isRandomizableItem: true, name: "Artifact of Warrior" },
+          ]},
+          { nodeType: "boss", id: 101, children: [
+            { nodeType: "upgrade", id: 7, isRandomizableItem: true },
+            { nodeType: "expansion", id: 9, isRandomizableItem: true },
+            { nodeType: "end", name: "End" },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 8, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "upgrade", id: 10, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 8, isRandomizableItem: true },
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 11, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 8, isRandomizableItem: true },
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 11, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 8, isRandomizableItem: true },
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 10, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 11, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 12, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 8, isRandomizableItem: true },
+              ]},
+            ]},
+          ]},
+        ],
+      }
     ],
-    grid: "mp",
+    grid: "mp_grid.png",
   },
   "mp2e": {
     checklistWidth: 8,
@@ -3102,7 +2285,7 @@ const rawData = {
         itemId: 12,
         nodeType: "upgrade",
       },{
-        id: "springBall",
+        id: "springBallA",
         name: "Spring Ball",
         bg: "886848",
         itemId: 13,
@@ -3471,72 +2654,58 @@ const rawData = {
         name: "Temple Grounds",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Sky Temple Grounds",
         color: "2038ec",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Great Temple",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Sky Temple",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Agon Wastes",
         color: "009700",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Dark Agon Wastes",
         color: "009700",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Torvus Bog",
         color: "bf00bf",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Dark Torvus Bog",
         color: "bf00bf",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Torvus Bog - Hydrodynamo",
         color: "bf00bf",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Dark Torvus Bog - Hydrodynamo",
         color: "bf00bf",
-        startNodeId: 91,
       },{
         id: 11,
         name: "Sanctuary Fortress",
         color: "bcbcbc",
-        startNodeId: 101,
       },{
         id: 12,
         name: "Ing Hive",
         color: "bcbcbc",
-        startNodeId: 111,
       },{
         id: 13,
         name: "Sanctuary Fortress - Upper Level",
         color: "bcbcbc",
-        startNodeId: 121,
       },{
         id: 14,
         name: "Ing Hive - Upper Level",
         color: "bcbcbc",
-        startNodeId: 131,
       }
     ],
     extras: [
@@ -3549,7 +2718,7 @@ const rawData = {
         lockIds: [5, 11],
       },{
         id: "unused",
-        name: "Spilled Bag",
+        name: "Item Loss", // Spilled Bag
         nodeType: "event",
         extraId: 1002,
       },{
@@ -3849,9 +3018,16 @@ const rawData = {
         extraId: 1107,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mp2e",
+    grid: "mp2e_grid.png",
   },
   "ph": {
     checklistWidth: 8,
@@ -4156,27 +3332,22 @@ const rawData = {
         name: "Celestial Archives",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Alinos",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Vesper Defense Outpost",
         color: "009700",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Arcterra",
         color: "bf00bf",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Oubliette",
         color: "bcbcbc",
-        startNodeId: 41,
       }
     ],
     extras: [
@@ -4265,9 +3436,16 @@ const rawData = {
         bg: "ffffff",
       }
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mph",
+    grid: "mph_grid.png",
   },
   "mp3c": {
     checklistWidth: 8,
@@ -4368,7 +3546,7 @@ const rawData = {
         itemId: 6,
         nodeType: "upgrade",
       },{
-        id: "springBall",
+        id: "springBallA",
         name: "Spring Ball",
         bg: "886848",
         itemId: 7,
@@ -4676,87 +3854,70 @@ const rawData = {
         name: "GFS Olympus",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "GFS Olympus 2",
         color: "2038ec",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Norion",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Bryyo - Cliffside",
         color: "009700",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Bryyo - Fire",
         color: "009700",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Bryyo - Thorn Jungle",
         color: "009700",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Bryyo - Ice",
         color: "009700",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Bryyo - Seed",
         color: "009700",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Elysia - Skytown West",
         color: "bf00bf",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Elysia - Skytown East",
         color: "bf00bf",
-        startNodeId: 91,
       },{
         id: 11,
         name: "Elysia - Seed",
         color: "bf00bf",
-        startNodeId: 101,
       },{
         id: 12,
         name: "GFS Valhalla",
         color: "2038ec",
-        startNodeId: 111,
       },{
         id: 13,
         name: "Pirate Homeworld - Command Center",
         color: "bcbcbc",
-        startNodeId: 121,
       },{
         id: 14,
         name: "Pirate Homeworld - Research",
         color: "bcbcbc",
-        startNodeId: 131,
       },{
         id: 15,
         name: "Pirate Homeworld - Phazon Mines",
         color: "bcbcbc",
-        startNodeId: 141,
       },{
         id: 16,
         name: "Pirate Homeworld - Seed",
         color: "bcbcbc",
-        startNodeId: 151,
       },{
         id: 17,
         name: "Phaaze",
         color: "db2b00",
-        startNodeId: 161,
       },
     ],
     extras: [
@@ -5027,7 +4188,6 @@ const rawData = {
       },{
         id: "phaaze",
         name: "Phaaze accessible",
-        bg: "ffffff",
         extraId: 1201,
         nodeType: "event",
         bg: "35a0d8",
@@ -5097,15 +4257,22 @@ const rawData = {
         extraId: 1022,
         nodeType: "slot",
       },{
-        id: "unused",
+        id: "screwAttackB",
         name: "Gold Credit",
         extraId: 1023,
         nodeType: "lore",
       }
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mp",
+    grid: "mp_grid.png",
   }, 
   "mpff": {
     checklistWidth: 4,
@@ -5219,9 +4386,9 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
     ],
-    grid: "mp2e",
+    grid: "mp2e_grid.png",
   },
   "m2ros": {
     checklistWidth: 4,
@@ -5424,32 +4591,26 @@ const rawData = {
         name: "Main Tunnel",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Area 1",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Area 2",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Area 3",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Area 5",
         color: "db2b00",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Final Area",
         color: "db2b00",
-        startNodeId: 51,
       }
     ],
     extras: [
@@ -5468,11 +4629,64 @@ const rawData = {
         name: "Energy Recharge",
         nodeType: "recharge",
         extraId: 1002,
+      },{
+        id: "monsterDna",
+        name: "Metroids defeated",
+        nodeType: "artifact",
+        displayIcon: "monsterDna",
+        sprite: "monsters",
+        bg: "747474",
+        extraId: 1004,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          { nodeType: "save", id: 1003 },
+          { nodeType: "battle", id: 103 },
+          { nodeType: "lock", id: 1004, reqdItemCount: 1, children: [
+            { nodeType: "elevator", transportToMapId: 2, toStartHubId: 11 },
+            { nodeType: "lock", id: 1004, reqdItemCount: 4, children: [
+              { nodeType: "elevator", transportToMapId: 3, toStartHubId: 21 },
+              { nodeType: "lock", id: 1004, reqdItemCount: 8, children: [
+                { nodeType: "elevator", transportToMapId: 4, toStartHubId: 31 },
+                { nodeType: "lock", id: 1004, reqdItemCount: 4, children: [
+                  { nodeType: "battle", id: 104 },
+                  { nodeType: "lock", id: 1004, reqdItemCount: 2, children: [
+                    { nodeType: "elevator", transportToMapId: 5, toStartHubId: 41 },
+                    { nodeType: "lock", id: 1004, reqdItemCount: 4, children: [
+                      { nodeType: "lock", id: 1004, reqdItemCount: 7, children: [
+                        { nodeType: "battle", id: 103 },
+                        { nodeType: "lock", id: 1004, reqdItemCount: 1, children: [
+                          { nodeType: "battle", id: 106 },
+                          { nodeType: "lock", id: 1004, reqdItemCount: 1, children: [
+                            { nodeType: "elevator", transportToMapId: 6, toStartHubId: 51 },
+                          ]},
+                        ]},
+                      ]},
+                    ]},
+                  ]},
+                ]},
+                { nodeType: "lock", id: 1004, reqdItemCount: 1, children: [
+                  { nodeType: "battle", id: 103 },
+                  { nodeType: "battle", id: 104 },
+                ]},
+              ]},
+            ]},
+          ]},
+        ],
+      },
+      { hubId: 11,
+        nodeType: "start",
+        mapId: 2,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "m2ros",
+    grid: "m2ros_grid.png",
   },
   "mcon": {
     checklistWidth: 5,
@@ -5607,7 +4821,6 @@ const rawData = {
         name: "Simulation",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       }
     ],
     extras: [
@@ -5623,9 +4836,129 @@ const rawData = {
         extraId: 1001,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          { nodeType: "save", id: 1002 },
+          { nodeType: "trigger", id: 1001 }, 
+          { nodeType: "lock", id: 1002, reqdItemCount: 1, children: [
+            { nodeType: "upgrade", id: 1, isRandomizableItem: true },
+          ]},
+          { nodeType: "dropdown", children: [
+            { nodeType: "upgrade", id: 2, isRandomizableItem: true, hubId: 2 },
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 3, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 1, isRandomizableItem: true },
+              ], hubId: 3},
+            ], hubId: 2, vineToHubId: 3},
+          ], vineToHubId: 2},
+          { nodeType: "lock", id: 1, reqdItemCount: 1, children: [], vineToHubId: 2},
+          { nodeType: "lock", id: 2, reqdItemCount: 1, children: [], vineToHubId: 3},
+          { nodeType: "lock", id: 1, reqdItemCount: 1, children: [
+            { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            { nodeType: "expansion", id: 1, isRandomizableItem: true },
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "dropdown", children: [
+                { nodeType: "upgrade", id: 3, isRandomizableItem: true, hubId: 4 },
+              ], vineToHubId: 4 },
+            ]},
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 3, reqdItemCount: 1, children: [], vineToHubId: 4 },
+            ]},
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 4, reqdItemCount: 1, children: [], vineToHubId: 4 },
+            ]},
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 3, reqdItemCount: 1, children: [
+                { nodeType: "expansion", id: 5, isRandomizableItem: true },
+                { nodeType: "lock", id: 4, reqdItemCount: 1, children: [
+                  { nodeType: "save", id: 1002, hubId: 7 },
+                  { nodeType: "expansion", id: 6, isRandomizableItem: true, hubId: 7 },
+                  { nodeType: "dropdown", children: [
+                    { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                    { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                    { nodeType: "dropdown", children: [
+                      { nodeType: "boss", id: 101, children: [
+                        { nodeType: "upgrade", id: 7, isRandomizableItem: true, hubId: 8 },
+                      ], vineToHubId: 8},
+                    ]},
+                  ], hubId: 7},
+                  { nodeType: "return", children: [
+                    { nodeType: "lock", id: 7, reqdItemCount: 1, children: [], vineToHubId: 8},
+                  ], hubId: 7},
+                ], vineToHubId: 7},
+                { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 7},
+                { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                  { nodeType: "save", id: 1002 },
+                  { nodeType: "dropdown", children: [
+                    { nodeType: "expansion", id: 1, isRandomizableItem: true, hubId: 9 },
+                    { nodeType: "expansion", id: 6, isRandomizableItem: true, hubId: 9 },
+                    { nodeType: "dropdown", children: [
+                      { nodeType: "boss", id: 103, children: [
+                        { nodeType: "upgrade", id: 8, isRandomizableItem: true, hubId: 10 },
+                      ], vineToHubId: 10},
+                    ], hubId: 9},
+                    { nodeType: "return", children: [
+                      { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 10},
+                    ], hubId: 9},
+                    { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                      { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                    ], hubId: 9},
+                    { nodeType: "lock", id: 8, reqdItemCount: 1, children: [
+                      { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                    ], hubId: 9},
+                  ], vineToHubId: 9},
+                  { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], vineToHubId: 9},
+                  { nodeType: "return", children: [], vineToHubId: 9},
+                ]},
+                { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+                  { nodeType: "save", id: 1002 },
+                  { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                  { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                  { nodeType: "expansion", id: 1, isRandomizableItem: true },
+                  { nodeType: "expansion", id: 6, isRandomizableItem: true },
+                  { nodeType: "expansion", id: 9, isRandomizableItem: true },
+                  { nodeType: "boss", id: 103 },
+                  { nodeType: "lock", id: 103, reqdItemCount: 1, children: [
+                    { nodeType: "expansion", id: 10, isRandomizableItem: true },
+                  ]},
+                ]},
+                { nodeType: "lock", id: 9, reqdItemCount: 1, children: [
+                  { nodeType: "expansion", id: 9, isRandomizableItem: true },
+                ]},
+              ]},
+            ]},
+            { nodeType: "lock", id: 1, reqdItemCount: 1, children: [
+              { nodeType: "dropdown", children: [
+                { nodeType: "upgrade", id: 4, isRandomizableItem: true, hubId: 6 },
+              ], hubId: 5, vineToHubId: 6},
+              { nodeType: "lock", id: 4, reqdItemCount: 1, children: [], hubId: 5, vineToHubId: 6},
+              { nodeType: "lock", id: 8, reqdItemCount: 1, children: [], hubId: 5, vineToHubId: 6},
+            ], vineToHubId: 5},
+          ]},
+          { nodeType: "lock", id: 2, reqdItemCount: 1, children: [], vineToHubId: 5},
+          { nodeType: "lock", id: 7, reqdItemCount: 1, children: [
+            { nodeType: "lock", id: 2, reqdItemCount: 1, children: [
+              { nodeType: "lock", id: 1, reqdItemCount: 1, children: [
+                { nodeType: "lock", id: 101, reqdItemCount: 1, children: [
+                  { nodeType: "lock", id: 102, reqdItemCount: 1, children: [
+                    { nodeType: "lock", id: 103, reqdItemCount: 1, children: [
+                      { nodeType: "artifact", id: 11, isRandomizableItem: true },
+                    ]},
+                  ]},
+                ]},
+              ]},
+            ]},
+          ]},
+          { nodeType: "lock", id: 11, reqdItemCount: 1, children: [
+            { nodeType: "end" }
+          ]},
+        ],
+      },
     ],
-    grid: "m2ros",
+    grid: "m2ros_grid.png",
   },
   "am2r": {
     checklistWidth: 8,
@@ -5900,42 +5233,34 @@ const rawData = {
         name: "Main Tunnel",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Golden Temple",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Hydro Station",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Industrial Complex",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "The Tower",
         color: "db2b00",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Distribution Center",
         color: "db2b00",
-        startNodeId: 51,
       },{
         id: 7,
         name: "GFS Thoth",
         color: "db2b00",
-        startNodeId: 61,
       },{
         id: 8,
         name: "The Nest + Genetics Lab",
         color: "db2b00",
-        startNodeId: 71,
       }
     ],
     extras: [
@@ -6094,9 +5419,16 @@ const rawData = {
         nodeType: "trigger",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "m2ros",
+    grid: "m2ros_grid.png",
   },
   "msr": {
     checklistWidth: 7,
@@ -6414,52 +5746,42 @@ const rawData = {
         name: "Surface",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Area 1",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Area 2",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Area 3",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Area 4",
         color: "db2b00",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Area 5",
         color: "db2b00",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Area 6",
         color: "db2b00",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Area 7",
         color: "db2b00",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Area 8",
         color: "db2b00",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Surface (Post-Extinction)",
         color: "db2b00",
-        startNodeId: 91,
       }
     ],
     extras: [
@@ -6510,9 +5832,16 @@ const rawData = {
         extraId: 1009,
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "m2ros",
+    grid: "m2ros_grid.png",
   },
   "sm": {
     checklistWidth: 8,
@@ -6776,57 +6105,46 @@ const rawData = {
         name: "Crateria",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Brinstar", // blue
         color: "2038ec",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Brinstar", // green
         color: "2038ec",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Brinstar", // red part 1
         color: "2038ec",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Brinstar", // red part 2
         color: "2038ec",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Norfair", // upper
         color: "db2b00",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Norfair", // lower
         color: "db2b00",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Wrecked Ship",
         color: "009700",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Maridia", // pipe
         color: "bf00bf",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Maridia", // main
         color: "bf00bf",
-        startNodeId: 91,
       },{
         id: 11,
         name: "Tourian",
         color: "bcbcbc",
-        startNodeId: 101,
       }
     ],
     extras: [
@@ -6835,17 +6153,17 @@ const rawData = {
         name: "Save The Animals",
         sprite: "animals",
         extraId: 1021,
-        nodeType: "easter",
+        nodeType: "event",
       },{
         id: "etedach",
         name: "Shine Spark Critter",
         extraId: 1022,
-        nodeType: "easter",
+        nodeType: "event",
       },{
         id: "etedach",
         name: "Wall Jump Critters",
         extraId: 1023,
-        nodeType: "easter",
+        nodeType: "event",
       },{
         id: "unused",
         name: "Blue Shutter",
@@ -6908,9 +6226,16 @@ const rawData = {
         nodeType: "save",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "sm",
+    grid: "sm_grid.png",
   },
   "mom": {
     checklistWidth: 8,
@@ -7207,27 +6532,22 @@ const rawData = {
         name: "Main Sector",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Sector 1 - Biosphere",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Sector 2 - Cryosphere",
         color: "009700",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Sector 3 - Pyrosphere",
         color: "bf00bf",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Bioweapon Research Center",
         color: "bcbcbc",
-        startNodeId: 41,
       }
     ],
     extras: [
@@ -7333,9 +6653,16 @@ const rawData = {
         nodeType: "save",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mom",
+    grid: "mom_grid.png",
   },
   "mng": {
     checklistWidth: 6,
@@ -7682,87 +7009,70 @@ const rawData = {
         name: "SRX88",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Trozodia",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Pyrfair",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Aqastar",
         color: "009700",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Arcteria",
         color: "bf00bf",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Noctian", // zero suit
         color: "bcbcbc",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Phazon Dimension", // zero suit
         color: "bcbcbc",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Phazon Trozodia", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Phazon Pyrfair", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Phazon Aqastar", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 91,
       },{
         id: 11,
         name: "Phazon Arcteria", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 101,
       },{
         id: 12,
         name: "Phazon Noctian", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 111,
       },{
         id: 13,
         name: "Noctian", // ship reclamation
         color: "bcbcbc",
-        startNodeId: 121,
       },{
         id: 14,
         name: "Phazon SRX88", // post-suit reclamation
         color: "bcbcbc",
-        startNodeId: 131,
       },{
         id: 15,
         name: "Heart of the Galaxy",
         color: "bcbcbc",
-        startNodeId: 141,
       },{
         id: 16,
         name: "Phazon Heart of the Galaxy",
         color: "bcbcbc",
-        startNodeId: 151,
       },{
         id: 17,
         name: "Escape Sequence",
         color: "bcbcbc",
-        startNodeId: 161,
       }
     ],
     extras: [
@@ -7808,9 +7118,16 @@ const rawData = {
         nodeType: "save",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mph",
+    grid: "mph_grid.png",
   },
   "mttne": {
     checklistWidth: 8,
@@ -8158,9 +7475,16 @@ const rawData = {
         nodeType: "save",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mph",
+    grid: "mph_grid.png",
   },
   "mf": {
     checklistWidth: 7,
@@ -8518,42 +7842,34 @@ const rawData = {
         name: "Main Deck",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Sector 1 - SRX",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Sector 2 - TRO",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Sector 3 - PYR",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Sector 4 - AQA",
         color: "009700",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Sector 5 - ARC",
         color: "bf00bf",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Sector 6 - NOC",
         color: "bcbcbc",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Restricted Lab",
         color: "bcbcbc",
-        startNodeId: 71,
       }
     ],
     extras: [
@@ -8759,9 +8075,16 @@ const rawData = {
         nodeType: "recharge",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "mf",
+    grid: "mf_grid.png",
   },
   "md": {
     checklistWidth: 6,
@@ -8872,11 +8195,6 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "invisibility",
-        locale: {
-          'enUS': {
-            id: "phantomCloak"
-          }
-        },
         name: "Phantom Cloak",
         sprite: "phantom",
         bg: "00ff08",
@@ -8927,11 +8245,6 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "flashShift",
-        locale: {
-          'enUS': {
-            id: "flashShiftA"
-          }
-        },
         name: "Flash Shift",
         sprite: "flash",
         bg: "e900ff",
@@ -8984,11 +8297,6 @@ const rawData = {
         nodeType: "upgrade",
       },{
         id: "scanPulse",
-        locale: {
-          'enUS': {
-            id: "pulseRadar"
-          }
-        },
         name: "Pulse Radar",
         sprite: "radar",
         bg: "00c7ff",
@@ -9190,52 +8498,42 @@ const rawData = {
         name: "Artaria",
         hasGameStart: true,
         color: "2038ec",
-        startNodeId: 1,
       },{
         id: 2,
         name: "Cataris",
         color: "db2b00",
-        startNodeId: 11,
       },{
         id: 3,
         name: "Dairon",
         color: "db2b00",
-        startNodeId: 21,
       },{
         id: 4,
         name: "Burenia",
         color: "db2b00",
-        startNodeId: 31,
       },{
         id: 5,
         name: "Ferenia",
         color: "009700",
-        startNodeId: 41,
       },{
         id: 6,
         name: "Ghavoran",
         color: "bf00bf",
-        startNodeId: 51,
       },{
         id: 7,
         name: "Elun",
         color: "bf00bf",
-        startNodeId: 61,
       },{
         id: 8,
         name: "Hanubia",
         color: "bcbcbc",
-        startNodeId: 71,
       },{
         id: 9,
         name: "Itorash",
         color: "bcbcbc",
-        startNodeId: 81,
       },{
         id: 10,
         name: "Escape Sequence",
         color: "bcbcbc",
-        startNodeId: 91,
       }
     ],
     extras: [
@@ -9619,9 +8917,16 @@ const rawData = {
         nodeType: "event",
       },
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
-    grid: "md",
+    grid: "md_grid.png",
   },
   "thf": {
     checklistWidth: 7,
@@ -9915,7 +9220,14 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
   },
   "aol": {
@@ -10243,7 +9555,14 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
   },
   "ziiaol": {
@@ -10739,7 +10058,14 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
   },
   "alttp": {
@@ -11357,7 +10683,14 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
+      { hubId: 1,
+        nodeType: "start",
+        mapId: 1,
+        children: [
+          
+        ],
+      },
     ],
   },
   "z3_rnd": {
@@ -11370,7 +10703,6 @@ const rawData = {
         max: 1, // 2
         over: "MC_Chest",
         overText: "L1 Big Chest",
-        nodeType: "upgrade",
         segments: [ // assuming progressive bow
           /*{
             id: "bowArrows",
@@ -12728,7 +12060,7 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
     ],
   },
   "sotn": {
@@ -13034,7 +12366,7 @@ const rawData = {
     ],
     extras: [
     ],
-    map: [
+    mapTree: [
     ],
   },
 };

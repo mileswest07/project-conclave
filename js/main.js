@@ -26,7 +26,8 @@ let main = {
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
     "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
     "sotn": "sotn", // Castlevania: Symphony of the Night (PSX)
-  }
+  },
+  jsonDir: 'data',
 };
 
 (() => {
@@ -39,16 +40,16 @@ let main = {
     "combatVisor", "combatVisorA", "scanVisor", "scanVisorA", "scanVisorB", "thermalVisor", "xRayScope", "xRayVisor", "corruptionXRayVisor", "darkVisor", "echoVisor", "commandVisor", "violetTranslator", "amberTranslator", "emeraldTranslator", "cobaltTranslator", "thermalPositioner", "echoLock", "generator",
     "fullPowerSuit", "barrier", "barrierA", "barrierB", "barrierC", "gravitySuit", "gravitySuitB", "gravitySuitC", "gravitySuitD", "zeroSuit", "zeroSuitA", "samus", "darkSuitA", "progressiveSuit", "primeSuit", "fusionSuit", "phazonSuit", "amorbis", "darkSuit", "gravityBoost", "lightSuit", "ped", "hazardShield", "magneticShield", "armCannon", "altform", "observatory",
     "missile", "missileTank", "missileA", "superMissile", "superMissileA", "superMissileTank", "iceMissile", "seekerLauncher", "seekerLauncherA", "seekerLauncherB", "darkburst", "sunburst", "sonicBoom", "hyperMissile", "shipMissile", "shipMissileExpansion", "affinityWeapon", "deathalt", "golemHead",
-    "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "speedBoosterB", "exelion", "rechargeRoom",
+    "highJump", "speedBooster", "speedBoosterA", "wallJumpBoots", "spaceJump", "screwAttack", "screwAttackA", "powerGrip", "zipline", "spaceJumpBoots", "spinBoost", "scanPulse", "radar", "lightningArmor", "beamBurst", "phaseDrift", "aeionExpansion", "jumpBoots", "exelion", "rechargeRoom",
     "energyTank", "energyTankA", "reserveTank", "energyPart", "eRecoveryTank", "unknownItem", "unknownItem1a", "unknownItem2a", "unknownItem3a", "chozoArtifact", "darkAgonKey", "darkTorvusKey", "ingHiveKey", "skyTempleKey", "energyTransferModule", "energyCell", "pirateCode", "dreadEnergy", "teleporterA", "ammoStation",
     "templeKey", "lightOfAether", "lightOfAetherA", "cipher", "theronianBomb", "phaaze", "alimbicArtifactCA1", "alimbicArtifactCA2", "alimbicArtifactAl1", "alimbicArtifactAl2", "alimbicArtifactVDO1", "alimbicArtifactVDO2", "alimbicArtifactArc1", "alimbicArtifactArc2", "octolith", "oubliette", "am2rPowerOrb", "dreadPart", "missileRefill",
     "securityL0", "energyPickup", "securityL1", "missileC", "securityL2", "missileD", "securityL3", "alimbicCannon", "securityL4", "friendVoucher", "etedach", "skyTempleAccess", "norion", "bryyo", "elysia", "urtraghus", "spireDock", "keyGate1", "translatorGate",
     "boss", "monster", "monsterDna", "monsterCapsule", "magneticShieldTank", "pumpControlUnit", "mainBoiler", "reactorCore", "mainDeck", "sector1SRX", "sector2TRO", "sector3PYR", "sector4AQA", "sector5ARC", "sector6NOC", "restrictedLab", "quarantineBay", "keyGate2", "energyRefill",
     "towerPower", "chozoStatue", "federationArmy", "federationMarines", "xenoresearch", "adam", "powerBeamC", "darkBeamA", "lightBeamA", "annihilatorBeamA", "shieldKey", "commandVisorA", "crystalFlash", "alimbicArtifact", "translatorModule", "securityUnlock", "randomizer", "goldMedal", "emergencyPistol", "paralyzer",
-    "bombD", "monsterDnaA", "lightBeamB", "annihilatorBeamB", "electroLob", "darkVisorA", "hint", "bsl", "datapack", "doubleDamageA", "doubleDamage", "invisibilityA", "cloakA", "chargeBomb", "iceChargeShot", "spikeBomb", "modSlot", "modChip", "modChipA", "reserveTankA",
+    "bombD", "monsterDnaA", "lightBeamB", "annihilatorBeamB", "electroLob", "darkVisorA", "hint", "bsl", "datapack", "doubleDamageA", "doubleDamage", "itemOrb", "chargeBomb", "iceChargeShot", "spikeBomb", "modSlot", "modChip", "modChipA", "reserveTankA",
     "shield", "adrenaline", "eject", "repairCapsule", "shieldGenerator", "missileB", "superMissileB", "proximityBomb", "decoy", "slowBeam", "scanBolt", "progressiveBeam", "progressiveBeamA", "grappleBeamA", "progressiveMissile", "crossBombs", "mapMarker", "modChipB", "reserveTankB",
     "spinBoostA", "chargeBeam", "infiniteBeamAmmo", "infiniteMissiles", "superMissileC", "spiderBall", "bountyCoin", "bountyCoin1", "bountyCoin5", "bountyCoin10", "bountyCoin50", "bountyCoin100", "dataRoom", "diffusionBeamA", "novaBeamA", "hypermode", "iceMissileA", "doubleMissileTank", "modChipC", "energyPartA",
-    "spiderMagnet", "flashShiftA", "gravitySuitA", "phantomCloak", "cloakB", "pulseRadar", "radarA", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "eRecoveryTankA",
+    "spiderMagnet", "springBallA", "gravitySuitA", "screwAttackB", "aquadiaKey", "steelarisGear", "longBeamA", "iceBeam", "plasmaBeam", "waveBeamC", "fireBeam", "flameShotA", "waveBeamD", "plasmaBeamE", "iceBeamE", "diffusionBeamB", "itemSphere", "chozoCrest", "eRecoveryTankA",
     "chykka", "quadraxis", "aetherKey", "darkAetherKey", "burstBeam", "smallAmmo", "largeAmmo", "meleeCounter", "dashMelee", "overblast", "concentration", "lethalStrike", "slide", "omegaBlast", "senseMove", "invisibility", "cloak", "rundas", "emergencyPistolA", "paralyzerA", "flashShift",
     "unknownItem1", "unknownItem2", "unknownItem3", "violetTranslatorA", "amberTranslatorA", "emeraldTranslatorA", "cobaltTranslatorA", "itemCube", "aeionCube", "teleporterB", "teleportalA", "teleportalE", "teleportalI", "teleportalO", "teleportalU", "teleportalX", "teleportalY", "corruptionXRayVisorA",
     "unused", "empty", "kraid", "ridley", "m_lock1", "m_lock2"
@@ -71,7 +72,7 @@ let main = {
     }
   }
   
-  function scanDataForLint(doProcessItemOrder = false, doProcessUnifiedSprites = false) {
+  async function scanDataForLint(doProcessItemOrder = false, doProcessUnifiedSprites = false) {
     let greaterItemSet = new Set();
     let unifiedChecklist = {...unifiedIDCollection};
     let typeCount = {};
@@ -81,152 +82,68 @@ let main = {
     let totalBossCount = 0;
     let totalTypeCount = 0;
     let gameExceptionList = ["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"];
+    let aFailureHasOccurred = false;
     
     let gamesKeys = [...Object.values(main.games)];
     
     for (let i = 0; i < gamesKeys.length; i++) {
       let currentGame = gamesKeys[i];
-      let currentData = rawData[currentGame];
-      let itemCount = {};
-      let itemOrder = [];
-      let missingItems = [];
-      let allSegments = [];
-      let doesChecklist = checklistGameList.includes(currentGame);
-      
-      for (let j = 0; j < currentData.items.length; j++) {
-        let item = currentData.items[j];
-        if (item.id === "-") {
-          continue;
-        }
-        if (item.nodeType === undefined && (item.segments === undefined || item.segments.length <= 0)) {
-          console.warn(item);
-        }
-        if (item.segments && item.segments.length > 0) {
-          allSegments = [...allSegments, ...item.segments];
-        }
-        if (item.segments && item.segments.length > 0) {
-          let idsAddedDuringTheseSegments = new Set();
-          for (let k = 0; k < item.segments.length; k++) {
-            let segment = item.segments[k];
-            if (segment.id === "-") {
-              continue;
-            }
-            if (segment.nodeType === undefined) {
-              console.warn(item, segment);
-            }
-            if (["boss", "battle"].includes(segment.nodeType)) {
-              ++totalBossCount;
-            } else {
-              ++totalItemCount;
-            }
-            if (segment.itemId) {
-              itemOrder.push(segment);
-              itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
-            } else {
-              missingItems.push(segment);
-            }
-            if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
-              if (itemCount[segment.id]) {
-                itemCount[segment.id] += 1;
-              } else {
-                itemCount[segment.id] = 1;
-              }
-              idsAddedDuringTheseSegments.add(segment.id);
-            }
-            addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
-            if (doesChecklist) {
-              const useSprite = Object.hasOwn(segment, 'sprite');
-              const propSprite = useSprite ? segment.sprite : segment.id;
-              unifiedChecklist[currentGame][propSprite] += 1;
-            }
-            if (segment.locale) {
-              for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
-                let localeId = localeObj.id;
-                if (localeId === "-") {
-                  continue;
-                }
-                if (!idsAddedDuringTheseSegments.has(localeId)) {
-                  if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
-                    if (itemCount[localeId]) {
-                      itemCount[localeId] += 1;
-                    } else {
-                      itemCount[localeId] = 1;
-                    }
-                  }
-                  idsAddedDuringTheseSegments.add(localeId);
-                  addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-                }
-              }
-            }
-            if (typeCount[segment.nodeType]) {
-              typeCount[segment.nodeType] += 1;
-            } else {
-              typeCount[segment.nodeType] = 1;
-            }
+      try {
+        const response = await fetch(`${main.jsonDir}/${currentGame}.json`);
+        const data = await response.json();
+        let currentData = data[currentGame];
+        let itemCount = {};
+        let itemOrder = [];
+        let missingItems = [];
+        let allSegments = [];
+        let doesChecklist = checklistGameList.includes(currentGame);
+        
+        for (let j = 0; j < currentData.items.length; j++) {
+          let item = currentData.items[j];
+          if (item.id === "-") {
+            continue;
           }
-        } else {
-          if (["boss", "battle"].includes(item.nodeType)) {
-            ++totalBossCount;
-          } else {
-            ++totalItemCount;
+          if (item.nodeType === undefined && (item.segments === undefined || item.segments.length <= 0)) {
+            console.warn(item);
           }
-          if (item.itemId) {
-            itemOrder.push(item);
-            itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
-          } else {
-            missingItems.push(item);
+          if (item.segments && item.segments.length > 0) {
+            allSegments = [...allSegments, ...item.segments];
           }
-          if (!(!!item.clearIfScramble)) {
-            if (itemCount[item.id]) {
-              itemCount[item.id] += 1;
-            } else {
-              itemCount[item.id] = 1;
-            }
-          }
-          addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
-          if (doesChecklist) {
-            const useSprite = Object.hasOwn(item, 'sprite');
-            const propSprite = useSprite ? item.sprite : item.id;
-            unifiedChecklist[currentGame][propSprite] += 1;
-          }
-          if (item.locale) {
-            for (const [localeKey, localeObj] of Object.entries(item.locale)) {
-              let localeId = localeObj.id;
-              if (localeId === "-") {
-                continue;
-              }
-              if (!(!!item.clearIfScramble) && item.id !== localeId) {
-                if (itemCount[localeId]) {
-                  itemCount[localeId] += 1;
-                } else {
-                  itemCount[localeId] = 1;
-                }
-              }
-              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-            }
-          }
-          if (typeCount[item.nodeType]) {
-            typeCount[item.nodeType] += 1;
-          } else {
-            typeCount[item.nodeType] = 1;
-          }
-        }
-      }
-      
-      if (currentData.checklistLayout) {
-        for (let j = 0; j < currentData.checklistLayout.length; j++) {
-          let item = currentData.checklistLayout[j];
           if (item.segments && item.segments.length > 0) {
             let idsAddedDuringTheseSegments = new Set();
             for (let k = 0; k < item.segments.length; k++) {
               let segment = item.segments[k];
-              if (!segment.id || segment.id === "-") {
+              if (segment.id === "-") {
                 continue;
               }
+              if (segment.nodeType === undefined) {
+                console.warn(item, segment);
+              }
+              if (["boss", "battle"].includes(segment.nodeType)) {
+                ++totalBossCount;
+              } else {
+                ++totalItemCount;
+              }
+              if (segment.itemId) {
+                itemOrder.push(segment);
+                itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
+              } else {
+                missingItems.push(segment);
+              }
               if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
+                if (itemCount[segment.id]) {
+                  itemCount[segment.id] += 1;
+                } else {
+                  itemCount[segment.id] = 1;
+                }
                 idsAddedDuringTheseSegments.add(segment.id);
               }
               addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
+              if (doesChecklist) {
+                const useSprite = Object.hasOwn(segment, 'sprite');
+                const propSprite = useSprite ? segment.sprite : segment.id;
+                unifiedChecklist[currentGame][propSprite] += 1;
+              }
               if (segment.locale) {
                 for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
                   let localeId = localeObj.id;
@@ -234,84 +151,177 @@ let main = {
                     continue;
                   }
                   if (!idsAddedDuringTheseSegments.has(localeId)) {
+                    if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
+                      if (itemCount[localeId]) {
+                        itemCount[localeId] += 1;
+                      } else {
+                        itemCount[localeId] = 1;
+                      }
+                    }
                     idsAddedDuringTheseSegments.add(localeId);
                     addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
                   }
                 }
               }
+              if (typeCount[segment.nodeType]) {
+                typeCount[segment.nodeType] += 1;
+              } else {
+                typeCount[segment.nodeType] = 1;
+              }
             }
           } else {
-            if (!item.id || item.id === "-") {
-              continue;
+            if (["boss", "battle"].includes(item.nodeType)) {
+              ++totalBossCount;
+            } else {
+              ++totalItemCount;
+            }
+            if (item.itemId) {
+              itemOrder.push(item);
+              itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
+            } else {
+              missingItems.push(item);
+            }
+            if (!(!!item.clearIfScramble)) {
+              if (itemCount[item.id]) {
+                itemCount[item.id] += 1;
+              } else {
+                itemCount[item.id] = 1;
+              }
             }
             addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
+            if (doesChecklist) {
+              const useSprite = Object.hasOwn(item, 'sprite');
+              const propSprite = useSprite ? item.sprite : item.id;
+              unifiedChecklist[currentGame][propSprite] += 1;
+            }
             if (item.locale) {
               for (const [localeKey, localeObj] of Object.entries(item.locale)) {
                 let localeId = localeObj.id;
                 if (localeId === "-") {
                   continue;
                 }
+                if (!(!!item.clearIfScramble) && item.id !== localeId) {
+                  if (itemCount[localeId]) {
+                    itemCount[localeId] += 1;
+                  } else {
+                    itemCount[localeId] = 1;
+                  }
+                }
                 addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
+              }
+            }
+            if (typeCount[item.nodeType]) {
+              typeCount[item.nodeType] += 1;
+            } else {
+              typeCount[item.nodeType] = 1;
+            }
+          }
+        }
+        
+        if (currentData.checklistLayout) {
+          for (let j = 0; j < currentData.checklistLayout.length; j++) {
+            let item = currentData.checklistLayout[j];
+            if (item.segments && item.segments.length > 0) {
+              let idsAddedDuringTheseSegments = new Set();
+              for (let k = 0; k < item.segments.length; k++) {
+                let segment = item.segments[k];
+                if (!segment.id || segment.id === "-") {
+                  continue;
+                }
+                if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
+                  idsAddedDuringTheseSegments.add(segment.id);
+                }
+                addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
+                if (segment.locale) {
+                  for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
+                    let localeId = localeObj.id;
+                    if (localeId === "-") {
+                      continue;
+                    }
+                    if (!idsAddedDuringTheseSegments.has(localeId)) {
+                      idsAddedDuringTheseSegments.add(localeId);
+                      addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
+                    }
+                  }
+                }
+              }
+            } else {
+              if (!item.id || item.id === "-") {
+                continue;
+              }
+              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
+              if (item.locale) {
+                for (const [localeKey, localeObj] of Object.entries(item.locale)) {
+                  let localeId = localeObj.id;
+                  if (localeId === "-") {
+                    continue;
+                  }
+                  addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
+                }
               }
             }
           }
         }
-      }
-      
-      for (let j = 0; j < currentData.extras.length; j++) {
-        let item = currentData.extras[j];
-        if (!item.id || item.id === "-") {
-          continue;
+        
+        for (let j = 0; j < currentData.extras.length; j++) {
+          let item = currentData.extras[j];
+          if (!item.id || item.id === "-") {
+            continue;
+          }
+          ++totalExtraCount;
+          addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
+          if (typeCount[item.nodeType]) {
+            typeCount[item.nodeType] += 1;
+          } else {
+            typeCount[item.nodeType] = 1;
+          }
         }
-        ++totalExtraCount;
-        addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
-        if (typeCount[item.nodeType]) {
-          typeCount[item.nodeType] += 1;
-        } else {
-          typeCount[item.nodeType] = 1;
+        
+        for (let j = 0; j < currentData.bosses.length; j++) {
+          let boss = currentData.bosses[j];
+          ++totalBossCount;
+          let type = boss.nodeType || "boss";
+          if (typeCount[type]) {
+            typeCount[type] += 1;
+          } else {
+            typeCount[type] = 1;
+          }
         }
-      }
-      
-      for (let j = 0; j < currentData.bosses.length; j++) {
-        let boss = currentData.bosses[j];
-        ++totalBossCount;
-        let type = boss.nodeType || "boss";
-        if (typeCount[type]) {
-          typeCount[type] += 1;
-        } else {
-          typeCount[type] = 1;
+        
+        let duplicateCollection = new Set();
+        
+        for (const [keyid, count] of Object.entries(itemCount)) {
+          if (count > 1) {
+            duplicateCollection.add(keyid);
+          }
         }
-      }
-      
-      let duplicateCollection = new Set();
-      
-      for (const [keyid, count] of Object.entries(itemCount)) {
-        if (count > 1) {
-          duplicateCollection.add(keyid);
+        
+        duplicateCollection = [...duplicateCollection];
+        if (duplicateCollection.length > 0) {
+          if (dupesPerGame[currentGame]) {
+            dupesPerGame[currentGame] = dupesPerGame[currentGame].concat(duplicateCollection);
+          } else {
+            dupesPerGame[currentGame] = duplicateCollection;
+          }
         }
-      }
-      
-      duplicateCollection = [...duplicateCollection];
-      if (duplicateCollection.length > 0) {
-        if (dupesPerGame[currentGame]) {
-          dupesPerGame[currentGame] = dupesPerGame[currentGame].concat(duplicateCollection);
-        } else {
-          dupesPerGame[currentGame] = duplicateCollection;
+        
+        if (doProcessItemOrder) {
+          console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
+          if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && missingItems.length) {
+            console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
+          }
+          if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && allSegments.length) {
+            console.debug("   segments:", allSegments);
+            //console.debug(`segments for game ${currentGame}`, allSegments);
+          }
         }
-      }
-      
-      if (doProcessItemOrder) {
-        console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
-        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && missingItems.length) {
-          console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
-        }
-        if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && allSegments.length) {
-          console.debug("   segments:", allSegments);
-          //console.debug(`segments for game ${currentGame}`, allSegments);
-        }
+      } catch (e) {
+        aFailureHasOccurred = true;
+        console.error(`failed to fetch JSON for game ${currentGame}`);
+        console.error(e);
       }
     }
-    if (doProcessItemOrder) {
+    if (aFailureHasOccurred || doProcessItemOrder) {
       console.debug("**********")
     }
     
@@ -334,7 +344,7 @@ let main = {
     }
     /*
       Indicates there is a placeholder icon on m_graphics.png ,
-      that is not allocated to any items on rawData.js .
+      that is not allocated to any items in data/*.json .
       Note that this is meant to cover icons under properties [items, checklistLayout, and extras],
       but does not cover icons that may be used under other properties [bosses, areas, or map].
       This code may be updated in the future to include those. 
@@ -375,7 +385,7 @@ let main = {
           if (unifiedReport[gameName].inUse.length > 0) {
             /*
               Indicates there is a MZM-style icon on mzm_full_spritesheet.png ,
-              that is allocated to items on rawData.js .
+              that is allocated to items in data/*.json .
               These entries will need to be added to the {unifiedChecklist} mapping above
               in order to fully register. Otherwise it will be marked as "missing".
             */
@@ -384,7 +394,7 @@ let main = {
           if (unifiedReport[gameName].unused.length > 0) {
             /*
               Indicates there is a MZM-style icon on mzm_full_spritesheet.png ,
-              that is not allocated to any items on rawData.js .
+              that is not allocated to any items in data/*.json .
             */
             console.warn(`     unused [${unifiedReport[gameName].unused.length}] :`, unifiedReport[gameName].unused);
           }

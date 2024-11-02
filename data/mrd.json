@@ -1,0 +1,1542 @@
+{
+  "mrd": {
+    "checklistWidth": 5,
+    "checklistLayout": [
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 31,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Tanks",
+        "singleItemName": "Missiles",
+        "bg": "d82800",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bomb",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wallJumpBoots",
+        "sprite": "wall",
+        "name": "Wall Jump Boots",
+        "bg": "ff7e00",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBallA",
+        "sprite": "spring",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Prototype Wave Beam",
+        "bg": "92278f",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierA",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7b7b",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "m_lock1",
+        "sprite": "captain",
+        "name": "Access Lock 1",
+        "bg": "747474",
+        "itemId": 14,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "m_lock2",
+        "sprite": "research",
+        "name": "Access Lock 2",
+        "bg": "747474",
+        "itemId": 15,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "monsterCapsule",
+        "sprite": "cell",
+        "name": "Metroid Cell Capsule",
+        "bg": "008080",
+        "itemId": 16,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "kraid",
+        "name": "Jungle Beast",
+        "bossId": 101
+      },
+      {
+        "id": "ridley",
+        "name": "GF Soldier",
+        "bossId": 102
+      },
+      {
+        "id": "shaktool",
+        "name": "Shaktool",
+        "bossId": 103
+      },
+      {
+        "id": "guardian",
+        "name": "Shaktool 2.0",
+        "bossId": 104
+      },
+      {
+        "id": "mbrain",
+        "name": "Alpha Metroid",
+        "bossId": 105
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Space Pirate Mothership",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Surface Caverns Lift 2",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Surface Caverns Lift 1",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Volga",
+        "color": "009700"
+      },
+      {
+        "id": 5,
+        "name": "Vaara",
+        "color": "bf00bf"
+      },
+      {
+        "id": 6,
+        "name": "Federation Ship",
+        "color": "bf00bf"
+      },
+      {
+        "id": 7,
+        "name": "Metroid Nest",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Beta Ray Info",
+        "extraId": 1001,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Captain Hint",
+        "extraId": 1002,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Two Codes Hint",
+        "extraId": 1003,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Wave Beam Hint",
+        "extraId": 1004,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "That One Easter Egg",
+        "extraId": 1006,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Word Search Easter Egg",
+        "extraId": 1005,
+        "nodeType": "easter"
+      },
+      {
+        "id": "rechargeRoom",
+        "name": "Restore Energy and Ammo",
+        "extraId": 1007,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Underwater Caverns",
+        "extraId": 1008,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Ruins",
+        "extraId": 1009,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1010,
+        "nodeType": "event"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": [
+          {
+            "nodeType": "recharge",
+            "id": 1007
+          },
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "elevator",
+            "transportToMapId": 2,
+            "toStartHubId": 11
+          },
+          {
+            "nodeType": "elevator",
+            "transportToMapId": 3,
+            "toStartHubId": 21
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "elevator",
+                    "transportToMapId": 5,
+                    "toStartHubId": 41
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 9,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 6,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 3
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 7,
+                "isRandomizableItem": true,
+                "hubId": 3
+              }
+            ],
+            "vineToHubId": 3
+          },
+          {
+            "nodeType": "lock",
+            "id": 10,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 3
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "elevator",
+                    "transportToMapId": 4,
+                    "toStartHubId": 31
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 4,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "upgrade",
+                        "id": 12,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "recharge",
+                        "id": 1007
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 10,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 9,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 5,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 13,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "easter",
+                        "id": 1005
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 11,
+        "nodeType": "start",
+        "mapId": 2,
+        "children": [
+          {
+            "nodeType": "area",
+            "id": 1008,
+            "children": [
+              {
+                "nodeType": "recharge",
+                "id": 1007,
+                "hubId": 12
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 12
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 12
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 12
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 5,
+                "isRandomizableItem": true,
+                "hubId": 12
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ],
+                "hubId": 12
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "hubId": 13
+              },
+              {
+                "nodeType": "expansion",
+                "id": 6,
+                "isRandomizableItem": true,
+                "hubId": 13
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 7,
+                "isRandomizableItem": true,
+                "hubId": 13
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ],
+                "hubId": 13
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ],
+                "hubId": 13
+              }
+            ],
+            "vineToHubId": 13
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 13
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "elevator",
+                "transportToMapId": 6,
+                "toStartHubId": 51
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 9,
+                "isRandomizableItem": true,
+                "hubId": 14
+              }
+            ],
+            "vineToHubId": 14
+          },
+          {
+            "nodeType": "lock",
+            "id": 10,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 14
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 12,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 5,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 12,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 5,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true,
+                        "hubId": 15
+                      }
+                    ],
+                    "vineToHubId": 15
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 9,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 15
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "dropdown",
+                "children": [
+                  {
+                    "nodeType": "elevator",
+                    "transportToMapId": 3,
+                    "toStartHubId": 21
+                  }
+                ],
+                "vineToHubId": 16
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 21,
+        "nodeType": "start",
+        "mapId": 3,
+        "children": [
+          {
+            "nodeType": "expansion",
+            "id": 4,
+            "isRandomizableItem": true
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 6,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 8,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "dropdown",
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "recharge",
+                        "id": 1007,
+                        "hubId": 26
+                      },
+                      {
+                        "nodeType": "elevator",
+                        "transportToMapId": 2,
+                        "toStartHubId": 11
+                      }
+                    ],
+                    "vineToHubId": 26
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 9,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 26
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ],
+                "vineToHubId": 25
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 25
+              },
+              {
+                "nodeType": "lock",
+                "id": 12,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true,
+                        "hubId": 28
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 4,
+                            "isRandomizableItem": true
+                          }
+                        ],
+                        "hubId": 28
+                      }
+                    ],
+                    "vineToHubId": 28
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 9,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 31,
+        "nodeType": "start",
+        "mapId": 4,
+        "children": [
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "upgrade",
+                "id": 9,
+                "isRandomizableItem": true,
+                "hubId": 32
+              }
+            ],
+            "vineToHubId": 32
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 32
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "boss",
+                    "id": 103
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 14,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 15,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "boss",
+                            "id": 104,
+                            "children": [
+                              {
+                                "nodeType": "recharge",
+                                "id": 1007
+                              },
+                              {
+                                "nodeType": "elevator",
+                                "transportToMapId": 7,
+                                "toStartHubId": 61
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hubId": 41,
+        "nodeType": "start",
+        "mapId": 5,
+        "children": [
+          {
+            "nodeType": "recharge",
+            "id": 1007
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 11,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ],
+            "vineToHubId": 42
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 12,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 42
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "lock",
+                        "id": 5,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 6,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "area",
+                    "id": 1009,
+                    "children": [
+                      {
+                        "nodeType": "recharge",
+                        "id": 1007
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 5,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 4,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 5,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "recharge",
+                            "id": 1007
+                          },
+                          {
+                            "nodeType": "lock",
+                            "id": 8,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 4,
+                                "isRandomizableItem": true
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "boss",
+                            "id": 101,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 6,
+                                "isRandomizableItem": true
+                              },
+                              {
+                                "nodeType": "upgrade",
+                                "id": 15
+                              },
+                              {
+                                "nodeType": "dropdown",
+                                "children": [],
+                                "vineToHubId": 43
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "return",
+            "children": [],
+            "vineToHubId": 43
+          }
+        ]
+      },
+      {
+        "hubId": 51,
+        "nodeType": "start",
+        "mapId": 6,
+        "children": [
+          {
+            "nodeType": "lore",
+            "id": 1001
+          },
+          {
+            "nodeType": "lock",
+            "id": 4,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "recharge",
+                "id": 1007
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 6,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 7,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ],
+                "hubId": 52
+              }
+            ],
+            "vineToHubId": 52
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 52
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 10,
+                    "isRandomizableItem": true
+                  }
+                ],
+                "hubId": 53
+              }
+            ],
+            "vineToHubId": 53
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 53
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lore",
+                "id": 1002
+              },
+              {
+                "nodeType": "lore",
+                "id": 1003
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "recharge",
+                    "id": 1007
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lore",
+                    "id": 1004
+                  },
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 9,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "easter",
+                        "id": 1006,
+                        "children": [
+                          {
+                            "nodeType": "lock",
+                            "id": 5,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 6,
+                                "isRandomizableItem": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "dropdown",
+                        "children": [
+                          {
+                            "nodeType": "boss",
+                            "id": 102,
+                            "children": [
+                              {
+                                "nodeType": "dropdown",
+                                "children": [
+                                  {
+                                    "nodeType": "upgrade",
+                                    "id": 14
+                                  },
+                                  {
+                                    "nodeType": "upgrade",
+                                    "id": 16
+                                  },
+                                  {
+                                    "nodeType": "lock",
+                                    "id": 7,
+                                    "reqdItemCount": 1,
+                                    "children": [],
+                                    "vineToHubId": 56
+                                  }
+                                ]
+                              }
+                            ],
+                            "hubId": 55
+                          }
+                        ],
+                        "vineToHubId": 55
+                      }
+                    ]
+                  }
+                ],
+                "hubId": 54
+              }
+            ],
+            "vineToHubId": 54
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 54
+          },
+          {
+            "nodeType": "lock",
+            "id": 7,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 55
+              }
+            ]
+          },
+          {
+            "nodeType": "return",
+            "children": [],
+            "vineToHubId": 56
+          }
+        ]
+      },
+      {
+        "hubId": 61,
+        "nodeType": "start",
+        "mapId": 7,
+        "children": [
+          {
+            "nodeType": "lock",
+            "id": 5,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "recharge",
+                "id": 1007
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "recharge",
+                    "id": 1007
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 9,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "recharge",
+                        "id": 1007
+                      },
+                      {
+                        "nodeType": "boss",
+                        "id": 105,
+                        "children": [
+                          {
+                            "nodeType": "event",
+                            "id": 1010,
+                            "children": [
+                              {
+                                "nodeType": "end"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "grid": "m1_grid.png"
+  }
+}

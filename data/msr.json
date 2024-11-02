@@ -1,0 +1,714 @@
+{
+  "msr": {
+    "checklistWidth": 7,
+    "checklistLayout": [
+      {
+        "lookupId": 1,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Arachnus Defeated"
+      },
+      {
+        "lookupId": 25,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Area 6 - Diggernaut Defeated"
+      },
+      {
+        "lookupId": 11,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 23,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 21,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 14,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Area 4 - Survived Diggernaut"
+      },
+      {
+        "lookupId": 5,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 22,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 24,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 80,
+        "segments": []
+      },
+      {
+        "lookupId": 20,
+        "value": 1,
+        "start": 0,
+        "max": 30,
+        "segments": []
+      },
+      {
+        "lookupId": 26,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 15,
+        "segments": []
+      },
+      {
+        "name": "Metroids defeated",
+        "type": "counter",
+        "value": 0,
+        "start": 0,
+        "max": 50,
+        "segments": [
+          {
+            "id": "monsterDna",
+            "name": "Surface",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 1",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 4
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 2",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 8
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 3",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 10
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 4",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 4
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 5",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 7
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 6",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 7",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "id": "monsterDna",
+            "name": "Area 8",
+            "sprite": "dna",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 11
+          }
+        ]
+      },
+      {
+        "lookupId": 27,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "clearIfScramble": true
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "mtank",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "bg": "d82800",
+        "itemId": 2,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "scanPulse",
+        "sprite": "pulse",
+        "name": "Scan Pulse",
+        "bg": "00c7ff",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeBeamD",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "sprite": "charge",
+        "name": "Charge Beam",
+        "bg": "808000",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bombs",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "aeionExpansion",
+        "sprite": "aexp",
+        "name": "Aeion Expansions",
+        "singleItemName": "Aeion Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "bfbf00",
+        "itemId": 7,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "iceBeamB",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBall",
+        "sprite": "spider",
+        "name": "Spider Ball",
+        "bg": "bca470",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lightningArmor",
+        "sprite": "shield",
+        "name": "Lightning Armor",
+        "bg": "00ff08",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "sprite": "spring",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "beamBurst",
+        "sprite": "burst",
+        "name": "Beam Burst",
+        "bg": "ffbc15",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "grappleBeam",
+        "sprite": "grapple",
+        "name": "Grapple Beam",
+        "bg": "00e8d8",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeamD",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "sprite": "wide",
+        "name": "Spazer Beam",
+        "bg": "ffff80",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissile",
+        "sprite": "superm",
+        "name": "Super Missiles",
+        "bg": "007f0e",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "smtank",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "alreadyHasMainItem": true,
+        "bg": "007f0e",
+        "itemId": 20,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "phaseDrift",
+        "sprite": "drift",
+        "name": "Phase Drift",
+        "bg": "e900ff",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeamC",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuit",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBomb",
+        "sprite": "pbombs",
+        "name": "Power Bomb",
+        "bg": "98b830",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbtank",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "alreadyHasMainItem": true,
+        "bg": "98b830",
+        "itemId": 26,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "monster",
+        "sprite": "baby",
+        "name": "Baby Metroid",
+        "bg": "008080",
+        "itemId": 27,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "alpha",
+        "name": "Alpha Metroid",
+        "bossId": 112
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma Metroid",
+        "bossId": 113
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta Metroid",
+        "bossId": 114
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 115
+      },
+      {
+        "id": "larval",
+        "name": "Larval Metroid",
+        "bossId": 111
+      },
+      {
+        "id": "queen",
+        "name": "Queen Metroid",
+        "bossId": 121
+      },
+      {
+        "id": "arachnus",
+        "name": "Arachnus",
+        "bossId": 101
+      },
+      {
+        "id": "diggernauta",
+        "name": "Diggernaut Chase",
+        "bossId": 102
+      },
+      {
+        "id": "diggernautb",
+        "name": "Diggernaut",
+        "bossId": 103
+      },
+      {
+        "id": "pridley",
+        "name": "Proteus Ridley",
+        "bossId": 122
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Surface",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Area 1",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Area 2",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Area 3",
+        "color": "db2b00"
+      },
+      {
+        "id": 5,
+        "name": "Area 4",
+        "color": "db2b00"
+      },
+      {
+        "id": 6,
+        "name": "Area 5",
+        "color": "db2b00"
+      },
+      {
+        "id": 7,
+        "name": "Area 6",
+        "color": "db2b00"
+      },
+      {
+        "id": 8,
+        "name": "Area 7",
+        "color": "db2b00"
+      },
+      {
+        "id": 9,
+        "name": "Area 8",
+        "color": "db2b00"
+      },
+      {
+        "id": 10,
+        "name": "Surface (Post-Extinction)",
+        "color": "db2b00"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Teleport",
+        "nodeType": "teleport",
+        "extraId": 1001
+      },
+      {
+        "id": "grappleBeam",
+        "name": "Grapple Blocks broken",
+        "nodeType": "trigger",
+        "extraId": 1007
+      },
+      {
+        "id": "grappleBeam",
+        "name": "Diggernaut Awakened",
+        "nodeType": "event",
+        "extraId": 1006
+      },
+      {
+        "id": "unused",
+        "name": "Larval Metroids",
+        "nodeType": "event",
+        "extraId": 1008
+      },
+      {
+        "id": "missileRefill",
+        "name": "Missiles Reload",
+        "nodeType": "recharge",
+        "extraId": 1004
+      },
+      {
+        "id": "energyRefill",
+        "name": "Energy Recharge",
+        "nodeType": "recharge",
+        "extraId": 1005
+      },
+      {
+        "id": "ammoStation",
+        "name": "Aeion Refilled",
+        "nodeType": "recharge",
+        "extraId": 1003
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "nodeType": "save",
+        "extraId": 1002
+      },
+      {
+        "id": "meleeCounter",
+        "name": "Melee Counter tutorial",
+        "nodeType": "event",
+        "extraId": 1009
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "m2ros_grid.png"
+  }
+}

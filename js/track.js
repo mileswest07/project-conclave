@@ -19,7 +19,7 @@ let keyslots = {};
 
 (() => {
   
-  const z1m1List = ["m", "z"];
+  const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3", "z3r",];
   const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
   const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
@@ -599,7 +599,7 @@ let keyslots = {};
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.classList.add("usesSprite");
       }
-      if (tracker.useAllSprites) {
+      if (tracker.useSprites && tracker.useAllSprites) {
         wrapper.classList.add("usesAllSprites");
       }
     } else {
@@ -617,7 +617,7 @@ let keyslots = {};
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.className += " usesSprite";
       }
-      if (tracker.useAllSprites) {
+      if (tracker.useSprites && tracker.useAllSprites) {
         wrapper.className += " usesAllSprites";
       }
     }
@@ -782,7 +782,7 @@ let keyslots = {};
       }
     }
     
-    if (["am2r"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r", "scramble"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -797,7 +797,7 @@ let keyslots = {};
       wrapper.appendChild(hint);
     }
     
-    if (["aol"].includes(tracker.currentGame) && wrapper.id === "item-fireSpell-4") {
+    if (["aol", "scramble"].includes(tracker.currentGame) && wrapper.id === "item-fireSpell-4") {
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -1008,7 +1008,7 @@ let keyslots = {};
   }
   
   // scrambleStart
-  function scrambleStart(gamesList) {
+  async function scrambleStart(gamesList) {
     tracker.showTotals = false; // CURRENTLY UNDER CONSTRUCTION
     tracker.showTimer = false; // CURRENTLY UNDER CONSTRUCTION
     tracker.useKeyslots = false;
@@ -1029,11 +1029,20 @@ let keyslots = {};
       targetSection.className = "parent-flex";
     }
     
+    let target = document.getElementById("itemField");
+    if (target.classList) { // browser compatibility logic
+      target.classList.remove("hide-section");
+    } else {
+      target.className += target.className.replace(/\bhide-section\b/g);
+    }
+    let menuPointer = document.getElementById("selection");
+    menuPointer.remove();
+    
     for (let i = 0; i < gamesList.length; i++) {
       const key = gamesList[i];
-      const value = main.games[key];
+      const gameId = main.games[key];
       
-      tracker.currentGame = value;
+      tracker.currentGame = gameId;
       const itemFieldName = "itemField" + key;
       
       let foundItem = null;
@@ -1051,9 +1060,9 @@ let keyslots = {};
       if (newSection.classList) {
         newSection.classList.add("flex-field");
         newSection.classList.add("child-field");
-        newSection.classList.add("game-" + tracker.currentGame);
+        newSection.classList.add("game-" + gameId);
       } else {
-        newSection.className = "flex-field child-field game-" + tracker.currentGame
+        newSection.className = "flex-field child-field game-" + gameId
       }
       newSection.id = itemFieldName;
       
@@ -1062,26 +1071,29 @@ let keyslots = {};
       newSection.appendChild(gameTitle);
       
       targetSection.appendChild(newSection);
-      
-      tracker.workingData = rawData[tracker.currentGame];
-      tracker.generate(itemFieldName);
-      
-      // CURRENTLY UNDER CONSTRUCTION
-      /* if (tracker.showTotals) {
-        let targetHeader = targetSection.getElementsByTagName("h4");
-        targetHeader = targetHeader[targetHeader.length - 1];
-        tracker.renderPercentage(targetHeader);
-      } */
-    }
     
-    let target = document.getElementById("itemField");
-    if (target.classList) { // browser compatibility logic
-      target.classList.remove("hide-section");
-    } else {
-      target.className += target.className.replace(/\bhide-section\b/g);
+      // add fetch here; must be async because each panel needs to be generated in order
+      try {
+        // For now, this pulls the same file every single time
+        // TODO: split rawdata.json into component files for each game?
+        // const response = await fetch('js/rawdata.json');
+        const response = await fetch(`${main.jsonDir}/${gameId}.json`);
+        const data = await response.json();
+        const dataStruct = data[gameId];
+        tracker.workingData = dataStruct;
+        tracker.generate(itemFieldName);
+        
+        // CURRENTLY UNDER CONSTRUCTION
+        /* if (tracker.showTotals) {
+          let targetHeader = targetSection.getElementsByTagName("h4");
+          targetHeader = targetHeader[targetHeader.length - 1];
+          tracker.renderPercentage(targetHeader);
+        } */
+      } catch (e) {
+        console.error(`failed to fetch JSON for game ${gameId}`);
+        console.error(e);
+      }
     }
-    let menuPointer = document.getElementById("selection");
-    menuPointer.remove();
     tracker.currentGame = "scramble"; // to make Extreme Labs and Dash Spell work
   }
   
@@ -1574,44 +1586,56 @@ let keyslots = {};
         return;
       }
       
-      if (rawData.hasOwnProperty(incomingGame)) {
-        let game = null;
-        for (const [key, value] of Object.entries(main.games)) {
-          if (value == incomingGame) {
-            game = key;
-            break;
+      // add fetch here; can be sync because nothing else depends on it
+      // For now, this pulls the same file every single time
+      // TODO: split rawdata.json into component files for each game?
+      // fetch('js/rawdata.json')
+      fetch(`${main.jsonDir}/${incomingGame}.json`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.hasOwnProperty(incomingGame)) {
+            let game = null;
+            for (const [key, value] of Object.entries(main.games)) {
+              if (value == incomingGame) {
+                game = key;
+                break;
+              }
+            }
+            tracker.currentGame = incomingGame;
+            if (document.body.classList) {
+              document.body.classList.add("game-" + incomingGame);
+            } else {
+              document.body.className += " game-" + incomingGame;
+            }
+            tracker.workingData = data[incomingGame];
+            let targetingData = document.forms["startupMenu"]["selectedGame"].options;
+            let foundItem = null;
+            for (let i = 0; i < targetingData.length; i++) {
+              if (targetingData[i].value == game) {
+                foundItem = targetingData[i];
+              }
+            }
+            if (foundItem) {
+              document.title += " - " + foundItem.innerHTML;
+            }
+            
+            let menuPointer = document.getElementById("selection");
+            menuPointer.remove();
+            
+            let target = document.getElementById("itemField");
+            if (target.classList) { // browser compatibility logic
+              target.classList.remove("hide-section");
+            } else {
+              target.className += target.className.replace(/\bhide-section\b/g);
+            }
+            
+            tracker.generate("itemField");
           }
-        }
-        tracker.currentGame = incomingGame;
-        if (document.body.classList) {
-          document.body.classList.add("game-" + tracker.currentGame);
-        } else {
-          document.body.className += " game-" + tracker.currentGame;
-        }
-        tracker.workingData = rawData[tracker.currentGame];
-        let targetingData = document.forms["startupMenu"]["selectedGame"].options;
-        let foundItem = null;
-        for (let i = 0; i < targetingData.length; i++) {
-          if (targetingData[i].value == game) {
-            foundItem = targetingData[i];
-          }
-        }
-        if (foundItem) {
-          document.title += " - " + foundItem.innerHTML;
-        }
-        
-        let menuPointer = document.getElementById("selection");
-        menuPointer.remove();
-        
-        let target = document.getElementById("itemField");
-        if (target.classList) { // browser compatibility logic
-          target.classList.remove("hide-section");
-        } else {
-          target.className += target.className.replace(/\bhide-section\b/g);
-        }
-        
-        tracker.generate("itemField");
-      }
+        })
+        .catch(e => {
+          console.error(`failed to fetch JSON for game ${incomingGame}`);
+          console.error(e);
+        });
     }
   }
 

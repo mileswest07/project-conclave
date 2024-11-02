@@ -1,0 +1,779 @@
+{
+  "am2r": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 2,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Tester Defeated"
+      },
+      {
+        "lookupId": 20,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Serris Defeated"
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Arachnus Defeated"
+      },
+      {
+        "lookupId": 3,
+        "value": 0,
+        "start": 1,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Torizo Defeated"
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 44,
+        "segments": []
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Power Plant Destroyed"
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "name": "Metroids defeated",
+        "type": "counter",
+        "value": 0,
+        "start": 0,
+        "max": 54,
+        "segments": [
+          {
+            "id": "monsterDna",
+            "name": "Surface",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 1
+          },
+          {
+            "id": "monsterDna",
+            "name": "Golden Temple",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 4
+          },
+          {
+            "id": "monsterDna",
+            "name": "Hydro Station",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 8
+          },
+          {
+            "id": "monsterDna",
+            "name": "Industrial Complex",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 10
+          },
+          {
+            "id": "monsterDna",
+            "name": "Research Site",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "Mining Facility",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "The Tower",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 6
+          },
+          {
+            "id": "monsterDna",
+            "name": "Distribution Center",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 8
+          },
+          {
+            "id": "monsterDna",
+            "name": "Rescue Team Campsite",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 2
+          },
+          {
+            "id": "monsterDna",
+            "name": "The Nest",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 3
+          },
+          {
+            "id": "monsterDna",
+            "name": "Genetics Laboratory",
+            "sprite": "monster",
+            "type": "counter",
+            "value": 0,
+            "start": 0,
+            "max": 9
+          }
+        ]
+      },
+      {
+        "lookupId": 1031,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      },
+      {
+        "lookupId": 30,
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "missileTank",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "sprite": "missile",
+        "bg": "d82800",
+        "itemId": 1,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "name": "Power Grip",
+        "sprite": "grip",
+        "bg": "00e8d8",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bomb",
+        "name": "Bombs",
+        "sprite": "bomb",
+        "bg": "3800a8",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "sprite": "energy",
+        "bg": "78a4bc",
+        "itemId": 5,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeBeam",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "name": "Charge Beam",
+        "sprite": "charge",
+        "bg": "808000",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBall",
+        "name": "Spider Ball",
+        "sprite": "spider",
+        "bg": "bca470",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierB",
+        "name": "Varia Suit",
+        "sprite": "barrier",
+        "bg": "ff7e00",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "name": "Wave Beam",
+        "sprite": "wave",
+        "bg": "92278f",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJump",
+        "name": "High Jump Boots",
+        "sprite": "high",
+        "bg": "c0a8d8",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "name": "Spring Ball",
+        "sprite": "spring",
+        "bg": "886848",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "name": "Space Jump",
+        "sprite": "space",
+        "bg": "00a0e0",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "name": "Spazer Beam",
+        "sprite": "wide",
+        "bg": "ffff80",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "name": "Speed Booster",
+        "sprite": "speed",
+        "bg": "ff0094",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "sprite": "smissile",
+        "bg": "007f0e",
+        "itemId": 15,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "plasmaBeam",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "name": "Plasma Beam",
+        "sprite": "plasma",
+        "bg": "00ff08",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "sprite": "pbombs",
+        "bg": "98b830",
+        "itemId": 17,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "screwAttack",
+        "name": "Screw Attack",
+        "sprite": "screw",
+        "bg": "69cd69",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuit",
+        "name": "Gravity Suit",
+        "sprite": "gravity",
+        "bg": "602880",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "name": "Ice Beam",
+        "sprite": "ice",
+        "bg": "2038ec",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "monster",
+        "name": "Baby Metroid",
+        "sprite": "baby",
+        "bg": "008080",
+        "itemId": 30,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "alpha",
+        "name": "Alpha Metroid",
+        "bossId": 112
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma Metroid",
+        "bossId": 113
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta Metroid",
+        "bossId": 114
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 115
+      },
+      {
+        "id": "larval",
+        "name": "Larval Metroid",
+        "bossId": 111
+      },
+      {
+        "id": "queen",
+        "name": "Queen Metroid",
+        "bossId": 121
+      },
+      {
+        "id": "ancientguard",
+        "name": "Ancient Guardian",
+        "bossId": 101
+      },
+      {
+        "id": "arachnus",
+        "name": "Arachnus",
+        "bossId": 102
+      },
+      {
+        "id": "tester",
+        "name": "The Tester",
+        "bossId": 103
+      },
+      {
+        "id": "chozotank",
+        "name": "Chozo Tank",
+        "bossId": 104
+      },
+      {
+        "id": "serris",
+        "name": "Serris",
+        "bossId": 105
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Main Tunnel",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Golden Temple",
+        "color": "db2b00"
+      },
+      {
+        "id": 3,
+        "name": "Hydro Station",
+        "color": "db2b00"
+      },
+      {
+        "id": 4,
+        "name": "Industrial Complex",
+        "color": "db2b00"
+      },
+      {
+        "id": 5,
+        "name": "The Tower",
+        "color": "db2b00"
+      },
+      {
+        "id": 6,
+        "name": "Distribution Center",
+        "color": "db2b00"
+      },
+      {
+        "id": 7,
+        "name": "GFS Thoth",
+        "color": "db2b00"
+      },
+      {
+        "id": 8,
+        "name": "The Nest + Genetics Lab",
+        "color": "db2b00"
+      }
+    ],
+    "extras": [
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1021,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1022,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1023,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Mining Facility",
+        "extraId": 1024,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Research Site",
+        "extraId": 1025,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Power Plant",
+        "extraId": 1026,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Genetics Laboratory",
+        "extraId": 1027,
+        "nodeType": "area"
+      },
+      {
+        "id": "towerPower",
+        "name": "Tower Power",
+        "extraId": 1002,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Core Destroyed",
+        "extraId": 1003,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Thoth Cockpit",
+        "extraId": 1016,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1008,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1009,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1010,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1011,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1012,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1013,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1014,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1015,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Science Scan",
+        "extraId": 1005,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Science Scan",
+        "extraId": 1006,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Science Scan",
+        "extraId": 1007,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "\"Movement Detected\"",
+        "message": "Movement detected",
+        "extraId": 1005,
+        "nodeType": "lore"
+      },
+      {
+        "id": "am2rPowerOrb",
+        "name": "Power Orbs Distributed",
+        "sprite": "battery",
+        "bg": "887878",
+        "extraId": 1031,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Nest Cleared",
+        "extraId": 1028,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Larval Metroids",
+        "extraId": 1029,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Power Orb 1",
+        "extraId": 1032,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Orb 2",
+        "extraId": 1033,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Orb 3",
+        "extraId": 1034,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Orb 4",
+        "extraId": 1035,
+        "nodeType": "trigger"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "m2ros_grid.png"
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "sm": {
+    "checklistWidth": 8,
+    "checklistLayout": [
+      {
+        "lookupId": 1,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Morphing Ball Item Acquired"
+      },
+      {
+        "lookupId": 3,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Torizo Defeated"
+      },
+      {
+        "lookupId": 19,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Spring Ball Orb Acquired"
+      },
+      {
+        "lookupId": 21,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Screw Attack Orb Acquired"
+      },
+      {
+        "lookupId": 9,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Kraid Defeated"
+      },
+      {
+        "lookupId": 17,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Gravity Suit Orb Acquired"
+      },
+      {
+        "lookupId": 15,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla X-Ray Scope Orb Acquired"
+      },
+      {
+        "lookupId": 14,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Grappling Beam Orb Acquired"
+      },
+      {
+        "lookupId": 5,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Charge Beam Orb Acquired"
+      },
+      {
+        "lookupId": 8,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Spazer Orb Acquired"
+      },
+      {
+        "lookupId": 11,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Ice Beam Orb Acquired"
+      },
+      {
+        "lookupId": 16,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Wave Beam Orb Acquired"
+      },
+      {
+        "lookupId": 20,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Plasma Beam Orb Acquired"
+      },
+      {
+        "lookupId": 7,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla High Jump Orb Acquired"
+      },
+      {
+        "lookupId": 10,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "Z_Orb",
+        "overText": "Vanilla Speed Booster Orb Acquired"
+      },
+      {
+        "lookupId": 18,
+        "value": 1,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss",
+        "overText": "Draygon Defeated"
+      },
+      {
+        "lookupId": 4,
+        "value": 1,
+        "start": 0,
+        "max": 14,
+        "segments": []
+      },
+      {
+        "lookupId": 2,
+        "value": 1,
+        "start": 0,
+        "max": 46,
+        "segments": []
+      },
+      {
+        "lookupId": 6,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 12,
+        "value": 1,
+        "start": 0,
+        "max": 10,
+        "segments": []
+      },
+      {
+        "lookupId": 13,
+        "value": 1,
+        "start": 0,
+        "max": 4,
+        "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": []
+      },
+      {
+        "id": "boss",
+        "sprite": "boss",
+        "name": "Bosses",
+        "value": 0,
+        "start": 0,
+        "max": 4,
+        "segments": []
+      },
+      {
+        "id": "etedach",
+        "sprite": "animals",
+        "name": "Animals Rescued",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": []
+      }
+    ],
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morphing Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "sprite": "missile",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "bg": "d82800",
+        "itemId": 2,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bomb",
+        "sprite": "bomb",
+        "name": "Bombs",
+        "bg": "3800a8",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTank",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeBeam",
+        "locale": {
+          "enUS": {
+            "id": "chargeBeamE"
+          }
+        },
+        "name": "Charge Beam",
+        "sprite": "charge",
+        "bg": "808000",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "smissile",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "bg": "007f0e",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "highJump",
+        "sprite": "high",
+        "name": "High Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamC"
+          }
+        },
+        "sprite": "wide",
+        "name": "Spazer",
+        "bg": "ffff80",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrier",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBooster",
+        "sprite": "speed",
+        "name": "Speed Booster",
+        "bg": "ff0094",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeam",
+        "locale": {
+          "enUS": {
+            "id": "iceBeamD"
+          }
+        },
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "sprite": "pbombs",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "bg": "98b830",
+        "itemId": 12,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "reserveTankB",
+        "locale": {
+          "enUS": {
+            "id": "reserveTank"
+          }
+        },
+        "sprite": "reserve",
+        "name": "Reserve Tanks",
+        "singleItemName": "Reserve Tank",
+        "bg": "7f2800",
+        "itemId": 13,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "grappleBeam",
+        "sprite": "grapple",
+        "name": "Grappling Beam",
+        "bg": "00e8d8",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "xRayScope",
+        "sprite": "xray",
+        "name": "X-Ray Scope",
+        "bg": "c8d8d8",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "locale": {
+          "enUS": {
+            "id": "wideBeamA"
+          }
+        },
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuit",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBall",
+        "sprite": "spring",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeam",
+        "locale": {
+          "enUS": {
+            "id": "plasmaBeamD"
+          }
+        },
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttack",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "torizo",
+        "name": "Torizo",
+        "bossId": 101
+      },
+      {
+        "id": "spospaw",
+        "name": "Spore Spawn",
+        "bossId": 102
+      },
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 106
+      },
+      {
+        "id": "crocomire",
+        "name": "Crocomire",
+        "bossId": 103
+      },
+      {
+        "id": "phantoon",
+        "name": "Phantoon",
+        "bossId": 107
+      },
+      {
+        "id": "botwoon",
+        "name": "Botwoon",
+        "bossId": 104
+      },
+      {
+        "id": "draygon",
+        "name": "Draygon",
+        "bossId": 108
+      },
+      {
+        "id": "goldtorizo",
+        "name": "Golden Torizo",
+        "bossId": 105
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 109
+      },
+      {
+        "id": "mbrain",
+        "name": "Mother Brain",
+        "bossId": 110
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Crateria",
+        "hasGameStart": true,
+        "color": "2038ec"
+      },
+      {
+        "id": 2,
+        "name": "Brinstar",
+        "color": "2038ec"
+      },
+      {
+        "id": 3,
+        "name": "Brinstar",
+        "color": "2038ec"
+      },
+      {
+        "id": 4,
+        "name": "Brinstar",
+        "color": "2038ec"
+      },
+      {
+        "id": 5,
+        "name": "Brinstar",
+        "color": "2038ec"
+      },
+      {
+        "id": 6,
+        "name": "Norfair",
+        "color": "db2b00"
+      },
+      {
+        "id": 7,
+        "name": "Norfair",
+        "color": "db2b00"
+      },
+      {
+        "id": 8,
+        "name": "Wrecked Ship",
+        "color": "009700"
+      },
+      {
+        "id": 9,
+        "name": "Maridia",
+        "color": "bf00bf"
+      },
+      {
+        "id": 10,
+        "name": "Maridia",
+        "color": "bf00bf"
+      },
+      {
+        "id": 11,
+        "name": "Tourian",
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "etedach",
+        "name": "Save The Animals",
+        "sprite": "animals",
+        "extraId": 1021,
+        "nodeType": "event"
+      },
+      {
+        "id": "etedach",
+        "name": "Shine Spark Critter",
+        "extraId": 1022,
+        "nodeType": "event"
+      },
+      {
+        "id": "etedach",
+        "name": "Wall Jump Critters",
+        "extraId": 1023,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Blue Shutter",
+        "extraId": 1004,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "superMissileTank",
+        "name": "Green Shutter",
+        "extraId": 1005,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "powerBombTank",
+        "name": "Glass Tunnel Broken",
+        "extraId": 1024,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "reserveTankB",
+        "name": "Reserve Tank Hint",
+        "extraId": 1025,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Crateria",
+        "extraId": 1011,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Brinstar",
+        "extraId": 1012,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Norfair",
+        "extraId": 1013,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Maridia",
+        "extraId": 1015,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Wrecked Ship",
+        "extraId": 1014,
+        "nodeType": "map"
+      },
+      {
+        "id": "missileRefill",
+        "name": "Missiles Reload",
+        "extraId": 1001,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "energyRefill",
+        "name": "Energy Recharge",
+        "extraId": 1002,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "saveRoom",
+        "name": "Save Station",
+        "extraId": 1003,
+        "nodeType": "save"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "sm_grid.png"
+  }
+}

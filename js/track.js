@@ -1074,9 +1074,6 @@ let keyslots = {};
     
       // add fetch here; must be async because each panel needs to be generated in order
       try {
-        // For now, this pulls the same file every single time
-        // TODO: split rawdata.json into component files for each game?
-        // const response = await fetch('js/rawdata.json');
         const response = await fetch(`${main.jsonDir}/${gameId}.json`);
         const data = await response.json();
         const dataStruct = data[gameId];
@@ -1587,9 +1584,6 @@ let keyslots = {};
       }
       
       // add fetch here; can be sync because nothing else depends on it
-      // For now, this pulls the same file every single time
-      // TODO: split rawdata.json into component files for each game?
-      // fetch('js/rawdata.json')
       fetch(`${main.jsonDir}/${incomingGame}.json`)
         .then(response => response.json())
         .then(data => {

@@ -11,434 +11,431 @@
 .game-mpff .usesAllSprites.expansion { height: 84px; }
 .game-mpff .usesAllSprites.trimmed .item-image { margin: 11px; }
 
-.game-m1 .usesSprite.usesAllSprites .item-image.morph,
-.game-m2ros .usesSprite.usesAllSprites .item-image.morph,
-.game-mzm .usesSprite.usesAllSprites .item-image.morph,
-.game-msr .usesSprite.usesAllSprites .item-image.morph,
-.game-sm .usesSprite.usesAllSprites .item-image.morph,
-.game-mom .usesAllSprites.trimmed .item-image.morphBall,
-.game-mf .usesSprite.usesAllSprites .item-image.morph,
-.game-md .usesAllSprites.trimmed .item-image.morphBall { background: url("images/mzm_full_spritesheet.png") 0 0; }
-.game-m1 .usesSprite.usesAllSprites .item-image.bomb,
-.game-mzm .usesSprite.usesAllSprites .item-image.bomb,
-.game-m2ros .usesSprite.usesAllSprites .item-image.bomb,
-.game-msr .usesSprite.usesAllSprites .item-image.bombs,
-.game-sm .usesSprite.usesAllSprites .item-image.bomb,
-.game-mom .usesSprite.usesAllSprites .item-image.bomb,
-.game-md .usesAllSprites.trimmed .item-image.bombD { background: url("images/mzm_full_spritesheet.png") -42px 0; }
-.game-m1 .usesSprite.usesAllSprites .item-image.long,
-.game-mzm .usesSprite.usesAllSprites .item-image.long { background: url("images/mzm_full_spritesheet.png") -84px 0; }
-.game-mzm .usesSprite.usesAllSprites .item-image.charge { background: url("images/mzm_full_spritesheet.png") -126px 0; }
-.game-m1 .usesSprite.usesAllSprites .item-image.ice,
-.game-mzm .usesSprite.usesAllSprites .item-image.ice { background: url("images/mzm_full_spritesheet.png") -168px 0; }
-.game-m1 .usesSprite.usesAllSprites .item-image.wave,
-.game-mzm .usesSprite.usesAllSprites .item-image.wave { background: url("images/mzm_full_spritesheet.png") -210px 0; }
-.game-msr .usesSprite.usesAllSprites .item-image.shield { background: url("images/mzm_full_spritesheet.png") -252px 0; }
-.game-mom .usesSprite.usesAllSprites .item-image.part { background: url("images/mzm_full_spritesheet.png") -294px 0; }
-.game-mp .usesAllSprites.trimmed .item-image.powersuit { background: url("images/mzm_full_spritesheet.png") -336px 0; } /*does not exist as item in Raw Data*/
-.game-mf .usesSprite.usesAllSprites .item-image.final,
-.game-mp .usesSprite.usesAllSprites .item-image.barrier,
-.game-mp2e .usesAllSprites.trimmed .item-image.barrier, /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites.trimmed .item-image.barrier { background: url("images/mzm_full_spritesheet.png") -378px 0; } /*does not exist as item in Raw Data*/
-.game-mp .usesSprite.usesAllSprites .item-image.gravity { background: url("images/mzm_full_spritesheet.png") -420px 0; }
-.game-mp .usesSprite.usesAllSprites .item-image.phazon { background: url("images/mzm_full_spritesheet.png") -462px 0; }
-.game-mp .usesSprite.usesAllSprites .item-image.morph,
-.game-mp2e .usesSprite.usesAllSprites .item-image.morph,
-.game-mp3c .usesAllSprites.trimmed .item-image.morphBall,
-.game-ph .usesSprite.usesAllSprites .item-image.morph { background: url("images/mzm_full_spritesheet.png") -504px 0; }
-.game-mp .usesSprite.usesAllSprites .item-image.missile,
-.game-mp2e .usesSprite.usesAllSprites .item-image.missile,
-.game-pb .usesSprite.usesAllSprites .item-image.missile,
-.game-ph .usesSprite.usesAllSprites .item-image.missile { background: url("images/mzm_full_spritesheet.png") -546px 0; }
-.game-ph .usesSprite.usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -588px 0; }
-.game-ph .usesAllSprites.trimmed .item-image.shieldKey { background: url("images/mzm_full_spritesheet.png") -630px 0; } /*does not exist as item in Raw Data*/
+.game-m1 .usesAllSprites .item-image.morph,
+.game-m2ros .usesAllSprites .item-image.morph,
+.game-mzm .usesAllSprites .item-image.morph,
+.game-msr .usesAllSprites .item-image.morph,
+.game-sm .usesAllSprites .item-image.morph,
+.game-mom .usesAllSprites .item-image.morphBall,
+.game-mf .usesAllSprites .item-image.morph,
+.game-md .usesAllSprites .item-image.morphBall { background: url("images/mzm_full_spritesheet.png") 0 0; }
+.game-m1 .usesAllSprites .item-image.bomb,
+.game-mzm .usesAllSprites .item-image.bomb,
+.game-m2ros .usesAllSprites .item-image.bomb,
+.game-msr .usesAllSprites .item-image.bombs,
+.game-sm .usesAllSprites .item-image.bomb,
+.game-mom .usesAllSprites .item-image.bomb,
+.game-md .usesAllSprites .item-image.bombD { background: url("images/mzm_full_spritesheet.png") -42px 0; }
+.game-m1 .usesAllSprites .item-image.long,
+.game-mzm .usesAllSprites .item-image.long { background: url("images/mzm_full_spritesheet.png") -84px 0; }
+.game-mzm .usesAllSprites .item-image.charge { background: url("images/mzm_full_spritesheet.png") -126px 0; }
+.game-m1 .usesAllSprites .item-image.ice,
+.game-mzm .usesAllSprites .item-image.ice { background: url("images/mzm_full_spritesheet.png") -168px 0; }
+.game-m1 .usesAllSprites .item-image.wave,
+.game-mzm .usesAllSprites .item-image.wave { background: url("images/mzm_full_spritesheet.png") -210px 0; }
+.game-msr .usesAllSprites .item-image.shield { background: url("images/mzm_full_spritesheet.png") -252px 0; }
+.game-mom .usesAllSprites .item-image.part { background: url("images/mzm_full_spritesheet.png") -294px 0; }
+.game-mp .usesAllSprites .item-image.powersuit { background: url("images/mzm_full_spritesheet.png") -336px 0; } /*does not exist as item in Raw Data*/
+.game-mf .usesAllSprites .item-image.final,
+.game-mp .usesAllSprites .item-image.barrier,
+.game-mp2e .usesAllSprites .item-image.barrier, /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.barrier { background: url("images/mzm_full_spritesheet.png") -378px 0; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.gravity { background: url("images/mzm_full_spritesheet.png") -420px 0; }
+.game-mp .usesAllSprites .item-image.phazon { background: url("images/mzm_full_spritesheet.png") -462px 0; }
+.game-mp .usesAllSprites .item-image.morph,
+.game-mp2e .usesAllSprites .item-image.morph,
+.game-mp3c .usesAllSprites .item-image.morphBall,
+.game-ph .usesAllSprites .item-image.morph { background: url("images/mzm_full_spritesheet.png") -504px 0; }
+.game-mp .usesAllSprites .item-image.missile,
+.game-mp2e .usesAllSprites .item-image.missile,
+.game-pb .usesAllSprites .item-image.missile,
+.game-ph .usesAllSprites .item-image.missile { background: url("images/mzm_full_spritesheet.png") -546px 0; }
+.game-ph .usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -588px 0; }
+.game-ph .usesAllSprites .item-image.shieldKey { background: url("images/mzm_full_spritesheet.png") -630px 0; } /*does not exist as item in Raw Data*/
 
-.game-m1 .usesSprite.usesAllSprites .item-image.barrier,
-.game-mzm .usesSprite.usesAllSprites .item-image.barrier,
-.game-m2ros .usesSprite.usesAllSprites .item-image.barrier,
-.game-msr .usesSprite.usesAllSprites .item-image.barrier,
-.game-sm .usesSprite.usesAllSprites .item-image.barrier,
-.game-mom .usesAllSprites.trimmed .item-image.barrier,
-.game-mf .usesSprite.usesAllSprites .item-image.barrier,
-.game-md .usesAllSprites.trimmed .item-image.barrier { background: url("images/mzm_full_spritesheet.png") 0 -42px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.grip { background: url("images/mzm_full_spritesheet.png") -42px -42px; }
-.game-m1 .usesSprite.usesAllSprites .item-image.high,
-.game-mzm .usesSprite.usesAllSprites .item-image.high,
-.game-m2ros .usesSprite.usesAllSprites .item-image.high,
-.game-msr .usesSprite.usesAllSprites .item-image.high,
-.game-sm .usesSprite.usesAllSprites .item-image.high,
-.game-mf .usesSprite.usesAllSprites .item-image.high { background: url("images/mzm_full_spritesheet.png") -84px -42px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.speed,
-.game-sm .usesSprite.usesAllSprites .item-image.speed,
-.game-mf .usesSprite.usesAllSprites .item-image.speed,
-.game-md .usesAllSprites.trimmed .item-image.speedBooster { background: url("images/mzm_full_spritesheet.png") -126px -42px; }
-.game-m1 .usesSprite.usesAllSprites .item-image.screw,
-.game-mzm .usesSprite.usesAllSprites .item-image.screw,
-.game-m2ros .usesSprite.usesAllSprites .item-image.screw,
-.game-msr .usesSprite.usesAllSprites .item-image.screw,
-.game-sm .usesSprite.usesAllSprites .item-image.screw,
-.game-mom .usesAllSprites.trimmed .item-image.screwAttack,
-.game-mf .usesSprite.usesAllSprites .item-image.screw,
-.game-md .usesAllSprites.trimmed .item-image.screwAttack { background: url("images/mzm_full_spritesheet.png") -168px -42px; }
-.game-m1 .usesSprite.usesAllSprites .item-image.energy,
-.game-mzm .usesSprite.usesAllSprites .item-image.energy,
-.game-m2ros .usesSprite.usesAllSprites .item-image.energy,
-.game-msr .usesSprite.usesAllSprites .item-image.energy,
-.game-sm .usesSprite.usesAllSprites .item-image.energy,
-.game-mom .usesSprite.usesAllSprites .item-image.energy,
-.game-md .usesSprite.usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -210px -42px; }
-.game-msr .usesSprite.usesAllSprites .item-image.burst { background: url("images/mzm_full_spritesheet.png") -252px -42px; }
-.game-mom .usesSprite.usesAllSprites .item-image.accel { background: url("images/mzm_full_spritesheet.png") -294px -42px; }
-.game-mp .usesSprite.usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -336px -42px; }
-.game-mp .usesSprite.usesAllSprites .item-image.wave { background: url("images/mzm_full_spritesheet.png") -378px -42px; }
-.game-mp .usesSprite.usesAllSprites .item-image.ice { background: url("images/mzm_full_spritesheet.png") -420px -42px; }
-.game-mp .usesSprite.usesAllSprites .item-image.plasma { background: url("images/mzm_full_spritesheet.png") -462px -42px; }
-.game-mp .usesSprite.usesAllSprites .item-image.boost,
-.game-mp3c .usesAllSprites.trimmed .item-image.boostBall,
-.game-ph .usesSprite.usesAllSprites .item-image.boost { background: url("images/mzm_full_spritesheet.png") -504px -42px; }
-.game-mp .usesAllSprites.trimmed .item-image.chargeBeamB { background: url("images/mzm_full_spritesheet.png") -546px -42px; }
-.game-ph .usesSprite.usesAllSprites .item-image.hammer { background: url("images/mzm_full_spritesheet.png") -588px -42px; }
-.game-ph .usesSprite.usesAllSprites .item-image.ca1 { background: url("images/mzm_full_spritesheet.png") -630px -42px; }
+.game-m1 .usesAllSprites .item-image.barrier,
+.game-mzm .usesAllSprites .item-image.barrier,
+.game-m2ros .usesAllSprites .item-image.barrier,
+.game-msr .usesAllSprites .item-image.barrier,
+.game-sm .usesAllSprites .item-image.barrier,
+.game-mom .usesAllSprites .item-image.barrier,
+.game-mf .usesAllSprites .item-image.barrier,
+.game-md .usesAllSprites .item-image.barrier { background: url("images/mzm_full_spritesheet.png") 0 -42px; }
+.game-mzm .usesAllSprites .item-image.grip { background: url("images/mzm_full_spritesheet.png") -42px -42px; }
+.game-m1 .usesAllSprites .item-image.high,
+.game-mzm .usesAllSprites .item-image.high,
+.game-m2ros .usesAllSprites .item-image.high,
+.game-msr .usesAllSprites .item-image.high,
+.game-sm .usesAllSprites .item-image.high,
+.game-mf .usesAllSprites .item-image.high { background: url("images/mzm_full_spritesheet.png") -84px -42px; }
+.game-mzm .usesAllSprites .item-image.speed,
+.game-sm .usesAllSprites .item-image.speed,
+.game-mf .usesAllSprites .item-image.speed,
+.game-md .usesAllSprites .item-image.speedBooster { background: url("images/mzm_full_spritesheet.png") -126px -42px; }
+.game-m1 .usesAllSprites .item-image.screw,
+.game-mzm .usesAllSprites .item-image.screw,
+.game-m2ros .usesAllSprites .item-image.screw,
+.game-msr .usesAllSprites .item-image.screw,
+.game-sm .usesAllSprites .item-image.screw,
+.game-mom .usesAllSprites .item-image.screwAttack,
+.game-mf .usesAllSprites .item-image.screw,
+.game-md .usesAllSprites .item-image.screwAttack { background: url("images/mzm_full_spritesheet.png") -168px -42px; }
+.game-m1 .usesAllSprites .item-image.energy,
+.game-mzm .usesAllSprites .item-image.energy,
+.game-m2ros .usesAllSprites .item-image.energy,
+.game-msr .usesAllSprites .item-image.energy,
+.game-sm .usesAllSprites .item-image.energy,
+.game-mom .usesAllSprites .item-image.energy,
+.game-md .usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -210px -42px; }
+.game-msr .usesAllSprites .item-image.burst { background: url("images/mzm_full_spritesheet.png") -252px -42px; }
+.game-mom .usesAllSprites .item-image.accel { background: url("images/mzm_full_spritesheet.png") -294px -42px; }
+.game-mp .usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -336px -42px; }
+.game-mp .usesAllSprites .item-image.wave { background: url("images/mzm_full_spritesheet.png") -378px -42px; }
+.game-mp .usesAllSprites .item-image.ice { background: url("images/mzm_full_spritesheet.png") -420px -42px; }
+.game-mp .usesAllSprites .item-image.plasma { background: url("images/mzm_full_spritesheet.png") -462px -42px; }
+.game-mp .usesAllSprites .item-image.boost,
+.game-mp3c .usesAllSprites .item-image.boostBall,
+.game-ph .usesAllSprites .item-image.boost { background: url("images/mzm_full_spritesheet.png") -504px -42px; }
+.game-mp .usesAllSprites .item-image.chargeBeamB { background: url("images/mzm_full_spritesheet.png") -546px -42px; }
+.game-ph .usesAllSprites .item-image.hammer { background: url("images/mzm_full_spritesheet.png") -588px -42px; }
+.game-ph .usesAllSprites .item-image.ca1 { background: url("images/mzm_full_spritesheet.png") -630px -42px; }
 
-.game-m1 .usesSprite.usesAllSprites .item-image.missile,
-.game-mzm .usesSprite.usesAllSprites .item-image.missile,
-.game-m2ros .usesSprite.usesAllSprites .item-image.missile,
-.game-msr .usesSprite.usesAllSprites .item-image.mtank,
-.game-sm .usesSprite.usesAllSprites .item-image.missile,
-.game-mom .usesSprite.usesAllSprites .item-image.tank,
-.game-md .usesSprite.usesAllSprites .item-image.missile,
-.game-mp .usesAllSprites.trimmed .item-image.missileTank,
-.game-mp2e .usesAllSprites.trimmed .item-image.missileTank,
-.game-mp3c .usesAllSprites.trimmed .item-image.missileTank,
-.game-ph .usesSprite.usesAllSprites .item-image.tank { background: url("images/mzm_full_spritesheet.png") 0 -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.smissile,
-.game-msr .usesSprite.usesAllSprites .item-image.smtank,
-.game-sm .usesSprite.usesAllSprites .item-image.smissile { background: url("images/mzm_full_spritesheet.png") -42px -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.pbomb,
-.game-msr .usesSprite.usesAllSprites .item-image.pbtank,
-.game-sm .usesSprite.usesAllSprites .item-image.pbombs,
-.game-md .usesSprite.usesAllSprites .item-image.pbombs,
-.game-mp .usesAllSprites.trimmed .item-image.powerBombExp,
-.game-mp2e .usesAllSprites.trimmed .item-image.powerBombExpA { background: url("images/mzm_full_spritesheet.png") -84px -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.full { background: url("images/mzm_full_spritesheet.png") -126px -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.plasma { background: url("images/mzm_full_spritesheet.png") -168px -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.space,
-.game-m2ros .usesSprite.usesAllSprites .item-image.space,
-.game-msr .usesSprite.usesAllSprites .item-image.space,
-.game-sm .usesSprite.usesAllSprites .item-image.space,
-.game-mom .usesAllSprites.trimmed .item-image.spaceJump,
-.game-mf .usesSprite.usesAllSprites .item-image.space,
-.game-md .usesAllSprites.trimmed .item-image.spaceJump { background: url("images/mzm_full_spritesheet.png") -210px -84px; }
-.game-msr .usesSprite.usesAllSprites .item-image.drift { background: url("images/mzm_full_spritesheet.png") -252px -84px; }
-.game-mom .usesSprite.usesAllSprites .item-image.erec { background: url("images/mzm_full_spritesheet.png") -294px -84px; }
-.game-mp .usesSprite.usesAllSprites .item-image.combatA { background: url("images/mzm_full_spritesheet.png") -336px -84px; }
-.game-mp .usesSprite.usesAllSprites .item-image.scanA { background: url("images/mzm_full_spritesheet.png") -378px -84px; }
-.game-mp .usesSprite.usesAllSprites .item-image.thermalA { background: url("images/mzm_full_spritesheet.png") -420px -84px; }
-.game-mp .usesSprite.usesAllSprites .item-image.xrayA { background: url("images/mzm_full_spritesheet.png") -462px -84px; }
-.game-mp .usesSprite.usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -504px -84px; }
-.game-mp .usesAllSprites.trimmed .item-image.spinBoost,
-.game-mp3c .usesAllSprites.trimmed .item-image.spinBoost { background: url("images/mzm_full_spritesheet.png") -546px -84px; }
-.game-ph .usesSprite.usesAllSprites .item-image.volt { background: url("images/mzm_full_spritesheet.png") -588px -84px; }
-.game-ph .usesSprite.usesAllSprites .item-image.ca2 { background: url("images/mzm_full_spritesheet.png") -630px -84px; }
+.game-m1 .usesAllSprites .item-image.missile,
+.game-mzm .usesAllSprites .item-image.missile,
+.game-m2ros .usesAllSprites .item-image.missile,
+.game-msr .usesAllSprites .item-image.mtank,
+.game-sm .usesAllSprites .item-image.missile,
+.game-mom .usesAllSprites .item-image.tank,
+.game-md .usesAllSprites .item-image.missile,
+.game-mp .usesAllSprites .item-image.missileTank,
+.game-mp2e .usesAllSprites .item-image.missileTank,
+.game-mp3c .usesAllSprites .item-image.missileTank,
+.game-ph .usesAllSprites .item-image.tank { background: url("images/mzm_full_spritesheet.png") 0 -84px; }
+.game-mzm .usesAllSprites .item-image.smissile,
+.game-msr .usesAllSprites .item-image.smtank,
+.game-sm .usesAllSprites .item-image.smissile { background: url("images/mzm_full_spritesheet.png") -42px -84px; }
+.game-mzm .usesAllSprites .item-image.pbomb,
+.game-msr .usesAllSprites .item-image.pbtank,
+.game-sm .usesAllSprites .item-image.pbombs,
+.game-md .usesAllSprites .item-image.pbombs,
+.game-mp .usesAllSprites .item-image.powerBombExp,
+.game-mp2e .usesAllSprites .item-image.powerBombExpA { background: url("images/mzm_full_spritesheet.png") -84px -84px; }
+.game-mzm .usesAllSprites .item-image.full { background: url("images/mzm_full_spritesheet.png") -126px -84px; }
+.game-mzm .usesAllSprites .item-image.plasma { background: url("images/mzm_full_spritesheet.png") -168px -84px; }
+.game-mzm .usesAllSprites .item-image.space,
+.game-m2ros .usesAllSprites .item-image.space,
+.game-msr .usesAllSprites .item-image.space,
+.game-sm .usesAllSprites .item-image.space,
+.game-mom .usesAllSprites .item-image.spaceJump,
+.game-mf .usesAllSprites .item-image.space,
+.game-md .usesAllSprites .item-image.spaceJump { background: url("images/mzm_full_spritesheet.png") -210px -84px; }
+.game-msr .usesAllSprites .item-image.drift { background: url("images/mzm_full_spritesheet.png") -252px -84px; }
+.game-mom .usesAllSprites .item-image.erec { background: url("images/mzm_full_spritesheet.png") -294px -84px; }
+.game-mp .usesAllSprites .item-image.combatA { background: url("images/mzm_full_spritesheet.png") -336px -84px; }
+.game-mp .usesAllSprites .item-image.scanA { background: url("images/mzm_full_spritesheet.png") -378px -84px; }
+.game-mp .usesAllSprites .item-image.thermalA { background: url("images/mzm_full_spritesheet.png") -420px -84px; }
+.game-mp .usesAllSprites .item-image.xrayA { background: url("images/mzm_full_spritesheet.png") -462px -84px; }
+.game-mp .usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -504px -84px; }
+.game-mp .usesAllSprites .item-image.spinBoost,
+.game-mp3c .usesAllSprites .item-image.spinBoost { background: url("images/mzm_full_spritesheet.png") -546px -84px; }
+.game-ph .usesAllSprites .item-image.volt { background: url("images/mzm_full_spritesheet.png") -588px -84px; }
+.game-ph .usesAllSprites .item-image.ca2 { background: url("images/mzm_full_spritesheet.png") -630px -84px; }
 
-.game-mzm .usesSprite.usesAllSprites .item-image.gravity,
-.game-msr .usesSprite.usesAllSprites .item-image.gravity,
-.game-sm .usesSprite.usesAllSprites .item-image.gravity,
-.game-mom .usesAllSprites.trimmed .item-image.gravitySuitC,
-.game-mf .usesSprite.usesAllSprites .item-image.gravity,
-.game-md .usesAllSprites.trimmed .item-image.gravitySuitA { background: url("images/mzm_full_spritesheet.png") 0 -126px; }
-.game-mf .usesSprite.usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -42px -126px; }
-.game-mf .usesSprite.usesAllSprites .item-image.missile { background: url("images/mzm_full_spritesheet.png") -84px -126px; }
-.game-mf .usesSprite.usesAllSprites .item-image.pbomb { background: url("images/mzm_full_spritesheet.png") -126px -126px; }
-.game-msr .usesSprite.usesAllSprites .item-image.missilesmall,
-.game-msr .usesSprite.usesAllSprites .item-image.missile,
-.game-mom .usesSprite.usesAllSprites .item-image.missile,
-.game-mf .usesSprite.usesAllSprites .item-image.missileData,
-.game-mp3c .usesAllSprites.trimmed .item-image.missileC { background: url("images/mzm_full_spritesheet.png") -168px -126px; }
-.game-mom .usesSprite.usesAllSprites .item-image.super,
-.game-mf .usesSprite.usesAllSprites .item-image.superMissile { background: url("images/mzm_full_spritesheet.png") -210px -126px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.wide,
-.game-msr .usesSprite.usesAllSprites .item-image.widesmall,
-.game-msr .usesSprite.usesAllSprites .item-image.wide,
-.game-sm .usesSprite.usesAllSprites .item-image.wide { background: url("images/mzm_full_spritesheet.png") -252px -126px; }
-.game-md .usesAllSprites.trimmed .item-image.spiderMagnet { background: url("images/mzm_full_spritesheet.png") -294px -126px; }
-.game-mp .usesSprite.usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -336px -126px; }
-.game-mp .usesSprite.usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -378px -126px; }
-.game-mp .usesSprite.usesAllSprites .item-image.thermal { background: url("images/mzm_full_spritesheet.png") -420px -126px; }
-.game-mp .usesSprite.usesAllSprites .item-image.xray { background: url("images/mzm_full_spritesheet.png") -462px -126px; }
-.game-mp .usesAllSprites.trimmed .item-image.bombB,
-.game-mp2e .usesAllSprites.trimmed .item-image.bombC,
-.game-ph .usesSprite.usesAllSprites .item-image.bomb { background: url("images/mzm_full_spritesheet.png") -504px -126px; }
-.game-mp .usesAllSprites.trimmed .item-image.grappleBeamA { background: url("images/mzm_full_spritesheet.png") -546px -126px; }
-.game-ph .usesSprite.usesAllSprites .item-image.jud { background: url("images/mzm_full_spritesheet.png") -588px -126px; }
-.game-ph .usesSprite.usesAllSprites .item-image.al1 { background: url("images/mzm_full_spritesheet.png") -630px -126px; }
+.game-mzm .usesAllSprites .item-image.gravity,
+.game-msr .usesAllSprites .item-image.gravity,
+.game-sm .usesAllSprites .item-image.gravity,
+.game-mom .usesAllSprites .item-image.gravitySuitC,
+.game-mf .usesAllSprites .item-image.gravity,
+.game-md .usesAllSprites .item-image.gravitySuitA { background: url("images/mzm_full_spritesheet.png") 0 -126px; }
+.game-mf .usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -42px -126px; }
+.game-mf .usesAllSprites .item-image.missile { background: url("images/mzm_full_spritesheet.png") -84px -126px; }
+.game-mf .usesAllSprites .item-image.pbomb { background: url("images/mzm_full_spritesheet.png") -126px -126px; }
+.game-msr .usesAllSprites .item-image.missilesmall,
+.game-msr .usesAllSprites .item-image.missile,
+.game-mom .usesAllSprites .item-image.missile,
+.game-mf .usesAllSprites .item-image.missileData,
+.game-mp3c .usesAllSprites .item-image.missileC { background: url("images/mzm_full_spritesheet.png") -168px -126px; }
+.game-mom .usesAllSprites .item-image.super,
+.game-mf .usesAllSprites .item-image.superMissile { background: url("images/mzm_full_spritesheet.png") -210px -126px; }
+.game-m2ros .usesAllSprites .item-image.wide,
+.game-msr .usesAllSprites .item-image.widesmall,
+.game-msr .usesAllSprites .item-image.wide,
+.game-sm .usesAllSprites .item-image.wide { background: url("images/mzm_full_spritesheet.png") -252px -126px; }
+.game-md .usesAllSprites .item-image.spiderMagnet { background: url("images/mzm_full_spritesheet.png") -294px -126px; }
+.game-mp .usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -336px -126px; }
+.game-mp .usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -378px -126px; }
+.game-mp .usesAllSprites .item-image.thermal { background: url("images/mzm_full_spritesheet.png") -420px -126px; }
+.game-mp .usesAllSprites .item-image.xray { background: url("images/mzm_full_spritesheet.png") -462px -126px; }
+.game-mp .usesAllSprites .item-image.bombB,
+.game-mp2e .usesAllSprites .item-image.bombC,
+.game-ph .usesAllSprites .item-image.bomb { background: url("images/mzm_full_spritesheet.png") -504px -126px; }
+.game-mp .usesAllSprites .item-image.grappleBeamA { background: url("images/mzm_full_spritesheet.png") -546px -126px; }
+.game-ph .usesAllSprites .item-image.jud { background: url("images/mzm_full_spritesheet.png") -588px -126px; }
+.game-ph .usesAllSprites .item-image.al1 { background: url("images/mzm_full_spritesheet.png") -630px -126px; }
 
-.game-mf .usesSprite.usesAllSprites .item-image.iceMissile,
-.game-md .usesAllSprites.trimmed .item-image.iceMissileB,
-.game-mp3c .usesAllSprites.trimmed .item-image.iceMissileA { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
-.game-mf .usesSprite.usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
-.game-mf .usesSprite.usesAllSprites .item-image.bombData { background: url("images/mzm_full_spritesheet.png") -84px -168px; }
-.game-mf .usesSprite.usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }
-.game-msr .usesSprite.usesAllSprites .item-image.charge,
-.game-sm .usesSprite.usesAllSprites .item-image.charge,
-.game-mf .usesSprite.usesAllSprites .item-image.chargeBeam,
-.game-md .usesAllSprites.trimmed .item-image.chargeBeam { background: url("images/mzm_full_spritesheet.png") -168px -168px; }
-.game-mf .usesSprite.usesAllSprites .item-image.wideBeam,
-.game-md .usesAllSprites.trimmed .item-image.wideBeam { background: url("images/mzm_full_spritesheet.png") -210px -168px; }
-.game-msr .usesSprite.usesAllSprites .item-image.grapplesmall,
-.game-msr .usesSprite.usesAllSprites .item-image.grapple,
-.game-sm .usesSprite.usesAllSprites .item-image.grapple,
-.game-mom .usesSprite.usesAllSprites .item-image.grapple,
-.game-md .usesSprite.usesAllSprites .item-image.grapple,
-.game-md .usesAllSprites.trimmed .item-image.grappleBeam { background: url("images/mzm_full_spritesheet.png") -252px -168px; }
-.game-md .usesAllSprites.trimmed .item-image.spinBoostA { background: url("images/mzm_full_spritesheet.png") -294px -168px; }
-.game-mp .usesAllSprites.trimmed .item-image.superMissileA { background: url("images/mzm_full_spritesheet.png") -336px -168px; }
-.game-mp .usesAllSprites.trimmed .item-image.shockShot { background: url("images/mzm_full_spritesheet.png") -378px -168px; }
-.game-mp .usesAllSprites.trimmed .item-image.iceMissileB { background: url("images/mzm_full_spritesheet.png") -420px -168px; }
-.game-mp .usesAllSprites.trimmed .item-image.flameShot { background: url("images/mzm_full_spritesheet.png") -462px -168px; }
-.game-mp .usesSprite.usesAllSprites .item-image.pbomb,
-.game-mp2e .usesSprite.usesAllSprites .item-image.pbomb { background: url("images/mzm_full_spritesheet.png") -504px -168px; }
-.game-mp .usesAllSprites.trimmed .item-image.energyTankA,
-.game-mp2e .usesAllSprites.trimmed .item-image.energyTankA,
-.game-mp3c .usesAllSprites.trimmed .item-image.energyTankA,
-.game-ph .usesSprite.usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -546px -168px; }
-.game-ph .usesSprite.usesAllSprites .item-image.magmaul { background: url("images/mzm_full_spritesheet.png") -588px -168px; }
-.game-ph .usesSprite.usesAllSprites .item-image.al2 { background: url("images/mzm_full_spritesheet.png") -630px -168px; }
+.game-mf .usesAllSprites .item-image.iceMissile,
+.game-md .usesAllSprites .item-image.iceMissileB,
+.game-mp3c .usesAllSprites .item-image.iceMissileA { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
+.game-mf .usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
+.game-mf .usesAllSprites .item-image.bombData { background: url("images/mzm_full_spritesheet.png") -84px -168px; }
+.game-mf .usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }
+.game-msr .usesAllSprites .item-image.charge,
+.game-sm .usesAllSprites .item-image.charge,
+.game-mf .usesAllSprites .item-image.chargeBeam,
+.game-md .usesAllSprites .item-image.chargeBeam { background: url("images/mzm_full_spritesheet.png") -168px -168px; }
+.game-mf .usesAllSprites .item-image.wideBeam,
+.game-md .usesAllSprites .item-image.wideBeam { background: url("images/mzm_full_spritesheet.png") -210px -168px; }
+.game-msr .usesAllSprites .item-image.grapplesmall,
+.game-msr .usesAllSprites .item-image.grapple,
+.game-sm .usesAllSprites .item-image.grapple,
+.game-mom .usesAllSprites .item-image.grapple,
+.game-md .usesAllSprites .item-image.grapple,
+.game-md .usesAllSprites .item-image.grappleBeam { background: url("images/mzm_full_spritesheet.png") -252px -168px; }
+.game-md .usesAllSprites .item-image.spinBoostA { background: url("images/mzm_full_spritesheet.png") -294px -168px; }
+.game-mp .usesAllSprites .item-image.superMissileA { background: url("images/mzm_full_spritesheet.png") -336px -168px; }
+.game-mp .usesAllSprites .item-image.shockShot { background: url("images/mzm_full_spritesheet.png") -378px -168px; }
+.game-mp .usesAllSprites .item-image.iceMissileB { background: url("images/mzm_full_spritesheet.png") -420px -168px; }
+.game-mp .usesAllSprites .item-image.flameShot { background: url("images/mzm_full_spritesheet.png") -462px -168px; }
+.game-mp .usesAllSprites .item-image.pbomb,
+.game-mp2e .usesAllSprites .item-image.pbomb { background: url("images/mzm_full_spritesheet.png") -504px -168px; }
+.game-mp .usesAllSprites .item-image.energyTankA,
+.game-mp2e .usesAllSprites .item-image.energyTankA,
+.game-mp3c .usesAllSprites .item-image.energyTankA,
+.game-ph .usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -546px -168px; }
+.game-ph .usesAllSprites .item-image.magmaul { background: url("images/mzm_full_spritesheet.png") -588px -168px; }
+.game-ph .usesAllSprites .item-image.al2 { background: url("images/mzm_full_spritesheet.png") -630px -168px; }
 
-.game-m2ros .usesSprite.usesAllSprites .item-image.plasma,
-.game-msr .usesSprite.usesAllSprites .item-image.plasmasmall,
-.game-msr .usesSprite.usesAllSprites .item-image.plasma,
-.game-sm .usesSprite.usesAllSprites .item-image.plasma,
-.game-mom .usesAllSprites.trimmed .item-image.plasmaBeam,
-.game-mf .usesSprite.usesAllSprites .item-image.plasmaBeam,
-.game-md .usesAllSprites.trimmed .item-image.plasmaBeamA { background: url("images/mzm_full_spritesheet.png") 0 -210px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.wave,
-.game-msr .usesSprite.usesAllSprites .item-image.wavesmall,
-.game-msr .usesSprite.usesAllSprites .item-image.wave,
-.game-sm .usesSprite.usesAllSprites .item-image.wave,
-.game-mom .usesAllSprites.trimmed .item-image.waveBeamC,
-.game-mf .usesSprite.usesAllSprites .item-image.waveBeam,
-.game-md .usesAllSprites.trimmed .item-image.waveBeamE { background: url("images/mzm_full_spritesheet.png") -42px -210px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.ice,
-.game-msr .usesSprite.usesAllSprites .item-image.icesmall,
-.game-msr .usesSprite.usesAllSprites .item-image.ice,
-.game-sm .usesSprite.usesAllSprites .item-image.ice,
-.game-mom .usesAllSprites.trimmed .item-image.iceBeam,
-.game-mf .usesSprite.usesAllSprites .item-image.iceBeam { background: url("images/mzm_full_spritesheet.png") -84px -210px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.spider,
-.game-msr .usesSprite.usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -126px -210px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.spring,
-.game-msr .usesSprite.usesAllSprites .item-image.spring,
-.game-sm .usesSprite.usesAllSprites .item-image.spring,
-.game-mp .usesAllSprites.trimmed .item-image.springBall,
-.game-mp2e .usesAllSprites.trimmed .item-image.springBall,
-.game-mp3c .usesAllSprites.trimmed .item-image.springBall { background: url("images/mzm_full_spritesheet.png") -168px -210px; }
-.game-msr .usesSprite.usesAllSprites .item-image.pulse,
-.game-md .usesSprite.usesAllSprites .item-image.radar { background: url("images/mzm_full_spritesheet.png") -210px -210px; }
-.game-msr .usesSprite.usesAllSprites .item-image.supermsmall,
-.game-msr .usesSprite.usesAllSprites .item-image.superm { background: url("images/mzm_full_spritesheet.png") -252px -210px; }
-.game-md .usesSprite.usesAllSprites .item-image.phantom { background: url("images/mzm_full_spritesheet.png") -294px -210px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.combatA { background: url("images/mzm_full_spritesheet.png") -336px -210px; } /*does not exist as item in Raw Data*/
-.game-mp2e .usesSprite.usesAllSprites .item-image.scanA { background: url("images/mzm_full_spritesheet.png") -378px -210px; } /*does not exist as item in Raw Data*/
-.game-mp2e .usesSprite.usesAllSprites .item-image.darkvisorA { background: url("images/mzm_full_spritesheet.png") -420px -210px; } /*does not exist as item in Raw Data*/
-.game-mp2e .usesSprite.usesAllSprites .item-image.echoA { background: url("images/mzm_full_spritesheet.png") -462px -210px; } /*does not exist as item in Raw Data*/
-.game-pb .usesAllSprites.trimmed .item-image.powerBombA { background: url("images/mzm_full_spritesheet.png") -504px -210px; }
-.game-pb .usesAllSprites.trimmed .item-image.missileC { background: url("images/mzm_full_spritesheet.png") -546px -210px; }
-.game-ph .usesSprite.usesAllSprites .item-image.coil { background: url("images/mzm_full_spritesheet.png") -588px -210px; }
-.game-ph .usesSprite.usesAllSprites .item-image.vdo1 { background: url("images/mzm_full_spritesheet.png") -630px -210px; }
+.game-m2ros .usesAllSprites .item-image.plasma,
+.game-msr .usesAllSprites .item-image.plasmasmall,
+.game-msr .usesAllSprites .item-image.plasma,
+.game-sm .usesAllSprites .item-image.plasma,
+.game-mom .usesAllSprites .item-image.plasmaBeam,
+.game-mf .usesAllSprites .item-image.plasmaBeam,
+.game-md .usesAllSprites .item-image.plasmaBeamA { background: url("images/mzm_full_spritesheet.png") 0 -210px; }
+.game-m2ros .usesAllSprites .item-image.wave,
+.game-msr .usesAllSprites .item-image.wavesmall,
+.game-msr .usesAllSprites .item-image.wave,
+.game-sm .usesAllSprites .item-image.wave,
+.game-mom .usesAllSprites .item-image.waveBeamC,
+.game-mf .usesAllSprites .item-image.waveBeam,
+.game-md .usesAllSprites .item-image.waveBeamE { background: url("images/mzm_full_spritesheet.png") -42px -210px; }
+.game-m2ros .usesAllSprites .item-image.ice,
+.game-msr .usesAllSprites .item-image.icesmall,
+.game-msr .usesAllSprites .item-image.ice,
+.game-sm .usesAllSprites .item-image.ice,
+.game-mom .usesAllSprites .item-image.iceBeam,
+.game-mf .usesAllSprites .item-image.iceBeam { background: url("images/mzm_full_spritesheet.png") -84px -210px; }
+.game-m2ros .usesAllSprites .item-image.spider,
+.game-msr .usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -126px -210px; }
+.game-m2ros .usesAllSprites .item-image.spring,
+.game-msr .usesAllSprites .item-image.spring,
+.game-sm .usesAllSprites .item-image.spring,
+.game-mp .usesAllSprites .item-image.springBall,
+.game-mp2e .usesAllSprites .item-image.springBall,
+.game-mp3c .usesAllSprites .item-image.springBall { background: url("images/mzm_full_spritesheet.png") -168px -210px; }
+.game-msr .usesAllSprites .item-image.pulse,
+.game-md .usesAllSprites .item-image.radar { background: url("images/mzm_full_spritesheet.png") -210px -210px; }
+.game-msr .usesAllSprites .item-image.supermsmall,
+.game-msr .usesAllSprites .item-image.superm { background: url("images/mzm_full_spritesheet.png") -252px -210px; }
+.game-md .usesAllSprites .item-image.phantom { background: url("images/mzm_full_spritesheet.png") -294px -210px; }
+.game-mp2e .usesAllSprites .item-image.combatA { background: url("images/mzm_full_spritesheet.png") -336px -210px; } /*does not exist as item in Raw Data*/
+.game-mp2e .usesAllSprites .item-image.scanA { background: url("images/mzm_full_spritesheet.png") -378px -210px; } /*does not exist as item in Raw Data*/
+.game-mp2e .usesAllSprites .item-image.darkvisorA { background: url("images/mzm_full_spritesheet.png") -420px -210px; } /*does not exist as item in Raw Data*/
+.game-mp2e .usesAllSprites .item-image.echoA { background: url("images/mzm_full_spritesheet.png") -462px -210px; } /*does not exist as item in Raw Data*/
+.game-pb .usesAllSprites .item-image.powerBombA { background: url("images/mzm_full_spritesheet.png") -504px -210px; }
+.game-pb .usesAllSprites .item-image.missileC { background: url("images/mzm_full_spritesheet.png") -546px -210px; }
+.game-ph .usesAllSprites .item-image.coil { background: url("images/mzm_full_spritesheet.png") -588px -210px; }
+.game-ph .usesAllSprites .item-image.vdo1 { background: url("images/mzm_full_spritesheet.png") -630px -210px; }
 
-.game-msr .usesSprite.usesAllSprites .item-image.pbombsmall,
-.game-msr .usesSprite.usesAllSprites .item-image.pbombs,
-.game-mom .usesSprite.usesAllSprites .item-image.pbomb,
-.game-md .usesAllSprites.trimmed .item-image.powerBomb { background: url("images/mzm_full_spritesheet.png") 0 -252px; }
-.game-msr .usesSprite.usesAllSprites .item-image.aexp { background: url("images/mzm_full_spritesheet.png") -42px -252px; }
-.game-sm .usesSprite.usesAllSprites .item-image.xray { background: url("images/mzm_full_spritesheet.png") -84px -252px; }
-.game-sm .usesSprite.usesAllSprites .item-image.reserve { background: url("images/mzm_full_spritesheet.png") -126px -252px; }
-.game-mom .usesSprite.usesAllSprites .item-image.diffusion,
-.game-md .usesAllSprites.trimmed .item-image.diffusionBeamB { background: url("images/mzm_full_spritesheet.png") -168px -252px; }
-.game-mom .usesSprite.usesAllSprites .item-image.speed { background: url("images/mzm_full_spritesheet.png") -210px -252px; }
-.game-mom .usesSprite.usesAllSprites .item-image.seeker,
-.game-mp3c .usesAllSprites.trimmed .item-image.seekerLauncherB { background: url("images/mzm_full_spritesheet.png") -252px -252px; }
-.game-md .usesSprite.usesAllSprites .item-image.flash { background: url("images/mzm_full_spritesheet.png") -294px -252px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -336px -252px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -378px -252px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.darkvisor { background: url("images/mzm_full_spritesheet.png") -420px -252px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.echo { background: url("images/mzm_full_spritesheet.png") -462px -252px; }
-.game-pb .usesAllSprites.trimmed .item-image.forceBall { background: url("images/mzm_full_spritesheet.png") -504px -252px; }
-.game-pb .usesSprite.usesAllSprites .item-image.extra { background: url("images/mzm_full_spritesheet.png") -546px -252px; } /*does not exist as item in Raw Data*/
-.game-ph .usesSprite.usesAllSprites .item-image.imp { background: url("images/mzm_full_spritesheet.png") -588px -252px; }
-.game-ph .usesSprite.usesAllSprites .item-image.vdo2 { background: url("images/mzm_full_spritesheet.png") -630px -252px; }
+.game-msr .usesAllSprites .item-image.pbombsmall,
+.game-msr .usesAllSprites .item-image.pbombs,
+.game-mom .usesAllSprites .item-image.pbomb,
+.game-md .usesAllSprites .item-image.powerBomb { background: url("images/mzm_full_spritesheet.png") 0 -252px; }
+.game-msr .usesAllSprites .item-image.aexp { background: url("images/mzm_full_spritesheet.png") -42px -252px; }
+.game-sm .usesAllSprites .item-image.xray { background: url("images/mzm_full_spritesheet.png") -84px -252px; }
+.game-sm .usesAllSprites .item-image.reserve { background: url("images/mzm_full_spritesheet.png") -126px -252px; }
+.game-mom .usesAllSprites .item-image.diffusion,
+.game-md .usesAllSprites .item-image.diffusionBeamB { background: url("images/mzm_full_spritesheet.png") -168px -252px; }
+.game-mom .usesAllSprites .item-image.speed { background: url("images/mzm_full_spritesheet.png") -210px -252px; }
+.game-mom .usesAllSprites .item-image.seeker,
+.game-mp3c .usesAllSprites .item-image.seekerLauncherB { background: url("images/mzm_full_spritesheet.png") -252px -252px; }
+.game-md .usesAllSprites .item-image.flash { background: url("images/mzm_full_spritesheet.png") -294px -252px; }
+.game-mp2e .usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -336px -252px; }
+.game-mp2e .usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -378px -252px; }
+.game-mp2e .usesAllSprites .item-image.darkvisor { background: url("images/mzm_full_spritesheet.png") -420px -252px; }
+.game-mp2e .usesAllSprites .item-image.echo { background: url("images/mzm_full_spritesheet.png") -462px -252px; }
+.game-pb .usesAllSprites .item-image.forceBall { background: url("images/mzm_full_spritesheet.png") -504px -252px; }
+.game-pb .usesAllSprites .item-image.extra { background: url("images/mzm_full_spritesheet.png") -546px -252px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.imp { background: url("images/mzm_full_spritesheet.png") -588px -252px; }
+.game-ph .usesAllSprites .item-image.vdo2 { background: url("images/mzm_full_spritesheet.png") -630px -252px; }
  
-.game-md .usesSprite.usesAllSprites .item-image.flashTank { background: url("images/mzm_full_spritesheet.png") 0 -294px; }
-.game-md .usesAllSprites.trimmed .item-image.superMissile { background: url("images/mzm_full_spritesheet.png") -42px -294px; }
-.game-md .usesAllSprites.trimmed .item-image.seekerLauncherB { background: url("images/mzm_full_spritesheet.png") -84px -294px; }
-.game-md .usesAllSprites.trimmed .item-image.crossBombs { background: url("images/mzm_full_spritesheet.png") -126px -294px; }
-.game-md .usesSprite.usesAllSprites .item-image.shine { background: url("images/mzm_full_spritesheet.png") -168px -294px; }
-.game-md .usesSprite.usesAllSprites .item-image.part { background: url("images/mzm_full_spritesheet.png") -210px -294px; }
-.game-md .usesSprite.usesAllSprites .item-image.missilePlus { background: url("images/mzm_full_spritesheet.png") -252px -294px; }
-.game-md .usesSprite.usesAllSprites .item-image.armCannon,
-.game-mp2e .usesSprite.usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -294px -294px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.darkSuitA { background: url("images/mzm_full_spritesheet.png") -336px -294px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.gravityBoost { background: url("images/mzm_full_spritesheet.png") -378px -294px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.lightSuit { background: url("images/mzm_full_spritesheet.png") -420px -294px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.superMissileC { background: url("images/mzm_full_spritesheet.png") -462px -294px; }
-.game-pb .usesSprite.usesAllSprites .item-image.special { background: url("images/mzm_full_spritesheet.png") -504px -294px; } /*does not exist as item in Raw Data*/
-.game-pb .usesSprite.usesAllSprites .item-image.templeball { background: url("images/mzm_full_spritesheet.png") -546px -294px; } /*does not exist as item in Raw Data*/
-.game-ph .usesSprite.usesAllSprites .item-image.omega { background: url("images/mzm_full_spritesheet.png") -588px -294px; }
-.game-ph .usesSprite.usesAllSprites .item-image.arc1 { background: url("images/mzm_full_spritesheet.png") -630px -294px; }
+.game-md .usesAllSprites .item-image.flashTank { background: url("images/mzm_full_spritesheet.png") 0 -294px; }
+.game-md .usesAllSprites .item-image.superMissile { background: url("images/mzm_full_spritesheet.png") -42px -294px; }
+.game-md .usesAllSprites .item-image.seekerLauncherB { background: url("images/mzm_full_spritesheet.png") -84px -294px; }
+.game-md .usesAllSprites .item-image.crossBombs { background: url("images/mzm_full_spritesheet.png") -126px -294px; }
+.game-md .usesAllSprites .item-image.shine { background: url("images/mzm_full_spritesheet.png") -168px -294px; }
+.game-md .usesAllSprites .item-image.part { background: url("images/mzm_full_spritesheet.png") -210px -294px; }
+.game-md .usesAllSprites .item-image.missilePlus { background: url("images/mzm_full_spritesheet.png") -252px -294px; }
+.game-md .usesAllSprites .item-image.armCannon,
+.game-mp2e .usesAllSprites .item-image.power { background: url("images/mzm_full_spritesheet.png") -294px -294px; }
+.game-mp2e .usesAllSprites .item-image.darkSuitA { background: url("images/mzm_full_spritesheet.png") -336px -294px; }
+.game-mp2e .usesAllSprites .item-image.gravityBoost { background: url("images/mzm_full_spritesheet.png") -378px -294px; }
+.game-mp2e .usesAllSprites .item-image.lightSuit { background: url("images/mzm_full_spritesheet.png") -420px -294px; }
+.game-mp2e .usesAllSprites .item-image.superMissileC { background: url("images/mzm_full_spritesheet.png") -462px -294px; }
+.game-pb .usesAllSprites .item-image.special { background: url("images/mzm_full_spritesheet.png") -504px -294px; } /*does not exist as item in Raw Data*/
+.game-pb .usesAllSprites .item-image.templeball { background: url("images/mzm_full_spritesheet.png") -546px -294px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.omega { background: url("images/mzm_full_spritesheet.png") -588px -294px; }
+.game-ph .usesAllSprites .item-image.arc1 { background: url("images/mzm_full_spritesheet.png") -630px -294px; }
 
-.game-mp .usesAllSprites.trimmed .item-image.chozoArtifact { background: url("images/mzm_full_spritesheet.png") 0 -336px; }
-.game-mp .usesAllSprites.trimmed .item-image.aochozo { background: url("images/mzm_full_spritesheet.png") -42px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aonature { background: url("images/mzm_full_spritesheet.png") -84px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aoworld { background: url("images/mzm_full_spritesheet.png") -126px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aospirit { background: url("images/mzm_full_spritesheet.png") -168px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aonewborn { background: url("images/mzm_full_spritesheet.png") -210px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aosun { background: url("images/mzm_full_spritesheet.png") -252px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aotruth { background: url("images/mzm_full_spritesheet.png") -294px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aoelder { background: url("images/mzm_full_spritesheet.png") -336px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aolifegiver { background: url("images/mzm_full_spritesheet.png") -378px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aowarrior { background: url("images/mzm_full_spritesheet.png") -420px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aostrength { background: url("images/mzm_full_spritesheet.png") -462px -336px; } /*does not exist as item in Raw Data*/
-.game-mp .usesAllSprites.trimmed .item-image.aowild { background: url("images/mzm_full_spritesheet.png") -504px -336px; } /*does not exist as item in Raw Data*/
-.game-pb .usesSprite.usesAllSprites .item-image.artifact { background: url("images/mzm_full_spritesheet.png") -546px -336px; }
-.game-ph .usesAllSprites.trimmed .item-image.affinityWeapon { background: url("images/mzm_full_spritesheet.png") -588px -336px; } /*does not exist as item in Raw Data*/
-.game-ph .usesSprite.usesAllSprites .item-image.arc2 { background: url("images/mzm_full_spritesheet.png") -630px -336px; }
+.game-mp .usesAllSprites .item-image.chozoArtifact { background: url("images/mzm_full_spritesheet.png") 0 -336px; }
+.game-mp .usesAllSprites .item-image.aochozo { background: url("images/mzm_full_spritesheet.png") -42px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aonature { background: url("images/mzm_full_spritesheet.png") -84px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aoworld { background: url("images/mzm_full_spritesheet.png") -126px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aospirit { background: url("images/mzm_full_spritesheet.png") -168px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aonewborn { background: url("images/mzm_full_spritesheet.png") -210px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aosun { background: url("images/mzm_full_spritesheet.png") -252px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aotruth { background: url("images/mzm_full_spritesheet.png") -294px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aoelder { background: url("images/mzm_full_spritesheet.png") -336px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aolifegiver { background: url("images/mzm_full_spritesheet.png") -378px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aowarrior { background: url("images/mzm_full_spritesheet.png") -420px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aostrength { background: url("images/mzm_full_spritesheet.png") -462px -336px; } /*does not exist as item in Raw Data*/
+.game-mp .usesAllSprites .item-image.aowild { background: url("images/mzm_full_spritesheet.png") -504px -336px; } /*does not exist as item in Raw Data*/
+.game-pb .usesAllSprites .item-image.artifact { background: url("images/mzm_full_spritesheet.png") -546px -336px; }
+.game-ph .usesAllSprites .item-image.affinityWeapon { background: url("images/mzm_full_spritesheet.png") -588px -336px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.arc2 { background: url("images/mzm_full_spritesheet.png") -630px -336px; }
 
-.game-mzm .usesSprite.usesAllSprites .item-image.powerbeam,
-.game-m2ros .usesSprite.usesAllSprites .item-image.powerbeam,
-.game-sm .usesSprite.usesAllSprites .item-image.powerbeam,
-.game-mf .usesSprite.usesAllSprites .item-image.powerbeam { background: url("images/mzm_full_spritesheet.png") 0 -378px; }
-.game-mf .usesSprite.usesAllSprites .item-image.fusion { background: url("images/mzm_full_spritesheet.png") -42px -378px; }
-.game-mom .usesSprite.usesAllSprites .item-image.unknown { background: url("images/mzm_full_spritesheet.png") -84px -378px; }
-.game-md .usesSprite.usesAllSprites .item-image.omega { background: url("images/mzm_full_spritesheet.png") -126px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.chargeBeamA { background: url("images/mzm_full_spritesheet.png") -168px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.energyTransferModule { background: url("images/mzm_full_spritesheet.png") -210px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.violetTranslator { background: url("images/mzm_full_spritesheet.png") -252px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.amberTranslator { background: url("images/mzm_full_spritesheet.png") -294px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.emeraldTranslator { background: url("images/mzm_full_spritesheet.png") -336px -378px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.cobaltTranslator { background: url("images/mzm_full_spritesheet.png") -378px -378px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.darkbeam { background: url("images/mzm_full_spritesheet.png") -420px -378px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.light { background: url("images/mzm_full_spritesheet.png") -462px -378px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.annihilator { background: url("images/mzm_full_spritesheet.png") -504px -378px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.redKey { background: url("images/mzm_full_spritesheet.png") -546px -378px; }
-.game-ph .usesAllSprites.trimmed .item-image.uaExpansion { background: url("images/mzm_full_spritesheet.png") -588px -378px; }
-.game-ph .usesSprite.usesAllSprites .item-image.octolith,
-.game-ph .usesSprite.usesAllSprites .item-image.bigocto { background: url("images/mzm_full_spritesheet.png") -630px -378px; }
+.game-mzm .usesAllSprites .item-image.powerbeam,
+.game-m2ros .usesAllSprites .item-image.powerbeam,
+.game-sm .usesAllSprites .item-image.powerbeam,
+.game-mf .usesAllSprites .item-image.powerbeam { background: url("images/mzm_full_spritesheet.png") 0 -378px; }
+.game-mf .usesAllSprites .item-image.fusion { background: url("images/mzm_full_spritesheet.png") -42px -378px; }
+.game-mom .usesAllSprites .item-image.unknown { background: url("images/mzm_full_spritesheet.png") -84px -378px; }
+.game-md .usesAllSprites .item-image.omega { background: url("images/mzm_full_spritesheet.png") -126px -378px; }
+.game-mp2e .usesAllSprites .item-image.chargeBeamA { background: url("images/mzm_full_spritesheet.png") -168px -378px; }
+.game-mp2e .usesAllSprites .item-image.energyTransferModule { background: url("images/mzm_full_spritesheet.png") -210px -378px; }
+.game-mp2e .usesAllSprites .item-image.violetTranslator { background: url("images/mzm_full_spritesheet.png") -252px -378px; }
+.game-mp2e .usesAllSprites .item-image.amberTranslator { background: url("images/mzm_full_spritesheet.png") -294px -378px; }
+.game-mp2e .usesAllSprites .item-image.emeraldTranslator { background: url("images/mzm_full_spritesheet.png") -336px -378px; }
+.game-mp2e .usesAllSprites .item-image.cobaltTranslator { background: url("images/mzm_full_spritesheet.png") -378px -378px; }
+.game-mp2e .usesAllSprites .item-image.darkbeam { background: url("images/mzm_full_spritesheet.png") -420px -378px; }
+.game-mp2e .usesAllSprites .item-image.light { background: url("images/mzm_full_spritesheet.png") -462px -378px; }
+.game-mp2e .usesAllSprites .item-image.annihilator { background: url("images/mzm_full_spritesheet.png") -504px -378px; }
+.game-mp2e .usesAllSprites .item-image.redKey { background: url("images/mzm_full_spritesheet.png") -546px -378px; }
+.game-ph .usesAllSprites .item-image.uaExpansion { background: url("images/mzm_full_spritesheet.png") -588px -378px; }
+.game-ph .usesAllSprites .item-image.octolith,
+.game-ph .usesAllSprites .item-image.bigocto { background: url("images/mzm_full_spritesheet.png") -630px -378px; }
 
-.game-mp2e .usesAllSprites.trimmed .item-image.spinBoost { background: url("images/mzm_full_spritesheet.png") 0 -420px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.boost { background: url("images/mzm_full_spritesheet.png") -42px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.cannonball { background: url("images/mzm_full_spritesheet.png") -84px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.seekerLauncherA { background: url("images/mzm_full_spritesheet.png") -126px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.grappleBeamA { background: url("images/mzm_full_spritesheet.png") -168px -420px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -210px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.screwAttackA,
-.game-mp3c .usesAllSprites.trimmed .item-image.screwAttackA { background: url("images/mzm_full_spritesheet.png") -252px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.doubleDamageA { background: url("images/mzm_full_spritesheet.png") -294px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.infiniteMissiles { background: url("images/mzm_full_spritesheet.png") -336px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.coins { background: url("images/mzm_full_spritesheet.png") -378px -420px; } /*does not exist as item in Raw Data*/
-.game-mp2e .usesAllSprites.trimmed .item-image.darkburst { background: url("images/mzm_full_spritesheet.png") -420px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.sunburst { background: url("images/mzm_full_spritesheet.png") -462px -420px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.sonicBoom { background: url("images/mzm_full_spritesheet.png") -504px -420px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.skyKey { background: url("images/mzm_full_spritesheet.png") -546px -420px; }
-.game-ph .usesSprite.usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -588px -420px; }
-.game-ph .usesSprite.usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -630px -420px; }
+.game-mp2e .usesAllSprites .item-image.spinBoost { background: url("images/mzm_full_spritesheet.png") 0 -420px; }
+.game-mp2e .usesAllSprites .item-image.boost { background: url("images/mzm_full_spritesheet.png") -42px -420px; }
+.game-mp2e .usesAllSprites .item-image.cannonball { background: url("images/mzm_full_spritesheet.png") -84px -420px; }
+.game-mp2e .usesAllSprites .item-image.seekerLauncherA { background: url("images/mzm_full_spritesheet.png") -126px -420px; }
+.game-mp2e .usesAllSprites .item-image.grappleBeamA { background: url("images/mzm_full_spritesheet.png") -168px -420px; }
+.game-mp2e .usesAllSprites .item-image.spider { background: url("images/mzm_full_spritesheet.png") -210px -420px; }
+.game-mp2e .usesAllSprites .item-image.screwAttackA,
+.game-mp3c .usesAllSprites .item-image.screwAttackA { background: url("images/mzm_full_spritesheet.png") -252px -420px; }
+.game-mp2e .usesAllSprites .item-image.doubleDamageA { background: url("images/mzm_full_spritesheet.png") -294px -420px; }
+.game-mp2e .usesAllSprites .item-image.infiniteMissiles { background: url("images/mzm_full_spritesheet.png") -336px -420px; }
+.game-mp2e .usesAllSprites .item-image.coins { background: url("images/mzm_full_spritesheet.png") -378px -420px; } /*does not exist as item in Raw Data*/
+.game-mp2e .usesAllSprites .item-image.darkburst { background: url("images/mzm_full_spritesheet.png") -420px -420px; }
+.game-mp2e .usesAllSprites .item-image.sunburst { background: url("images/mzm_full_spritesheet.png") -462px -420px; }
+.game-mp2e .usesAllSprites .item-image.sonicBoom { background: url("images/mzm_full_spritesheet.png") -504px -420px; }
+.game-mp2e .usesAllSprites .item-image.skyKey { background: url("images/mzm_full_spritesheet.png") -546px -420px; }
+.game-ph .usesAllSprites .item-image.combat { background: url("images/mzm_full_spritesheet.png") -588px -420px; }
+.game-ph .usesAllSprites .item-image.scan { background: url("images/mzm_full_spritesheet.png") -630px -420px; }
 
-.game-ph .usesAllSprites.trimmed .item-image.doubleDamageA { background: url("images/mzm_full_spritesheet.png") 0 -462px; } /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites.trimmed .item-image.combatVisor { background: url("images/mzm_full_spritesheet.png") -42px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.scanVisorB { background: url("images/mzm_full_spritesheet.png") -84px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.commandVisor { background: url("images/mzm_full_spritesheet.png") -126px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.corruptionXRayVisor { background: url("images/mzm_full_spritesheet.png") -168px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.bombC { background: url("images/mzm_full_spritesheet.png") -210px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.hyperBall { background: url("images/mzm_full_spritesheet.png") -252px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.spiderBallA { background: url("images/mzm_full_spritesheet.png") -294px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.ped { background: url("images/mzm_full_spritesheet.png") -336px -462px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.hazardShield { background: url("images/mzm_full_spritesheet.png") -378px -462px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.darkAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -420px -462px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.lightAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -462px -462px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.beamAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -504px -462px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.infiniteBeamAmmo { background: url("images/mzm_full_spritesheet.png") -546px -462px; }
-.game-ph .usesAllSprites.trimmed .item-image.doubleDamage { background: url("images/mzm_full_spritesheet.png") -588px -462px; } /*does not exist as item in Raw Data*/
-.game-ph .usesAllSprites.trimmed .item-image.deathalt { background: url("images/mzm_full_spritesheet.png") -630px -462px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.doubleDamageA { background: url("images/mzm_full_spritesheet.png") 0 -462px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.combatVisor { background: url("images/mzm_full_spritesheet.png") -42px -462px; }
+.game-mp3c .usesAllSprites .item-image.scanVisorB { background: url("images/mzm_full_spritesheet.png") -84px -462px; }
+.game-mp3c .usesAllSprites .item-image.commandVisor { background: url("images/mzm_full_spritesheet.png") -126px -462px; }
+.game-mp3c .usesAllSprites .item-image.corruptionXRayVisor { background: url("images/mzm_full_spritesheet.png") -168px -462px; }
+.game-mp3c .usesAllSprites .item-image.bombC { background: url("images/mzm_full_spritesheet.png") -210px -462px; }
+.game-mp3c .usesAllSprites .item-image.hyperBall { background: url("images/mzm_full_spritesheet.png") -252px -462px; }
+.game-mp3c .usesAllSprites .item-image.spiderBallA { background: url("images/mzm_full_spritesheet.png") -294px -462px; }
+.game-mp3c .usesAllSprites .item-image.ped { background: url("images/mzm_full_spritesheet.png") -336px -462px; }
+.game-mp3c .usesAllSprites .item-image.hazardShield { background: url("images/mzm_full_spritesheet.png") -378px -462px; }
+.game-mp2e .usesAllSprites .item-image.darkAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -420px -462px; }
+.game-mp2e .usesAllSprites .item-image.lightAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -462px -462px; }
+.game-mp2e .usesAllSprites .item-image.beamAmmoExpansion { background: url("images/mzm_full_spritesheet.png") -504px -462px; }
+.game-mp2e .usesAllSprites .item-image.infiniteBeamAmmo { background: url("images/mzm_full_spritesheet.png") -546px -462px; }
+.game-ph .usesAllSprites .item-image.doubleDamage { background: url("images/mzm_full_spritesheet.png") -588px -462px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.deathalt { background: url("images/mzm_full_spritesheet.png") -630px -462px; } /*does not exist as item in Raw Data*/
 
-.game-mp3c .usesAllSprites.trimmed .item-image.powerBeamA { background: url("images/mzm_full_spritesheet.png") 0 -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.chargeBeam { background: url("images/mzm_full_spritesheet.png") -42px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.flameShot { background: url("images/mzm_full_spritesheet.png") -84px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.novaBeamA { background: url("images/mzm_full_spritesheet.png") -126px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.hypermode { background: url("images/mzm_full_spritesheet.png") -168px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.grappleLasso { background: url("images/mzm_full_spritesheet.png") -210px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.grappleBeam { background: url("images/mzm_full_spritesheet.png") -252px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.grappleVoltage { background: url("images/mzm_full_spritesheet.png") -294px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.hyperGrapple { background: url("images/mzm_full_spritesheet.png") -336px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.shipGrapple { background: url("images/mzm_full_spritesheet.png") -378px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.shipsave { background: url("images/mzm_full_spritesheet.png") -420px -504px; } /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites.trimmed .item-image.shipMissile { background: url("images/mzm_full_spritesheet.png") -462px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.shipMissileExpansion { background: url("images/mzm_full_spritesheet.png") -504px -504px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.hyperMissile { background: url("images/mzm_full_spritesheet.png") -546px -504px; }
-.game-ph .usesAllSprites.trimmed .item-image.invisibilityA { background: url("images/mzm_full_spritesheet.png") -588px -504px; } /*does not exist as item in Raw Data*/
-.game-ph .usesAllSprites.trimmed .item-image.thermalPositioner { background: url("images/mzm_full_spritesheet.png") -630px -504px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.powerBeamA { background: url("images/mzm_full_spritesheet.png") 0 -504px; }
+.game-mp3c .usesAllSprites .item-image.chargeBeam { background: url("images/mzm_full_spritesheet.png") -42px -504px; }
+.game-mp3c .usesAllSprites .item-image.flameShot { background: url("images/mzm_full_spritesheet.png") -84px -504px; }
+.game-mp3c .usesAllSprites .item-image.novaBeamA { background: url("images/mzm_full_spritesheet.png") -126px -504px; }
+.game-mp3c .usesAllSprites .item-image.hypermode { background: url("images/mzm_full_spritesheet.png") -168px -504px; }
+.game-mp3c .usesAllSprites .item-image.grappleLasso { background: url("images/mzm_full_spritesheet.png") -210px -504px; }
+.game-mp3c .usesAllSprites .item-image.grappleBeam { background: url("images/mzm_full_spritesheet.png") -252px -504px; }
+.game-mp3c .usesAllSprites .item-image.grappleVoltage { background: url("images/mzm_full_spritesheet.png") -294px -504px; }
+.game-mp3c .usesAllSprites .item-image.hyperGrapple { background: url("images/mzm_full_spritesheet.png") -336px -504px; }
+.game-mp3c .usesAllSprites .item-image.shipGrapple { background: url("images/mzm_full_spritesheet.png") -378px -504px; }
+.game-mp3c .usesAllSprites .item-image.shipsave { background: url("images/mzm_full_spritesheet.png") -420px -504px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.shipMissile { background: url("images/mzm_full_spritesheet.png") -462px -504px; }
+.game-mp3c .usesAllSprites .item-image.shipMissileExpansion { background: url("images/mzm_full_spritesheet.png") -504px -504px; }
+.game-mp3c .usesAllSprites .item-image.hyperMissile { background: url("images/mzm_full_spritesheet.png") -546px -504px; }
+.game-ph .usesAllSprites .item-image.invisibilityA { background: url("images/mzm_full_spritesheet.png") -588px -504px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.thermalPositioner { background: url("images/mzm_full_spritesheet.png") -630px -504px; } /*does not exist as item in Raw Data*/
 
-.game-mp3c .usesAllSprites.trimmed .item-image.energyCell { background: url("images/mzm_full_spritesheet.png") 0 -546px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.goldCredit { background: url("images/mzm_full_spritesheet.png") -42px -546px; } /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites.trimmed .item-image.friendVoucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
-.game-msr .usesSprite.usesAllSprites .item-image.progressiveBeam,
-.game-mom .usesSprite.usesAllSprites .item-image.progressiveBeam,
-.game-mf .usesSprite.usesAllSprites .item-image.progressiveBeam,
-.game-md .usesSprite.usesAllSprites .item-image.progressiveBeam { background: url("images/mzm_full_spritesheet.png") -126px -546px; }
-.game-md .usesSprite.usesAllSprites .item-image.progressiveChargeBeam { background: url("images/mzm_full_spritesheet.png") -168px -546px; }
-.game-msr .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mom .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mf .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-md .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mp .usesSprite.usesAllSprites .item-image.progressiveSuit,
-.game-mp2e .usesAllSprites.trimmed .item-image.progressiveSuit,
-.game-mp3c .usesAllSprites.trimmed .item-image.progressiveSuit { background: url("images/mzm_full_spritesheet.png") -210px -546px; }
-.game-mom .usesSprite.usesAllSprites .item-image.progressiveMissile,
-.game-mf .usesSprite.usesAllSprites .item-image.progressiveMissile,
-.game-md .usesSprite.usesAllSprites .item-image.progressiveMissile,
-.game-mp2e .usesAllSprites.trimmed .item-image.progressiveMissile,
-.game-mp3c .usesAllSprites.trimmed .item-image.progressiveMissile { background: url("images/mzm_full_spritesheet.png") -252px -546px; }
-.game-md .usesSprite.usesAllSprites .item-image.progressiveBomb { background: url("images/mzm_full_spritesheet.png") -294px -546px; }
-.game-mp2e .usesSprite.usesAllSprites .item-image.progressiveGrapple { background: url("images/mzm_full_spritesheet.png") -336px -546px; }
-.game-md .usesSprite.usesAllSprites .item-image.progressiveSpin { background: url("images/mzm_full_spritesheet.png") -378px -546px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.violetTranslatorA { background: url("images/mzm_full_spritesheet.png") -420px -546px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.amberTranslatorA { background: url("images/mzm_full_spritesheet.png") -462px -546px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.emeraldTranslatorA { background: url("images/mzm_full_spritesheet.png") -504px -546px; }
-.game-mp2e .usesAllSprites.trimmed .item-image.cobaltTranslatorA { background: url("images/mzm_full_spritesheet.png") -546px -546px; }
-.game-m2ros .usesSprite.usesAllSprites .item-image.baby,
-.game-md .usesAllSprites.trimmed .item-image.monsterDna,
-.game-msr .usesSprite.usesAllSprites .item-image.baby { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
-.game-mp3c .usesAllSprites.trimmed .item-image.phazonSuit { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
+.game-mp3c .usesAllSprites .item-image.energyCell { background: url("images/mzm_full_spritesheet.png") 0 -546px; }
+.game-mp3c .usesAllSprites .item-image.goldCredit { background: url("images/mzm_full_spritesheet.png") -42px -546px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.friendVoucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
+.game-msr .usesAllSprites .item-image.progressiveBeam,
+.game-mom .usesAllSprites .item-image.progressiveBeam,
+.game-mf .usesAllSprites .item-image.progressiveBeam,
+.game-md .usesAllSprites .item-image.progressiveBeam { background: url("images/mzm_full_spritesheet.png") -126px -546px; }
+.game-md .usesAllSprites .item-image.progressiveChargeBeam { background: url("images/mzm_full_spritesheet.png") -168px -546px; }
+.game-msr .usesAllSprites .item-image.progressiveSuit,
+.game-mom .usesAllSprites .item-image.progressiveSuit,
+.game-mf .usesAllSprites .item-image.progressiveSuit,
+.game-md .usesAllSprites .item-image.progressiveSuit,
+.game-mp .usesAllSprites .item-image.progressiveSuit,
+.game-mp2e .usesAllSprites .item-image.progressiveSuit,
+.game-mp3c .usesAllSprites .item-image.progressiveSuit { background: url("images/mzm_full_spritesheet.png") -210px -546px; }
+.game-mom .usesAllSprites .item-image.progressiveMissile,
+.game-mf .usesAllSprites .item-image.progressiveMissile,
+.game-md .usesAllSprites .item-image.progressiveMissile,
+.game-mp2e .usesAllSprites .item-image.progressiveMissile,
+.game-mp3c .usesAllSprites .item-image.progressiveMissile { background: url("images/mzm_full_spritesheet.png") -252px -546px; }
+.game-md .usesAllSprites .item-image.progressiveBomb { background: url("images/mzm_full_spritesheet.png") -294px -546px; }
+.game-mp2e .usesAllSprites .item-image.progressiveGrapple { background: url("images/mzm_full_spritesheet.png") -336px -546px; }
+.game-md .usesAllSprites .item-image.progressiveSpin { background: url("images/mzm_full_spritesheet.png") -378px -546px; }
+.game-mp2e .usesAllSprites .item-image.violetTranslatorA { background: url("images/mzm_full_spritesheet.png") -420px -546px; }
+.game-mp2e .usesAllSprites .item-image.amberTranslatorA { background: url("images/mzm_full_spritesheet.png") -462px -546px; }
+.game-mp2e .usesAllSprites .item-image.emeraldTranslatorA { background: url("images/mzm_full_spritesheet.png") -504px -546px; }
+.game-mp2e .usesAllSprites .item-image.cobaltTranslatorA { background: url("images/mzm_full_spritesheet.png") -546px -546px; }
+.game-m2ros .usesAllSprites .item-image.baby,
+.game-md .usesAllSprites .item-image.monsterDna,
+.game-msr .usesAllSprites .item-image.baby { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
+.game-mp3c .usesAllSprites .item-image.phazonSuit { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
 
-.game-mzm .usesAllSprites.trimmed .item-image.emergencyPistol { background: url("images/mzm_full_spritesheet.png") 0 -588px; } /*does not exist as item in Raw Data*/
-.game-mzm .usesAllSprites.trimmed .item-image.zeroSuit { background: url("images/mzm_full_spritesheet.png") -42px -588px; } /*does not exist as item in Raw Data*/
-.game-sm .usesAllSprites.trimmed .item-image.hyperBeam { background: url("images/mzm_full_spritesheet.png") -84px -588px; } /*does not exist as item in Raw Data*/
-.game-ph .usesAllSprites.trimmed .item-image.electroLob { background: url("images/mzm_full_spritesheet.png") -126px -588px; } /*does not exist as item in Raw Data*/
+.game-mzm .usesAllSprites .item-image.emergencyPistol { background: url("images/mzm_full_spritesheet.png") 0 -588px; } /*does not exist as item in Raw Data*/
+.game-mzm .usesAllSprites .item-image.zeroSuit { background: url("images/mzm_full_spritesheet.png") -42px -588px; } /*does not exist as item in Raw Data*/
+.game-sm .usesAllSprites .item-image.hyperBeam { background: url("images/mzm_full_spritesheet.png") -84px -588px; } /*does not exist as item in Raw Data*/
+.game-ph .usesAllSprites .item-image.electroLob { background: url("images/mzm_full_spritesheet.png") -126px -588px; } /*does not exist as item in Raw Data*/
 /*
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -168px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -210px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -252px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -294px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -336px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -378px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -420px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -462px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -504px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -546px -588px; }
-.game-__game__ .usesSprite.usesAllSprites.trimmed .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -588px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -168px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -210px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -252px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -294px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -336px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -378px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -420px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -462px -588px; }
+.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -504px -588px; }
 */
-.usesSprite.usesAllSprites .item-image.unused { background: url("images/mzm_full_spritesheet.png") -630px -588px; }
+.usesAllSprites .item-image.random { background: url("images/mzm_full_spritesheet.png") -546px -588px; }
+.usesAllSprites .item-image.itemOrb { background: url("images/mzm_full_spritesheet.png") -588px -588px; }
+.usesAllSprites .item-image.unused { background: url("images/mzm_full_spritesheet.png") -630px -588px; }
 
-
-
-.game-mzm .usesSprite.usesAllSprites .item-image.ui1 { background: url("images/mzm_spritesheet.png") -84px -42px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.ui2 { background: url("images/mzm_spritesheet.png") -42px -84px; }
-.game-mzm .usesSprite.usesAllSprites .item-image.ui3 { background: url("images/mzm_spritesheet.png") -126px 0; }
-.game-mf .usesSprite.usesAllSprites .item-image.securityL0 { background: url("images/mf_spritesheet.png") -215px 0; }
-.game-mf .usesSprite.usesAllSprites .item-image.securityL1 { background: url("images/mf_spritesheet.png") -215px -43px; }
-.game-mf .usesSprite.usesAllSprites .item-image.securityL2 { background: url("images/mf_spritesheet.png") -215px -86px; }
-.game-mf .usesSprite.usesAllSprites .item-image.securityL3 { background: url("images/mf_spritesheet.png") -215px -129px; }
-.game-mf .usesSprite.usesAllSprites .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
-
+.game-mzm .usesAllSprites .item-image.ui1 { background: url("images/mzm_spritesheet.png") -84px -42px; }
+.game-mzm .usesAllSprites .item-image.ui2 { background: url("images/mzm_spritesheet.png") -42px -84px; }
+.game-mzm .usesAllSprites .item-image.ui3 { background: url("images/mzm_spritesheet.png") -126px 0; }
+.game-mf .usesAllSprites .item-image.securityL0 { background: url("images/mf_spritesheet.png") -215px 0; }
+.game-mf .usesAllSprites .item-image.securityL1 { background: url("images/mf_spritesheet.png") -215px -43px; }
+.game-mf .usesAllSprites .item-image.securityL2 { background: url("images/mf_spritesheet.png") -215px -86px; }
+.game-mf .usesAllSprites .item-image.securityL3 { background: url("images/mf_spritesheet.png") -215px -129px; }
+.game-mf .usesAllSprites .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
 
 /*
 Technical sprites missing:

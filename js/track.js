@@ -599,7 +599,7 @@ let keyslots = {};
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.classList.add("usesSprite");
       }
-      if (tracker.useAllSprites) {
+      if (tracker.useSprites && tracker.useAllSprites) {
         wrapper.classList.add("usesAllSprites");
       }
     } else {
@@ -617,7 +617,7 @@ let keyslots = {};
       if (element.hasOwnProperty("sprite") && tracker.useSprites) {
         wrapper.className += " usesSprite";
       }
-      if (tracker.useAllSprites) {
+      if (tracker.useSprites && tracker.useAllSprites) {
         wrapper.className += " usesAllSprites";
       }
     }

@@ -24,39 +24,12 @@ let interaction = {
 };
 
 (() => {
-  const games = {
-    "rd": "mrd", // Metroid: Rogue Dawn (ROMhack)
-    "m": "m1", // Metroid
-    "z": "mzm", // Metroid: Zero Mission
-    "p": "mp", // Metroid Prime
-    //"b": "pb", // Metroid Prime Pinball
-    "p2d": "p2d", // Prime 2D
-    "h": "ph", // Metroid Prime Hunters
-    "e": "mp2e", // Metroid Prime 2: Echoes
-    "c": "mp3c", // Metroid Prime 3: Corruption
-    //"ff": "mpff", // Metroid Prime: Federation Force
-    "ros": "m2ros", // Metroid II: Return of Samus
-    "mc": "mcon", // Metroid Confrontation
-    "a": "am2r", // Another Metroid 2 Remake
-    "r": "msr", // Metroid: Samus Returns
-    "s": "sm", // Super Metroid
-    "o": "mom", // Metroid: Other M
-    "f": "mf", // Metroid Fusion
-    "n": "mng", // Metroid: A New Galaxy
-    "t": "mttne", // Metroid: The Threat Never Ends
-    "d": "md", // Metroid Dread
-  };
-  
   const nodeTypes = [
     "none",
     "start", //         circle
     "end", //           circle
     "return", //        up arrow
-    "shortcut", //      hexagon, top and bottom sectors are barred
-    "bolt", //          hexagon, one vertex is outlined
     "access", //        hexagon
-    "bracketed", //     hexagon sideways, side sectors are barred
-    "gateway", //       hexagon sideways
     "lock", //          square; consumption - possession - unknown
     "hazard", //        wedge
     "dropdown", //      down arrow
@@ -143,11 +116,7 @@ let interaction = {
         returnCore.inverse = isPostConversion ? !!coreData.inverse || false : !!coreData.inverse || false;
         break;
       case "return":
-      case "shortcut":
-      case "bolt":
       case "access":
-      case "bracketed":
-      case "gateway":
       case "lock":
       case "hazard":
       case "dropdown":
@@ -904,36 +873,8 @@ let interaction = {
         selectedShape = "arrow_up";
         fillColor = "#" + (explorer.advancedColors ? explorer.workingData.areas.find(ar => ar.id === cardData.mapId).color : cardData.bg);
         break;
-      case "shortcut":
-        selectedShape = cardData.block ? "hex_block_up" : "hex_up";
-        if (explorer.allowColors) imageClasses.add("lock-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
-      case "bolt":
-        selectedShape = "bolt";
-        if (explorer.allowColors) imageClasses.add("lock-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
       case "access":
-        selectedShape = cardData.block ? "hex_block_down" : "hex_down";
-        if (explorer.allowColors) imageClasses.add("lock-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
-      case "bracketed":
-        selectedShape = "bracketed";
-        if (explorer.allowColors) imageClasses.add("lock-image");
-        hoverCapture = doNothing;
-        clickCapture = doNothing;
-        fillColor = "#" + cardData.bg;
-        break;
-      case "gateway":
-        selectedShape = cardData.block ? "hex_block_down" : "hex_down";
+        selectedShape = "hex_down";
         if (explorer.allowColors) imageClasses.add("lock-image");
         hoverCapture = doNothing;
         clickCapture = doNothing;
@@ -1617,7 +1558,7 @@ let interaction = {
     //return; /// WHILE OUT OF ORDER
     e.preventDefault();
     let gameInput = document.forms["startupMenu"]["selectedGame"].value;
-    const masterFilter = [...Object.keys(games)];
+    const masterFilter = [...Object.keys(main.games)];
     
     if (gameInput === "") {
       let error = document.getElementsByClassName("gameError")[0];

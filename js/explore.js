@@ -1572,7 +1572,7 @@ let interaction = {
       return;
     }
     
-    let searchString = "?game=" + games[document.forms["startupMenu"]["selectedGame"].value];
+    let searchString = "?game=" + main.games[document.forms["startupMenu"]["selectedGame"].value];
     
     if (document.forms["startupMenu"]["useSprites"].checked) {
       searchString += "&s=true";
@@ -1670,7 +1670,7 @@ let interaction = {
               throw "game is not ready for Explorer Mode";
             }
             let game = null;
-            for (const [key, value] of Object.entries(games)) {
+            for (const [key, value] of Object.entries(main.games)) {
               if (value == incomingGame) {
                 game = key;
                 break;

@@ -74,7 +74,7 @@
     ],
     "items": [
       {
-        "id": "scanVisor",
+        "id": "scanVisorP",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -97,7 +97,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "sprite": "missile",
         "name": "Missile Launcher",
         "bg": "d82800",
@@ -105,7 +105,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "sprite": "missile",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
@@ -115,7 +115,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -132,7 +132,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombP",
         "sprite": "bombs",
         "name": "Bombs",
         "bg": "3800a8",
@@ -156,7 +156,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "sprite": "artifact",
         "name": "Chozo Artifacts",
         "singleItemName": "Artifact",
@@ -252,7 +252,7 @@
         "extraId": 1004
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
         "extraId": 1002

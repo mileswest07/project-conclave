@@ -467,6 +467,7 @@ let keyslots = {};
     e.target.parentElement.querySelectorAll("p")[0].innerText = values.join(" ");
     if (
       e.target.parentElement.nextSibling &&
+      e.target.parentElement.nextSibling.id &&
       e.target.parentElement.nextSibling.id.split('-').length === 4 &&
       e.target.parentElement.nextSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
       parseInt(e.target.parentElement.nextSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) + 1 &&
@@ -486,6 +487,7 @@ let keyslots = {};
     }
     if (
       e.target.parentElement.previousSibling &&
+      e.target.parentElement.previousSibling.id &&
       e.target.parentElement.previousSibling.id.split('-').length === 4 &&
       e.target.parentElement.previousSibling.id.split('-')[2] == e.target.parentElement.id.split('-')[2] && 
       parseInt(e.target.parentElement.previousSibling.id.split('-')[3]) === parseInt(e.target.parentElement.id.split('-')[3]) - 1 &&
@@ -589,6 +591,7 @@ let keyslots = {};
         wrapper.classList.add("blank");
         if (tracker.useSprites) {
           wrapper.classList.add("trimmed");
+          wrapper.classList.add("usesSprite");
         }
       } else {
         wrapper.classList.add(classLabel);
@@ -606,7 +609,7 @@ let keyslots = {};
       if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
         wrapper.className += " blank";
         if (element.hasOwnProperty("sprite") && tracker.useSprites) {
-          wrapper.className += " trimmed";
+          wrapper.className += " trimmed usesSprite";
         }
       } else {
         wrapper.className = classLabel;
@@ -665,7 +668,7 @@ let keyslots = {};
           wrapper.className += " trimmed";
         }
       }
-    
+      
       if (image.classList) {
         image.classList.add(trimmedItemName);
       } else {
@@ -1279,8 +1282,6 @@ let keyslots = {};
     }
   }
   
-  
-  
   function makePanel(coreData, overrideData = {}, isPostConversion = false) {
     if (coreData.id === "-" || coreData.lookupId === -1) {
       return;
@@ -1348,6 +1349,10 @@ let keyslots = {};
       
       for (let lo = 0; lo < tracker.workingData.checklistLayout.length; lo++) {
         let entry = tracker.workingData.checklistLayout[lo];
+        if (entry.hasOwnProperty("disabled") && entry.disabled) {
+          // console.log("skipping new", entry)
+          continue;
+        }
         let panel = {};
         let hierarchyLookup = hierarchy.find(source => {
           let lookupCode = -1;
@@ -1377,6 +1382,10 @@ let keyslots = {};
         if (panel.hasOwnProperty("segments") && panel.segments.length) {
           for (let slo = 0; slo < panel.segments.length; slo++) {
             let segmentBase = panel.segments[slo];
+            if (segmentBase.hasOwnProperty("disabled") && segmentBase.disabled) {
+              // console.log("skipping new segment", segmentBase)
+              continue;
+            }
             let segmentLookup = hierarchy.find(source => {
               let lookupCode = -1;
               switch (source.nodeType) {
@@ -1413,10 +1422,207 @@ let keyslots = {};
     return [];
   }
   
+  function checkIfEveryItemHasProperGraphics(element, isSegment, currentGame, parentData = {}) {
+    let isThisAProblem = false;
+    
+    if (!isSegment) {
+      if (element.hasOwnProperty("segments") && element.segments.length > 0) {
+        return element.segments.map(segment => checkIfEveryItemHasProperGraphics(segment, true, currentGame, element)).reduce((acc, curr) => acc && curr, true);
+      }
+    }
+    
+    if (element.id === "-" || element.lookupId === -1) {
+      return true;
+    }
+    
+    let resultsFound = ['', '', ''];
+    const foundStyleSheets = document.styleSheets;
+    
+    let scrambleMessage = "problem for both modes";
+    let scrambleClear = false;
+    let flagDisplayIfScramble = false;
+    let flagClearIfScramble = false;
+    let hasSpriteAttribute = element.hasOwnProperty("sprite");
+    if ((element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) || (isSegment && parentData.hasOwnProperty("displayIfScramble") && parentData.displayIfScramble)) {
+      scrambleMessage = "problem for Randomizer Mode only";
+      flagDisplayIfScramble = true;
+      scrambleClear = true;
+    }
+    
+    if ((element.hasOwnProperty("clearIfScramble") && element.clearIfScramble) || (isSegment && parentData.hasOwnProperty("clearIfScramble") && parentData.clearIfScramble)) {
+      scrambleMessage = "problem for Standard Mode only";
+      flagClearIfScramble = true;
+      scrambleClear = true;
+    }
+    // console.log(foundStyleSheets);
+    
+    const skipGamesListForAll = ["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"];
+    const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", "mng", "mttne", "mpff"];
+    const skipGamesListForSprites = [...skipGamesListForAll];
+    const skipGamesListForPlaceholders = [...skipGamesListForAll];
+    
+    for (let i = 0; i < foundStyleSheets.length; i++) {
+      let ruleFound = false;
+      const sheet = foundStyleSheets[i];
+      try {
+        const ruleset = sheet.rules || sheet.cssRules;
+        if (ruleset && sheet && sheet.ownerNode && sheet.ownerNode.attributes && sheet.ownerNode.attributes.href) {
+          let validSheet = false;
+          let sheetType = -1;
+          let findStyleString;
+          let trackingSprites = false;
+          let cssFile = sheet.ownerNode.attributes.href.nodeValue;
+          
+          if (cssFile === 'allspritesMapping.css' && !skipGamesListForMZMItems.includes(currentGame)) {
+            validSheet = true;
+            sheetType = 2;
+            if (hasSpriteAttribute) {
+              findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${element.sprite}`;
+              trackingSprites = true;
+            } else {
+              findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${element.id}`;
+              trackingSprites = false;
+            }
+          } else if (cssFile === 'spriteMapping.css' && !skipGamesListForSprites.includes(currentGame)) {
+            validSheet = true;
+            sheetType = 1;
+            if (hasSpriteAttribute) {
+              findStyleString = `.game-${currentGame} .usesSprite .item-image.${element.sprite}`;
+              trackingSprites = true;
+            } else {
+              resultsFound[sheetType] = `unable to find sprite for ${element.id} in file ${cssFile}, ${scrambleMessage}`;
+              continue;
+            }
+          } else if (cssFile === 'iconMapping.css' && !skipGamesListForPlaceholders.includes(currentGame)) {
+            validSheet = true;
+            sheetType = 0;
+            findStyleString = `.item-image.${element.id}`;
+            trackingSprites = false;
+          }
+          
+          if (validSheet) {
+            // console.log(sheetType, findStyleString, trackingSprites);
+            resultsFound[sheetType] = `unable to find style rule for ${trackingSprites ? 'sprite' : 'ID'} ${findStyleString} in file ${cssFile}, ${scrambleMessage}`;
+            
+            for (let j = 0; j < ruleset.length; j++) {
+              // console.log(ruleset[j].selectorText);
+              let splitSelector = ruleset[j].selectorText.split(',');
+              if (splitSelector.length > 1) {
+                let splitBreak = false;
+                for (let k = 0; k < splitSelector.length; k++) {
+                  let isolatedSelector = splitSelector[k].trim();
+                  
+                  if (isolatedSelector === findStyleString) {
+                    // console.info("located", findStyleString);
+                    splitBreak = true;
+                    ruleFound = true;
+                    break;
+                  }
+                }
+                
+                if (splitBreak) {
+                  break;
+                }
+              } else {
+                if (ruleset[j].selectorText === findStyleString) {
+                  // console.info("located", findStyleString);
+                  ruleFound = true;
+                  break;
+                }
+              }
+            }
+            if (ruleFound) {
+              resultsFound[sheetType] = '';
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("cannot access", sheet.href, e);
+      }
+    }
+    
+    for (let i = 0; i < resultsFound.length; i++) {
+      if (resultsFound[i].length > 0) {
+        if (i === 0) {
+          if (!tracker.useSprites && !tracker.useAllSprites && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
+            isThisAProblem = true;
+          }
+          if (isThisAProblem) {
+            /////console.error(resultsFound[i]);
+          } else {
+            // console.log(resultsFound[i]);
+          }
+        } else if (i === 1) {
+          if (tracker.useSprites && !tracker.useAllSprites && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
+            isThisAProblem = true;
+          }
+          if (isThisAProblem) {
+            /////console.warn(resultsFound[i]);
+          } else {
+            // console.log(resultsFound[i]);
+          }
+        } else {
+          if (i === 2) {
+            if (tracker.useSprites && tracker.useAllSprites && (!hasSpriteAttribute || resultsFound[1].length > 0) && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
+              isThisAProblem = true;
+            }
+          }
+          if (isThisAProblem) {
+            /////console.info(resultsFound[i]);
+          } else {
+            // console.log(resultsFound[i]);
+          }
+        }
+      }
+    }
+    
+    return !isThisAProblem;
+  }
+  
   function generate(destinationId) {
     const destination = document.getElementById(destinationId);
-    let itemWidth = 42;
-    if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
+    
+    //console.groupCollapsed(`>>> game ${tracker.currentGame} <<<`);
+    
+    if (tracker.workingData.checklistLayout) {
+      tracker.readyPanels = makePanels();
+    } else {
+      tracker.readyPanels = [...tracker.workingData.items].filter((entry) => {
+        if (entry.hasOwnProperty("segments") && entry.segments.length > 0) {
+          entry.segments = entry.segments.filter((segment) => {
+            if (segment.hasOwnProperty("disabled") && segment.disabled) {
+              // console.log("skipping segment", segment)
+              return false;
+            }
+            return true;
+          });
+        }
+        if (entry.hasOwnProperty("disabled") && entry.disabled) {
+          // console.log("skipping classic", entry)
+          return false;
+        }
+        return true;
+      });
+    }
+    
+    let itemWidth = 50;
+    let hasProperGraphics = true;
+    
+    if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(tracker.currentGame)) {
+      //console.group();
+      hasProperGraphics = tracker.readyPanels.map(element => checkIfEveryItemHasProperGraphics(element, false, tracker.currentGame));
+      hasProperGraphics = hasProperGraphics.reduce((acc, curr) => acc && curr, true);
+      //console.groupEnd();
+    }
+    
+    //console.log(tracker.currentGame, hasProperGraphics ? 'ready' : 'NOT READY')
+    
+    if ((tracker.useSprites || (tracker.useAllSprites && tracker.useSprites)) && hasProperGraphics) {
+      itemWidth = 42;
+    }
+    if (["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(tracker.currentGame)) {
+      itemWidth = 42;
+    } else if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;
     } else if (!tracker.useAllSprites && tracker.useSprites && ["md", "mp", "mp2e"].includes(tracker.currentGame)) {
       itemWidth = 64;
@@ -1425,14 +1631,21 @@ let keyslots = {};
     } else if (!tracker.useAllSprites && tracker.useSprites && ["mom"].includes(tracker.currentGame)) {
       itemWidth = 60;
     }
-    destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * itemWidth) + ((parseInt(tracker.workingData.checklistWidth) - 1) * 6)) + "px";
-    
-    // section for main items
-    if (tracker.workingData.checklistLayout) {
-      tracker.readyPanels = makePanels();
-    } else {
-      tracker.readyPanels = [...tracker.workingData.items];
+    if (!hasProperGraphics) {
+      //console.log("improper setting detected for", tracker.currentGame);
+      if (tracker.useAllSprites) {
+        itemWidth = 50;
+      } else if (!tracker.useSprites) {
+        itemWidth = 50;
+      } else {
+        itemWidth = Math.max(itemWidth, 50);
+      }
     }
+    //console.log(tracker.currentGame, itemWidth, hasProperGraphics);
+    
+    destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * (itemWidth + 6)) + 2) + "px";
+    //console.groupEnd();
+    
     tracker.readyPanels.forEach((element, i) => renderEntry(destination, element, i, element.name || "", false, false, -1));
     
     if (!tracker.isScramble && (tracker.showTotals || tracker.showTimer)) {

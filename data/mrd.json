@@ -87,6 +87,16 @@
         "segments": []
       },
       {
+        "id": "boss",
+        "nodeType": "boss",
+        "name": "Access",
+        "value": 0,
+        "start": 0,
+        "max": 2,
+        "segments": [],
+        "disabled": true
+      },
+      {
         "lookupId": 14,
         "value": 0,
         "start": 0,
@@ -110,7 +120,7 @@
     ],
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -119,7 +129,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -127,7 +137,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -136,7 +146,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -152,7 +162,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBallA",
+        "id": "springBallB",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -160,12 +170,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Prototype Wave Beam",
         "bg": "92278f",
@@ -173,7 +178,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -181,12 +186,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -194,7 +194,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -218,7 +218,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "monsterCapsule",
+        "id": "monsterCellCapsule",
         "sprite": "cell",
         "name": "Metroid Cell Capsule",
         "bg": "008080",
@@ -263,31 +263,37 @@
       {
         "id": 2,
         "name": "Surface Caverns Lift 2",
+        "alternateName": "Desolate Surface East",
         "color": "db2b00"
       },
       {
         "id": 3,
         "name": "Surface Caverns Lift 1",
+        "alternateName": "Desolate Surface West",
         "color": "db2b00"
       },
       {
         "id": 4,
         "name": "Volga",
+        "alternateName": "Bone Yard",
         "color": "009700"
       },
       {
         "id": 5,
         "name": "Vaara",
+        "alternateName": "Chozo Jungle",
         "color": "bf00bf"
       },
       {
         "id": 6,
         "name": "Federation Ship",
+        "alternateName": "Federation Science Ship",
         "color": "bf00bf"
       },
       {
         "id": 7,
         "name": "Metroid Nest",
+        "alternateName": "Metroid Hive",
         "color": "bcbcbc"
       }
     ],
@@ -329,7 +335,7 @@
         "nodeType": "easter"
       },
       {
-        "id": "rechargeRoom",
+        "id": "unused",
         "name": "Restore Energy and Ammo",
         "extraId": 1007,
         "nodeType": "recharge"
@@ -781,6 +787,12 @@
                     "toStartHubId": 21
                   }
                 ],
+                "unused__children": [
+                  {
+                    "toStartHubId": 26,
+                    "hubId": 16
+                  }
+                ],
                 "vineToHubId": 16
               },
               {
@@ -836,6 +848,12 @@
                         "nodeType": "elevator",
                         "transportToMapId": 2,
                         "toStartHubId": 11
+                      }
+                    ],
+                    "unused__children": [
+                      {
+                        "toStartHubId": 16,
+                        "hubId": 26
                       }
                     ],
                     "vineToHubId": 26

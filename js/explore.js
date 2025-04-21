@@ -173,7 +173,7 @@ let interaction = {
           returnCore.toMapId = isPostConversion ? coreData.toMapId : 0;
         }
         if (["end"].includes(returnCore.nodeType)) {
-          returnCore.itemHoverLabel = "END";
+          returnCore.itemHoverLabel = returnCore.name?.toUpperCase() || "END";
         }
         break;
       case "":
@@ -222,9 +222,9 @@ let interaction = {
         let usesSpriteAfterAll = 0;
         let itemClassName = hierarchy[r].displayIcon;
         let queryStringCheck = `.item-image.${itemClassName}`;
-        let measurement = 42;
-        let sourcex = 860;
-        let sourcey = 860;
+        let measurement = 50;
+        let sourcex = 1500;
+        let sourcey = 1100;
         let doRDAccessLockException = false;
         let doM1BossLockException = false;
         
@@ -252,10 +252,12 @@ let interaction = {
           }
           sourcex = 672;
           sourcey = 630;
+          measurement = 42;
         } else if (explorer.useSprites && hierarchy[r].spriteImage) {
           usesSpriteAfterAll = 1;
           itemClassName = hierarchy[r].spriteImage;
           queryStringCheck = `.game-${explorer.currentGame} .usesSprite .item-image.${itemClassName}`;
+          measurement = 42;
           switch (explorer.currentGame) {
             case "mrd":
               sourcex = 336;
@@ -1122,8 +1124,9 @@ let interaction = {
     if (imageName.length && imageName !== "unused") {
       imageObject = document.createElementNS("http://www.w3.org/2000/svg", "svg");
       
-      let measurement = 42;
+      let measurement = 50;
       if (explorer.useSprites && cardData.spriteImage) {
+        measurement = 42;
         switch (explorer.currentGame) {
           case "mp":
           case "mp2e":

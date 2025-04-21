@@ -118,7 +118,7 @@
     ],
     "items": [
       {
-        "id": "repairCapsule",
+        "id": "ffrepairCapsule",
         "name": "Repair Capsule",
         "sprite": "repair",
         "bg": "9464e4",
@@ -126,7 +126,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "shieldGenerator",
+        "id": "ffshieldGenerator",
         "name": "Shield Generator",
         "sprite": "shield",
         "bg": "9464e4",
@@ -134,7 +134,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileB",
+        "id": "ffmissile",
         "name": "Missile",
         "sprite": "missile",
         "bg": "fea800",
@@ -142,7 +142,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileB",
+        "id": "ffsuperMissile",
         "name": "Super Missile",
         "sprite": "super",
         "bg": "fea800",
@@ -174,7 +174,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "proximityBomb",
+        "id": "ffproximityBomb",
         "name": "Proximity Bomb",
         "sprite": "mine",
         "bg": "fea800",
@@ -182,7 +182,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "slowBeam",
+        "id": "ffslowBeam",
         "name": "Slow Beam",
         "sprite": "slow",
         "bg": "b4ff00",
@@ -190,7 +190,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "decoy",
+        "id": "ffdecoy",
         "name": "Decoy",
         "sprite": "decoy",
         "bg": "b4ff00",
@@ -198,7 +198,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanBolt",
+        "id": "ffscanBolt",
         "name": "Scan Bolt",
         "sprite": "scan",
         "bg": "b4ff00",
@@ -208,6 +208,7 @@
       {
         "id": "goldMedal",
         "name": "Gold Medals",
+        "sprite": "medal",
         "bg": "c0c6c0",
         "itemId": 12,
         "nodeType": "artifact"

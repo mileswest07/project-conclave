@@ -265,7 +265,7 @@
     ],
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankD",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "missile",
@@ -275,7 +275,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "doubleMissileTank",
+        "id": "missileDoubleTank",
         "name": "Missile+ Tanks",
         "singleItemName": "Missile+ Tank",
         "sprite": "missilePlus",
@@ -285,12 +285,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 3,
@@ -298,12 +293,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "dreadPart",
-        "locale": {
-          "enUS": {
-            "id": "energyPart"
-          }
-        },
+        "id": "energyPartD",
         "name": "Energy Parts",
         "singleItemName": "Energy Part",
         "sprite": "part",
@@ -312,12 +302,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "dreadEnergy",
-        "locale": {
-          "enUS": {
-            "id": "energyTank"
-          }
-        },
+        "id": "energyTankD",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -333,7 +318,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "invisibility",
+        "id": "phantomCloak",
         "name": "Phantom Cloak",
         "sprite": "phantom",
         "bg": "00ff08",
@@ -341,12 +326,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "wideBeamA",
         "name": "Wide Beam",
         "bg": "ffff80",
         "itemId": 8,
@@ -361,7 +341,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitD",
         "name": "Varia Suit",
         "bg": "ff7e00",
         "itemId": 10,
@@ -369,12 +349,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "diffusionBeamB",
-        "locale": {
-          "enUS": {
-            "id": "diffusionBeamA"
-          }
-        },
+        "id": "diffusionBeamD",
         "name": "Diffusion Beam",
         "bg": "9b9b9b",
         "itemId": 11,
@@ -396,21 +371,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "bg": "ff0094",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamD",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissile",
+        "id": "superMissileLauncher",
         "name": "Super Missiles",
         "bg": "007f0e",
         "itemId": 16,
@@ -418,12 +393,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamA",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamF",
         "name": "Plasma Beam",
         "bg": "00ff08",
         "itemId": 17,
@@ -431,7 +401,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoostA",
+        "id": "spinBoost",
         "name": "Spin Boost",
         "bg": "c0a8d8",
         "itemId": 18,
@@ -439,14 +409,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileB",
+        "id": "iceMissileD",
         "name": "Ice Missiles",
         "bg": "2038ec",
         "itemId": 19,
         "nodeType": "upgrade"
       },
       {
-        "id": "scanPulse",
+        "id": "pulseRadar",
         "name": "Pulse Radar",
         "sprite": "radar",
         "bg": "00c7ff",
@@ -454,7 +424,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Missile",
         "bg": "644080",
         "itemId": 21,
@@ -468,47 +438,42 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuitD",
         "name": "Gravity Suit",
         "bg": "602880",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 24,
         "nodeType": "upgrade"
       },
       {
-        "id": "crossBombs",
+        "id": "crossBomb",
         "name": "Cross Bomb",
         "bg": "886848",
         "itemId": 25,
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamE",
-        "locale": {
-          "enUS": {
-            "id": "waveBeam"
-          }
-        },
+        "id": "waveBeamF",
         "name": "Wave Beam",
         "bg": "92278f",
         "itemId": 26,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombD",
         "name": "Power Bombs",
         "bg": "98b830",
         "itemId": 27,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombExpD",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
         "sprite": "pbombs",
@@ -736,37 +701,37 @@
     ],
     "extras": [
       {
-        "id": "teleportalA",
+        "id": "teleportalRed",
         "name": "Red Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalY",
+        "id": "teleportalOrange",
         "name": "Orange Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalI",
+        "id": "teleportalYellow",
         "name": "Yellow Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalO",
+        "id": "teleportalGreen",
         "name": "Green Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalX",
+        "id": "teleportalCyan",
         "name": "Cyan Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalU",
+        "id": "teleportalBlue",
         "name": "Blue Teleportal",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalE",
+        "id": "teleportalPurple",
         "name": "Purple Teleportal",
         "nodeType": "teleport"
       },
@@ -811,17 +776,17 @@
         "nodeType": "trigger"
       },
       {
-        "id": "chargeBeam",
+        "id": "chargeBeamA",
         "name": "Charge Beam Generator",
         "nodeType": "trigger"
       },
       {
-        "id": "chargeBeam",
+        "id": "chargeBeamA",
         "name": "Charge Beam Generator",
         "nodeType": "trigger"
       },
       {
-        "id": "chargeBeam",
+        "id": "chargeBeamA",
         "name": "Charge Beam Generator",
         "nodeType": "trigger"
       },
@@ -836,22 +801,22 @@
         "nodeType": "trigger"
       },
       {
-        "id": "chozoStatue",
+        "id": "birdStatue",
         "name": "Burenia Hatch",
         "nodeType": "trigger"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombD",
         "name": "Broken Glass Tube",
         "nodeType": "trigger"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombD",
         "name": "Hanubia EMMI Zone",
         "nodeType": "trigger"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombD",
         "name": "Itorash Generator",
         "nodeType": "trigger"
       },
@@ -861,7 +826,7 @@
         "nodeType": "trigger"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamA",
         "name": "Grapple Blocks broken",
         "nodeType": "trigger"
       },
@@ -881,7 +846,7 @@
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
@@ -921,12 +886,12 @@
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
@@ -936,27 +901,27 @@
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
@@ -971,22 +936,22 @@
         "nodeType": "trigger"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamD",
         "name": "Big Grapple Box Pulled and in Place",
         "nodeType": "trigger"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamD",
         "name": "Big Grapple Box Pulled and in Place",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
@@ -996,67 +961,67 @@
         "nodeType": "trigger"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Gate Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
       {
-        "id": "wideBeam",
+        "id": "wideBeamA",
         "name": "Wide Beam Block Moved",
         "nodeType": "trigger"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamD",
         "name": "Big Grapple Box Pulled and in Place",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Blocks Destroyed",
         "nodeType": "trigger"
       },
@@ -1086,37 +1051,37 @@
         "nodeType": "event"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
       {
-        "id": "omegaBlast",
+        "id": "omegaCannonD",
         "name": "Omega Cannon",
         "nodeType": "trigger"
       },
@@ -1156,27 +1121,27 @@
         "nodeType": "map"
       },
       {
-        "id": "missileRefill",
+        "id": "missileRestoreD",
         "name": "Missiles Reload",
         "nodeType": "recharge"
       },
       {
-        "id": "energyRefill",
+        "id": "energyRestoreD",
         "name": "Energy Recharge",
         "nodeType": "recharge"
       },
       {
-        "id": "rechargeRoom",
+        "id": "totalRestore",
         "name": "Full Restore",
         "nodeType": "recharge"
       },
       {
-        "id": "navigationRoom",
+        "id": "networkStation",
         "name": "Network Station",
         "nodeType": "event"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save"
       },

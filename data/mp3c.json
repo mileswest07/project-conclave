@@ -310,6 +310,67 @@
         "segments": [],
         "clearIfScramble": true
       },
+      { 
+        "id": "norion",
+        "name": "Norion Complete",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "id": "bryyo",
+        "name": "Bryyo Complete",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss_Ex",
+        "overText": "Mogenar required",
+        "disabled": true
+      },
+      {
+        "name": "",
+        "value": 0,
+        "start": 0,
+        "max": 3,
+        "segments": [
+          {
+            "lookupId": 26,
+            "value": 0,
+            "start": 0,
+            "max": 3,
+            "over":
+            "F_Boss_Ex",
+            "overText": "Helios required",
+            "disabled": true
+          },
+          {
+            "id": "skytown",
+            "name": "Elysia Complete",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "over": "F_Boss_Ex",
+            "overText": "Helios required",
+            "clearIfScramble": true,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "id": "homeworld",
+        "name": "Pirate Homeworld Complete",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "over": "F_Boss_Ex",
+        "overText": "Omega Ridley required",
+        "disabled": true
+      },
       {
         "name": "",
         "value": 1,
@@ -351,33 +412,28 @@
     ],
     "items": [
       {
-        "id": "combatVisor",
+        "id": "combatVisorP",
         "name": "Combat Visor",
         "bg": "80d0ff",
         "itemId": 1,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeamA",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "bg": "ffb508",
         "itemId": 2,
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisorB",
+        "id": "scanVisorC",
         "name": "Scan Visor",
         "bg": "bca470",
         "itemId": 3,
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 4,
@@ -391,7 +447,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombC",
+        "id": "bombB",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 6,
@@ -405,21 +461,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 8,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "bg": "d82800",
         "itemId": 9,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
         "alreadyHasMainItem": true,
@@ -428,7 +484,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -443,47 +499,42 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "commandVisor",
+        "id": "commandVisorA",
         "name": "Command Visor",
         "bg": "bfbf00",
         "itemId": 13,
         "nodeType": "upgrade"
       },
       {
-        "id": "ped",
+        "id": "pedSuit",
         "name": "P.E.D. Suit",
         "bg": "886848",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "hypermode",
-        "locale": {
-          "enUS": {
-            "id": "hyperBeam"
-          }
-        },
+        "id": "hyperBeamC",
         "name": "Hyper Beam",
         "bg": "1010e0",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleSwing",
         "name": "Grapple Swing",
         "bg": "00e8d8",
         "itemId": 16,
         "nodeType": "upgrade"
       },
       {
-        "id": "phazonSuit",
+        "id": "corruptedHypermode",
         "name": "Corrupted Hypermode",
         "bg": "282018",
         "itemId": 17,
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileA",
+        "id": "iceMissileC",
         "name": "Ice Missile",
         "bg": "2038ec",
         "itemId": 18,
@@ -520,19 +571,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "flameShot",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamC",
         "name": "Plasma Beam",
         "bg": "ff4a4a",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttackE",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 24,
@@ -546,7 +592,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "seekerLauncherD",
         "name": "Seeker Launcher",
         "bg": "644080",
         "itemId": 26,
@@ -568,7 +614,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "corruptionXRayVisor",
+        "id": "xrayVisorC",
         "name": "X-Ray Visor",
         "bg": "c8d8d8",
         "itemId": 29,
@@ -582,7 +628,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "bg": "007f0e",
         "itemId": 31,
@@ -596,12 +642,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "novaBeamA",
-        "locale": {
-          "enUS": {
-            "id": "novaBeam"
-          }
-        },
+        "id": "novaBeam",
         "name": "Nova Beam",
         "bg": "00ff08",
         "itemId": 33,
@@ -633,6 +674,7 @@
     "bosses": [
       {
         "id": "berserkerlorda",
+        "locationNote": "olympus",
         "name": "Berserker Lord",
         "bossId": 101
       },
@@ -663,16 +705,19 @@
       },
       {
         "id": "steamlorda",
+        "locationNote": "barracks",
         "name": "Steamlord",
         "bossId": 106
       },
       {
         "id": "steamlordb",
+        "locationNote": "skybridge",
         "name": "Steamlord",
         "bossId": 107
       },
       {
         "id": "steamlordc",
+        "locationNote": "def drone room",
         "name": "Steamlord",
         "bossId": 108
       },
@@ -691,6 +736,7 @@
       },
       {
         "id": "berserkerlordb",
+        "locationNote": "skytown",
         "name": "Berserker Lord",
         "bossId": 111
       },
@@ -709,16 +755,19 @@
       },
       {
         "id": "mhatchera",
+        "locationNote": "metroid creche",
         "name": "Metroid Hatcher",
         "bossId": 114
       },
       {
         "id": "mhatcherb",
+        "locationNote": "generator b",
         "name": "Metroid Hatcher",
         "bossId": 115
       },
       {
         "id": "mhatcherc",
+        "locationNote": "valhalla",
         "name": "Metroid Hatcher",
         "bossId": 116
       },
@@ -882,7 +931,7 @@
         "bg": "5298bc"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Event 1",
         "extraId": 1104,
         "nodeType": "trigger",
@@ -924,7 +973,7 @@
         "bg": "5298bc"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Event 2",
         "extraId": 1105,
         "nodeType": "trigger",
@@ -1008,35 +1057,35 @@
         "bg": "6d9b6d"
       },
       {
-        "id": "unused",
+        "id": "valhalla",
         "name": "Valhalla Access",
         "extraId": 1131,
         "nodeType": "event",
         "bg": "ce6665"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Ghor Assault",
         "extraId": 1141,
         "nodeType": "trigger",
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "AU 217 Online",
         "extraId": 1142,
         "nodeType": "trigger",
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Site A Access",
         "extraId": 1143,
         "nodeType": "trigger",
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Site B Access",
         "extraId": 1144,
         "nodeType": "trigger",
@@ -1050,70 +1099,70 @@
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Shield Nuked",
         "extraId": 1146,
         "nodeType": "trigger",
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Escape Pod",
         "extraId": 1147,
         "nodeType": "trigger",
         "bg": "ac842f"
       },
       {
-        "id": "elysia",
+        "id": "skytown",
         "name": "Pirate Homeworld Access",
         "extraId": 1151,
         "nodeType": "event",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Fans Off",
         "extraId": 1152,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Shield Core Sighted",
         "extraId": 1153,
         "nodeType": "event",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Rescue Mission",
         "extraId": 1154,
         "nodeType": "event",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Access to Research",
         "extraId": 1155,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Scrap Access",
         "extraId": 1156,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Mines Unlocked",
         "extraId": 1157,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Metroids Loose",
         "extraId": 1158,
         "nodeType": "trigger",
@@ -1127,28 +1176,28 @@
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Mine Loop Open",
         "extraId": 1160,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Shield Core Down",
         "extraId": 1161,
         "nodeType": "trigger",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Transit Tunnels",
         "extraId": 1162,
         "nodeType": "event",
         "bg": "b7746e"
       },
       {
-        "id": "urtraghus",
+        "id": "homeworld",
         "name": "Seed Door",
         "extraId": 1163,
         "nodeType": "trigger",
@@ -1176,13 +1225,13 @@
         "bg": "35a0d8"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "extraId": 1001,
         "nodeType": "save"
       },
       {
-        "id": "unused",
+        "id": "gunshipC",
         "name": "Gunship",
         "extraId": 1002,
         "nodeType": "save"
@@ -1242,19 +1291,19 @@
         "nodeType": "map"
       },
       {
-        "id": "golemHead",
+        "id": "bryyoGolemHeadCargo",
         "name": "Golem Head",
         "extraId": 1021,
         "nodeType": "slot"
       },
       {
-        "id": "generator",
+        "id": "bryyoGeneratorCargo",
         "name": "Large Generator",
         "extraId": 1022,
         "nodeType": "slot"
       },
       {
-        "id": "screwAttackB",
+        "id": "credit",
         "name": "Gold Credit",
         "extraId": 1023,
         "nodeType": "lore"

@@ -159,7 +159,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missile",
+        "id": "missileLauncherA",
         "name": "Missiles",
         "sprite": "missile",
         "bg": "d82800",
@@ -167,7 +167,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "tank",
@@ -177,7 +177,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bombA",
+        "id": "bombB",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",
@@ -185,12 +185,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyPartA",
-        "locale": {
-          "enUS": {
-            "id": "energyPart"
-          }
-        },
+        "id": "energyPartO",
         "name": "Energy Parts",
         "singleItemName": "Energy Part",
         "sprite": "part",
@@ -199,7 +194,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -208,7 +203,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeAccel",
+        "id": "accelCharge",
         "name": "Accel Charges",
         "singleItemName": "Accel Charge",
         "sprite": "accel",
@@ -217,12 +212,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "diffusionBeam",
-        "locale": {
-          "enUS": {
-            "id": "diffusionBeamA"
-          }
-        },
+        "id": "diffusionBeamO",
         "name": "Diffusion Beam",
         "sprite": "diffusion",
         "bg": "7f2800",
@@ -230,26 +220,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "name": "Ice Beam",
         "bg": "2038ec",
         "itemId": 9,
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "name": "Varia Feature",
         "bg": "ff7e00",
         "itemId": 10,
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBoosterO",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -257,12 +242,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "eRecoveryTankA",
-        "locale": {
-          "enUS": {
-            "id": "eRecoveryTank"
-          }
-        },
+        "id": "erecoveryTankB",
         "name": "E-Recovery Tanks",
         "singleItemName": "E-Recovery Tank",
         "sprite": "erec",
@@ -271,19 +251,14 @@
         "nodeType": "expansion"
       },
       {
-        "id": "waveBeamC",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "name": "Wave Beam",
         "bg": "92278f",
         "itemId": 13,
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamA",
         "name": "Grapple Beam",
         "sprite": "grapple",
         "bg": "00e8d8",
@@ -291,7 +266,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissile",
+        "id": "superMissileLauncher",
         "name": "Super Missiles",
         "sprite": "super",
         "bg": "007f0e",
@@ -299,12 +274,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "name": "Plasma Beam",
         "bg": "00ff08",
         "itemId": 16,
@@ -318,14 +288,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 18,
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncher",
+        "id": "seekerLauncherO",
         "name": "Seeker Missiles",
         "sprite": "seeker",
         "bg": "644080",
@@ -333,14 +303,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitC",
+        "id": "gravitySuitA",
         "name": "Gravity Feature",
         "bg": "602880",
         "itemId": 20,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombA",
         "name": "Power Bombs",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -388,6 +358,7 @@
       },
       {
         "id": "rhedogiana",
+        "locationNotes": "Sector 2 Materials Transfer Lift",
         "name": "Rhedogian",
         "bossId": 108,
         "nodeType": "battle"
@@ -399,18 +370,21 @@
       },
       {
         "id": "rhedogianb",
+        "locationNotes": "Sector 3 saving Anthony",
         "name": "Rhedogian",
         "bossId": 110,
         "nodeType": "battle"
       },
       {
         "id": "rhedogianc",
+        "locationNotes": "Sector 3 desert area",
         "name": "Rhedogian",
         "bossId": 111,
         "nodeType": "battle"
       },
       {
         "id": "rhedogiand",
+        "locationNotes": "Sector 1 antechamber",
         "name": "Rhedogian",
         "bossId": 112,
         "nodeType": "battle"
@@ -422,11 +396,13 @@
       },
       {
         "id": "nightmarea",
+        "locationNotes": "first encounter",
         "name": "Nightmare",
         "bossId": 114
       },
       {
         "id": "nightmareb",
+        "locationNotes": "reprise",
         "name": "Nightmare",
         "bossId": 115
       },
@@ -466,8 +442,8 @@
       },
       {
         "id": 3,
-        "name": "Sector 2 - Cryosphere",
-        "color": "009700"
+        "name": "Sector 3 - Pyrosphere - First Visit",
+        "color": "bf00bf"
       },
       {
         "id": 4,
@@ -476,6 +452,11 @@
       },
       {
         "id": 5,
+        "name": "Sector 2 - Cryosphere",
+        "color": "009700"
+      },
+      {
+        "id": 6,
         "name": "Bioweapon Research Center",
         "color": "bcbcbc"
       }
@@ -596,7 +577,7 @@
         "nodeType": "lore"
       },
       {
-        "id": "navigationRoom",
+        "id": "unused",
         "name": "Navigation Room",
         "extraId": 1001,
         "nodeType": "save"

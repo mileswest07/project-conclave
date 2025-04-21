@@ -118,7 +118,7 @@
     ],
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "missile",
@@ -135,7 +135,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",
@@ -151,12 +151,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -164,7 +159,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -173,7 +168,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "name": "High Jump Boots",
         "sprite": "high",
         "bg": "c0a8d8",
@@ -181,7 +176,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -198,12 +193,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "name": "Spazer Beam",
         "sprite": "wide",
         "bg": "ffff80",
@@ -246,7 +236,7 @@
     ],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
         "extraId": 1002

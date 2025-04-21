@@ -230,6 +230,43 @@
         "segments": []
       },
       {
+        "id": "waterPumpControl",
+        "name": "Sector 4 - Water level lowered.",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "id": "coolingUnit",
+        "name": "Sector 3 - Cooling unit operational.",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "id": "animals",
+        "name": "Main Deck - Lock disengaged. Gate opening.",
+        "sprite": "animals",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "id": "auxiliaryPower",
+        "name": "Main Deck - Auxiliary power engaged.",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "disabled": true
+      },
+      {
         "lookupId": 1,
         "value": 0,
         "start": 0,
@@ -263,11 +300,146 @@
         "start": 0,
         "max": 1,
         "segments": []
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "lookupId": -1,
+        "value": 0,
+        "start": 0,
+        "max": 0,
+        "segments": [],
+        "disabled": true
+      },
+      {
+        "name": "Main Deck",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "mainDeck",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 1 SRX",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector1srx",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 2 TRO",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector2tro",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 3 PYR",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector3pyr",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 4 AQA",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector4aqa",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 5 ARC",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector5arc",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
+      },
+      {
+        "name": "Sector 6 NOC",
+        "value": 0,
+        "start": 0,
+        "max": 1,
+        "segments": [
+          {
+            "id": "sector6noc",
+            "name": "Sector Clear",
+            "value": 0,
+            "start": 0,
+            "max": 1,
+            "disabled": true
+          }
+        ],
+        "disabled": true
       }
     ],
     "items": [
       {
-        "id": "securityL0",
+        "id": "graySecurity",
         "sprite": "securityL0",
         "name": "Security Level 0",
         "bg": "c8d8d8",
@@ -275,7 +447,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileA",
+        "id": "missileDataF",
         "name": "Missiles",
         "sprite": "missileData",
         "bg": "d82800",
@@ -283,7 +455,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
@@ -293,7 +465,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -310,12 +482,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamC",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamF",
         "name": "Charge Beam",
         "sprite": "chargeBeam",
         "bg": "808000",
@@ -323,7 +490,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "securityL1",
+        "id": "blueSecurity",
         "sprite": "securityL1",
         "name": "Security Level 1",
         "bg": "28d8f8",
@@ -331,7 +498,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "name": "Bombs",
         "sprite": "bombData",
         "bg": "3800a8",
@@ -339,7 +506,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "name": "Hi-Jump and Jumpball",
         "sprite": "high",
         "bg": "c0a8d8",
@@ -347,7 +514,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -355,7 +522,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "securityL2",
+        "id": "greenSecurity",
         "sprite": "securityL2",
         "name": "Security Level 2",
         "bg": "90f890",
@@ -363,7 +530,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missile",
+        "id": "superMissileDataF",
         "name": "Super Missiles",
         "sprite": "superMissile",
         "bg": "007f0e",
@@ -371,7 +538,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrierC",
+        "id": "barrierSuitB",
         "name": "Varia Suit",
         "sprite": "barrier",
         "bg": "c8f048",
@@ -379,7 +546,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "securityL3",
+        "id": "yellowSecurity",
         "sprite": "securityL3",
         "name": "Security Level 3",
         "bg": "f8f838",
@@ -387,7 +554,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissile",
+        "id": "iceMissileF",
         "name": "Ice Missiles",
         "sprite": "iceMissile",
         "bg": "2038ec",
@@ -395,12 +562,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeamB",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "wideBeamF",
         "name": "Wide Beam",
         "sprite": "wideBeam",
         "bg": "ffff80",
@@ -408,7 +570,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombA",
         "name": "Power Bombs",
         "sprite": "pbombData",
         "bg": "98b830",
@@ -416,7 +578,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "sprite": "pbomb",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -434,12 +596,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamA",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamF",
         "name": "Plasma Beam",
         "sprite": "plasmaBeam",
         "bg": "00ff08",
@@ -447,7 +604,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuit",
+        "id": "gravitySuitA",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
@@ -455,7 +612,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "securityL4",
+        "id": "redSecurity",
         "sprite": "securityL4",
         "name": "Security Level 4",
         "bg": "f82828",
@@ -463,7 +620,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissile",
+        "id": "diffusionMissileDataF",
         "name": "Diffusion Effect",
         "sprite": "diffusion",
         "bg": "644080",
@@ -471,12 +628,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamB",
-        "locale": {
-          "enUS": {
-            "id": "waveBeam"
-          }
-        },
+        "id": "waveBeamF",
         "name": "Wave Beam",
         "sprite": "waveBeam",
         "bg": "92278f",
@@ -484,7 +636,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "name": "Screw Attack",
         "sprite": "screw",
         "bg": "69cd69",
@@ -500,12 +652,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeamC",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamF",
         "name": "Ice Beam",
         "sprite": "iceBeam",
         "bg": "2038ec",
@@ -566,7 +713,7 @@
       },
       {
         "id": "srboxb",
-        "name": "Security Robot B.O.X.",
+        "name": "Security Robot B.O.X. Rematch",
         "bossId": 111
       },
       {
@@ -642,86 +789,86 @@
         "nodeType": "event"
       },
       {
-        "id": "sector1SRX",
+        "id": "sector1srx",
         "name": "First Mission in Sector 1",
         "extraId": 1011,
         "nodeType": "event"
       },
       {
-        "id": "sector2TRO",
+        "id": "sector2tro",
         "name": "First Mission to Sector 2",
         "extraId": 1012,
         "nodeType": "event"
       },
       {
-        "id": "sector2TRO",
+        "id": "sector2tro",
         "name": "First Mission in Sector 2",
         "extraId": 1021,
         "nodeType": "event"
       },
       {
-        "id": "sector4AQA",
+        "id": "sector4aqa",
         "name": "First Mission to Sector 4",
         "extraId": 1021,
         "nodeType": "event"
       },
       {
-        "id": "sector4AQA",
+        "id": "sector4aqa",
         "name": "First Mission in Sector 4",
         "extraId": 1041,
         "nodeType": "event"
       },
       {
-        "id": "pumpControlUnit",
+        "id": "waterPumpControl",
         "name": "Water Pump Control",
         "message": "Water level lowered.",
         "extraId": 1042,
         "nodeType": "trigger"
       },
       {
-        "id": "sector3PYR",
+        "id": "sector3pyr",
         "name": "First Mission to Sector 3",
         "extraId": 1043,
         "nodeType": "event"
       },
       {
-        "id": "sector3PYR",
+        "id": "sector3pyr",
         "name": "First Mission in Sector 3",
         "extraId": 1031,
         "nodeType": "event"
       },
       {
-        "id": "sector6NOC",
+        "id": "sector6noc",
         "name": "First Mission to Sector 6",
         "extraId": 1032,
         "nodeType": "event"
       },
       {
-        "id": "sector6NOC",
+        "id": "sector6noc",
         "name": "First Mission in Sector 6",
         "extraId": 1061,
         "nodeType": "event"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "First Mission to Sector 5",
         "extraId": 1062,
         "nodeType": "event"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "First Mission in Sector 5",
         "extraId": 1051,
         "nodeType": "event"
       },
       {
-        "id": "sector3PYR",
+        "id": "sector3pyr",
         "name": "Emergency in Sector 3",
         "extraId": 1052,
         "nodeType": "event"
       },
       {
-        "id": "mainBoiler",
+        "id": "coolingUnit",
         "name": "Boiler Room",
         "message": "Cooling unit operational.",
         "extraId": 1033,
@@ -740,7 +887,7 @@
         "nodeType": "event"
       },
       {
-        "id": "etedach",
+        "id": "animals",
         "name": "Habitation Deck Shutters",
         "sprite": "animals",
         "message": "Lock disengaged. Gate opening.",
@@ -748,13 +895,13 @@
         "nodeType": "trigger"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "Return to Sector 5",
         "extraId": 1008,
         "nodeType": "event"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "Power Bomb Retrieval",
         "extraId": 1053,
         "nodeType": "event"
@@ -772,32 +919,32 @@
         "nodeType": "event"
       },
       {
-        "id": "reactorCore",
+        "id": "auxiliaryPower",
         "name": "Auxiliary Power Station",
         "message": "Auxiliary power engaged.",
         "extraId": 1071,
         "nodeType": "trigger"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "To Sector 5 Nightmare",
         "extraId": 1022,
         "nodeType": "event"
       },
       {
-        "id": "sector5ARC",
+        "id": "sector5arc",
         "name": "Nightmare Hunting",
         "extraId": 1055,
         "nodeType": "event"
       },
       {
-        "id": "sector6NOC",
+        "id": "sector6noc",
         "name": "To Sector 6 SR-BOX",
         "extraId": 1044,
         "nodeType": "event"
       },
       {
-        "id": "sector6NOC",
+        "id": "sector6noc",
         "name": "Track the SR-BOX",
         "extraId": 1063,
         "nodeType": "event"
@@ -809,7 +956,7 @@
         "nodeType": "event"
       },
       {
-        "id": "sector1SRX",
+        "id": "sector1srx",
         "name": "Through Sector 1 Depths",
         "extraId": 1073,
         "nodeType": "event"
@@ -833,37 +980,37 @@
         "nodeType": "trigger"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Room",
         "extraId": 1002,
         "nodeType": "save"
       },
       {
-        "id": "rechargeRoom",
+        "id": "unused",
         "name": "Recharge Room",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
-        "id": "dataRoom",
+        "id": "unused",
         "name": "Data Room",
         "extraId": 1004,
         "nodeType": "event"
       },
       {
-        "id": "navigationRoom",
+        "id": "unused",
         "name": "Navigation Room",
         "extraId": 1003,
         "nodeType": "lore"
       },
       {
-        "id": "energyRefill",
+        "id": "unused",
         "name": "Energy Refill Station",
         "extraId": 1081,
         "nodeType": "recharge"
       },
       {
-        "id": "missileRefill",
+        "id": "unused",
         "name": "Missile Restock Station",
         "extraId": 1082,
         "nodeType": "recharge"

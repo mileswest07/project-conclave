@@ -33,7 +33,7 @@
     ],
     "items": [
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "sprite": "artifact",
         "name": "Artifacts",
         "singleItemName": "Artifact",
@@ -42,14 +42,14 @@
         "nodeType": "artifact"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBombP",
         "name": "Power Bombs",
         "bg": "98b830",
         "itemId": 2,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "bg": "d82800",
         "itemId": 3,
@@ -125,7 +125,7 @@
     ],
     "extras": [
       {
-        "id": "screwAttackB",
+        "id": "special",
         "name": "Special",
         "extraId": 1001,
         "nodeType": "lore"

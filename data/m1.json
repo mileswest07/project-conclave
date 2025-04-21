@@ -77,6 +77,16 @@
         "segments": []
       },
       {
+        "value": 0,
+        "start": 0,
+        "max": 2,
+        "segments": [],
+        "id": "boss",
+        "nodeType": "boss",
+        "name": "Bosses Defeated",
+        "disabled": true
+      },
+      {
         "lookupId": 101,
         "value": 0,
         "start": 0,
@@ -104,12 +114,13 @@
         "id": "morphBall",
         "sprite": "morph",
         "name": "Morph Ball",
+        "alternateName": "Maru Mari",
         "bg": "d8a480",
         "itemId": 3,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -118,7 +129,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -127,12 +138,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "longBeamA",
-        "locale": {
-          "enUS": {
-            "id": "longBeam"
-          }
-        },
+        "id": "longBeam",
         "sprite": "long",
         "name": "Long Beam",
         "bg": "7f2800",
@@ -140,7 +146,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -148,12 +154,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -162,7 +163,7 @@
         "slotType": "beam"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -170,7 +171,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -178,12 +179,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -192,7 +188,7 @@
         "slotType": "beam"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -212,7 +208,7 @@
         "bossId": 102
       },
       {
-        "id": "mbrain",
+        "id": "motherBrain",
         "name": "Mother Brain",
         "bossId": 103
       }

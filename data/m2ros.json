@@ -223,7 +223,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -231,7 +231,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Pods",
         "singleItemName": "Missile Pod",
@@ -240,7 +240,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -249,7 +249,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "spiderBall",
+        "id": "spiderBallA",
         "sprite": "spider",
         "name": "Spider Ball",
         "bg": "bca470",
@@ -257,12 +257,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -271,7 +266,7 @@
         "slotType": "beam"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -279,7 +274,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -287,7 +282,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -295,12 +290,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -317,12 +307,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "sprite": "wide",
         "name": "Spazer Beam",
         "bg": "ffff80",
@@ -331,12 +316,7 @@
         "slotType": "beam"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -345,7 +325,7 @@
         "slotType": "beam"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -433,19 +413,19 @@
     ],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
         "extraId": 1003
       },
       {
-        "id": "missileRefill",
+        "id": "missileBattery",
         "name": "Missiles Reload",
         "nodeType": "recharge",
         "extraId": 1001
       },
       {
-        "id": "energyRefill",
+        "id": "bigEnergyBall",
         "name": "Energy Recharge",
         "nodeType": "recharge",
         "extraId": 1002

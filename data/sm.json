@@ -217,7 +217,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
@@ -226,7 +226,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -234,7 +234,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -243,12 +243,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -265,7 +260,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -273,12 +268,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "sprite": "wide",
         "name": "Spazer",
         "bg": "ffff80",
@@ -286,7 +276,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7e00",
@@ -294,7 +284,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -302,12 +292,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -315,7 +300,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "sprite": "pbombs",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -324,12 +309,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "reserveTankB",
-        "locale": {
-          "enUS": {
-            "id": "reserveTank"
-          }
-        },
+        "id": "reserveTankC",
         "sprite": "reserve",
         "name": "Reserve Tanks",
         "singleItemName": "Reserve Tank",
@@ -338,7 +318,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamA",
         "sprite": "grapple",
         "name": "Grappling Beam",
         "bg": "00e8d8",
@@ -346,7 +326,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "xRayScope",
+        "id": "xrayScope",
         "sprite": "xray",
         "name": "X-Ray Scope",
         "bg": "c8d8d8",
@@ -354,12 +334,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -367,7 +342,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuit",
+        "id": "gravitySuitA",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",
@@ -383,7 +358,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -391,12 +366,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -404,7 +374,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -467,49 +437,50 @@
     "areas": [
       {
         "id": 1,
-        "name": "Crateria",
+        "name": "Crateria - West",
         "hasGameStart": true,
         "color": "2038ec"
       },
       {
         "id": 2,
-        "name": "Brinstar",
+        "name": "Crateria - East",
+        "hasGameStart": true,
         "color": "2038ec"
       },
       {
         "id": 3,
-        "name": "Brinstar",
+        "name": "Brinstar - Blue",
         "color": "2038ec"
       },
       {
         "id": 4,
-        "name": "Brinstar",
+        "name": "Brinstar - Green",
         "color": "2038ec"
       },
       {
         "id": 5,
-        "name": "Brinstar",
+        "name": "Brinstar - Red",
         "color": "2038ec"
       },
       {
         "id": 6,
-        "name": "Norfair",
-        "color": "db2b00"
+        "name": "Brinstar - Kraid's Lair",
+        "color": "2038ec"
       },
       {
         "id": 7,
-        "name": "Norfair",
-        "color": "db2b00"
+        "name": "Wrecked Ship - Main Deck",
+        "color": "009700"
       },
       {
         "id": 8,
-        "name": "Wrecked Ship",
+        "name": "Wrecked Ship - Cargo Hold",
         "color": "009700"
       },
       {
         "id": 9,
-        "name": "Maridia",
-        "color": "bf00bf"
+        "name": "Wrecked Ship - Hint Chamber",
+        "color": "009700"
       },
       {
         "id": 10,
@@ -518,26 +489,36 @@
       },
       {
         "id": 11,
+        "name": "Norfair - Upper",
+        "color": "db2b00"
+      },
+      {
+        "id": 12,
+        "name": "Norfair - Lower",
+        "color": "db2b00"
+      },
+      {
+        "id": 13,
         "name": "Tourian",
         "color": "bcbcbc"
       }
     ],
     "extras": [
       {
-        "id": "etedach",
+        "id": "animals",
         "name": "Save The Animals",
         "sprite": "animals",
         "extraId": 1021,
         "nodeType": "event"
       },
       {
-        "id": "etedach",
+        "id": "animals",
         "name": "Shine Spark Critter",
         "extraId": 1022,
         "nodeType": "event"
       },
       {
-        "id": "etedach",
+        "id": "animals",
         "name": "Wall Jump Critters",
         "extraId": 1023,
         "nodeType": "event"
@@ -555,13 +536,13 @@
         "nodeType": "trigger"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "name": "Glass Tunnel Broken",
         "extraId": 1024,
         "nodeType": "trigger"
       },
       {
-        "id": "reserveTankB",
+        "id": "reserveTankC",
         "name": "Reserve Tank Hint",
         "extraId": 1025,
         "nodeType": "lore"
@@ -597,19 +578,19 @@
         "nodeType": "map"
       },
       {
-        "id": "missileRefill",
+        "id": "unused",
         "name": "Missiles Reload",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
-        "id": "energyRefill",
+        "id": "unused",
         "name": "Energy Recharge",
         "extraId": 1002,
         "nodeType": "recharge"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "extraId": 1003,
         "nodeType": "save"

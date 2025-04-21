@@ -306,7 +306,7 @@
     ],
     "items": [
       {
-        "id": "powerBeam",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -347,7 +347,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "sprite": "tank",
         "singleItemName": "Missile Expansion",
@@ -357,7 +357,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "sprite": "energy",
         "singleItemName": "Energy Tank",
@@ -366,7 +366,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "missileD",
+        "id": "missileLauncherH",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "886848",
@@ -503,7 +503,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "omegaCannon",
+        "id": "omegaCannonH",
         "name": "Omega Cannon",
         "sprite": "omega",
         "bg": "c8d8d8",

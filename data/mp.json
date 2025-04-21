@@ -8,7 +8,7 @@
         "clearIfScramble": true,
         "segments": [
           {
-            "id": "primeSuit",
+            "id": "primeSuitToggle",
             "name": "Prime Suit Active",
             "value": 0,
             "start": 1,
@@ -16,7 +16,7 @@
             "type": "toggle"
           },
           {
-            "id": "fusionSuit",
+            "id": "fusionSuitToggle",
             "name": "Fusion Suit Active",
             "value": 0,
             "start": 0,
@@ -296,7 +296,7 @@
     ],
     "items": [
       {
-        "id": "combatVisor",
+        "id": "combatVisorP",
         "name": "Combat Visor",
         "sprite": "combat",
         "bg": "80d0ff",
@@ -304,7 +304,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeam",
+        "id": "powerBeamP",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -312,7 +312,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisor",
+        "id": "scanVisorP",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -320,7 +320,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "d82800",
@@ -328,7 +328,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "alreadyHasMainItem": true,
         "singleItemName": "Missile Expansion",
@@ -337,7 +337,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -353,14 +353,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamB",
+        "id": "chargeBeamP",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 9,
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombP",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 10,
@@ -374,7 +374,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "name": "Varia Suit",
         "sprite": "barrier",
         "bg": "ff7e00",
@@ -390,14 +390,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeamP",
         "name": "Wave Beam",
         "sprite": "wave",
         "bg": "6f3198",
@@ -405,7 +405,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileA",
+        "id": "superMissileComboP",
         "name": "Super Missile",
         "bg": "ffb508",
         "itemId": 16,
@@ -420,7 +420,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "sprite": "spider",
         "bg": "007f0e",
@@ -428,14 +428,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "shockShot",
+        "id": "wavebuster",
         "name": "Wavebuster",
         "bg": "6f3198",
         "itemId": 19,
         "nodeType": "expansion"
       },
       {
-        "id": "iceBeamA",
+        "id": "iceBeamP",
         "name": "Ice Beam",
         "sprite": "ice",
         "bg": "2038ec",
@@ -443,7 +443,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitB",
+        "id": "gravitySuitA",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
@@ -451,7 +451,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBombP",
         "name": "Power Bomb",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -459,7 +459,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombExp",
+        "id": "powerBombExpP",
         "name": "Power Bomb Expansions",
         "alreadyHasMainItem": true,
         "singleItemName": "Power Bomb Expansion",
@@ -468,21 +468,21 @@
         "nodeType": "expansion"
       },
       {
-        "id": "grappleBeamA",
+        "id": "grappleBeamP",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 24,
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileB",
+        "id": "iceSpreader",
         "name": "Ice Spreader",
         "bg": "2038ec",
         "itemId": 25,
         "nodeType": "expansion"
       },
       {
-        "id": "xRayVisor",
+        "id": "xrayVisorP",
         "name": "X-Ray Visor",
         "sprite": "xray",
         "bg": "c8d8d8",
@@ -490,7 +490,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamB",
+        "id": "plasmaBeamP",
         "name": "Plasma Beam",
         "sprite": "plasma",
         "bg": "ff4a4a",
@@ -498,7 +498,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "flameShot",
+        "id": "flamethrower",
         "name": "Flamethrower",
         "bg": "ff4a4a",
         "itemId": 28,
@@ -513,7 +513,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "name": "Chozo Artifacts",
         "singleItemName": "Artifact",
         "bg": "008080",
@@ -663,7 +663,7 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Item Loss",
+        "name": "Items Lost",
         "nodeType": "event",
         "extraId": 1001
       },
@@ -729,13 +729,13 @@
         "extraId": 1009
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
         "extraId": 1010
       },
       {
-        "id": "missileRefill",
+        "id": "unused",
         "name": "Missiles Reload",
         "nodeType": "recharge",
         "extraId": 1011

@@ -510,7 +510,7 @@
     ],
     "items": [
       {
-        "id": "combatVisorA",
+        "id": "combatVisorE",
         "name": "Combat Visor",
         "sprite": "combat",
         "bg": "80d0ff",
@@ -518,7 +518,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeamA",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -526,7 +526,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisorA",
+        "id": "scanVisorE",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -534,7 +534,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeamE",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 5,
@@ -549,7 +549,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "d82800",
@@ -557,7 +557,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
         "alreadyHasMainItem": true,
@@ -573,19 +573,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "violetTranslatorA",
+        "id": "violetTranslatorL",
         "name": "Violet Translator",
-        "locale": {
-          "enUS": {
-            "id": "violetTranslator"
-          }
-        },
         "bg": "a36fb1",
         "itemId": 10,
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -593,7 +588,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bombC",
+        "id": "bombE",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 12,
@@ -607,26 +602,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "amberTranslatorA",
+        "id": "amberTranslatorL",
         "name": "Amber Translator",
-        "locale": {
-          "enUS": {
-            "id": "amberTranslator"
-          }
-        },
         "bg": "ad6a40",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "darkBeam",
+        "id": "darkBeamA",
         "name": "Dark Beam",
         "sprite": "darkbeam",
         "bg": "9c84ff",
@@ -643,7 +633,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "lightBeam",
+        "id": "lightBeamA",
         "name": "Light Beam",
         "sprite": "light",
         "bg": "5ac7f7",
@@ -669,12 +659,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "darkAgonKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Dark Agon Keys",
         "singleItemName": "Dark Agon Key",
         "sprite": "redKey",
@@ -683,27 +668,22 @@
         "nodeType": "artifact"
       },
       {
-        "id": "darkSuitA",
+        "id": "darkSuit",
         "name": "Dark Suit",
         "bg": "6c0204",
         "itemId": 22,
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileC",
+        "id": "superMissileComboE",
         "name": "Super Missile",
         "bg": "ffb508",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "emeraldTranslatorA",
+        "id": "emeraldTranslatorL",
         "name": "Emerald Translator",
-        "locale": {
-          "enUS": {
-            "id": "emeraldTranslator"
-          }
-        },
         "bg": "4b9467",
         "itemId": 24,
         "nodeType": "upgrade"
@@ -724,7 +704,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherA",
+        "id": "seekerLauncherE",
         "name": "Seeker Launcher",
         "bg": "644080",
         "itemId": 27,
@@ -745,19 +725,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeamA",
+        "id": "grappleBeamP",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 30,
         "nodeType": "upgrade"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "darkTorvusKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Dark Torvus Keys",
         "singleItemName": "Dark Torvus Key",
         "sprite": "redKey",
@@ -766,7 +741,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "darkVisor",
+        "id": "darkVisorA",
         "name": "Dark Visor",
         "sprite": "darkvisor",
         "bg": "ff7b7b",
@@ -774,19 +749,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "cobaltTranslatorA",
+        "id": "cobaltTranslatorL",
         "name": "Cobalt Translator",
-        "locale": {
-          "enUS": {
-            "id": "cobaltTranslator"
-          }
-        },
         "bg": "5c819e",
         "itemId": 33,
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "sprite": "spider",
         "bg": "007f0e",
@@ -794,7 +764,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombB",
+        "id": "powerBombE",
         "name": "Power Bombs",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -802,7 +772,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombExpA",
+        "id": "powerBombExpE",
         "name": "Power Bomb Expansions",
         "singleItemName": "Power Bomb Expansion",
         "alreadyHasMainItem": true,
@@ -826,19 +796,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttackE",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 39,
         "nodeType": "upgrade"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "ingHiveKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Ing Hive Keys",
         "singleItemName": "Ing Hive Key",
         "sprite": "redKey",
@@ -847,7 +812,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "annihilatorBeam",
+        "id": "annihilatorBeamA",
         "name": "Annihilator Beam",
         "sprite": "annihilator",
         "bg": "9b9b9b",
@@ -869,33 +834,28 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "doubleDamageA",
+        "id": "massiveDamageA",
         "name": "Double Damage",
         "bg": "ffb508",
         "itemId": 44,
         "nodeType": "upgrade"
       },
       {
-        "id": "infiniteBeamAmmo",
+        "id": "unlimitedBeamAmmo",
         "name": "Unlimited Beam Ammo",
         "bg": "808000",
         "itemId": 45,
         "nodeType": "upgrade"
       },
       {
-        "id": "infiniteMissiles",
+        "id": "unlimitedMissiles",
         "name": "Unlimited Missiles",
         "bg": "d82800",
         "itemId": 46,
         "nodeType": "upgrade"
       },
       {
-        "id": "darkAetherKey",
-        "locale": {
-          "enUS": {
-            "id": "skyTempleKey"
-          }
-        },
+        "id": "skyTempleKeyA",
         "name": "Sky Temple Keys",
         "singleItemName": "Sky Temple Key",
         "sprite": "skyKey",
@@ -1124,7 +1084,7 @@
     ],
     "extras": [
       {
-        "id": "bombC",
+        "id": "unused",
         "name": "Command Chamber Gate",
         "nodeType": "trigger",
         "extraId": 1001,
@@ -1136,18 +1096,18 @@
       },
       {
         "id": "unused",
-        "name": "Item Loss",
+        "name": "Items Lost",
         "nodeType": "event",
         "extraId": 1002
       },
       {
-        "id": "lightBeam",
+        "id": "unused",
         "name": "Dynamo Chamber Lock",
         "nodeType": "trigger",
         "extraId": 1003
       },
       {
-        "id": "lightBeam",
+        "id": "unused",
         "name": "Trooper Security Station Lock",
         "nodeType": "trigger",
         "extraId": 1004
@@ -1159,43 +1119,43 @@
         "extraId": 1005
       },
       {
-        "id": "lightBeam",
+        "id": "unused",
         "name": "Light Block Moved",
         "nodeType": "trigger",
         "extraId": 1006
       },
       {
-        "id": "lightBeam",
+        "id": "unused",
         "name": "Sacred Bridge Gate",
         "nodeType": "trigger",
         "extraId": 1007
       },
       {
-        "id": "seekerLauncherA",
+        "id": "unused",
         "name": "Ing Windchamber Cobalt Seeker Lock",
         "nodeType": "trigger",
         "extraId": 1008
       },
       {
-        "id": "seekerLauncherA",
+        "id": "unused",
         "name": "Ing Windchamber Amber Seeker Lock",
         "nodeType": "trigger",
         "extraId": 1009
       },
       {
-        "id": "lightBeam",
+        "id": "unused",
         "name": "Light Block Moved",
         "nodeType": "trigger",
         "extraId": 1010
       },
       {
-        "id": "bombC",
+        "id": "unused",
         "name": "Agon Interdimensional Bomb Slot",
         "nodeType": "trigger",
         "extraId": 1011
       },
       {
-        "id": "bombC",
+        "id": "unused",
         "name": "Transport Center Bomb Slot",
         "nodeType": "trigger",
         "extraId": 1012
@@ -1219,19 +1179,19 @@
         "extraId": 1015
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 1",
         "nodeType": "trigger",
         "extraId": 1016
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 2",
         "nodeType": "trigger",
         "extraId": 1017
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 3",
         "nodeType": "trigger",
         "extraId": 1018
@@ -1255,49 +1215,49 @@
         "extraId": 1021
       },
       {
-        "id": "cannonball",
+        "id": "unused",
         "name": "Great Bridge Cannon",
         "nodeType": "trigger",
         "extraId": 1022
       },
       {
-        "id": "bombC",
+        "id": "unused",
         "name": "Forgotten Bridge Turned",
         "nodeType": "trigger",
         "extraId": 1023
       },
       {
-        "id": "boostBall",
+        "id": "unused",
         "name": "Forgotten Balcony Opened",
         "nodeType": "trigger",
         "extraId": 1024
       },
       {
-        "id": "boostBall",
+        "id": "unused",
         "name": "Torvus Interdimensional Spinner",
         "nodeType": "trigger",
         "extraId": 1025
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 1",
         "nodeType": "trigger",
         "extraId": 1026
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 2",
         "nodeType": "trigger",
         "extraId": 1027
       },
       {
-        "id": "scanVisorA",
+        "id": "unused",
         "name": "Scan Node 3",
         "nodeType": "trigger",
         "extraId": 1028
       },
       {
-        "id": "bombC",
+        "id": "unused",
         "name": "Training Chamber Bomb Slot",
         "nodeType": "trigger",
         "extraId": 1029
@@ -1321,13 +1281,13 @@
         "extraId": 1032
       },
       {
-        "id": "boostBall",
+        "id": "unused",
         "name": "Sanctuary Temple Transport Access",
         "nodeType": "trigger",
         "extraId": 1033
       },
       {
-        "id": "seekerLauncherA",
+        "id": "unused",
         "name": "Reactor Access Gate",
         "nodeType": "trigger",
         "extraId": 1034
@@ -1339,7 +1299,7 @@
         "extraId": 1035
       },
       {
-        "id": "powerBombB",
+        "id": "unused",
         "name": "Glass Tunnel Broken",
         "nodeType": "trigger",
         "extraId": 1036
@@ -1357,7 +1317,7 @@
         "extraId": 1038
       },
       {
-        "id": "grappleBeamA",
+        "id": "unused",
         "name": "Watch Station Access Grapple Points",
         "nodeType": "trigger",
         "extraId": 1039
@@ -1375,13 +1335,13 @@
         "extraId": 1041
       },
       {
-        "id": "boostBall",
+        "id": "unused",
         "name": "Main Gyro Chamber Spinner",
         "nodeType": "trigger",
         "extraId": 1042
       },
       {
-        "id": "cannonball",
+        "id": "unused",
         "name": "Temple Access Cannon",
         "nodeType": "trigger",
         "extraId": 1043
@@ -1435,55 +1395,55 @@
         "extraId": 1051
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
         "extraId": 1052
       },
       {
-        "id": "missileRefill",
+        "id": "unused",
         "name": "Missiles Reload",
         "nodeType": "recharge",
         "extraId": 1053
       },
       {
-        "id": "ammoStation",
+        "id": "beamAmmoRestore",
         "name": "Ammo Refilled",
         "nodeType": "recharge",
         "extraId": 1054
       },
       {
-        "id": "lightOfAether",
+        "id": "energyTaken",
         "name": "Dark Agon Energy Retrieved",
         "nodeType": "event",
         "extraId": 1101
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Agon Energy Restored",
         "nodeType": "event",
         "extraId": 1102
       },
       {
-        "id": "lightOfAether",
+        "id": "energyTaken",
         "name": "Dark Torvus Energy Retrieved",
         "nodeType": "event",
         "extraId": 1103
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Torvus Energy Restored",
         "nodeType": "event",
         "extraId": 1104
       },
       {
-        "id": "lightOfAether",
+        "id": "energyTaken",
         "name": "Ing Hive Energy Retrieved",
         "nodeType": "event",
         "extraId": 1105
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Sanctuary Energy Restored",
         "nodeType": "event",
         "extraId": 1106

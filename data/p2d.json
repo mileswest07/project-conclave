@@ -217,45 +217,75 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Hard Mode",
-        "nodeType": "lore",
-        "extraId": 1001
-      },
-      {
-        "id": "unused",
-        "name": "Red Leaves",
-        "nodeType": "trigger",
-        "extraId": 1005
-      },
-      {
-        "id": "unused",
-        "name": "100% Scans",
-        "nodeType": "trigger",
-        "extraId": 1006
-      },
-      {
-        "id": "unused",
-        "name": "100% Items",
-        "nodeType": "trigger",
-        "extraId": 1007
-      },
-      {
-        "id": "unused",
         "name": "Gully",
-        "nodeType": "area",
-        "extraId": 1003
+        "extraId": 1001,
+        "nodeType": "area"
       },
       {
         "id": "unused",
         "name": "Skull Grid",
-        "nodeType": "lore",
-        "extraId": 1004
+        "extraId": 1002,
+        "nodeType": "easter"
       },
       {
         "id": "unused",
         "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1002
+        "extraId": 1011,
+        "nodeType": "save"
+      },
+      {
+        "id": "gunshipP",
+        "name": "Gunship",
+        "extraId": 1012,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Red Leaves",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 1",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 2",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 3",
+        "extraId": 1105,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 4",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "100% Items",
+        "extraId": 1107,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "100% Scans",
+        "extraId": 1108,
+        "nodeType": "trigger"
       }
     ],
     "mapTree": [
@@ -328,7 +358,7 @@
                 "children": [
                   {
                     "nodeType": "easter",
-                    "id": 1001
+                    "id": 1101
                   },
                   {
                     "nodeType": "upgrade",
@@ -376,7 +406,7 @@
             "children": [
               {
                 "nodeType": "easter",
-                "id": 1005
+                "id": 1102
               },
               {
                 "nodeType": "lock",
@@ -418,7 +448,7 @@
               },
               {
                 "nodeType": "lock",
-                "id": 1006,
+                "id": 1108,
                 "reqdItemCount": 1,
                 "children": [
                   {
@@ -461,7 +491,7 @@
                           },
                           {
                             "nodeType": "area",
-                            "id": 1003
+                            "id": 1001
                           },
                           {
                             "nodeType": "battle",
@@ -539,7 +569,7 @@
             "children": [
               {
                 "nodeType": "lock",
-                "id": 1001,
+                "id": 1101,
                 "reqdItemCount": 0,
                 "children": [
                   {
@@ -652,11 +682,11 @@
         "children": [
           {
             "nodeType": "easter",
-            "id": 1004
+            "id": 1002
           },
           {
             "nodeType": "lock",
-            "id": 1005,
+            "id": 1102,
             "reqdItemCount": 1,
             "children": [
               {
@@ -669,7 +699,7 @@
           },
           {
             "nodeType": "lock",
-            "id": 1007,
+            "id": 1107,
             "reqdItemCount": 1,
             "children": [
               {

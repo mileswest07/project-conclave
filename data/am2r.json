@@ -278,7 +278,7 @@
         ]
       },
       {
-        "lookupId": 1031,
+        "lookupId": 1210,
         "value": 0,
         "start": 0,
         "max": 1,
@@ -489,7 +489,7 @@
       },
       {
         "id": "larval",
-        "name": "Larval Metroid",
+        "name": "Larva Metroid",
         "bossId": 111
       },
       {
@@ -508,19 +508,29 @@
         "bossId": 102
       },
       {
-        "id": "tester",
-        "name": "The Tester",
+        "id": "arachnus",
+        "name": "Torizo",
         "bossId": 103
       },
       {
-        "id": "chozotank",
-        "name": "Chozo Tank",
+        "id": "tester",
+        "name": "The Tester",
         "bossId": 104
+      },
+      {
+        "id": "chozotank",
+        "name": "Chozo Tank Prototype",
+        "bossId": 105
       },
       {
         "id": "serris",
         "name": "Serris",
-        "bossId": 105
+        "bossId": 106
+      },
+      {
+        "id": "genesis",
+        "name": "Genesis",
+        "bossId": 107
       }
     ],
     "areas": [
@@ -574,184 +584,217 @@
         "nodeType": "save"
       },
       {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "subLocationNotes": "Golden Temple",
-        "extraId": 1021,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "subLocationNotes": "Hydro Station",
-        "extraId": 1022,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "subLocationNotes": "Industrial Complex",
-        "extraId": 1023,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Mining Facility",
-        "extraId": 1024,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Research Site",
-        "extraId": 1025,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Power Plant",
-        "extraId": 1026,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Genetics Laboratory",
-        "extraId": 1027,
-        "nodeType": "area"
-      },
-      {
-        "id": "towerPower",
-        "name": "Tower Power",
+        "id": "gunshipS",
+        "name": "Gunship",
         "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "New Game+",
+        "extraId": 1011,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Extreme Labs",
+        "extraId": 1012,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Science Scan",
+        "extraId": 1101,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1102,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Turbine Pump",
+        "extraId": 1201,
         "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Power Core Destroyed",
-        "extraId": 1003,
-        "nodeType": "event"
+        "name": "Autoad (Skippy) Minigame",
+        "extraId": 1202,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Thoth Cockpit",
-        "extraId": 1016,
-        "nodeType": "event"
+        "name": "Research Site Cleared",
+        "extraId": 1203,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1008,
-        "nodeType": "lore"
+        "name": "Mining Facility Cleared",
+        "extraId": 1204,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1009,
-        "nodeType": "lore"
+        "name": "Tower Power",
+        "extraId": 1205,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1010,
-        "nodeType": "lore"
+        "name": "Tower Cleared",
+        "extraId": 1206,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1011,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1012,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1013,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1014,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1015,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1005,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1006,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1007,
-        "nodeType": "lore"
+        "name": "Power Plant Destroyed",
+        "extraId": 1207,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "\"Movement Detected\"",
         "message": "Movement detected",
-        "extraId": 1005,
-        "nodeType": "lore"
+        "extraId": 1208,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Thoth Cockpit",
+        "extraId": 1209,
+        "nodeType": "easter"
       },
       {
         "id": "powerOrb",
         "name": "Power Orbs Distributed",
         "sprite": "battery",
         "bg": "887878",
-        "extraId": 1031,
+        "extraId": 1210,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle A",
+        "extraId": 1211,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle B",
+        "extraId": 1212,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle C",
+        "extraId": 1213,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle D",
+        "extraId": 1214,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle E",
+        "extraId": 1215,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Distribution Center Treasure Collected",
+        "extraId": 1216,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Depths Hideout Trap",
+        "extraId": 1217,
         "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Depths Hideout Cleared",
+        "extraId": 1218,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "Nest Cleared",
-        "extraId": 1028,
-        "nodeType": "event"
+        "extraId": 1219,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Larval Metroids",
-        "extraId": 1029,
-        "nodeType": "event"
+        "name": "Egg Sighted",
+        "extraId": 1220,
+        "nodeType": "easter"
       },
       {
-        "id": "powerOrb",
-        "name": "Power Orb 1",
-        "extraId": 1032,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Chozo Message",
+        "extraId": 1221,
+        "nodeType": "easter"
       },
       {
-        "id": "powerOrb",
-        "name": "Power Orb 2",
-        "extraId": 1033,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Chozo Ruins",
+        "extraId": 1301,
+        "nodeType": "area"
       },
       {
-        "id": "powerOrb",
-        "name": "Power Orb 3",
-        "extraId": 1034,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1302,
+        "nodeType": "area"
       },
       {
-        "id": "powerOrb",
-        "name": "Power Orb 4",
-        "extraId": 1035,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Mining Facility",
+        "extraId": 1303,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Research Site",
+        "extraId": 1304,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Power Plant",
+        "extraId": 1305,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Power Plant Lower Level",
+        "extraId": 1306,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Distribution Pipe Hub",
+        "extraId": 1307,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Gravity Sector",
+        "extraId": 1308,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "The Nest",
+        "extraId": 1309,
+        "nodeType": "area"
       }
     ],
     "mapTree": [

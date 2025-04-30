@@ -364,7 +364,7 @@
       },
       {
         "id": "larval",
-        "name": "Larval Metroid",
+        "name": "Larva Metroid",
         "bossId": 102
       },
       {
@@ -413,31 +413,49 @@
     ],
     "extras": [
       {
-        "id": "unused",
-        "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1003
-      },
-      {
         "id": "missileBattery",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1001
+        "name": "Missiles Refill",
+        "extraId": 1001,
+        "nodeType": "recharge"
       },
       {
         "id": "bigEnergyBall",
-        "name": "Energy Recharge",
-        "nodeType": "recharge",
-        "extraId": 1002
+        "name": "Energy Restore",
+        "extraId": 1002,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1003,
+        "nodeType": "save"
+      },
+      {
+        "id": "gunshipS",
+        "name": "Gunship",
+        "extraId": 1004,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Ruins Area",
+        "extraId": 1011,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1012,
+        "nodeType": "area"
       },
       {
         "id": "monsterDna",
         "name": "Metroids defeated",
-        "nodeType": "artifact",
         "displayIcon": "monsterDna",
         "sprite": "monsters",
         "bg": "747474",
-        "extraId": 1004
+        "extraId": 1021,
+        "nodeType": "battle"
       }
     ],
     "mapTree": [
@@ -446,6 +464,10 @@
         "nodeType": "start",
         "mapId": 1,
         "children": [
+          {
+            "nodeType": "event",
+            "id": 1004
+          },
           {
             "nodeType": "save",
             "id": 1003
@@ -456,7 +478,7 @@
           },
           {
             "nodeType": "lock",
-            "id": 1004,
+            "id": 1021,
             "reqdItemCount": 1,
             "children": [
               {
@@ -466,7 +488,7 @@
               },
               {
                 "nodeType": "lock",
-                "id": 1004,
+                "id": 1021,
                 "reqdItemCount": 4,
                 "children": [
                   {
@@ -476,7 +498,7 @@
                   },
                   {
                     "nodeType": "lock",
-                    "id": 1004,
+                    "id": 1021,
                     "reqdItemCount": 8,
                     "children": [
                       {
@@ -486,7 +508,7 @@
                       },
                       {
                         "nodeType": "lock",
-                        "id": 1004,
+                        "id": 1021,
                         "reqdItemCount": 4,
                         "children": [
                           {
@@ -495,7 +517,7 @@
                           },
                           {
                             "nodeType": "lock",
-                            "id": 1004,
+                            "id": 1021,
                             "reqdItemCount": 2,
                             "children": [
                               {
@@ -505,12 +527,12 @@
                               },
                               {
                                 "nodeType": "lock",
-                                "id": 1004,
+                                "id": 1021,
                                 "reqdItemCount": 4,
                                 "children": [
                                   {
                                     "nodeType": "lock",
-                                    "id": 1004,
+                                    "id": 1021,
                                     "reqdItemCount": 7,
                                     "children": [
                                       {
@@ -519,7 +541,7 @@
                                       },
                                       {
                                         "nodeType": "lock",
-                                        "id": 1004,
+                                        "id": 1021,
                                         "reqdItemCount": 1,
                                         "children": [
                                           {
@@ -528,7 +550,7 @@
                                           },
                                           {
                                             "nodeType": "lock",
-                                            "id": 1004,
+                                            "id": 1021,
                                             "reqdItemCount": 1,
                                             "children": [
                                               {
@@ -550,7 +572,7 @@
                       },
                       {
                         "nodeType": "lock",
-                        "id": 1004,
+                        "id": 1021,
                         "reqdItemCount": 1,
                         "children": [
                           {

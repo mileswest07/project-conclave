@@ -718,7 +718,7 @@
       },
       {
         "id": "ridley",
-        "name": "Ridley-X",
+        "name": "Ridley",
         "bossId": 112
       },
       {
@@ -777,243 +777,449 @@
     ],
     "extras": [
       {
-        "id": "mainDeck",
-        "name": "First Mission",
-        "extraId": 1005,
-        "nodeType": "event"
-      },
-      {
-        "id": "quarantineBay",
-        "name": "Quarantine Bay",
-        "extraId": 1006,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector1srx",
-        "name": "First Mission in Sector 1",
-        "extraId": 1011,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector2tro",
-        "name": "First Mission to Sector 2",
-        "extraId": 1012,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector2tro",
-        "name": "First Mission in Sector 2",
-        "extraId": 1021,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector4aqa",
-        "name": "First Mission to Sector 4",
-        "extraId": 1021,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector4aqa",
-        "name": "First Mission in Sector 4",
-        "extraId": 1041,
-        "nodeType": "event"
-      },
-      {
-        "id": "waterPumpControl",
-        "name": "Water Pump Control",
-        "message": "Water level lowered.",
-        "extraId": 1042,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "sector3pyr",
-        "name": "First Mission to Sector 3",
-        "extraId": 1043,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector3pyr",
-        "name": "First Mission in Sector 3",
-        "extraId": 1031,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector6noc",
-        "name": "First Mission to Sector 6",
-        "extraId": 1032,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector6noc",
-        "name": "First Mission in Sector 6",
-        "extraId": 1061,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector5arc",
-        "name": "First Mission to Sector 5",
-        "extraId": 1062,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector5arc",
-        "name": "First Mission in Sector 5",
-        "extraId": 1051,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector3pyr",
-        "name": "Emergency in Sector 3",
-        "extraId": 1052,
-        "nodeType": "event"
-      },
-      {
-        "id": "coolingUnit",
-        "name": "Boiler Room",
-        "message": "Cooling unit operational.",
-        "extraId": 1033,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "mainDeck",
-        "name": "Main Elevator Power Restored",
-        "extraId": 1034,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "mainDeck",
-        "name": "To the Habitation Deck",
-        "extraId": 1035,
-        "nodeType": "event"
-      },
-      {
-        "id": "animals",
-        "name": "Habitation Deck Shutters",
-        "sprite": "animals",
-        "message": "Lock disengaged. Gate opening.",
-        "extraId": 1007,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "sector5arc",
-        "name": "Return to Sector 5",
-        "extraId": 1008,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector5arc",
-        "name": "Power Bomb Retrieval",
-        "extraId": 1053,
-        "nodeType": "event"
-      },
-      {
-        "id": "mainDeck",
-        "name": "Nettori Power Down",
-        "extraId": 1054,
-        "nodeType": "event"
-      },
-      {
-        "id": "mainDeck",
-        "name": "Reactor Core Access",
-        "extraId": 1009,
-        "nodeType": "event"
-      },
-      {
-        "id": "auxiliaryPower",
-        "name": "Auxiliary Power Station",
-        "message": "Auxiliary power engaged.",
-        "extraId": 1071,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "sector5arc",
-        "name": "To Sector 5 Nightmare",
-        "extraId": 1022,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector5arc",
-        "name": "Nightmare Hunting",
-        "extraId": 1055,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector6noc",
-        "name": "To Sector 6 SR-BOX",
-        "extraId": 1044,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector6noc",
-        "name": "Track the SR-BOX",
-        "extraId": 1063,
-        "nodeType": "event"
-      },
-      {
-        "id": "restrictedLab",
-        "name": "Metroid Habitat",
-        "extraId": 1072,
-        "nodeType": "event"
-      },
-      {
-        "id": "sector1srx",
-        "name": "Through Sector 1 Depths",
-        "extraId": 1073,
-        "nodeType": "event"
-      },
-      {
         "id": "unused",
-        "name": "Final Mission",
-        "extraId": 1013,
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Beaten the Game Once",
-        "extraId": 1074,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "mainDeck",
-        "name": "Operations Room",
-        "extraId": 1075,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Save Room",
-        "extraId": 1002,
-        "nodeType": "save"
-      },
-      {
-        "id": "unused",
-        "name": "Recharge Room",
+        "name": "Energy Refill Station",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
         "id": "unused",
-        "name": "Data Room",
-        "extraId": 1004,
-        "nodeType": "event"
+        "name": "Missile Restock Station",
+        "extraId": 1002,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Recharge Room",
+        "extraId": 1003,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1011,
+        "nodeType": "save"
+      },
+      {
+        "id": "starshipF",
+        "name": "Starship",
+        "extraId": 1012,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Main Deck",
+        "extraId": 1021,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 1",
+        "extraId": 1022,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 2",
+        "extraId": 1023,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 3",
+        "extraId": 1024,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 4",
+        "extraId": 1025,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 5",
+        "extraId": 1026,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Sector 6",
+        "extraId": 1027,
+        "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Navigation Room",
-        "extraId": 1003,
+        "extraId": 1031,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Energy Refill Station",
-        "extraId": 1081,
-        "nodeType": "recharge"
+        "name": "Data Room",
+        "extraId": 1032,
+        "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Missile Restock Station",
-        "extraId": 1082,
-        "nodeType": "recharge"
+        "name": "First Mission",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sub-Zero Containment",
+        "extraId": 1102,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Quarantine Bay",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Op Deck Power Loss",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 1",
+        "extraId": 1105,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 1",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Atmospheric Stabilizer",
+        "extraId": 1107,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 2",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 2",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Broken Hatch",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Return Path Blocked",
+        "extraId": 1111,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Hibernation",
+        "extraId": 1112,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "SA-X Sighting",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 4",
+        "extraId": 1114,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 4",
+        "extraId": 1115,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Pump Control Unit",
+        "message": "Water level lowered.",
+        "extraId": 1116,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 3",
+        "extraId": 1117,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 3",
+        "extraId": 1118,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "X Released Into Sector",
+        "extraId": 1119,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Hatch Destroyed",
+        "extraId": 1120,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Local Quake",
+        "extraId": 1121,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 6",
+        "extraId": 1122,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 6",
+        "extraId": 1123,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "SA-X Sighting",
+        "extraId": 1124,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission to Sector 5",
+        "extraId": 1125,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Mission in Sector 5",
+        "extraId": 1126,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Got First Item",
+        "extraId": 1127,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Emergency in Sector 3",
+        "extraId": 1128,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Six Minutes To Main Boiler Explosion",
+        "extraId": 1129,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Main Boiler Cooling Unit",
+        "message": "Cooling unit operational.",
+        "extraId": 1130,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "To the Habitation Deck",
+        "extraId": 1131,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Main Elevator Power Restored",
+        "extraId": 1132,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Habitation Deck Shutters",
+        "extraId": 1133,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "animals",
+        "name": "Animals Rescued",
+        "sprite": "animals",
+        "message": "Lock disengaged. Gate opening.",
+        "extraId": 1134,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Return to Data Room",
+        "extraId": 1135,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Got Second Item",
+        "extraId": 1136,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "SA-X Encounter",
+        "extraId": 1137,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Return to Ship",
+        "extraId": 1138,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Nettori Power Down",
+        "extraId": 1139,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Security Locks Engaged",
+        "extraId": 1140,
+        "nodeType": "event",
+        "specialBehavior": true
+      },
+      {
+        "id": "unused",
+        "name": "Sub-Zero Containment",
+        "extraId": 1141,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Reactor Core Access",
+        "extraId": 1142,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Ki Hunters Awaken",
+        "extraId": 1143,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Auxiliary Power Station",
+        "message": "Auxiliary power engaged.",
+        "extraId": 1144,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "SA-X Chase",
+        "extraId": 1145,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Safe Place",
+        "extraId": 1146,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Door Security Restored",
+        "extraId": 1147,
+        "nodeType": "trigger",
+        "specialBehavior": true
+      },
+      {
+        "id": "unused",
+        "name": "To Sector 5 Nightmare",
+        "extraId": 1148,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Nightmare Hunting",
+        "extraId": 1149,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Secret Message",
+        "extraId": 1150,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "To Sector 6 SR-BOX",
+        "extraId": 1151,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Track the SR-BOX",
+        "extraId": 1152,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Security Alarm",
+        "extraId": 1153,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Restricted Lab",
+        "extraId": 1154,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Restricted Lab Jettisoned",
+        "extraId": 1155,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Final Mission",
+        "extraId": 1156,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Operations Room",
+        "extraId": 1157,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1158,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Beaten the Game Once",
+        "extraId": 1159,
+        "nodeType": "trigger"
       }
     ],
     "mapTree": [

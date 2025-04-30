@@ -239,13 +239,13 @@
         "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
-        "extraId": 1002
+        "extraId": 1001
       },
       {
         "id": "unused",
-        "name": "Floor Switch",
+        "name": "Switch",
         "nodeType": "trigger",
-        "extraId": 1001
+        "extraId": 1002
       }
     ],
     "mapTree": [
@@ -256,11 +256,11 @@
         "children": [
           {
             "nodeType": "save",
-            "id": 1002
+            "id": 1001
           },
           {
             "nodeType": "trigger",
-            "id": 1001
+            "id": 1002
           },
           {
             "nodeType": "lock",
@@ -406,7 +406,7 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002,
+                            "id": 1001,
                             "hubId": 7
                           },
                           {
@@ -479,7 +479,7 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002
+                            "id": 1001
                           },
                           {
                             "nodeType": "dropdown",
@@ -578,7 +578,7 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002
+                            "id": 1001
                           },
                           {
                             "nodeType": "expansion",

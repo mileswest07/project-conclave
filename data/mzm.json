@@ -224,7 +224,7 @@
         "segments": []
       },
       {
-        "lookupId": 1004,
+        "lookupId": 1103,
         "value": 0,
         "start": 0,
         "max": 1,
@@ -535,13 +535,28 @@
     ],
     "extras": [
       {
-        "id": "birdStatue",
-        "name": "Chozo Hint Statue",
-        "extraId": 1021,
-        "nodeType": "trigger",
-        "lockIds": [
-          1
-        ]
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Save Station with Full Restore",
+        "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "starshipZ",
+        "name": "Starship",
+        "extraId": 1003,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1004,
+        "nodeType": "toggle"
       },
       {
         "id": "unused",
@@ -574,32 +589,65 @@
         "nodeType": "map"
       },
       {
-        "id": "unused",
-        "name": "Hard Mode",
-        "extraId": 1001,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Save Station",
-        "extraId": 1002,
-        "nodeType": "save"
-      },
-      {
-        "id": "unused",
-        "name": "Save Station with Full Restore",
-        "extraId": 1003,
-        "nodeType": "recharge"
-      },
-      {
-        "id": "zipline",
-        "name": "Zipline",
-        "sprite": "zipline",
-        "extraId": 1004,
+        "id": "birdStatue",
+        "name": "Chozo Hint Statue",
+        "extraId": 1021,
         "nodeType": "trigger",
         "lockIds": [
           1
         ]
+      },
+      {
+        "id": "unused",
+        "name": "Secret Passage",
+        "extraId": 1022,
+        "nodeType": "hazard"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Ruins Visited",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Tower Activated",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "zipline",
+        "name": "Zipline Activated",
+        "sprite": "zipline",
+        "extraId": 1103,
+        "nodeType": "trigger",
+        "lockIds": [
+          1
+        ]
+      },
+      {
+        "id": "unused",
+        "name": "Kiru Giru Cocoon Seen",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1105,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Escaped Tourian",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Final Escape Sequence",
+        "extraId": 1107,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

@@ -128,7 +128,7 @@
         "id": "special",
         "name": "Special",
         "extraId": 1001,
-        "nodeType": "lore"
+        "nodeType": "easter"
       }
     ],
     "mapTree": [],

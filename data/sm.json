@@ -396,42 +396,47 @@
       {
         "id": "kraid",
         "name": "Kraid",
-        "bossId": 106
+        "bossId": 111
+      },
+      {
+        "id": "kraid",
+        "name": "Fake Kraid",
+        "bossId": 103
       },
       {
         "id": "crocomire",
         "name": "Crocomire",
-        "bossId": 103
+        "bossId": 104
       },
       {
         "id": "phantoon",
         "name": "Phantoon",
-        "bossId": 107
+        "bossId": 112
       },
       {
         "id": "botwoon",
         "name": "Botwoon",
-        "bossId": 104
+        "bossId": 105
       },
       {
         "id": "draygon",
         "name": "Draygon",
-        "bossId": 108
+        "bossId": 113
       },
       {
         "id": "goldtorizo",
         "name": "Golden Torizo",
-        "bossId": 105
+        "bossId": 106
       },
       {
         "id": "ridley",
         "name": "Ridley",
-        "bossId": 109
+        "bossId": 114
       },
       {
         "id": "mbrain",
         "name": "Mother Brain",
-        "bossId": 110
+        "bossId": 121
       }
     ],
     "areas": [
@@ -484,116 +489,115 @@
       },
       {
         "id": 10,
-        "name": "Maridia",
+        "name": "Maridia - Lower",
         "color": "bf00bf"
       },
       {
         "id": 11,
+        "name": "Maridia - Upper East",
+        "color": "bf00bf"
+      },
+      {
+        "id": 12,
         "name": "Norfair - Upper",
         "color": "db2b00"
       },
       {
-        "id": 12,
+        "id": 13,
         "name": "Norfair - Lower",
         "color": "db2b00"
       },
       {
-        "id": 13,
+        "id": 14,
         "name": "Tourian",
         "color": "bcbcbc"
       }
     ],
     "extras": [
       {
-        "id": "animals",
-        "name": "Save The Animals",
-        "sprite": "animals",
-        "extraId": 1021,
-        "nodeType": "event"
-      },
-      {
-        "id": "animals",
-        "name": "Shine Spark Critter",
-        "extraId": 1022,
-        "nodeType": "event"
-      },
-      {
-        "id": "animals",
-        "name": "Wall Jump Critters",
-        "extraId": 1023,
-        "nodeType": "event"
-      },
-      {
         "id": "unused",
-        "name": "Blue Shutter",
-        "extraId": 1004,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "superMissileTank",
-        "name": "Green Shutter",
-        "extraId": 1005,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "powerBombTankA",
-        "name": "Glass Tunnel Broken",
-        "extraId": 1024,
-        "nodeType": "trigger"
-      },
-      {
-        "id": "reserveTankC",
         "name": "Reserve Tank Hint",
-        "extraId": 1025,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Crateria",
-        "extraId": 1011,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Brinstar",
-        "extraId": 1012,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Norfair",
-        "extraId": 1013,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Maridia",
-        "extraId": 1015,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Wrecked Ship",
-        "extraId": 1014,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Missiles Reload",
         "extraId": 1001,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Missiles Refill",
+        "extraId": 1011,
         "nodeType": "recharge"
       },
       {
         "id": "unused",
-        "name": "Energy Recharge",
-        "extraId": 1002,
+        "name": "Energy Restore",
+        "extraId": 1012,
         "nodeType": "recharge"
       },
       {
         "id": "unused",
         "name": "Save Station",
-        "extraId": 1003,
+        "extraId": 1013,
         "nodeType": "save"
+      },
+      {
+        "id": "gunshipS",
+        "name": "Gunship",
+        "extraId": 1014,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Crateria",
+        "extraId": 1021,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Brinstar",
+        "extraId": 1022,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Norfair",
+        "extraId": 1023,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Wrecked Ship",
+        "extraId": 1024,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Maridia",
+        "extraId": 1025,
+        "nodeType": "map"
+      },
+      {
+        "id": "animals",
+        "name": "Shine Spark Critter",
+        "extraId": 1031,
+        "nodeType": "event"
+      },
+      {
+        "id": "animals",
+        "name": "Wall Jump Critters",
+        "extraId": 1032,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1033,
+        "nodeType": "event"
+      },
+      {
+        "id": "animals",
+        "name": "Save The Animals",
+        "sprite": "animals",
+        "extraId": 1034,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

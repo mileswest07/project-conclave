@@ -1380,10 +1380,11 @@ let keyslots = {};
         panel = {...hierarchyLookup, ...entry};
         
         if (panel.hasOwnProperty("segments") && panel.segments.length) {
-          for (let slo = 0; slo < panel.segments.length; slo++) {
-            let segmentBase = panel.segments[slo];
+          let segmentList = panel.segments.filter(seg => !seg.hasOwnProperty("disabled") || !seg.disabled);
+          for (let slo = 0; slo < segmentList.length; slo++) {
+            let segmentBase = segmentList[slo];
             if (segmentBase.hasOwnProperty("disabled") && segmentBase.disabled) {
-              // console.log("skipping new segment", segmentBase)
+              console.log("skipping new segment", segmentBase)
               continue;
             }
             let segmentLookup = hierarchy.find(source => {
@@ -1409,8 +1410,9 @@ let keyslots = {};
               }
               return lookupCode === segmentBase.lookupId;
             });
-            panel.segments[slo] = {...segmentLookup, ...segmentBase};
+            segmentList[slo] = {...segmentLookup, ...segmentBase};
           }
+          panel.segments = [...segmentList];
         }
         
         panels.push(panel);

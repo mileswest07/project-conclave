@@ -285,7 +285,7 @@
             "overText": "Hints Acquired"
           },
           {
-            "lookupId": 1021,
+            "lookupId": 1123,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -663,88 +663,183 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Items Lost",
-        "nodeType": "event",
-        "extraId": 1001
-      },
-      {
-        "id": "unused",
-        "name": "Great Tree Hall Bars",
-        "nodeType": "trigger",
-        "extraId": 1002,
-        "blockType": true,
-        "lockIds": [
-          7,
-          11
-        ]
-      },
-      {
-        "id": "unused",
-        "name": "Labs Power Outage",
-        "nodeType": "trigger",
-        "extraId": 1012
-      },
-      {
-        "id": "unused",
-        "name": "Processing Center Access Gate",
-        "nodeType": "event",
-        "extraId": 1003,
-        "blockType": true,
-        "lockIds": []
-      },
-      {
-        "id": "unused",
-        "name": "Map: Frigate",
-        "nodeType": "map",
-        "extraId": 1004
-      },
-      {
-        "id": "unused",
-        "name": "Map: Chozo Ruins",
-        "nodeType": "map",
-        "extraId": 1005
-      },
-      {
-        "id": "unused",
-        "name": "Map: Phendrana Pirates",
-        "nodeType": "map",
-        "extraId": 1006
-      },
-      {
-        "id": "unused",
-        "name": "Map: Phazon Mines",
-        "nodeType": "map",
-        "extraId": 1007
-      },
-      {
-        "id": "unused",
-        "name": "Crashed Frigate",
-        "nodeType": "area",
-        "extraId": 1008
-      },
-      {
-        "id": "unused",
-        "name": "Pirate Labs",
-        "nodeType": "area",
-        "extraId": 1009
+        "name": "Missiles Refill",
+        "extraId": 1001,
+        "nodeType": "recharge"
       },
       {
         "id": "unused",
         "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1010
+        "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "gunshipP",
+        "name": "Gunship",
+        "extraId": 1003,
+        "nodeType": "save"
       },
       {
         "id": "unused",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1011
+        "name": "Map: Frigate",
+        "extraId": 1011,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Chozo Ruins",
+        "extraId": 1012,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Phendrana Drifts",
+        "extraId": 1013,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Map: Phazon Mines",
+        "extraId": 1014,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Items Lost",
+        "extraId": 1101,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Hive Totem Cleared",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Ruined Shrine Cleared",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Artifact Hints",
+        "extraId": 1104,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Ice Ruins Door Unlocked",
+        "extraId": 1105,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Pirate Labs",
+        "extraId": 1106,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Observatory Activated",
+        "extraId": 1107,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Outage",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sunchamber Ghosts Ready",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sunchamber Ghosts Cleared",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Crashed Frigate",
+        "extraId": 1111,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Tallon Overworld Depths",
+        "extraId": 1112,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Crane Controls Active",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Crane Position",
+        "extraId": 1114,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Pulse Beam Position",
+        "extraId": 1115,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Rock Wall Destroyed",
+        "extraId": 1116,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Dynamo Destroyed",
+        "extraId": 1117,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Top of Ore Processing",
+        "extraId": 1118,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Plasma Processing Cleared",
+        "extraId": 1119,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Metroids Released",
+        "extraId": 1120,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Metroids Released 2",
+        "extraId": 1121,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Omega Back Door Opened",
+        "extraId": 1122,
+        "nodeType": "trigger"
       },
       {
         "id": "cipher",
         "name": "Impact Crater Accessible",
-        "nodeType": "event",
-        "extraId": 1021
+        "extraId": 1123,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

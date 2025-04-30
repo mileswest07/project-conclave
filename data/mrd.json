@@ -300,56 +300,56 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Beta Ray Info",
+        "name": "Word Search Easter Egg",
         "extraId": 1001,
-        "nodeType": "lore"
+        "nodeType": "easter"
       },
       {
         "id": "unused",
-        "name": "Captain Hint",
+        "name": "Beta Ray Info",
         "extraId": 1002,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Two Codes Hint",
+        "name": "Captain Hint",
         "extraId": 1003,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Wave Beam Hint",
+        "name": "Two Codes Hint",
         "extraId": 1004,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "That One Easter Egg",
-        "extraId": 1006,
-        "nodeType": "easter"
-      },
-      {
-        "id": "unused",
-        "name": "Word Search Easter Egg",
+        "name": "Wave Beam Hint",
         "extraId": 1005,
-        "nodeType": "easter"
+        "nodeType": "lore"
       },
       {
         "id": "unused",
         "name": "Restore Energy and Ammo",
-        "extraId": 1007,
+        "extraId": 1011,
         "nodeType": "recharge"
       },
       {
         "id": "unused",
         "name": "Underwater Caverns",
-        "extraId": 1008,
+        "extraId": 1021,
         "nodeType": "area"
       },
       {
         "id": "unused",
         "name": "Chozo Ruins",
-        "extraId": 1009,
+        "extraId": 1022,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "That One Easter Egg",
+        "extraId": 1023,
         "nodeType": "area"
       },
       {
@@ -367,7 +367,7 @@
         "children": [
           {
             "nodeType": "recharge",
-            "id": 1007
+            "id": 1011
           },
           {
             "nodeType": "expansion",
@@ -500,7 +500,7 @@
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "expansion",
@@ -540,7 +540,7 @@
                     "children": [
                       {
                         "nodeType": "easter",
-                        "id": 1005
+                        "id": 1001
                       }
                     ]
                   }
@@ -557,11 +557,11 @@
         "children": [
           {
             "nodeType": "area",
-            "id": 1008,
+            "id": 1021,
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007,
+                "id": 1011,
                 "hubId": 12
               },
               {
@@ -841,7 +841,7 @@
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007,
+                        "id": 1011,
                         "hubId": 26
                       },
                       {
@@ -1033,7 +1033,7 @@
                             "children": [
                               {
                                 "nodeType": "recharge",
-                                "id": 1007
+                                "id": 1011
                               },
                               {
                                 "nodeType": "elevator",
@@ -1059,7 +1059,7 @@
         "children": [
           {
             "nodeType": "recharge",
-            "id": 1007
+            "id": 1011
           },
           {
             "nodeType": "lock",
@@ -1167,11 +1167,11 @@
                   },
                   {
                     "nodeType": "area",
-                    "id": 1009,
+                    "id": 1022,
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "lock",
@@ -1192,7 +1192,7 @@
                         "children": [
                           {
                             "nodeType": "recharge",
-                            "id": 1007
+                            "id": 1011
                           },
                           {
                             "nodeType": "lock",
@@ -1248,7 +1248,7 @@
         "children": [
           {
             "nodeType": "lore",
-            "id": 1001
+            "id": 1002
           },
           {
             "nodeType": "lock",
@@ -1257,7 +1257,7 @@
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007
+                "id": 1011
               }
             ]
           },
@@ -1343,11 +1343,11 @@
             "children": [
               {
                 "nodeType": "lore",
-                "id": 1002
+                "id": 1003
               },
               {
                 "nodeType": "lore",
-                "id": 1003
+                "id": 1004
               },
               {
                 "nodeType": "expansion",
@@ -1368,7 +1368,7 @@
                 "children": [
                   {
                     "nodeType": "recharge",
-                    "id": 1007
+                    "id": 1011
                   }
                 ]
               }
@@ -1386,7 +1386,7 @@
                 "children": [
                   {
                     "nodeType": "lore",
-                    "id": 1004
+                    "id": 1005
                   },
                   {
                     "nodeType": "expansion",
@@ -1414,7 +1414,7 @@
                     "children": [
                       {
                         "nodeType": "easter",
-                        "id": 1006,
+                        "id": 1023,
                         "children": [
                           {
                             "nodeType": "lock",
@@ -1511,7 +1511,7 @@
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007
+                "id": 1011
               },
               {
                 "nodeType": "lock",
@@ -1520,7 +1520,7 @@
                 "children": [
                   {
                     "nodeType": "recharge",
-                    "id": 1007
+                    "id": 1011
                   },
                   {
                     "nodeType": "lock",
@@ -1529,7 +1529,7 @@
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "boss",

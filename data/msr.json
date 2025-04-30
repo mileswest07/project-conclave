@@ -622,58 +622,136 @@
     ],
     "extras": [
       {
-        "id": "unused",
-        "name": "Teleport",
-        "nodeType": "teleport",
-        "extraId": 1001
-      },
-      {
-        "id": "grappleBeamA",
-        "name": "Grapple Blocks broken",
-        "nodeType": "trigger",
-        "extraId": 1007
-      },
-      {
-        "id": "grappleBeamA",
-        "name": "Diggernaut Awakened",
-        "nodeType": "event",
-        "extraId": 1006
-      },
-      {
-        "id": "unused",
-        "name": "Larval Metroids",
-        "nodeType": "event",
-        "extraId": 1008
-      },
-      {
-        "id": "unused",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1004
-      },
-      {
-        "id": "unused",
-        "name": "Energy Recharge",
-        "nodeType": "recharge",
-        "extraId": 1005
-      },
-      {
         "id": "aeionOrb",
-        "name": "Aeion Refilled",
-        "nodeType": "recharge",
-        "extraId": 1003
+        "name": "Aeion Orb",
+        "extraId": 1001,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Missiles Refill",
+        "extraId": 1002,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
+        "name": "Energy Restore",
+        "extraId": 1003,
+        "nodeType": "recharge"
       },
       {
         "id": "unused",
         "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1002
+        "extraId": 1004,
+        "nodeType": "save"
+      },
+      {
+        "id": "gunshipS",
+        "name": "Gunship",
+        "extraId": 1005,
+        "nodeType": "save"
       },
       {
         "id": "meleeCounter",
         "name": "Melee Counter tutorial",
-        "nodeType": "event",
-        "extraId": 1009
+        "extraId": 1101,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Door Unlocked",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Gamma Sighted",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "grappleBeamA",
+        "name": "Diggernaut Awakened",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Door Opened",
+        "extraId": 1105,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Gate Lowered",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Diggernaut Chase Start",
+        "extraId": 1107,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Seen but Not Obtainable During Chase",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Diggernaut Chase End",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "First Gate",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Second Gate",
+        "extraId": 1111,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "More Metroids Detected",
+        "extraId": 1112,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Extinction Complete",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Aeion Ability Gate",
+        "extraId": 1201,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Teleport Station",
+        "extraId": 1202,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Seal",
+        "extraId": 1203,
+        "nodeType": "event"
+      },
+      {
+        "id": "monsterDna",
+        "name": "Metroid DNA",
+        "extraId": 1211,
+        "nodeType": "artifact"
       }
     ],
     "mapTree": [

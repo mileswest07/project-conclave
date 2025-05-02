@@ -259,7 +259,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTankA",
+        "id": "missileTankZ",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -335,7 +335,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJumpBoots",
+        "id": "highJumpBootsZ",
         "sprite": "high",
         "name": "High Jump Boots",
         "alternateName": "Hi-Jump",
@@ -360,7 +360,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileTank",
+        "id": "superMissileTankZ",
         "sprite": "smissile",
         "name": "Super Missile Tanks",
         "singleItemName": "Super Missiles",
@@ -426,7 +426,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankA",
+        "id": "powerBombTankZ",
         "sprite": "pbomb",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bombs",

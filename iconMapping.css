@@ -48,31 +48,31 @@
 .item-image.bombD { background: url("images/placeholders.png") -500px -50px; }
 .item-image.adapter { background: url("images/placeholders.png") -550px -50px; }
 .item-image.powerBombA { background: url("images/placeholders.png") -600px -50px; }
-.item-image.powerBombP { background: url("images/placeholders.png") -650px -50px; }
-.item-image.powerBombE { background: url("images/placeholders.png") -700px -50px; }
-.item-image.powerBombG { background: url("images/placeholders.png") -750px -50px; }
-.item-image.powerBombC { background: url("images/placeholders.png") -800px -50px; }
-.item-image.powerBombH { background: url("images/placeholders.png") -850px -50px; }
-.item-image.powerBombD { background: url("images/placeholders.png") -900px -50px; }
-.item-image.powerBombTankA { background: url("images/placeholders.png") -950px -50px; }
-.item-image.powerBombExpP { background: url("images/placeholders.png") -1000px -50px; }
-.item-image.powerBombExpE { background: url("images/placeholders.png") -1050px -50px; }
-.item-image.powerBombExpD { background: url("images/placeholders.png") -1100px -50px; }
-.item-image.springBallA { background: url("images/placeholders.png") -1150px -50px; }
-.item-image.springBallB { background: url("images/placeholders.png") -1200px -50px; }
-.item-image.spiderBallA { background: url("images/placeholders.png") -1250px -50px; }
-.item-image.spiderBallP { background: url("images/placeholders.png") -1300px -50px; }
-.item-image.crossBomb { background: url("images/placeholders.png") -1350px -50px; }
-.item-image.boostBall { background: url("images/placeholders.png") -1400px -50px; }
-.item-image.cannonball { background: url("images/placeholders.png") -1450px -50px; }
-.item-image.hyperBall { background: url("images/placeholders.png") -1500px -50px; }
-.item-image.forceBall { background: url("images/placeholders.png") -1550px -50px; }
-.item-image.deathalt { background: url("images/placeholders.png") -1600px -50px; }
-.item-image.extraBall { background: url("images/placeholders.png") -1650px -50px; }
-.item-image.templeBall { background: url("images/placeholders.png") -1700px -50px; }
-.item-image.morphPoint { background: url("images/placeholders.png") -1750px -50px; }
-/* .item-image._____ { background: url("images/placeholders.png") -1800px -50px; } */ /* UNUSED */
-/* .item-image._____ { background: url("images/placeholders.png") -1850px -50px; } */ /* UNUSED */
+.item-image.powerBombZ { background: url("images/placeholders.png") -650px -50px; }
+.item-image.powerBombP { background: url("images/placeholders.png") -700px -50px; }
+.item-image.powerBombE { background: url("images/placeholders.png") -750px -50px; }
+.item-image.powerBombG { background: url("images/placeholders.png") -800px -50px; }
+.item-image.powerBombC { background: url("images/placeholders.png") -850px -50px; }
+.item-image.powerBombH { background: url("images/placeholders.png") -900px -50px; }
+.item-image.powerBombD { background: url("images/placeholders.png") -950px -50px; }
+.item-image.powerBombTankA { background: url("images/placeholders.png") -1000px -50px; }
+.item-image.powerBombTankZ { background: url("images/placeholders.png") -1050px -50px; }
+.item-image.powerBombExpP { background: url("images/placeholders.png") -1100px -50px; }
+.item-image.powerBombExpE { background: url("images/placeholders.png") -1150px -50px; }
+.item-image.powerBombExpD { background: url("images/placeholders.png") -1200px -50px; }
+.item-image.springBallA { background: url("images/placeholders.png") -1250px -50px; }
+.item-image.springBallB { background: url("images/placeholders.png") -1300px -50px; }
+.item-image.spiderBallA { background: url("images/placeholders.png") -1350px -50px; }
+.item-image.spiderBallP { background: url("images/placeholders.png") -1400px -50px; }
+.item-image.crossBomb { background: url("images/placeholders.png") -1450px -50px; }
+.item-image.boostBall { background: url("images/placeholders.png") -1500px -50px; }
+.item-image.cannonball { background: url("images/placeholders.png") -1550px -50px; }
+.item-image.hyperBall { background: url("images/placeholders.png") -1600px -50px; }
+.item-image.forceBall { background: url("images/placeholders.png") -1650px -50px; }
+.item-image.deathalt { background: url("images/placeholders.png") -1700px -50px; }
+.item-image.extraBall { background: url("images/placeholders.png") -1750px -50px; }
+.item-image.templeBall { background: url("images/placeholders.png") -1800px -50px; }
+.item-image.morphPoint { background: url("images/placeholders.png") -1850px -50px; }
 /* .item-image._____ { background: url("images/placeholders.png") -1900px -50px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -1950px -50px; } */ /* UNUSED */
 
@@ -308,54 +308,66 @@
 .item-image.missileLauncherH { background: url("images/placeholders.png") -250px -450px; }
 .item-image.missileTankA,
 .item-image.missileExpansion { background: url("images/placeholders.png") -300px -450px; }
-.item-image.missileTankD { background: url("images/placeholders.png") -350px -450px; }
+.item-image.missileTankZ { background: url("images/placeholders.png") -350px -450px; }
+.item-image.missileTankD { background: url("images/placeholders.png") -400px -450px; }
 .item-image.superMissileLauncher,
-.item-image.diffusionMissileDataF { background: url("images/placeholders.png") -400px -450px; }
-.item-image.superMissileTank { background: url("images/placeholders.png") -450px -450px; }
-.item-image.superMissileComboP { background: url("images/placeholders.png") -500px -450px; }
-.item-image.superMissileComboE { background: url("images/placeholders.png") -550px -450px; }
-.item-image.iceMissileF { background: url("images/placeholders.png") -600px -450px; }
-.item-image.iceMissileC { background: url("images/placeholders.png") -650px -450px; }
+.item-image.diffusionMissileDataF { background: url("images/placeholders.png") -450px -450px; }
+.item-image.superMissileLauncherZ { background: url("images/placeholders.png") -500px -450px; }
+.item-image.superMissileTank,
+.item-image.superMissileTankA { background: url("images/placeholders.png") -550px -450px; }
+.item-image.superMissileTankZ { background: url("images/placeholders.png") -600px -450px; }
+.item-image.superMissileComboP { background: url("images/placeholders.png") -650px -450px; }
+.item-image.superMissileComboE { background: url("images/placeholders.png") -700px -450px; }
+.item-image.iceMissileF { background: url("images/placeholders.png") -750px -450px; }
+.item-image.iceMissileC { background: url("images/placeholders.png") -800px -450px; }
 .item-image.seekerLauncherA,
-.item-image.seekerLauncherG { background: url("images/placeholders.png") -700px -450px; }
-.item-image.seekerLauncherE { background: url("images/placeholders.png") -750px -450px; }
+.item-image.seekerLauncherG { background: url("images/placeholders.png") -850px -450px; }
+.item-image.seekerLauncherE { background: url("images/placeholders.png") -900px -450px; }
 .item-image.seekerLauncherC,
-.item-image.seekerLauncherO { background: url("images/placeholders.png") -800px -450px; }
-.item-image.seekerLauncherB { background: url("images/placeholders.png") -850px -450px; }
-.item-image.seekerLauncherD { background: url("images/placeholders.png") -900px -450px; }
-.item-image.stormMissile { background: url("images/placeholders.png") -950px -450px; }
-.item-image.hyperMissile { background: url("images/placeholders.png") -1000px -450px; }
-.item-image.shipMissile { background: url("images/placeholders.png") -1050px -450px; }
-.item-image.shipMissileExpansion { background: url("images/placeholders.png") -1100px -450px; }
+.item-image.seekerLauncherO { background: url("images/placeholders.png") -950px -450px; }
+.item-image.seekerLauncherB { background: url("images/placeholders.png") -1000px -450px; }
+.item-image.seekerLauncherD { background: url("images/placeholders.png") -1050px -450px; }
+.item-image.stormMissile { background: url("images/placeholders.png") -1100px -450px; }
+.item-image.hyperMissile { background: url("images/placeholders.png") -1150px -450px; }
+.item-image.shipMissile { background: url("images/placeholders.png") -1200px -450px; }
+.item-image.shipMissileExpansion { background: url("images/placeholders.png") -1250px -450px; }
 .item-image.freezeShot,
 .item-image.iceSpreader,
-.item-image.iceMissileD { background: url("images/placeholders.png") -1150px -450px; }
+.item-image.iceMissileD { background: url("images/placeholders.png") -1300px -450px; }
 .item-image.flameShot,
 .item-image.flamethrower,
 .item-image.plasmaBeamC,
-.item-image.fireBeamB { background: url("images/placeholders.png") -1200px -450px; }
+.item-image.fireBeamB { background: url("images/placeholders.png") -1350px -450px; }
 .item-image.shockShot,
-.item-image.wavebuster { background: url("images/placeholders.png") -1250px -450px; }
-.item-image.missileDoubleTank { background: url("images/placeholders.png") -1300px -450px; }
-.item-image.unlimitedMissiles { background: url("images/placeholders.png") -1350px -450px; }
-/* .item-image._____ { background: url("images/placeholders.png") -1400px -450px; } */ /* UNUSED */
+.item-image.wavebuster { background: url("images/placeholders.png") -1400px -450px; }
+.item-image.missileDoubleTank { background: url("images/placeholders.png") -1450px -450px; }
+.item-image.unlimitedMissiles { background: url("images/placeholders.png") -1500px -450px; }
+/* .item-image._____ { background: url("images/placeholders.png") -1550px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1600px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1650px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1700px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1750px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1800px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1850px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1900px -450px; } */ /* UNUSED */
+/* .item-image._____ { background: url("images/placeholders.png") -1950px -450px; } */ /* UNUSED */
 
 .item-image.highJumpBoots { background: url("images/placeholders.png") 0 -500px; }
-.item-image.spinBoost { background: url("images/placeholders.png") -50px -500px; }
-.item-image.spaceJumpBoots { background: url("images/placeholders.png") -100px -500px; }
-.item-image.spaceJumpBootsG { background: url("images/placeholders.png") -150px -500px; }
-.item-image.wallJumpBoots { background: url("images/placeholders.png") -200px -500px; }
-.item-image.spaceJump { background: url("images/placeholders.png") -250px -500px; }
-.item-image.screwAttackA { background: url("images/placeholders.png") -300px -500px; }
-.item-image.screwAttackE { background: url("images/placeholders.png") -350px -500px; }
-.item-image.screwAttackG { background: url("images/placeholders.png") -400px -500px; }
-.item-image.jumpBoots { background: url("images/placeholders.png") -450px -500px; }
-.item-image.speedBoosterA { background: url("images/placeholders.png") -500px -500px; }
-.item-image.speedBoosterO { background: url("images/placeholders.png") -550px -500px; }
-.item-image.flashShift { background: url("images/placeholders.png") -600px -500px; }
-.item-image.accelExpansion { background: url("images/placeholders.png") -650px -500px; }
-.item-image.flashShiftExpansion { background: url("images/placeholders.png") -700px -500px; }
-/* .item-image._____ { background: url("images/placeholders.png") -750px -500px; } */ /* UNUSED */
+.item-image.highJumpBootsZ { background: url("images/placeholders.png") -50px -500px; }
+.item-image.spinBoost { background: url("images/placeholders.png") -100px -500px; }
+.item-image.spaceJumpBoots { background: url("images/placeholders.png") -150px -500px; }
+.item-image.spaceJumpBootsG { background: url("images/placeholders.png") -200px -500px; }
+.item-image.wallJumpBoots { background: url("images/placeholders.png") -250px -500px; }
+.item-image.spaceJump { background: url("images/placeholders.png") -300px -500px; }
+.item-image.screwAttackA { background: url("images/placeholders.png") -350px -500px; }
+.item-image.screwAttackE { background: url("images/placeholders.png") -400px -500px; }
+.item-image.screwAttackG { background: url("images/placeholders.png") -450px -500px; }
+.item-image.jumpBoots { background: url("images/placeholders.png") -500px -500px; }
+.item-image.speedBoosterA { background: url("images/placeholders.png") -550px -500px; }
+.item-image.speedBoosterO { background: url("images/placeholders.png") -600px -500px; }
+.item-image.flashShift { background: url("images/placeholders.png") -650px -500px; }
+.item-image.accelExpansion { background: url("images/placeholders.png") -700px -500px; }
+.item-image.flashShiftExpansion { background: url("images/placeholders.png") -750px -500px; }
 /* .item-image._____ { background: url("images/placeholders.png") -800px -500px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -850px -500px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -900px -500px; } */ /* UNUSED */

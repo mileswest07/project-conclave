@@ -4,6 +4,39 @@
     "items": [
       {
         "id": "bow",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "over": "MC_Chest",
+        "overText": "L1 Big Chest",
+        "segments": [
+          {
+            "id": "bowArrows",
+            "name": "Bow and Arrows",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "L1 Big Chest",
+            "nodeType": "upgrade",
+            "value": 1,
+            "disabled": true
+          },
+          {
+            "id": "bowSilver",
+            "name": "Bow and Silver Arrows",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1,
+            "disabled": true
+          }
+        ],
+        "nodeType": "upgrade",
+        "value": 1,
+        "disabled": true
+      },
+      {
+        "id": "bow",
         "name": "Bow",
         "start": 0,
         "max": 1,
@@ -20,6 +53,15 @@
         "max": 1,
         "segments": [
           {
+            "id": "arrow",
+            "name": "Arrows",
+            "start": 1,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 0,
+            "disabled": true
+          },
+          {
             "id": "silverArrows",
             "name": "Silver Arrows",
             "start": 0,
@@ -29,6 +71,39 @@
           }
         ],
         "value": 1
+      },
+      {
+        "id": "boomerang",
+        "name": "",
+        "start": 0,
+        "max": 2,
+        "over": "MC_Chest",
+        "overText": "HC Basement Chest",
+        "segments": [
+          {
+            "id": "boomerang",
+            "name": "Boomerang",
+            "start": 0,
+            "max": 1,
+            "over": "MC_Chest",
+            "overText": "HC Basement Chest",
+            "nodeType": "upgrade",
+            "value": 1,
+            "disabled": true
+          },
+          {
+            "id": "magicRang",
+            "name": "Magical Boomerang",
+            "start": 0,
+            "max": 1,
+            "nodeType": "upgrade",
+            "value": 1,
+            "disabled": true
+          }
+        ],
+        "nodeType": "upgrade",
+        "value": 1,
+        "disabled": true
       },
       {
         "id": "boomerang",

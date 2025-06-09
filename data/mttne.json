@@ -331,12 +331,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "longBeamA",
-        "locale": {
-          "enUS": {
-            "id": "longBeam"
-          }
-        },
+        "id": "longBeam",
         "sprite": "long",
         "name": "Long Beam",
         "bg": "7f2800",
@@ -344,7 +339,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missiles",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
@@ -361,7 +356,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -396,7 +391,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bombs",
         "name": "Bomb",
         "bg": "3800a8",
@@ -404,7 +399,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7e00",
@@ -412,7 +407,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "flameShotA",
+        "id": "fireBeamA",
         "sprite": "fire",
         "name": "Fire Beam",
         "bg": "ff4a4a",
@@ -420,7 +415,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "Hi-Jump Boots",
         "bg": "c0a8d8",
@@ -429,11 +424,6 @@
       },
       {
         "id": "chargeBeamA",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
         "sprite": "charge",
         "name": "Charge Beam",
         "bg": "808000",
@@ -441,7 +431,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "sprite": "spring",
         "name": "Jump Ball",
         "bg": "886848",
@@ -449,7 +439,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -466,12 +456,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "waveBeamD",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamB",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -479,12 +464,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "sprite": "wide",
         "name": "Spazer Beam",
         "bg": "ffff80",
@@ -501,7 +481,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "gravitySuitD",
+        "id": "gravitySuitA",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",
@@ -509,7 +489,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncher",
+        "id": "stormMissile",
         "sprite": "seeker",
         "name": "Seeker Missiles",
         "bg": "644080",
@@ -517,7 +497,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBall",
+        "id": "spiderBallA",
         "sprite": "spider",
         "name": "Spider Ball",
         "bg": "bca470",
@@ -525,12 +505,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeamE",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamB",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -538,7 +513,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "sprite": "pbombs",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -555,12 +530,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamE",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamB",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -568,7 +538,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -600,7 +570,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "shieldGenerator",
+        "id": "hyperShield",
         "sprite": "hyper",
         "name": "Hyper Shield",
         "bg": "007098",
@@ -608,7 +578,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileB",
+        "id": "superBlast",
         "sprite": "mega",
         "name": "Super Blast",
         "bg": "007f0e",
@@ -646,7 +616,7 @@
     "areas": [],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "extraId": 1001,
         "nodeType": "save"

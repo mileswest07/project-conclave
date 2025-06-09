@@ -224,7 +224,7 @@
         "segments": []
       },
       {
-        "lookupId": 1004,
+        "lookupId": 1103,
         "value": 0,
         "start": 0,
         "max": 1,
@@ -251,12 +251,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "longBeamA",
-        "locale": {
-          "enUS": {
-            "id": "longBeam"
-          }
-        },
+        "id": "longBeam",
         "sprite": "long",
         "name": "Long Beam",
         "bg": "7f2800",
@@ -264,7 +259,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankZ",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -273,12 +268,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "sprite": "charge",
         "name": "Charge Beam",
         "bg": "808000",
@@ -286,7 +276,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -295,7 +285,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -303,14 +293,9 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "unknownItem1",
+        "id": "unknownItem1B",
         "sprite": "ui1",
         "name": "Unknown Item 1",
-        "locale": {
-          "enUS": {
-            "id": "unknownItem1a"
-          }
-        },
         "bg": "887878",
         "itemId": 9,
         "progressionToItemId": 19,
@@ -325,12 +310,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -338,21 +318,16 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "unknownItem2",
+        "id": "unknownItem2B",
         "sprite": "ui2",
         "name": "Unknown Item 2",
-        "locale": {
-          "enUS": {
-            "id": "unknownItem2a"
-          }
-        },
         "bg": "887878",
         "itemId": 12,
         "progressionToItemId": 20,
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -360,15 +335,16 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBootsZ",
         "sprite": "high",
         "name": "High Jump Boots",
+        "alternateName": "Hi-Jump",
         "bg": "c0a8d8",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "barrierB",
+        "id": "barrierSuitB",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7e00",
@@ -376,12 +352,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -389,7 +360,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileTank",
+        "id": "superMissileTankZ",
         "sprite": "smissile",
         "name": "Super Missile Tanks",
         "singleItemName": "Super Missiles",
@@ -398,21 +369,16 @@
         "nodeType": "expansion"
       },
       {
-        "id": "unknownItem3",
+        "id": "unknownItem3B",
         "sprite": "ui3",
         "name": "Unknown Item 3",
-        "locale": {
-          "enUS": {
-            "id": "unknownItem3a"
-          }
-        },
         "bg": "887878",
         "itemId": 18,
         "progressionToItemId": 21,
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -420,9 +386,10 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "fullPowerSuit",
+        "id": "fullyPoweredSuit",
         "sprite": "full",
         "name": "Fully Powered Suit",
+        "alternateName": "Chozo Power",
         "bg": "ffb508",
         "itemId": 20,
         "specialCollectionBehavior": true,
@@ -435,12 +402,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -456,7 +418,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuit",
+        "id": "gravitySuitA",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",
@@ -464,7 +426,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankZ",
         "sprite": "pbomb",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bombs",
@@ -547,34 +509,54 @@
       },
       {
         "id": 5,
-        "name": "Ridley",
+        "name": "Ridley - Main",
         "color": "bf00bf"
       },
       {
         "id": 6,
+        "name": "Ridley - Tunnels",
+        "color": "bf00bf"
+      },
+      {
+        "id": 7,
         "name": "Tourian",
         "color": "bcbcbc"
       },
       {
-        "id": 7,
-        "name": "Chozodia",
+        "id": 8,
+        "name": "Chozodia - ZSS Start",
         "color": "bcbcbc"
       },
       {
-        "id": 8,
-        "name": "Chozodia",
+        "id": 9,
+        "name": "Chozodia - Main",
         "color": "bcbcbc"
       }
     ],
     "extras": [
       {
-        "id": "chozoStatue",
-        "name": "Chozo Hint Statue",
-        "extraId": 1021,
-        "nodeType": "trigger",
-        "lockIds": [
-          1
-        ]
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Save Station with Full Restore",
+        "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "starshipZ",
+        "name": "Starship",
+        "extraId": 1003,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1004,
+        "nodeType": "toggle"
       },
       {
         "id": "unused",
@@ -607,32 +589,65 @@
         "nodeType": "map"
       },
       {
-        "id": "unused",
-        "name": "Hard Mode",
-        "extraId": 1001,
-        "nodeType": "lore"
-      },
-      {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "extraId": 1002,
-        "nodeType": "save"
-      },
-      {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "extraId": 1003,
-        "nodeType": "recharge"
-      },
-      {
-        "id": "zipline",
-        "name": "Zipline",
-        "sprite": "zipline",
-        "extraId": 1004,
+        "id": "birdStatue",
+        "name": "Chozo Hint Statue",
+        "extraId": 1021,
         "nodeType": "trigger",
         "lockIds": [
           1
         ]
+      },
+      {
+        "id": "unused",
+        "name": "Secret Passage",
+        "extraId": 1022,
+        "nodeType": "hazard"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Ruins Visited",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Tower Activated",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "zipline",
+        "name": "Zipline Activated",
+        "sprite": "zipline",
+        "extraId": 1103,
+        "nodeType": "trigger",
+        "lockIds": [
+          1
+        ]
+      },
+      {
+        "id": "unused",
+        "name": "Kiru Giru Cocoon Seen",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1105,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Escaped Tourian",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Final Escape Sequence",
+        "extraId": 1107,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

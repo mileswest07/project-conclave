@@ -14,13 +14,13 @@
 .expansion,
 .blank {
   position: relative;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 
 #timer-wrapper,
 .addon-wrapper {
-  height: 42px;
+  height: 50px;
 }
 
 .addon-wrapper {
@@ -28,7 +28,7 @@
 }
 
 .expansion {
-  height: 64px;
+  height: 72px;
 }
 
 .hint-image,
@@ -82,12 +82,12 @@
 .item-image {
   cursor: pointer;
   filter: drop-shadow(0 0 5px #000);
-  height: 42px;
+  height: 50px;
   left: 0;
   margin: 0;
   position: relative;
   top: 0;
-  width: 42px;
+  width: 50px;
   z-index: 10;
 }
 
@@ -97,11 +97,11 @@
 }
 
 .back-image {
-  height: 42px;
+  height: 50px;
   right: 0;
   position: absolute;
   top: 0;
-  width: 42px;
+  width: 50px;
   z-index: 1;
 }
 
@@ -135,7 +135,7 @@
 }
 
 #reset-wrapper button {
-  margin: 10px 43px 10px 0;
+  margin: 10px 49px 10px 0;
 }
 
 .deselected {

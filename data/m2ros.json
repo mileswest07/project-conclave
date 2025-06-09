@@ -223,7 +223,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -231,7 +231,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Pods",
         "singleItemName": "Missile Pod",
@@ -240,7 +240,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -249,7 +249,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "spiderBall",
+        "id": "spiderBallA",
         "sprite": "spider",
         "name": "Spider Ball",
         "bg": "bca470",
@@ -257,12 +257,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -271,7 +266,7 @@
         "slotType": "beam"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -279,7 +274,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -287,7 +282,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -295,12 +290,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -317,12 +307,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "sprite": "wide",
         "name": "Spazer Beam",
         "bg": "ffff80",
@@ -331,12 +316,7 @@
         "slotType": "beam"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -345,7 +325,7 @@
         "slotType": "beam"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -384,7 +364,7 @@
       },
       {
         "id": "larval",
-        "name": "Larval Metroid",
+        "name": "Larva Metroid",
         "bossId": 102
       },
       {
@@ -433,31 +413,49 @@
     ],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "missileBattery",
+        "name": "Missiles Refill",
+        "extraId": 1001,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "bigEnergyBall",
+        "name": "Energy Restore",
+        "extraId": 1002,
+        "nodeType": "recharge"
+      },
+      {
+        "id": "unused",
         "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1003
+        "extraId": 1003,
+        "nodeType": "save"
       },
       {
-        "id": "missileRefill",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1001
+        "id": "gunshipS",
+        "name": "Gunship",
+        "extraId": 1004,
+        "nodeType": "map"
       },
       {
-        "id": "energyRefill",
-        "name": "Energy Recharge",
-        "nodeType": "recharge",
-        "extraId": 1002
+        "id": "unused",
+        "name": "Ruins Area",
+        "extraId": 1011,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1012,
+        "nodeType": "area"
       },
       {
         "id": "monsterDna",
         "name": "Metroids defeated",
-        "nodeType": "artifact",
         "displayIcon": "monsterDna",
         "sprite": "monsters",
         "bg": "747474",
-        "extraId": 1004
+        "extraId": 1021,
+        "nodeType": "battle"
       }
     ],
     "mapTree": [
@@ -467,17 +465,38 @@
         "mapId": 1,
         "children": [
           {
-            "nodeType": "save",
             "id": 1003
           },
           {
+            "id": 1004,
+            "children": [
+              {
+                "id": 1002,
+                "children": [
+                  {
+                    "id": 1001
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "nodeType": "battle",
-            "id": 103
+            "id": 103,
+            "children": [
+              {
+                "id": 1001
+              },
+              {
+                "id": 1002
+              }
+            ]
           },
           {
             "nodeType": "lock",
-            "id": 1004,
+            "id": 1021,
             "reqdItemCount": 1,
+            "forceDisplayCount": true,
             "children": [
               {
                 "nodeType": "elevator",
@@ -486,8 +505,9 @@
               },
               {
                 "nodeType": "lock",
-                "id": 1004,
+                "id": 1021,
                 "reqdItemCount": 4,
+                "forceDisplayCount": true,
                 "children": [
                   {
                     "nodeType": "elevator",
@@ -496,8 +516,9 @@
                   },
                   {
                     "nodeType": "lock",
-                    "id": 1004,
+                    "id": 1021,
                     "reqdItemCount": 8,
+                    "forceDisplayCount": true,
                     "children": [
                       {
                         "nodeType": "elevator",
@@ -506,8 +527,9 @@
                       },
                       {
                         "nodeType": "lock",
-                        "id": 1004,
+                        "id": 1021,
                         "reqdItemCount": 4,
+                        "forceDisplayCount": true,
                         "children": [
                           {
                             "nodeType": "battle",
@@ -515,8 +537,9 @@
                           },
                           {
                             "nodeType": "lock",
-                            "id": 1004,
+                            "id": 1021,
                             "reqdItemCount": 2,
+                            "forceDisplayCount": true,
                             "children": [
                               {
                                 "nodeType": "elevator",
@@ -525,38 +548,34 @@
                               },
                               {
                                 "nodeType": "lock",
-                                "id": 1004,
-                                "reqdItemCount": 4,
+                                "id": 1021,
+                                "reqdItemCount": 7,
+                                "forceDisplayCount": true,
                                 "children": [
                                   {
+                                    "nodeType": "battle",
+                                    "id": 103
+                                  },
+                                  {
                                     "nodeType": "lock",
-                                    "id": 1004,
-                                    "reqdItemCount": 7,
+                                    "id": 1021,
+                                    "reqdItemCount": 1,
+                                    "forceDisplayCount": true,
                                     "children": [
                                       {
                                         "nodeType": "battle",
-                                        "id": 103
+                                        "id": 106
                                       },
                                       {
                                         "nodeType": "lock",
-                                        "id": 1004,
+                                        "id": 1021,
                                         "reqdItemCount": 1,
+                                        "forceDisplayCount": true,
                                         "children": [
                                           {
-                                            "nodeType": "battle",
-                                            "id": 106
-                                          },
-                                          {
-                                            "nodeType": "lock",
-                                            "id": 1004,
-                                            "reqdItemCount": 1,
-                                            "children": [
-                                              {
-                                                "nodeType": "elevator",
-                                                "transportToMapId": 6,
-                                                "toStartHubId": 51
-                                              }
-                                            ]
+                                            "nodeType": "elevator",
+                                            "transportToMapId": 6,
+                                            "toStartHubId": 51
                                           }
                                         ]
                                       }
@@ -570,16 +589,27 @@
                       },
                       {
                         "nodeType": "lock",
-                        "id": 1004,
+                        "id": 1021,
                         "reqdItemCount": 1,
+                        "forceDisplayCount": true,
                         "children": [
                           {
                             "nodeType": "battle",
-                            "id": 103
+                            "id": 103,
+                            "children": [
+                              {
+                                "id": 1002
+                              }
+                            ]
                           },
                           {
                             "nodeType": "battle",
-                            "id": 104
+                            "id": 104,
+                            "children": [
+                              {
+                                "id": 1001
+                              }
+                            ]
                           }
                         ]
                       }

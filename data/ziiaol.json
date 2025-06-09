@@ -390,6 +390,88 @@
         "nodeType": "upgrade"
       },
       {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "disabled": true
+      },
+      {
+        "id": "parapa",
+        "name": "Parapa Palace Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "midoro",
+        "name": "Midoro Palace Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "island",
+        "name": "Island Palace Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "maze",
+        "name": "Maze Palace Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "onthesea",
+        "name": "Palace On The Sea Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "hidden",
+        "name": "Hidden Palace Crystal",
+        "start": 0,
+        "max": 1,
+        "segments": [],
+        "value": 1,
+        "nodeType": "artifact",
+        "disabled": true
+      },
+      {
+        "id": "linkPlush",
+        "name": "Extra Lives",
+        "start": 0,
+        "max": 3,
+        "segments": [],
+        "value": 1,
+        "nodeType": "expansion",
+        "disabled": true
+      },
+      {
+        "id": "-",
+        "name": "",
+        "max": 0,
+        "disabled": true
+      },
+      {
         "id": "pieceOfHeart",
         "name": "Pieces of Heart",
         "start": 0,

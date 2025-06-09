@@ -265,7 +265,7 @@
     ],
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankD",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "missile",
@@ -275,7 +275,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "doubleMissileTank",
+        "id": "missileDoubleTank",
         "name": "Missile+ Tanks",
         "singleItemName": "Missile+ Tank",
         "sprite": "missilePlus",
@@ -285,12 +285,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 3,
@@ -298,12 +293,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "dreadPart",
-        "locale": {
-          "enUS": {
-            "id": "energyPart"
-          }
-        },
+        "id": "energyPartD",
         "name": "Energy Parts",
         "singleItemName": "Energy Part",
         "sprite": "part",
@@ -312,12 +302,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "dreadEnergy",
-        "locale": {
-          "enUS": {
-            "id": "energyTank"
-          }
-        },
+        "id": "energyTankD",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -333,7 +318,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "invisibility",
+        "id": "phantomCloak",
         "name": "Phantom Cloak",
         "sprite": "phantom",
         "bg": "00ff08",
@@ -341,12 +326,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "wideBeamA",
         "name": "Wide Beam",
         "bg": "ffff80",
         "itemId": 8,
@@ -361,7 +341,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitD",
         "name": "Varia Suit",
         "bg": "ff7e00",
         "itemId": 10,
@@ -369,12 +349,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "diffusionBeamB",
-        "locale": {
-          "enUS": {
-            "id": "diffusionBeamA"
-          }
-        },
+        "id": "diffusionBeamD",
         "name": "Diffusion Beam",
         "bg": "9b9b9b",
         "itemId": 11,
@@ -396,21 +371,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "bg": "ff0094",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamD",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissile",
+        "id": "superMissileLauncher",
         "name": "Super Missiles",
         "bg": "007f0e",
         "itemId": 16,
@@ -418,12 +393,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamA",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamF",
         "name": "Plasma Beam",
         "bg": "00ff08",
         "itemId": 17,
@@ -431,7 +401,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoostA",
+        "id": "spinBoost",
         "name": "Spin Boost",
         "bg": "c0a8d8",
         "itemId": 18,
@@ -439,14 +409,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileB",
+        "id": "iceMissileD",
         "name": "Ice Missiles",
         "bg": "2038ec",
         "itemId": 19,
         "nodeType": "upgrade"
       },
       {
-        "id": "scanPulse",
+        "id": "pulseRadar",
         "name": "Pulse Radar",
         "sprite": "radar",
         "bg": "00c7ff",
@@ -454,7 +424,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "stormMissile",
         "name": "Storm Missile",
         "bg": "644080",
         "itemId": 21,
@@ -468,47 +438,42 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuitD",
         "name": "Gravity Suit",
         "bg": "602880",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 24,
         "nodeType": "upgrade"
       },
       {
-        "id": "crossBombs",
+        "id": "crossBomb",
         "name": "Cross Bomb",
         "bg": "886848",
         "itemId": 25,
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamE",
-        "locale": {
-          "enUS": {
-            "id": "waveBeam"
-          }
-        },
+        "id": "waveBeamF",
         "name": "Wave Beam",
         "bg": "92278f",
         "itemId": 26,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBomb",
+        "id": "powerBombD",
         "name": "Power Bombs",
         "bg": "98b830",
         "itemId": 27,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombExpD",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
         "sprite": "pbombs",
@@ -528,147 +493,133 @@
     "bosses": [
       {
         "id": "emmi01p",
-        "name": "E.M.M.I.-01P",
+        "name": "E.M.M.I.-01P Showdown",
         "bossId": 101
       },
       {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-02SM",
-        "bossId": 103
-      },
-      {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-03MB",
-        "bossId": 105
-      },
-      {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-04SB",
-        "bossId": 107
-      },
-      {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-05IM",
-        "bossId": 109
-      },
-      {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-06WB",
-        "bossId": 111
-      },
-      {
-        "id": "emmi01p",
-        "name": "E.M.M.I.-07PB",
-        "bossId": 113
-      },
-      {
-        "id": "cualta",
-        "name": "Central Unit 01",
+        "id": "cualtb",
+        "name": "Central Unit Artaria",
         "bossId": 102
       },
       {
-        "id": "cualtb",
-        "name": "Central Unit 02",
-        "bossId": 104
-      },
-      {
-        "id": "cucat",
-        "name": "Central Unit 03",
-        "bossId": 106
-      },
-      {
-        "id": "cudai",
-        "name": "Central Unit 04",
-        "bossId": 108
-      },
-      {
-        "id": "cugha",
-        "name": "Central Unit 05",
-        "bossId": 110
-      },
-      {
-        "id": "cufer",
-        "name": "Central Unit 06",
-        "bossId": 112
-      },
-      {
-        "id": "cuhan",
-        "name": "Central Unit 07",
-        "bossId": 114
-      },
-      {
-        "id": "chozosoldiera",
-        "name": "Chozo Soldier",
-        "bossId": 126
-      },
-      {
-        "id": "chozosoldierb",
-        "name": "Chozo Soldier",
-        "bossId": 131
-      },
-      {
-        "id": "redchozoa",
-        "name": "Chozo Soldier",
-        "bossId": 134
-      },
-      {
-        "id": "redchozob",
-        "name": "Chozo Soldier",
-        "bossId": 137
-      },
-      {
-        "id": "elitechozo",
-        "name": "Elite Chozo Soldier",
-        "bossId": 139
-      },
-      {
-        "id": "robotchozoa",
-        "name": "Robot Chozo Soldier",
-        "bossId": 123
-      },
-      {
-        "id": "robotchozob",
-        "name": "Robot Chozo Soldier",
-        "bossId": 125
-      },
-      {
-        "id": "twinrobotsa",
-        "name": "Twin Robot Chozo Soldiers",
-        "bossId": 133
-      },
-      {
-        "id": "twinrobotsb",
-        "name": "Twin Robot Chozo Soldiers"
+        "id": "emmi01p",
+        "name": "E.M.M.I.-02SM Showdown",
+        "bossId": 103
       },
       {
         "id": "corpius",
         "name": "Corpius",
-        "bossId": 121
+        "bossId": 104
+      },
+      {
+        "id": "cucat",
+        "name": "Central Unit Cataris",
+        "bossId": 105
+      },
+      {
+        "id": "emmi01p",
+        "name": "E.M.M.I.-03MB Showdown",
+        "bossId": 106
       },
       {
         "id": "kraid",
         "name": "Kraid",
-        "bossId": 122
+        "bossId": 107
+      },
+      {
+        "id": "cudai",
+        "name": "Central Unit Dairon",
+        "bossId": 108
+      },
+      {
+        "id": "emmi01p",
+        "name": "E.M.M.I.-04SB Showdown",
+        "bossId": 109
+      },
+      {
+        "id": "robotchozoa",
+        "name": "Robot Chozo Soldier",
+        "bossId": 110
       },
       {
         "id": "drogyga",
         "name": "Drogyga",
+        "bossId": 111
+      },
+      {
+        "id": "robotchozob",
+        "name": "Robot Chozo Soldier",
+        "bossId": 112
+      },
+      {
+        "id": "chozosoldiera",
+        "name": "Chozo Soldier",
+        "bossId": 121
+      },
+      {
+        "id": "chozosoldierb",
+        "name": "Chozo Soldier",
+        "bossId": 122
+      },
+      {
+        "id": "cugha",
+        "name": "Central Unit Ghavoran",
+        "bossId": 123
+      },
+      {
+        "id": "emmi01p",
+        "name": "E.M.M.I.-05IM Showdown",
         "bossId": 124
       },
       {
         "id": "escue",
         "name": "Escue-X",
-        "bossId": 132
+        "bossId": 125
+      },
+      {
+        "id": "twinrobotsa",
+        "name": "Robot Chozo Soldiers (x2)",
+        "bossId": 126
+      },
+      {
+        "id": "redchozoa",
+        "name": "Red Chozo Soldier",
+        "bossId": 127
       },
       {
         "id": "z57",
-        "name": "Experiment No. Z-57",
-        "bossId": 135
+        "name": "Experiment Z-57",
+        "bossId": 128
+      },
+      {
+        "id": "twinrobotsb",
+        "name": "Robot Chozo Soldiers (x2)",
+        "bossId": 129
       },
       {
         "id": "golzuna",
         "name": "Golzuna-X",
-        "bossId": 106
+        "bossId": 130
+      },
+      {
+        "id": "cufer",
+        "name": "Central Unit Ferenia",
+        "bossId": 131
+      },
+      {
+        "id": "emmi01p",
+        "name": "E.M.M.I.-06WB Showdown",
+        "bossId": 132
+      },
+      {
+        "id": "redchozob",
+        "name": "Red Chozo Soldier",
+        "bossId": 133
+      },
+      {
+        "id": "elitechozo",
+        "name": "Gold Chozo Soldier",
+        "bossId": 134
       },
       {
         "id": "ravenbeak",
@@ -736,453 +687,417 @@
     ],
     "extras": [
       {
-        "id": "teleportalA",
-        "name": "Red Teleportal",
-        "nodeType": "teleport"
+        "id": "missileRestoreD",
+        "name": "Missiles Reload",
+        "extraId": 1001,
+        "nodeType": "recharge"
       },
       {
-        "id": "teleportalY",
-        "name": "Orange Teleportal",
-        "nodeType": "teleport"
+        "id": "energyRestoreD",
+        "name": "Energy Recharge",
+        "extraId": 1002,
+        "nodeType": "recharge"
       },
       {
-        "id": "teleportalI",
-        "name": "Yellow Teleportal",
-        "nodeType": "teleport"
-      },
-      {
-        "id": "teleportalO",
-        "name": "Green Teleportal",
-        "nodeType": "teleport"
-      },
-      {
-        "id": "teleportalX",
-        "name": "Cyan Teleportal",
-        "nodeType": "teleport"
-      },
-      {
-        "id": "teleportalU",
-        "name": "Blue Teleportal",
-        "nodeType": "teleport"
-      },
-      {
-        "id": "teleportalE",
-        "name": "Purple Teleportal",
-        "nodeType": "teleport"
+        "id": "totalRestore",
+        "name": "Full Restore",
+        "extraId": 1003,
+        "nodeType": "recharge"
       },
       {
         "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Pressure Plate",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Debris",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Thermal Channel",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "chargeBeam",
-        "name": "Charge Beam Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "chargeBeam",
-        "name": "Charge Beam Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "chargeBeam",
-        "name": "Charge Beam Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Power Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Power Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "chozoStatue",
-        "name": "Burenia Hatch",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "powerBomb",
-        "name": "Broken Glass Tube",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "powerBomb",
-        "name": "Hanubia EMMI Zone",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "powerBomb",
-        "name": "Itorash Generator",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Environmental damage",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "grappleBeam",
-        "name": "Grapple Blocks broken",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Door Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Platform Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Spinner Rotated",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "slide",
-        "name": "Slide Escape",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Bridge Rotated",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Bridge Rotated",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Bridge Rotated",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Wall Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Lowered Lava",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Magnet Walls Pump",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Platform Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Bridge Rotated",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Platform Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "grappleBeam",
-        "name": "Big Grapple Box Pulled and in Place",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "grappleBeam",
-        "name": "Big Grapple Box Pulled and in Place",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "spiderMagnet",
-        "name": "Magnet Wall Lowered",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "seekerLauncherB",
-        "name": "Storm Gate Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "wideBeam",
-        "name": "Wide Beam Block Moved",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "grappleBeam",
-        "name": "Big Grapple Box Pulled and in Place",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "speedBooster",
-        "name": "Speed Blocks Destroyed",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "Quiet Robe",
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Broken Quarantine",
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Frozen Planet",
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Gravity Chamber Destruction",
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Escape Sequence",
-        "nodeType": "event"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "omegaBlast",
-        "name": "Omega Cannon",
-        "nodeType": "trigger"
-      },
-      {
-        "id": "unused",
-        "name": "EMMI Zone",
-        "nodeType": "event"
+        "name": "Save Station",
+        "extraId": 1004,
+        "nodeType": "save"
       },
       {
         "id": "unused",
         "name": "Map: Artaria",
+        "extraId": 1011,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Burenia",
+        "extraId": 1012,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Cataris",
+        "extraId": 1013,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Dairon",
+        "extraId": 1014,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Ferenia",
+        "extraId": 1015,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Ghavoran",
+        "extraId": 1016,
         "nodeType": "map"
       },
       {
-        "id": "missileRefill",
-        "name": "Missiles Reload",
-        "nodeType": "recharge"
-      },
-      {
-        "id": "energyRefill",
-        "name": "Energy Recharge",
-        "nodeType": "recharge"
-      },
-      {
-        "id": "rechargeRoom",
-        "name": "Full Restore",
-        "nodeType": "recharge"
-      },
-      {
-        "id": "navigationRoom",
+        "id": "networkStation",
         "name": "Network Station",
+        "extraId": 1021,
         "nodeType": "event"
       },
       {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "nodeType": "save"
+        "id": "teleportalPurple",
+        "name": "Purple Teleportal",
+        "extraId": 1031,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalBlue",
+        "name": "Blue Teleportal",
+        "extraId": 1032,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalCyan",
+        "name": "Cyan Teleportal",
+        "extraId": 1033,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalGreen",
+        "name": "Green Teleportal",
+        "extraId": 1034,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalYellow",
+        "name": "Yellow Teleportal",
+        "extraId": 1035,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalOrange",
+        "name": "Orange Teleportal",
+        "extraId": 1036,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "teleportalRed",
+        "name": "Red Teleportal",
+        "extraId": 1037,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "omegaCannonD",
+        "name": "Omega Cannon (Temporary)",
+        "extraId": 1041,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "slide",
+        "name": "Slide Tutorial",
+        "extraId": 1101,
+        "nodeType": "trigger"
       },
       {
         "id": "meleeCounter",
         "name": "Melee Counter tutorial",
+        "extraId": 1102,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Rubble Blockage",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-01P Encounter",
+        "extraId": 1104,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Central Unit 01P",
+        "extraId": 1105,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Empty Pool",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-02SM Encounter",
+        "extraId": 1107,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Thermal Redirect",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Corpius Shortcut",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Thermal Redirect 1",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magnet Rail Activator 1",
+        "extraId": 1111,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-03MB Encounter",
+        "extraId": 1112,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Thermal Redirect 2",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magnet Rail Activator 2",
+        "extraId": 1114,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Thermal Redirect 3",
+        "extraId": 1115,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magnet Rail Activator 3",
+        "extraId": 1116,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magnet Platform Lowered",
+        "extraId": 1117,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Thermal Redirect 4",
+        "extraId": 1118,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Generator 1",
+        "extraId": 1119,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-04SB Encounter",
+        "extraId": 1120,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Chain Reaction",
+        "extraId": 1121,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Chain Reaction Ended",
+        "extraId": 1122,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Red Zone Escape Path",
+        "extraId": 1123,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Power Generator 2",
+        "extraId": 1124,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-06WB Encounter",
+        "extraId": 1125,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.s Deactivated",
+        "extraId": 1126,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quiet Robe",
+        "extraId": 1127,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Upper Burenia Opened",
+        "extraId": 1128,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Grapple Crate 1",
+        "extraId": 1129,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-05IM Encounter",
+        "extraId": 1130,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Rotation Lock",
+        "extraId": 1131,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magnet Platform Lowered",
+        "extraId": 1132,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "X Parasites Released",
+        "extraId": 1133,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.s Reactivated",
+        "extraId": 1134,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Hunted By Chozo",
+        "extraId": 1135,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Grapple Crate 2",
+        "extraId": 1136,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Slopes Shortcut Clear",
+        "extraId": 1137,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Burenia Depths Destruction",
+        "extraId": 1138,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Frozen ZDR",
+        "extraId": 1139,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Rotation Lock 1",
+        "extraId": 1140,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Rotation Lock 2",
+        "extraId": 1141,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "ZDR Thawed",
+        "extraId": 1142,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Magma Grapple Block",
+        "extraId": 1143,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Burenia Depths Shortcut",
+        "extraId": 1144,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Storm Missile Gate",
+        "extraId": 1145,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.M.I.-07PB Encounter",
+        "extraId": 1146,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Metroid DNA Awakened",
+        "extraId": 1147,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Central Unit Hanubia",
+        "extraId": 1148,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "All Teleportals Unlocked",
+        "extraId": 1149,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1150,
         "nodeType": "event"
       }
     ],

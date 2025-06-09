@@ -87,6 +87,16 @@
         "segments": []
       },
       {
+        "id": "boss",
+        "nodeType": "boss",
+        "name": "Access",
+        "value": 0,
+        "start": 0,
+        "max": 2,
+        "segments": [],
+        "disabled": true
+      },
+      {
         "lookupId": 14,
         "value": 0,
         "start": 0,
@@ -110,7 +120,7 @@
     ],
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -119,7 +129,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -127,7 +137,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -136,7 +146,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -152,7 +162,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBallA",
+        "id": "springBallB",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -160,12 +170,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Prototype Wave Beam",
         "bg": "92278f",
@@ -173,7 +178,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -181,12 +186,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -194,7 +194,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -218,7 +218,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "monsterCapsule",
+        "id": "monsterCellCapsule",
         "sprite": "cell",
         "name": "Metroid Cell Capsule",
         "bg": "008080",
@@ -263,87 +263,93 @@
       {
         "id": 2,
         "name": "Surface Caverns Lift 2",
+        "alternateName": "Desolate Surface East",
         "color": "db2b00"
       },
       {
         "id": 3,
         "name": "Surface Caverns Lift 1",
+        "alternateName": "Desolate Surface West",
         "color": "db2b00"
       },
       {
         "id": 4,
         "name": "Volga",
+        "alternateName": "Bone Yard",
         "color": "009700"
       },
       {
         "id": 5,
         "name": "Vaara",
+        "alternateName": "Chozo Jungle",
         "color": "bf00bf"
       },
       {
         "id": 6,
         "name": "Federation Ship",
+        "alternateName": "Federation Science Ship",
         "color": "bf00bf"
       },
       {
         "id": 7,
         "name": "Metroid Nest",
+        "alternateName": "Metroid Hive",
         "color": "bcbcbc"
       }
     ],
     "extras": [
       {
         "id": "unused",
-        "name": "Beta Ray Info",
+        "name": "Word Search Easter Egg",
         "extraId": 1001,
-        "nodeType": "lore"
+        "nodeType": "easter"
       },
       {
         "id": "unused",
-        "name": "Captain Hint",
+        "name": "Beta Ray Info",
         "extraId": 1002,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Two Codes Hint",
+        "name": "Captain Hint",
         "extraId": 1003,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Wave Beam Hint",
+        "name": "Two Codes Hint",
         "extraId": 1004,
         "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "That One Easter Egg",
-        "extraId": 1006,
-        "nodeType": "easter"
+        "name": "Wave Beam Hint",
+        "extraId": 1005,
+        "nodeType": "lore"
       },
       {
         "id": "unused",
-        "name": "Word Search Easter Egg",
-        "extraId": 1005,
-        "nodeType": "easter"
-      },
-      {
-        "id": "rechargeRoom",
         "name": "Restore Energy and Ammo",
-        "extraId": 1007,
+        "extraId": 1011,
         "nodeType": "recharge"
       },
       {
         "id": "unused",
         "name": "Underwater Caverns",
-        "extraId": 1008,
+        "extraId": 1021,
         "nodeType": "area"
       },
       {
         "id": "unused",
         "name": "Chozo Ruins",
-        "extraId": 1009,
+        "extraId": 1022,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "That One Easter Egg",
+        "extraId": 1023,
         "nodeType": "area"
       },
       {
@@ -361,7 +367,7 @@
         "children": [
           {
             "nodeType": "recharge",
-            "id": 1007
+            "id": 1011
           },
           {
             "nodeType": "expansion",
@@ -494,7 +500,7 @@
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "expansion",
@@ -534,7 +540,7 @@
                     "children": [
                       {
                         "nodeType": "easter",
-                        "id": 1005
+                        "id": 1001
                       }
                     ]
                   }
@@ -551,11 +557,11 @@
         "children": [
           {
             "nodeType": "area",
-            "id": 1008,
+            "id": 1021,
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007,
+                "id": 1011,
                 "hubId": 12
               },
               {
@@ -779,6 +785,14 @@
                     "nodeType": "elevator",
                     "transportToMapId": 3,
                     "toStartHubId": 21
+                  },
+                  {
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 16,
+                    "hubid": 16
                   }
                 ],
                 "vineToHubId": 16
@@ -815,57 +829,73 @@
                 "isRandomizableItem": true
               },
               {
-                "nodeType": "upgrade",
-                "id": 8,
-                "isRandomizableItem": true
-              },
-              {
                 "nodeType": "dropdown",
                 "children": [
                   {
-                    "nodeType": "lock",
-                    "id": 7,
-                    "reqdItemCount": 1,
+                    "nodeType": "upgrade",
+                    "id": 8,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "dropdown",
                     "children": [
                       {
-                        "nodeType": "recharge",
-                        "id": 1007,
-                        "hubId": 26
+                        "nodeType": "lock",
+                        "id": 7,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "recharge",
+                            "id": 1011,
+                            "hubId": 26
+                          },
+                          {
+                            "nodeType": "elevator",
+                            "transportToMapId": 2,
+                            "toStartHubId": 11,
+                            "hubId": 26
+                          }
+                        ],
+                        "unused__children": [
+                          {
+                            "toStartHubId": 16,
+                            "hubId": 26
+                          }
+                        ],
+                        "vineToHubId": 26
                       },
                       {
-                        "nodeType": "elevator",
-                        "transportToMapId": 2,
-                        "toStartHubId": 11
-                      }
-                    ],
-                    "vineToHubId": 26
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 9,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "vineToHubId": 26
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 8,
-                    "reqdItemCount": 1,
-                    "children": [
+                        "nodeType": "lock",
+                        "id": 9,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 26
+                      },
                       {
-                        "nodeType": "expansion",
-                        "id": 4,
-                        "isRandomizableItem": true
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 4,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 25
                       }
                     ]
                   }
-                ],
-                "vineToHubId": 25
+                ]
               },
               {
-                "nodeType": "lock",
-                "id": 8,
-                "reqdItemCount": 1,
+                "nodeType": "return",
                 "children": [],
                 "vineToHubId": 25
               },
@@ -1015,7 +1045,7 @@
                             "children": [
                               {
                                 "nodeType": "recharge",
-                                "id": 1007
+                                "id": 1011
                               },
                               {
                                 "nodeType": "elevator",
@@ -1041,7 +1071,7 @@
         "children": [
           {
             "nodeType": "recharge",
-            "id": 1007
+            "id": 1011
           },
           {
             "nodeType": "lock",
@@ -1082,7 +1112,8 @@
               {
                 "nodeType": "expansion",
                 "id": 4,
-                "isRandomizableItem": true
+                "isRandomizableItem": true,
+                "hubId": 42
               }
             ],
             "vineToHubId": 42
@@ -1149,11 +1180,11 @@
                   },
                   {
                     "nodeType": "area",
-                    "id": 1009,
+                    "id": 1022,
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "lock",
@@ -1174,7 +1205,7 @@
                         "children": [
                           {
                             "nodeType": "recharge",
-                            "id": 1007
+                            "id": 1011
                           },
                           {
                             "nodeType": "lock",
@@ -1200,11 +1231,6 @@
                               {
                                 "nodeType": "upgrade",
                                 "id": 15
-                              },
-                              {
-                                "nodeType": "dropdown",
-                                "children": [],
-                                "vineToHubId": 43
                               }
                             ]
                           }
@@ -1215,11 +1241,6 @@
                 ]
               }
             ]
-          },
-          {
-            "nodeType": "return",
-            "children": [],
-            "vineToHubId": 43
           }
         ]
       },
@@ -1230,7 +1251,7 @@
         "children": [
           {
             "nodeType": "lore",
-            "id": 1001
+            "id": 1002
           },
           {
             "nodeType": "lock",
@@ -1239,7 +1260,7 @@
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007
+                "id": 1011
               }
             ]
           },
@@ -1325,11 +1346,11 @@
             "children": [
               {
                 "nodeType": "lore",
-                "id": 1002
+                "id": 1003
               },
               {
                 "nodeType": "lore",
-                "id": 1003
+                "id": 1004
               },
               {
                 "nodeType": "expansion",
@@ -1350,7 +1371,7 @@
                 "children": [
                   {
                     "nodeType": "recharge",
-                    "id": 1007
+                    "id": 1011
                   }
                 ]
               }
@@ -1368,7 +1389,7 @@
                 "children": [
                   {
                     "nodeType": "lore",
-                    "id": 1004
+                    "id": 1005
                   },
                   {
                     "nodeType": "expansion",
@@ -1396,7 +1417,7 @@
                     "children": [
                       {
                         "nodeType": "easter",
-                        "id": 1006,
+                        "id": 1023,
                         "children": [
                           {
                             "nodeType": "lock",
@@ -1493,7 +1514,7 @@
             "children": [
               {
                 "nodeType": "recharge",
-                "id": 1007
+                "id": 1011
               },
               {
                 "nodeType": "lock",
@@ -1502,7 +1523,7 @@
                 "children": [
                   {
                     "nodeType": "recharge",
-                    "id": 1007
+                    "id": 1011
                   },
                   {
                     "nodeType": "lock",
@@ -1511,7 +1532,7 @@
                     "children": [
                       {
                         "nodeType": "recharge",
-                        "id": 1007
+                        "id": 1011
                       },
                       {
                         "nodeType": "boss",

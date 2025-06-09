@@ -99,7 +99,7 @@
             "max": 3
           },
           {
-            "lookupId": 1011,
+            "lookupId": 1201,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -120,7 +120,7 @@
             "max": 3
           },
           {
-            "lookupId": 1012,
+            "lookupId": 1202,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -141,7 +141,7 @@
             "max": 3
           },
           {
-            "lookupId": 1013,
+            "lookupId": 1203,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -162,7 +162,7 @@
             "max": 3
           },
           {
-            "lookupId": 1014,
+            "lookupId": 1204,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -183,14 +183,14 @@
             "max": 8
           },
           {
-            "lookupId": 1019,
+            "lookupId": 1105,
             "value": 0,
             "start": 0,
             "max": 1,
             "clearIfScramble": true
           },
           {
-            "lookupId": 1020,
+            "lookupId": 1103,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -232,7 +232,7 @@
             "max": 3
           },
           {
-            "lookupId": 1015,
+            "lookupId": 1205,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -253,7 +253,7 @@
             "max": 3
           },
           {
-            "lookupId": 1016,
+            "lookupId": 1206,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -274,7 +274,7 @@
             "max": 3
           },
           {
-            "lookupId": 1017,
+            "lookupId": 1208,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -295,7 +295,7 @@
             "max": 3
           },
           {
-            "lookupId": 1018,
+            "lookupId": 1207,
             "value": 0,
             "start": 0,
             "max": 1,
@@ -306,7 +306,7 @@
     ],
     "items": [
       {
-        "id": "powerBeam",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -347,7 +347,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "sprite": "tank",
         "singleItemName": "Missile Expansion",
@@ -357,7 +357,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "sprite": "energy",
         "singleItemName": "Energy Tank",
@@ -366,7 +366,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "missileD",
+        "id": "missileLauncherH",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "886848",
@@ -503,7 +503,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "omegaCannon",
+        "id": "omegaCannonH",
         "name": "Omega Cannon",
         "sprite": "omega",
         "bg": "c8d8d8",
@@ -611,98 +611,108 @@
       {
         "id": "unused",
         "name": "Teleporter A",
-        "nodeType": "teleport",
-        "extraId": 1001
+        "extraId": 1001,
+        "nodeType": "teleport"
       },
       {
         "id": "unused",
         "name": "Teleporter B",
-        "nodeType": "teleport",
-        "extraId": 1002
+        "extraId": 1002,
+        "nodeType": "teleport"
+      },
+      {
+        "id": "shieldKey",
+        "name": "Shield Key",
+        "extraId": 1101,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "Spire Event",
-        "nodeType": "event",
-        "extraId": 1003
+        "extraId": 1102,
+        "nodeType": "trigger"
       },
       {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1011,
-        "bg": "008080"
+        "id": "oubliette",
+        "name": "Oubliette Accessible",
+        "extraId": 1103,
+        "nodeType": "trigger"
       },
       {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1012,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1013,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1014,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1015,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1016,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1017,
-        "bg": "008080"
-      },
-      {
-        "id": "octolith",
-        "sprite": "octolith",
-        "name": "Octolith",
-        "nodeType": "event",
-        "extraId": 1018,
-        "bg": "008080"
+        "id": "oubliette",
+        "name": "Scan Point",
+        "extraId": 1104,
+        "nodeType": "trigger"
       },
       {
         "id": "alimbicCannon",
         "name": "Alimbic Cannon Control Room",
-        "nodeType": "event",
-        "extraId": 1019,
-        "bg": "ffffff"
+        "extraId": 1105,
+        "nodeType": "event"
       },
       {
-        "id": "oubliette",
-        "name": "Oubliette unlocked",
-        "nodeType": "event",
-        "extraId": 1020,
-        "bg": "ffffff"
+        "id": "octolith",
+        "name": "Octolith 1",
+        "sprite": "octolith",
+        "extraId": 1201,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 2",
+        "sprite": "octolith",
+        "extraId": 1202,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 3",
+        "sprite": "octolith",
+        "extraId": 1203,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 4",
+        "sprite": "octolith",
+        "extraId": 1204,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 5",
+        "sprite": "octolith",
+        "extraId": 1205,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 6",
+        "sprite": "octolith",
+        "extraId": 1206,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith 7",
+        "sprite": "octolith",
+        "extraId": 1207,
+        "nodeType": "artifact",
+        "bg": "008080"
+      },
+      {
+        "id": "octolith",
+        "name": "Octolith",
+        "sprite": "octolith 8",
+        "extraId": 1208,
+        "nodeType": "artifact",
+        "bg": "008080"
       }
     ],
     "mapTree": [

@@ -185,7 +185,7 @@
 .game-md .usesAllSprites .item-image.iceMissileD,
 .game-mp3c .usesAllSprites .item-image.iceMissileC { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
 .game-mf .usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
-.game-mmm .usesAllSprites .item-image.empty_space { background: url("images/mzm_full_spritesheet.png") -84px -168px; } /* TODO: fill this */
+/*.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -84px -168px; }*/ /* TODO: fill this */
 .game-mf .usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }
 .game-msr .usesAllSprites .item-image.charge,
 .game-sm .usesAllSprites .item-image.charge,

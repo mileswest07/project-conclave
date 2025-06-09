@@ -288,19 +288,6 @@
                 "id": 2,
                 "reqdItemCount": 1,
                 "children": [
-                  {
-                    "nodeType": "lock",
-                    "id": 3,
-                    "reqdItemCount": 1,
-                    "children": [
-                      {
-                        "nodeType": "expansion",
-                        "id": 1,
-                        "isRandomizableItem": true
-                      }
-                    ],
-                    "hubId": 3
-                  }
                 ],
                 "hubId": 2,
                 "vineToHubId": 3
@@ -321,6 +308,25 @@
             "reqdItemCount": 1,
             "children": [],
             "vineToHubId": 3
+          },
+          {
+            "nodeType": "lock",
+            "id": 2,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 3,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 1,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "nodeType": "lock",
@@ -350,22 +356,15 @@
                         "id": 3,
                         "isRandomizableItem": true,
                         "hubId": 4
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 3,
+                        "reqdItemCount": 1,
+                        "hubId": 4,
+                        "vineToHubId": 14
                       }
                     ],
-                    "vineToHubId": 4
-                  }
-                ]
-              },
-              {
-                "nodeType": "lock",
-                "id": 2,
-                "reqdItemCount": 1,
-                "children": [
-                  {
-                    "nodeType": "lock",
-                    "id": 3,
-                    "reqdItemCount": 1,
-                    "children": [],
                     "vineToHubId": 4
                   }
                 ]
@@ -381,6 +380,20 @@
                     "reqdItemCount": 1,
                     "children": [],
                     "vineToHubId": 4
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 3,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 14
                   }
                 ]
               },
@@ -438,11 +451,16 @@
                                       {
                                         "nodeType": "upgrade",
                                         "id": 7,
-                                        "isRandomizableItem": true,
-                                        "hubId": 8
+                                        "isRandomizableItem": true
+                                      },
+                                      {
+                                        "nodeType": "lock",
+                                        "id": 7,
+                                        "reqdItemCount": 1,
+                                        "children": [],
+                                        "vineToHubId": 8
                                       }
-                                    ],
-                                    "vineToHubId": 8
+                                    ]
                                   }
                                 ]
                               }
@@ -451,16 +469,9 @@
                           },
                           {
                             "nodeType": "return",
-                            "children": [
-                              {
-                                "nodeType": "lock",
-                                "id": 7,
-                                "reqdItemCount": 1,
-                                "children": [],
-                                "vineToHubId": 8
-                              }
-                            ],
-                            "hubId": 7
+                            "children": [],
+                            "hubId": 7,
+                            "vineToHubId": 8
                           }
                         ],
                         "vineToHubId": 7
@@ -482,92 +493,67 @@
                             "id": 1001
                           },
                           {
+                            "nodeType": "expansion",
+                            "id": 1,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 6,
+                            "isRandomizableItem": true
+                          },
+                          {
                             "nodeType": "dropdown",
                             "children": [
                               {
-                                "nodeType": "expansion",
-                                "id": 1,
-                                "isRandomizableItem": true,
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "expansion",
-                                "id": 6,
-                                "isRandomizableItem": true,
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "dropdown",
+                                "nodeType": "boss",
+                                "id": 102,
                                 "children": [
                                   {
-                                    "nodeType": "boss",
-                                    "id": 103,
-                                    "children": [
-                                      {
-                                        "nodeType": "upgrade",
-                                        "id": 8,
-                                        "isRandomizableItem": true,
-                                        "hubId": 10
-                                      }
-                                    ],
-                                    "vineToHubId": 10
-                                  }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "return",
-                                "children": [
+                                    "nodeType": "upgrade",
+                                    "id": 8,
+                                    "isRandomizableItem": true,
+                                    "hubId": 10
+                                  },
                                   {
                                     "nodeType": "lock",
                                     "id": 8,
                                     "reqdItemCount": 1,
                                     "children": [],
-                                    "vineToHubId": 10
+                                    "vineToHubId": 9
                                   }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "lock",
-                                "id": 8,
-                                "reqdItemCount": 1,
-                                "children": [
-                                  {
-                                    "nodeType": "expansion",
-                                    "id": 1,
-                                    "isRandomizableItem": true
-                                  }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "lock",
-                                "id": 8,
-                                "reqdItemCount": 1,
-                                "children": [
-                                  {
-                                    "nodeType": "expansion",
-                                    "id": 1,
-                                    "isRandomizableItem": true
-                                  }
-                                ],
-                                "hubId": 9
+                                ]
                               }
-                            ],
+                            ]
+                          },
+                          {
+                            "nodeType": "return",
+                            "children": [],
                             "vineToHubId": 9
                           },
                           {
                             "nodeType": "lock",
                             "id": 8,
                             "reqdItemCount": 1,
-                            "children": [],
-                            "vineToHubId": 9
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              }
+                            ]
                           },
                           {
-                            "nodeType": "return",
-                            "children": [],
-                            "vineToHubId": 9
+                            "nodeType": "lock",
+                            "id": 8,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              }
+                            ]
                           }
                         ]
                       },
@@ -638,45 +624,53 @@
                     ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 1,
+            "reqdItemCount": 1,
+            "children": [
               {
-                "nodeType": "lock",
-                "id": 1,
-                "reqdItemCount": 1,
+                "nodeType": "dropdown",
                 "children": [
                   {
-                    "nodeType": "dropdown",
-                    "children": [
-                      {
-                        "nodeType": "upgrade",
-                        "id": 4,
-                        "isRandomizableItem": true,
-                        "hubId": 6
-                      }
-                    ],
-                    "hubId": 5,
-                    "vineToHubId": 6
+                    "nodeType": "upgrade",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "hubId": 6
                   },
                   {
                     "nodeType": "lock",
                     "id": 4,
                     "reqdItemCount": 1,
                     "children": [],
-                    "hubId": 5,
-                    "vineToHubId": 6
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 8,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "hubId": 5,
-                    "vineToHubId": 6
+                    "hubId": 6,
+                    "vineToHubId": 16
                   }
                 ],
-                "vineToHubId": 5
+                "hubId": 5,
+                "vineToHubId": 6
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [],
+                "hubId": 5,
+                "vineToHubId": 6
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "hubId": 5,
+                "vineToHubId": 16
               }
-            ]
+            ],
+            "vineToHubId": 5
           },
           {
             "nodeType": "lock",

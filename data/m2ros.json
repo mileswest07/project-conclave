@@ -434,7 +434,7 @@
         "id": "gunshipS",
         "name": "Gunship",
         "extraId": 1004,
-        "nodeType": "recharge"
+        "nodeType": "map"
       },
       {
         "id": "unused",
@@ -465,21 +465,38 @@
         "mapId": 1,
         "children": [
           {
-            "nodeType": "event",
-            "id": 1004
-          },
-          {
-            "nodeType": "save",
             "id": 1003
           },
           {
+            "id": 1004,
+            "children": [
+              {
+                "id": 1002,
+                "children": [
+                  {
+                    "id": 1001
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "nodeType": "battle",
-            "id": 103
+            "id": 103,
+            "children": [
+              {
+                "id": 1001
+              },
+              {
+                "id": 1002
+              }
+            ]
           },
           {
             "nodeType": "lock",
             "id": 1021,
             "reqdItemCount": 1,
+            "forceDisplayCount": true,
             "children": [
               {
                 "nodeType": "elevator",
@@ -490,6 +507,7 @@
                 "nodeType": "lock",
                 "id": 1021,
                 "reqdItemCount": 4,
+                "forceDisplayCount": true,
                 "children": [
                   {
                     "nodeType": "elevator",
@@ -500,6 +518,7 @@
                     "nodeType": "lock",
                     "id": 1021,
                     "reqdItemCount": 8,
+                    "forceDisplayCount": true,
                     "children": [
                       {
                         "nodeType": "elevator",
@@ -510,6 +529,7 @@
                         "nodeType": "lock",
                         "id": 1021,
                         "reqdItemCount": 4,
+                        "forceDisplayCount": true,
                         "children": [
                           {
                             "nodeType": "battle",
@@ -519,6 +539,7 @@
                             "nodeType": "lock",
                             "id": 1021,
                             "reqdItemCount": 2,
+                            "forceDisplayCount": true,
                             "children": [
                               {
                                 "nodeType": "elevator",
@@ -528,37 +549,33 @@
                               {
                                 "nodeType": "lock",
                                 "id": 1021,
-                                "reqdItemCount": 4,
+                                "reqdItemCount": 7,
+                                "forceDisplayCount": true,
                                 "children": [
+                                  {
+                                    "nodeType": "battle",
+                                    "id": 103
+                                  },
                                   {
                                     "nodeType": "lock",
                                     "id": 1021,
-                                    "reqdItemCount": 7,
+                                    "reqdItemCount": 1,
+                                    "forceDisplayCount": true,
                                     "children": [
                                       {
                                         "nodeType": "battle",
-                                        "id": 103
+                                        "id": 106
                                       },
                                       {
                                         "nodeType": "lock",
                                         "id": 1021,
                                         "reqdItemCount": 1,
+                                        "forceDisplayCount": true,
                                         "children": [
                                           {
-                                            "nodeType": "battle",
-                                            "id": 106
-                                          },
-                                          {
-                                            "nodeType": "lock",
-                                            "id": 1021,
-                                            "reqdItemCount": 1,
-                                            "children": [
-                                              {
-                                                "nodeType": "elevator",
-                                                "transportToMapId": 6,
-                                                "toStartHubId": 51
-                                              }
-                                            ]
+                                            "nodeType": "elevator",
+                                            "transportToMapId": 6,
+                                            "toStartHubId": 51
                                           }
                                         ]
                                       }
@@ -574,14 +591,25 @@
                         "nodeType": "lock",
                         "id": 1021,
                         "reqdItemCount": 1,
+                        "forceDisplayCount": true,
                         "children": [
                           {
                             "nodeType": "battle",
-                            "id": 103
+                            "id": 103,
+                            "children": [
+                              {
+                                "id": 1002
+                              }
+                            ]
                           },
                           {
                             "nodeType": "battle",
-                            "id": 104
+                            "id": 104,
+                            "children": [
+                              {
+                                "id": 1001
+                              }
+                            ]
                           }
                         ]
                       }

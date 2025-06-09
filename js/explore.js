@@ -41,14 +41,14 @@ let interaction = {
     "upgrade", //       rhombus; required - unknown
     "slot", //          pentagon
     "expansion", //     triangle
-    "event", //         circle OR signpost
+    "event", //         circle
     "area", //          rectangle
     "map", //           circle
     "trigger", //       rhombus
     "toggle", //        pentagon
     "save", //          wedge
     "recharge", //      wedge
-    "lore", //          circle
+    "lore", //          circle, TODO: change this from triangle to circle
     "easter", //        wedge
   ];
   
@@ -223,7 +223,7 @@ let interaction = {
         let itemClassName = hierarchy[r].displayIcon;
         let queryStringCheck = `.item-image.${itemClassName}`;
         let measurement = 50;
-        let sourcex = 1500;
+        let sourcex = 2000;
         let sourcey = 1100;
         let doRDAccessLockException = false;
         let doM1BossLockException = false;
@@ -232,6 +232,7 @@ let interaction = {
           doRDAccessLockException = true;
           sourcex = 336;
           sourcey = 84;
+          measurement = 42;
         }
         
         if (explorer.currentGame === "m1" && ["kraid", "ridley"].includes(itemClassName)) {
@@ -239,6 +240,7 @@ let interaction = {
           doM1BossLockException = true;
           sourcex = 168;
           sourcey = 126;
+          measurement = 42;
         }
         
         if (explorer.useAllSprites) {
@@ -250,9 +252,9 @@ let interaction = {
           if (["random", "itemOrb", "unused"].includes(itemClassName)) {
             queryStringCheck = `.usesAllSprites .item-image.${itemClassName}`;
           }
-          sourcex = 672;
-          sourcey = 630;
-          measurement = 42;
+          sourcex = 2000;
+          sourcey = 1100;
+          measurement = 50;
         } else if (explorer.useSprites && hierarchy[r].spriteImage) {
           usesSpriteAfterAll = 1;
           itemClassName = hierarchy[r].spriteImage;
@@ -1031,10 +1033,11 @@ let interaction = {
     let outerText = "";
     let innerCountText = "";
     
+    // TODO: figure out how to apply different decorators here, not just hardcode the >, #, or × symbols
     if (cardData.itemHoverLabel || cardData.count || cardData.reqdItemCount) {
       if (cardData.count) {
         innerCountText = `× ${cardData.count}`;
-      } else if (cardData.reqdItemCount && cardData.reqdItemCount > 1) {
+      } else if ((cardData.hasOwnProperty("forceDisplayCount") && cardData.forceDisplayCount) || (cardData.reqdItemCount && cardData.reqdItemCount > 1)) {
         innerCountText = `> ${cardData.reqdItemCount}`;
       }
       if (imageName && imageName.length && imageName !== "unused") {
@@ -1141,6 +1144,9 @@ let interaction = {
             measurement = 60;
             break;
         }
+      }
+      if (explorer.currentGame === "mrd" && ["m_lock1", "m_lock2"].includes(imageName)) {
+        measurement = 42;
       }
       
       if (explorer.allowColors && cardData.hasOwnProperty("bossId")) {

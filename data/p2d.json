@@ -295,6 +295,16 @@
         "mapId": 1,
         "children": [
           {
+            "nodeType": "map",
+            "id": 1012,
+            "children": [
+              {
+                "nodeType": "save",
+                "id": 1011
+              }
+            ]
+          },
+          {
             "nodeType": "lock",
             "id": 4,
             "reqdItemCount": 1,
@@ -376,21 +386,19 @@
                 "nodeType": "artifact",
                 "id": 14,
                 "isRandomizableItem": true,
-                "name": "Artifact of Truth",
-                "children": [
-                  {
-                    "nodeType": "upgrade",
-                    "id": 6,
-                    "isRandomizableItem": true
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 6,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "vineToHubId": 2
-                  }
-                ]
+                "name": "Artifact of Truth"
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 6,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "lock",
+                "id": 6,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 2
               }
             ]
           },
@@ -481,21 +489,24 @@
                     "children": [
                       {
                         "nodeType": "lock",
-                        "id": 6,
+                        "id": 11,
                         "reqdItemCount": 1,
                         "children": [
                           {
                             "nodeType": "expansion",
                             "id": 9,
-                            "isRandomizableItem": true
+                            "isRandomizableItem": true,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "area",
-                            "id": 1001
+                            "id": 1001,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "battle",
-                            "id": 102
+                            "id": 102,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -507,7 +518,8 @@
                                 "id": 13,
                                 "isRandomizableItem": true
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -518,7 +530,8 @@
                                 "nodeType": "battle",
                                 "id": 105
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -531,7 +544,8 @@
                                 "isRandomizableItem": true,
                                 "name": "Artifact of Chozo"
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -544,7 +558,8 @@
                                 "isRandomizableItem": true,
                                 "name": "Artifact of Lifegiver"
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           }
                         ],
                         "vineToHubId": 3
@@ -630,6 +645,19 @@
             "children": [
               {
                 "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "artifact",
+                    "id": 14,
+                    "isRandomizableItem": true,
+                    "name": "Artifact of Nature"
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
                 "id": 10,
                 "reqdItemCount": 1,
                 "children": [
@@ -644,19 +672,6 @@
                         "isRandomizableItem": true
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "nodeType": "lock",
-                "id": 4,
-                "reqdItemCount": 1,
-                "children": [
-                  {
-                    "nodeType": "artifact",
-                    "id": 14,
-                    "isRandomizableItem": true,
-                    "name": "Artifact of Nature"
                   }
                 ]
               }
@@ -680,6 +695,10 @@
         "nodeType": "start",
         "mapId": 2,
         "children": [
+          {
+            "nodeType": "save",
+            "id": 1011
+          },
           {
             "nodeType": "easter",
             "id": 1002

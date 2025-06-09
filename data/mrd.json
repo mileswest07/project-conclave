@@ -785,12 +785,14 @@
                     "nodeType": "elevator",
                     "transportToMapId": 3,
                     "toStartHubId": 21
-                  }
-                ],
-                "unused__children": [
+                  },
                   {
-                    "toStartHubId": 26,
-                    "hubId": 16
+                    "nodeType": "lock",
+                    "id": 8,
+                    "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 16,
+                    "hubid": 16
                   }
                 ],
                 "vineToHubId": 16
@@ -827,63 +829,73 @@
                 "isRandomizableItem": true
               },
               {
-                "nodeType": "upgrade",
-                "id": 8,
-                "isRandomizableItem": true
-              },
-              {
                 "nodeType": "dropdown",
                 "children": [
                   {
-                    "nodeType": "lock",
-                    "id": 7,
-                    "reqdItemCount": 1,
+                    "nodeType": "upgrade",
+                    "id": 8,
+                    "isRandomizableItem": true
+                  },
+                  {
+                    "nodeType": "dropdown",
                     "children": [
                       {
-                        "nodeType": "recharge",
-                        "id": 1011,
-                        "hubId": 26
+                        "nodeType": "lock",
+                        "id": 7,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "recharge",
+                            "id": 1011,
+                            "hubId": 26
+                          },
+                          {
+                            "nodeType": "elevator",
+                            "transportToMapId": 2,
+                            "toStartHubId": 11,
+                            "hubId": 26
+                          }
+                        ],
+                        "unused__children": [
+                          {
+                            "toStartHubId": 16,
+                            "hubId": 26
+                          }
+                        ],
+                        "vineToHubId": 26
                       },
                       {
-                        "nodeType": "elevator",
-                        "transportToMapId": 2,
-                        "toStartHubId": 11
-                      }
-                    ],
-                    "unused__children": [
+                        "nodeType": "lock",
+                        "id": 9,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 26
+                      },
                       {
-                        "toStartHubId": 16,
-                        "hubId": 26
-                      }
-                    ],
-                    "vineToHubId": 26
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 9,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "vineToHubId": 26
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 8,
-                    "reqdItemCount": 1,
-                    "children": [
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [
+                          {
+                            "nodeType": "expansion",
+                            "id": 4,
+                            "isRandomizableItem": true
+                          }
+                        ]
+                      },
                       {
-                        "nodeType": "expansion",
-                        "id": 4,
-                        "isRandomizableItem": true
+                        "nodeType": "lock",
+                        "id": 8,
+                        "reqdItemCount": 1,
+                        "children": [],
+                        "vineToHubId": 25
                       }
                     ]
                   }
-                ],
-                "vineToHubId": 25
+                ]
               },
               {
-                "nodeType": "lock",
-                "id": 8,
-                "reqdItemCount": 1,
+                "nodeType": "return",
                 "children": [],
                 "vineToHubId": 25
               },
@@ -1100,7 +1112,8 @@
               {
                 "nodeType": "expansion",
                 "id": 4,
-                "isRandomizableItem": true
+                "isRandomizableItem": true,
+                "hubId": 42
               }
             ],
             "vineToHubId": 42
@@ -1218,11 +1231,6 @@
                               {
                                 "nodeType": "upgrade",
                                 "id": 15
-                              },
-                              {
-                                "nodeType": "dropdown",
-                                "children": [],
-                                "vineToHubId": 43
                               }
                             ]
                           }
@@ -1233,11 +1241,6 @@
                 ]
               }
             ]
-          },
-          {
-            "nodeType": "return",
-            "children": [],
-            "vineToHubId": 43
           }
         ]
       },

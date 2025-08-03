@@ -206,7 +206,16 @@
         "value": 0,
         "start": 0,
         "max": 0,
-        "segments": []
+        "segments": [],
+        "clearIfScramble": true
+      },
+      {
+        "lookupId": 28,
+        "value": 0,
+        "start": 0,
+        "max": 5,
+        "segments": [],
+        "displayIfScramble": true
       },
       {
         "lookupId": -1,
@@ -658,6 +667,14 @@
         "bg": "2038ec",
         "itemId": 27,
         "nodeType": "upgrade"
+      },
+      {
+        "id": "monster",
+        "name": "Infant Metroids",
+        "sprite": "monster",
+        "bg": "008080",
+        "itemId": 28,
+        "nodeType": "artifact"
       }
     ],
     "bosses": [

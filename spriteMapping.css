@@ -529,6 +529,7 @@
 .game-mf .usesSprite .item-image.final { background: url("images/mf_spritesheet.png") -129px -172px; }
 .game-mf .usesSprite .item-image.morph { background: url("images/mf_spritesheet.png") -172px -172px; }
 .game-mf .usesSprite .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
+.game-mf .usesSprite .item-image.monster { background: url("images/mf_spritesheet.png") 0 -215px; }
 
 /********* M5 - METROID DREAD (NS) *********/
 .game-md .usesSprite:not(.usesAllSprites),

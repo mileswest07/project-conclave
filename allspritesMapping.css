@@ -413,7 +413,8 @@
 .game-mp2e .usesAllSprites .item-image.cobaltTranslatorL { background: url("images/mzm_full_spritesheet.png") -546px -546px; }
 .game-m2ros .usesAllSprites .item-image.baby,
 .game-md .usesAllSprites .item-image.monsterDna,
-.game-msr .usesAllSprites .item-image.baby { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
+.game-msr .usesAllSprites .item-image.baby,
+.game-mf .usesSprite .item-image.monster { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
 .game-mp3c .usesAllSprites .item-image.corruptedHypermode { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
 
 .game-mzm .usesAllSprites .item-image.emergencyPistol { background: url("images/mzm_full_spritesheet.png") 0 -588px; } /*does not exist as item in Raw Data*/

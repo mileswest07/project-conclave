@@ -494,7 +494,7 @@ let main = {
       console.warn(`count mismatch: ${totalItemCount + totalExtraCount} vs ${totalTypeCount}; please investigate!`);
     }
     /*
-      Indicates there is a placeholder icon on m_graphics.png ,
+      Indicates there is a placeholder icon on placeholders.png ,
       that is not allocated to any items in data/*.json .
       Note that this is meant to cover icons under properties [items, checklistLayout, and extras],
       but does not cover icons that may be used under other properties [bosses, areas, or map].
@@ -503,7 +503,7 @@ let main = {
     console.info("item IDs not used:", itemIdResults[1]);
     if (itemIdsWithoutGraphics[0].length > 0) {
       /*
-        Indicates there is a missing placeholder icon on m_graphics.png ,
+        Indicates there is a missing placeholder icon on placeholders.png ,
         where an ID is attempting to link to a region not allocated on spriteMapping.css .
         Attempting to draw this icon will display a blank image.
       */

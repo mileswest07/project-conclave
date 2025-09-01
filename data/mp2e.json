@@ -1,513 +1,515 @@
 {
   "mp2e": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Great Temple - Main Energy Controller 1"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Torvus Bog - Torvus Temple"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Bomb Guardian Defeated"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Jump Guardian Defeated"
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Dark Alpha Splinter Defeated"
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Agon Wastes - Agon Energy Controller"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Agon Wastes - Storage D"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Agon Wastes - Mining Station B"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - GFMC Compound"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Boost Guardian Defeated"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Amorbis Defeated"
-      },
-      {
-        "lookupId": 32,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Chykka Defeated"
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Torvus Bog - Torvus Energy Controller"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Dark Agon Wastes - Ing Cache 1"
-      },
-      {
-        "lookupId": 37,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - Grand Windchamber"
-      },
-      {
-        "lookupId": 27,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - Hall of Honored Dead"
-      },
-      {
-        "lookupId": 34,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Spider Guardian Defeated"
-      },
-      {
-        "lookupId": 30,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Grapple Guardian Defeated"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Torvus Bog - Hydrodynamo Storage"
-      },
-      {
-        "lookupId": 38,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Sanctuary Fortress - Aerie"
-      },
-      {
-        "lookupId": 33,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Sanctuary Fortress - Sanctuary Temple"
-      },
-      {
-        "lookupId": 41,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Quadraxis Defeated"
-      },
-      {
-        "lookupId": 42,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Dark Agon Wastes - Ing Cache 2"
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 35,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Power Bomb Guardian Defeated"
-      },
-      {
-        "lookupId": 39,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Sanctuary Fortress - Vault"
-      },
-      {
-        "lookupId": 43,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Great Temple - Main Energy Controller 2"
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 49,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 30,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 36,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": 44,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 45,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 46,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 21,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Amorbis required"
-          },
-          {
-            "lookupId": 1110,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1111,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Amorbis required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 31,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Chykka required"
-          },
-          {
-            "lookupId": 1122,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1123,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 31,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Chykka required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 40,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Quadraxis required"
-          },
-          {
-            "lookupId": 1129,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1130,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 40,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Quadraxis required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 9,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 47,
-            "value": 0,
-            "start": 0,
-            "max": 9,
-            "over": "E_Lumin_Ex",
-            "overText": "Hints acquired"
-          },
-          {
-            "lookupId": 1132,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 47,
-        "value": 1,
-        "start": 0,
-        "max": 9,
-        "over": "E_Lumin_Ex",
-        "overText": "Hints acquired",
-        "displayIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "8x5": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 1"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Torvus Temple"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Jump Guardian Defeated"
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Dark Alpha Splinter Defeated"
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "E_Lumin",
+          "overText": "Agon Wastes - Agon Energy Controller"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Storage D"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Mining Station B"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - GFMC Compound"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Boost Guardian Defeated"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Amorbis Defeated"
+        },
+        {
+          "lookupId": 32,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Chykka Defeated"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "E_Lumin",
+          "overText": "Torvus Bog - Torvus Energy Controller"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 1"
+        },
+        {
+          "lookupId": 37,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Grand Windchamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Hall of Honored Dead"
+        },
+        {
+          "lookupId": 34,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Spider Guardian Defeated"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Grapple Guardian Defeated"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Hydrodynamo Storage"
+        },
+        {
+          "lookupId": 38,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Aerie"
+        },
+        {
+          "lookupId": 33,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "E_Lumin",
+          "overText": "Sanctuary Fortress - Sanctuary Temple"
+        },
+        {
+          "lookupId": 41,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Quadraxis Defeated"
+        },
+        {
+          "lookupId": 42,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 2"
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 35,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Power Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 39,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Vault"
+        },
+        {
+          "lookupId": 43,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 2"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 14,
+          "segments": []
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 49,
+          "segments": [],
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 30,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 4,
+          "segments": [],
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 36,
+          "value": 1,
+          "start": 0,
+          "max": 8,
+          "segments": []
+        },
+        {
+          "lookupId": 44,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 45,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 46,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 21,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Amorbis required"
+            },
+            {
+              "lookupId": 1110,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1111,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Amorbis required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 31,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Chykka required"
+            },
+            {
+              "lookupId": 1122,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1123,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 31,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Chykka required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 40,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Quadraxis required"
+            },
+            {
+              "lookupId": 1129,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1130,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 40,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Quadraxis required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 9,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 47,
+              "value": 0,
+              "start": 0,
+              "max": 9,
+              "over": "E_Lumin_Ex",
+              "overText": "Hints acquired"
+            },
+            {
+              "lookupId": 1132,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 47,
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "over": "E_Lumin_Ex",
+          "overText": "Hints acquired",
+          "displayIfScramble": true
+        }
+      ]
+    },
+    "defaultWidth": 8,
     "items": [
       {
         "id": "combatVisorE",

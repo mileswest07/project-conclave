@@ -1,212 +1,456 @@
 {
   "sm": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Morphing Ball Item Acquired"
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Torizo Defeated"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Spring Ball Orb Acquired"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Screw Attack Orb Acquired"
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Kraid Defeated"
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Gravity Suit Orb Acquired"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla X-Ray Scope Orb Acquired"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Grappling Beam Orb Acquired"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Charge Beam Orb Acquired"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Spazer Orb Acquired"
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Ice Beam Orb Acquired"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Wave Beam Orb Acquired"
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Plasma Beam Orb Acquired"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla High Jump Orb Acquired"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Speed Booster Orb Acquired"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Draygon Defeated"
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 46,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "id": "boss",
-        "sprite": "boss",
-        "name": "Bosses",
-        "value": 0,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "id": "etedach",
-        "sprite": "animals",
-        "name": "Animals Rescued",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "5x5": [
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Charge Beam Orb Acquired"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Wave Beam Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Spazer Orb Acquired"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Plasma Beam Orb Acquired"
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Gravity Suit Orb Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla High Jump Orb Acquired"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Draygon Defeated"
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Morphing Ball Item Acquired"
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Spring Ball Orb Acquired"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Screw Attack Orb Acquired"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14,
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 4,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "id": "boss",
+          "sprite": "boss",
+          "name": "Bosses",
+          "value": 0,
+          "start": 0,
+          "max": 4,
+          "segments": []
+        },
+        {
+          "id": "etedach",
+          "sprite": "animals",
+          "name": "Animals Rescued",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 46,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Grappling Beam Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla X-Ray Scope Orb Acquired"
+        }
+      ],
+      "7x4": [
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Charge Beam Orb Acquired"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Wave Beam Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Spazer Orb Acquired"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Plasma Beam Orb Acquired"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Gravity Suit Orb Acquired"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Morphing Ball Item Acquired"
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Spring Ball Orb Acquired"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Screw Attack Orb Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla High Jump Orb Acquired"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Draygon Defeated"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla Grappling Beam Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Vanilla X-Ray Scope Orb Acquired"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14,
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 4,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 46,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "id": "boss",
+          "sprite": "boss",
+          "name": "Bosses",
+          "value": 0,
+          "start": 0,
+          "max": 4,
+          "segments": []
+        },
+        {
+          "id": "etedach",
+          "sprite": "animals",
+          "name": "Animals Rescued",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ]
+    },
+    "defaultWidth": 7,
+    "hasKeyslots": false,
     "items": [
       {
         "id": "morphBall",

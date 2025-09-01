@@ -12,6 +12,7 @@ let tracker = {
   useKeyslots: false,
   isScramble: false,
   scrambleSync: false,
+  selectedLayout: null,
 };
 
 let renderingKeyslotTypes = {}
@@ -49,22 +50,14 @@ let keyslots = {};
   }
   
   function am2r_extremeLabs(setOrReturn) {
-    let targetId = "";
-    if (setOrReturn) {
-      targetId = "expansion-monsterDna-21-10";
-    } else {
-      targetId = "expansion-monsterDna-21-10x";
-    }
+    let position = tracker.selectedLayout === "5x4" ? 19 : 21;
+    let targetId = `expansion-monsterDna-${position}-10${setOrReturn ? '' : 'x'}`;
     const source = document.getElementById(targetId);
     let hintImage = source.querySelector(".hint-image");
-    if (setOrReturn) {
-      hintImage.alt = "Click middle mouse button to toggle Normal Labs";
-    } else {
-      hintImage.alt = "Click middle mouse button to toggle Extreme Labs";
-    }
+    hintImage.alt = `Click middle mouse button to toggle ${setOrReturn ? 'Normal' : 'Extreme'} Labs`;
     hintImage.title = hintImage.alt;
     
-    source.id = setOrReturn ? "expansion-monsterDna-21-10x" : "expansion-monsterDna-21-10";
+    source.id = `expansion-monsterDna-${position}-10${setOrReturn ? 'x' : ''}`;
     source.title = setOrReturn ? source.title + " - Extreme Labs" : source.title.replace(" - Extreme Labs", '');
     
     if (tracker.useSprites) {
@@ -376,7 +369,8 @@ let keyslots = {};
       }
     } else if (e.which == 2) { // middle click
       if (["am2r", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
-        am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
+        let position = tracker.selectedLayout === "5x4" ? 19 : 21;
+        am2r_extremeLabs(!document.getElementById(`expansion-monsterDna-${position}-10x`));
       } else if (["aol", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
@@ -452,7 +446,8 @@ let keyslots = {};
       previous--;
     } else if (e.which == 2) { // middle click
       if (["am2r", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("expansion-monsterDna") > -1)) {
-        am2r_extremeLabs(!document.getElementById("expansion-monsterDna-21-10x"));
+        let position = tracker.selectedLayout === "5x4" ? 19 : 21;
+        am2r_extremeLabs(!document.getElementById(`expansion-monsterDna-${position}-10x`));
       } else if (["aol", "scramble"].includes(tracker.currentGame) && (e.target.parentElement.id.indexOf("item-dashSpell") > -1 || e.target.parentElement.id.indexOf("item-fireSpell") > -1)) {
         aol_dashSpell(!document.getElementById("item-dashSpell-4x"));
       } else {
@@ -785,7 +780,8 @@ let keyslots = {};
       }
     }
     
-    if (["am2r", "scramble"].includes(tracker.currentGame) && wrapper.id === "expansion-monsterDna-21-10") {
+    if (["am2r", "scramble"].includes(tracker.currentGame) && ["expansion-monsterDna-21-10", "expansion-monsterDna-19-10"].includes(wrapper.id)) {
+      console.log(wrapper.id);
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {
@@ -1180,26 +1176,13 @@ let keyslots = {};
     }
   }
   
-  function handleDropdownSelection(e) {
+  async function handleDropdownSelection(e) {
     let keyslotTarget = document.getElementById("ifKeyslotsExist");
     let scrambleSyncTarget = document.getElementById("ifScrambleSelected");
     let showTotalsPrompt = document.getElementById("showTotalsPrompt");
     let showTimerTarget = document.getElementById("showTimerPrompt");
     let scrambleSelectionTarget = document.getElementById("scrambleSelectionGroup");
-    
-    if (["m", "ros"].includes(e.target.value)) {
-      if (keyslotTarget.classList) {
-        keyslotTarget.classList.remove("hidden");
-      } else {
-        keyslotTarget.className += target.className.replace(/\bhidden\b/g);
-      }
-    } else {
-      if (keyslotTarget.classList) {
-        keyslotTarget.classList.add("hidden");
-      } else {
-        keyslotTarget.className += " hidden";
-      }
-    }
+    let layoutSelectElement = document.getElementById("layoutSelector");
     
     if (e.target.value === "scramble") {
       if (scrambleSelectionTarget.classList) {
@@ -1224,6 +1207,61 @@ let keyslots = {};
         scrambleSyncTarget.className += " hidden";
         showTotalsPrompt.className += target.className.replace(/\bhidden\b/g);
         showTimerTarget.className += target.className.replace(/\bhidden\b/g);
+      }
+      
+      if (e.target.value) {
+        // add fetch here; must be async because dropdown must be repopulated with options
+        try {
+          const gameId = main.games[e.target.value];
+          const response = await fetch(`${main.jsonDir}/${gameId}.json`);
+          const data = await response.json();
+          const dataStruct = data[gameId];
+            
+          let defaultOption = document.createElement("option");
+          defaultOption.value = "";
+          defaultOption.selected = true;
+          defaultOption.innerText = "Default setting";
+            
+          let newOptions = [];
+          newOptions.push(defaultOption);
+          
+          if (dataStruct.checklistLayouts && !Array.isArray(dataStruct.checklistLayouts)) {
+            const layoutSpecifications = Object.keys(dataStruct.checklistLayouts);
+            
+            for (let i = 0; i < layoutSpecifications.length; i++) {
+              let newOption = document.createElement("option");
+              newOption.value = layoutSpecifications[i];
+              newOption.innerText = layoutSpecifications[i];
+              newOptions.push(newOption);
+            }
+          }
+          
+          layoutSelectElement.replaceChildren(...newOptions);
+          
+          if (dataStruct.hasKeyslots) {
+            if (keyslotTarget.classList) {
+              keyslotTarget.classList.remove("hidden");
+            } else {
+              keyslotTarget.className += target.className.replace(/\bhidden\b/g);
+            }
+          } else {
+            if (keyslotTarget.classList) {
+              keyslotTarget.classList.add("hidden");
+            } else {
+              keyslotTarget.className += " hidden";
+            }
+          }
+        } catch (err) {
+          console.error(`failed to fetch JSON for game ${e.target.value}`);
+          console.error(err);
+            
+          let defaultOption = document.createElement("option");
+          defaultOption.value = "";
+          defaultOption.selected = true;
+          defaultOption.innerText = "Default setting";
+          
+          layoutSelectElement.replaceChildren(defaultOption);
+        }
       }
     }
   }
@@ -1586,6 +1624,29 @@ let keyslots = {};
     
     //console.groupCollapsed(`>>> game ${tracker.currentGame} <<<`);
     
+    if (tracker.workingData.checklistLayouts) {
+      if (tracker.selectedLayout && tracker.workingData.checklistLayouts[tracker.selectedLayout]) {
+        tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[tracker.selectedLayout];
+      } else {
+        const defaultWidth = tracker.workingData.defaultWidth || tracker.workingData.checklistWidth;
+        const layoutKeys = Object.keys(tracker.workingData.checklistLayouts);
+        let defaultLayoutKey = null;
+        for (let li = 0; li < layoutKeys.length; li++) {
+          const layoutAmounts = layoutKeys[li].split('x');
+          const layoutWidth = layoutAmounts[0];
+          if (parseInt(layoutWidth) === parseInt(defaultWidth)) {
+            defaultLayoutKey = layoutKeys[li];
+            break;
+          }
+        }
+        if (defaultLayoutKey) {
+          tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[defaultLayoutKey];
+        } else {
+          console.error("missing default layout!");
+        }
+      }
+    }
+    
     if (tracker.workingData.checklistLayout) {
       tracker.readyPanels = makePanels();
     } else {
@@ -1645,7 +1706,14 @@ let keyslots = {};
     }
     //console.log(tracker.currentGame, itemWidth, hasProperGraphics);
     
-    destination.style.width = "" + ((parseInt(tracker.workingData.checklistWidth) * (itemWidth + 6)) + 2) + "px";
+    const defaultWidth = tracker.workingData.defaultWidth || tracker.workingData.checklistWidth;
+    const setWidth = tracker.selectedLayout ? parseInt(tracker.selectedLayout.split('x')[0]) : parseInt(defaultWidth);
+    
+    if (setWidth > 7) {
+      console.warn(`recommend trimming layout width for ${tracker.currentGame}, currently at ${setWidth}`);
+    }
+    
+    destination.style.width = "" + ((setWidth * (itemWidth + 6)) + 2) + "px";
     //console.groupEnd();
     
     tracker.readyPanels.forEach((element, i) => renderEntry(destination, element, i, element.name || "", false, false, -1));
@@ -1663,7 +1731,7 @@ let keyslots = {};
       renderPercentage(destination);
     }
     if (!tracker.isScramble && tracker.showTimer) {
-      renderTimer(destination, parseInt(tracker.workingData.checklistWidth));
+      renderTimer(destination, setWidth);
     }
   }
   
@@ -1690,6 +1758,10 @@ let keyslots = {};
       searchString += "scramble";
     } else {
       searchString += main.games[document.forms["startupMenu"]["selectedGame"].value];
+    }
+    
+    if (document.forms["startupMenu"]["layout"].value) {
+      searchString += "&l=" + document.forms["startupMenu"]["layout"].value;
     }
     
     if (document.forms["startupMenu"]["useSprites"].checked) {
@@ -1731,7 +1803,7 @@ let keyslots = {};
     }
     
     if (document.forms["startupMenu"]["selectedLocale"].value !== "other") {
-      searchString += "&l=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
+      searchString += "&loc=" + document.forms["startupMenu"]["selectedLocale"].value.replace(/[^\w\s]/gi, '');
     }
     location.search = searchString;
   }
@@ -1756,6 +1828,9 @@ let keyslots = {};
       } else {
         document.body.className += "game-mode";
       }
+      
+      let selectedLayout = queryDict.l || '';
+      tracker.selectedLayout = incomingGame !== "scramble" && selectedLayout.length ? selectedLayout : null;
       
       let willUseDarkMode = !!queryDict.d;
       willUseDarkMode = !!JSON.parse(willUseDarkMode);
@@ -1786,7 +1861,7 @@ let keyslots = {};
       willUseKeyslots = !!JSON.parse(willUseKeyslots);
       tracker.useKeyslots = willUseKeyslots;
       
-      let selectedLocale = queryDict.l || '';
+      let selectedLocale = queryDict.loc || '';
       tracker.useLocale = selectedLocale.length ? selectedLocale : null;
       
       if (incomingGame === "scramble") {

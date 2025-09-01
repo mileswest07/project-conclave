@@ -1,299 +1,301 @@
 {
   "mp": {
-    "checklistWidth": 5,
-    "checklistLayout": [
-      {
-        "type": "toggle",
-        "start": 0,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "id": "primeSuitToggle",
-            "name": "Prime Suit Active",
-            "value": 0,
-            "start": 1,
-            "max": 1,
-            "type": "toggle"
-          },
-          {
-            "id": "fusionSuitToggle",
-            "name": "Fusion Suit Active",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "type": "toggle"
-          }
-        ]
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Flaahgra Defeated"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Gravity Chamber"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Omega Pirate Defeated"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Tallon Overworld - Alcove"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Watery Hall"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Chapel of the Elders"
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Antechamber"
-      },
-      {
-        "lookupId": 27,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Magmoor Caverns - Plasma Processing"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Hive Mecha Defeated"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Observatory"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Tower of Light"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Magmoor Caverns - Shore Tunnel"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Storage Depot A"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Ruined Shrine"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Incinerator Drone Defeated"
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Phendrana Canyon"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Thardus Defeated"
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Central Dynamo"
-      },
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Research Core"
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Tallon Overworld - Life Grove"
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Storage Depot B"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 49,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": [
-          {
-            "lookupId": 30,
-            "value": 1,
-            "start": 0,
-            "max": 12,
-            "over": "Z_Chozo",
-            "overText": "Hints Acquired"
-          },
-          {
-            "lookupId": 1123,
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "clearIfScramble": true
-          }
-        ]
-      }
-    ],
+    "checklistLayouts": {
+      "5x6": [
+        {
+          "type": "toggle",
+          "start": 0,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "id": "primeSuitToggle",
+              "name": "Prime Suit Active",
+              "value": 0,
+              "start": 1,
+              "max": 1,
+              "type": "toggle"
+            },
+            {
+              "id": "fusionSuitToggle",
+              "name": "Fusion Suit Active",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "type": "toggle"
+            }
+          ]
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Flaahgra Defeated"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Gravity Chamber"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Omega Pirate Defeated"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Alcove"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Watery Hall"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Chapel of the Elders"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Antechamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Plasma Processing"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Hive Mecha Defeated"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Observatory"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Tower of Light"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Shore Tunnel"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot A"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Ruined Shrine"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Incinerator Drone Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Phendrana Canyon"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Thardus Defeated"
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Central Dynamo"
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Research Core"
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Life Grove"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot B"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 14,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 49,
+          "segments": []
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 4,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": [
+            {
+              "lookupId": 30,
+              "value": 1,
+              "start": 0,
+              "max": 12,
+              "over": "Z_Chozo",
+              "overText": "Hints Acquired"
+            },
+            {
+              "lookupId": 1123,
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            }
+          ]
+        }
+      ]
+    },
+    "defaultWidth": 5,
     "items": [
       {
         "id": "combatVisorP",

@@ -1,451 +1,453 @@
 {
   "mf": {
-    "checklistWidth": 7,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Data",
-        "overText": "Operations Deck - Data Room"
-      },
-      {
-        "lookupId": 12,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Data",
-        "overText": "Sector 3 PYR - Data Room"
-      },
-      {
-        "lookupId": 15,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Data",
-        "overText": "Sector 5 ARC - Data Room"
-      },
-      {
-        "lookupId": 23,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Data",
-        "overText": "Sector 4 AQA - Data Room"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Arachnus Defeated"
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Data",
-        "overText": "Sector 2 TRO - Data Room"
-      },
-      {
-        "lookupId": 17,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Data",
-        "overText": "Sector 5 ARC - Data Room"
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "Elephant Bird Defeated"
-      },
-      {
-        "lookupId": 16,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "Wide Laser Core-X Defeated"
-      },
-      {
-        "lookupId": 20,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "Nettori Defeated"
-      },
-      {
-        "lookupId": 24,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "SR-BOX 2 Defeated"
-      },
-      {
-        "lookupId": 27,
-        "value": 0,
-        "start": 0,
-        "max": 1
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Zazabi Defeated"
-      },
-      {
-        "lookupId": 10,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Serris Defeated"
-      },
-      {
-        "lookupId": 19,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Yakuza Defeated"
-      },
-      {
-        "lookupId": 25,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Neo-Ridley-X Defeated"
-      },
-      {
-        "lookupId": 13,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "Barrier Core-X Defeated"
-      },
-      {
-        "lookupId": 21,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "over": "F_Boss",
-        "overText": "Nightmare Defeated"
-      },
-      {
-        "lookupId": 26,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 20,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 48,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 32,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 28,
-        "value": 0,
-        "start": 0,
-        "max": 5,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "id": "waterPumpControl",
-        "name": "Sector 4 - Water level lowered.",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "id": "coolingUnit",
-        "name": "Sector 3 - Cooling unit operational.",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "id": "animals",
-        "name": "Main Deck - Lock disengaged. Gate opening.",
-        "sprite": "animals",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "id": "auxiliaryPower",
-        "name": "Main Deck - Auxiliary power engaged.",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 22,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "name": "Main Deck",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "mainDeck",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 1 SRX",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector1srx",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 2 TRO",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector2tro",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 3 PYR",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector3pyr",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 4 AQA",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector4aqa",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 5 ARC",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector5arc",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "name": "Sector 6 NOC",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "id": "sector6noc",
-            "name": "Sector Clear",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      }
-    ],
+    "checklistLayouts": {
+      "7x5": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Data",
+          "overText": "Operations Deck - Data Room"
+        },
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Data",
+          "overText": "Sector 3 PYR - Data Room"
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Data",
+          "overText": "Sector 5 ARC - Data Room"
+        },
+        {
+          "lookupId": 23,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Data",
+          "overText": "Sector 4 AQA - Data Room"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Arachnus Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Data",
+          "overText": "Sector 2 TRO - Data Room"
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Data",
+          "overText": "Sector 5 ARC - Data Room"
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Elephant Bird Defeated"
+        },
+        {
+          "lookupId": 16,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Wide Laser Core-X Defeated"
+        },
+        {
+          "lookupId": 20,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Nettori Defeated"
+        },
+        {
+          "lookupId": 24,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "SR-BOX 2 Defeated"
+        },
+        {
+          "lookupId": 27,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Zazabi Defeated"
+        },
+        {
+          "lookupId": 10,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Serris Defeated"
+        },
+        {
+          "lookupId": 19,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Yakuza Defeated"
+        },
+        {
+          "lookupId": 25,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Neo-Ridley-X Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Barrier Core-X Defeated"
+        },
+        {
+          "lookupId": 21,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Nightmare Defeated"
+        },
+        {
+          "lookupId": 26,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 20,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 48,
+          "segments": []
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 32,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 28,
+          "value": 0,
+          "start": 0,
+          "max": 5,
+          "segments": [],
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "id": "waterPumpControl",
+          "name": "Sector 4 - Water level lowered.",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "id": "coolingUnit",
+          "name": "Sector 3 - Cooling unit operational.",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "id": "animals",
+          "name": "Main Deck - Lock disengaged. Gate opening.",
+          "sprite": "animals",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "id": "auxiliaryPower",
+          "name": "Main Deck - Auxiliary power engaged.",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 22,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": [],
+          "disabled": true
+        },
+        {
+          "name": "Main Deck",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "mainDeck",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 1 SRX",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector1srx",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 2 TRO",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector2tro",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 3 PYR",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector3pyr",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 4 AQA",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector4aqa",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 5 ARC",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector5arc",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "name": "Sector 6 NOC",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "id": "sector6noc",
+              "name": "Sector Clear",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        }
+      ]
+    },
+    "defaultWidth": 7,
     "items": [
       {
         "id": "graySecurity",

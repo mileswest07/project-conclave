@@ -1,219 +1,435 @@
 {
   "m2ros": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 6,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 22,
-        "segments": []
-      },
-      {
-        "name": "Metroids defeated",
-        "value": 0,
-        "start": 0,
-        "max": 49,
-        "segments": [
-          {
-            "id": "monsterDna",
-            "name": "Phase 1",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 2",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 4
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 3",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 8
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 4",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 10
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 5",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 6",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 7",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 7
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 8",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 9",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 3
-          },
-          {
-            "id": "monsterDna",
-            "name": "Phase 10",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 9
-          }
-        ]
-      },
-      {
-        "lookupId": 15,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "2x8": [
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 6,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 22,
+          "segments": []
+        },
+        {
+          "name": "Metroids defeated",
+          "value": 0,
+          "start": 0,
+          "max": 49,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Phase 1",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 2",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 3",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 4",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 5",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 6",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 7",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 7
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 8",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 9",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 10",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ],
+      "4x4": [
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 6,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 22,
+          "segments": []
+        },
+        {
+          "name": "Metroids defeated",
+          "value": 0,
+          "start": 0,
+          "max": 49,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Phase 1",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 2",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 3",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 4",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 5",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 6",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 7",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 7
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 8",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 9",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 10",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ]
+    },
+    "defaultWidth": 4,
+    "hasKeyslots": true,
     "items": [
       {
         "id": "morphBall",

@@ -781,7 +781,6 @@ let keyslots = {};
     }
     
     if (["am2r", "scramble"].includes(tracker.currentGame) && ["expansion-monsterDna-21-10", "expansion-monsterDna-19-10"].includes(wrapper.id)) {
-      console.log(wrapper.id);
       let hint = document.createElement("img");
       hint.src = "images/blank.png";
       if (hint.classList) {

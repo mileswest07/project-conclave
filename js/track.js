@@ -21,10 +21,10 @@ let keyslots = {};
 (() => {
   
   const z1m1List = ["m", "z1"];
-  const smz3List = ["s", "z3", "z3r",];
-  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "z2pc",];
+  const smz3List = ["s", "z3"];
+  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n",];
   const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
-  const allZeldaList = ["z1", "z2", "z3", "z3r"];
+  const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
   
   function filterOut([...filter]) {
@@ -1495,7 +1495,7 @@ let keyslots = {};
     }
     // console.log(foundStyleSheets);
     
-    const skipGamesListForAll = ["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"];
+    const skipGamesListForAll = ["thf", "aol", "alttp", "sotn"];
     const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", "mng", "mttne", "mpff"];
     const skipGamesListForSprites = [...skipGamesListForAll];
     const skipGamesListForPlaceholders = [...skipGamesListForAll];
@@ -1624,6 +1624,9 @@ let keyslots = {};
     //console.groupCollapsed(`>>> game ${tracker.currentGame} <<<`);
     
     if (tracker.workingData.checklistLayouts) {
+      if (tracker.isScramble && tracker.workingData.scrambleLayout) {
+        tracker.selectedLayout = tracker.workingData.scrambleLayout;
+      }
       if (tracker.selectedLayout && tracker.workingData.checklistLayouts[tracker.selectedLayout]) {
         tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[tracker.selectedLayout];
       } else {
@@ -1670,7 +1673,7 @@ let keyslots = {};
     let itemWidth = 50;
     let hasProperGraphics = true;
     
-    if (!["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(tracker.currentGame)) {
+    if (!["thf", "aol", "alttp", "sotn"].includes(tracker.currentGame)) {
       //console.group();
       hasProperGraphics = tracker.readyPanels.map(element => checkIfEveryItemHasProperGraphics(element, false, tracker.currentGame));
       hasProperGraphics = hasProperGraphics.reduce((acc, curr) => acc && curr, true);
@@ -1682,7 +1685,7 @@ let keyslots = {};
     if ((tracker.useSprites || (tracker.useAllSprites && tracker.useSprites)) && hasProperGraphics) {
       itemWidth = 42;
     }
-    if (["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(tracker.currentGame)) {
+    if (["thf", "aol", "alttp", "sotn"].includes(tracker.currentGame)) {
       itemWidth = 42;
     } else if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;

@@ -1,380 +1,1347 @@
 {
   "aol": {
-    "checklistWidth": 8,
+    "checklistLayouts": {
+      "8x4": [
+        {
+          "lookupId": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 9,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 13,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 19,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 28,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 31,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 39,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 46,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 8,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 12,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 17,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1,
+          "nodeType": "upgrade"
+        },
+        {
+          "lookupId": 27,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0,
+          "nodeType": "upgrade"
+        },
+        {
+          "lookupId": 30,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1,
+          "nodeType": "upgrade"
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 4,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 21,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 33,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 36,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 44,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 40,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 3,
+          "start": 4,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 7,
+          "start": 4,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 15,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 32,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1001,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1002,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1003,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "palace",
+          "name": "",
+          "start": 0,
+          "max": 0,
+          "segments": [
+            {
+              "lookupId": 49,
+              "start": 0,
+              "max": 6,
+              "value": 0,
+              "nodeType": "artifact"
+            },
+            {
+              "lookupId": 1011,
+              "start": 0,
+              "max": 1,
+              "value": 0,
+              "nodeType": "event",
+              "clearIfScramble": true
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "8x5": [
+        {
+          "lookupId": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 9,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 13,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 19,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 28,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 31,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 39,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 46,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 8,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 12,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 17,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 27,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 30,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 4,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 21,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 33,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 36,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 44,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 40,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 5,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 22,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 24,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 34,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 37,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 45,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 3,
+          "start": 4,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 7,
+          "start": 4,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 15,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 32,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1001,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1002,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1003,
+          "start": 1,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "palace",
+          "name": "",
+          "start": 0,
+          "max": 0,
+          "segments": [
+            {
+              "lookupId": 49,
+              "start": 0,
+              "max": 6,
+              "value": 0,
+              "nodeType": "artifact"
+            },
+            {
+              "lookupId": 1011,
+              "start": 0,
+              "max": 1,
+              "value": 0,
+              "nodeType": "event",
+              "clearIfScramble": true
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "8x6": [
+        {
+          "lookupId": 1,
+          "name": "Protect Spell",
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 9,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 13,
+          "name": "Heal Spell",
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 20,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 25,
+              "start": 0,
+              "max": 1,
+              "value": 0,
+              "clearIfScramble": true
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 28,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "value": 0
+        },
+        {
+          "lookupId": 31,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 39,
+          "name": "Enigma Spell",
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 46,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 4,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 21,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 33,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 36,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 44,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 41,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 16,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 55,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 35,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 29,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 43,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 48,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 42,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 51,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 12,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 8,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 18,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 30,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 53,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 54,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "value": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 26,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 38,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 52,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 25,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0,
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 15,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 32,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 2,
+          "start": 0,
+          "max": 18,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 6,
+          "start": 0,
+          "max": 18,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 47,
+          "start": 0,
+          "max": 7,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 50,
+          "start": 0,
+          "max": 12,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1001,
+          "start": 1,
+          "max": 9,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1002,
+          "start": 1,
+          "max": 9,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 1003,
+          "start": 1,
+          "max": 9,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 0,
+          "segments": [
+            {
+              "lookupId": 49,
+              "start": 0,
+              "max": 6,
+              "value": 0,
+              "nodeType": "artifact"
+            },
+            {
+              "lookupId": 1011,
+              "start": 0,
+              "max": 1,
+              "value": 0,
+              "nodeType": "event",
+              "clearIfScramble": true
+            }
+          ],
+          "value": 0
+        }
+      ]
+    },
+    "defaultWidth": 8,
     "items": [
       {
         "id": "shieldSpell",
         "name": "Shield Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
+        "bg": "ffffff",
+        "itemId": 1,
         "nodeType": "upgrade"
       },
       {
-        "id": "jumpSpell",
-        "name": "Jump Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "lifeSpell",
-        "name": "Life Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "fairySpell",
-        "name": "Fairy Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "fireSpell",
-        "name": "Fire Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "reflectSpell",
-        "name": "Reflect Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "spellSpell",
-        "name": "Spell Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "thunderSpell",
-        "name": "Thunder Spell",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "trophy",
-        "name": "Trophy",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "mirror",
-        "name": "Mirror",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "waterOfLife",
-        "name": "Water of Life",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "water",
-        "name": "Water",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "child",
-        "name": "Child",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "note",
-        "name": "Bagu's Note",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "candle",
-        "name": "Candle",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "glove",
-        "name": "Glove",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "raft",
-        "name": "Raft",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "boots",
-        "name": "Boots",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "whistle",
-        "name": "Flute",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "cross",
-        "name": "Cross",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "hammer",
-        "name": "Hammer",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "magicKey",
-        "name": "Magic Key",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "disabled": true
-      },
-      {
-        "id": "parapa",
-        "name": "Parapa Palace Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "midoro",
-        "name": "Midoro Palace Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "island",
-        "name": "Island Palace Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "maze",
-        "name": "Maze Palace Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "onthesea",
-        "name": "Palace On The Sea Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "hidden",
-        "name": "Hidden Palace Crystal",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "artifact",
-        "disabled": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "disabled": true
+        "id": "pieceOfHeart",
+        "name": "Pieces of Heart",
+        "bg": "ffffff",
+        "itemId": 2,
+        "nodeType": "expansion"
       },
       {
         "id": "heartContainer",
         "name": "Heart Containers",
-        "start": 4,
-        "max": 8,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "candle",
+        "name": "Candle",
+        "bg": "ffffff",
+        "itemId": 4,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "parapa",
+        "name": "Parapa Palace Crystal",
+        "bg": "ffffff",
+        "itemId": 5,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "bigMagic",
+        "name": "Pieces of Magic",
+        "bg": "ffffff",
+        "itemId": 6,
         "nodeType": "expansion"
       },
       {
         "id": "magicContainer",
         "name": "Magic Containers",
-        "start": 4,
-        "max": 8,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 7,
         "nodeType": "expansion"
+      },
+      {
+        "id": "trophy",
+        "name": "Trophy",
+        "bg": "ffffff",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "jumpSpell",
+        "name": "Jump Spell",
+        "bg": "ffffff",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "linkPlush",
+        "name": "Extra Life",
+        "bg": "ffffff",
+        "itemId": 10,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "note",
+        "name": "Bagu's Note",
+        "bg": "ffffff",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mirror",
+        "name": "Mirror",
+        "bg": "ffffff",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "lifeSpell",
+        "name": "Life Spell",
+        "bg": "ffffff",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hammer",
+        "name": "Hammer",
+        "bg": "ffffff",
+        "itemId": 14,
+        "nodeType": "upgrade"
       },
       {
         "id": "downStab",
         "name": "Down Stab",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
+        "bg": "ffffff",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "redFairy",
+        "name": "Rescue Fairy",
+        "bg": "ffffff",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waterOfLife",
+        "name": "Water of Life",
+        "bg": "ffffff",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "flower",
+        "name": "Io Flower",
+        "bg": "ffffff",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fairySpell",
+        "name": "Fairy Spell",
+        "bg": "ffffff",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chickenFairy",
+        "name": "Fairy Spell",
+        "bg": "ffffff",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "glove",
+        "name": "Glove",
+        "bg": "ffffff",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "midoro",
+        "name": "Midoro Palace Crystal",
+        "bg": "ffffff",
+        "itemId": 22,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "raft",
+        "name": "Raft",
+        "bg": "ffffff",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "island",
+        "name": "Island Palace Crystal",
+        "bg": "ffffff",
+        "itemId": 24,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "cuccoSpell",
+        "name": "Cucco Spell",
+        "bg": "ffffff",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "map",
+        "name": "Treasure Map (West Hyrule)",
+        "bg": "ffffff",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "water",
+        "name": "Water",
+        "bg": "ffffff",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireSpell",
+        "name": "Fire Spell",
+        "bg": "ffffff",
+        "itemId": 28,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bait",
+        "name": "Bait",
+        "bg": "ffffff",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "child",
+        "name": "Child",
+        "bg": "ffffff",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "reflectSpell",
+        "name": "Reflect Spell",
+        "bg": "ffffff",
+        "itemId": 31,
         "nodeType": "upgrade"
       },
       {
         "id": "upStab",
         "name": "Up Stab",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
+        "bg": "ffffff",
+        "itemId": 32,
         "nodeType": "upgrade"
+      },
+      {
+        "id": "boots",
+        "name": "Boots",
+        "bg": "ffffff",
+        "itemId": 33,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "maze",
+        "name": "Maze Palace Crystal",
+        "bg": "ffffff",
+        "itemId": 34,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "book",
+        "name": "Book of Mudora",
+        "bg": "ffffff",
+        "itemId": 35,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "whistle",
+        "name": "Flute",
+        "bg": "ffffff",
+        "itemId": 36,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "onthesea",
+        "name": "Palace On The Sea Crystal",
+        "bg": "ffffff",
+        "itemId": 37,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "reverseMap",
+        "name": "Treasure Map (East Hyrule)",
+        "bg": "ffffff",
+        "itemId": 38,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spellSpell",
+        "name": "Spell Spell",
+        "bg": "ffffff",
+        "itemId": 39,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicKey",
+        "name": "Magic Key",
+        "bg": "ffffff",
+        "itemId": 40,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bracelets",
+        "name": "Power Bracelet",
+        "bg": "ffffff",
+        "itemId": 41,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "pendant",
+        "name": "Magic Pendant",
+        "bg": "ffffff",
+        "itemId": 42,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicalShield",
+        "name": "Durable Shield",
+        "bg": "ffffff",
+        "itemId": 43,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cross",
+        "name": "Cross",
+        "bg": "ffffff",
+        "itemId": 44,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hidden",
+        "name": "Hidden Palace Crystal",
+        "bg": "ffffff",
+        "itemId": 45,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "thunderSpell",
+        "name": "Thunder Spell",
+        "bg": "ffffff",
+        "itemId": 46,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boulder",
+        "name": "Boulder Circle hints",
+        "bg": "ffffff",
+        "itemId": 47,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "redRing",
+        "name": "Red Ring",
+        "bg": "ffffff",
+        "itemId": 48,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "palace",
+        "name": "Palace Crystals",
+        "bg": "ffffff",
+        "itemId": 49,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "goldenSlime",
+        "name": "Golden Zols",
+        "bg": "ffffff",
+        "itemId": 50,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "magicalSword",
+        "name": "Piercing Sword",
+        "bg": "ffffff",
+        "itemId": 51,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "skeletonKey",
+        "name": "Skeleton Key",
+        "bg": "ffffff",
+        "itemId": 52,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bottle",
+        "name": "Bottle",
+        "bg": "ffffff",
+        "itemId": 53,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bottleBlood",
+        "name": "Dark Link defeated",
+        "bg": "ffffff",
+        "itemId": 54,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mask",
+        "name": "Monster Mask",
+        "bg": "ffffff",
+        "itemId": 55,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [
+      {
+        "id": "triforce",
+        "name": "Great Palace open",
+        "extraId": 1011,
+        "nodeType": "event"
       },
       {
         "id": "life",
         "name": "Life",
-        "start": 1,
-        "max": 8,
-        "segments": [],
-        "value": 0,
+        "itemId": 1001,
         "nodeType": "expansion"
       },
       {
         "id": "magic",
         "name": "Magic",
-        "start": 1,
-        "max": 8,
-        "segments": [],
-        "value": 0,
+        "itemId": 1002,
         "nodeType": "expansion"
       },
       {
         "id": "attack",
         "name": "Attack",
-        "start": 1,
-        "max": 8,
-        "segments": [],
-        "value": 0,
+        "itemId": 1003,
         "nodeType": "expansion"
-      },
-      {
-        "id": "palace",
-        "name": "",
-        "start": 0,
-        "max": 0,
-        "segments": [
-          {
-            "id": "palace",
-            "name": "Palace Crystals",
-            "start": 0,
-            "max": 6,
-            "value": 0,
-            "nodeType": "artifact"
-          },
-          {
-            "id": "triforce",
-            "name": "Great Palace open",
-            "start": 0,
-            "max": 1,
-            "value": 0,
-            "nodeType": "event",
-            "clearIfScramble": true
-          }
-        ],
-        "value": 0
       }
     ],
-    "bosses": [],
-    "areas": [],
-    "extras": [],
     "mapTree": []
   }
 }

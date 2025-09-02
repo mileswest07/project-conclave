@@ -1,6 +1,6 @@
 {
   "ziiaol": {
-    "checklistWidth": 8,
+    "defaultWidth": 8,
     "items": [
       {
         "id": "shieldSpell",

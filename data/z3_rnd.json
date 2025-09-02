@@ -1,6 +1,6 @@
 {
   "z3_rnd": {
-    "checklistWidth": 10,
+    "defaultWidth": 10,
     "items": [
       {
         "id": "bow",

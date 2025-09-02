@@ -36,9 +36,7 @@ let main = {
     "d": "md", // Metroid Dread
     "z1": "thf", // The Legend of Zelda
     "z2": "aol", // Zelda 2: The Adventure of Link
-    "z2pc": "ziiaol", // Zelda 2: The Adventure of Link
     "z3": "alttp", // The Legend of Zelda: A Link to the Past
-    "z3r": "z3_rnd", // The Legend of Zelda: A Link to the Past (Rando settings)
     "sotn": "sotn", // Castlevania: Symphony of the Night (PSX)
   },
   
@@ -221,7 +219,7 @@ let main = {
     let totalExtraCount = 0;
     let totalBossCount = 0;
     let totalTypeCount = 0;
-    let gameExceptionList = ["thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"];
+    let gameExceptionList = ["thf", "aol", "alttp", "sotn"];
     let aFailureHasOccurred = false;
     
     console.group("Scanning Data for Lint");
@@ -456,10 +454,10 @@ let main = {
         
         if (doProcessItemOrder) {
           console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
-          if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && missingItems.length) {
+          if (!["mpff", "thf", "aol", "alttp", "sotn"].includes(currentGame) && missingItems.length) {
             console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
           }
-          if (!["mpff", "thf", "aol", "ziiaol", "alttp", "z3_rnd", "sotn"].includes(currentGame) && allSegments.length) {
+          if (!["mpff", "thf", "aol", "alttp", "sotn"].includes(currentGame) && allSegments.length) {
             console.debug("   segments:", allSegments);
             //console.debug(`segments for game ${currentGame}`, allSegments);
           }

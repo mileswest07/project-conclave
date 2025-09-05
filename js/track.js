@@ -86,12 +86,10 @@ let keyslots = {};
   }
   
   function aol_dashSpell(setOrReturn) {
-    let targetId = "";
-    if (setOrReturn) {
-      targetId = "item-fireSpell-4";
-    } else {
-      targetId = "item-dashSpell-4x";
+    if (tracker.selectedLayout === "8x6")) { // for ZIIAOL, no need to do anything here
+      return;
     }
+    let targetId = setOrReturn ? "item-fireSpell-4" : "item-dashSpell-4x";
     const source = document.getElementById(targetId);
     let hintImage = source.querySelector(".hint-image");
     if (setOrReturn) {

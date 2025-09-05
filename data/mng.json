@@ -1,283 +1,277 @@
 {
   "mng": {
-    "checklistWidth": 6,
-    "checklistLayout": [
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 40,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 29,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 30,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 31,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 44,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 43,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 42,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 50,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 20,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 15,
-        "segments": []
-      },
-      {
-        "lookupId": 41,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "name": "Metroids defeated",
-        "type": "counter",
-        "value": 0,
-        "start": 0,
-        "max": 80,
-        "segments": [
-          {
-            "id": "monsterDna",
-            "name": "To unlock Trozodia",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "id": "monsterDna",
-            "name": "To unlock Pyrfair",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 1,
-            "max": 5
-          },
-          {
-            "id": "monsterDna",
-            "name": "To unlock Aqastar",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 5,
-            "max": 10
-          },
-          {
-            "id": "monsterDna",
-            "name": "To unlock Arcteria",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 10,
-            "max": 20
-          },
-          {
-            "id": "monsterDna",
-            "name": "To power up your ship",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 20,
-            "max": 35
-          },
-          {
-            "id": "monsterDna",
-            "name": "To unlock the Heart of the Galaxy",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 35,
-            "max": 60
-          },
-          {
-            "id": "monsterDna",
-            "name": "Genocide",
-            "sprite": "monsters",
-            "type": "counter",
-            "value": 0,
-            "start": 60,
-            "max": 80
-          }
-        ]
-      }
-    ],
+    "checklistLayouts": {
+      "6x5": [
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 40,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 29,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 31,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 44,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 43,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 42,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 50,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 20,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 15,
+          "segments": []
+        },
+        {
+          "lookupId": 41,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 80,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "To unlock Trozodia",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "To unlock Pyrfair",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 1,
+              "max": 5
+            },
+            {
+              "id": "monsterDna",
+              "name": "To unlock Aqastar",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 5,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "To unlock Arcteria",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 10,
+              "max": 20
+            },
+            {
+              "id": "monsterDna",
+              "name": "To power up your ship",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 20,
+              "max": 35
+            },
+            {
+              "id": "monsterDna",
+              "name": "To unlock the Heart of the Galaxy",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 35,
+              "max": 60
+            },
+            {
+              "id": "monsterDna",
+              "name": "Genocide",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 60,
+              "max": 80
+            }
+          ]
+        }
+      ]
+    },
+    "defaultLayout": "6x5",
     "items": [
       {
         "id": "missileTankA",

@@ -66,6 +66,8 @@
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
 #expansion-monsterDna-21-10x:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10x:hover > .item-image ~ .hint-image,
 #item-fireSpell-4:hover > .item-image ~ .hint-image,
 #item-dashSpell-4x:hover > .item-image ~ .hint-image,
 .item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,

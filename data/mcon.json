@@ -1,121 +1,299 @@
 {
   "mcon": {
-    "checklistWidth": 5,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Crocomire Defeated"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Kraid Defeated"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Ridley Defeated"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 2,
-        "segments": []
-      },
-      {
-        "id": "boss",
-        "name": "Bosses",
-        "sprite": "bosses",
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "5x3": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2,
+          "segments": []
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ],
+      "4x3": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2,
+          "segments": []
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        }
+      ],
+      "2x6": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2,
+          "segments": []
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": []
+        }
+      ]
+    },
+    "defaultLayout": "5x3",
     "items": [
       {
         "id": "missileTankA",

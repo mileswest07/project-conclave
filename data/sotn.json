@@ -1,302 +1,292 @@
 {
   "sotn": {
-    "checklistWidth": 7,
-    "checklistLayout": [
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 27,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 22,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 24,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 20,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 31,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 21,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 26,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 30,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 16,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 19,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 35,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 34,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 36,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 37,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 38,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 39,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 40,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 33,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 32,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 0,
-        "max": 47,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 0,
-        "max": 33,
-        "segments": []
-      },
-      {
-        "lookupId": 25,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 28,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 29,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "7x6": [
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 27,
+          "value": 0,
+          "start": 0,
+          "max": 0,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 22,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 23,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 24,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 20,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 31,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 21,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 26,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 30,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 16,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 18,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 19,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 35,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 34,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 36,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 37,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 38,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 39,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 40,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 33,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 32,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 47,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 33,
+          "segments": []
+        },
+        {
+          "lookupId": 25,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 28,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 29,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ]
+    },
+    "defaultLayout": "7x6",
     "items": [
       {
         "id": "castlemap",

@@ -1,686 +1,2088 @@
 {
   "alttp": {
-    "checklistWidth": 9,
+    "checklistLayouts": {
+      "9x6": [
+        {
+          "name": "Bow",
+          "start": 0,
+          "max": 2,
+          "over": "MC_Chest",
+          "overText": "L1 Big Chest",
+          "segments": [
+            {
+              "lookupId": 13,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 55,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "over": "MC_Chest",
+          "overText": "HC Basement Chest",
+          "segments": [
+            {
+              "lookupId": 5,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 24,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 42,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 9,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 8,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 15,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "name": "Tower of Hera - Pendant of Power",
+          "lookupId": 28,
+          "start": 0,
+          "max": 1,
+          "back": "toh",
+          "segments": [],
+          "value": 1,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 44,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Chest",
+          "overText": "D3 Big Chest",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 20,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 41,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 30,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 31,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Desert Palace - Pendant of Wisdom",
+          "lookupId": 22,
+          "start": 0,
+          "max": 1,
+          "back": "dp",
+          "segments": [],
+          "value": 1,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-"
+        },
+        {
+          "name": "Eastern Palace - Pendant of Courage",
+          "lookupId": 17,
+          "start": 0,
+          "max": 1,
+          "back": "ep",
+          "segments": [],
+          "value": 1,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 2,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 32,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 34,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 35,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 36,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 19,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 1001,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0,
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 4,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 51,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 40,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 39,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 26,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 4,
+          "segments": [
+            {
+              "lookupId": 4,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 29,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 48,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 54,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 3,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 25,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 56,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 49,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 60,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 18,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 21,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 46,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 27,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 37,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 12,
+          "start": 0,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 10,
+          "start": 0,
+          "max": 8,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "name": "Palace of Darkness - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "pod",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Swamp Palace - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "sp",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Skull Woods - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "sw",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Thieves' Town - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "tt",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Ice Palace - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "ip",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "Misery Mire - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "mm",
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "crystal",
+          "name": "Turtle Rock - Crystal",
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "back": "tr",
+          "segments": [],
+          "value": 1
+        }
+      ],
+      "10x6": [
+        {
+          "lookupId": 16,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 57,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 5,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 24,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 42,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 9,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 8,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "lookupId": 15,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 44,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 20,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 41,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 30,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 31,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "lookupId": 2,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 32,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 34,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 35,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 36,
+              "start": 0,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 19,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 4,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 51,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 40,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 39,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 26,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "displayIfScramble": true
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "displayIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 4,
+          "segments": [
+            {
+              "lookupId": 4,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 29,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 48,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 54,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 3,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 25,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 56,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 49,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 60,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 18,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 21,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 46,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 27,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "name": "",
+          "max": 0,
+          "clearIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 37,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 38,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 12,
+          "start": 0,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 10,
+          "start": 0,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 6,
+          "start": 0,
+          "max": 24,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 7,
+          "start": 0,
+          "max": 11,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "ep",
+          "name": "Eastern Palace",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Armos Knights Defeated",
+          "back": "ep",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "ep",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 17,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Armos Knights Defeated",
+          "back": "ep",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "dp",
+          "name": "Desert Palace",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Lanmolas Defeated",
+          "back": "dp",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "dp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 22,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Lanmolas Defeated",
+          "back": "dp",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "toh",
+          "name": "Tower of Hera",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Moldorm Defeated",
+          "back": "toh",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "toh",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 28,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Moldorm Defeated",
+          "back": "toh",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "pod",
+          "name": "Palace of Darkness",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Helmasaur King Defeated",
+          "back": "pod",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "pod",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Helmasaur King Defeated",
+          "back": "pod",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "sp",
+          "name": "Swamp Palace",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Arrghus Defeated",
+          "back": "sp",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "sp",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Arrghus Defeated",
+          "back": "sp",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "sw",
+          "name": "Skull Woods",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Mothula Defeated",
+          "back": "sw",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "sw",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Mothula Defeated",
+          "back": "sw",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "tt",
+          "name": "Thieves' Town",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Blind Defeated",
+          "back": "tt",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "tt",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Blind Defeated",
+          "back": "tt",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "ip",
+          "name": "Ice Palace",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Kholdstare Defeated",
+          "back": "ip",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "ip",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 58,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Kholdstare Defeated",
+          "back": "ip",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "mm",
+          "name": "Misery Mire",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Vitreous Defeated",
+          "back": "mm",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "mm",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 58,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Vitreous Defeated",
+          "back": "mm",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        },
+        {
+          "id": "tr",
+          "name": "Turtle Rock",
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Trinexx Defeated",
+          "back": "tr",
+          "type": "dungeon",
+          "segments": [
+            {
+              "id": "-",
+              "name": "",
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 17,
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 22,
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 28,
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 59,
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            },
+            {
+              "lookupId": 58,
+              "back": "tr",
+              "type": "dungeon",
+              "start": 1,
+              "max": 1,
+              "value": 0
+            }
+          ],
+          "clearIfScramble": true,
+          "value": 1
+        },
+        {
+          "lookupId": 59,
+          "start": 0,
+          "max": 1,
+          "over": "MC_Skull",
+          "overText": "Trinexx Defeated",
+          "back": "tr",
+          "segments": [],
+          "displayIfScramble": true,
+          "value": 1
+        }
+      ]
+    },
+    "customLayoutLabels": {
+      "10x6": "Scramble Mode (10x6)"
+    },
+    "defaultLayout": "9x6",
+    "scrambleLayout": "10x6",
     "items": [
       {
-        "id": "bowArrows",
-        "name": "Bow",
-        "start": 0,
-        "max": 2,
-        "over": "MC_Chest",
-        "overText": "L1 Big Chest",
-        "segments": [
-          {
-            "id": "bowArrows",
-            "name": "Arrows",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "L1 Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "bowSilver",
-            "name": "Silver Arrows",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "boomerang",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "over": "MC_Chest",
-        "overText": "HC Basement Chest",
-        "segments": [
-          {
-            "id": "boomerang",
-            "name": "Boomerang",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "HC Basement Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "magicRang",
-            "name": "Magical Boomerang",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "hookshot",
-        "name": "Hookshot",
-        "start": 0,
-        "max": 1,
-        "over": "MC_Chest",
-        "overText": "D2 Big Chest",
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "bombs",
-        "name": "Bombs",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 0
-      },
-      {
-        "id": "powder",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "mushroom",
-            "name": "Mushroom",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "powder",
-            "name": "Magic Powder",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "power",
-        "name": "Tower of Hera - Pendent of Power",
-        "start": 0,
-        "max": 1,
-        "back": "toh",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "fireRod",
-        "name": "Fire Rod",
-        "start": 0,
-        "max": 1,
-        "over": "MC_Chest",
-        "overText": "D3 Big Chest",
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "iceRod",
-        "name": "Ice Rod",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "bombos",
-        "name": "Bombos",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "ether",
-        "name": "Ether",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "quake",
-        "name": "Quake",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "wisdom",
-        "name": "Desert Palace - Pendent of Wisdom",
-        "start": 0,
-        "max": 1,
-        "back": "dp",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "courage",
-        "name": "Eastern Palace - Pendent of Courage",
-        "start": 0,
-        "max": 1,
-        "back": "ep",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
+        "id": "greenJerkin",
+        "name": "Green Jerkin",
+        "itemId": 1,
+        "nodeType": "upgrade"
       },
       {
         "id": "lamp",
         "name": "Lamp",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "hammer",
-        "name": "Magic Hammer",
-        "start": 0,
-        "max": 1,
-        "over": "MC_Chest",
-        "overText": "D1 Big Chest",
-        "nodeType": "upgrade",
-        "segments": [],
-        "value": 1
-      },
-      {
-        "id": "flute",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "shovel",
-            "name": "Shovel",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "flute",
-            "name": "Flute",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "bird",
-            "name": "Flute (Warping enabled)",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 0
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "net",
-        "name": "Bug-Catching Net",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "book",
-        "name": "Book of Mudora",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "agahnim",
-        "name": "Agahnim's Tower - Agahnim defeated",
-        "start": 0,
-        "max": 1,
-        "back": "at",
-        "segments": [],
-        "nodeType": "event",
-        "value": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "bottle",
-        "name": "Bottle",
-        "start": 0,
-        "max": 4,
-        "segments": [],
-        "nodeType": "expansion",
-        "value": 1
-      },
-      {
-        "id": "somaria",
-        "name": "Cane of Somaria",
-        "start": 0,
-        "max": 1,
-        "over": "MC_Chest",
-        "overText": "D6 Big Chest",
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "byrna",
-        "name": "Cane of Byrna",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "cape",
-        "name": "Magic Cape",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "mirror",
-        "name": "Magic Mirror",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "sword",
-        "name": "",
-        "start": 0,
-        "max": 4,
-        "segments": [
-          {
-            "id": "sword",
-            "name": "Fighter's Sword",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "masterSword",
-            "name": "Master Sword",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "temperedSword",
-            "name": "Tempered Sword",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "goldenSword",
-            "name": "Golden Sword",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
+        "itemId": 2,
+        "nodeType": "upgrade"
       },
       {
         "id": "shield",
-        "name": "",
-        "start": 0,
-        "max": 3,
-        "segments": [
-          {
-            "id": "shield",
-            "name": "Fighter's Shield",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "redShield",
-            "name": "Red Sword",
-            "start": 0,
-            "max": 1,
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "mirrorShield",
-            "name": "Mirror Sword",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "D7 Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
+        "name": "Fighter's Shield",
+        "itemId": 3,
+        "nodeType": "upgrade"
       },
       {
-        "id": "greenJerkin",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "blueMail",
-            "name": "Blue Mail",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "D5 Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "redMail",
-            "name": "Red Mail",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "GT Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
+        "id": "sword",
+        "name": "Fighter's Sword",
+        "itemId": 4,
+        "nodeType": "upgrade"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "boots",
-        "name": "Pegasus Boots",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "glove",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "glove",
-            "name": "Power Glove",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "L2 Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          },
-          {
-            "id": "mitt",
-            "name": "Titan's Mitt",
-            "start": 0,
-            "max": 1,
-            "over": "MC_Chest",
-            "overText": "D4 Big Chest",
-            "nodeType": "upgrade",
-            "value": 1
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "flipper",
-        "name": "Zora Flipper",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
-      },
-      {
-        "id": "pearl",
-        "name": "Moon Pearl",
-        "start": 0,
-        "max": 1,
+        "id": "boomerang",
+        "name": "Boomerang",
+        "itemId": 5,
         "over": "MC_Chest",
-        "overText": "L3 Big Chest",
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
+        "overText": "HC Basement Chest",
+        "nodeType": "upgrade"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0
+        "id": "pieceOfHeart",
+        "name": "Pieces of Heart",
+        "itemId": 6,
+        "nodeType": "expansion"
       },
       {
-        "id": "halfMagic",
-        "name": "Half Magic",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 1
+        "id": "heartContainer",
+        "name": "Heart Containers",
+        "itemId": 7,
+        "over": "MC_Heart",
+        "overText": "Sanctuary Heart Obtained",
+        "nodeType": "expansion"
       },
       {
-        "id": "arrowsExp",
-        "name": "Arrow Capacity",
-        "start": 0,
-        "max": 8,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 0
+        "id": "mushroom",
+        "name": "Mushroom",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombs",
+        "name": "Bombs",
+        "itemId": 9,
+        "nodeType": "upgrade"
       },
       {
         "id": "bombsExp",
         "name": "Bomb Capacity",
-        "start": 0,
-        "max": 8,
-        "segments": [],
-        "nodeType": "upgrade",
-        "value": 0
+        "itemId": 10,
+        "nodeType": "expansion"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
+        "id": "bottle",
+        "name": "Bottle",
+        "itemId": 11,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "arrowsExp",
+        "name": "Arrow Capacity",
+        "itemId": 12,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bowArrows",
+        "name": "Arrows",
+        "itemId": 13,
+        "over": "MC_Chest",
+        "overText": "L1 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "net",
+        "name": "Bug-Catching Net",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powder",
+        "name": "Magic Powder",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bow",
+        "name": "Bow",
+        "itemId": 16,
+        "over": "MC_Chest",
+        "overText": "L1 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "courage",
+        "name": "Pendant of Courage",
+        "itemId": 17,
+        "back": "ep",
+        "nodeType": "artifact"
+      },
+      {
+        "id": "boots",
+        "name": "Pegasus Boots",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "book",
+        "name": "Book of Mudora",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceRod",
+        "name": "Ice Rod",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "glove",
+        "name": "Power Glove",
+        "itemId": 21,
+        "over": "MC_Chest",
+        "overText": "L2 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wisdom",
+        "name": "Pendant of Wisdom",
+        "itemId": 22,
+        "back": "dp",
+        "nodeType": "artifact"
+      },
+      {
+        "id": "flipper",
+        "name": "Zora Flipper",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicRang",
+        "name": "Magical Boomerang",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "redShield",
+        "name": "Red Shield",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mirror",
+        "name": "Magic Mirror",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "pearl",
+        "name": "Moon Pearl",
+        "itemId": 27,
+        "over": "MC_Chest",
+        "overText": "L3 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "power",
+        "name": "Pendant of Power",
+        "itemId": 28,
+        "back": "toh",
+        "nodeType": "artifact"
+      },
+      {
+        "id": "masterSword",
+        "name": "Master Sword",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "ether",
+        "name": "Ether",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "quake",
+        "name": "Quake",
+        "itemId": 31,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hammer",
+        "name": "Magic Hammer",
+        "itemId": 32,
+        "over": "MC_Chest",
+        "overText": "D1 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "arrow",
+        "name": "Arrows",
+        "itemId": 33,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shovel",
+        "name": "Shovel",
+        "itemId": 34,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "flute",
+        "name": "Flute",
+        "itemId": 35,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bird",
+        "name": "Flute (Warping enabled)",
+        "itemId": 36,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "halfMagic",
+        "name": "Half Magic",
+        "itemId": 37,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "quarterMagic",
+        "name": "Quarter Magic",
+        "itemId": 38,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "cape",
+        "name": "Magic Cape",
+        "itemId": 39,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "byrna",
+        "name": "Cane of Byrna",
+        "itemId": 40,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombos",
+        "name": "Bombos",
+        "itemId": 41,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hookshot",
+        "name": "Hookshot",
+        "itemId": 42,
+        "over": "MC_Chest",
+        "overText": "D2 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireRod",
+        "name": "Fire Rod",
+        "itemId": 44,
+        "over": "MC_Chest",
+        "overText": "D3 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mitt",
+        "name": "Titan's Mitt",
+        "itemId": 46,
+        "over": "MC_Chest",
+        "overText": "D4 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "temperedSword",
+        "name": "Tempered Sword",
+        "itemId": 48,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "blueMail",
+        "name": "Blue Mail",
+        "itemId": 49,
+        "over": "MC_Chest",
+        "overText": "D5 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "somaria",
+        "name": "Cane of Somaria",
+        "itemId": 51,
+        "over": "MC_Chest",
+        "overText": "D6 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superBomb",
+        "name": "Super Bomb",
+        "itemId": 53,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "goldenSword",
+        "name": "Golden Sword",
+        "itemId": 54,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bowSilver",
+        "name": "Silver Arrows",
+        "itemId": 55,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "mirrorShield",
+        "name": "Mirror Shield",
+        "itemId": 56,
+        "over": "MC_Chest",
+        "overText": "D7 Big Chest",
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "silverArrows",
+        "name": "Silver Arrows",
+        "itemId": 57,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fairyCrystal",
+        "name": "Fairy Crystal",
+        "itemId": 58,
+        "nodeType": "artifact"
       },
       {
         "id": "crystal",
-        "name": "Palace of Darkness - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "pod",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
+        "name": "Crystal",
+        "itemId": 59,
+        "nodeType": "artifact"
       },
       {
-        "id": "crystal",
-        "name": "Swamp Palace - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "sp",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
-      },
-      {
-        "id": "crystal",
-        "name": "Skull Woods - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "sw",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
-      },
-      {
-        "id": "crystal",
-        "name": "Thieves' Town - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "tt",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
-      },
-      {
-        "id": "crystal",
-        "name": "Ice Palace - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "ip",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
-      },
-      {
-        "id": "crystal",
-        "name": "Misery Mire - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "mm",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
-      },
-      {
-        "id": "crystal",
-        "name": "Turtle Rock - Crystal",
-        "start": 0,
-        "max": 1,
-        "back": "tr",
-        "segments": [],
-        "nodeType": "artifact",
-        "value": 1
+        "id": "redMail",
+        "name": "Red Mail",
+        "itemId": 60,
+        "over": "MC_Chest",
+        "overText": "GT Big Chest",
+        "nodeType": "upgrade"
       }
     ],
     "bosses": [],
     "areas": [],
-    "extras": [],
+    "extras": [
+      {
+        "id": "agahnim",
+        "name": "Agahnim's Tower - Agahnim defeated",
+        "extraId": 1001,
+        "back": "at",
+        "nodeType": "event"
+      }
+    ],
     "mapTree": []
   }
 }

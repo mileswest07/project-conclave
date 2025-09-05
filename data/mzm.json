@@ -1,246 +1,448 @@
 {
   "mzm": {
-    "checklistWidth": 6,
-    "checklistLayout": [
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Brinstar Morph Ball Orb Acquired"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Brinstar Bombs Orb Acquired"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Brinstar Varia Suit Orb Acquired"
-      },
-      {
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "lookupId": 18,
-            "value": 1,
-            "start": 0,
-            "max": 1,
-            "over": "Z_Orb",
-            "overText": "Ridley Unknown Item 3 Orb Acquired",
-            "clearIfScramble": true
-          },
-          {
-            "lookupId": 23,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 20,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Brinstar Long Beam Orb Acquired"
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Beam Beast Defeated"
-      },
-      {
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "lookupId": 9,
-            "value": 1,
-            "start": 0,
-            "max": 1,
-            "over": "Z_Orb",
-            "overText": "Crateria Unknown Item 1 Orb Acquired",
-            "clearIfScramble": true
-          },
-          {
-            "lookupId": 21,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norfair Ice Beam Orb Acquired"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norfair Wave Beam Orb Acquired"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Crateria Power Grip Orb Acquired"
-      },
-      {
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [
-          {
-            "lookupId": 12,
-            "value": 1,
-            "start": 0,
-            "max": 1,
-            "over": "Z_Orb",
-            "overText": "Kraid Unknown Item 2 Orb Acquired",
-            "clearIfScramble": true
-          },
-          {
-            "lookupId": 22,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Kraid Speed Booster Orb Acquired"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norfair High Jump Boots Orb Acquired"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norfair Screw Attack Orb Acquired"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 50,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 15,
-        "segments": []
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 9,
-        "segments": []
-      },
-      {
-        "lookupId": 1103,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 2,
-        "segments": [],
-        "id": "boss",
-        "name": "Bosses",
-        "sprite": "bosses",
-        "nodeType": "boss"
-      }
-    ],
+    "checklistLayouts": {
+      "6x5": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Morph Ball Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Bombs Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Varia Suit Orb Acquired"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 18,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Ridley Unknown Item 3 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 23,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 20,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Long Beam Orb Acquired"
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Beam Beast Defeated"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 9,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Crateria Unknown Item 1 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 21,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Wave Beam Orb Acquired"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Crateria Power Grip Orb Acquired"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 12,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Kraid Unknown Item 2 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 22,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Kraid Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair High Jump Boots Orb Acquired"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Screw Attack Orb Acquired"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 50,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 15,
+          "segments": []
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "segments": []
+        },
+        {
+          "lookupId": 1103,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [],
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "nodeType": "boss"
+        }
+      ],
+      "5x5": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Morph Ball Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Bombs Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Varia Suit Orb Acquired"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 18,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Ridley Unknown Item 3 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 23,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 20,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Brinstar Long Beam Orb Acquired"
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Beam Beast Defeated"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 9,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Crateria Unknown Item 1 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 21,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Wave Beam Orb Acquired"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Crateria Power Grip Orb Acquired"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 12,
+              "value": 1,
+              "start": 0,
+              "max": 1,
+              "over": "Z_Orb",
+              "overText": "Kraid Unknown Item 2 Orb Acquired",
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 22,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Kraid Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair High Jump Boots Orb Acquired"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Norfair Screw Attack Orb Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 50,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 15,
+          "segments": []
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "segments": []
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [],
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "nodeType": "boss"
+        }
+      ]
+    },
+    "defaultLayout": "6x5",
     "items": [
       {
         "id": "morphBall",

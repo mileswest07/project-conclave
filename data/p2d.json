@@ -73,7 +73,7 @@
         }
       ]
     },
-    "defaultWidth": 3,
+    "defaultLayout": "3x3",
     "items": [
       {
         "id": "scanVisorP",

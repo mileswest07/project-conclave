@@ -74,8 +74,16 @@ let main = {
     );
   }
   
-  function addItemToSetIfGameNotInList(itemSet, gameExceptionList, currentGame, addThisValue) {
-    if (![...gameExceptionList].includes(currentGame)) {
+  /*
+    Utility function. Checks against a hardcoded list of gameIDs and if it qualifies, it will
+    add a value to a Set added as parameters.
+    
+    @param itemSet A Set intended to be the destination if item qualifies
+    @param currentGame Qualifier gameID, as a string
+    @param addThisValue Value intended to be added to the set if item qualifies
+  */
+  function addItemToSetIfGameNotInList(itemSet, currentGame, addThisValue) {
+    if (!["thf", "aol", "alttp", "sotn"].includes(currentGame)) {
       itemSet.add(addThisValue);
     }
   }
@@ -83,7 +91,7 @@ let main = {
   /*
     Debugging function to generate a new master list of placeholder IDs.
     Depends upon the style ruleset in iconMapping.css.
-    Returns an object, a new masterIDList.
+    Returns an array of strings, a new masterIDList.
   */
   function grabAllPlaceholderIds() {
     let runningString = '';
@@ -130,7 +138,7 @@ let main = {
   /*
     Debugging function to generate a new master list of MZM-style items, complete with usage tracking values.
     Depends upon the style ruleset in allspritesMapping.css.
-    Returns an object, a new unifiedIDCollection.
+    Returns an object, a new unifiedIDCollection, consisting of a key-value pair, where the value is an object of key-count pairs.
   */
   function grabAllMZMSprites() {
     let runningObject = {};
@@ -211,6 +219,31 @@ let main = {
     return {...returnObject};
   }
   
+  /*
+    Debugging function to go through all items and image icon usages.
+    Takes two parameters, both Boolean values.
+    By default, the script will perform the main linting scan, which will report metrics such as
+    the full list of used iconIDs, the usage count for all items across all data.items lists,
+    any instances where the iconID is used multiple times within a game,
+    the count of all nodeTypes and instances across data.items, data.bosses, and data.extras,
+    the total count of all of those nodeType instances,
+    and any iconIDs not currently in use across all games.
+    
+    @param doProcessItemOrder Appends Item Order report if true
+    @param doProcessUnifiedSprites Appends MZM Item Graphics report if true
+    
+    If Flag1 is passes with true, an additional report including projected item acquisition order
+    will be included. This can help determine if there are gaps between itemIDs, though modifying
+    these values may affect both Tracker layout and Explorer mapping references, so adjust these
+    at your own risk!
+    
+    If Flag2 is passes with true, an additional report including MZM Item Graphics will be
+    included. This report includes the list of all MZM Item iconIDs currently in use, as well as
+    those that are referenced in the CSS file but not in use in the data, and
+    those that are referenced in the data but not in the CSS. This data can be used to determine
+    if additional graphics need to be made, or if more itemID data points need to be made to
+    accommodate the unused graphics.
+  */
   async function scanDataForLint(doProcessItemOrder = true, doProcessUnifiedSprites = true) {
     let greaterItemSet = new Set();
     let typeCount = {};
@@ -218,8 +251,6 @@ let main = {
     let totalItemCount = 0;
     let totalExtraCount = 0;
     let totalBossCount = 0;
-    let totalTypeCount = 0;
-    let gameExceptionList = ["thf", "aol", "alttp", "sotn"];
     let aFailureHasOccurred = false;
     
     console.group("Scanning Data for Lint");
@@ -242,132 +273,45 @@ let main = {
         let itemCount = {};
         let itemOrder = [];
         let missingItems = [];
-        let allSegments = [];
         let doesChecklist = checklistGameList.includes(currentGame);
         
         for (let j = 0; j < currentData.items.length; j++) {
           let item = currentData.items[j];
-          if (item.id === "-") {
-            continue;
-          }
-          if (item.nodeType === undefined && (item.segments === undefined || item.segments.length <= 0)) {
-            console.warn(item);
-          }
-          if (item.segments && item.segments.length > 0) {
-            allSegments = [...allSegments, ...item.segments];
-          }
-          if (item.segments && item.segments.length > 0) {
-            let idsAddedDuringTheseSegments = new Set();
-            for (let k = 0; k < item.segments.length; k++) {
-              let segment = item.segments[k];
-              if (segment.id === "-") {
-                continue;
-              }
-              if (segment.nodeType === undefined) {
-                console.warn(item, segment);
-              }
-              if (["boss", "battle"].includes(segment.nodeType)) {
-                ++totalBossCount;
-              } else {
-                ++totalItemCount;
-              }
-              if (segment.itemId) {
-                itemOrder.push(segment);
-                itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
-              } else {
-                missingItems.push(segment);
-              }
-              if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
-                if (itemCount[segment.id]) {
-                  itemCount[segment.id] += 1;
-                } else {
-                  itemCount[segment.id] = 1;
-                }
-                idsAddedDuringTheseSegments.add(segment.id);
-              }
-              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
-              if (doesChecklist) {
-                const useSprite = Object.hasOwn(segment, 'sprite');
-                const propSprite = useSprite ? segment.sprite : segment.id;
-                unifiedIDCollection[currentGame][propSprite] += 1;
-              }
-              if (segment.locale) {
-                for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
-                  let localeId = localeObj.id;
-                  if (localeId === "-") {
-                    continue;
-                  }
-                  if (!idsAddedDuringTheseSegments.has(localeId)) {
-                    if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
-                      if (itemCount[localeId]) {
-                        itemCount[localeId] += 1;
-                      } else {
-                        itemCount[localeId] = 1;
-                      }
-                    }
-                    idsAddedDuringTheseSegments.add(localeId);
-                    addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-                  }
-                }
-              }
-              if (typeCount[segment.nodeType]) {
-                typeCount[segment.nodeType] += 1;
-              } else {
-                typeCount[segment.nodeType] = 1;
-              }
-            }
+          if (["boss", "battle"].includes(item.nodeType)) {
+            ++totalBossCount;
           } else {
-            if (["boss", "battle"].includes(item.nodeType)) {
-              ++totalBossCount;
-            } else {
-              ++totalItemCount;
-            }
-            if (item.itemId) {
-              itemOrder.push(item);
-              itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
-            } else {
-              missingItems.push(item);
-            }
-            if (!(!!item.clearIfScramble)) {
-              if (itemCount[item.id]) {
-                itemCount[item.id] += 1;
-              } else {
-                itemCount[item.id] = 1;
-              }
-            }
-            addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
-            if (doesChecklist) {
-              const useSprite = Object.hasOwn(item, 'sprite');
-              const propSprite = useSprite ? item.sprite : item.id;
-              unifiedIDCollection[currentGame][propSprite] += 1;
-            }
-            if (item.locale) {
-              for (const [localeKey, localeObj] of Object.entries(item.locale)) {
-                let localeId = localeObj.id;
-                if (localeId === "-") {
-                  continue;
-                }
-                if (!(!!item.clearIfScramble) && item.id !== localeId) {
-                  if (itemCount[localeId]) {
-                    itemCount[localeId] += 1;
-                  } else {
-                    itemCount[localeId] = 1;
-                  }
-                }
-                addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-              }
-            }
-            if (typeCount[item.nodeType]) {
-              typeCount[item.nodeType] += 1;
-            } else {
-              typeCount[item.nodeType] = 1;
-            }
+            ++totalItemCount;
+          }
+          if (item.itemId) {
+            itemOrder.push(item);
+            itemOrder = itemOrder.sort((a, b) => b.itemId - a.itemId);
+          } else {
+            missingItems.push(item);
+          }
+          if (itemCount[item.id]) {
+            itemCount[item.id] += 1;
+          } else {
+            itemCount[item.id] = 1;
+          }
+          addItemToSetIfGameNotInList(greaterItemSet, currentGame, item.id);
+          if (doesChecklist) {
+            const useSprite = Object.hasOwn(item, 'sprite');
+            const propSprite = useSprite ? item.sprite : item.id;
+            unifiedIDCollection[currentGame][propSprite] += 1;
+          }
+          let type = item.nodeType || "other item";
+          if (typeCount[type]) {
+            typeCount[type] += 1;
+          } else {
+            typeCount[type] = 1;
           }
         }
         
-        if (currentData.checklistLayout) {
-          for (let j = 0; j < currentData.checklistLayout.length; j++) {
-            let item = currentData.checklistLayout[j];
+        let runningChecklistLayout = Object.values(currentData.checklistLayouts).flat();
+        
+        if (runningChecklistLayout) {
+          for (let j = 0; j < runningChecklistLayout.length; j++) {
+            let item = runningChecklistLayout[j];
             if (item.segments && item.segments.length > 0) {
               let idsAddedDuringTheseSegments = new Set();
               for (let k = 0; k < item.segments.length; k++) {
@@ -378,34 +322,13 @@ let main = {
                 if (!(!!segment.clearIfScramble) && !(!!item.clearIfScramble) && !idsAddedDuringTheseSegments.has(segment.id)) {
                   idsAddedDuringTheseSegments.add(segment.id);
                 }
-                addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, segment.id);
-                if (segment.locale) {
-                  for (const [localeKey, localeObj] of Object.entries(segment.locale)) {
-                    let localeId = localeObj.id;
-                    if (localeId === "-") {
-                      continue;
-                    }
-                    if (!idsAddedDuringTheseSegments.has(localeId)) {
-                      idsAddedDuringTheseSegments.add(localeId);
-                      addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-                    }
-                  }
-                }
+                addItemToSetIfGameNotInList(greaterItemSet, currentGame, segment.id);
               }
             } else {
               if (!item.id || item.id === "-") {
                 continue;
               }
-              addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
-              if (item.locale) {
-                for (const [localeKey, localeObj] of Object.entries(item.locale)) {
-                  let localeId = localeObj.id;
-                  if (localeId === "-") {
-                    continue;
-                  }
-                  addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, localeId);
-                }
-              }
+              addItemToSetIfGameNotInList(greaterItemSet, currentGame, item.id);
             }
           }
         }
@@ -416,11 +339,12 @@ let main = {
             continue;
           }
           ++totalExtraCount;
-          addItemToSetIfGameNotInList(greaterItemSet, gameExceptionList, currentGame, item.id);
-          if (typeCount[item.nodeType]) {
-            typeCount[item.nodeType] += 1;
+          addItemToSetIfGameNotInList(greaterItemSet, currentGame, item.id);
+          let type = item.nodeType || "other extra";
+          if (typeCount[type]) {
+            typeCount[type] += 1;
           } else {
-            typeCount[item.nodeType] = 1;
+            typeCount[type] = 1;
           }
         }
         
@@ -453,13 +377,9 @@ let main = {
         }
         
         if (doProcessItemOrder) {
-          console.debug(`item order for game ${currentGame}`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
+          console.debug(`item order for game ${currentGame}:`, itemOrder.map(item => `${item.itemId}: ${item.name} (${item.nodeType})`));
           if (!["mpff", "thf", "aol", "alttp", "sotn"].includes(currentGame) && missingItems.length) {
             console.debug("   missing items:", missingItems.map(item => `${item.name} (${item.nodeType})`));
-          }
-          if (!["mpff", "thf", "aol", "alttp", "sotn"].includes(currentGame) && allSegments.length) {
-            console.debug("   segments:", allSegments);
-            //console.debug(`segments for game ${currentGame}`, allSegments);
           }
         }
       } catch (e) {
@@ -473,19 +393,17 @@ let main = {
       console.groupEnd();
     }
     
-    for (const [keytype, count] of Object.entries(typeCount)) {
-      totalTypeCount += count;
-    }
+    let totalTypeCount = Object.values(typeCount).reduce((sum, count) => sum + count, 0);
     
     greaterItemSet = [...greaterItemSet];
     
-    let itemIdResults = partition(masterIDList, (eachItem, index, allItems) => greaterItemSet.includes(eachItem));
-    let itemIdsWithoutGraphics = partition(greaterItemSet, (eachItem, index, allItems) => !masterIDList.includes(eachItem));
+    let itemIdResults = partition(masterIDList, (eachItem) => greaterItemSet.includes(eachItem));
+    let itemIdsWithoutGraphics = partition(greaterItemSet, (eachItem) => !masterIDList.includes(eachItem));
     
     console.groupCollapsed("Total Linting report");
     console.debug("items list:", greaterItemSet);
-    console.debug("total item count:", totalItemCount);
-    console.info("dupes per game:", dupesPerGame);
+    console.debug("total item uses:", totalItemCount);
+    console.info("reused itemID icons per game:", dupesPerGame);
     console.debug("types and count:", typeCount);
     console.debug("total number by type count:", totalTypeCount);
     if (totalItemCount + totalBossCount + totalExtraCount !== totalTypeCount) {
@@ -568,6 +486,7 @@ let main = {
     Debugging function to consolidate all valid and updated JSON files into one.
     Output of stringified JSON object will be sent to console. Currently investigating having the output
     be sent to clipboard for quick pasting, but might need to set up a polyfill for that function.
+    ... Or not. The resulting JSON might be too large now, with all of the recent additions.
   */
   function consolidateJson() {
     let runningJson = {};

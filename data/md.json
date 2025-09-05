@@ -213,11 +213,236 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
+          "id": "-"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
           "start": 0,
-          "max": 0,
+          "max": 8,
           "segments": []
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 16,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 75,
+          "segments": []
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 11,
+          "segments": []
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 13,
+          "segments": []
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 9,
+          "max": 12,
+          "segments": [],
+          "displayIfScramble": true
+        }
+      ],
+      "6x5": [
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-06WB Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Kraid Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-05IM Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Escue Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Corpius Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-03MB Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Golzuna Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-07PB Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-02SM Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "E.M.M.I.-04SB Defeated",
+          "segments": []
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "id": "-"
         },
         {
           "lookupId": 5,
@@ -264,7 +489,8 @@
         }
       ]
     },
-    "defaultWidth": 6,
+    "defaultLayout": "6x4",
+    "scrambleLayout": "6x5",
     "items": [
       {
         "id": "missileTankD",

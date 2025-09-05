@@ -59,34 +59,6 @@
           "segments": []
         },
         {
-          "lookupId": 7,
-          "value": 1,
-          "start": 0,
-          "max": 7,
-          "segments": []
-        },
-        {
-          "lookupId": 6,
-          "value": 1,
-          "start": 0,
-          "max": 9,
-          "segments": []
-        },
-        {
-          "lookupId": 5,
-          "value": 1,
-          "start": 0,
-          "max": 12,
-          "segments": []
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
           "name": "Celestial Archives 1",
           "value": 0,
           "start": 0,
@@ -171,55 +143,6 @@
           ]
         },
         {
-          "name": "",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "lookupId": 23,
-              "value": 0,
-              "start": 0,
-              "max": 8
-            },
-            {
-              "lookupId": 1105,
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            },
-            {
-              "lookupId": 1103,
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            }
-          ]
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
           "name": "Celestial Archives 2",
           "value": 0,
           "start": 0,
@@ -302,10 +225,59 @@
               "clearIfScramble": true
             }
           ]
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 7,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": [
+            {
+              "lookupId": 23,
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "lookupId": 1105,
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            },
+            {
+              "lookupId": 1103,
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            }
+          ]
         }
       ]
     },
-    "defaultWidth": 8,
+    "defaultLayout": "8x3",
     "items": [
       {
         "id": "powerBeamE",

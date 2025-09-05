@@ -59,9 +59,7 @@
           "value": 0
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 8,
@@ -102,9 +100,7 @@
           "nodeType": "upgrade"
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 11,
@@ -301,9 +297,7 @@
           "value": 0
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 8,
@@ -341,9 +335,7 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 11,
@@ -409,9 +401,7 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 5,
@@ -456,9 +446,7 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 3,
@@ -784,14 +772,10 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 26,
@@ -824,19 +808,13 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 15,
@@ -926,7 +904,10 @@
         }
       ]
     },
-    "defaultWidth": 8,
+    "customLayoutLabels": {
+      "8x6": "ZIIAOL by Hoverbat (8x6)"
+    },
+    "defaultLayout": "8x4",
     "items": [
       {
         "id": "shieldSpell",

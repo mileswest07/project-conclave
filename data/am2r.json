@@ -1,6 +1,293 @@
 {
   "am2r": {
     "checklistLayouts": {
+      "8x3": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Tester Defeated"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Serris Defeated"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Arachnus Defeated"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 44,
+          "segments": []
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": []
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "segments": [],
+          "over": "Z_Orb",
+          "overText": "Power Plant Destroyed"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 54,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Surface",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Golden Temple",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Hydro Station",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Industrial Complex",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Research Site",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Mining Facility",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Tower",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 6
+            },
+            {
+              "id": "monsterDna",
+              "name": "Distribution Center",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Upper Areas",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 38,
+              "disabled": true
+            },
+            {
+              "id": "monsterDna",
+              "name": "Rescue Team Campsite",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Nest",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Genetics Laboratory",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "lookupId": 1210,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 30,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        }
+      ],
       "5x4": [
         {
           "lookupId": 4,
@@ -263,300 +550,9 @@
             }
           ]
         }
-      ],
-      "8x3": [
-        {
-          "lookupId": 2,
-          "value": 0,
-          "start": 1,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 8,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 19,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 6,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 9,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 13,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 16,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "F_Boss",
-          "overText": "Tester Defeated"
-        },
-        {
-          "lookupId": 20,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "F_Boss",
-          "overText": "Serris Defeated"
-        },
-        {
-          "lookupId": 4,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 7,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 11,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "F_Boss",
-          "overText": "Arachnus Defeated"
-        },
-        {
-          "lookupId": 3,
-          "value": 0,
-          "start": 1,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 10,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 12,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "F_Boss",
-          "overText": "Torizo Defeated"
-        },
-        {
-          "lookupId": 14,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 18,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 5,
-          "value": 1,
-          "start": 0,
-          "max": 10,
-          "segments": []
-        },
-        {
-          "lookupId": 1,
-          "value": 1,
-          "start": 0,
-          "max": 44,
-          "segments": []
-        },
-        {
-          "lookupId": 15,
-          "value": 1,
-          "start": 0,
-          "max": 10,
-          "segments": []
-        },
-        {
-          "lookupId": 17,
-          "value": 1,
-          "start": 0,
-          "max": 10,
-          "segments": [],
-          "over": "Z_Orb",
-          "overText": "Power Plant Destroyed"
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
-          "name": "Metroids defeated",
-          "type": "counter",
-          "value": 0,
-          "start": 0,
-          "max": 54,
-          "segments": [
-            {
-              "id": "monsterDna",
-              "name": "Surface",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "id": "monsterDna",
-              "name": "Golden Temple",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 4
-            },
-            {
-              "id": "monsterDna",
-              "name": "Hydro Station",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 8
-            },
-            {
-              "id": "monsterDna",
-              "name": "Industrial Complex",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 10
-            },
-            {
-              "id": "monsterDna",
-              "name": "Research Site",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 2
-            },
-            {
-              "id": "monsterDna",
-              "name": "Mining Facility",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 2
-            },
-            {
-              "id": "monsterDna",
-              "name": "The Tower",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 6
-            },
-            {
-              "id": "monsterDna",
-              "name": "Distribution Center",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 8
-            },
-            {
-              "id": "monsterDna",
-              "name": "Upper Areas",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 38,
-              "disabled": true
-            },
-            {
-              "id": "monsterDna",
-              "name": "Rescue Team Campsite",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 2
-            },
-            {
-              "id": "monsterDna",
-              "name": "The Nest",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 3
-            },
-            {
-              "id": "monsterDna",
-              "name": "Genetics Laboratory",
-              "sprite": "monster",
-              "type": "counter",
-              "value": 0,
-              "start": 0,
-              "max": 9
-            }
-          ]
-        },
-        {
-          "lookupId": 1210,
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 30,
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        }
       ]
     },
-    "defaultWidth": 8,
+    "defaultLayout": "8x3",
     "hasKeyslots": false,
     "items": [
       {

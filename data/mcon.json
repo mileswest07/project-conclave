@@ -1,7 +1,7 @@
 {
   "mcon": {
     "checklistLayouts": {
-      "2x6": [
+      "5x3": [
         {
           "lookupId": 2,
           "value": 1,
@@ -33,6 +33,15 @@
           "overText": "Crocomire Defeated"
         },
         {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
           "lookupId": 5,
           "value": 1,
           "start": 0,
@@ -49,20 +58,13 @@
           "overText": "Ridley Defeated"
         },
         {
-          "lookupId": 8,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "S_Boss",
-          "overText": "Kraid Defeated"
+          "id": "-"
         },
         {
-          "lookupId": 11,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
+          "id": "-"
+        },
+        {
+          "id": "-"
         },
         {
           "lookupId": 6,
@@ -92,6 +94,13 @@
           "value": 0,
           "start": 0,
           "max": 3,
+          "segments": []
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
           "segments": []
         }
       ],
@@ -189,7 +198,7 @@
           "segments": []
         }
       ],
-      "5x3": [
+      "2x6": [
         {
           "lookupId": 2,
           "value": 1,
@@ -221,15 +230,6 @@
           "overText": "Crocomire Defeated"
         },
         {
-          "lookupId": 8,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": [],
-          "over": "S_Boss",
-          "overText": "Kraid Defeated"
-        },
-        {
           "lookupId": 5,
           "value": 1,
           "start": 0,
@@ -246,24 +246,19 @@
           "overText": "Ridley Defeated"
         },
         {
-          "lookupId": -1,
-          "value": 0,
+          "lookupId": 8,
+          "value": 1,
           "start": 0,
-          "max": 0,
-          "segments": []
+          "max": 1,
+          "segments": [],
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
         },
         {
-          "lookupId": -1,
-          "value": 0,
+          "lookupId": 11,
+          "value": 1,
           "start": 0,
-          "max": 0,
-          "segments": []
-        },
-        {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
+          "max": 1,
           "segments": []
         },
         {
@@ -295,17 +290,10 @@
           "start": 0,
           "max": 3,
           "segments": []
-        },
-        {
-          "lookupId": 11,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
         }
       ]
     },
-    "defaultWidth": 5,
+    "defaultLayout": "5x3",
     "items": [
       {
         "id": "missileTankA",

@@ -290,7 +290,7 @@
         }
       ]
     },
-    "defaultWidth": 7,
+    "defaultLayout": "7x4",
     "items": [
       {
         "id": "morphBall",

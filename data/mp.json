@@ -26,11 +26,7 @@
           ]
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": [],
+          "id": "-",
           "displayIfScramble": true
         },
         {
@@ -265,11 +261,7 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "value": 1,
@@ -295,7 +287,7 @@
         }
       ]
     },
-    "defaultWidth": 5,
+    "defaultLayout": "5x6",
     "items": [
       {
         "id": "combatVisorP",

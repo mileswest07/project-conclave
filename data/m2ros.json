@@ -1,13 +1,9 @@
 {
   "m2ros": {
     "checklistLayouts": {
-      "2x8": [
+      "4x4": [
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "lookupId": 2,
@@ -38,13 +34,6 @@
           "segments": []
         },
         {
-          "lookupId": 14,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
           "lookupId": 9,
           "value": 1,
           "start": 0,
@@ -53,6 +42,13 @@
         },
         {
           "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 14,
           "value": 1,
           "start": 0,
           "max": 1,
@@ -214,13 +210,9 @@
           "segments": []
         }
       ],
-      "4x4": [
+      "2x8": [
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "lookupId": 2,
@@ -251,6 +243,13 @@
           "segments": []
         },
         {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
           "lookupId": 9,
           "value": 1,
           "start": 0,
@@ -259,13 +258,6 @@
         },
         {
           "lookupId": 11,
-          "value": 1,
-          "start": 0,
-          "max": 1,
-          "segments": []
-        },
-        {
-          "lookupId": 14,
           "value": 1,
           "start": 0,
           "max": 1,
@@ -428,7 +420,7 @@
         }
       ]
     },
-    "defaultWidth": 4,
+    "defaultLayout": "4x4",
     "hasKeyslots": true,
     "items": [
       {

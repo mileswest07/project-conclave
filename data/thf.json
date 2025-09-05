@@ -59,8 +59,6 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -119,8 +117,6 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
@@ -145,14 +141,10 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -184,20 +176,14 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -249,8 +235,6 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -262,7 +246,7 @@
         }
       ]
     },
-    "defaultWidth": 7,
+    "defaultLayout": "7x4",
     "items": [
       {
         "id": "woodenSword",

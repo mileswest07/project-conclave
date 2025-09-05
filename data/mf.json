@@ -100,18 +100,10 @@
           "max": 1
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "lookupId": 9,
@@ -173,11 +165,7 @@
           "displayIfScramble": true
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": [],
+          "id": "-",
           "clearIfScramble": true
         },
         {
@@ -202,11 +190,7 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": [],
+          "id": "-",
           "clearIfScramble": true
         },
         {
@@ -218,25 +202,13 @@
           "displayIfScramble": true
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "id": "waterPumpControl",
@@ -311,19 +283,11 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": [],
+          "id": "-",
           "disabled": true
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": [],
+          "id": "-",
           "disabled": true
         },
         {
@@ -447,7 +411,7 @@
         }
       ]
     },
-    "defaultWidth": 7,
+    "defaultLayout": "7x5",
     "items": [
       {
         "id": "graySecurity",

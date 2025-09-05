@@ -122,11 +122,7 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "lookupId": 7,
@@ -164,11 +160,7 @@
           "segments": []
         },
         {
-          "lookupId": -1,
-          "value": 0,
-          "start": 0,
-          "max": 0,
-          "segments": []
+          "id": "-"
         },
         {
           "lookupId": 4,
@@ -279,7 +271,7 @@
         }
       ]
     },
-    "defaultWidth": 6,
+    "defaultLayout": "6x5",
     "items": [
       {
         "id": "missileTankA",

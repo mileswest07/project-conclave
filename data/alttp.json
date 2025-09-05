@@ -81,9 +81,7 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "name": "Tower of Hera - Pendant of Power",
@@ -97,14 +95,10 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -155,9 +149,7 @@
           "clearIfScramble": true
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "name": "Eastern Palace - Pendant of Courage",
@@ -170,20 +162,14 @@
           "clearIfScramble": true
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
@@ -241,14 +227,10 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
@@ -261,14 +243,10 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -308,26 +286,18 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "displayIfScramble": true
         },
         {
@@ -410,8 +380,6 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -456,9 +424,7 @@
           "value": 1
         },
         {
-          "id": "-",
-          "name": "",
-          "max": 0
+          "id": "-"
         },
         {
           "lookupId": 37,
@@ -483,8 +449,6 @@
         },
         {
           "id": "-",
-          "name": "",
-          "max": 0,
           "clearIfScramble": true
         },
         {
@@ -1740,7 +1704,10 @@
         }
       ]
     },
-    "defaultWidth": 9,
+    "customLayoutLabels": {
+      "10x6": "Scramble Mode (10x6)"
+    },
+    "defaultLayout": "9x6",
     "scrambleLayout": "10x6",
     "items": [
       {

@@ -27,6 +27,8 @@ let keyslots = {};
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
   
+  const nonstandardizedList = ["thf", "aol", "alttp", "sotn"];
+  
   const nodeTypesBossTier = ["boss", "battle"];
   const nodeTypesItemTier = ["artifact", "upgrade", "slot", "expansion"];
   const nodeTypesExtraTier = ["event", "trigger", "toggle", "lore", "easter"];
@@ -1486,7 +1488,7 @@ let keyslots = {};
     }
     // console.log(foundStyleSheets);
     
-    const skipGamesListForAll = ["thf", "aol", "alttp", "sotn"];
+    const skipGamesListForAll = [...nonstandardizedList];
     const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", "mng", "mttne", "mpff"];
     const skipGamesListForSprites = [...skipGamesListForAll];
     const skipGamesListForPlaceholders = [...skipGamesListForAll];
@@ -1656,7 +1658,7 @@ let keyslots = {};
     let itemWidth = 50;
     let hasProperGraphics = true;
     
-    if (!["thf", "aol", "alttp", "sotn"].includes(tracker.currentGame)) {
+    if (!nonstandardizedList.includes(tracker.currentGame)) {
       //console.group();
       hasProperGraphics = tracker.readyPanels.map(element => checkIfEveryItemHasProperGraphics(element, false, tracker.currentGame));
       hasProperGraphics = hasProperGraphics.reduce((acc, curr) => acc && curr, true);
@@ -1668,7 +1670,7 @@ let keyslots = {};
     if ((tracker.useSprites || (tracker.useAllSprites && tracker.useSprites)) && hasProperGraphics) {
       itemWidth = 42;
     }
-    if (["thf", "aol", "alttp", "sotn"].includes(tracker.currentGame)) {
+    if (nonstandardizedList.includes(tracker.currentGame)) {
       itemWidth = 42;
     } else if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;

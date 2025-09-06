@@ -86,7 +86,7 @@ let keyslots = {};
   }
   
   function aol_dashSpell(setOrReturn) {
-    if (tracker.selectedLayout === "8x6")) { // for ZIIAOL, no need to do anything here
+    if (tracker.selectedLayout === "8x6") { // for ZIIAOL, no need to do anything here
       return;
     }
     let targetId = setOrReturn ? "item-fireSpell-4" : "item-dashSpell-4x";
@@ -1366,7 +1366,7 @@ let keyslots = {};
       
       for (let j = 0; j < tracker.workingData.items.length; j++) {
         let item = tracker.workingData.items[j];
-        if (item.segments && item.segments.length) {
+        if (item.hasOwnProperty("segments") && item.segments.length) {
           allPanels = [...allPanels, ...makePanelsOutOfList(item.segments)];
         } else if (item.id === "-" || item.lookupId === -1) {
           continue;

@@ -6,15 +6,13 @@
           "lookupId": 2,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Great Temple - Main Energy Controller 1"
         },
@@ -22,15 +20,13 @@
           "lookupId": 3,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Torvus Bog - Torvus Temple"
         },
@@ -38,15 +34,13 @@
           "lookupId": 5,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Bomb Guardian Defeated"
         },
@@ -55,7 +49,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Jump Guardian Defeated"
         },
@@ -64,7 +57,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Dark Alpha Splinter Defeated"
         },
@@ -72,15 +64,13 @@
           "lookupId": 4,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Agon Wastes - Agon Energy Controller"
         },
@@ -89,7 +79,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Agon Wastes - Storage D"
         },
@@ -98,7 +87,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Agon Wastes - Mining Station B"
         },
@@ -107,7 +95,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - GFMC Compound"
         },
@@ -116,7 +103,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Boost Guardian Defeated"
         },
@@ -128,7 +114,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Amorbis Defeated"
         },
@@ -137,7 +122,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Chykka Defeated"
         },
@@ -146,7 +130,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Torvus Bog - Torvus Energy Controller"
         },
@@ -155,7 +138,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Dark Agon Wastes - Ing Cache 1"
         },
@@ -164,7 +146,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - Grand Windchamber"
         },
@@ -173,7 +154,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - Hall of Honored Dead"
         },
@@ -182,7 +162,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Spider Guardian Defeated"
         },
@@ -191,7 +170,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Grapple Guardian Defeated"
         },
@@ -200,7 +178,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Torvus Bog - Hydrodynamo Storage"
         },
@@ -209,7 +186,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Sanctuary Fortress - Aerie"
         },
@@ -218,7 +194,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Sanctuary Fortress - Sanctuary Temple"
         },
@@ -227,7 +202,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Quadraxis Defeated"
         },
@@ -236,7 +210,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Dark Agon Wastes - Ing Cache 2"
         },
@@ -244,15 +217,13 @@
           "lookupId": 6,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 35,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Power Bomb Guardian Defeated"
         },
@@ -261,7 +232,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Sanctuary Fortress - Vault"
         },
@@ -270,7 +240,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Great Temple - Main Energy Controller 2"
         },
@@ -278,29 +247,25 @@
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 14,
-          "segments": []
+          "max": 14
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 49,
-          "segments": []
+          "max": 49
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 4,
-          "segments": []
+          "max": 4
         },
         {
           "lookupId": 36,
           "value": 1,
           "start": 0,
-          "max": 8,
-          "segments": []
+          "max": 8
         },
         {
           "value": 0,
@@ -410,15 +375,13 @@
           "lookupId": 2,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Great Temple - Main Energy Controller 1"
         },
@@ -426,15 +389,13 @@
           "lookupId": 3,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Torvus Bog - Torvus Temple"
         },
@@ -442,15 +403,13 @@
           "lookupId": 5,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Bomb Guardian Defeated"
         },
@@ -459,7 +418,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Jump Guardian Defeated"
         },
@@ -468,7 +426,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Dark Alpha Splinter Defeated"
         },
@@ -476,15 +433,13 @@
           "lookupId": 4,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Agon Wastes - Agon Energy Controller"
         },
@@ -493,7 +448,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Agon Wastes - Storage D"
         },
@@ -502,7 +456,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Agon Wastes - Mining Station B"
         },
@@ -511,7 +464,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - GFMC Compound"
         },
@@ -520,7 +472,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Boost Guardian Defeated"
         },
@@ -533,7 +484,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -541,7 +491,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Amorbis Defeated"
         },
@@ -550,7 +499,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Chykka Defeated"
         },
@@ -559,7 +507,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Torvus Bog - Torvus Energy Controller"
         },
@@ -568,7 +515,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Dark Agon Wastes - Ing Cache 1"
         },
@@ -577,7 +523,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - Grand Windchamber"
         },
@@ -586,7 +531,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Temple Grounds - Hall of Honored Dead"
         },
@@ -595,7 +539,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Spider Guardian Defeated"
         },
@@ -604,7 +547,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Grapple Guardian Defeated"
         },
@@ -613,7 +555,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Torvus Bog - Hydrodynamo Storage"
         },
@@ -622,7 +563,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Sanctuary Fortress - Aerie"
         },
@@ -631,7 +571,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Sanctuary Fortress - Sanctuary Temple"
         },
@@ -640,7 +579,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Quadraxis Defeated"
         },
@@ -649,7 +587,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Dark Agon Wastes - Ing Cache 2"
         },
@@ -657,15 +594,13 @@
           "lookupId": 6,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 35,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Power Bomb Guardian Defeated"
         },
@@ -674,7 +609,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Sanctuary Fortress - Vault"
         },
@@ -683,7 +617,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "E_Lumin",
           "overText": "Great Temple - Main Energy Controller 2"
         },
@@ -691,15 +624,13 @@
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 14,
-          "segments": []
+          "max": 14
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
           "max": 49,
-          "segments": [],
           "clearIfScramble": true
         },
         {
@@ -707,7 +638,6 @@
           "value": 1,
           "start": 0,
           "max": 30,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -715,7 +645,6 @@
           "value": 1,
           "start": 0,
           "max": 4,
-          "segments": [],
           "clearIfScramble": true
         },
         {
@@ -723,7 +652,6 @@
           "value": 1,
           "start": 0,
           "max": 10,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -731,22 +659,19 @@
           "value": 1,
           "start": 0,
           "max": 10,
-          "segments": [],
           "displayIfScramble": true
         },
         {
           "lookupId": 36,
           "value": 1,
           "start": 0,
-          "max": 8,
-          "segments": []
+          "max": 8
         },
         {
           "lookupId": 44,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -754,7 +679,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -762,7 +686,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "displayIfScramble": true
         },
         {

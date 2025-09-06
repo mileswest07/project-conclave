@@ -6,57 +6,49 @@
           "lookupId": 8,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 24,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "name": "Celestial Archives 1",
@@ -230,22 +222,19 @@
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 7,
-          "segments": []
+          "max": 7
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 9,
-          "segments": []
+          "max": 9
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "name": "",

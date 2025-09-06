@@ -6,120 +6,103 @@
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 40,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 29,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 30,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 31,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 19,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 44,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 16,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -128,36 +111,31 @@
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 43,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 42,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -166,36 +144,31 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 14,
-          "segments": []
+          "max": 14
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 50,
-          "segments": []
+          "max": 50
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 20,
-          "segments": []
+          "max": 20
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 41,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "name": "Metroids defeated",

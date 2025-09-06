@@ -39,7 +39,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Arachnus Defeated"
         },
@@ -48,7 +47,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Data",
           "overText": "Sector 2 TRO - Data Room"
         },
@@ -57,7 +55,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Data",
           "overText": "Sector 5 ARC - Data Room"
         },
@@ -110,7 +107,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Zazabi Defeated"
         },
@@ -119,7 +115,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Serris Defeated"
         },
@@ -128,7 +123,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Yakuza Defeated"
         },
@@ -137,7 +131,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Neo-Ridley-X Defeated"
         },
@@ -172,22 +165,19 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 20,
-          "segments": []
+          "max": 20
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 48,
-          "segments": []
+          "max": 48
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 32,
-          "segments": []
+          "max": 32
         },
         {
           "id": "-",
@@ -198,7 +188,6 @@
           "value": 0,
           "start": 0,
           "max": 5,
-          "segments": [],
           "displayIfScramble": true
         },
         {
@@ -216,7 +205,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "disabled": true
         },
         {
@@ -225,7 +213,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "disabled": true
         },
         {
@@ -235,7 +222,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "disabled": true
         },
         {
@@ -244,43 +230,37 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "disabled": true
         },
         {
           "lookupId": 1,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 22,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-",

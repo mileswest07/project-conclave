@@ -9,57 +9,49 @@
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -68,7 +60,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -76,7 +67,6 @@
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 1,
           "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
@@ -86,7 +76,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -94,15 +83,13 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 6,
-          "segments": []
+          "max": 6
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 22,
-          "segments": []
+          "max": 22
         },
         {
           "name": "Metroids defeated",
@@ -206,8 +193,7 @@
           "lookupId": 15,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         }
       ],
       "2x8": [
@@ -218,57 +204,49 @@
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -277,7 +255,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -286,7 +263,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -295,7 +271,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "nodeType": "slot",
           "slotType": "beam"
         },
@@ -303,15 +278,13 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 6,
-          "segments": []
+          "max": 6
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 22,
-          "segments": []
+          "max": 22
         },
         {
           "name": "Metroids defeated",
@@ -415,8 +388,7 @@
           "lookupId": 15,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         }
       ]
     },

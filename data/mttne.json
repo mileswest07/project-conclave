@@ -6,22 +6,19 @@
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 25,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -30,78 +27,67 @@
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 22,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 26,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -110,29 +96,25 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 29,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -150,50 +132,43 @@
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 27,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 30,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 21,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 32,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 31,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 28,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -202,50 +177,43 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 14,
-          "segments": []
+          "max": 14
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 50,
-          "segments": []
+          "max": 50
         },
         {
           "lookupId": 16,
           "value": 1,
           "start": 0,
-          "max": 20,
-          "segments": []
+          "max": 20
         },
         {
           "lookupId": 19,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 24,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 11,
-          "segments": []
+          "max": 11
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 5,
-          "segments": []
+          "max": 5
         },
         {
           "name": "X-Metroids defeated",

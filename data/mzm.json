@@ -7,7 +7,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Morph Ball Orb Acquired"
         },
@@ -16,7 +15,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Bombs Orb Acquired"
         },
@@ -25,7 +23,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Varia Suit Orb Acquired"
         },
@@ -55,8 +52,7 @@
           "lookupId": 20,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -66,7 +62,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Long Beam Orb Acquired"
         },
@@ -75,7 +70,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Beam Beast Defeated"
         },
@@ -106,7 +100,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Ice Beam Orb Acquired"
         },
@@ -115,7 +108,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Wave Beam Orb Acquired"
         },
@@ -127,7 +119,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Crateria Power Grip Orb Acquired"
         },
@@ -158,7 +149,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Kraid Speed Booster Orb Acquired"
         },
@@ -167,7 +157,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair High Jump Boots Orb Acquired"
         },
@@ -176,7 +165,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Screw Attack Orb Acquired"
         },
@@ -187,42 +175,36 @@
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 50,
-          "segments": []
+          "max": 50
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 24,
           "value": 1,
           "start": 0,
-          "max": 9,
-          "segments": []
+          "max": 9
         },
         {
           "lookupId": 1103,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "value": 0,
           "start": 0,
           "max": 2,
-          "segments": [],
           "id": "boss",
           "name": "Bosses",
           "sprite": "bosses",
@@ -235,7 +217,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Morph Ball Orb Acquired"
         },
@@ -244,7 +225,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Bombs Orb Acquired"
         },
@@ -253,7 +233,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Varia Suit Orb Acquired"
         },
@@ -283,15 +262,13 @@
           "lookupId": 20,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Brinstar Long Beam Orb Acquired"
         },
@@ -300,7 +277,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Beam Beast Defeated"
         },
@@ -331,7 +307,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Ice Beam Orb Acquired"
         },
@@ -340,7 +315,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Wave Beam Orb Acquired"
         },
@@ -349,7 +323,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Crateria Power Grip Orb Acquired"
         },
@@ -380,7 +353,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Kraid Speed Booster Orb Acquired"
         },
@@ -389,7 +361,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair High Jump Boots Orb Acquired"
         },
@@ -398,7 +369,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norfair Screw Attack Orb Acquired"
         },
@@ -406,35 +376,30 @@
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 50,
-          "segments": []
+          "max": 50
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 24,
           "value": 1,
           "start": 0,
-          "max": 9,
-          "segments": []
+          "max": 9
         },
         {
           "value": 0,
           "start": 0,
           "max": 2,
-          "segments": [],
           "id": "boss",
           "name": "Bosses",
           "sprite": "bosses",

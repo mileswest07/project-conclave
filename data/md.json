@@ -56,8 +56,7 @@
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "name": "",
@@ -87,8 +86,7 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss",
-          "overText": "Escue Defeated",
-          "segments": []
+          "overText": "Escue Defeated"
         },
         {
           "name": "",
@@ -116,22 +114,19 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss_Ex",
-          "overText": "Corpius Defeated",
-          "segments": []
+          "overText": "Corpius Defeated"
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
@@ -139,15 +134,13 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-03MB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-03MB Defeated"
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 25,
@@ -155,8 +148,7 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss",
-          "overText": "Golzuna Defeated",
-          "segments": []
+          "overText": "Golzuna Defeated"
         },
         {
           "lookupId": 27,
@@ -164,8 +156,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-07PB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-07PB Defeated"
         },
         {
           "lookupId": 6,
@@ -173,8 +164,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-02SM Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-02SM Defeated"
         },
         {
           "lookupId": 14,
@@ -182,8 +172,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-04SB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-04SB Defeated"
         },
         {
           "name": "",
@@ -209,8 +198,7 @@
           "lookupId": 24,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -219,43 +207,37 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 8,
-          "segments": []
+          "max": 8
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 16,
-          "segments": []
+          "max": 16
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 75,
-          "segments": []
+          "max": 75
         },
         {
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 11,
-          "segments": []
+          "max": 11
         },
         {
           "lookupId": 28,
           "value": 1,
           "start": 0,
-          "max": 13,
-          "segments": []
+          "max": 13
         },
         {
           "lookupId": 29,
           "value": 1,
           "start": 9,
           "max": 12,
-          "segments": [],
           "displayIfScramble": true
         }
       ],
@@ -264,15 +246,13 @@
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 26,
@@ -280,15 +260,13 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-06WB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-06WB Defeated"
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
@@ -296,22 +274,19 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss_Ex",
-          "overText": "Kraid Defeated",
-          "segments": []
+          "overText": "Kraid Defeated"
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 16,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 19,
@@ -319,8 +294,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-05IM Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-05IM Defeated"
         },
         {
           "lookupId": 21,
@@ -328,22 +302,19 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss",
-          "overText": "Escue Defeated",
-          "segments": []
+          "overText": "Escue Defeated"
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
@@ -351,22 +322,19 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss_Ex",
-          "overText": "Corpius Defeated",
-          "segments": []
+          "overText": "Corpius Defeated"
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
@@ -374,15 +342,13 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-03MB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-03MB Defeated"
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 25,
@@ -390,8 +356,7 @@
           "start": 0,
           "max": 1,
           "over": "F_Boss",
-          "overText": "Golzuna Defeated",
-          "segments": []
+          "overText": "Golzuna Defeated"
         },
         {
           "lookupId": 27,
@@ -399,8 +364,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-07PB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-07PB Defeated"
         },
         {
           "lookupId": 6,
@@ -408,8 +372,7 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-02SM Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-02SM Defeated"
         },
         {
           "lookupId": 14,
@@ -417,29 +380,25 @@
           "start": 0,
           "max": 1,
           "over": "Z_Orb",
-          "overText": "E.M.M.I.-04SB Defeated",
-          "segments": []
+          "overText": "E.M.M.I.-04SB Defeated"
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 22,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 24,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "id": "-"
@@ -448,43 +407,37 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 8,
-          "segments": []
+          "max": 8
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 16,
-          "segments": []
+          "max": 16
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 75,
-          "segments": []
+          "max": 75
         },
         {
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 11,
-          "segments": []
+          "max": 11
         },
         {
           "lookupId": 28,
           "value": 1,
           "start": 0,
-          "max": 13,
-          "segments": []
+          "max": 13
         },
         {
           "lookupId": 29,
           "value": 1,
           "start": 9,
           "max": 12,
-          "segments": [],
           "displayIfScramble": true
         }
       ]

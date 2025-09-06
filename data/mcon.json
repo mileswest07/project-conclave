@@ -6,29 +6,25 @@
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Crocomire Defeated"
         },
@@ -37,7 +33,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Kraid Defeated"
         },
@@ -45,15 +40,13 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Ridley Defeated"
         },
@@ -70,22 +63,19 @@
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 2,
-          "segments": []
+          "max": 2
         },
         {
           "id": "boss",
@@ -93,15 +83,13 @@
           "sprite": "bosses",
           "value": 0,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         }
       ],
       "4x3": [
@@ -109,29 +97,25 @@
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Crocomire Defeated"
         },
@@ -139,15 +123,13 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Ridley Defeated"
         },
@@ -156,7 +138,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Kraid Defeated"
         },
@@ -164,29 +145,25 @@
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 2,
-          "segments": []
+          "max": 2
         },
         {
           "id": "boss",
@@ -194,8 +171,7 @@
           "sprite": "bosses",
           "value": 0,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         }
       ],
       "2x6": [
@@ -203,29 +179,25 @@
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 3,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Crocomire Defeated"
         },
@@ -233,15 +205,13 @@
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Ridley Defeated"
         },
@@ -250,7 +220,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "S_Boss",
           "overText": "Kraid Defeated"
         },
@@ -258,29 +227,25 @@
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 12,
-          "segments": []
+          "max": 12
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 2,
-          "segments": []
+          "max": 2
         },
         {
           "id": "boss",
@@ -288,8 +253,7 @@
           "sprite": "bosses",
           "value": 0,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         }
       ]
     },

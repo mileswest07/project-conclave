@@ -6,50 +6,43 @@
           "lookupId": 2,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 19,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 16,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Tester Defeated"
         },
@@ -58,7 +51,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Serris Defeated"
         },
@@ -66,22 +58,19 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Arachnus Defeated"
         },
@@ -89,22 +78,19 @@
           "lookupId": 3,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Torizo Defeated"
         },
@@ -112,43 +98,37 @@
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 44,
-          "segments": []
+          "max": 44
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
           "max": 10,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Power Plant Destroyed"
         },
@@ -277,15 +257,13 @@
           "lookupId": 1210,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 30,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         }
       ],
       "5x4": [
@@ -293,22 +271,19 @@
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 11,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Arachnus Defeated"
         },
@@ -316,43 +291,37 @@
           "lookupId": 8,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 19,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 16,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Tester Defeated"
         },
@@ -361,7 +330,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Serris Defeated"
         },
@@ -369,15 +337,13 @@
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Torizo Defeated"
         },
@@ -385,50 +351,43 @@
           "lookupId": 14,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 30,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 5,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "lookupId": 1,
           "value": 1,
           "start": 0,
-          "max": 44,
-          "segments": []
+          "max": 44
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "lookupId": 17,
           "value": 1,
           "start": 0,
           "max": 10,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Power Plant Destroyed"
         },

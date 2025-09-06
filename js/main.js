@@ -312,7 +312,7 @@ let main = {
         if (runningChecklistLayout) {
           for (let j = 0; j < runningChecklistLayout.length; j++) {
             let item = runningChecklistLayout[j];
-            if (item.segments && item.segments.length > 0) {
+            if (item.hasOwnProperty("segments") && item.segments.length > 0) {
               let idsAddedDuringTheseSegments = new Set();
               for (let k = 0; k < item.segments.length; k++) {
                 let segment = item.segments[k];

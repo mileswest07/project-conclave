@@ -6,29 +6,25 @@
           "lookupId": 2,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 15,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Ghor Defeated"
         },
@@ -37,7 +33,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Mining Laser Defeated"
         },
@@ -45,36 +40,31 @@
           "lookupId": 1,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 1,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Rundas Defeated"
         },
@@ -83,7 +73,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Skytown - Eastern Skytown - Xenoresearch B"
         },
@@ -92,7 +81,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Bryyo - Hangar Bay"
         },
@@ -101,7 +89,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Helios Defeated"
         },
@@ -109,22 +96,19 @@
           "lookupId": 3,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 17,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 24,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Bryyo - Bryyo Ice - Hall of Remembrance"
         },
@@ -132,22 +116,19 @@
           "lookupId": 5,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 0,
           "start": 1,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 22,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Defense Drone Defeated"
         },
@@ -156,7 +137,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Skytown - Powerworks"
         },
@@ -165,7 +145,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Mogenar Defeated"
         },
@@ -173,15 +152,13 @@
           "lookupId": 13,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 32,
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Pirate Homeworld - Pirate Research - Craneyard"
         },
@@ -193,7 +170,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Norion - Docking Hub Alpha"
         },
@@ -202,7 +178,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Bryyo - Reliquary I"
         },
@@ -211,7 +186,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Gandrayda Defeated"
         },
@@ -220,7 +194,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Skytown - Eastern Skytown - Skytown Federation Landing Site"
         },
@@ -229,7 +202,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Omega Ridley Defeated"
         },
@@ -238,7 +210,6 @@
           "value": 1,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Pirate Homeworld - Pirate Command - Command Vault"
         },
@@ -252,22 +223,19 @@
           "lookupId": 11,
           "value": 1,
           "start": 0,
-          "max": 14,
-          "segments": []
+          "max": 14
         },
         {
           "lookupId": 10,
           "value": 1,
           "start": 0,
-          "max": 50,
-          "segments": []
+          "max": 50
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 8,
-          "segments": []
+          "max": 8
         },
         {
           "id": "-"
@@ -283,8 +251,7 @@
           "bg": "ac842f",
           "value": 0,
           "start": 0,
-          "max": 3,
-          "segments": []
+          "max": 3
         },
         {
           "id": "-",
@@ -296,7 +263,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "disabled": true
         },
         {
@@ -305,7 +271,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss_Ex",
           "overText": "Mogenar required",
           "disabled": true
@@ -346,7 +311,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss_Ex",
           "overText": "Omega Ridley required",
           "disabled": true
@@ -390,7 +354,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "bg": "ce6665",
           "displayIfScramble": true
         }

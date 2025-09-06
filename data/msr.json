@@ -6,29 +6,25 @@
           "lookupId": 1,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 6,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 9,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 12,
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Arachnus Defeated"
         },
@@ -37,7 +33,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "F_Boss",
           "overText": "Area 6 - Diggernaut Defeated"
         },
@@ -45,64 +40,55 @@
           "lookupId": 11,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 23,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 3,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 10,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 15,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 21,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 19,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 14,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 18,
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "over": "Z_Orb",
           "overText": "Area 4 - Survived Diggernaut"
         },
@@ -110,85 +96,73 @@
           "lookupId": 5,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 8,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 13,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 17,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 22,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 16,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 24,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": []
+          "max": 1
         },
         {
           "lookupId": 4,
           "value": 1,
           "start": 0,
-          "max": 10,
-          "segments": []
+          "max": 10
         },
         {
           "lookupId": 2,
           "value": 1,
           "start": 0,
-          "max": 80,
-          "segments": []
+          "max": 80
         },
         {
           "lookupId": 20,
           "value": 1,
           "start": 0,
-          "max": 30,
-          "segments": []
+          "max": 30
         },
         {
           "lookupId": 26,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "lookupId": 7,
           "value": 1,
           "start": 0,
-          "max": 15,
-          "segments": []
+          "max": 15
         },
         {
           "name": "Metroids defeated",
@@ -285,7 +259,6 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "segments": [],
           "clearIfScramble": true
         }
       ]

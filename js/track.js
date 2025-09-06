@@ -27,6 +27,10 @@ let keyslots = {};
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
   
+  const nodeTypesBossTier = ["boss", "battle"];
+  const nodeTypesItemTier = ["artifact", "upgrade", "slot", "expansion"];
+  const nodeTypesExtraTier = ["event", "trigger", "toggle", "lore", "easter"];
+  
   function filterOut([...filter]) {
     let copy = {...this};
     
@@ -1380,9 +1384,9 @@ let keyslots = {};
       
       totalCount += allPanels.length;
       
-      let [bossArray, remainderArray5] = main.partition(allPanels, panel => ["boss", "battle"].includes(panel.nodeType));
-      let [itemArray, remainderArray7] = main.partition(remainderArray5, panel => ["artifact", "upgrade", "slot", "expansion"].includes(panel.nodeType));
-      let [eventArray, remainderArray8] = main.partition(remainderArray7, panel => ["event", "trigger", "toggle", "lore", "easter"].includes(panel.nodeType));
+      let [bossArray, remainderArray5] = main.partition(allPanels, panel => nodeTypesBossTier.includes(panel.nodeType));
+      let [itemArray, remainderArray7] = main.partition(remainderArray5, panel => nodeTypesItemTier.includes(panel.nodeType));
+      let [eventArray, remainderArray8] = main.partition(remainderArray7, panel => nodeTypesExtraTier.includes(panel.nodeType));
       
       //let tempTotal = bossArray.length + itemArray.length + eventArray.length;
       //if (totalCount !== tempTotal) {
@@ -1404,24 +1408,12 @@ let keyslots = {};
         let panel = {};
         let hierarchyLookup = hierarchy.find(source => {
           let lookupCode = -1;
-          switch (source.nodeType) {
-            case "boss":
-            case "battle":
-              lookupCode = source.bossId;
-              break;
-            case "artifact":
-            case "upgrade":
-            case "slot":
-            case "expansion":
-              lookupCode = source.itemId;
-              break;
-            case "event":
-            case "trigger":
-            case "toggle":
-            case "lore":
-            case "easter":
-              lookupCode = source.extraId;
-              break;
+          if (nodeTypesBossTier.includes(source.nodeType)) {
+            lookupCode = source.bossId;
+          } else if (nodeTypesItemTier.includes(source.nodeType)) {
+            lookupCode = source.itemId;
+          } else if (nodeTypesExtraTier.includes(source.nodeType)) {
+            lookupCode = source.extraId;
           }
           return lookupCode === entry.lookupId;
         });
@@ -1437,24 +1429,12 @@ let keyslots = {};
             }
             let segmentLookup = hierarchy.find(source => {
               let lookupCode = -1;
-              switch (source.nodeType) {
-                case "boss":
-                case "battle":
-                  lookupCode = source.bossId;
-                  break;
-                case "artifact":
-                case "upgrade":
-                case "slot":
-                case "expansion":
-                  lookupCode = source.itemId;
-                  break;
-                case "event":
-                case "trigger":
-                case "toggle":
-                case "lore":
-                case "easter":
-                  lookupCode = source.extraId;
-                  break;
+              if (nodeTypesBossTier.includes(source.nodeType)) {
+                lookupCode = source.bossId;
+              } else if (nodeTypesItemTier.includes(source.nodeType)) {
+                lookupCode = source.itemId;
+              } else if (nodeTypesExtraTier.includes(source.nodeType)) {
+                lookupCode = source.extraId;
               }
               return lookupCode === segmentBase.lookupId;
             });

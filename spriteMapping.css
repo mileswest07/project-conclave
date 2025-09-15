@@ -306,13 +306,16 @@
 .game-mpff .usesSprite .item-image.unused { background: url("images/mpff_spritesheet.png") -192px -192px; } /* UNUSED */
 
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
+.game-m2ros .usesSprite .item-image.morph { background: url("images/m2ros_spritesheet.png") 0 0; }
 .game-m2ros .usesSprite .item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }
 .game-m2ros .usesSprite .item-image.spider { background: url("images/m2ros_spritesheet.png") -84px 0; }
 .game-m2ros .usesSprite .item-image.spring { background: url("images/m2ros_spritesheet.png") -126px 0; }
+.game-m2ros .usesSprite .item-image.battery { background: url("images/m2ros_spritesheet.png") -168px 0; }
 .game-m2ros .usesSprite .item-image.barrier { background: url("images/m2ros_spritesheet.png") 0 -42px; }
 .game-m2ros .usesSprite .item-image.high { background: url("images/m2ros_spritesheet.png") -42px -42px; }
 .game-m2ros .usesSprite .item-image.space { background: url("images/m2ros_spritesheet.png") -84px -42px; }
 .game-m2ros .usesSprite .item-image.screw { background: url("images/m2ros_spritesheet.png") -126px -42px; }
+.game-m2ros .usesSprite .item-image.eball { background: url("images/m2ros_spritesheet.png") -168px -42px; }
 .game-m2ros .usesSprite .item-image.ice { background: url("images/m2ros_spritesheet.png") 0 -84px; }
 .game-m2ros .usesSprite .item-image.wave { background: url("images/m2ros_spritesheet.png") -42px -84px; }
 .game-m2ros .usesSprite .item-image.wide { background: url("images/m2ros_spritesheet.png") -84px -84px; }
@@ -466,6 +469,9 @@
 .game-sm .usesSprite .item-image.reserve { background: url("images/sm_spritesheet.png") -42px -126px; }
 .game-sm .usesSprite .item-image.boss { background: url("images/sm_spritesheet.png") -84px -126px; }
 .game-sm .usesSprite .item-image.grapple { background: url("images/sm_spritesheet.png") -126px -126px; }
+.game-sm .usesSprite .item-image.heal { background: url("images/sm_spritesheet.png") -168px -126px; }
+.game-sm .usesSprite .item-image.ammo { background: url("images/sm_spritesheet.png") -210px -126px; }
+.game-sm .usesSprite .item-image.map { background: url("images/sm_spritesheet.png") 0 -168px; }
 .game-sm .usesSprite .item-image.animals { background: url("images/mf_spritesheet.png") -43px -43px; }
 
 /********* METROID: OTHER M (Wii) *********/

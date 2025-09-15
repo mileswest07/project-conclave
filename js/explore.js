@@ -280,7 +280,7 @@ let interaction = {
               measurement = 64;
               break;
             case "m2ros":
-              sourcex = 168;
+              sourcex = 210;
               sourcey = 168;
               break;
             case "pb":
@@ -297,7 +297,7 @@ let interaction = {
               break;
             case "sm":
               sourcex = 256;
-              sourcey = 168;
+              sourcey = 210;
               break;
             case "mom":
               measurement = 60;
@@ -411,7 +411,7 @@ let interaction = {
                       break;
                     case "sm_spritesheet":
                       sourcex = 252;
-                      sourcey = 168;
+                      sourcey = 210;
                       break;
                     case "mf_spritesheet":
                       sourcex = 258;

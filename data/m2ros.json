@@ -397,6 +397,7 @@
     "items": [
       {
         "id": "morphBall",
+        "sprite": "morph",
         "name": "Morph Ball",
         "bg": "d8a480",
         "itemId": 1,
@@ -595,12 +596,14 @@
       {
         "id": "missileBattery",
         "name": "Missiles Refill",
+        "sprite": "battery",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
         "id": "bigEnergyBall",
         "name": "Energy Restore",
+        "sprite": "eball",
         "extraId": 1002,
         "nodeType": "recharge"
       },

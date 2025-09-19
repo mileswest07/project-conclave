@@ -1497,7 +1497,7 @@ let keyslots = {};
       let ruleFound = false;
       const sheet = foundStyleSheets[i];
       try {
-        const ruleset = sheet.rules || sheet.cssRules;
+        let ruleset = sheet.rules || sheet.cssRules;
         if (ruleset && sheet && sheet.ownerNode && sheet.ownerNode.attributes && sheet.ownerNode.attributes.href) {
           let validSheet = false;
           let sheetType = -1;
@@ -1508,6 +1508,7 @@ let keyslots = {};
           if (cssFile === 'allspritesMapping.css' && !skipGamesListForMZMItems.includes(currentGame)) {
             validSheet = true;
             sheetType = 2;
+            // ruleset = ruleset[0].rules || ruleset[0].cssRules; // Restore IF a media query is wrapped around the file
             if (hasSpriteAttribute) {
               findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${element.sprite}`;
               trackingSprites = true;
@@ -1518,6 +1519,7 @@ let keyslots = {};
           } else if (cssFile === 'spriteMapping.css' && !skipGamesListForSprites.includes(currentGame)) {
             validSheet = true;
             sheetType = 1;
+            // ruleset = ruleset[0].rules || ruleset[0].cssRules; // Restore IF a media query is wrapped around the file
             if (hasSpriteAttribute) {
               findStyleString = `.game-${currentGame} .usesSprite .item-image.${element.sprite}`;
               trackingSprites = true;
@@ -1537,8 +1539,8 @@ let keyslots = {};
             resultsFound[sheetType] = `unable to find style rule for ${trackingSprites ? 'sprite' : 'ID'} ${findStyleString} in file ${cssFile}, ${scrambleMessage}`;
             
             for (let j = 0; j < ruleset.length; j++) {
-              // console.log(ruleset[j].selectorText);
-              let splitSelector = ruleset[j].selectorText.split(',');
+              let currentRule = ruleset[j];
+              let splitSelector = currentRule.selectorText.split(',');
               if (splitSelector.length > 1) {
                 let splitBreak = false;
                 for (let k = 0; k < splitSelector.length; k++) {
@@ -1556,7 +1558,7 @@ let keyslots = {};
                   break;
                 }
               } else {
-                if (ruleset[j].selectorText === findStyleString) {
+                if (currentRule.selectorText === findStyleString) {
                   // console.info("located", findStyleString);
                   ruleFound = true;
                   break;
@@ -1826,12 +1828,6 @@ let keyslots = {};
         queryDict[k] = val;
       }
       let incomingGame = queryDict.game;
-      
-      if (document.body.classList) {
-        document.body.classList.add("game-mode");
-      } else {
-        document.body.className += "game-mode";
-      }
       
       let selectedLayout = queryDict.l || '';
       tracker.selectedLayout = incomingGame !== "scramble" && selectedLayout.length ? selectedLayout : null;

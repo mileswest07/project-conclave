@@ -271,6 +271,7 @@ let interaction = {
               sourcey = 126;
               break;
             case "mzm":
+            case "sm":
               sourcex = 252;
               sourcey = 210;
               break;
@@ -294,10 +295,6 @@ let interaction = {
               measurement = 50;
               sourcex = 350;
               sourcey = 300;
-              break;
-            case "sm":
-              sourcex = 256;
-              sourcey = 210;
               break;
             case "mom":
               measurement = 60;
@@ -383,7 +380,7 @@ let interaction = {
                 let imageSource = document.createElementNS("http://www.w3.org/2000/svg", "image");
                 imageSource.setAttribute("id", `source-${fileName}`);
                 
-                if (["mp, mp2e", "mcon", "sm"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
+                if (["mp", "mp2e", "mp3c", "mcon", "sm"].includes(explorer.currentGame) || doRDAccessLockException || doM1BossLockException) {
                   switch (fileName) {
                     case "m1_spritesheet":
                       sourcex = 168;
@@ -394,11 +391,12 @@ let interaction = {
                       sourcey = 84;
                       break;
                     case "mzm_spritesheet":
+                    case "sm_spritesheet":
                       sourcex = 252;
                       sourcey = 210;
                       break;
                     case "mp_spritesheet":
-                      sourcex = 256;
+                      sourcex = 320;
                       sourcey = 256;
                       break;
                     case "mpswf_spritesheet":
@@ -408,10 +406,6 @@ let interaction = {
                     case "am2r_spritesheet":
                       sourcex = 252;
                       sourcey = 252;
-                      break;
-                    case "sm_spritesheet":
-                      sourcex = 252;
-                      sourcey = 210;
                       break;
                     case "mf_spritesheet":
                       sourcex = 258;
@@ -1133,6 +1127,7 @@ let interaction = {
         switch (explorer.currentGame) {
           case "mp":
           case "mp2e":
+          case "mp3c":
           case "mpff":
           case "md":
             measurement = 64;

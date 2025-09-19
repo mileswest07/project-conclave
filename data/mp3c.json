@@ -876,18 +876,21 @@
       {
         "id": "friendVoucher",
         "name": "Friend Voucher",
+        "sprite": "voucher",
         "extraId": 1031,
         "nodeType": "lore"
       },
       {
         "id": "credit",
         "name": "Blue Credit",
+        "sprite": "blueCredit",
         "extraId": 1032,
         "nodeType": "lore"
       },
       {
         "id": "credit",
         "name": "Gold Credit",
+        "sprite": "goldCredit",
         "extraId": 1033,
         "nodeType": "lore"
       },
@@ -987,9 +990,6 @@
         "extraId": 1067,
         "nodeType": "slot"
       },
-      
-      
-      
       {
         "id": "unused",
         "name": "Ready Room Briefing",

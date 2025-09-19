@@ -1623,13 +1623,21 @@ let keyslots = {};
       if (tracker.selectedLayout && tracker.workingData.checklistLayouts[tracker.selectedLayout]) {
         tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[tracker.selectedLayout];
       } else {
+        if (tracker.selectedLayout) {
+          console.warn("nonstandard layout specs requested:", tracker.selectedLayout, "; falling back to default layout");
+        } else {
+          if (!tracker.isScramble) {
+            console.warn("no layout spec requested; falling back to default layout");
+          }
+        }
         let defaultLayoutKey = null;
         const layoutKeys = Object.keys(tracker.workingData.checklistLayouts);
         defaultLayoutKey = layoutKeys.includes(tracker.workingData.defaultLayout) ? tracker.workingData.defaultLayout : null;
         if (defaultLayoutKey) {
-          tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[defaultLayoutKey];
+          tracker.selectedLayout = defaultLayoutKey;
+          tracker.workingData.checklistLayout = tracker.workingData.checklistLayouts[tracker.selectedLayout];
         } else {
-          console.error("missing default layout!");
+          throw "Missing layout data! Either there is no default layout provided in the JSON data, or it is not formatted properly!";
         }
       }
     }
@@ -1674,7 +1682,7 @@ let keyslots = {};
       itemWidth = 42;
     } else if (!tracker.useAllSprites && tracker.useSprites && ["msr"].includes(tracker.currentGame)) {
       itemWidth = 50;
-    } else if (!tracker.useAllSprites && tracker.useSprites && ["md", "mp", "mp2e"].includes(tracker.currentGame)) {
+    } else if (!tracker.useAllSprites && tracker.useSprites && ["md", "mp", "mp2e", "mp3c"].includes(tracker.currentGame)) {
       itemWidth = 64;
     } else if (tracker.useSprites && ["mpff"].includes(tracker.currentGame)) {
       itemWidth = 64;
@@ -1693,8 +1701,6 @@ let keyslots = {};
     }
     //console.log(tracker.currentGame, itemWidth, hasProperGraphics);
     
-    const defaultWidth = tracker.workingData.defaultWidth || tracker.workingData.checklistWidth;
-    
     let setWidth;
     
     if (tracker.isScramble && !tracker.selectedLayout) {
@@ -1707,11 +1713,11 @@ let keyslots = {};
       setWidth = parseInt(tracker.selectedLayout.split('x')[0]);
     }
     
-    if (setWidth > 7) {
-      console.warn(`recommend trimming layout width for ${tracker.currentGame}, currently at ${setWidth}`);
+    let containerWidth = "" + ((setWidth * (itemWidth + 6)) + 2) + "px";
+    if (setWidth > 7 || parseInt(containerWidth) > 372) {
+      console.warn(`recommend trimming layout width for ${tracker.currentGame}, currently at ${setWidth} (${containerWidth})`);
     }
-    
-    destination.style.width = "" + ((setWidth * (itemWidth + 6)) + 2) + "px";
+    destination.style.width = containerWidth;
     //console.groupEnd();
     
     tracker.readyPanels.forEach((element, i) => renderEntry(destination, element, i, element.name || "", false, false, -1));

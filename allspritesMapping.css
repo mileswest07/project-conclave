@@ -185,7 +185,7 @@
 .game-md .usesAllSprites .item-image.iceMissileD,
 .game-mp3c .usesAllSprites .item-image.iceMissileC { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
 .game-mf .usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
-/*.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -84px -168px; }*/ /* TODO: fill this */
+.game-mp3c .usesAllSprites .item-image.blueCredit { background: url("images/mzm_full_spritesheet.png") -84px -168px; } /*does not exist as item in Raw Data*/
 .game-mf .usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }
 .game-msr .usesAllSprites .item-image.charge,
 .game-sm .usesAllSprites .item-image.charge,
@@ -386,7 +386,7 @@
 
 .game-mp3c .usesAllSprites .item-image.energyCell { background: url("images/mzm_full_spritesheet.png") 0 -546px; }
 .game-mp3c .usesAllSprites .item-image.goldCredit { background: url("images/mzm_full_spritesheet.png") -42px -546px; } /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites .item-image.friendVoucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.voucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
 .game-msr .usesAllSprites .item-image.progressiveBeam,
 .game-mom .usesAllSprites .item-image.progressiveBeam,
 .game-mf .usesAllSprites .item-image.progressiveBeam,

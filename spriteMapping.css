@@ -255,14 +255,6 @@
 .game-pb .usesSprite .item-image.artifact { background: url("images/mph_spritesheet.png") -210px -210px; }
 
 /********* METROID PRIME 3: CORRUPTION (Wii) *********/
-.game-mp3c .usesSprite:not(.usesAllSprites),
-.game-mp3c .trimmed:not(.usesSprite):not(.usesAllSprites) { width: 50px; }
-.game-mp3c .usesSprite:not(.usesAllSprites),
-.game-mp3c .trimmed:not(.usesSprite):not(.usesAllSprites) { height: 50px; }
-.game-mp3c .usesSprite:not(.usesAllSprites).expansion,
-.game-mp3c .trimmed.expansion:not(.usesAllSprites) { height: 70px; }
-.game-mp3c .usesSprite:not(.usesAllSprites) .item-image { margin: 4px; }
-
 .game-mp3c .usesSprite.usesAllSprites,
 .game-mp3c .usesSprite.usesAllSprites:not(.trimmed) .item-image,
 .game-mp3c .trimmed.usesAllSprites:not(.usesSprite) { width: 50px; }
@@ -273,6 +265,22 @@
 .game-mp3c .trimmed.expansion.usesAllSprites { height: 70px; }
 .game-mp3c .trimmed.usesAllSprites .item-image { margin: 4px; }
 
+.game-mp3c .usesSprite:not(.usesAllSprites),
+.game-mp3c .usesSprite:not(.trimmed):not(.usesAllSprites) .item-image,
+.game-mp3c .trimmed:not(.usesSprite):not(.usesAllSprites) { width: 64px; }
+.game-mp3c .usesSprite:not(.usesAllSprites),
+.game-mp3c .usesSprite:not(.trimmed):not(.usesAllSprites) .item-image,
+.game-mp3c .trimmed:not(.usesSprite):not(.usesAllSprites) { height: 64px; }
+.game-mp3c .usesSprite.expansion:not(.usesAllSprites),
+.game-mp3c .trimmed.expansion:not(.usesAllSprites) { height: 84px; }
+.game-mp3c .trimmed:not(.usesAllSprites) .item-image { margin: 7px; }
+
+.game-mp3c .usesSprite .item-image.voucher { background: url("images/mp_spritesheet.png") -256px 0; }
+.game-mp3c .usesSprite .item-image.blueCredit { background: url("images/mp_spritesheet.png") -256px -64px; }
+.game-mp3c .usesSprite .item-image.goldCredit { background: url("images/mp_spritesheet.png") -256px -128px; }
+.game-mp3c .usesSprite.usesAllSprites:not(.trimmed) .voucher { width: 42px; height: 42px; margin: 4px; }
+.game-mp3c .usesSprite.usesAllSprites:not(.trimmed) .blueCredit { width: 42px; height: 42px; margin: 4px; }
+.game-mp3c .usesSprite.usesAllSprites:not(.trimmed) .goldCredit { width: 42px; height: 42px; margin: 4px; }
 .game-mp3c .usesAllSprites.trimmed .theronianBomb { width: 50px; height: 50px; margin: 0; }
 .game-mp3c .usesAllSprites.trimmed .pirateCode { width: 50px; height: 50px; margin: 0; }
 .game-mp3c .usesAllSprites.trimmed .phaaze { width: 50px; height: 50px; margin: 0; }

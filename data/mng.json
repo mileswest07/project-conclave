@@ -404,7 +404,7 @@
       },
       {
         "id": "zeroSuitA",
-        "sprite": "chozo",
+        "sprite": "purpleZero",
         "name": "Zero Suit",
         "bg": "007098",
         "itemId": 29,
@@ -412,7 +412,7 @@
       },
       {
         "id": "zeroSuitB",
-        "sprite": "black",
+        "sprite": "chozo",
         "name": "Black Zero Suit",
         "bg": "6c0204",
         "itemId": 30,
@@ -420,7 +420,7 @@
       },
       {
         "id": "fullPowerSuit",
-        "sprite": "suit",
+        "sprite": "white",
         "name": "Equipment recovered",
         "bg": "ffb508",
         "itemId": 31,
@@ -428,7 +428,7 @@
       },
       {
         "id": "phazonSuit",
-        "sprite": "phazon",
+        "sprite": "black",
         "name": "Phazon Suit",
         "bg": "282018",
         "itemId": 40,

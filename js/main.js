@@ -103,26 +103,28 @@ let main = {
         if (ruleset && sheet && sheet.ownerNode && sheet.ownerNode.attributes && sheet.ownerNode.attributes.href) {
           let cssFile = sheet.ownerNode.attributes.href.nodeValue;
           for (let j = 0; j < ruleset.length; j++) {
-            let splitSelector = ruleset[j].selectorText.split(',');
-            if (splitSelector.length > 1) {
-              for (let k = 0; k < splitSelector.length; k++) {
-                let isolatedSelector = splitSelector[k].trim();
-                
-                let actualId = isolatedSelector.split('.item-image.');
+            if (ruleset[j].constructor.name === "CSSStyleRule") {
+              let splitSelector = ruleset[j].selectorText.split(',');
+              if (splitSelector.length > 1) {
+                for (let k = 0; k < splitSelector.length; k++) {
+                  let isolatedSelector = splitSelector[k].trim();
+                  
+                  let actualId = isolatedSelector.split('.item-image.');
+                  if (actualId.length > 1 && actualId[0].length === 0) {
+                    if (runningString.length > 0) {
+                      runningString += `, `
+                    }
+                    runningString += `"${actualId[1]}"`
+                  }
+                }
+              } else {
+                let actualId = ruleset[j].selectorText.split('.item-image.');
                 if (actualId.length > 1 && actualId[0].length === 0) {
                   if (runningString.length > 0) {
                     runningString += `, `
                   }
                   runningString += `"${actualId[1]}"`
                 }
-              }
-            } else {
-              let actualId = ruleset[j].selectorText.split('.item-image.');
-              if (actualId.length > 1 && actualId[0].length === 0) {
-                if (runningString.length > 0) {
-                  runningString += `, `
-                }
-                runningString += `"${actualId[1]}"`
               }
             }
           }

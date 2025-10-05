@@ -307,7 +307,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "aquadiaKey",
+        "id": "aquadiaKeycard",
         "sprite": "key",
         "name": "Keys",
         "singleItemName": "Key",
@@ -465,7 +465,7 @@
       },
       {
         "id": "phazonSuit",
-        "sprite": "phazon",
+        "sprite": "black",
         "name": "Phazon Suit",
         "bg": "282018",
         "itemId": 25,

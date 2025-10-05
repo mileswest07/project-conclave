@@ -639,21 +639,22 @@
 
 .item-image.key,
 .item-image.aquadiaKey { background: url("images/placeholders.png") 0 -950px; }
+.item-image.keycard,
+.item-image.aquadiaKeycard { background: url("images/placeholders.png") -50px -950px; }
 .item-image.gear,
-.item-image.steelarisGear { background: url("images/placeholders.png") -50px -950px; }
-.item-image.slide { background: url("images/placeholders.png") -100px -950px; }
-.item-image.dashMelee { background: url("images/placeholders.png") -150px -950px; }
-.item-image.networkStation { background: url("images/placeholders.png") -200px -950px; }
-.item-image.teleportalRed { background: url("images/placeholders.png") -250px -950px; }
-.item-image.teleportalPurple { background: url("images/placeholders.png") -300px -950px; }
-.item-image.teleportalYellow { background: url("images/placeholders.png") -350px -950px; }
-.item-image.teleportalGreen { background: url("images/placeholders.png") -400px -950px; }
-.item-image.teleportalBlue { background: url("images/placeholders.png") -450px -950px; }
-.item-image.teleportalCyan { background: url("images/placeholders.png") -500px -950px; }
-.item-image.teleportalOrange { background: url("images/placeholders.png") -550px -950px; }
-.item-image.mapMarker { background: url("images/placeholders.png") -600px -950px; }
-.item-image.excelion { background: url("images/placeholders.png") -650px -950px; }
-/* .item-image._____ { background: url("images/placeholders.png") -700px -950px; } */ /* UNUSED */
+.item-image.steelarisGear { background: url("images/placeholders.png") -100px -950px; }
+.item-image.slide { background: url("images/placeholders.png") -150px -950px; }
+.item-image.dashMelee { background: url("images/placeholders.png") -200px -950px; }
+.item-image.networkStation { background: url("images/placeholders.png") -250px -950px; }
+.item-image.teleportalRed { background: url("images/placeholders.png") -300px -950px; }
+.item-image.teleportalPurple { background: url("images/placeholders.png") -350px -950px; }
+.item-image.teleportalYellow { background: url("images/placeholders.png") -400px -950px; }
+.item-image.teleportalGreen { background: url("images/placeholders.png") -450px -950px; }
+.item-image.teleportalBlue { background: url("images/placeholders.png") -500px -950px; }
+.item-image.teleportalCyan { background: url("images/placeholders.png") -550px -950px; }
+.item-image.teleportalOrange { background: url("images/placeholders.png") -600px -950px; }
+.item-image.mapMarker { background: url("images/placeholders.png") -650px -950px; }
+.item-image.excelion { background: url("images/placeholders.png") -700px -950px; }
 /* .item-image._____ { background: url("images/placeholders.png") -750px -950px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -800px -950px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -850px -950px; } */ /* UNUSED */

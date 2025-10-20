@@ -683,8 +683,8 @@
 .item-image.amorbis { background: url("images/placeholders.png") -500px -1000px; }
 .item-image.chykka { background: url("images/placeholders.png") -550px -1000px; }
 .item-image.quadraxis { background: url("images/placeholders.png") -600px -1000px; }
-/* .item-image._____ { background: url("images/placeholders.png") -650px -1000px; } */ /* UNUSED */
-/* .item-image._____ { background: url("images/placeholders.png") -700px -1000px; } */ /* UNUSED */
+.item-image.m_lock1 { background: url("images/placeholders.png") -650px -1000px; }
+.item-image.m_lock2 { background: url("images/placeholders.png") -700px -1000px; }
 /* .item-image._____ { background: url("images/placeholders.png") -750px -1000px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -800px -1000px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -850px -1000px; } */ /* UNUSED */

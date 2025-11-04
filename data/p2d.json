@@ -1,80 +1,73 @@
 {
   "p2d": {
-    "checklistWidth": 3,
-    "checklistLayout": [
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Chozo",
-        "overText": "Artifact of Truth Acquired"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Hive Mecha Defeated"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 2,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 7,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": [],
-        "over": "Z_Chozo",
-        "overText": "Hints Acquired"
-      }
-    ],
+    "checklistLayouts": {
+      "3x3": [
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Chozo",
+          "overText": "Artifact of Truth Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Hive Mecha Defeated"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 7
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "over": "Z_Chozo",
+          "overText": "Hints Acquired"
+        }
+      ]
+    },
+    "defaultLayout": "3x3",
     "items": [
       {
-        "id": "scanVisor",
+        "id": "scanVisorP",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -97,7 +90,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "sprite": "missile",
         "name": "Missile Launcher",
         "bg": "d82800",
@@ -105,7 +98,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "sprite": "missile",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
@@ -115,7 +108,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -132,7 +125,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombP",
         "sprite": "bombs",
         "name": "Bombs",
         "bg": "3800a8",
@@ -156,7 +149,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "sprite": "artifact",
         "name": "Chozo Artifacts",
         "singleItemName": "Artifact",
@@ -217,45 +210,75 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Hard Mode",
-        "nodeType": "lore",
-        "extraId": 1001
-      },
-      {
-        "id": "unused",
-        "name": "Red Leaves",
-        "nodeType": "trigger",
-        "extraId": 1005
-      },
-      {
-        "id": "unused",
-        "name": "100% Scans",
-        "nodeType": "trigger",
-        "extraId": 1006
-      },
-      {
-        "id": "unused",
-        "name": "100% Items",
-        "nodeType": "trigger",
-        "extraId": 1007
-      },
-      {
-        "id": "unused",
         "name": "Gully",
-        "nodeType": "area",
-        "extraId": 1003
+        "extraId": 1001,
+        "nodeType": "area"
       },
       {
         "id": "unused",
         "name": "Skull Grid",
-        "nodeType": "lore",
-        "extraId": 1004
+        "extraId": 1002,
+        "nodeType": "easter"
       },
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1002
+        "extraId": 1011,
+        "nodeType": "save"
+      },
+      {
+        "id": "gunshipP",
+        "name": "Gunship",
+        "extraId": 1012,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "Hard Mode",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Red Leaves",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 1",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 2",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 3",
+        "extraId": 1105,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quill 4",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "100% Items",
+        "extraId": 1107,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "100% Scans",
+        "extraId": 1108,
+        "nodeType": "trigger"
       }
     ],
     "mapTree": [
@@ -264,6 +287,16 @@
         "nodeType": "start",
         "mapId": 1,
         "children": [
+          {
+            "nodeType": "map",
+            "id": 1012,
+            "children": [
+              {
+                "nodeType": "save",
+                "id": 1011
+              }
+            ]
+          },
           {
             "nodeType": "lock",
             "id": 4,
@@ -328,7 +361,7 @@
                 "children": [
                   {
                     "nodeType": "easter",
-                    "id": 1001
+                    "id": 1101
                   },
                   {
                     "nodeType": "upgrade",
@@ -346,21 +379,19 @@
                 "nodeType": "artifact",
                 "id": 14,
                 "isRandomizableItem": true,
-                "name": "Artifact of Truth",
-                "children": [
-                  {
-                    "nodeType": "upgrade",
-                    "id": 6,
-                    "isRandomizableItem": true
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 6,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "vineToHubId": 2
-                  }
-                ]
+                "name": "Artifact of Truth"
+              },
+              {
+                "nodeType": "upgrade",
+                "id": 6,
+                "isRandomizableItem": true
+              },
+              {
+                "nodeType": "lock",
+                "id": 6,
+                "reqdItemCount": 1,
+                "children": [],
+                "vineToHubId": 2
               }
             ]
           },
@@ -376,7 +407,7 @@
             "children": [
               {
                 "nodeType": "easter",
-                "id": 1005
+                "id": 1102
               },
               {
                 "nodeType": "lock",
@@ -418,7 +449,7 @@
               },
               {
                 "nodeType": "lock",
-                "id": 1006,
+                "id": 1108,
                 "reqdItemCount": 1,
                 "children": [
                   {
@@ -451,21 +482,24 @@
                     "children": [
                       {
                         "nodeType": "lock",
-                        "id": 6,
+                        "id": 11,
                         "reqdItemCount": 1,
                         "children": [
                           {
                             "nodeType": "expansion",
                             "id": 9,
-                            "isRandomizableItem": true
+                            "isRandomizableItem": true,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "area",
-                            "id": 1003
+                            "id": 1001,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "battle",
-                            "id": 102
+                            "id": 102,
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -477,7 +511,8 @@
                                 "id": 13,
                                 "isRandomizableItem": true
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -488,7 +523,8 @@
                                 "nodeType": "battle",
                                 "id": 105
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -501,7 +537,8 @@
                                 "isRandomizableItem": true,
                                 "name": "Artifact of Chozo"
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           },
                           {
                             "nodeType": "lock",
@@ -514,7 +551,8 @@
                                 "isRandomizableItem": true,
                                 "name": "Artifact of Lifegiver"
                               }
-                            ]
+                            ],
+                            "hubId": 3
                           }
                         ],
                         "vineToHubId": 3
@@ -539,7 +577,7 @@
             "children": [
               {
                 "nodeType": "lock",
-                "id": 1001,
+                "id": 1101,
                 "reqdItemCount": 0,
                 "children": [
                   {
@@ -600,6 +638,19 @@
             "children": [
               {
                 "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "artifact",
+                    "id": 14,
+                    "isRandomizableItem": true,
+                    "name": "Artifact of Nature"
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
                 "id": 10,
                 "reqdItemCount": 1,
                 "children": [
@@ -614,19 +665,6 @@
                         "isRandomizableItem": true
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "nodeType": "lock",
-                "id": 4,
-                "reqdItemCount": 1,
-                "children": [
-                  {
-                    "nodeType": "artifact",
-                    "id": 14,
-                    "isRandomizableItem": true,
-                    "name": "Artifact of Nature"
                   }
                 ]
               }
@@ -651,12 +689,16 @@
         "mapId": 2,
         "children": [
           {
+            "nodeType": "save",
+            "id": 1011
+          },
+          {
             "nodeType": "easter",
-            "id": 1004
+            "id": 1002
           },
           {
             "nodeType": "lock",
-            "id": 1005,
+            "id": 1102,
             "reqdItemCount": 1,
             "children": [
               {
@@ -669,7 +711,7 @@
           },
           {
             "nodeType": "lock",
-            "id": 1007,
+            "id": 1107,
             "reqdItemCount": 1,
             "children": [
               {

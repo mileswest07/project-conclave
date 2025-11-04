@@ -1,290 +1,521 @@
 {
   "am2r": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Tester Defeated"
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Serris Defeated"
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Arachnus Defeated"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Torizo Defeated"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 44,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Power Plant Destroyed"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "name": "Metroids defeated",
-        "type": "counter",
-        "value": 0,
-        "start": 0,
-        "max": 54,
-        "segments": [
-          {
-            "id": "monsterDna",
-            "name": "Surface",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "id": "monsterDna",
-            "name": "Golden Temple",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 4
-          },
-          {
-            "id": "monsterDna",
-            "name": "Hydro Station",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 8
-          },
-          {
-            "id": "monsterDna",
-            "name": "Industrial Complex",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 10
-          },
-          {
-            "id": "monsterDna",
-            "name": "Research Site",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "Mining Facility",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "The Tower",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 6
-          },
-          {
-            "id": "monsterDna",
-            "name": "Distribution Center",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 8
-          },
-          {
-            "id": "monsterDna",
-            "name": "Rescue Team Campsite",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "The Nest",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 3
-          },
-          {
-            "id": "monsterDna",
-            "name": "Genetics Laboratory",
-            "sprite": "monster",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 9
-          }
-        ]
-      },
-      {
-        "lookupId": 1031,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 30,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "8x3": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Tester Defeated"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Serris Defeated"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Arachnus Defeated"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 44
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "over": "Z_Orb",
+          "overText": "Power Plant Destroyed"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 54,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Surface",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Golden Temple",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Hydro Station",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Industrial Complex",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Research Site",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Mining Facility",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Tower",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 6
+            },
+            {
+              "id": "monsterDna",
+              "name": "Distribution Center",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Upper Areas",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 38,
+              "disabled": true
+            },
+            {
+              "id": "monsterDna",
+              "name": "Rescue Team Campsite",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Nest",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Genetics Laboratory",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "lookupId": 1210,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 30,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        }
+      ],
+      "5x4": [
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Arachnus Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Tester Defeated"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Serris Defeated"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 30,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 44
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "over": "Z_Orb",
+          "overText": "Power Plant Destroyed"
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 54,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Surface",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Golden Temple",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Hydro Station",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Industrial Complex",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Research Site",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Mining Facility",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Tower",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 6
+            },
+            {
+              "id": "monsterDna",
+              "name": "Distribution Center",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Upper Areas",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 38,
+              "disabled": true
+            },
+            {
+              "id": "monsterDna",
+              "name": "Rescue Team Campsite",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "The Nest",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Genetics Laboratory",
+              "sprite": "monster",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 9
+            }
+          ]
+        }
+      ]
+    },
+    "defaultLayout": "8x3",
+    "hasKeyslots": false,
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "missile",
@@ -309,7 +540,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",
@@ -317,7 +548,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -326,12 +557,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -339,7 +565,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBall",
+        "id": "spiderBallA",
         "name": "Spider Ball",
         "sprite": "spider",
         "bg": "bca470",
@@ -347,7 +573,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrierB",
+        "id": "barrierSuitB",
         "name": "Varia Suit",
         "sprite": "barrier",
         "bg": "ff7e00",
@@ -355,12 +581,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "name": "Wave Beam",
         "sprite": "wave",
         "bg": "92278f",
@@ -368,7 +589,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "name": "High Jump Boots",
         "sprite": "high",
         "bg": "c0a8d8",
@@ -376,7 +597,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "name": "Spring Ball",
         "sprite": "spring",
         "bg": "886848",
@@ -392,12 +613,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "name": "Spazer Beam",
         "sprite": "wide",
         "bg": "ffff80",
@@ -405,7 +621,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -422,12 +638,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "name": "Plasma Beam",
         "sprite": "plasma",
         "bg": "00ff08",
@@ -435,7 +646,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
         "sprite": "pbombs",
@@ -444,7 +655,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "name": "Screw Attack",
         "sprite": "screw",
         "bg": "69cd69",
@@ -452,7 +663,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuit",
+        "id": "gravitySuitA",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
@@ -460,12 +671,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "name": "Ice Beam",
         "sprite": "ice",
         "bg": "2038ec",
@@ -504,7 +710,7 @@
       },
       {
         "id": "larval",
-        "name": "Larval Metroid",
+        "name": "Larva Metroid",
         "bossId": 111
       },
       {
@@ -523,19 +729,29 @@
         "bossId": 102
       },
       {
-        "id": "tester",
-        "name": "The Tester",
+        "id": "arachnus",
+        "name": "Torizo",
         "bossId": 103
       },
       {
-        "id": "chozotank",
-        "name": "Chozo Tank",
+        "id": "tester",
+        "name": "The Tester",
         "bossId": 104
+      },
+      {
+        "id": "chozotank",
+        "name": "Chozo Tank Prototype",
+        "bossId": 105
       },
       {
         "id": "serris",
         "name": "Serris",
-        "bossId": 105
+        "bossId": 106
+      },
+      {
+        "id": "genesis",
+        "name": "Genesis",
+        "bossId": 107
       }
     ],
     "areas": [
@@ -583,187 +799,223 @@
     ],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "extraId": 1001,
         "nodeType": "save"
       },
       {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "extraId": 1021,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "extraId": 1022,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Breeding Grounds",
-        "extraId": 1023,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Mining Facility",
-        "extraId": 1024,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Research Site",
-        "extraId": 1025,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Power Plant",
-        "extraId": 1026,
-        "nodeType": "area"
-      },
-      {
-        "id": "unused",
-        "name": "Genetics Laboratory",
-        "extraId": 1027,
-        "nodeType": "area"
-      },
-      {
-        "id": "towerPower",
-        "name": "Tower Power",
+        "id": "gunshipS",
+        "name": "Gunship",
         "extraId": 1002,
+        "nodeType": "save"
+      },
+      {
+        "id": "unused",
+        "name": "New Game+",
+        "extraId": 1011,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Extreme Labs",
+        "extraId": 1012,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Science Scan",
+        "extraId": 1101,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper Log",
+        "extraId": 1102,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Turbine Pump",
+        "extraId": 1201,
         "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Power Core Destroyed",
-        "extraId": 1003,
-        "nodeType": "event"
+        "name": "Autoad (Skippy) Minigame",
+        "extraId": 1202,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Thoth Cockpit",
-        "extraId": 1016,
-        "nodeType": "event"
+        "name": "Research Site Cleared",
+        "extraId": 1203,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1008,
-        "nodeType": "lore"
+        "name": "Mining Facility Cleared",
+        "extraId": 1204,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1009,
-        "nodeType": "lore"
+        "name": "Tower Power",
+        "extraId": 1205,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1010,
-        "nodeType": "lore"
+        "name": "Tower Cleared",
+        "extraId": 1206,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1011,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1012,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1013,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1014,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Trooper Log",
-        "extraId": 1015,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1005,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1006,
-        "nodeType": "lore"
-      },
-      {
-        "id": "unused",
-        "name": "Science Scan",
-        "extraId": 1007,
-        "nodeType": "lore"
+        "name": "Power Plant Destroyed",
+        "extraId": 1207,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "\"Movement Detected\"",
         "message": "Movement detected",
-        "extraId": 1005,
-        "nodeType": "lore"
+        "extraId": 1208,
+        "nodeType": "easter"
       },
       {
-        "id": "am2rPowerOrb",
+        "id": "unused",
+        "name": "Thoth Cockpit",
+        "extraId": 1209,
+        "nodeType": "easter"
+      },
+      {
+        "id": "powerOrb",
         "name": "Power Orbs Distributed",
         "sprite": "battery",
         "bg": "887878",
-        "extraId": 1031,
+        "extraId": 1210,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle A",
+        "extraId": 1211,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle B",
+        "extraId": 1212,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle C",
+        "extraId": 1213,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle D",
+        "extraId": 1214,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "E.M.P. Orb Puzzle E",
+        "extraId": 1215,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Distribution Center Treasure Collected",
+        "extraId": 1216,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Depths Hideout Trap",
+        "extraId": 1217,
         "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Depths Hideout Cleared",
+        "extraId": 1218,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "Nest Cleared",
-        "extraId": 1028,
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Larval Metroids",
-        "extraId": 1029,
-        "nodeType": "event"
-      },
-      {
-        "id": "unused",
-        "name": "Power Orb 1",
-        "extraId": 1032,
+        "extraId": 1219,
         "nodeType": "trigger"
       },
       {
         "id": "unused",
-        "name": "Power Orb 2",
-        "extraId": 1033,
-        "nodeType": "trigger"
+        "name": "Egg Sighted",
+        "extraId": 1220,
+        "nodeType": "easter"
       },
       {
         "id": "unused",
-        "name": "Power Orb 3",
-        "extraId": 1034,
-        "nodeType": "trigger"
+        "name": "Chozo Message",
+        "extraId": 1221,
+        "nodeType": "easter"
       },
       {
         "id": "unused",
-        "name": "Power Orb 4",
-        "extraId": 1035,
-        "nodeType": "trigger"
+        "name": "Chozo Ruins",
+        "extraId": 1301,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Breeding Grounds",
+        "extraId": 1302,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Mining Facility",
+        "extraId": 1303,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Research Site",
+        "extraId": 1304,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Power Plant",
+        "extraId": 1305,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Power Plant Lower Level",
+        "extraId": 1306,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Distribution Pipe Hub",
+        "extraId": 1307,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Gravity Sector",
+        "extraId": 1308,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "The Nest",
+        "extraId": 1309,
+        "nodeType": "area"
       }
     ],
     "mapTree": [

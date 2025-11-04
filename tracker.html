@@ -6,9 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <meta name="Keywords" content=""> -->
 <!-- <meta name="Description" content=""> -->
-<!-- <link rel="icon" href="/images/samus.png" type="image/x-icon"/> -->
+<link rel="icon" type="image/x-icon" href="images/conclave.png">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="tracker.css">
+<link rel="stylesheet" href="iconMapping.css">
 <link rel="stylesheet" href="spriteMapping.css">
 <link rel="stylesheet" href="allspritesMapping.css">
 </head>
@@ -58,9 +59,7 @@
               <optgroup label="==  ZELDA  ==">
                 <option value="z1">The Legend of Zelda (NES)</option>
                 <option value="z2">Zelda II: The Adventure of Link (NES)</option>
-                <option value="z2pc">ZIIAOL by Hoverbat (PC)</option>
                 <option value="z3">The Legend of Zelda: A Link to the Past (SNES)</option>
-                <option value="z3r">ALTTP Randomized</option>
               </optgroup>
               <optgroup label="==  CASTLEVANIA  ==">
                 <option value="sotn">Symphony of the Night (PSX)</option>
@@ -80,6 +79,10 @@
             Some items have progressive upgrades, shown with arrows.<br>
             Left-click will upgrade progressive upgrades. Right-click will downgrade.<br>
             Hover over item images to read out what those items and hints are.
+          </p>
+          <p class="instructionPrompt">
+            Select a custom layout : 
+            <select id="layoutSelector" name="layout"></select>
           </p>
           <p class="instructionPrompt">
             Use sprites if applicable?
@@ -325,14 +328,7 @@
               </div>
               <div>
                 <label class="slider-switch">
-                  <input type="checkbox" name="z2pc" value="z2pc">
-                  <span class="slider"></span>
-                </label>
-                <span class="selection-label">ZIIAOL by Hoverbat (PC)</span>
-              </div>
-              <div>
-                <label class="slider-switch">
-                  <input type="checkbox" name="z3r" value="z3r">
+                  <input type="checkbox" name="z3" value="z3">
                   <span class="slider"></span>
                 </label>
                 <span class="selection-label">The Legend of Zelda: A Link to the Past (SNES)</span>

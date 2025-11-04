@@ -1,115 +1,211 @@
 {
   "m1": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 21,
-        "segments": []
-      },
-      {
-        "lookupId": 101,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "boss",
-        "id": "kraid",
-        "sprite": "kraid",
-        "name": "Kraid Defeated"
-      },
-      {
-        "lookupId": 102,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "boss",
-        "id": "ridley",
-        "sprite": "ridley",
-        "name": "Ridley Defeated"
-      }
-    ],
+    "checklistLayouts": {
+      "4x3": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 21
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "id": "boss",
+          "nodeType": "boss",
+          "name": "Bosses Defeated",
+          "disabled": true
+        },
+        {
+          "lookupId": 101,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "kraid",
+          "sprite": "kraid",
+          "name": "Kraid Defeated"
+        },
+        {
+          "lookupId": 102,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "ridley",
+          "sprite": "ridley",
+          "name": "Ridley Defeated"
+        }
+      ],
+      "2x6": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 21
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "id": "boss",
+          "nodeType": "boss",
+          "name": "Bosses Defeated",
+          "disabled": true
+        },
+        {
+          "lookupId": 101,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "kraid",
+          "sprite": "kraid",
+          "name": "Kraid Defeated"
+        },
+        {
+          "lookupId": 102,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "ridley",
+          "sprite": "ridley",
+          "name": "Ridley Defeated"
+        }
+      ]
+    },
+    "defaultLayout": "4x3",
+    "hasKeyslots": true,
     "items": [
       {
         "id": "morphBall",
         "sprite": "morph",
         "name": "Morph Ball",
+        "alternateName": "Maru Mari",
         "bg": "d8a480",
         "itemId": 3,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -118,7 +214,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -127,12 +223,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "longBeamA",
-        "locale": {
-          "enUS": {
-            "id": "longBeam"
-          }
-        },
+        "id": "longBeam",
         "sprite": "long",
         "name": "Long Beam",
         "bg": "7f2800",
@@ -140,7 +231,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -148,12 +239,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -162,7 +248,7 @@
         "slotType": "beam"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -170,7 +256,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -178,12 +264,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -192,7 +273,7 @@
         "slotType": "beam"
       },
       {
-        "id": "barrierA",
+        "id": "barrierSuitA",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7b7b",
@@ -212,7 +293,7 @@
         "bossId": 102
       },
       {
-        "id": "mbrain",
+        "id": "motherBrain",
         "name": "Mother Brain",
         "bossId": 103
       }
@@ -365,12 +446,12 @@
                   },
                   {
                     "nodeType": "lock",
-                    "id": 4,
+                    "id": 9,
                     "reqdItemCount": 1,
                     "children": [
                       {
                         "nodeType": "lock",
-                        "id": 9,
+                        "id": 4,
                         "reqdItemCount": 1,
                         "children": [
                           {
@@ -475,56 +556,6 @@
             "reqdItemCount": 1,
             "children": [
               {
-                "nodeType": "expansion",
-                "id": 4,
-                "isRandomizableItem": true,
-                "children": [
-                  {
-                    "nodeType": "expansion",
-                    "id": 4,
-                    "isRandomizableItem": true
-                  }
-                ]
-              },
-              {
-                "nodeType": "expansion",
-                "id": 4,
-                "isRandomizableItem": true,
-                "children": [
-                  {
-                    "nodeType": "expansion",
-                    "id": 4,
-                    "isRandomizableItem": true,
-                    "children": [
-                      {
-                        "nodeType": "expansion",
-                        "id": 4,
-                        "isRandomizableItem": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "nodeType": "lock",
-                "id": 4,
-                "reqdItemCount": 1,
-                "children": [
-                  {
-                    "nodeType": "slot",
-                    "id": 8,
-                    "isRandomizableItem": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "nodeType": "lock",
-            "id": 7,
-            "reqdItemCount": 1,
-            "children": [
-              {
                 "nodeType": "lock",
                 "id": 8,
                 "reqdItemCount": 1,
@@ -572,11 +603,6 @@
                       },
                       {
                         "nodeType": "expansion",
-                        "id": 5,
-                        "isRandomizableItem": true
-                      },
-                      {
-                        "nodeType": "expansion",
                         "id": 4,
                         "isRandomizableItem": true,
                         "children": [
@@ -586,6 +612,11 @@
                             "isRandomizableItem": true
                           }
                         ]
+                      },
+                      {
+                        "nodeType": "expansion",
+                        "id": 5,
+                        "isRandomizableItem": true
                       },
                       {
                         "nodeType": "expansion",
@@ -607,6 +638,74 @@
                 "toStartHubId": 31
               }
             ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 8,
+            "reqdItemCount": 1,
+            "children": [],
+            "vineToHubId": 5
+          },
+          {
+            "nodeType": "lock",
+            "id": 9,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true
+                  }
+                ],
+                "hubId": 5
+              },
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "children": [
+                      {
+                        "nodeType": "expansion",
+                        "id": 4,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ],
+                "hubId": 5
+              },
+              {
+                "nodeType": "lock",
+                "id": 7,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 4,
+                    "reqdItemCount": 1,
+                    "children": [
+                      {
+                        "nodeType": "slot",
+                        "id": 8,
+                        "isRandomizableItem": true
+                      }
+                    ]
+                  }
+                ],
+                "hubId": 5
+              }
+            ],
+            "vineToHubId": 5
           }
         ]
       },
@@ -621,9 +720,16 @@
             "isRandomizableItem": true
           },
           {
-            "nodeType": "expansion",
+            "nodeType": "lock",
             "id": 4,
-            "isRandomizableItem": true
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "expansion",
+                "id": 4,
+                "isRandomizableItem": true
+              }
+            ]
           },
           {
             "nodeType": "lock",
@@ -681,6 +787,14 @@
                   }
                 ],
                 "hubId": 22
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "hubId": 22,
+                "vineToHubId": 23
               }
             ],
             "vineToHubId": 22
@@ -701,15 +815,8 @@
           },
           {
             "nodeType": "return",
-            "children": [
-              {
-                "nodeType": "lock",
-                "id": 4,
-                "reqdItemCount": 1,
-                "children": [],
-                "vineToHubId": 22
-              }
-            ]
+            "children": [],
+            "vineToHubId": 23
           }
         ]
       },

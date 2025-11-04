@@ -1,383 +1,389 @@
 {
   "mp3c": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Ghor Defeated"
-      },
-      {
-        "lookupId": 33,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Mining Laser Defeated"
-      },
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Rundas Defeated"
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Eastern Skytown - Xenoresearch B"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Hangar Bay"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Helios Defeated"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Bryyo Ice - Hall of Remembrance"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Defense Drone Defeated"
-      },
-      {
-        "lookupId": 31,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Powerworks"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Mogenar Defeated"
-      },
-      {
-        "lookupId": 13,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 32,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Pirate Homeworld - Pirate Research - Craneyard"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norion - Docking Hub Alpha"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Reliquary I"
-      },
-      {
-        "lookupId": 30,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Gandrayda Defeated"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Eastern Skytown - Skytown Federation Landing Site"
-      },
-      {
-        "lookupId": 34,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Omega Ridley Defeated"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Pirate Homeworld - Pirate Command - Command Vault"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 50,
-        "segments": []
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 27,
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "name": "",
-        "value": 1,
-        "start": 0,
-        "max": 9,
-        "segments": [
-          {
-            "lookupId": 35,
-            "value": 1,
-            "start": 0,
-            "max": 9,
-            "over": "C_Fuse",
-            "overText": "Hints Acquired"
-          },
-          {
-            "lookupId": 36,
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "clearIfScramble": true
-          },
-          {
-            "lookupId": 1201,
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "clearIfScramble": true
-          }
-        ]
-      },
-      {
-        "lookupId": 36,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "8x5": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Ghor Defeated"
+        },
+        {
+          "lookupId": 33,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Mining Laser Defeated"
+        },
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Rundas Defeated"
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Eastern Skytown - Xenoresearch B"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Hangar Bay"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Helios Defeated"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Bryyo Ice - Hall of Remembrance"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Defense Drone Defeated"
+        },
+        {
+          "lookupId": 31,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Powerworks"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Mogenar Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 32,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Pirate Homeworld - Pirate Research - Craneyard"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Norion - Docking Hub Alpha"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Reliquary I"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Gandrayda Defeated"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Eastern Skytown - Skytown Federation Landing Site"
+        },
+        {
+          "lookupId": 34,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Omega Ridley Defeated"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Pirate Homeworld - Pirate Command - Command Vault"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 50
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "theronianBomb",
+          "name": "Theronian Bomb Components",
+          "singleItemName": "Theronian Bomb Component",
+          "nodeType": "expansion",
+          "bg": "ac842f",
+          "value": 0,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        { 
+          "id": "norion",
+          "name": "Norion Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "disabled": true
+        },
+        {
+          "id": "bryyo",
+          "name": "Bryyo Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Mogenar required",
+          "disabled": true
+        },
+        {
+          "name": "",
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 26,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over":
+              "F_Boss_Ex",
+              "overText": "Helios required",
+              "disabled": true
+            },
+            {
+              "id": "skytown",
+              "name": "Elysia Complete",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "over": "F_Boss_Ex",
+              "overText": "Helios required",
+              "clearIfScramble": true,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "id": "homeworld",
+          "name": "Pirate Homeworld Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Omega Ridley required",
+          "disabled": true
+        },
+        {
+          "name": "",
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "segments": [
+            {
+              "lookupId": 35,
+              "value": 1,
+              "start": 0,
+              "max": 9,
+              "over": "C_Fuse",
+              "overText": "Hints Acquired"
+            },
+            {
+              "id": "pirateCode",
+              "name": "Pirate Code",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "bg": "ce6665",
+              "clearIfScramble": true
+            },
+            {
+              "id": "phaaze",
+              "name": "Phaaze Accessible",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            }
+          ]
+        },
+        {
+          "id": "pirateCode",
+          "name": "Pirate Code",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "bg": "ce6665",
+          "displayIfScramble": true
+        }
+      ]
+    },
+    "defaultLayout": "8x5",
     "items": [
       {
-        "id": "combatVisor",
+        "id": "combatVisorP",
         "name": "Combat Visor",
         "bg": "80d0ff",
         "itemId": 1,
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeamA",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "bg": "ffb508",
         "itemId": 2,
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisorB",
+        "id": "scanVisorC",
         "name": "Scan Visor",
         "bg": "bca470",
         "itemId": 3,
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 4,
@@ -391,7 +397,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombC",
+        "id": "bombB",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 6,
@@ -405,21 +411,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 8,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "bg": "d82800",
         "itemId": 9,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
         "alreadyHasMainItem": true,
@@ -428,7 +434,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -443,47 +449,42 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "commandVisor",
+        "id": "commandVisorA",
         "name": "Command Visor",
         "bg": "bfbf00",
         "itemId": 13,
         "nodeType": "upgrade"
       },
       {
-        "id": "ped",
+        "id": "pedSuit",
         "name": "P.E.D. Suit",
         "bg": "886848",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "hypermode",
-        "locale": {
-          "enUS": {
-            "id": "hyperBeam"
-          }
-        },
+        "id": "hyperBeamC",
         "name": "Hyper Beam",
         "bg": "1010e0",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleSwing",
         "name": "Grapple Swing",
         "bg": "00e8d8",
         "itemId": 16,
         "nodeType": "upgrade"
       },
       {
-        "id": "phazonSuit",
+        "id": "corruptedHypermode",
         "name": "Corrupted Hypermode",
         "bg": "282018",
         "itemId": 17,
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileA",
+        "id": "iceMissileC",
         "name": "Ice Missile",
         "bg": "2038ec",
         "itemId": 18,
@@ -520,19 +521,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "flameShot",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamC",
         "name": "Plasma Beam",
         "bg": "ff4a4a",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttackE",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 24,
@@ -546,19 +542,11 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherB",
+        "id": "seekerLauncherD",
         "name": "Seeker Launcher",
         "bg": "644080",
         "itemId": 26,
         "nodeType": "upgrade"
-      },
-      {
-        "id": "theronianBomb",
-        "name": "Theronian Bomb Components",
-        "singleItemName": "Theronian Bomb Component",
-        "bg": "ac842f",
-        "itemId": 27,
-        "nodeType": "expansion"
       },
       {
         "id": "hyperMissile",
@@ -568,7 +556,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "corruptionXRayVisor",
+        "id": "xrayVisorC",
         "name": "X-Ray Visor",
         "bg": "c8d8d8",
         "itemId": 29,
@@ -582,7 +570,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "bg": "007f0e",
         "itemId": 31,
@@ -596,12 +584,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "novaBeamA",
-        "locale": {
-          "enUS": {
-            "id": "novaBeam"
-          }
-        },
+        "id": "novaBeam",
         "name": "Nova Beam",
         "bg": "00ff08",
         "itemId": 33,
@@ -621,18 +604,12 @@
         "bg": "008080",
         "itemId": 35,
         "nodeType": "artifact"
-      },
-      {
-        "id": "pirateCode",
-        "name": "Pirate Code",
-        "bg": "ce6665",
-        "itemId": 36,
-        "nodeType": "artifact"
       }
     ],
     "bosses": [
       {
         "id": "berserkerlorda",
+        "locationNote": "olympus",
         "name": "Berserker Lord",
         "bossId": 101
       },
@@ -663,16 +640,19 @@
       },
       {
         "id": "steamlorda",
+        "locationNote": "barracks",
         "name": "Steamlord",
         "bossId": 106
       },
       {
         "id": "steamlordb",
+        "locationNote": "skybridge",
         "name": "Steamlord",
         "bossId": 107
       },
       {
         "id": "steamlordc",
+        "locationNote": "def drone room",
         "name": "Steamlord",
         "bossId": 108
       },
@@ -691,13 +671,19 @@
       },
       {
         "id": "berserkerlordb",
+        "locationNote": "skytown",
         "name": "Berserker Lord",
         "bossId": 111
       },
       {
+        "id": "spiresiege",
+        "name": "Pirate Assault on the Spire",
+        "bossId": 112
+      },
+      {
         "id": "helios",
         "name": "Helios",
-        "bossId": 112,
+        "bossId": 113,
         "requires": [
           "15x1"
         ]
@@ -705,22 +691,25 @@
       {
         "id": "gandrayda",
         "name": "Gandrayda",
-        "bossId": 113
-      },
-      {
-        "id": "mhatchera",
-        "name": "Metroid Hatcher",
         "bossId": 114
       },
       {
-        "id": "mhatcherb",
+        "id": "mhatchera",
+        "locationNote": "metroid creche",
         "name": "Metroid Hatcher",
         "bossId": 115
       },
       {
-        "id": "mhatcherc",
+        "id": "mhatcherb",
+        "locationNote": "generator b",
         "name": "Metroid Hatcher",
         "bossId": 116
+      },
+      {
+        "id": "mhatcherc",
+        "locationNote": "valhalla",
+        "name": "Metroid Hatcher",
+        "bossId": 117
       },
       {
         "id": "phharvester",
@@ -862,402 +851,534 @@
     "extras": [
       {
         "id": "unused",
-        "name": "First Mission",
-        "extraId": 1101,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "unused",
-        "name": "Mission Briefing",
-        "extraId": 1102,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "energyCell",
-        "name": "Lab Energy Cell",
-        "extraId": 1103,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "saveRoom",
-        "name": "Save Event 1",
-        "extraId": 1104,
-        "nodeType": "trigger",
-        "bg": "5298bc"
-      },
-      {
-        "id": "norion",
-        "name": "Dock A Access",
-        "extraId": 1111,
-        "nodeType": "trigger",
-        "bg": "5298bc"
-      },
-      {
-        "id": "norion",
-        "name": "Dock B Access",
-        "extraId": 1112,
-        "nodeType": "trigger",
-        "bg": "5298bc"
-      },
-      {
-        "id": "norion",
-        "name": "Generator A Online",
-        "extraId": 1113,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "norion",
-        "name": "Generator B Online",
-        "extraId": 1114,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "norion",
-        "name": "Generator C Online",
-        "extraId": 1115,
-        "nodeType": "event",
-        "bg": "5298bc"
-      },
-      {
-        "id": "saveRoom",
-        "name": "Save Event 2",
-        "extraId": 1105,
-        "nodeType": "trigger",
-        "bg": "5298bc"
-      },
-      {
-        "id": "bryyo",
-        "name": "Bryyo Mission",
-        "extraId": 1106,
-        "nodeType": "event",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Fed Dock",
-        "extraId": 1121,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Fire Access",
-        "extraId": 1122,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Thorn Jungle Access",
-        "extraId": 1123,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Shield Generator 1 Destroyed",
-        "extraId": 1124,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Turret 1 Destroyed",
-        "extraId": 1125,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Turret 2 Destroyed",
-        "extraId": 1126,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Shield Generator 2 Destroyed",
-        "extraId": 1127,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Hidden Court Grapple",
-        "extraId": 1128,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Bridge Access A",
-        "extraId": 1129,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "bryyo",
-        "name": "Bridge Access B",
-        "extraId": 1130,
-        "nodeType": "trigger",
-        "bg": "6d9b6d"
-      },
-      {
-        "id": "unused",
-        "name": "Valhalla Access",
-        "extraId": 1131,
-        "nodeType": "event",
-        "bg": "ce6665"
-      },
-      {
-        "id": "elysia",
-        "name": "Ghor Assault",
-        "extraId": 1141,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "AU 217 Online",
-        "extraId": 1142,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "Site A Access",
-        "extraId": 1143,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "Site B Access",
-        "extraId": 1144,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "xenoresearch",
-        "name": "Xenoresearch Cells Open",
-        "extraId": 1145,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "Shield Nuked",
-        "extraId": 1146,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "Escape Pod",
-        "extraId": 1147,
-        "nodeType": "trigger",
-        "bg": "ac842f"
-      },
-      {
-        "id": "elysia",
-        "name": "Pirate Homeworld Access",
-        "extraId": 1151,
-        "nodeType": "event",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Fans Off",
-        "extraId": 1152,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Shield Core Sighted",
-        "extraId": 1153,
-        "nodeType": "event",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Rescue Mission",
-        "extraId": 1154,
-        "nodeType": "event",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Access to Research",
-        "extraId": 1155,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Scrap Access",
-        "extraId": 1156,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Mines Unlocked",
-        "extraId": 1157,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Metroids Loose",
-        "extraId": 1158,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "unused",
-        "name": "Dread Reference",
-        "extraId": 1159,
-        "nodeType": "easter",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Mine Loop Open",
-        "extraId": 1160,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Shield Core Down",
-        "extraId": 1161,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Transit Tunnels",
-        "extraId": 1162,
-        "nodeType": "event",
-        "bg": "b7746e"
-      },
-      {
-        "id": "urtraghus",
-        "name": "Seed Door",
-        "extraId": 1163,
-        "nodeType": "trigger",
-        "bg": "b7746e"
-      },
-      {
-        "id": "unused",
-        "name": "AU 313 Pad Code",
-        "extraId": 1171,
-        "nodeType": "easter",
-        "bg": "ce6665"
-      },
-      {
-        "id": "unused",
-        "name": "AU 313 Message",
-        "extraId": 1172,
-        "nodeType": "easter",
-        "bg": "ce6665"
-      },
-      {
-        "id": "phaaze",
-        "name": "Phaaze accessible",
-        "extraId": 1201,
-        "nodeType": "event",
-        "bg": "35a0d8"
-      },
-      {
-        "id": "saveRoom",
         "name": "Save Station",
         "extraId": 1001,
         "nodeType": "save"
       },
       {
-        "id": "unused",
+        "id": "gunshipC",
         "name": "Gunship",
         "extraId": 1002,
         "nodeType": "save"
       },
       {
         "id": "unused",
+        "name": "Original NTSC",
+        "extraId": 1011,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Trilogy, PAL, JP",
+        "extraId": 1012,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "friendVoucher",
+        "name": "Friend Voucher",
+        "sprite": "voucher",
+        "extraId": 1031,
+        "nodeType": "lore"
+      },
+      {
+        "id": "credit",
+        "name": "Blue Credit",
+        "sprite": "blueCredit",
+        "extraId": 1032,
+        "nodeType": "lore"
+      },
+      {
+        "id": "credit",
+        "name": "Gold Credit",
+        "sprite": "goldCredit",
+        "extraId": 1033,
+        "nodeType": "lore"
+      },
+      {
+        "id": "unused",
+        "name": "Item Locations: Norion",
+        "extraId": 1041,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Item Locations: Bryyo",
+        "extraId": 1042,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Item Locations: Elysia",
+        "extraId": 1043,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
+        "name": "Item Locations: Pirate Homeworld",
+        "extraId": 1044,
+        "nodeType": "map"
+      },
+      {
+        "id": "unused",
         "name": "Map: Norion",
-        "extraId": 1003,
+        "extraId": 1051,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Bryyo",
-        "extraId": 1004,
+        "extraId": 1052,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Skytown West",
-        "extraId": 1005,
+        "extraId": 1053,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Skytown East",
-        "extraId": 1006,
+        "extraId": 1054,
         "nodeType": "map"
       },
       {
         "id": "unused",
-        "name": "Map: Norion Clues",
-        "extraId": 1007,
+        "name": "Map: Pirate Homeworld",
+        "extraId": 1055,
         "nodeType": "map"
       },
       {
         "id": "unused",
-        "name": "Map: Bryyo Clues",
-        "extraId": 1008,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Elysia Clues",
-        "extraId": 1009,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Pirate Homeworld Clues",
-        "extraId": 1010,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Pirate Homeworld Command & Research",
-        "extraId": 1011,
-        "nodeType": "map"
-      },
-      {
-        "id": "golemHead",
-        "name": "Golem Head",
-        "extraId": 1021,
+        "name": "Cargo Empty",
+        "extraId": 1061,
         "nodeType": "slot"
       },
       {
-        "id": "generator",
+        "id": "birdObservatoryCargo",
+        "name": "Observatory",
+        "extraId": 1062,
+        "nodeType": "slot"
+      },
+      {
+        "id": "theronianBomb",
+        "name": "Theronian Bomb Component #1",
+        "extraId": 1063,
+        "nodeType": "slot"
+      },
+      {
+        "id": "theronianBomb",
+        "name": "Theronian Bomb Component #2",
+        "extraId": 1064,
+        "nodeType": "slot"
+      },
+      {
+        "id": "theronianBomb",
+        "name": "Theronian Bomb Component #3",
+        "extraId": 1065,
+        "nodeType": "slot"
+      },
+      {
+        "id": "bryyoGeneratorCargo",
         "name": "Large Generator",
-        "extraId": 1022,
+        "extraId": 1066,
         "nodeType": "slot"
       },
       {
-        "id": "screwAttackB",
-        "name": "Gold Credit",
-        "extraId": 1023,
-        "nodeType": "lore"
+        "id": "bryyoGolemHeadCargo",
+        "name": "Golem Head",
+        "extraId": 1067,
+        "nodeType": "slot"
+      },
+      {
+        "id": "unused",
+        "name": "Ready Room Briefing",
+        "extraId": 1101,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Lab Pirate Attack",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Cargo Dock A Cleared",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Generator A Online",
+        "extraId": 1104,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Rundas Comms",
+        "extraId": 1105,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Generator B Online",
+        "extraId": 1106,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Generator C Online",
+        "extraId": 1107,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Norion Defense Cannon",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Solar System Open",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Bryyo Fire Access",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Thorn Jungle Access",
+        "extraId": 1111,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Hanger Bay Power",
+        "extraId": 1112,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Fed Outpost Landing Site",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Outpost Upgrade Obtained",
+        "extraId": 1114,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Fire Generator Destroyed",
+        "extraId": 1115,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Bombing Run Attempt",
+        "extraId": 1116,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "South Turret Destroyed",
+        "extraId": 1117,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "North Turret Destroyed",
+        "extraId": 1118,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Jungle Generator Destroyed",
+        "extraId": 1119,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Bryyo Seed Destroyed",
+        "extraId": 1120,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Skybridge Hera Destroyed",
+        "extraId": 1121,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "A.U. Vaccine Delivered",
+        "extraId": 1122,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Gunship Damaged",
+        "extraId": 1123,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "A.U. Network Connected",
+        "extraId": 1124,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Gunship Repaired",
+        "extraId": 1125,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Landing Platform A",
+        "extraId": 1126,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Valhalla Access",
+        "extraId": 1127,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Landing Platform B",
+        "extraId": 1128,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Federation Upgrade Obtained",
+        "extraId": 1129,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Observatory Repaired",
+        "extraId": 1130,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Xenoresearch Power Outage",
+        "extraId": 1131,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Spire Bomb Loaded",
+        "extraId": 1132,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Final Bombing Phase",
+        "extraId": 1133,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Pod Repaired",
+        "extraId": 1134,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Leviathan Shield Destroyed",
+        "extraId": 1135,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Elysia Seed Destroyed",
+        "extraId": 1136,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Pirate Homeworld Access",
+        "extraId": 1137,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Courtyard Fans Off",
+        "extraId": 1138,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Flux Tunnel",
+        "extraId": 1139,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Shield Generator Sighted",
+        "extraId": 1140,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Trooper NZG41 Comms",
+        "extraId": 1141,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Research Facility Landing Site",
+        "extraId": 1142,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Scrapvault Gate Open",
+        "extraId": 1143,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Processing Metroid Barrier",
+        "extraId": 1144,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Processing Central Lift",
+        "extraId": 1145,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Dread Reference",
+        "extraId": 1146,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Transit Station 1-A to B",
+        "extraId": 1147,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Zipline Charlie Broken",
+        "extraId": 1148,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quarry Drill (Smaller)",
+        "extraId": 1149,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Quarry Drill (Larger)",
+        "extraId": 1150,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Mines Landing Site",
+        "extraId": 1151,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Upper Quarry Gate",
+        "extraId": 1152,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Defense System Offline",
+        "extraId": 1153,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Adm. Dane Briefing",
+        "extraId": 1154,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Leviathan Access Point",
+        "extraId": 1155,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Homeworld Seed Destroyed",
+        "extraId": 1156,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Cargo Dock B Visited",
+        "extraId": 1157,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Lore Scans",
+        "extraId": 1158,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Burrow Access",
+        "extraId": 1159,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Machineworks Bridge Cliffside",
+        "extraId": 1160,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Machineworks Bridge Jungleside",
+        "extraId": 1161,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "PDA Access Code",
+        "extraId": 1162,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "AU 313 Secret Message",
+        "extraId": 1163,
+        "nodeType": "easter"
+      },
+      {
+        "id": "unused",
+        "name": "Leviathan Command Codes",
+        "extraId": 1164,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Leviathan Battleship Control",
+        "extraId": 1165,
+        "nodeType": "trigger"
       }
     ],
     "mapTree": [

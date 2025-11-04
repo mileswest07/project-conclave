@@ -14,13 +14,13 @@
 .expansion,
 .blank {
   position: relative;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 
 #timer-wrapper,
 .addon-wrapper {
-  height: 42px;
+  height: 50px;
 }
 
 .addon-wrapper {
@@ -28,7 +28,7 @@
 }
 
 .expansion {
-  height: 64px;
+  height: 72px;
 }
 
 .hint-image,
@@ -66,6 +66,8 @@
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
 #expansion-monsterDna-21-10x:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10x:hover > .item-image ~ .hint-image,
 #item-fireSpell-4:hover > .item-image ~ .hint-image,
 #item-dashSpell-4x:hover > .item-image ~ .hint-image,
 .item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
@@ -82,12 +84,12 @@
 .item-image {
   cursor: pointer;
   filter: drop-shadow(0 0 5px #000);
-  height: 42px;
+  height: 50px;
   left: 0;
   margin: 0;
   position: relative;
   top: 0;
-  width: 42px;
+  width: 50px;
   z-index: 10;
 }
 
@@ -97,11 +99,11 @@
 }
 
 .back-image {
-  height: 42px;
+  height: 50px;
   right: 0;
   position: absolute;
   top: 0;
-  width: 42px;
+  width: 50px;
   z-index: 1;
 }
 
@@ -135,7 +137,7 @@
 }
 
 #reset-wrapper button {
-  margin: 10px 43px 10px 0;
+  margin: 10px 49px 10px 0;
 }
 
 .deselected {
@@ -153,32 +155,38 @@
   cursor: default;
 }
 
-.dark-mode {
-  background: black;
-}
+@media screen {
+  .dark-mode {
+    background: black;
+  }
 
-.dark-mode #startupMenu p,
-.dark-mode .item p,
-.dark-mode .expansion p,
-.dark-mode #timer-wrapper p,
-.dark-mode .addon-wrapper p,
-.dark-mode h4 {
-  color: white;
-}
+  .dark-mode #startupMenu p,
+  .dark-mode .item p,
+  .dark-mode .expansion p,
+  .dark-mode #timer-wrapper p,
+  .dark-mode .addon-wrapper p,
+  .dark-mode h4 {
+    color: white;
+  }
 
-.dark-mode .item-image:not(.deselected) {
-  filter: drop-shadow(0 0 5px #fff);
-}
+  .dark-mode .item-image:not(.deselected) {
+    filter: drop-shadow(0 0 5px #fff);
+  }
 
-.dark-mode .deselected {
-  opacity: 0.5;
-  mix-blend-mode: normal;
+  .dark-mode .deselected {
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
 }
 
 .parent-flex {
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
+}
+
+@media only screen and (max-width: 450px) {
+  .parent-flex {
+    margin-bottom: 100px;
+  }
 }
 
 .child-field {

@@ -1,212 +1,388 @@
 {
   "sm": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Morphing Ball Item Acquired"
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Torizo Defeated"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Spring Ball Orb Acquired"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Screw Attack Orb Acquired"
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Kraid Defeated"
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Gravity Suit Orb Acquired"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla X-Ray Scope Orb Acquired"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Grappling Beam Orb Acquired"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Charge Beam Orb Acquired"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Spazer Orb Acquired"
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Ice Beam Orb Acquired"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Wave Beam Orb Acquired"
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Plasma Beam Orb Acquired"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla High Jump Orb Acquired"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Vanilla Speed Booster Orb Acquired"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Draygon Defeated"
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 46,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "id": "boss",
-        "sprite": "boss",
-        "name": "Bosses",
-        "value": 0,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "id": "etedach",
-        "sprite": "animals",
-        "name": "Animals Rescued",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "7x4": [
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Charge Beam Orb Acquired"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Wave Beam Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Spazer Orb Acquired"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Plasma Beam Orb Acquired"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Gravity Suit Orb Acquired"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Morphing Ball Item Acquired"
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Spring Ball Orb Acquired"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Screw Attack Orb Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla High Jump Orb Acquired"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Draygon Defeated"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Grappling Beam Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla X-Ray Scope Orb Acquired"
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 46
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "id": "boss",
+          "sprite": "boss",
+          "name": "Bosses",
+          "value": 0,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "id": "etedach",
+          "sprite": "animals",
+          "name": "Animals Rescued",
+          "value": 0,
+          "start": 0,
+          "max": 1
+        }
+      ],
+      "5x5": [
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Charge Beam Orb Acquired"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Ice Beam Orb Acquired"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Wave Beam Orb Acquired"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Spazer Orb Acquired"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Plasma Beam Orb Acquired"
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Gravity Suit Orb Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla High Jump Orb Acquired"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Speed Booster Orb Acquired"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Draygon Defeated"
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Morphing Ball Item Acquired"
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Torizo Defeated"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Spring Ball Orb Acquired"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Screw Attack Orb Acquired"
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "lookupId": -1,
+          "value": 0,
+          "start": 0,
+          "max": 0
+        },
+        {
+          "id": "boss",
+          "sprite": "boss",
+          "name": "Bosses",
+          "value": 0,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "id": "etedach",
+          "sprite": "animals",
+          "name": "Animals Rescued",
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 46
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla Grappling Beam Orb Acquired"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vanilla X-Ray Scope Orb Acquired"
+        }
+      ]
+    },
+    "defaultLayout": "7x4",
+    "hasKeyslots": false,
     "items": [
       {
         "id": "morphBall",
@@ -217,7 +393,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
@@ -226,7 +402,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "sprite": "bomb",
         "name": "Bombs",
         "bg": "3800a8",
@@ -234,7 +410,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -243,12 +419,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -265,7 +436,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "sprite": "high",
         "name": "High Jump Boots",
         "bg": "c0a8d8",
@@ -273,12 +444,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "sprite": "wide",
         "name": "Spazer",
         "bg": "ffff80",
@@ -286,7 +452,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "sprite": "barrier",
         "name": "Varia Suit",
         "bg": "ff7e00",
@@ -294,7 +460,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -302,12 +468,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeam",
-        "locale": {
-          "enUS": {
-            "id": "iceBeamD"
-          }
-        },
+        "id": "iceBeamA",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -315,7 +476,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTank",
+        "id": "powerBombTankA",
         "sprite": "pbombs",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -324,12 +485,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "reserveTankB",
-        "locale": {
-          "enUS": {
-            "id": "reserveTank"
-          }
-        },
+        "id": "reserveTankC",
         "sprite": "reserve",
         "name": "Reserve Tanks",
         "singleItemName": "Reserve Tank",
@@ -338,7 +494,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "grappleBeam",
+        "id": "grappleBeamA",
         "sprite": "grapple",
         "name": "Grappling Beam",
         "bg": "00e8d8",
@@ -346,7 +502,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "xRayScope",
+        "id": "xrayScope",
         "sprite": "xray",
         "name": "X-Ray Scope",
         "bg": "c8d8d8",
@@ -354,12 +510,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamA"
-          }
-        },
+        "id": "waveBeamA",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -367,7 +518,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuit",
+        "id": "gravitySuitA",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",
@@ -383,7 +534,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "springBall",
+        "id": "springBallA",
         "sprite": "spring",
         "name": "Spring Ball",
         "bg": "886848",
@@ -391,12 +542,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeam",
-        "locale": {
-          "enUS": {
-            "id": "plasmaBeamD"
-          }
-        },
+        "id": "plasmaBeamA",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",
@@ -404,7 +550,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttack",
+        "id": "screwAttackA",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -426,193 +572,208 @@
       {
         "id": "kraid",
         "name": "Kraid",
-        "bossId": 106
+        "bossId": 111
+      },
+      {
+        "id": "kraid",
+        "name": "Fake Kraid",
+        "bossId": 103
       },
       {
         "id": "crocomire",
         "name": "Crocomire",
-        "bossId": 103
+        "bossId": 104
       },
       {
         "id": "phantoon",
         "name": "Phantoon",
-        "bossId": 107
+        "bossId": 112
       },
       {
         "id": "botwoon",
         "name": "Botwoon",
-        "bossId": 104
+        "bossId": 105
       },
       {
         "id": "draygon",
         "name": "Draygon",
-        "bossId": 108
+        "bossId": 113
       },
       {
         "id": "goldtorizo",
         "name": "Golden Torizo",
-        "bossId": 105
+        "bossId": 106
       },
       {
         "id": "ridley",
         "name": "Ridley",
-        "bossId": 109
+        "bossId": 114
       },
       {
         "id": "mbrain",
         "name": "Mother Brain",
-        "bossId": 110
+        "bossId": 121
       }
     ],
     "areas": [
       {
         "id": 1,
-        "name": "Crateria",
+        "name": "Crateria - West",
         "hasGameStart": true,
         "color": "2038ec"
       },
       {
         "id": 2,
-        "name": "Brinstar",
+        "name": "Crateria - East",
+        "hasGameStart": true,
         "color": "2038ec"
       },
       {
         "id": 3,
-        "name": "Brinstar",
+        "name": "Brinstar - Blue",
         "color": "2038ec"
       },
       {
         "id": 4,
-        "name": "Brinstar",
+        "name": "Brinstar - Green",
         "color": "2038ec"
       },
       {
         "id": 5,
-        "name": "Brinstar",
+        "name": "Brinstar - Red",
         "color": "2038ec"
       },
       {
         "id": 6,
-        "name": "Norfair",
-        "color": "db2b00"
+        "name": "Brinstar - Kraid's Lair",
+        "color": "2038ec"
       },
       {
         "id": 7,
-        "name": "Norfair",
-        "color": "db2b00"
+        "name": "Wrecked Ship - Main Deck",
+        "color": "009700"
       },
       {
         "id": 8,
-        "name": "Wrecked Ship",
+        "name": "Wrecked Ship - Cargo Hold",
         "color": "009700"
       },
       {
         "id": 9,
-        "name": "Maridia",
-        "color": "bf00bf"
+        "name": "Wrecked Ship - Hint Chamber",
+        "color": "009700"
       },
       {
         "id": 10,
-        "name": "Maridia",
+        "name": "Maridia - Lower",
         "color": "bf00bf"
       },
       {
         "id": 11,
+        "name": "Maridia - Upper East",
+        "color": "bf00bf"
+      },
+      {
+        "id": 12,
+        "name": "Norfair - Upper",
+        "color": "db2b00"
+      },
+      {
+        "id": 13,
+        "name": "Norfair - Lower",
+        "color": "db2b00"
+      },
+      {
+        "id": 14,
         "name": "Tourian",
         "color": "bcbcbc"
       }
     ],
     "extras": [
       {
-        "id": "etedach",
-        "name": "Save The Animals",
-        "sprite": "animals",
-        "extraId": 1021,
-        "nodeType": "event"
-      },
-      {
-        "id": "etedach",
-        "name": "Shine Spark Critter",
-        "extraId": 1022,
-        "nodeType": "event"
-      },
-      {
-        "id": "etedach",
-        "name": "Wall Jump Critters",
-        "extraId": 1023,
-        "nodeType": "event"
+        "id": "unused",
+        "name": "Reserve Tank Hint",
+        "extraId": 1001,
+        "nodeType": "easter"
       },
       {
         "id": "unused",
-        "name": "Blue Shutter",
-        "extraId": 1004,
-        "nodeType": "trigger"
+        "name": "Missiles Refill",
+        "extraId": 1011,
+        "nodeType": "recharge"
       },
       {
-        "id": "superMissileTank",
-        "name": "Green Shutter",
-        "extraId": 1005,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Energy Restore",
+        "extraId": 1012,
+        "nodeType": "recharge"
       },
       {
-        "id": "powerBombTank",
-        "name": "Glass Tunnel Broken",
-        "extraId": 1024,
-        "nodeType": "trigger"
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1013,
+        "nodeType": "save"
       },
       {
-        "id": "reserveTankB",
-        "name": "Reserve Tank Hint",
-        "extraId": 1025,
-        "nodeType": "lore"
+        "id": "gunshipS",
+        "name": "Gunship",
+        "extraId": 1014,
+        "nodeType": "save"
       },
       {
         "id": "unused",
         "name": "Map: Crateria",
-        "extraId": 1011,
+        "extraId": 1021,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Brinstar",
-        "extraId": 1012,
+        "extraId": 1022,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Norfair",
-        "extraId": 1013,
-        "nodeType": "map"
-      },
-      {
-        "id": "unused",
-        "name": "Map: Maridia",
-        "extraId": 1015,
+        "extraId": 1023,
         "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Wrecked Ship",
-        "extraId": 1014,
+        "extraId": 1024,
         "nodeType": "map"
       },
       {
-        "id": "missileRefill",
-        "name": "Missiles Reload",
-        "extraId": 1001,
-        "nodeType": "recharge"
+        "id": "unused",
+        "name": "Map: Maridia",
+        "extraId": 1025,
+        "nodeType": "map"
       },
       {
-        "id": "energyRefill",
-        "name": "Energy Recharge",
-        "extraId": 1002,
-        "nodeType": "recharge"
+        "id": "animals",
+        "name": "Shine Spark Critter",
+        "extraId": 1031,
+        "nodeType": "event"
       },
       {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "extraId": 1003,
-        "nodeType": "save"
+        "id": "animals",
+        "name": "Wall Jump Critters",
+        "extraId": 1032,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1033,
+        "nodeType": "event"
+      },
+      {
+        "id": "animals",
+        "name": "Save The Animals",
+        "sprite": "animals",
+        "extraId": 1034,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

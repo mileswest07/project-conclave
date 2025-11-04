@@ -1,516 +1,842 @@
 {
   "mp2e": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Great Temple - Main Energy Controller 1"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Torvus Bog - Torvus Temple"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Bomb Guardian Defeated"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Jump Guardian Defeated"
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Dark Alpha Splinter Defeated"
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Agon Wastes - Agon Energy Controller"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Agon Wastes - Storage D"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Agon Wastes - Mining Station B"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - GFMC Compound"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Boost Guardian Defeated"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Amorbis Defeated"
-      },
-      {
-        "lookupId": 32,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Chykka Defeated"
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Torvus Bog - Torvus Energy Controller"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Dark Agon Wastes - Ing Cache 1"
-      },
-      {
-        "lookupId": 37,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - Grand Windchamber"
-      },
-      {
-        "lookupId": 27,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Temple Grounds - Hall of Honored Dead"
-      },
-      {
-        "lookupId": 34,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Spider Guardian Defeated"
-      },
-      {
-        "lookupId": 30,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Grapple Guardian Defeated"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Torvus Bog - Hydrodynamo Storage"
-      },
-      {
-        "lookupId": 38,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Sanctuary Fortress - Aerie"
-      },
-      {
-        "lookupId": 33,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Sanctuary Fortress - Sanctuary Temple"
-      },
-      {
-        "lookupId": 41,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Quadraxis Defeated"
-      },
-      {
-        "lookupId": 42,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Dark Agon Wastes - Ing Cache 2"
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 35,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Power Bomb Guardian Defeated"
-      },
-      {
-        "lookupId": 39,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Sanctuary Fortress - Vault"
-      },
-      {
-        "lookupId": 43,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "E_Lumin",
-        "overText": "Great Temple - Main Energy Controller 2"
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 49,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 30,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 36,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": 44,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 45,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 46,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 21,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Amorbis required"
-          },
-          {
-            "lookupId": 1101,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1102,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Amorbis required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 31,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Chykka required"
-          },
-          {
-            "lookupId": 1103,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1104,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 31,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Chykka required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 40,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over": "F_Boss_Ex",
-            "overText": "Quadraxis required"
-          },
-          {
-            "lookupId": 1105,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "lookupId": 1106,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 40,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "over": "F_Boss_Ex",
-        "overText": "Quadraxis required",
-        "displayIfScramble": true
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 9,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "lookupId": 47,
-            "value": 0,
-            "start": 0,
-            "max": 9,
-            "over": "E_Lumin_Ex",
-            "overText": "Hints acquired"
-          },
-          {
-            "lookupId": 1107,
-            "value": 0,
-            "start": 0,
-            "max": 1
-          }
-        ]
-      },
-      {
-        "lookupId": 47,
-        "value": 1,
-        "start": 0,
-        "max": 9,
-        "over": "E_Lumin_Ex",
-        "overText": "Hints acquired",
-        "displayIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "8x5": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 1"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Torvus Temple"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Jump Guardian Defeated"
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Dark Alpha Splinter Defeated"
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Agon Wastes - Agon Energy Controller"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Storage D"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Mining Station B"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - GFMC Compound"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Boost Guardian Defeated"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Amorbis Defeated"
+        },
+        {
+          "lookupId": 32,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Chykka Defeated"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Torvus Bog - Torvus Energy Controller"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 1"
+        },
+        {
+          "lookupId": 37,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Grand Windchamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Hall of Honored Dead"
+        },
+        {
+          "lookupId": 34,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Spider Guardian Defeated"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Grapple Guardian Defeated"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Hydrodynamo Storage"
+        },
+        {
+          "lookupId": 38,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Aerie"
+        },
+        {
+          "lookupId": 33,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Sanctuary Fortress - Sanctuary Temple"
+        },
+        {
+          "lookupId": 41,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Quadraxis Defeated"
+        },
+        {
+          "lookupId": 42,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 2"
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 35,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Power Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 39,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Vault"
+        },
+        {
+          "lookupId": 43,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 2"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 49
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "lookupId": 36,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 21,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Amorbis required"
+            },
+            {
+              "lookupId": 1110,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1111,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 31,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Chykka required"
+            },
+            {
+              "lookupId": 1122,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1123,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 40,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Quadraxis required"
+            },
+            {
+              "lookupId": 1129,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1130,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 9,
+          "segments": [
+            {
+              "lookupId": 47,
+              "value": 0,
+              "start": 0,
+              "max": 9,
+              "over": "E_Lumin_Ex",
+              "overText": "Hints acquired"
+            },
+            {
+              "lookupId": 1132,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        }
+      ],
+      "8x6": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 1"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Torvus Temple"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Jump Guardian Defeated"
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Dark Alpha Splinter Defeated"
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Agon Wastes - Agon Energy Controller"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Storage D"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Agon Wastes - Mining Station B"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - GFMC Compound"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Boost Guardian Defeated"
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Amorbis Defeated"
+        },
+        {
+          "lookupId": 32,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Chykka Defeated"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Torvus Bog - Torvus Energy Controller"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 1"
+        },
+        {
+          "lookupId": 37,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Grand Windchamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Temple Grounds - Hall of Honored Dead"
+        },
+        {
+          "lookupId": 34,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Spider Guardian Defeated"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Grapple Guardian Defeated"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Torvus Bog - Hydrodynamo Storage"
+        },
+        {
+          "lookupId": 38,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Aerie"
+        },
+        {
+          "lookupId": 33,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Sanctuary Fortress - Sanctuary Temple"
+        },
+        {
+          "lookupId": 41,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Quadraxis Defeated"
+        },
+        {
+          "lookupId": 42,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Dark Agon Wastes - Ing Cache 2"
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 35,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Power Bomb Guardian Defeated"
+        },
+        {
+          "lookupId": 39,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Sanctuary Fortress - Vault"
+        },
+        {
+          "lookupId": 43,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "E_Lumin",
+          "overText": "Great Temple - Main Energy Controller 2"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 49,
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 30,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 4,
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 10,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 36,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 44,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 45,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 46,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 21,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Amorbis required"
+            },
+            {
+              "lookupId": 1110,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1111,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Amorbis required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 31,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Chykka required"
+            },
+            {
+              "lookupId": 1122,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1123,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 31,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Chykka required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 40,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over": "F_Boss_Ex",
+              "overText": "Quadraxis required"
+            },
+            {
+              "lookupId": 1129,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 1130,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 40,
+          "value": 1,
+          "start": 0,
+          "max": 3,
+          "over": "F_Boss_Ex",
+          "overText": "Quadraxis required",
+          "displayIfScramble": true
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 9,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "lookupId": 47,
+              "value": 0,
+              "start": 0,
+              "max": 9,
+              "over": "E_Lumin_Ex",
+              "overText": "Hints acquired"
+            },
+            {
+              "lookupId": 1132,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 47,
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "over": "E_Lumin_Ex",
+          "overText": "Hints acquired",
+          "displayIfScramble": true
+        }
+      ]
+    },
+    "defaultLayout": "8x5",
+    "scrambleLayout": "8x6",
     "items": [
       {
-        "id": "combatVisorA",
+        "id": "combatVisorE",
         "name": "Combat Visor",
         "sprite": "combat",
         "bg": "80d0ff",
@@ -518,7 +844,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeamA",
+        "id": "powerBeamE",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -526,7 +852,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisorA",
+        "id": "scanVisorE",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -534,7 +860,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeamE",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 5,
@@ -549,7 +875,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "d82800",
@@ -557,7 +883,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
         "alreadyHasMainItem": true,
@@ -573,19 +899,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "violetTranslatorA",
+        "id": "violetTranslatorL",
         "name": "Violet Translator",
-        "locale": {
-          "enUS": {
-            "id": "violetTranslator"
-          }
-        },
         "bg": "a36fb1",
         "itemId": 10,
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -593,7 +914,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bombC",
+        "id": "bombE",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 12,
@@ -607,26 +928,21 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "amberTranslatorA",
+        "id": "amberTranslatorL",
         "name": "Amber Translator",
-        "locale": {
-          "enUS": {
-            "id": "amberTranslator"
-          }
-        },
         "bg": "ad6a40",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "darkBeam",
+        "id": "darkBeamA",
         "name": "Dark Beam",
         "sprite": "darkbeam",
         "bg": "9c84ff",
@@ -643,7 +959,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "lightBeam",
+        "id": "lightBeamA",
         "name": "Light Beam",
         "sprite": "light",
         "bg": "5ac7f7",
@@ -669,12 +985,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "darkAgonKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Dark Agon Keys",
         "singleItemName": "Dark Agon Key",
         "sprite": "redKey",
@@ -683,27 +994,22 @@
         "nodeType": "artifact"
       },
       {
-        "id": "darkSuitA",
+        "id": "darkSuit",
         "name": "Dark Suit",
         "bg": "6c0204",
         "itemId": 22,
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileC",
+        "id": "superMissileComboE",
         "name": "Super Missile",
         "bg": "ffb508",
         "itemId": 23,
         "nodeType": "upgrade"
       },
       {
-        "id": "emeraldTranslatorA",
+        "id": "emeraldTranslatorL",
         "name": "Emerald Translator",
-        "locale": {
-          "enUS": {
-            "id": "emeraldTranslator"
-          }
-        },
         "bg": "4b9467",
         "itemId": 24,
         "nodeType": "upgrade"
@@ -724,7 +1030,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherA",
+        "id": "seekerLauncherE",
         "name": "Seeker Launcher",
         "bg": "644080",
         "itemId": 27,
@@ -745,19 +1051,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "grappleBeamA",
+        "id": "grappleBeamP",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 30,
         "nodeType": "upgrade"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "darkTorvusKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Dark Torvus Keys",
         "singleItemName": "Dark Torvus Key",
         "sprite": "redKey",
@@ -766,7 +1067,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "darkVisor",
+        "id": "darkVisorA",
         "name": "Dark Visor",
         "sprite": "darkvisor",
         "bg": "ff7b7b",
@@ -774,19 +1075,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "cobaltTranslatorA",
+        "id": "cobaltTranslatorL",
         "name": "Cobalt Translator",
-        "locale": {
-          "enUS": {
-            "id": "cobaltTranslator"
-          }
-        },
         "bg": "5c819e",
         "itemId": 33,
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "sprite": "spider",
         "bg": "007f0e",
@@ -794,7 +1090,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombB",
+        "id": "powerBombE",
         "name": "Power Bombs",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -802,7 +1098,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombExpA",
+        "id": "powerBombExpE",
         "name": "Power Bomb Expansions",
         "singleItemName": "Power Bomb Expansion",
         "alreadyHasMainItem": true,
@@ -826,19 +1122,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttackE",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 39,
         "nodeType": "upgrade"
       },
       {
-        "id": "templeKey",
-        "locale": {
-          "enUS": {
-            "id": "ingHiveKey"
-          }
-        },
+        "id": "darkKey",
         "name": "Ing Hive Keys",
         "singleItemName": "Ing Hive Key",
         "sprite": "redKey",
@@ -847,7 +1138,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "annihilatorBeam",
+        "id": "annihilatorBeamA",
         "name": "Annihilator Beam",
         "sprite": "annihilator",
         "bg": "9b9b9b",
@@ -869,33 +1160,28 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "doubleDamageA",
+        "id": "massiveDamageA",
         "name": "Double Damage",
         "bg": "ffb508",
         "itemId": 44,
         "nodeType": "upgrade"
       },
       {
-        "id": "infiniteBeamAmmo",
+        "id": "unlimitedBeamAmmo",
         "name": "Unlimited Beam Ammo",
         "bg": "808000",
         "itemId": 45,
         "nodeType": "upgrade"
       },
       {
-        "id": "infiniteMissiles",
+        "id": "unlimitedMissiles",
         "name": "Unlimited Missiles",
         "bg": "d82800",
         "itemId": 46,
         "nodeType": "upgrade"
       },
       {
-        "id": "darkAetherKey",
-        "locale": {
-          "enUS": {
-            "id": "skyTempleKey"
-          }
-        },
+        "id": "skyTempleKeyA",
         "name": "Sky Temple Keys",
         "singleItemName": "Sky Temple Key",
         "sprite": "skyKey",
@@ -1124,375 +1410,276 @@
     ],
     "extras": [
       {
-        "id": "bombC",
-        "name": "Command Chamber Gate",
-        "nodeType": "trigger",
-        "extraId": 1001,
-        "blockType": true,
-        "lockIds": [
-          5,
-          11
-        ]
+        "id": "beamAmmoRestore",
+        "name": "Ammo Refilled",
+        "nodeType": "recharge",
+        "extraId": 1001
       },
       {
         "id": "unused",
-        "name": "Item Loss",
-        "nodeType": "event",
+        "name": "Missiles Reload",
+        "nodeType": "recharge",
         "extraId": 1002
       },
       {
-        "id": "lightBeam",
-        "name": "Dynamo Chamber Lock",
-        "nodeType": "trigger",
+        "id": "unused",
+        "name": "Save Station",
+        "nodeType": "save",
         "extraId": 1003
       },
       {
-        "id": "lightBeam",
-        "name": "Trooper Security Station Lock",
-        "nodeType": "trigger",
+        "id": "gunshipS",
+        "name": "Gunship",
+        "nodeType": "save",
         "extraId": 1004
       },
       {
         "id": "unused",
-        "name": "GFMC Cutscene",
-        "nodeType": "event",
-        "extraId": 1005
-      },
-      {
-        "id": "lightBeam",
-        "name": "Light Block Moved",
-        "nodeType": "trigger",
-        "extraId": 1006
-      },
-      {
-        "id": "lightBeam",
-        "name": "Sacred Bridge Gate",
-        "nodeType": "trigger",
-        "extraId": 1007
-      },
-      {
-        "id": "seekerLauncherA",
-        "name": "Ing Windchamber Cobalt Seeker Lock",
-        "nodeType": "trigger",
-        "extraId": 1008
-      },
-      {
-        "id": "seekerLauncherA",
-        "name": "Ing Windchamber Amber Seeker Lock",
-        "nodeType": "trigger",
-        "extraId": 1009
-      },
-      {
-        "id": "lightBeam",
-        "name": "Light Block Moved",
-        "nodeType": "trigger",
-        "extraId": 1010
-      },
-      {
-        "id": "bombC",
-        "name": "Agon Interdimensional Bomb Slot",
-        "nodeType": "trigger",
+        "name": "Keybearer Corpse",
+        "nodeType": "lore",
         "extraId": 1011
-      },
-      {
-        "id": "bombC",
-        "name": "Transport Center Bomb Slot",
-        "nodeType": "trigger",
-        "extraId": 1012
-      },
-      {
-        "id": "unused",
-        "name": "Mining Station A Sand Gate",
-        "nodeType": "trigger",
-        "extraId": 1013
-      },
-      {
-        "id": "unused",
-        "name": "Command Center Gate",
-        "nodeType": "trigger",
-        "extraId": 1014
-      },
-      {
-        "id": "unused",
-        "name": "Security Station B Gate",
-        "nodeType": "trigger",
-        "extraId": 1015
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 1",
-        "nodeType": "trigger",
-        "extraId": 1016
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 2",
-        "nodeType": "trigger",
-        "extraId": 1017
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 3",
-        "nodeType": "trigger",
-        "extraId": 1018
-      },
-      {
-        "id": "unused",
-        "name": "Sand Processing Cleaned",
-        "nodeType": "trigger",
-        "extraId": 1019
-      },
-      {
-        "id": "unused",
-        "name": "Vigilance Class Turret",
-        "nodeType": "event",
-        "extraId": 1020
-      },
-      {
-        "id": "unused",
-        "name": "Torvus Lagoon Gates",
-        "nodeType": "trigger",
-        "extraId": 1021
-      },
-      {
-        "id": "cannonball",
-        "name": "Great Bridge Cannon",
-        "nodeType": "trigger",
-        "extraId": 1022
-      },
-      {
-        "id": "bombC",
-        "name": "Forgotten Bridge Turned",
-        "nodeType": "trigger",
-        "extraId": 1023
-      },
-      {
-        "id": "boostBall",
-        "name": "Forgotten Balcony Opened",
-        "nodeType": "trigger",
-        "extraId": 1024
-      },
-      {
-        "id": "boostBall",
-        "name": "Torvus Interdimensional Spinner",
-        "nodeType": "trigger",
-        "extraId": 1025
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 1",
-        "nodeType": "trigger",
-        "extraId": 1026
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 2",
-        "nodeType": "trigger",
-        "extraId": 1027
-      },
-      {
-        "id": "scanVisorA",
-        "name": "Scan Node 3",
-        "nodeType": "trigger",
-        "extraId": 1028
-      },
-      {
-        "id": "bombC",
-        "name": "Training Chamber Bomb Slot",
-        "nodeType": "trigger",
-        "extraId": 1029
-      },
-      {
-        "id": "unused",
-        "name": "Gathering Hall Portal Gate Access",
-        "nodeType": "trigger",
-        "extraId": 1030
-      },
-      {
-        "id": "unused",
-        "name": "Catacombs Portal Gate Access",
-        "nodeType": "trigger",
-        "extraId": 1031
-      },
-      {
-        "id": "unused",
-        "name": "Crypt Barrier Access",
-        "nodeType": "trigger",
-        "extraId": 1032
-      },
-      {
-        "id": "boostBall",
-        "name": "Sanctuary Temple Transport Access",
-        "nodeType": "trigger",
-        "extraId": 1033
-      },
-      {
-        "id": "seekerLauncherA",
-        "name": "Reactor Access Gate",
-        "nodeType": "trigger",
-        "extraId": 1034
-      },
-      {
-        "id": "unused",
-        "name": "Minigyro Chamber Puzzle",
-        "nodeType": "trigger",
-        "extraId": 1035
-      },
-      {
-        "id": "powerBombB",
-        "name": "Glass Tunnel Broken",
-        "nodeType": "trigger",
-        "extraId": 1036
-      },
-      {
-        "id": "unused",
-        "name": "Watch Station Portal Gate",
-        "nodeType": "trigger",
-        "extraId": 1037
-      },
-      {
-        "id": "unused",
-        "name": "Hive Dynamo Works Portal Gate",
-        "nodeType": "trigger",
-        "extraId": 1038
-      },
-      {
-        "id": "grappleBeamA",
-        "name": "Watch Station Access Grapple Points",
-        "nodeType": "trigger",
-        "extraId": 1039
-      },
-      {
-        "id": "unused",
-        "name": "Main Gyro Chamber Puzzle 1",
-        "nodeType": "trigger",
-        "extraId": 1040
-      },
-      {
-        "id": "unused",
-        "name": "Main Gyro Chamber Puzzle 2",
-        "nodeType": "trigger",
-        "extraId": 1041
-      },
-      {
-        "id": "boostBall",
-        "name": "Main Gyro Chamber Spinner",
-        "nodeType": "trigger",
-        "extraId": 1042
-      },
-      {
-        "id": "cannonball",
-        "name": "Temple Access Cannon",
-        "nodeType": "trigger",
-        "extraId": 1043
-      },
-      {
-        "id": "unused",
-        "name": "Vigilance Class Turret",
-        "nodeType": "event",
-        "extraId": 1044
       },
       {
         "id": "unused",
         "name": "Map: Hive Tunnels",
         "nodeType": "map",
-        "extraId": 1045
+        "extraId": 1021
       },
       {
         "id": "unused",
-        "name": "Map: GFMC Compound",
+        "name": "Map: Temple Grounds",
         "nodeType": "map",
-        "extraId": 1046
+        "extraId": 1022
       },
       {
         "id": "unused",
         "name": "Map: Agon Wastes",
         "nodeType": "map",
-        "extraId": 1047
+        "extraId": 1023
       },
       {
         "id": "unused",
         "name": "Map: Torvus Bog",
         "nodeType": "map",
-        "extraId": 1048
+        "extraId": 1024
       },
       {
         "id": "unused",
         "name": "Map: Sanctuary Fortress",
         "nodeType": "map",
-        "extraId": 1049
+        "extraId": 1025
       },
+      {
+        "id": "unused",
+        "name": "Vigilance Class Turret",
+        "nodeType": "event",
+        "extraId": 1031
+      },
+      
+      
       {
         "id": "unused",
         "name": "Hive Tunnels",
         "nodeType": "area",
-        "extraId": 1050
+        "extraId": 1101
+      },
+      {
+        "id": "unused",
+        "name": "Command Chamber Gate",
+        "nodeType": "trigger",
+        "extraId": 1102
+      },
+      {
+        "id": "unused",
+        "name": "Items Stolen",
+        "nodeType": "event",
+        "extraId": 1103
+      },
+      {
+        "id": "unused",
+        "name": "East Temple Grounds",
+        "nodeType": "area",
+        "extraId": 1104
+      },
+      {
+        "id": "unused",
+        "name": "North Temple Grounds",
+        "nodeType": "area",
+        "extraId": 1105
+      },
+      {
+        "id": "unused",
+        "name": "Marines Cutscene",
+        "nodeType": "event",
+        "extraId": 1106
+      },
+      {
+        "id": "unused",
+        "name": "U-Mos",
+        "nodeType": "event",
+        "extraId": 1107
+      },
+      {
+        "id": "unused",
+        "name": "Portal Site Gate",
+        "nodeType": "trigger",
+        "extraId": 1108
       },
       {
         "id": "unused",
         "name": "Pirate Base",
         "nodeType": "area",
-        "extraId": 1051
+        "extraId": 1109
       },
       {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1052
-      },
-      {
-        "id": "missileRefill",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1053
-      },
-      {
-        "id": "ammoStation",
-        "name": "Ammo Refilled",
-        "nodeType": "recharge",
-        "extraId": 1054
-      },
-      {
-        "id": "lightOfAether",
+        "id": "energyTaken",
         "name": "Dark Agon Energy Retrieved",
-        "nodeType": "event",
-        "extraId": 1101
+        "nodeType": "trigger",
+        "extraId": 1110
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Agon Energy Restored",
-        "nodeType": "event",
-        "extraId": 1102
+        "nodeType": "trigger",
+        "extraId": 1111
       },
       {
-        "id": "lightOfAether",
+        "id": "unused",
+        "name": "Lagoon Bridge",
+        "nodeType": "trigger",
+        "extraId": 1112
+      },
+      {
+        "id": "unused",
+        "name": "Forgotten Bridge Rotated",
+        "nodeType": "trigger",
+        "extraId": 1113
+      },
+      {
+        "id": "unused",
+        "name": "Great Bridge Cannon",
+        "nodeType": "trigger",
+        "extraId": 1114
+      },
+      {
+        "id": "unused",
+        "name": "Upper Forgotten Gate",
+        "nodeType": "trigger",
+        "extraId": 1115
+      },
+      {
+        "id": "unused",
+        "name": "Sky Temple Key Hints",
+        "nodeType": "event",
+        "extraId": 1116
+      },
+      {
+        "id": "unused",
+        "name": "Station Lock 1",
+        "nodeType": "trigger",
+        "extraId": 1117
+      },
+      {
+        "id": "unused",
+        "name": "Station Lock 2",
+        "nodeType": "trigger",
+        "extraId": 1118
+      },
+      {
+        "id": "unused",
+        "name": "Gathering Portal Gate",
+        "nodeType": "trigger",
+        "extraId": 1119
+      },
+      {
+        "id": "unused",
+        "name": "Crypt Laser Spinner",
+        "nodeType": "trigger",
+        "extraId": 1120
+      },
+      {
+        "id": "unused",
+        "name": "Station Lock 3",
+        "nodeType": "trigger",
+        "extraId": 1121
+      },
+      {
+        "id": "energyTaken",
         "name": "Dark Torvus Energy Retrieved",
-        "nodeType": "event",
-        "extraId": 1103
+        "nodeType": "trigger",
+        "extraId": 1122
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Torvus Energy Restored",
-        "nodeType": "event",
-        "extraId": 1104
+        "nodeType": "trigger",
+        "extraId": 1123
       },
       {
-        "id": "lightOfAether",
+        "id": "unused",
+        "name": "Wind Chamber (Amber)",
+        "nodeType": "trigger",
+        "extraId": 1124
+      },
+      {
+        "id": "unused",
+        "name": "Wind Chamber (Cobalt)",
+        "nodeType": "trigger",
+        "extraId": 1125
+      },
+      {
+        "id": "unused",
+        "name": "Gathering Pool Drained",
+        "nodeType": "trigger",
+        "extraId": 1126
+      },
+      {
+        "id": "unused",
+        "name": "Gathering Spider Slots",
+        "nodeType": "trigger",
+        "extraId": 1127
+      },
+      {
+        "id": "unused",
+        "name": "Crypt Barrier",
+        "nodeType": "trigger",
+        "extraId": 1128
+      },
+      {
+        "id": "energyTaken",
         "name": "Ing Hive Energy Retrieved",
-        "nodeType": "event",
-        "extraId": 1105
+        "nodeType": "trigger",
+        "extraId": 1129
       },
       {
-        "id": "lightOfAetherA",
+        "id": "energyRestored",
         "name": "Sanctuary Energy Restored",
-        "nodeType": "event",
-        "extraId": 1106
+        "nodeType": "trigger",
+        "extraId": 1130
+      },
+      {
+        "id": "unused",
+        "name": "Teleporters Active",
+        "nodeType": "trigger",
+        "extraId": 1131
       },
       {
         "id": "skyTempleAccess",
         "name": "Sky Temple Accessible",
+        "nodeType": "trigger",
+        "extraId": 1132
+      },
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
         "nodeType": "event",
-        "extraId": 1107
+        "extraId": 1133
+      },
+      {
+        "id": "unused",
+        "name": "Light Transport",
+        "nodeType": "teleport",
+        "extraId": 1201
       }
     ],
     "mapTree": [

@@ -1,302 +1,269 @@
 {
   "mp": {
-    "checklistWidth": 5,
-    "checklistLayout": [
-      {
-        "type": "toggle",
-        "start": 0,
-        "clearIfScramble": true,
-        "segments": [
-          {
-            "id": "primeSuit",
-            "name": "Prime Suit Active",
-            "value": 0,
-            "start": 1,
-            "max": 1,
-            "type": "toggle"
-          },
-          {
-            "id": "fusionSuit",
-            "name": "Fusion Suit Active",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "type": "toggle"
-          }
-        ]
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "displayIfScramble": true
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Flaahgra Defeated"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Gravity Chamber"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Omega Pirate Defeated"
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Tallon Overworld - Alcove"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Watery Hall"
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Chapel of the Elders"
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Antechamber"
-      },
-      {
-        "lookupId": 27,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Magmoor Caverns - Plasma Processing"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Hive Mecha Defeated"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Observatory"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Tower of Light"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Magmoor Caverns - Shore Tunnel"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Storage Depot A"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Chozo Ruins - Ruined Shrine"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Incinerator Drone Defeated"
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Phendrana Canyon"
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Thardus Defeated"
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Central Dynamo"
-      },
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phendrana Drifts - Research Core"
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Tallon Overworld - Life Grove"
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Phazon Mines - Storage Depot B"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 49,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 4,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": [
-          {
-            "lookupId": 30,
-            "value": 1,
-            "start": 0,
-            "max": 12,
-            "over": "Z_Chozo",
-            "overText": "Hints Acquired"
-          },
-          {
-            "lookupId": 1021,
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "clearIfScramble": true
-          }
-        ]
-      }
-    ],
+    "checklistLayouts": {
+      "5x6": [
+        {
+          "type": "toggle",
+          "start": 0,
+          "clearIfScramble": true,
+          "segments": [
+            {
+              "id": "primeSuitToggle",
+              "name": "Prime Suit Active",
+              "value": 0,
+              "start": 1,
+              "max": 1,
+              "type": "toggle"
+            },
+            {
+              "id": "fusionSuitToggle",
+              "name": "Fusion Suit Active",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "type": "toggle"
+            }
+          ]
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Flaahgra Defeated"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Gravity Chamber"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Omega Pirate Defeated"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Alcove"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Watery Hall"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Chapel of the Elders"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Antechamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Plasma Processing"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Hive Mecha Defeated"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Observatory"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Tower of Light"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Shore Tunnel"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot A"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Ruined Shrine"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Incinerator Drone Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Phendrana Canyon"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Thardus Defeated"
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Central Dynamo"
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Research Core"
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Life Grove"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot B"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 49
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "id": "-"
+        },
+        {
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "segments": [
+            {
+              "lookupId": 30,
+              "value": 1,
+              "start": 0,
+              "max": 12,
+              "over": "Z_Chozo",
+              "overText": "Hints Acquired"
+            },
+            {
+              "lookupId": 1123,
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            }
+          ]
+        }
+      ]
+    },
+    "defaultLayout": "5x6",
     "items": [
       {
-        "id": "combatVisor",
+        "id": "combatVisorP",
         "name": "Combat Visor",
         "sprite": "combat",
         "bg": "80d0ff",
@@ -304,7 +271,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeam",
+        "id": "powerBeamP",
         "name": "Power Beam",
         "sprite": "power",
         "bg": "ffb508",
@@ -312,7 +279,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisor",
+        "id": "scanVisorP",
         "name": "Scan Visor",
         "sprite": "scan",
         "bg": "bca470",
@@ -320,7 +287,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "d82800",
@@ -328,7 +295,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTank",
+        "id": "missileExpansion",
         "name": "Missile Expansions",
         "alreadyHasMainItem": true,
         "singleItemName": "Missile Expansion",
@@ -337,7 +304,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTankP",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -353,14 +320,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamB",
+        "id": "chargeBeamP",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 9,
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombP",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 10,
@@ -374,7 +341,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
+        "id": "barrierSuitB",
         "name": "Varia Suit",
         "sprite": "barrier",
         "bg": "ff7e00",
@@ -390,14 +357,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spinBoost",
+        "id": "spaceJumpBoots",
         "name": "Space Jump Boots",
         "bg": "00a0e0",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeamP",
         "name": "Wave Beam",
         "sprite": "wave",
         "bg": "6f3198",
@@ -405,7 +372,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileA",
+        "id": "superMissileComboP",
         "name": "Super Missile",
         "bg": "ffb508",
         "itemId": 16,
@@ -420,7 +387,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallP",
         "name": "Spider Ball",
         "sprite": "spider",
         "bg": "007f0e",
@@ -428,14 +395,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "shockShot",
+        "id": "wavebuster",
         "name": "Wavebuster",
         "bg": "6f3198",
         "itemId": 19,
         "nodeType": "expansion"
       },
       {
-        "id": "iceBeamA",
+        "id": "iceBeamP",
         "name": "Ice Beam",
         "sprite": "ice",
         "bg": "2038ec",
@@ -443,7 +410,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitB",
+        "id": "gravitySuitA",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
@@ -451,7 +418,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBombP",
         "name": "Power Bomb",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -459,7 +426,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombExp",
+        "id": "powerBombExpP",
         "name": "Power Bomb Expansions",
         "alreadyHasMainItem": true,
         "singleItemName": "Power Bomb Expansion",
@@ -468,21 +435,21 @@
         "nodeType": "expansion"
       },
       {
-        "id": "grappleBeamA",
+        "id": "grappleBeamP",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 24,
         "nodeType": "upgrade"
       },
       {
-        "id": "iceMissileB",
+        "id": "iceSpreader",
         "name": "Ice Spreader",
         "bg": "2038ec",
         "itemId": 25,
         "nodeType": "expansion"
       },
       {
-        "id": "xRayVisor",
+        "id": "xrayVisorP",
         "name": "X-Ray Visor",
         "sprite": "xray",
         "bg": "c8d8d8",
@@ -490,7 +457,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamB",
+        "id": "plasmaBeamP",
         "name": "Plasma Beam",
         "sprite": "plasma",
         "bg": "ff4a4a",
@@ -498,7 +465,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "flameShot",
+        "id": "flamethrower",
         "name": "Flamethrower",
         "bg": "ff4a4a",
         "itemId": 28,
@@ -513,7 +480,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "name": "Chozo Artifacts",
         "singleItemName": "Artifact",
         "bg": "008080",
@@ -663,88 +630,183 @@
     "extras": [
       {
         "id": "unused",
-        "name": "Item Loss",
-        "nodeType": "event",
-        "extraId": 1001
+        "name": "Missiles Refill",
+        "extraId": 1001,
+        "nodeType": "recharge"
       },
       {
         "id": "unused",
-        "name": "Great Tree Hall Bars",
-        "nodeType": "trigger",
+        "name": "Save Station",
         "extraId": 1002,
-        "blockType": true,
-        "lockIds": [
-          7,
-          11
-        ]
+        "nodeType": "save"
       },
       {
-        "id": "unused",
-        "name": "Labs Power Outage",
-        "nodeType": "trigger",
-        "extraId": 1012
-      },
-      {
-        "id": "unused",
-        "name": "Processing Center Access Gate",
-        "nodeType": "event",
+        "id": "gunshipP",
+        "name": "Gunship",
         "extraId": 1003,
-        "blockType": true,
-        "lockIds": []
+        "nodeType": "save"
       },
       {
         "id": "unused",
         "name": "Map: Frigate",
-        "nodeType": "map",
-        "extraId": 1004
+        "extraId": 1011,
+        "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Chozo Ruins",
-        "nodeType": "map",
-        "extraId": 1005
+        "extraId": 1012,
+        "nodeType": "map"
       },
       {
         "id": "unused",
-        "name": "Map: Phendrana Pirates",
-        "nodeType": "map",
-        "extraId": 1006
+        "name": "Map: Phendrana Drifts",
+        "extraId": 1013,
+        "nodeType": "map"
       },
       {
         "id": "unused",
         "name": "Map: Phazon Mines",
-        "nodeType": "map",
-        "extraId": 1007
+        "extraId": 1014,
+        "nodeType": "map"
       },
       {
         "id": "unused",
-        "name": "Crashed Frigate",
-        "nodeType": "area",
-        "extraId": 1008
+        "name": "Items Lost",
+        "extraId": 1101,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Hive Totem Cleared",
+        "extraId": 1102,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Ruined Shrine Cleared",
+        "extraId": 1103,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Artifact Hints",
+        "extraId": 1104,
+        "nodeType": "event"
+      },
+      {
+        "id": "unused",
+        "name": "Ice Ruins Door Unlocked",
+        "extraId": 1105,
+        "nodeType": "trigger"
       },
       {
         "id": "unused",
         "name": "Pirate Labs",
-        "nodeType": "area",
-        "extraId": 1009
+        "extraId": 1106,
+        "nodeType": "area"
       },
       {
-        "id": "saveRoom",
-        "name": "Save Station",
-        "nodeType": "save",
-        "extraId": 1010
+        "id": "unused",
+        "name": "Observatory Activated",
+        "extraId": 1107,
+        "nodeType": "trigger"
       },
       {
-        "id": "missileRefill",
-        "name": "Missiles Reload",
-        "nodeType": "recharge",
-        "extraId": 1011
+        "id": "unused",
+        "name": "Power Outage",
+        "extraId": 1108,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sunchamber Ghosts Ready",
+        "extraId": 1109,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Sunchamber Ghosts Cleared",
+        "extraId": 1110,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Crashed Frigate",
+        "extraId": 1111,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Tallon Overworld Depths",
+        "extraId": 1112,
+        "nodeType": "area"
+      },
+      {
+        "id": "unused",
+        "name": "Crane Controls Active",
+        "extraId": 1113,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Crane Position",
+        "extraId": 1114,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Pulse Beam Position",
+        "extraId": 1115,
+        "nodeType": "toggle"
+      },
+      {
+        "id": "unused",
+        "name": "Rock Wall Destroyed",
+        "extraId": 1116,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Dynamo Destroyed",
+        "extraId": 1117,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Top of Ore Processing",
+        "extraId": 1118,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Plasma Processing Cleared",
+        "extraId": 1119,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Metroids Released",
+        "extraId": 1120,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Metroids Released 2",
+        "extraId": 1121,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Omega Back Door Opened",
+        "extraId": 1122,
+        "nodeType": "trigger"
       },
       {
         "id": "cipher",
         "name": "Impact Crater Accessible",
-        "nodeType": "event",
-        "extraId": 1021
+        "extraId": 1123,
+        "nodeType": "event"
       }
     ],
     "mapTree": [

@@ -1,39 +1,89 @@
 {
   "pb": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "4x1": [
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        }
+      ],
+      "2x2": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        }
+      ],
+      "1x4": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        }
+      ]
+    },
+    "defaultLayout": "4x1",
     "items": [
       {
-        "id": "chozoArtifact",
+        "id": "birdArtifact",
         "sprite": "artifact",
         "name": "Artifacts",
         "singleItemName": "Artifact",
@@ -42,14 +92,14 @@
         "nodeType": "artifact"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBombP",
         "name": "Power Bombs",
         "bg": "98b830",
         "itemId": 2,
         "nodeType": "upgrade"
       },
       {
-        "id": "missileC",
+        "id": "missileLauncherP",
         "name": "Missile Launcher",
         "bg": "d82800",
         "itemId": 3,
@@ -125,10 +175,10 @@
     ],
     "extras": [
       {
-        "id": "screwAttackB",
+        "id": "special",
         "name": "Special",
         "extraId": 1001,
-        "nodeType": "lore"
+        "nodeType": "easter"
       }
     ],
     "mapTree": [],

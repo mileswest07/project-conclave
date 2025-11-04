@@ -1,124 +1,266 @@
 {
   "mcon": {
-    "checklistWidth": 5,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Crocomire Defeated"
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Kraid Defeated"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "S_Boss",
-        "overText": "Ridley Defeated"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": 1,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 2,
-        "segments": []
-      },
-      {
-        "id": "boss",
-        "name": "Bosses",
-        "sprite": "bosses",
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "5x3": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        }
+      ],
+      "4x3": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3
+        }
+      ],
+      "2x6": [
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Crocomire Defeated"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Ridley Defeated"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "S_Boss",
+          "overText": "Kraid Defeated"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 12
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2
+        },
+        {
+          "id": "boss",
+          "name": "Bosses",
+          "sprite": "bosses",
+          "value": 0,
+          "start": 0,
+          "max": 3
+        }
+      ]
+    },
+    "defaultLayout": "5x3",
     "items": [
       {
-        "id": "missileTank",
+        "id": "missileTankA",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "missile",
@@ -135,7 +277,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bomb",
+        "id": "bombA",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",
@@ -151,12 +293,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -164,7 +301,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTank",
+        "id": "energyTankA",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -173,7 +310,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "highJump",
+        "id": "highJumpBoots",
         "name": "High Jump Boots",
         "sprite": "high",
         "bg": "c0a8d8",
@@ -181,7 +318,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBooster",
+        "id": "speedBoosterA",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -198,12 +335,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "wideBeam",
-        "locale": {
-          "enUS": {
-            "id": "wideBeamC"
-          }
-        },
+        "id": "wideBeamA",
         "name": "Spazer Beam",
         "sprite": "wide",
         "bg": "ffff80",
@@ -246,16 +378,16 @@
     ],
     "extras": [
       {
-        "id": "saveRoom",
+        "id": "unused",
         "name": "Save Station",
         "nodeType": "save",
-        "extraId": 1002
+        "extraId": 1001
       },
       {
         "id": "unused",
-        "name": "Floor Switch",
+        "name": "Switch",
         "nodeType": "trigger",
-        "extraId": 1001
+        "extraId": 1002
       }
     ],
     "mapTree": [
@@ -266,11 +398,11 @@
         "children": [
           {
             "nodeType": "save",
-            "id": 1002
+            "id": 1001
           },
           {
             "nodeType": "trigger",
-            "id": 1001
+            "id": 1002
           },
           {
             "nodeType": "lock",
@@ -298,19 +430,6 @@
                 "id": 2,
                 "reqdItemCount": 1,
                 "children": [
-                  {
-                    "nodeType": "lock",
-                    "id": 3,
-                    "reqdItemCount": 1,
-                    "children": [
-                      {
-                        "nodeType": "expansion",
-                        "id": 1,
-                        "isRandomizableItem": true
-                      }
-                    ],
-                    "hubId": 3
-                  }
                 ],
                 "hubId": 2,
                 "vineToHubId": 3
@@ -331,6 +450,25 @@
             "reqdItemCount": 1,
             "children": [],
             "vineToHubId": 3
+          },
+          {
+            "nodeType": "lock",
+            "id": 2,
+            "reqdItemCount": 1,
+            "children": [
+              {
+                "nodeType": "lock",
+                "id": 3,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "expansion",
+                    "id": 1,
+                    "isRandomizableItem": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "nodeType": "lock",
@@ -360,22 +498,15 @@
                         "id": 3,
                         "isRandomizableItem": true,
                         "hubId": 4
+                      },
+                      {
+                        "nodeType": "lock",
+                        "id": 3,
+                        "reqdItemCount": 1,
+                        "hubId": 4,
+                        "vineToHubId": 14
                       }
                     ],
-                    "vineToHubId": 4
-                  }
-                ]
-              },
-              {
-                "nodeType": "lock",
-                "id": 2,
-                "reqdItemCount": 1,
-                "children": [
-                  {
-                    "nodeType": "lock",
-                    "id": 3,
-                    "reqdItemCount": 1,
-                    "children": [],
                     "vineToHubId": 4
                   }
                 ]
@@ -403,6 +534,20 @@
                     "nodeType": "lock",
                     "id": 3,
                     "reqdItemCount": 1,
+                    "children": [],
+                    "vineToHubId": 14
+                  }
+                ]
+              },
+              {
+                "nodeType": "lock",
+                "id": 2,
+                "reqdItemCount": 1,
+                "children": [
+                  {
+                    "nodeType": "lock",
+                    "id": 3,
+                    "reqdItemCount": 1,
                     "children": [
                       {
                         "nodeType": "expansion",
@@ -416,7 +561,7 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002,
+                            "id": 1001,
                             "hubId": 7
                           },
                           {
@@ -448,11 +593,16 @@
                                       {
                                         "nodeType": "upgrade",
                                         "id": 7,
-                                        "isRandomizableItem": true,
-                                        "hubId": 8
+                                        "isRandomizableItem": true
+                                      },
+                                      {
+                                        "nodeType": "lock",
+                                        "id": 7,
+                                        "reqdItemCount": 1,
+                                        "children": [],
+                                        "vineToHubId": 8
                                       }
-                                    ],
-                                    "vineToHubId": 8
+                                    ]
                                   }
                                 ]
                               }
@@ -461,16 +611,9 @@
                           },
                           {
                             "nodeType": "return",
-                            "children": [
-                              {
-                                "nodeType": "lock",
-                                "id": 7,
-                                "reqdItemCount": 1,
-                                "children": [],
-                                "vineToHubId": 8
-                              }
-                            ],
-                            "hubId": 7
+                            "children": [],
+                            "hubId": 7,
+                            "vineToHubId": 8
                           }
                         ],
                         "vineToHubId": 7
@@ -489,95 +632,70 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002
+                            "id": 1001
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 1,
+                            "isRandomizableItem": true
+                          },
+                          {
+                            "nodeType": "expansion",
+                            "id": 6,
+                            "isRandomizableItem": true
                           },
                           {
                             "nodeType": "dropdown",
                             "children": [
                               {
-                                "nodeType": "expansion",
-                                "id": 1,
-                                "isRandomizableItem": true,
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "expansion",
-                                "id": 6,
-                                "isRandomizableItem": true,
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "dropdown",
+                                "nodeType": "boss",
+                                "id": 102,
                                 "children": [
                                   {
-                                    "nodeType": "boss",
-                                    "id": 103,
-                                    "children": [
-                                      {
-                                        "nodeType": "upgrade",
-                                        "id": 8,
-                                        "isRandomizableItem": true,
-                                        "hubId": 10
-                                      }
-                                    ],
-                                    "vineToHubId": 10
-                                  }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "return",
-                                "children": [
+                                    "nodeType": "upgrade",
+                                    "id": 8,
+                                    "isRandomizableItem": true,
+                                    "hubId": 10
+                                  },
                                   {
                                     "nodeType": "lock",
                                     "id": 8,
                                     "reqdItemCount": 1,
                                     "children": [],
-                                    "vineToHubId": 10
+                                    "vineToHubId": 9
                                   }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "lock",
-                                "id": 8,
-                                "reqdItemCount": 1,
-                                "children": [
-                                  {
-                                    "nodeType": "expansion",
-                                    "id": 1,
-                                    "isRandomizableItem": true
-                                  }
-                                ],
-                                "hubId": 9
-                              },
-                              {
-                                "nodeType": "lock",
-                                "id": 8,
-                                "reqdItemCount": 1,
-                                "children": [
-                                  {
-                                    "nodeType": "expansion",
-                                    "id": 1,
-                                    "isRandomizableItem": true
-                                  }
-                                ],
-                                "hubId": 9
+                                ]
                               }
-                            ],
+                            ]
+                          },
+                          {
+                            "nodeType": "return",
+                            "children": [],
                             "vineToHubId": 9
                           },
                           {
                             "nodeType": "lock",
                             "id": 8,
                             "reqdItemCount": 1,
-                            "children": [],
-                            "vineToHubId": 9
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              }
+                            ]
                           },
                           {
-                            "nodeType": "return",
-                            "children": [],
-                            "vineToHubId": 9
+                            "nodeType": "lock",
+                            "id": 8,
+                            "reqdItemCount": 1,
+                            "children": [
+                              {
+                                "nodeType": "expansion",
+                                "id": 1,
+                                "isRandomizableItem": true
+                              }
+                            ]
                           }
                         ]
                       },
@@ -588,7 +706,7 @@
                         "children": [
                           {
                             "nodeType": "save",
-                            "id": 1002
+                            "id": 1001
                           },
                           {
                             "nodeType": "expansion",
@@ -648,45 +766,53 @@
                     ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "nodeType": "lock",
+            "id": 1,
+            "reqdItemCount": 1,
+            "children": [
               {
-                "nodeType": "lock",
-                "id": 1,
-                "reqdItemCount": 1,
+                "nodeType": "dropdown",
                 "children": [
                   {
-                    "nodeType": "dropdown",
-                    "children": [
-                      {
-                        "nodeType": "upgrade",
-                        "id": 4,
-                        "isRandomizableItem": true,
-                        "hubId": 6
-                      }
-                    ],
-                    "hubId": 5,
-                    "vineToHubId": 6
+                    "nodeType": "upgrade",
+                    "id": 4,
+                    "isRandomizableItem": true,
+                    "hubId": 6
                   },
                   {
                     "nodeType": "lock",
                     "id": 4,
                     "reqdItemCount": 1,
                     "children": [],
-                    "hubId": 5,
-                    "vineToHubId": 6
-                  },
-                  {
-                    "nodeType": "lock",
-                    "id": 8,
-                    "reqdItemCount": 1,
-                    "children": [],
-                    "hubId": 5,
-                    "vineToHubId": 6
+                    "hubId": 6,
+                    "vineToHubId": 16
                   }
                 ],
-                "vineToHubId": 5
+                "hubId": 5,
+                "vineToHubId": 6
+              },
+              {
+                "nodeType": "lock",
+                "id": 8,
+                "reqdItemCount": 1,
+                "children": [],
+                "hubId": 5,
+                "vineToHubId": 6
+              },
+              {
+                "nodeType": "lock",
+                "id": 4,
+                "reqdItemCount": 1,
+                "children": [],
+                "hubId": 5,
+                "vineToHubId": 16
               }
-            ]
+            ],
+            "vineToHubId": 5
           },
           {
             "nodeType": "lock",

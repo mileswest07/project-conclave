@@ -1,124 +1,177 @@
 {
   "mpff": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 0,
-        "start": 0,
-        "max": 75,
-        "segments": [],
-        "clearIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "4x4": [
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "segments": []
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 75,
+          "clearIfScramble": true
+        }
+      ],
+      "3x5": [
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 75,
+          "clearIfScramble": true
+        }
+      ]
+    },
+    "defaultLayout": "4x4",
     "items": [
       {
-        "id": "repairCapsule",
+        "id": "ffrepairCapsule",
         "name": "Repair Capsule",
         "sprite": "repair",
         "bg": "9464e4",
@@ -126,7 +179,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "shieldGenerator",
+        "id": "ffshieldGenerator",
         "name": "Shield Generator",
         "sprite": "shield",
         "bg": "9464e4",
@@ -134,7 +187,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileB",
+        "id": "ffmissile",
         "name": "Missile",
         "sprite": "missile",
         "bg": "fea800",
@@ -142,7 +195,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileB",
+        "id": "ffsuperMissile",
         "name": "Super Missile",
         "sprite": "super",
         "bg": "fea800",
@@ -174,7 +227,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "proximityBomb",
+        "id": "ffproximityBomb",
         "name": "Proximity Bomb",
         "sprite": "mine",
         "bg": "fea800",
@@ -182,7 +235,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "slowBeam",
+        "id": "ffslowBeam",
         "name": "Slow Beam",
         "sprite": "slow",
         "bg": "b4ff00",
@@ -190,7 +243,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "decoy",
+        "id": "ffdecoy",
         "name": "Decoy",
         "sprite": "decoy",
         "bg": "b4ff00",
@@ -198,7 +251,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "scanBolt",
+        "id": "ffscanBolt",
         "name": "Scan Bolt",
         "sprite": "scan",
         "bg": "b4ff00",
@@ -208,6 +261,7 @@
       {
         "id": "goldMedal",
         "name": "Gold Medals",
+        "sprite": "medal",
         "bg": "c0c6c0",
         "itemId": 12,
         "nodeType": "artifact"

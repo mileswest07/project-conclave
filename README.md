@@ -1,5 +1,7 @@
 # Project Conclave - A Video Game Item Collection Tracker and Dependency Explorer
 
+![Conclave project icon](images/conclave.png)
+
 > _con·​clave_, noun, from Latin _con_ ("with") + _claves_ ("keys")
 
 Item tracker for a number of games, vanilla and randomized.
@@ -77,11 +79,9 @@ This platform reads a JSON file local to the server. To test it locally, make su
 $ npx http-server --proxy http://localhost:8080
 ```
 
-In order to circumvent this, some code may be necessarily refactored in order to read `rawData.js` as an imported JS file, instead. It is recommended to sync changes between `rawdata.json` and `rawData.js` before submitting to main branch.
-
 ## Credits
 
-Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to responsible parties for it.
+Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to all responsible parties.
 
 * Rogue Dawn graphics: Grimlock, Optomon, snarfblam and team
 * Metroid: A New Galaxy: u/Kelly_Crystal

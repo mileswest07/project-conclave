@@ -66,6 +66,8 @@
 
 #expansion-monsterDna-21-10:hover > .item-image ~ .hint-image,
 #expansion-monsterDna-21-10x:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10:hover > .item-image ~ .hint-image,
+#expansion-monsterDna-19-10x:hover > .item-image ~ .hint-image,
 #item-fireSpell-4:hover > .item-image ~ .hint-image,
 #item-dashSpell-4x:hover > .item-image ~ .hint-image,
 .item.can-level-up:hover > .item-image:not(.deselected) ~ .level-up-image,
@@ -153,32 +155,32 @@
   cursor: default;
 }
 
-.dark-mode {
-  background: black;
-}
+@media screen {
+  .dark-mode {
+    background: black;
+  }
 
-.dark-mode #startupMenu p,
-.dark-mode .item p,
-.dark-mode .expansion p,
-.dark-mode #timer-wrapper p,
-.dark-mode .addon-wrapper p,
-.dark-mode h4 {
-  color: white;
-}
+  .dark-mode #startupMenu p,
+  .dark-mode .item p,
+  .dark-mode .expansion p,
+  .dark-mode #timer-wrapper p,
+  .dark-mode .addon-wrapper p,
+  .dark-mode h4 {
+    color: white;
+  }
 
-.dark-mode .item-image:not(.deselected) {
-  filter: drop-shadow(0 0 5px #fff);
-}
+  .dark-mode .item-image:not(.deselected) {
+    filter: drop-shadow(0 0 5px #fff);
+  }
 
-.dark-mode .deselected {
-  opacity: 0.5;
-  mix-blend-mode: normal;
+  .dark-mode .deselected {
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
 }
 
 .parent-flex {
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
 }
 
 .child-field {

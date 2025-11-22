@@ -1,424 +1,365 @@
 {
   "mp3c": {
-    "checklistWidth": 8,
-    "checklistLayout": [
-      {
-        "lookupId": 2,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Ghor Defeated"
-      },
-      {
-        "lookupId": 33,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Mining Laser Defeated"
-      },
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Rundas Defeated"
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Eastern Skytown - Xenoresearch B"
-      },
-      {
-        "lookupId": 19,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Hangar Bay"
-      },
-      {
-        "lookupId": 28,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Helios Defeated"
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 24,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Bryyo Ice - Hall of Remembrance"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 22,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Defense Drone Defeated"
-      },
-      {
-        "lookupId": 31,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Powerworks"
-      },
-      {
-        "lookupId": 21,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Mogenar Defeated"
-      },
-      {
-        "lookupId": 13,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 32,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Pirate Homeworld - Pirate Research - Craneyard"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Norion - Docking Hub Alpha"
-      },
-      {
-        "lookupId": 16,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Bryyo - Reliquary I"
-      },
-      {
-        "lookupId": 30,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Gandrayda Defeated"
-      },
-      {
-        "lookupId": 25,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Skytown - Eastern Skytown - Skytown Federation Landing Site"
-      },
-      {
-        "lookupId": 34,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Omega Ridley Defeated"
-      },
-      {
-        "lookupId": 29,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Pirate Homeworld - Pirate Command - Command Vault"
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 14,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 50,
-        "segments": []
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": []
-      },
-      {
-        "id": "theronianBomb",
-        "name": "Theronian Bomb Components",
-        "singleItemName": "Theronian Bomb Component",
-        "nodeType": "expansion",
-        "bg": "ac842f",
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "segments": []
-      },
-      {
-        "lookupId": -1,
-        "value": 0,
-        "start": 0,
-        "max": 0,
-        "segments": [],
-        "clearIfScramble": true
-      },
-      { 
-        "id": "norion",
-        "name": "Norion Complete",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "disabled": true
-      },
-      {
-        "id": "bryyo",
-        "name": "Bryyo Complete",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss_Ex",
-        "overText": "Mogenar required",
-        "disabled": true
-      },
-      {
-        "name": "",
-        "value": 0,
-        "start": 0,
-        "max": 3,
-        "segments": [
-          {
-            "lookupId": 26,
-            "value": 0,
-            "start": 0,
-            "max": 3,
-            "over":
-            "F_Boss_Ex",
-            "overText": "Helios required",
-            "disabled": true
-          },
-          {
-            "id": "skytown",
-            "name": "Elysia Complete",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "over": "F_Boss_Ex",
-            "overText": "Helios required",
-            "clearIfScramble": true,
-            "disabled": true
-          }
-        ],
-        "disabled": true
-      },
-      {
-        "id": "homeworld",
-        "name": "Pirate Homeworld Complete",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss_Ex",
-        "overText": "Omega Ridley required",
-        "disabled": true
-      },
-      {
-        "name": "",
-        "value": 1,
-        "start": 0,
-        "max": 9,
-        "segments": [
-          {
-            "lookupId": 35,
-            "value": 1,
-            "start": 0,
-            "max": 9,
-            "over": "C_Fuse",
-            "overText": "Hints Acquired"
-          },
-          {
-            "id": "pirateCode",
-            "name": "Pirate Code",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "bg": "ce6665",
-            "clearIfScramble": true
-          },
-          {
-            "id": "phaaze",
-            "name": "Phaaze Accessible",
-            "value": 0,
-            "start": 0,
-            "max": 1,
-            "clearIfScramble": true
-          }
-        ]
-      },
-      {
-        "id": "pirateCode",
-        "name": "Pirate Code",
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "bg": "ce6665",
-        "displayIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "8x5": [
+        {
+          "lookupId": 2,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Ghor Defeated"
+        },
+        {
+          "lookupId": 33,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Mining Laser Defeated"
+        },
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Rundas Defeated"
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Eastern Skytown - Xenoresearch B"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Hangar Bay"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Helios Defeated"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Bryyo Ice - Hall of Remembrance"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Defense Drone Defeated"
+        },
+        {
+          "lookupId": 31,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Powerworks"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Mogenar Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 32,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Pirate Homeworld - Pirate Research - Craneyard"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Norion - Docking Hub Alpha"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Bryyo - Reliquary I"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Gandrayda Defeated"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Skytown - Eastern Skytown - Skytown Federation Landing Site"
+        },
+        {
+          "lookupId": 34,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Omega Ridley Defeated"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Pirate Homeworld - Pirate Command - Command Vault"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 50
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "theronianBomb",
+          "name": "Theronian Bomb Components",
+          "singleItemName": "Theronian Bomb Component",
+          "nodeType": "expansion",
+          "bg": "ac842f",
+          "value": 0,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        { 
+          "id": "norion",
+          "name": "Norion Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "disabled": true
+        },
+        {
+          "id": "bryyo",
+          "name": "Bryyo Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Mogenar required",
+          "disabled": true
+        },
+        {
+          "name": "",
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 26,
+              "value": 0,
+              "start": 0,
+              "max": 3,
+              "over":
+              "F_Boss_Ex",
+              "overText": "Helios required",
+              "disabled": true
+            },
+            {
+              "id": "skytown",
+              "name": "Elysia Complete",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "over": "F_Boss_Ex",
+              "overText": "Helios required",
+              "clearIfScramble": true,
+              "disabled": true
+            }
+          ],
+          "disabled": true
+        },
+        {
+          "id": "homeworld",
+          "name": "Pirate Homeworld Complete",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss_Ex",
+          "overText": "Omega Ridley required",
+          "disabled": true
+        },
+        {
+          "name": "",
+          "value": 1,
+          "start": 0,
+          "max": 9,
+          "segments": [
+            {
+              "lookupId": 35,
+              "value": 1,
+              "start": 0,
+              "max": 9,
+              "over": "C_Fuse",
+              "overText": "Hints Acquired"
+            },
+            {
+              "id": "pirateCode",
+              "name": "Pirate Code",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "bg": "ce6665",
+              "clearIfScramble": true
+            },
+            {
+              "id": "phaaze",
+              "name": "Phaaze Accessible",
+              "value": 0,
+              "start": 0,
+              "max": 1,
+              "clearIfScramble": true
+            }
+          ]
+        },
+        {
+          "id": "pirateCode",
+          "name": "Pirate Code",
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "bg": "ce6665",
+          "displayIfScramble": true
+        }
+      ]
+    },
+    "defaultLayout": "8x5",
     "items": [
       {
         "id": "combatVisorP",
@@ -935,18 +876,21 @@
       {
         "id": "friendVoucher",
         "name": "Friend Voucher",
+        "sprite": "voucher",
         "extraId": 1031,
         "nodeType": "lore"
       },
       {
         "id": "credit",
         "name": "Blue Credit",
+        "sprite": "blueCredit",
         "extraId": 1032,
         "nodeType": "lore"
       },
       {
         "id": "credit",
         "name": "Gold Credit",
+        "sprite": "goldCredit",
         "extraId": 1033,
         "nodeType": "lore"
       },
@@ -1046,9 +990,6 @@
         "extraId": 1067,
         "nodeType": "slot"
       },
-      
-      
-      
       {
         "id": "unused",
         "name": "Ready Room Briefing",

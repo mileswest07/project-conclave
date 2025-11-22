@@ -1,320 +1,433 @@
 {
   "thf": {
-    "checklistWidth": 7,
+    "checklistLayouts": {
+      "7x4": [
+        {
+          "lookupId": 14,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 22,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 10,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 24,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 15,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 23,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 16,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 12,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 13,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 2,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 9,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 25,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 11,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "displayIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 6,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 21,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 18,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 20,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 5,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 19,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "name": "",
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 1,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 7,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            },
+            {
+              "lookupId": 17,
+              "start": 0,
+              "max": 1,
+              "value": 1
+            }
+          ],
+          "value": 1
+        },
+        {
+          "lookupId": 8,
+          "start": 0,
+          "max": 1,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 4,
+          "start": 3,
+          "max": 16,
+          "segments": [],
+          "value": 1
+        },
+        {
+          "lookupId": 3,
+          "start": 0,
+          "max": 2,
+          "segments": [],
+          "value": 0
+        },
+        {
+          "id": "-",
+          "clearIfScramble": true
+        },
+        {
+          "lookupId": 26,
+          "start": 0,
+          "max": 8,
+          "segments": [],
+          "value": 1
+        }
+      ]
+    },
+    "defaultLayout": "7x4",
     "items": [
+      {
+        "id": "woodenSword",
+        "name": "Wooden Sword",
+        "bg": "ffffff",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombs",
+        "name": "Bombs",
+        "bg": "ffffff",
+        "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombsExp",
+        "name": "I bet you'd like to carry more Bombs",
+        "bg": "ffffff",
+        "itemId": 3,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "heartContainer",
+        "name": "Heart Containers",
+        "bg": "ffffff",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "note",
+        "name": "Note",
+        "bg": "ffffff",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "candle",
+        "name": "Blue Candle",
+        "bg": "ffffff",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "whiteSword",
+        "name": "White Sword",
+        "bg": "ffffff",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicalShield",
+        "name": "Magical Shield",
+        "bg": "ffffff",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "arrow",
+        "name": "Arrow",
+        "bg": "ffffff",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "blueRing",
+        "name": "Blue Ring",
+        "bg": "ffffff",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "heroBow",
+        "name": "Bow",
+        "bg": "ffffff",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boomerang",
+        "name": "Boomerang",
+        "bg": "ffffff",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magicRang",
+        "name": "Magical Boomerang",
+        "bg": "ffffff",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
       {
         "id": "raft",
         "name": "Raft",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 14,
         "nodeType": "upgrade"
-      },
-      {
-        "id": "book",
-        "name": "Magic Book",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "green",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "blueRing",
-            "name": "Blue Ring",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "redRing",
-            "name": "Red Ring",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          }
-        ],
-        "value": 1
       },
       {
         "id": "ladder",
         "name": "Ladder",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "magicKey",
-        "name": "Magic Key",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 15,
         "nodeType": "upgrade"
       },
       {
         "id": "bracelets",
         "name": "Power Bracelet",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 16,
         "nodeType": "upgrade"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "boomerang",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "boomerang",
-            "name": "Boomerang",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "magicRang",
-            "name": "Magical Boomerang",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "bombs",
-        "name": "Bombs",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 0,
+        "id": "magicalSword",
+        "name": "Magical Sword",
+        "bg": "ffffff",
+        "itemId": 17,
         "nodeType": "upgrade"
-      },
-      {
-        "id": "arrow",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "arrow",
-            "name": "Arrow",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "silverArrows",
-            "name": "Silver Arrow",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "heroBow",
-        "name": "Bow",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "displayIfScramble": true
-      },
-      {
-        "id": "candle",
-        "name": "",
-        "start": 0,
-        "max": 2,
-        "segments": [
-          {
-            "id": "candle",
-            "name": "Blue Candle",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "redCandle",
-            "name": "Red Candle",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
       },
       {
         "id": "recorder",
         "name": "Whistle",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "bait",
-        "name": "Bait",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "note",
-        "name": "Note",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 18,
         "nodeType": "upgrade"
       },
       {
         "id": "magicRod",
         "name": "Magic Rod",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 19,
         "nodeType": "upgrade"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
-      },
-      {
-        "id": "sword",
-        "name": "",
-        "start": 0,
-        "max": 3,
-        "segments": [
-          {
-            "id": "woodenSword",
-            "name": "Wooden Sword",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "whiteSword",
-            "name": "White Sword",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          },
-          {
-            "id": "magicalSword",
-            "name": "Magical Sword",
-            "start": 0,
-            "max": 1,
-            "value": 1,
-            "nodeType": "upgrade"
-          }
-        ],
-        "value": 1
-      },
-      {
-        "id": "magicalShield",
-        "name": "Magical Shield",
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "value": 1,
+        "id": "bait",
+        "name": "Bait",
+        "bg": "ffffff",
+        "itemId": 20,
         "nodeType": "upgrade"
       },
       {
-        "id": "heartContainer",
-        "name": "Heart Containers",
-        "start": 3,
-        "max": 16,
-        "segments": [],
-        "value": 1,
-        "nodeType": "expansion"
+        "id": "redCandle",
+        "name": "Red Candle",
+        "bg": "ffffff",
+        "itemId": 21,
+        "nodeType": "upgrade"
       },
       {
-        "id": "bombsExp",
-        "name": "I bet you'd like to carry more Bombs",
-        "start": 0,
-        "max": 2,
-        "segments": [],
-        "value": 0,
-        "nodeType": "expansion"
+        "id": "book",
+        "name": "Magic Book",
+        "bg": "ffffff",
+        "itemId": 22,
+        "nodeType": "upgrade"
       },
       {
-        "id": "-",
-        "name": "",
-        "max": 0,
-        "clearIfScramble": true
+        "id": "magicKey",
+        "name": "Magic Key",
+        "bg": "ffffff",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "redRing",
+        "name": "Red Ring",
+        "bg": "ffffff",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "silverArrows",
+        "name": "Silver Arrow",
+        "bg": "ffffff",
+        "itemId": 25,
+        "nodeType": "upgrade"
       },
       {
         "id": "triforce",
         "name": "Triforce Pieces",
-        "start": 0,
-        "max": 8,
-        "segments": [],
-        "value": 1,
+        "bg": "ffffff",
+        "itemId": 26,
         "nodeType": "artifact"
       }
     ],

@@ -1,114 +1,199 @@
 {
   "m1": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": 3,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "slot",
-        "slotType": "beam"
-      },
-      {
-        "lookupId": 5,
-        "value": 1,
-        "start": 0,
-        "max": 8,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 21,
-        "segments": []
-      },
-      {
-        "value": 0,
-        "start": 0,
-        "max": 2,
-        "segments": [],
-        "id": "boss",
-        "nodeType": "boss",
-        "name": "Bosses Defeated",
-        "disabled": true
-      },
-      {
-        "lookupId": 101,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "boss",
-        "id": "kraid",
-        "sprite": "kraid",
-        "name": "Kraid Defeated"
-      },
-      {
-        "lookupId": 102,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "nodeType": "boss",
-        "id": "ridley",
-        "sprite": "ridley",
-        "name": "Ridley Defeated"
-      }
-    ],
+    "checklistLayouts": {
+      "4x3": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 21
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "id": "boss",
+          "nodeType": "boss",
+          "name": "Bosses Defeated",
+          "disabled": true
+        },
+        {
+          "lookupId": 101,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "kraid",
+          "sprite": "kraid",
+          "name": "Kraid Defeated"
+        },
+        {
+          "lookupId": 102,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "ridley",
+          "sprite": "ridley",
+          "name": "Ridley Defeated"
+        }
+      ],
+      "2x6": [
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "nodeType": "slot",
+          "slotType": "beam"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 21
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "id": "boss",
+          "nodeType": "boss",
+          "name": "Bosses Defeated",
+          "disabled": true
+        },
+        {
+          "lookupId": 101,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "kraid",
+          "sprite": "kraid",
+          "name": "Kraid Defeated"
+        },
+        {
+          "lookupId": 102,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "nodeType": "boss",
+          "id": "ridley",
+          "sprite": "ridley",
+          "name": "Ridley Defeated"
+        }
+      ]
+    },
+    "defaultLayout": "4x3",
+    "hasKeyslots": true,
     "items": [
       {
         "id": "morphBall",

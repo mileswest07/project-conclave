@@ -1,294 +1,269 @@
 {
   "msr": {
-    "checklistWidth": 7,
-    "checklistLayout": [
-      {
-        "lookupId": 1,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Arachnus Defeated"
-      },
-      {
-        "lookupId": 25,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Area 6 - Diggernaut Defeated"
-      },
-      {
-        "lookupId": 11,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 23,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 3,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 10,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 15,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 21,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 19,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 18,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Orb",
-        "overText": "Area 4 - Survived Diggernaut"
-      },
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 17,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 22,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 16,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 24,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 4,
-        "value": 1,
-        "start": 0,
-        "max": 10,
-        "segments": []
-      },
-      {
-        "lookupId": 2,
-        "value": 1,
-        "start": 0,
-        "max": 80,
-        "segments": []
-      },
-      {
-        "lookupId": 20,
-        "value": 1,
-        "start": 0,
-        "max": 30,
-        "segments": []
-      },
-      {
-        "lookupId": 26,
-        "value": 1,
-        "start": 0,
-        "max": 15,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 15,
-        "segments": []
-      },
-      {
-        "name": "Metroids defeated",
-        "type": "counter",
-        "value": 0,
-        "start": 0,
-        "max": 50,
-        "segments": [
-          {
-            "id": "monsterDna",
-            "name": "Surface",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 1
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 1",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 4
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 2",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 8
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 3",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 10
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 4",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 4
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 5",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 7
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 6",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 2
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 7",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 3
-          },
-          {
-            "id": "monsterDna",
-            "name": "Area 8",
-            "sprite": "dna",
-            "type": "counter",
-            "value": 0,
-            "start": 0,
-            "max": 11
-          }
-        ]
-      },
-      {
-        "lookupId": 27,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "clearIfScramble": true
-      }
-    ],
+    "checklistLayouts": {
+      "7x4": [
+        {
+          "lookupId": 1,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Arachnus Defeated"
+        },
+        {
+          "lookupId": 25,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Area 6 - Diggernaut Defeated"
+        },
+        {
+          "lookupId": 11,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 23,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 21,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 19,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Area 4 - Survived Diggernaut"
+        },
+        {
+          "lookupId": 5,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 8,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 22,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 24,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 80
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 30
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 15
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 15
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 50,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Surface",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 1",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 2",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 8
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 3",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 10
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 4",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 5",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 7
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 6",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 2
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 7",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 3
+            },
+            {
+              "id": "monsterDna",
+              "name": "Area 8",
+              "sprite": "dna",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 11
+            }
+          ]
+        },
+        {
+          "lookupId": 27,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "clearIfScramble": true
+        }
+      ]
+    },
+    "defaultLayout": "7x4",
     "items": [
       {
         "id": "morphBall",

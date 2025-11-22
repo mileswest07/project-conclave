@@ -19,7 +19,7 @@
 .game-mpff .usesAllSprites.trimmed .item-image { margin: 11px; }
 
 .game-m1 .usesAllSprites .item-image.morph,
-.game-m2ros .usesAllSprites .item-image.morphBall,
+.game-m2ros .usesAllSprites .item-image.morph,
 .game-mzm .usesAllSprites .item-image.morph,
 .game-msr .usesAllSprites .item-image.morph,
 .game-sm .usesAllSprites .item-image.morph,
@@ -185,7 +185,7 @@
 .game-md .usesAllSprites .item-image.iceMissileD,
 .game-mp3c .usesAllSprites .item-image.iceMissileC { background: url("images/mzm_full_spritesheet.png") 0 -168px; }
 .game-mf .usesAllSprites .item-image.diffusion { background: url("images/mzm_full_spritesheet.png") -42px -168px; }
-/*.game-__game__ .usesAllSprites .item-image.__item__ { background: url("images/mzm_full_spritesheet.png") -84px -168px; }*/ /* TODO: fill this */
+.game-mp3c .usesAllSprites .item-image.blueCredit { background: url("images/mzm_full_spritesheet.png") -84px -168px; } /*does not exist as item in Raw Data*/
 .game-mf .usesAllSprites .item-image.pbombData { background: url("images/mzm_full_spritesheet.png") -126px -168px; }
 .game-msr .usesAllSprites .item-image.charge,
 .game-sm .usesAllSprites .item-image.charge,
@@ -275,7 +275,7 @@
 .game-pb .usesAllSprites .item-image.extra { background: url("images/mzm_full_spritesheet.png") -546px -252px; } /*does not exist as item in Raw Data*/
 .game-ph .usesAllSprites .item-image.imp { background: url("images/mzm_full_spritesheet.png") -588px -252px; }
 .game-ph .usesAllSprites .item-image.vdo2 { background: url("images/mzm_full_spritesheet.png") -630px -252px; }
- 
+
 .game-md .usesAllSprites .item-image.flashTank { background: url("images/mzm_full_spritesheet.png") 0 -294px; }
 .game-md .usesAllSprites .item-image.superMissileLauncher { background: url("images/mzm_full_spritesheet.png") -42px -294px; }
 .game-md .usesAllSprites .item-image.stormMissile { background: url("images/mzm_full_spritesheet.png") -84px -294px; }
@@ -386,7 +386,7 @@
 
 .game-mp3c .usesAllSprites .item-image.energyCell { background: url("images/mzm_full_spritesheet.png") 0 -546px; }
 .game-mp3c .usesAllSprites .item-image.goldCredit { background: url("images/mzm_full_spritesheet.png") -42px -546px; } /*does not exist as item in Raw Data*/
-.game-mp3c .usesAllSprites .item-image.friendVoucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
+.game-mp3c .usesAllSprites .item-image.voucher { background: url("images/mzm_full_spritesheet.png") -84px -546px; } /*does not exist as item in Raw Data*/
 .game-msr .usesAllSprites .item-image.progressiveBeam,
 .game-mom .usesAllSprites .item-image.progressiveBeam,
 .game-mf .usesAllSprites .item-image.progressiveBeam,
@@ -414,7 +414,7 @@
 .game-m2ros .usesAllSprites .item-image.baby,
 .game-md .usesAllSprites .item-image.monsterDna,
 .game-msr .usesAllSprites .item-image.baby,
-.game-mf .usesSprite .item-image.monster { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
+.game-mf .usesAllSprites .item-image.monster { background: url("images/mzm_full_spritesheet.png") -588px -546px; }
 .game-mp3c .usesAllSprites .item-image.corruptedHypermode { background: url("images/mzm_full_spritesheet.png") -630px -546px; }
 
 .game-mzm .usesAllSprites .item-image.emergencyPistol { background: url("images/mzm_full_spritesheet.png") 0 -588px; } /*does not exist as item in Raw Data*/
@@ -444,48 +444,3 @@
 .game-mf .usesAllSprites .item-image.securityL2 { background: url("images/mf_spritesheet.png") -215px -86px; }
 .game-mf .usesAllSprites .item-image.securityL3 { background: url("images/mf_spritesheet.png") -215px -129px; }
 .game-mf .usesAllSprites .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
-
-/*
-Technical sprites missing:
-- (M1/MZM): Kraid
-- (M1/MZM): Ridley
-- (MP): Prime Suit toggle
-- (MP): Fusion Suit toggle
-- (MP): Impact Crater accessible
-- (MP2E): Dark Agon Energy retrieved
-- (MP2E): Agon Energy restored
-- (MP2E): Dark Torvus Energy retrieved
-- (MP2E): Torvus Energy restored
-- (MP2E): Ing Hive Energy retrieved
-- (MP2E): Sanctuary Energy restored
-- (MP2E): Sky Temple accessible
-- (MPH): Alimbic Cannon control room accessible
-- (MPH): Oubliette unlocked
-- (MP3C): Corrupted Hypermode .phazonSuit
-- (MP3C): Theronian Bomb components
-- (MP3C): Pirate Code
-- (MP3C): Phaaze accessible
-- (MPFF): Repair Capsule
-- (MPFF): Shield Generator
-- (MPFF): Missile
-- (MPFF): Super Missile
-- (MPFF): Flame Shot
-- (MPFF): Freeze Shot
-- (MPFF): Shock Shot
-- (MPFF): Proximity Bomb
-- (MPFF): Slow Beam
-- (MPFF): Decoy
-- (MPFF): Scan Bolt
-- (MPFF): Gold Medals
-- (M2:RoS): Metroids slain counter / (MSR): DNA counter
-- (MSR): Baby Metroid
-- (SM): Bosses
-- (MF): Door unlock L.0
-- (MF): Door unlock L.1
-- (MF): Door unlock L.2
-- (MF): Door unlock L.3
-- (MF): Door unlock L.4
-*/
-
-
-

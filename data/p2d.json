@@ -1,77 +1,70 @@
 {
   "p2d": {
-    "checklistWidth": 3,
-    "checklistLayout": [
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "Z_Chozo",
-        "overText": "Artifact of Truth Acquired"
-      },
-      {
-        "lookupId": 7,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": [],
-        "over": "F_Boss",
-        "overText": "Hive Mecha Defeated"
-      },
-      {
-        "lookupId": 10,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 11,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 12,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 13,
-        "value": 1,
-        "start": 0,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 9,
-        "value": 1,
-        "start": 0,
-        "max": 2,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 1,
-        "start": 0,
-        "max": 7,
-        "segments": []
-      },
-      {
-        "lookupId": 14,
-        "value": 1,
-        "start": 0,
-        "max": 12,
-        "segments": [],
-        "over": "Z_Chozo",
-        "overText": "Hints Acquired"
-      }
-    ],
+    "checklistLayouts": {
+      "3x3": [
+        {
+          "lookupId": 6,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Chozo",
+          "overText": "Artifact of Truth Acquired"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Hive Mecha Defeated"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 2
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 7
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "over": "Z_Chozo",
+          "overText": "Hints Acquired"
+        }
+      ]
+    },
+    "defaultLayout": "3x3",
     "items": [
       {
         "id": "scanVisorP",

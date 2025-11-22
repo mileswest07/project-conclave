@@ -292,7 +292,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "bombB",
+        "id": "bombO",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",

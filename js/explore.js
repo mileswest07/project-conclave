@@ -320,7 +320,7 @@ let interaction = {
           }
         }
         
-        if (itemClassName.length && !["unused", "none", ""].includes(itemClassName)) {
+        if (itemClassName.length && !["unused", "none", "empty", ""].includes(itemClassName)) {
           let destination = document.getElementById("selection");
           let wrapper = document.createElement("div");
           let tempImage = document.createElement("img");

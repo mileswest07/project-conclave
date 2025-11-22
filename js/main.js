@@ -84,7 +84,7 @@ let main = {
     @param addThisValue Value intended to be added to the set if item qualifies
   */
   function addItemToSetIfGameNotInList(itemSet, currentGame, addThisValue) {
-    if (!["thf", "aol", "alttp", "sotn"].includes(currentGame)) {
+    if (!["thf", "aol", "alttp", "sotn"].includes(currentGame) && !["unused", "empty", "none", "_____"].includes(addThisValue)) {
       itemSet.add(addThisValue);
     }
   }
@@ -104,26 +104,28 @@ let main = {
         if (ruleset && sheet && sheet.ownerNode && sheet.ownerNode.attributes && sheet.ownerNode.attributes.href) {
           let cssFile = sheet.ownerNode.attributes.href.nodeValue;
           for (let j = 0; j < ruleset.length; j++) {
-            let splitSelector = ruleset[j].selectorText.split(',');
-            if (splitSelector.length > 1) {
-              for (let k = 0; k < splitSelector.length; k++) {
-                let isolatedSelector = splitSelector[k].trim();
-                
-                let actualId = isolatedSelector.split('.item-image.');
+            if (ruleset[j].constructor.name === "CSSStyleRule") {
+              let splitSelector = ruleset[j].selectorText.split(',');
+              if (splitSelector.length > 1) {
+                for (let k = 0; k < splitSelector.length; k++) {
+                  let isolatedSelector = splitSelector[k].trim();
+                  
+                  let actualId = isolatedSelector.split('.item-image.');
+                  if (actualId.length > 1 && actualId[0].length === 0) {
+                    if (runningString.length > 0) {
+                      runningString += `, `;
+                    }
+                    runningString += `"${actualId[1]}"`;
+                  }
+                }
+              } else {
+                let actualId = ruleset[j].selectorText.split('.item-image.');
                 if (actualId.length > 1 && actualId[0].length === 0) {
                   if (runningString.length > 0) {
-                    runningString += `, `
+                    runningString += `, `;
                   }
-                  runningString += `"${actualId[1]}"`
+                  runningString += `"${actualId[1]}"`;
                 }
-              }
-            } else {
-              let actualId = ruleset[j].selectorText.split('.item-image.');
-              if (actualId.length > 1 && actualId[0].length === 0) {
-                if (runningString.length > 0) {
-                  runningString += `, `
-                }
-                runningString += `"${actualId[1]}"`
               }
             }
           }
@@ -398,11 +400,11 @@ let main = {
     
     greaterItemSet = [...greaterItemSet];
     
-    let itemIdResults = partition(masterIDList, (eachItem) => greaterItemSet.includes(eachItem));
-    let itemIdsWithoutGraphics = partition(greaterItemSet, (eachItem) => !masterIDList.includes(eachItem));
+    let itemIdsUnused = masterIDList.filter((eachItem) => !greaterItemSet.includes(eachItem) && !["unused", "empty", "none", "_____"].includes(eachItem));
+    let itemIdsWithoutGraphics = greaterItemSet.filter((eachItem) => !masterIDList.includes(eachItem) && !["unused", "empty", "none", "_____"].includes(eachItem));
     
     console.groupCollapsed("Total Linting report");
-    console.debug("items list:", greaterItemSet);
+    console.debug("item IDs confirmed used:", greaterItemSet);
     console.debug("total item uses:", totalItemCount);
     console.info("reused itemID icons per game:", dupesPerGame);
     console.debug("types and count:", typeCount);
@@ -417,14 +419,17 @@ let main = {
       but does not cover icons that may be used under other properties [bosses, areas, or map].
       This code may be updated in the future to include those. 
     */
-    console.info("item IDs not used:", itemIdResults[1]);
-    if (itemIdsWithoutGraphics[0].length > 0) {
+    console.info("item IDs not used:", itemIdsUnused);
+    if (itemIdsWithoutGraphics.length > 0) {
       /*
         Indicates there is a missing placeholder icon on placeholders.png ,
-        where an ID is attempting to link to a region not allocated on spriteMapping.css .
-        Attempting to draw this icon will display a blank image.
+        where an ID is attempting to link to a stylerule
+          either not allocated on iconMapping.css
+          or with malformed CSS.
+        Attempting to draw this icon will display a blank image if the issue is the former.
+        The latter might still work, but requires manual inspection of the CSS file near this rule.
       */
-      console.warn("doublecheck graphics for:", itemIdsWithoutGraphics[0]);
+      console.warn("doublecheck graphics for:", itemIdsWithoutGraphics);
     }
     console.groupEnd();
     
@@ -447,8 +452,10 @@ let main = {
           }
         }
         
-        const shallShortcut = unifiedReport[gameName].unused.length === 0 && unifiedReport[gameName].missing.length === 0;
-        console.debug(`Unified sprites report for game ${gameName} :: ${shallShortcut ? 'all items in use [' + unifiedReport[gameName].inUse.length + ']' : ''}`)
+        const hasNoneUnused = unifiedReport[gameName].unused.length === 0;
+        const hasNoneMissing = unifiedReport[gameName].missing.length === 0;
+        const shallShortcut = hasNoneUnused && hasNoneMissing;
+        console.debug(`Unified sprites report for game ${gameName} :: ${shallShortcut ? '\u2705 all items in use [' + unifiedReport[gameName].inUse.length + ']' : (hasNoneMissing ? '\u2705 no missing items' : '')}`)
         if (!shallShortcut) {
           // console.debug(gameData);
           if (unifiedReport[gameName].inUse.length > 0) {

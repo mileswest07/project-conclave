@@ -67,7 +67,7 @@
           "lookupId": 12,
           "value": 1,
           "start": 0,
-          "segments": [],
+          "max": 1,
           "nodeType": "slot",
           "slotType": "beam"
         },

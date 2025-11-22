@@ -581,7 +581,7 @@ let keyslots = {};
     
     const isKeyOrGoal = element.hasOwnProperty("nodeType") && (element.nodeType === "key" || element.nodeType === "goal");
     
-    let elementId = element.id;
+    let elementId = element.id || "-";
     
     if (tracker.useLocale && element.hasOwnProperty("locale") && element.locale.hasOwnProperty(tracker.useLocale)) {
       elementId = element.locale[tracker.useLocale].id;
@@ -589,8 +589,10 @@ let keyslots = {};
     
     const classLabel = counterAnyway || element.max >= 2 ? "expansion" : "item";
     const scrambleCondition = (!tracker.isScramble || (tracker.isScramble && (classLabel === "expansion" || isToggleAnyway || isKeyOrGoal)));
+    let isBlankImage = false;
     if (wrapper.classList) {
       if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
+        isBlankImage = true;
         wrapper.classList.add("blank");
         if (tracker.useSprites) {
           wrapper.classList.add("trimmed");
@@ -610,6 +612,7 @@ let keyslots = {};
       }
     } else {
       if ((elementId === "-" || element.lookupId === -1) && (!isSegment || tracker.isScramble)) {
+        isBlankImage = true;
         wrapper.className += " blank";
         if (element.hasOwnProperty("sprite") && tracker.useSprites) {
           wrapper.className += " trimmed usesSprite";
@@ -704,7 +707,9 @@ let keyslots = {};
       wrapper.appendChild(backImage);
     }
     
-    wrapper.appendChild(image);
+    if (!isBlankImage) {
+      wrapper.appendChild(image);
+    }
     if (elementId !== "-" && element.lookupId !== -1 && (counterAnyway || element.max > 1)) {
       let label = document.createElement("p");
       label.innerText = element.start + " / " + element.max;

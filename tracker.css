@@ -183,12 +183,6 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 450px) {
-  .parent-flex {
-    margin-bottom: 100px;
-  }
-}
-
 .child-field {
   border: 1px solid purple;
 }

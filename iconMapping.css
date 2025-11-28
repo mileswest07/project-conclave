@@ -376,12 +376,12 @@
 .item-image.grappleBeamD { background: url("images/placeholders.png") -150px -550px; }
 .item-image.grappleBeamP,
 .item-image.grappleSwing { background: url("images/placeholders.png") -200px -550px; }
-.item-image.grappleLasso { background: url("images/placeholders.png") -250px -550px; }
-.item-image.grappleVoltage { background: url("images/placeholders.png") -300px -550px; }
-.item-image.hyperGrapple { background: url("images/placeholders.png") -350px -550px; }
-.item-image.shipGrapple { background: url("images/placeholders.png") -400px -550px; }
-/* .item-image._____ { background: url("images/placeholders.png") -450px -550px; } */ /* UNUSED */
-/* .item-image._____ { background: url("images/placeholders.png") -500px -550px; } */ /* UNUSED */
+.item-image.grappleBeamG { background: url("images/placeholders.png") -250px -550px; } /* UNUSED */
+.item-image.grappleBeamPR { background: url("images/placeholders.png") -300px -550px; } /* UNUSED */
+.item-image.grappleLasso { background: url("images/placeholders.png") -350px -550px; }
+.item-image.grappleVoltage { background: url("images/placeholders.png") -400px -550px; }
+.item-image.hyperGrapple { background: url("images/placeholders.png") -450px -550px; }
+.item-image.shipGrapple { background: url("images/placeholders.png") -500px -550px; }
 /* .item-image._____ { background: url("images/placeholders.png") -550px -550px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -600px -550px; } */ /* UNUSED */
 /* .item-image._____ { background: url("images/placeholders.png") -650px -550px; } */ /* UNUSED */

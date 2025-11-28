@@ -22,10 +22,11 @@ let keyslots = {};
   
   const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3"];
-  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n",];
+  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "ana", "aona", "boz", "bw"];
   const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
+  const kellyCrystalGames = ["mna", "mana", "mboz", "mbw", "mng", "mttne"];
   
   const nonstandardizedList = ["thf", "aol", "alttp", "sotn"];
   
@@ -1073,7 +1074,14 @@ let keyslots = {};
         newSection.classList.add("child-field");
         newSection.classList.add("game-" + gameId);
       } else {
-        newSection.className = "flex-field child-field game-" + gameId
+        newSection.className = "flex-field child-field game-" + gameId;
+      }
+      if (kellyCrystalGames.includes(gameId)) {
+        if (newSection.classList) {
+          newSection.classList.add("game-mkc");
+        } else {
+          newSection.className += " game-mkc";
+        }
       }
       newSection.id = itemFieldName;
       
@@ -1494,7 +1502,7 @@ let keyslots = {};
     // console.log(foundStyleSheets);
     
     const skipGamesListForAll = [...nonstandardizedList];
-    const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", "mng", "mttne", "mpff"];
+    const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", ...kellyCrystalGames, "mpff"];
     const skipGamesListForSprites = [...skipGamesListForAll];
     const skipGamesListForPlaceholders = [...skipGamesListForAll];
     
@@ -1527,6 +1535,9 @@ let keyslots = {};
             // ruleset = ruleset[0].rules || ruleset[0].cssRules; // Restore IF a media query is wrapped around the file
             if (hasSpriteAttribute) {
               findStyleString = `.game-${currentGame} .usesSprite .item-image.${element.sprite}`;
+              if (kellyCrystalGames.includes(currentGame)) {
+                findStyleString = `.game-mkc .usesSprite .item-image.${element.sprite}`;
+              }
               trackingSprites = true;
             } else {
               resultsFound[sheetType] = `unable to find sprite for ${element.id} in file ${cssFile}, ${scrambleMessage}`;
@@ -1891,6 +1902,13 @@ let keyslots = {};
               }
             }
             tracker.currentGame = incomingGame;
+            if (kellyCrystalGames.includes(incomingGame)) {
+              if (document.body.classList) {
+                document.body.classList.add("game-mkc");
+              } else {
+                document.body.className += " game-mkc";
+              }
+            }
             if (document.body.classList) {
               document.body.classList.add("game-" + incomingGame);
             } else {

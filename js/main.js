@@ -31,6 +31,10 @@ let main = {
     "s": "sm", // Super Metroid
     "o": "mom", // Metroid: Other M
     "f": "mf", // Metroid Fusion
+    "ana": "mna", // Metroid: A New Adventure
+    "aona": "mana", // Metroid: An Other New Adventure
+    "boz": "mboz", // Metroid: Back On Zebes
+    "bw": "mbw", // Metroid: Between Worlds
     "n": "mng", // Metroid: A New Galaxy
     "t": "mttne", // Metroid: The Threat Never Ends
     "d": "md", // Metroid Dread

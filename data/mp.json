@@ -287,7 +287,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileLauncherP",
+        "id": "missileLauncherPR",
         "name": "Missile Launcher",
         "sprite": "missile",
         "bg": "d82800",
@@ -295,7 +295,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileExpansion",
+        "id": "missileExpansionPR",
         "name": "Missile Expansions",
         "alreadyHasMainItem": true,
         "singleItemName": "Missile Expansion",
@@ -418,7 +418,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombP",
+        "id": "powerBombPR",
         "name": "Power Bomb",
         "sprite": "pbomb",
         "bg": "98b830",
@@ -435,7 +435,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "grappleBeamP",
+        "id": "grappleBeamPR",
         "name": "Grapple Beam",
         "bg": "00e8d8",
         "itemId": 24,

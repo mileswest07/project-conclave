@@ -52,6 +52,7 @@ Fangames and notable ROMhacks:
 - Metroid Confrontation (by DoctorM64)
 - AM2R (by DoctorM64)
 - Rogue Dawn (ROMhack of Metroid NES)
+- Metroid: A New Adventure (by u/Kelly_Crystal)
 - Metroid: A New Galaxy (by u/Kelly_Crystal)
 - Metroid: The Threat Never Ends (by u/Kelly_Crystal)
 - Prime 2D (by Team SCU)
@@ -83,8 +84,9 @@ $ npx http-server --proxy http://localhost:8080
 Code was all written by me. All assets and code may be used for non-profit purposes; I merely ask that correct credit be given to all responsible parties.
 
 * Rogue Dawn graphics: Grimlock, Optomon, snarfblam and team
-* Metroid: A New Galaxy: u/Kelly_Crystal
-* Metroid: The Threat Never Ends: also u/Kelly_Crystal
+* Metroid: A New Adventure: u/Kelly_Crystal
+* Metroid: A New Galaxy: also u/Kelly_Crystal
+* Metroid: The Threat Never Ends: _also_ also u/Kelly_Crystal
 * Prime2D: Team SCU
 * Z1M1: Metalmachine and team
 * SMZ3: tewtal and team

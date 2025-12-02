@@ -23,7 +23,7 @@ let keyslots = {};
   const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3"];
   const fangamesList = ["rd", "mc", "a", "t", "p2d", "n",];
-  const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
+  const allMetroidList = ["m", "z", "p", "pb", "h", "e", "c", "ff", "b", "ros", "r", "s", "o", "f", "d"];
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
   

@@ -18,12 +18,13 @@ let main = {
     "m": "m1", // Metroid
     "z": "mzm", // Metroid: Zero Mission
     "p": "mp", // Metroid Prime
-    "b": "pb", // Metroid Prime Pinball
+    "pb": "pb", // Metroid Prime Pinball
     "p2d": "p2d", // Prime 2D
     "h": "ph", // Metroid Prime Hunters
     "e": "mp2e", // Metroid Prime 2: Echoes
     "c": "mp3c", // Metroid Prime 3: Corruption
     "ff": "mpff", // Metroid Prime: Federation Force
+    "b": "mp4b", // Metroid Prime 4: Beyond
     "ros": "m2ros", // Metroid II: Return of Samus
     "mc": "mcon", // Metroid Confrontation
     "a": "am2r", // Another Metroid 2 Remake
@@ -55,7 +56,7 @@ let main = {
     
     Currently only targeting official Metroid titles.
   */
-  const checklistGameList = ["m1","mzm","mp","pb","ph","mp2e","mp3c","m2ros","msr","sm","mom","mf","md"];
+  const checklistGameList = ["m1","mzm","mp","pb","ph","mp2e","mp3c","mp4b","m2ros","msr","sm","mom","mf","md"];
   
   
   /*

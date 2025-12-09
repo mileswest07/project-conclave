@@ -397,7 +397,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombZ",
         "name": "Bombs",
         "bg": "3800a8",
         "itemId": 6,

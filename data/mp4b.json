@@ -1,103 +1,1017 @@
 {
   "mp4b": {
-    "checklistWidth": 4,
-    "checklistLayout": [
-      {
-        "lookupId": 5,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 6,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 7,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      },
-      {
-        "lookupId": 8,
-        "value": 0,
-        "start": 1,
-        "max": 1,
-        "segments": []
-      }
-    ],
+    "checklistLayouts": {
+      "4x8": [
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 13,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 53,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 17,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 49,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 19,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 20,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 54,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 21,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 22,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 40,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 56,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 2,
+          "segments": [
+            {
+              "lookupId": 23,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 41,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 24,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 4,
+          "segments": [
+            {
+              "lookupId": 25,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 26,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 29,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 30,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 32,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 35,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 4,
+          "segments": [
+            {
+              "lookupId": 36,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 37,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 38,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 39,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 42,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 4,
+          "segments": [
+            {
+              "lookupId": 43,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 44,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 46,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 47,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "lookupId": 48,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 50,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 55,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 0,
+          "start": 1,
+          "max": 14
+        },
+        {
+          "lookupId": 18,
+          "value": 0,
+          "start": 0,
+          "max": 48
+        },
+        {
+          "lookupId": 27,
+          "value": 0,
+          "start": 0,
+          "max": 38
+        },
+        {
+          "lookupId": 28,
+          "value": 0,
+          "start": 0,
+          "max": 6
+        },
+        {
+          "lookupId": 51,
+          "value": 0,
+          "start": 0,
+          "max": 5
+        },
+        {
+          "lookupId": 31,
+          "value": 0,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 33,
+          "value": 0,
+          "start": 5,
+          "max": 7
+        },
+        {
+          "lookupId": 34,
+          "value": 0,
+          "start": 3,
+          "max": 7
+        },
+        {
+          "lookupId": 52,
+          "value": 0,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "value": 0,
+          "start": 0,
+          "max": 3,
+          "segments": [
+            {
+              "lookupId": 57,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 58,
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "lookupId": 59,
+              "value": 0,
+              "start": 0,
+              "max": 6
+            }
+          ]
+        },
+        {
+          "lookupId": 60,
+          "value": 0,
+          "start": 0,
+          "max": 5
+        },
+        {
+          "lookupId": 61,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        }
+      ],
+      "9x4": [
+        {
+          "lookupId": 12,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 22,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Vi-O-La registered"
+        },
+        {
+          "lookupId": 40,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 56,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 21,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 35,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 48,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 50,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 53,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 20,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 17,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 49,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 26,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Mirror",
+          "overText": "Fire Chip collected"
+        },
+        {
+          "lookupId": 37,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Mirror",
+          "overText": "Ice Chip collected"
+        },
+        {
+          "lookupId": 44,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Mirror",
+          "overText": "Thunder Chip collected"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 15,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 24,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 19,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 32,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 42,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 55,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 58,
+          "value": 0,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Mirror",
+          "overText": "Teleporter Chip collected"
+        },
+        {
+          "lookupId": 61,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 0,
+          "start": 1,
+          "max": 14
+        },
+        {
+          "lookupId": 18,
+          "value": 0,
+          "start": 0,
+          "max": 48
+        },
+        {
+          "lookupId": 27,
+          "value": 0,
+          "start": 0,
+          "max": 38
+        },
+        {
+          "lookupId": 28,
+          "value": 0,
+          "start": 0,
+          "max": 6
+        },
+        {
+          "lookupId": 51,
+          "value": 0,
+          "start": 0,
+          "max": 5
+        },
+        {
+          "lookupId": 31,
+          "value": 0,
+          "start": 0,
+          "max": 3
+        },
+        {
+          "lookupId": 52,
+          "value": 0,
+          "start": 0,
+          "max": 8
+        },
+        {
+          "lookupId": 59,
+          "value": 0,
+          "start": 0,
+          "max": 6
+        },
+        {
+          "lookupId": 60,
+          "value": 0,
+          "start": 0,
+          "max": 5
+        }
+      ]
+    },
+    "defaultLayout": "4x8",
+    "scrambleLayout": "9x4",
     "items": [
       {
-        "id": "combatVisor",
-        "name": "Combat Visor",
-        "bg": "80d0ff",
+        "id": "suitUpgradeP",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
         "itemId": 1,
         "nodeType": "upgrade"
       },
       {
-        "id": "barrier",
-        "name": "Varia Suit",
-        "bg": "ff7e00",
+        "id": "combatVisorP",
+        "name": "Combat Visor",
+        "bg": "80d0ff",
         "itemId": 2,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "scanVisorPR",
+        "name": "Scan Visor",
+        "bg": "bca470",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "armCannon",
+        "name": "Arm Cannon",
+        "bg": "ffffff",
+        "itemId": 4,
         "nodeType": "upgrade"
       },
       {
         "id": "powerBeamA",
         "name": "Power Beam",
         "bg": "ffb508",
-        "itemId": 3,
+        "itemId": 5,
         "nodeType": "upgrade"
       },
       {
-        "id": "scanVisorB",
-        "name": "Scan Visor",
-        "bg": "bca470",
-        "itemId": 4,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "chargeBeam",
-        "locale": {
-          "enUS": {
-            "id": "chargeBeamE"
-          }
-        },
+        "id": "chargeBeamA",
         "name": "Charge Beam",
         "bg": "808000",
-        "itemId": 5,
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJumpBoots",
+        "name": "Space Jump Boots",
+        "bg": "00a0e0",
+        "itemId": 7,
         "nodeType": "upgrade"
       },
       {
         "id": "morphBall",
         "name": "Morph Ball",
         "bg": "d8a480",
-        "itemId": 6,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "bombC",
-        "name": "Bombs",
-        "bg": "3800a8",
-        "itemId": 7,
-        "nodeType": "upgrade"
-      },
-      {
-        "id": "missileC",
-        "name": "Missile Launcher",
-        "bg": "d82800",
         "itemId": 8,
         "nodeType": "upgrade"
+      },
+      {
+        "id": "bombZ",
+        "name": "Bomb",
+        "bg": "3800a8",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBallA",
+        "name": "Spring Ball",
+        "bg": "886848",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostBall",
+        "name": "Boost Ball",
+        "bg": "ff0094",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "psychicCrystal",
+        "name": "Psychic Crystal",
+        "bg": "ffffff",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "psychicBeamA",
+        "name": "Psychic Beam",
+        "bg": "ffffff",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamB",
+        "name": "Psychic Charge Beam",
+        "bg": "ffffff",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "psychicVisor",
+        "name": "Psychic Visor",
+        "bg": "ffffff",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTankP",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 16,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "missileLauncherB",
+        "name": "Missile Launcher",
+        "bg": "d82800",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileExpansionB",
+        "name": "Missile Expansions",
+        "singleItemName": "Missile Expansion",
+        "bg": "d82800",
+        "itemId": 18,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "psychicGlove",
+        "name": "Psychic Glove",
+        "bg": "ffffff",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "controlBeamA",
+        "name": "Control Beam",
+        "bg": "ffffff",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombB",
+        "name": "Psychic Bombs",
+        "bg": "3800a8",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "nanoSuit",
+        "name": "Vi-O-La Suit",
+        "bg": "ffffff",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bike",
+        "name": "Vi-O-La",
+        "bg": "ffffff",
+        "itemId": 23,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "psychicBoots",
+        "name": "Psychic Boots",
+        "bg": "00a0e0",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireChip",
+        "name": "Fire Chip",
+        "bg": "ff4a4a",
+        "itemId": 25,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireShot",
+        "name": "Fire Shot",
+        "bg": "ff4a4a",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "shotExpansion",
+        "name": "Shot Expansion",
+        "bg": "ffffff",
+        "itemId": 27,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "shotExpansionA",
+        "name": "Large Shot Expansion",
+        "bg": "ffffff",
+        "itemId": 28,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "fireCharge",
+        "name": "Charged Fire Shot",
+        "bg": "ff4a4a",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fireCharge",
+        "name": "Super Fire Shot",
+        "bg": "ff4a4a",
+        "itemId": 30,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostExpansion",
+        "name": "Vi-O-La Boost Expansion",
+        "bg": "ffffff",
+        "itemId": 31,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "psychicLasso",
+        "name": "Psychic Lasso",
+        "bg": "ff7b7b",
+        "itemId": 32,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "tkCodeA",
+        "name": "TK Code 1",
+        "bg": "ffffff",
+        "itemId": 33,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "tkCodeB",
+        "name": "TK Code 2",
+        "bg": "ffffff",
+        "itemId": 34,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "boostBallB",
+        "name": "Psychic Boost Ball",
+        "bg": "ff0094",
+        "itemId": 35,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceChip",
+        "name": "Ice Chip",
+        "bg": "2038ec",
+        "itemId": 36,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceShot",
+        "name": "Ice Shot",
+        "bg": "2038ec",
+        "itemId": 37,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceCharge",
+        "name": "Charged Ice Shot",
+        "bg": "2038ec",
+        "itemId": 38,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceCharge",
+        "name": "Super Ice shot",
+        "bg": "2038ec",
+        "itemId": 39,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "nanoICSuit",
+        "name": "Vi-O-La IC Suit",
+        "bg": "ffffff",
+        "itemId": 40,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "hoverBike",
+        "name": "Vi-O-La IC",
+        "bg": "ffffff",
+        "itemId": 41,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "grappleBeamB",
+        "name": "Psychic Grapple",
+        "bg": "00e8d8",
+        "itemId": 42,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "thunderChip",
+        "name": "Thunder Chip",
+        "bg": "92278f",
+        "itemId": 43,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "thunderShot",
+        "name": "Thunder Shot",
+        "bg": "92278f",
+        "itemId": 44,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "thunderCharge",
+        "name": "Charged Thunder Shot",
+        "bg": "92278f",
+        "itemId": 46,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "thunderCharge",
+        "name": "Super Thunder Shot",
+        "bg": "92278f",
+        "itemId": 47,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBallB",
+        "name": "Psychic Spider Ball",
+        "bg": "007f0e",
+        "itemId": 48,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileB",
+        "name": "Super Missile",
+        "bg": "007f0e",
+        "itemId": 49,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombB",
+        "name": "Psychic Power Bomb",
+        "sprite": "pbomb",
+        "bg": "98b830",
+        "itemId": 50,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombExpB",
+        "name": "Psychic Power Bomb Expansions",
+        "singleItemName": "Psychic Power Bomb Expansion",
+        "alreadyHasMainItem": true,
+        "bg": "98b830",
+        "itemId": 51,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "geCrystal",
+        "name": "Green Energy Crystals",
+        "bg": "ffffff",
+        "itemId": 52,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "psychicBeamB",
+        "name": "Psychic Beam Upgrade",
+        "bg": "ffffff",
+        "itemId": 53,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "controlBeamB",
+        "name": "Control Beam Boost",
+        "bg": "ffffff",
+        "itemId": 54,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "geCrystalFinder",
+        "name": "Green Energy Crystal Finder",
+        "bg": "ffffff",
+        "itemId": 55,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "legacySuit",
+        "name": "Legacy Suit",
+        "bg": "ffff80",
+        "itemId": 56,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "teleportChip",
+        "name": "Teleporter Chip",
+        "bg": "ffffff",
+        "itemId": 57,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "teleporterPatch",
+        "name": "Teleporter Patches",
+        "bg": "ffffff",
+        "itemId": 58,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "mechPart",
+        "name": "Mech Parts",
+        "singleItemName": "Mech Part",
+        "bg": "ffffff",
+        "itemId": 59,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "teleporterKey",
+        "name": "Master Teleporter Keys",
+        "singleItemName": "Master Teleporter Key",
+        "bg": "ffffff",
+        "itemId": 60,
+        "nodeType": "artifact"
+      },
+      {
+        "id": "memoryFruit",
+        "name": "Memory Fruit",
+        "bg": "ffffff",
+        "itemId": 61,
+        "nodeType": "artifact"
       }
     ],
     "bosses": [],
     "areas": [],
     "extras": [],
     "mapTree": [],
-    "grid": "mp2e"
+    "grid": "mp2e_grid.png"
   }
 }

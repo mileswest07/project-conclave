@@ -658,9 +658,13 @@ let keyslots = {};
     
     if (elementId === "-" || element.lookupId === -1) {
       if (isSegment) {
-        let interimText = JSON.stringify(elementName).split(' ');
-        interimText[0] = interimText[0].toLowerCase();
-        wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
+        if (!elementName) {
+          console.error("item definition is missing! Received:", element);
+        } else {
+          let interimText = JSON.stringify(elementName).split(' ');
+          interimText[0] = interimText[0].toLowerCase();
+          wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
+        }
       }
     } else {
       let trimmedItemName = elementId;
@@ -1416,7 +1420,7 @@ let keyslots = {};
         let hierarchyLookup = hierarchy.find(source => {
           let lookupCode = source.bossId || source.itemId || source.extraId || -1;
           return lookupCode === entry.lookupId;
-        });
+        }) || {};
         panel = {...hierarchyLookup, ...entry};
         
         if (panel.hasOwnProperty("segments") && panel.segments.length) {
@@ -1430,7 +1434,7 @@ let keyslots = {};
             let segmentLookup = hierarchy.find(source => {
               let lookupCode = source.bossId || source.itemId || source.extraId || -1;
               return lookupCode === segmentBase.lookupId;
-            });
+            }) || {};
             segmentList[slo] = {...segmentLookup, ...segmentBase};
           }
           panel.segments = [...segmentList];

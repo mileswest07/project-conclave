@@ -334,6 +334,18 @@
 .game-mpff .usesSprite .item-image.unused { background: url("images/mpff_spritesheet.png") -128px -192px; } /* UNUSED */
 .game-mpff .usesSprite .item-image.unused { background: url("images/mpff_spritesheet.png") -192px -192px; } /* UNUSED */
 
+/********* METROID PRIME 4: BEYOND (NS) *********/
+.game-mp4b .usesAllSprites,
+.game-mp4b .usesAllSprites.trimmed,
+.game-mp4b .usesAllSprites.usesSprite { width: 50px; height: 50px; margin: 0; }
+.game-mp4b .expansion.usesAllSprites.expansion,
+.game-mp4b .expansion.usesAllSprites.trimmed,
+.game-mp4b .expansion.usesAllSprites.usesSprite { height: 70px; }
+.game-mp4b .usesAllSprites .item-image,
+.game-mp4b .usesAllSprites.trimmed .item-image,
+.game-mp4b .usesAllSprites.usesSprite .item-image { width: 50px; height: 50px; margin: 0; }
+/* .game-mp4b .usesAllSprites.usesSprite .item-image { width: 42px; height: 42px; margin: 4px; } */ /* RENABLE WHEN MZM sprites are made */
+
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
 .game-m2ros .usesSprite .item-image.morph { background: url("images/m2ros_spritesheet.png") 0 0; }
 .game-m2ros .usesSprite .item-image.bomb { background: url("images/m2ros_spritesheet.png") -42px 0; }

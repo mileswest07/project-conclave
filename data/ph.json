@@ -285,7 +285,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombZ",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",

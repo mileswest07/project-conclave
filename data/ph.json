@@ -671,8 +671,8 @@
       },
       {
         "id": "octolith",
-        "name": "Octolith",
-        "sprite": "octolith 8",
+        "name": "Octolith 8",
+        "sprite": "octolith",
         "extraId": 1208,
         "nodeType": "artifact",
         "bg": "008080"

@@ -116,6 +116,7 @@
 .game-mom .usesAllSprites .item-image.tank,
 .game-md .usesAllSprites .item-image.missile,
 .game-mp .usesAllSprites .item-image.missileExpansion,
+.game-mp .usesAllSprites .item-image.missileExpansionPR,
 .game-mp2e .usesAllSprites .item-image.missileExpansion,
 .game-mp3c .usesAllSprites .item-image.missileExpansion,
 .game-ph .usesAllSprites .item-image.tank { background: url("images/mzm_full_spritesheet.png") 0 -84px; }
@@ -177,7 +178,8 @@
 .game-mp .usesAllSprites .item-image.bombP,
 .game-mp2e .usesAllSprites .item-image.bombE,
 .game-ph .usesAllSprites .item-image.bomb { background: url("images/mzm_full_spritesheet.png") -504px -126px; }
-.game-mp .usesAllSprites .item-image.grappleBeamP { background: url("images/mzm_full_spritesheet.png") -546px -126px; }
+.game-mp .usesAllSprites .item-image.grappleBeamP,
+.game-mp .usesAllSprites .item-image.grappleBeamPR { background: url("images/mzm_full_spritesheet.png") -546px -126px; }
 .game-ph .usesAllSprites .item-image.jud { background: url("images/mzm_full_spritesheet.png") -588px -126px; }
 .game-ph .usesAllSprites .item-image.al1 { background: url("images/mzm_full_spritesheet.png") -630px -126px; }
 

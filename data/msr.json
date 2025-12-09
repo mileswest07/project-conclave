@@ -258,8 +258,7 @@
           "lookupId": 27,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "clearIfScramble": true
+          "max": 1
         }
       ]
     },

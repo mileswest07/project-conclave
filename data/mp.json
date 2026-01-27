@@ -213,26 +213,12 @@
           "id": "-"
         },
         {
+          "lookupId": 30,
           "value": 1,
           "start": 0,
           "max": 12,
-          "segments": [
-            {
-              "lookupId": 30,
-              "value": 1,
-              "start": 0,
-              "max": 12,
-              "over": "Z_Chozo",
-              "overText": "Hints Acquired"
-            },
-            {
-              "lookupId": 1123,
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            }
-          ]
+          "over": "Z_Chozo",
+          "overText": "Hints Acquired"
         }
       ]
     },
@@ -779,7 +765,7 @@
         "nodeType": "trigger"
       },
       {
-        "id": "cipher",
+        "id": "unused",
         "name": "Impact Crater Accessible",
         "extraId": 1123,
         "nodeType": "event"

@@ -868,19 +868,19 @@
     ],
     "extras": [
       {
-        "id": "missileRestoreD",
+        "id": "unused",
         "name": "Missiles Reload",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
-        "id": "energyRestoreD",
+        "id": "unused",
         "name": "Energy Recharge",
         "extraId": 1002,
         "nodeType": "recharge"
       },
       {
-        "id": "totalRestore",
+        "id": "unused",
         "name": "Full Restore",
         "extraId": 1003,
         "nodeType": "recharge"
@@ -928,7 +928,7 @@
         "nodeType": "map"
       },
       {
-        "id": "networkStation",
+        "id": "unused",
         "name": "Network Station",
         "extraId": 1021,
         "nodeType": "event"
@@ -982,13 +982,13 @@
         "nodeType": "toggle"
       },
       {
-        "id": "slide",
+        "id": "unused",
         "name": "Slide Tutorial",
         "extraId": 1101,
         "nodeType": "trigger"
       },
       {
-        "id": "meleeCounter",
+        "id": "unused",
         "name": "Melee Counter tutorial",
         "extraId": 1102,
         "nodeType": "event"

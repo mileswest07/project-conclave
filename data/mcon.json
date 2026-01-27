@@ -301,7 +301,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",

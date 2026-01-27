@@ -660,33 +660,33 @@
       {
         "id": "psychicCrystal",
         "name": "Psychic Crystal",
-        "bg": "ffffff",
+        "bg": "887878",
         "itemId": 12,
         "nodeType": "upgrade"
       },
       {
         "id": "psychicBeamA",
         "name": "Psychic Beam",
-        "bg": "ffffff",
+        "bg": "ffb508",
         "itemId": 13,
         "nodeType": "upgrade"
       },
       {
         "id": "chargeBeamB",
         "name": "Psychic Charge Beam",
-        "bg": "ffffff",
+        "bg": "808000",
         "itemId": 14,
         "nodeType": "upgrade"
       },
       {
         "id": "psychicVisor",
         "name": "Psychic Visor",
-        "bg": "ffffff",
+        "bg": "bca470",
         "itemId": 15,
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankP",
+        "id": "energyTankB",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "bg": "78a4bc",
@@ -711,14 +711,14 @@
       {
         "id": "psychicGlove",
         "name": "Psychic Glove",
-        "bg": "ffffff",
+        "bg": "fcc4d8",
         "itemId": 19,
         "nodeType": "upgrade"
       },
       {
         "id": "controlBeamA",
         "name": "Control Beam",
-        "bg": "ffffff",
+        "bg": "6f3198",
         "itemId": 20,
         "nodeType": "upgrade"
       },
@@ -732,14 +732,14 @@
       {
         "id": "nanoSuit",
         "name": "Vi-O-La Suit",
-        "bg": "ffffff",
+        "bg": "6c0204",
         "itemId": 22,
         "nodeType": "upgrade"
       },
       {
         "id": "bike",
         "name": "Vi-O-La",
-        "bg": "ffffff",
+        "bg": "cd93ce",
         "itemId": 23,
         "nodeType": "upgrade"
       },
@@ -767,14 +767,14 @@
       {
         "id": "shotExpansion",
         "name": "Shot Expansion",
-        "bg": "ffffff",
+        "bg": "7f2800",
         "itemId": 27,
         "nodeType": "expansion"
       },
       {
         "id": "shotExpansionA",
         "name": "Large Shot Expansion",
-        "bg": "ffffff",
+        "bg": "007098",
         "itemId": 28,
         "nodeType": "expansion"
       },
@@ -786,7 +786,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "fireCharge",
+        "id": "fireSuper",
         "name": "Super Fire Shot",
         "bg": "ff4a4a",
         "itemId": 30,
@@ -795,7 +795,7 @@
       {
         "id": "boostExpansion",
         "name": "Vi-O-La Boost Expansion",
-        "bg": "ffffff",
+        "bg": "cd93ce",
         "itemId": 31,
         "nodeType": "expansion"
       },
@@ -809,14 +809,14 @@
       {
         "id": "tkCodeA",
         "name": "TK Code 1",
-        "bg": "ffffff",
+        "bg": "887878",
         "itemId": 33,
         "nodeType": "expansion"
       },
       {
         "id": "tkCodeB",
         "name": "TK Code 2",
-        "bg": "ffffff",
+        "bg": "887878",
         "itemId": 34,
         "nodeType": "expansion"
       },
@@ -849,8 +849,8 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceCharge",
-        "name": "Super Ice shot",
+        "id": "iceSuper",
+        "name": "Super Ice Shot",
         "bg": "2038ec",
         "itemId": 39,
         "nodeType": "upgrade"
@@ -858,14 +858,14 @@
       {
         "id": "nanoICSuit",
         "name": "Vi-O-La IC Suit",
-        "bg": "ffffff",
+        "bg": "ff7e00",
         "itemId": 40,
         "nodeType": "upgrade"
       },
       {
         "id": "hoverBike",
         "name": "Vi-O-La IC",
-        "bg": "ffffff",
+        "bg": "ff7e00",
         "itemId": 41,
         "nodeType": "upgrade"
       },
@@ -879,28 +879,28 @@
       {
         "id": "thunderChip",
         "name": "Thunder Chip",
-        "bg": "92278f",
+        "bg": "ffbc15",
         "itemId": 43,
         "nodeType": "upgrade"
       },
       {
         "id": "thunderShot",
         "name": "Thunder Shot",
-        "bg": "92278f",
+        "bg": "ffbc15",
         "itemId": 44,
         "nodeType": "upgrade"
       },
       {
         "id": "thunderCharge",
         "name": "Charged Thunder Shot",
-        "bg": "92278f",
+        "bg": "ffbc15",
         "itemId": 46,
         "nodeType": "upgrade"
       },
       {
-        "id": "thunderCharge",
+        "id": "thunderSuper",
         "name": "Super Thunder Shot",
-        "bg": "92278f",
+        "bg": "ffbc15",
         "itemId": 47,
         "nodeType": "upgrade"
       },
@@ -914,7 +914,7 @@
       {
         "id": "superMissileB",
         "name": "Super Missile",
-        "bg": "007f0e",
+        "bg": "402c00",
         "itemId": 49,
         "nodeType": "upgrade"
       },
@@ -938,28 +938,28 @@
       {
         "id": "geCrystal",
         "name": "Green Energy Crystals",
-        "bg": "ffffff",
+        "bg": "008080",
         "itemId": 52,
         "nodeType": "expansion"
       },
       {
         "id": "psychicBeamB",
         "name": "Psychic Beam Upgrade",
-        "bg": "ffffff",
+        "bg": "ffb508",
         "itemId": 53,
         "nodeType": "upgrade"
       },
       {
         "id": "controlBeamB",
         "name": "Control Beam Boost",
-        "bg": "ffffff",
+        "bg": "6f3198",
         "itemId": 54,
         "nodeType": "upgrade"
       },
       {
         "id": "geCrystalFinder",
         "name": "Green Energy Crystal Finder",
-        "bg": "ffffff",
+        "bg": "a8d818",
         "itemId": 55,
         "nodeType": "upgrade"
       },
@@ -973,14 +973,14 @@
       {
         "id": "teleportChip",
         "name": "Teleporter Chip",
-        "bg": "ffffff",
+        "bg": "887878",
         "itemId": 57,
         "nodeType": "upgrade"
       },
       {
         "id": "teleporterPatch",
         "name": "Teleporter Patches",
-        "bg": "ffffff",
+        "bg": "887878",
         "itemId": 58,
         "nodeType": "expansion"
       },
@@ -988,7 +988,7 @@
         "id": "mechPart",
         "name": "Mech Parts",
         "singleItemName": "Mech Part",
-        "bg": "ffffff",
+        "bg": "008080",
         "itemId": 59,
         "nodeType": "expansion"
       },
@@ -996,14 +996,14 @@
         "id": "teleporterKey",
         "name": "Master Teleporter Keys",
         "singleItemName": "Master Teleporter Key",
-        "bg": "ffffff",
+        "bg": "008080",
         "itemId": 60,
         "nodeType": "artifact"
       },
       {
         "id": "memoryFruit",
         "name": "Memory Fruit",
-        "bg": "ffffff",
+        "bg": "008080",
         "itemId": 61,
         "nodeType": "artifact"
       }
@@ -1012,6 +1012,6 @@
     "areas": [],
     "extras": [],
     "mapTree": [],
-    "grid": "mp2e_grid.png"
+    "grid": "mp4b_grid.png"
   }
 }

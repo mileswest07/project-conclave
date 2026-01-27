@@ -257,96 +257,13 @@
           "id": "-",
           "clearIfScramble": true
         },
-        { 
-          "id": "norion",
-          "name": "Norion Complete",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "disabled": true
-        },
         {
-          "id": "bryyo",
-          "name": "Bryyo Complete",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "over": "F_Boss_Ex",
-          "overText": "Mogenar required",
-          "disabled": true
-        },
-        {
-          "name": "",
-          "value": 0,
-          "start": 0,
-          "max": 3,
-          "segments": [
-            {
-              "lookupId": 26,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over":
-              "F_Boss_Ex",
-              "overText": "Helios required",
-              "disabled": true
-            },
-            {
-              "id": "skytown",
-              "name": "Elysia Complete",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "over": "F_Boss_Ex",
-              "overText": "Helios required",
-              "clearIfScramble": true,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "id": "homeworld",
-          "name": "Pirate Homeworld Complete",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "over": "F_Boss_Ex",
-          "overText": "Omega Ridley required",
-          "disabled": true
-        },
-        {
-          "name": "",
+          "lookupId": 35,
           "value": 1,
           "start": 0,
           "max": 9,
-          "segments": [
-            {
-              "lookupId": 35,
-              "value": 1,
-              "start": 0,
-              "max": 9,
-              "over": "C_Fuse",
-              "overText": "Hints Acquired"
-            },
-            {
-              "id": "pirateCode",
-              "name": "Pirate Code",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "bg": "ce6665",
-              "clearIfScramble": true
-            },
-            {
-              "id": "phaaze",
-              "name": "Phaaze Accessible",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            }
-          ]
+          "over": "C_Fuse",
+          "overText": "Hints Acquired"
         },
         {
           "id": "pirateCode",
@@ -449,7 +366,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "commandVisorA",
+        "id": "commandVisor",
         "name": "Command Visor",
         "bg": "bfbf00",
         "itemId": 13,
@@ -542,7 +459,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "seekerLauncherD",
+        "id": "seekerLauncherC",
         "name": "Seeker Launcher",
         "bg": "644080",
         "itemId": 26,
@@ -881,14 +798,14 @@
         "nodeType": "lore"
       },
       {
-        "id": "credit",
+        "id": "blueCredit",
         "name": "Blue Credit",
         "sprite": "blueCredit",
         "extraId": 1032,
         "nodeType": "lore"
       },
       {
-        "id": "credit",
+        "id": "goldCredit",
         "name": "Gold Credit",
         "sprite": "goldCredit",
         "extraId": 1033,

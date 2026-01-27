@@ -268,106 +268,36 @@
           "max": 8
         },
         {
-          "value": 0,
+          "lookupId": 21,
+          "value": 1,
           "start": 0,
           "max": 3,
-          "segments": [
-            {
-              "lookupId": 21,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Amorbis required"
-            },
-            {
-              "lookupId": 1110,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1111,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "over": "F_Boss_Ex",
+          "overText": "Amorbis required"
         },
         {
-          "value": 0,
+          "lookupId": 31,
+          "value": 1,
           "start": 0,
           "max": 3,
-          "segments": [
-            {
-              "lookupId": 31,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Chykka required"
-            },
-            {
-              "lookupId": 1122,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1123,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "over": "F_Boss_Ex",
+          "overText": "Chykka required"
         },
         {
-          "value": 0,
+          "lookupId": 40,
+          "value": 1,
           "start": 0,
           "max": 3,
-          "segments": [
-            {
-              "lookupId": 40,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Quadraxis required"
-            },
-            {
-              "lookupId": 1129,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1130,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "over": "F_Boss_Ex",
+          "overText": "Quadraxis required"
         },
         {
-          "value": 0,
+          "lookupId": 47,
+          "value": 1,
           "start": 0,
           "max": 9,
-          "segments": [
-            {
-              "lookupId": 47,
-              "value": 0,
-              "start": 0,
-              "max": 9,
-              "over": "E_Lumin_Ex",
-              "overText": "Hints acquired"
-            },
-            {
-              "lookupId": 1132,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "over": "E_Lumin_Ex",
+          "overText": "Hints acquired"
         }
       ],
       "8x6": [
@@ -689,69 +619,12 @@
           "displayIfScramble": true
         },
         {
-          "value": 0,
-          "start": 0,
-          "max": 3,
-          "clearIfScramble": true,
-          "segments": [
-            {
-              "lookupId": 21,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Amorbis required"
-            },
-            {
-              "lookupId": 1110,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1111,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
           "lookupId": 21,
           "value": 1,
           "start": 0,
           "max": 3,
           "over": "F_Boss_Ex",
-          "overText": "Amorbis required",
-          "displayIfScramble": true
-        },
-        {
-          "value": 0,
-          "start": 0,
-          "max": 3,
-          "clearIfScramble": true,
-          "segments": [
-            {
-              "lookupId": 31,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Chykka required"
-            },
-            {
-              "lookupId": 1122,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1123,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "overText": "Amorbis required"
         },
         {
           "lookupId": 31,
@@ -759,36 +632,7 @@
           "start": 0,
           "max": 3,
           "over": "F_Boss_Ex",
-          "overText": "Chykka required",
-          "displayIfScramble": true
-        },
-        {
-          "value": 0,
-          "start": 0,
-          "max": 3,
-          "clearIfScramble": true,
-          "segments": [
-            {
-              "lookupId": 40,
-              "value": 0,
-              "start": 0,
-              "max": 3,
-              "over": "F_Boss_Ex",
-              "overText": "Quadraxis required"
-            },
-            {
-              "lookupId": 1129,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            },
-            {
-              "lookupId": 1130,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "overText": "Chykka required"
         },
         {
           "lookupId": 40,
@@ -796,30 +640,7 @@
           "start": 0,
           "max": 3,
           "over": "F_Boss_Ex",
-          "overText": "Quadraxis required",
-          "displayIfScramble": true
-        },
-        {
-          "value": 0,
-          "start": 0,
-          "max": 9,
-          "clearIfScramble": true,
-          "segments": [
-            {
-              "lookupId": 47,
-              "value": 0,
-              "start": 0,
-              "max": 9,
-              "over": "E_Lumin_Ex",
-              "overText": "Hints acquired"
-            },
-            {
-              "lookupId": 1132,
-              "value": 0,
-              "start": 0,
-              "max": 1
-            }
-          ]
+          "overText": "Quadraxis required"
         },
         {
           "lookupId": 47,
@@ -827,8 +648,7 @@
           "start": 0,
           "max": 9,
           "over": "E_Lumin_Ex",
-          "overText": "Hints acquired",
-          "displayIfScramble": true
+          "overText": "Hints acquired"
         }
       ]
     },
@@ -899,7 +719,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "violetTranslatorL",
+        "id": "violetTranslator",
         "name": "Violet Translator",
         "bg": "a36fb1",
         "itemId": 10,
@@ -928,7 +748,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "amberTranslatorL",
+        "id": "amberTranslator",
         "name": "Amber Translator",
         "bg": "ad6a40",
         "itemId": 14,
@@ -942,7 +762,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "darkBeamA",
+        "id": "darkBeam",
         "name": "Dark Beam",
         "sprite": "darkbeam",
         "bg": "9c84ff",
@@ -959,7 +779,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "lightBeamA",
+        "id": "lightBeam",
         "name": "Light Beam",
         "sprite": "light",
         "bg": "5ac7f7",
@@ -985,7 +805,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "darkKey",
+        "id": "darkAgonKey",
         "name": "Dark Agon Keys",
         "singleItemName": "Dark Agon Key",
         "sprite": "redKey",
@@ -1008,7 +828,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "emeraldTranslatorL",
+        "id": "emeraldTranslator",
         "name": "Emerald Translator",
         "bg": "4b9467",
         "itemId": 24,
@@ -1058,7 +878,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "darkKey",
+        "id": "darkTorvusKey",
         "name": "Dark Torvus Keys",
         "singleItemName": "Dark Torvus Key",
         "sprite": "redKey",
@@ -1067,7 +887,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "darkVisorA",
+        "id": "darkVisor",
         "name": "Dark Visor",
         "sprite": "darkvisor",
         "bg": "ff7b7b",
@@ -1075,7 +895,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "cobaltTranslatorL",
+        "id": "cobaltTranslator",
         "name": "Cobalt Translator",
         "bg": "5c819e",
         "itemId": 33,
@@ -1129,7 +949,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "darkKey",
+        "id": "ingHiveKey",
         "name": "Ing Hive Keys",
         "singleItemName": "Ing Hive Key",
         "sprite": "redKey",
@@ -1138,7 +958,7 @@
         "nodeType": "artifact"
       },
       {
-        "id": "annihilatorBeamA",
+        "id": "annihilatorBeam",
         "name": "Annihilator Beam",
         "sprite": "annihilator",
         "bg": "9b9b9b",
@@ -1160,7 +980,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "massiveDamageA",
+        "id": "massiveDamage",
         "name": "Double Damage",
         "bg": "ffb508",
         "itemId": 44,
@@ -1181,7 +1001,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "skyTempleKeyA",
+        "id": "skyTempleKey",
         "name": "Sky Temple Keys",
         "singleItemName": "Sky Temple Key",
         "sprite": "skyKey",
@@ -1410,7 +1230,7 @@
     ],
     "extras": [
       {
-        "id": "beamAmmoRestore",
+        "id": "unused",
         "name": "Ammo Refilled",
         "nodeType": "recharge",
         "extraId": 1001
@@ -1532,13 +1352,13 @@
         "extraId": 1109
       },
       {
-        "id": "energyTaken",
+        "id": "unused",
         "name": "Dark Agon Energy Retrieved",
         "nodeType": "trigger",
         "extraId": 1110
       },
       {
-        "id": "energyRestored",
+        "id": "unused",
         "name": "Agon Energy Restored",
         "nodeType": "trigger",
         "extraId": 1111
@@ -1604,13 +1424,13 @@
         "extraId": 1121
       },
       {
-        "id": "energyTaken",
+        "id": "unused",
         "name": "Dark Torvus Energy Retrieved",
         "nodeType": "trigger",
         "extraId": 1122
       },
       {
-        "id": "energyRestored",
+        "id": "unused",
         "name": "Torvus Energy Restored",
         "nodeType": "trigger",
         "extraId": 1123
@@ -1646,13 +1466,13 @@
         "extraId": 1128
       },
       {
-        "id": "energyTaken",
+        "id": "unused",
         "name": "Ing Hive Energy Retrieved",
         "nodeType": "trigger",
         "extraId": 1129
       },
       {
-        "id": "energyRestored",
+        "id": "unused",
         "name": "Sanctuary Energy Restored",
         "nodeType": "trigger",
         "extraId": 1130
@@ -1664,7 +1484,7 @@
         "extraId": 1131
       },
       {
-        "id": "skyTempleAccess",
+        "id": "unused",
         "name": "Sky Temple Accessible",
         "nodeType": "trigger",
         "extraId": 1132

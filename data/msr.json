@@ -290,7 +290,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -463,7 +463,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBomb",
         "sprite": "pbombs",
         "name": "Power Bomb",
         "bg": "98b830",
@@ -471,7 +471,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankA",
+        "id": "powerBombTank",
         "sprite": "pbtank",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -596,7 +596,7 @@
     ],
     "extras": [
       {
-        "id": "aeionOrb",
+        "id": "unused",
         "name": "Aeion Orb",
         "extraId": 1001,
         "nodeType": "recharge"
@@ -626,7 +626,7 @@
         "nodeType": "save"
       },
       {
-        "id": "meleeCounter",
+        "id": "unused",
         "name": "Melee Counter tutorial",
         "extraId": 1101,
         "nodeType": "event"
@@ -644,7 +644,7 @@
         "nodeType": "trigger"
       },
       {
-        "id": "grappleBeamA",
+        "id": "unused",
         "name": "Diggernaut Awakened",
         "extraId": 1104,
         "nodeType": "trigger"

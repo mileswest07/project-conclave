@@ -297,7 +297,7 @@ let main = {
             itemCount[item.id] = 1;
           }
           addItemToSetIfGameNotInList(greaterItemSet, currentGame, item.id);
-          if (doesChecklist) {
+          if (doesChecklist && unifiedIDCollection[currentGame]) {
             const useSprite = Object.hasOwn(item, 'sprite');
             const propSprite = useSprite ? item.sprite : item.id;
             unifiedIDCollection[currentGame][propSprite] += 1;

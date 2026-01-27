@@ -200,39 +200,6 @@
           "id": "-"
         },
         {
-          "id": "waterPumpControl",
-          "name": "Sector 4 - Water level lowered.",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "disabled": true
-        },
-        {
-          "id": "coolingUnit",
-          "name": "Sector 3 - Cooling unit operational.",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "disabled": true
-        },
-        {
-          "id": "animals",
-          "name": "Main Deck - Lock disengaged. Gate opening.",
-          "sprite": "animals",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "disabled": true
-        },
-        {
-          "id": "auxiliaryPower",
-          "name": "Main Deck - Auxiliary power engaged.",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "disabled": true
-        },
-        {
           "lookupId": 1,
           "value": 0,
           "start": 0,
@@ -261,133 +228,6 @@
           "value": 0,
           "start": 0,
           "max": 1
-        },
-        {
-          "id": "-",
-          "disabled": true
-        },
-        {
-          "id": "-",
-          "disabled": true
-        },
-        {
-          "name": "Main Deck",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "mainDeck",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 1 SRX",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector1srx",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 2 TRO",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector2tro",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 3 PYR",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector3pyr",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 4 AQA",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector4aqa",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 5 ARC",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector5arc",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
-        },
-        {
-          "name": "Sector 6 NOC",
-          "value": 0,
-          "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "id": "sector6noc",
-              "name": "Sector Clear",
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "disabled": true
-            }
-          ],
-          "disabled": true
         }
       ]
     },
@@ -420,7 +260,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -525,7 +365,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBomb",
         "name": "Power Bombs",
         "sprite": "pbombData",
         "bg": "98b830",
@@ -533,7 +373,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankA",
+        "id": "powerBombTank",
         "sprite": "pbomb",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",

@@ -75,23 +75,24 @@
 .item-image.waveBeamO { background: url("images/placeholders.png") -1050px -150px; }
 .item-image.waveBeamB { background: url("images/placeholders.png") -1100px -150px; }
 
-.item-image.plasmaBeamA { background: url("images/placeholders.png") 0 -200px; }
-.item-image.plasmaBeamF { background: url("images/placeholders.png") -50px -200px; }
-.item-image.plasmaBeamR { background: url("images/placeholders.png") -100px -200px; }
-.item-image.plasmaBeamB { background: url("images/placeholders.png") -150px -200px; }
-.item-image.novaBeam { background: url("images/placeholders.png") -200px -200px; }
-.item-image.darkBeam { background: url("images/placeholders.png") -250px -200px; }
-.item-image.darkBeamE { background: url("images/placeholders.png") -300px -200px; } /* pickup form */
-.item-image.lightBeam { background: url("images/placeholders.png") -350px -200px; }
-.item-image.lightBeamE { background: url("images/placeholders.png") -400px -200px; } /* pickup form */
-.item-image.annihilatorBeam { background: url("images/placeholders.png") -450px -200px; }
-.item-image.annihilatorBeamE { background: url("images/placeholders.png") -500px -200px; } /* pickup form */
-.item-image.diffusionBeamD { background: url("images/placeholders.png") -550px -200px; }
-.item-image.hyperBeamS { background: url("images/placeholders.png") -600px -200px; } /* endgame item only */
-.item-image.omegaCannonD { background: url("images/placeholders.png") -650px -200px; }
-.item-image.emergencyPistol { background: url("images/placeholders.png") -700px -200px; } /* ZM event item only; might combine with other? */
-.item-image.psychicBeamA { background: url("images/placeholders.png") -750px -200px; }
-.item-image.psychicBeamB { background: url("images/placeholders.png") -800px -200px; }
+.item-image.plasmaBeam { background: url("images/placeholders.png") 0 -200px; }
+.item-image.plasmaBeamO { background: url("images/placeholders.png") -50px -200px; }
+.item-image.plasmaBeamF { background: url("images/placeholders.png") -100px -200px; }
+.item-image.plasmaBeamR { background: url("images/placeholders.png") -150px -200px; }
+.item-image.plasmaBeamB { background: url("images/placeholders.png") -200px -200px; }
+.item-image.novaBeam { background: url("images/placeholders.png") -250px -200px; }
+.item-image.darkBeam { background: url("images/placeholders.png") -300px -200px; }
+.item-image.darkBeamE { background: url("images/placeholders.png") -350px -200px; } /* pickup form */
+.item-image.lightBeam { background: url("images/placeholders.png") -400px -200px; }
+.item-image.lightBeamE { background: url("images/placeholders.png") -450px -200px; } /* pickup form */
+.item-image.annihilatorBeam { background: url("images/placeholders.png") -500px -200px; }
+.item-image.annihilatorBeamE { background: url("images/placeholders.png") -550px -200px; } /* pickup form */
+.item-image.diffusionBeamD { background: url("images/placeholders.png") -600px -200px; }
+.item-image.hyperBeamS { background: url("images/placeholders.png") -650px -200px; } /* endgame item only */
+.item-image.omegaCannonD { background: url("images/placeholders.png") -700px -200px; }
+.item-image.emergencyPistol { background: url("images/placeholders.png") -750px -200px; } /* ZM event item only; might combine with other? */
+.item-image.psychicBeamA { background: url("images/placeholders.png") -800px -200px; }
+.item-image.psychicBeamB { background: url("images/placeholders.png") -850px -200px; }
 
 .item-image.accelCharge { background: url("images/placeholders.png") 0 -250px; }
 .item-image.waveBeamP { background: url("images/placeholders.png") -50px -250px; }

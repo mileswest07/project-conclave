@@ -638,7 +638,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "plasmaBeamA",
+        "id": "plasmaBeam",
         "name": "Plasma Beam",
         "sprite": "plasma",
         "bg": "00ff08",

@@ -218,7 +218,7 @@
 .game-msr .usesAllSprites .item-image.plasmasmall,
 .game-msr .usesAllSprites .item-image.plasma,
 .game-sm .usesAllSprites .item-image.plasma,
-.game-mom .usesAllSprites .item-image.plasmaBeamA,
+.game-mom .usesAllSprites .item-image.plasmaBeamO,
 .game-mf .usesAllSprites .item-image.plasmaBeam,
 .game-md .usesAllSprites .item-image.plasmaBeamF { background: url("images/mzm_full_spritesheet.png") 0 -210px; }
 .game-m2ros .usesAllSprites .item-image.wave,

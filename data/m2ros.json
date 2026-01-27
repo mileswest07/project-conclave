@@ -497,7 +497,7 @@
         "slotType": "beam"
       },
       {
-        "id": "plasmaBeamA",
+        "id": "plasmaBeam",
         "sprite": "plasma",
         "name": "Plasma Beam",
         "bg": "00ff08",

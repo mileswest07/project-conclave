@@ -389,7 +389,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "plasmaBeamA",
+        "id": "plasmaBeamO",
         "name": "Plasma Beam",
         "bg": "00ff08",
         "itemId": 16,

@@ -274,7 +274,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileLauncherA",
+        "id": "missileLauncherO",
         "name": "Missiles",
         "sprite": "missile",
         "bg": "d82800",
@@ -282,7 +282,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTankA",
+        "id": "missileTankO",
         "name": "Missile Tanks",
         "singleItemName": "Missile Tank",
         "sprite": "tank",
@@ -309,7 +309,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
         "sprite": "energy",
@@ -357,7 +357,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "erecoveryTankB",
+        "id": "erecoveryTank",
         "name": "E-Recovery Tanks",
         "singleItemName": "E-Recovery Tank",
         "sprite": "erec",
@@ -366,7 +366,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeamO",
         "name": "Wave Beam",
         "bg": "92278f",
         "itemId": 13,
@@ -381,7 +381,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileLauncher",
+        "id": "superMissileLauncherO",
         "name": "Super Missiles",
         "sprite": "super",
         "bg": "007f0e",
@@ -425,7 +425,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombA",
+        "id": "powerBombO",
         "name": "Power Bombs",
         "sprite": "pbomb",
         "bg": "98b830",

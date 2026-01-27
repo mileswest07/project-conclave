@@ -426,7 +426,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "missileTankZ",
+        "id": "missileTank",
         "sprite": "missile",
         "name": "Missile Tanks",
         "singleItemName": "Missiles",
@@ -443,7 +443,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -460,7 +460,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "unknownItem1B",
+        "id": "unknownBeam",
         "sprite": "ui1",
         "name": "Unknown Item 1",
         "bg": "887878",
@@ -485,7 +485,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "unknownItem2B",
+        "id": "unknownJump",
         "sprite": "ui2",
         "name": "Unknown Item 2",
         "bg": "887878",
@@ -527,7 +527,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "superMissileTankZ",
+        "id": "superMissileTank",
         "sprite": "smissile",
         "name": "Super Missile Tanks",
         "singleItemName": "Super Missiles",
@@ -536,7 +536,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "unknownItem3B",
+        "id": "unknownSuit",
         "sprite": "ui3",
         "name": "Unknown Item 3",
         "bg": "887878",
@@ -593,7 +593,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankZ",
+        "id": "powerBombTank",
         "sprite": "pbomb",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bombs",
@@ -756,7 +756,7 @@
         "nodeType": "map"
       },
       {
-        "id": "birdStatue",
+        "id": "unused",
         "name": "Chozo Hint Statue",
         "extraId": 1021,
         "nodeType": "trigger",

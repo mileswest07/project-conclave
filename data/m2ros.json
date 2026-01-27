@@ -421,7 +421,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -594,14 +594,14 @@
     ],
     "extras": [
       {
-        "id": "missileBattery",
+        "id": "unused",
         "name": "Missiles Refill",
         "sprite": "battery",
         "extraId": 1001,
         "nodeType": "recharge"
       },
       {
-        "id": "bigEnergyBall",
+        "id": "unused",
         "name": "Energy Restore",
         "sprite": "eball",
         "extraId": 1002,

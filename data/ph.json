@@ -237,32 +237,10 @@
           "max": 12
         },
         {
-          "name": "",
+          "lookupId": 23,
           "value": 0,
           "start": 0,
-          "max": 1,
-          "segments": [
-            {
-              "lookupId": 23,
-              "value": 0,
-              "start": 0,
-              "max": 8
-            },
-            {
-              "lookupId": 1105,
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            },
-            {
-              "lookupId": 1103,
-              "value": 0,
-              "start": 0,
-              "max": 1,
-              "clearIfScramble": true
-            }
-          ]
+          "max": 8
         }
       ]
     },
@@ -285,7 +263,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "bombB",
+        "id": "bombZ",
         "name": "Bombs",
         "sprite": "bomb",
         "bg": "3800a8",
@@ -596,19 +574,19 @@
         "nodeType": "trigger"
       },
       {
-        "id": "oubliette",
+        "id": "unused",
         "name": "Oubliette Accessible",
         "extraId": 1103,
         "nodeType": "trigger"
       },
       {
-        "id": "oubliette",
+        "id": "unused",
         "name": "Scan Point",
         "extraId": 1104,
         "nodeType": "trigger"
       },
       {
-        "id": "alimbicCannon",
+        "id": "unused",
         "name": "Alimbic Cannon Control Room",
         "extraId": 1105,
         "nodeType": "event"
@@ -671,8 +649,8 @@
       },
       {
         "id": "octolith",
-        "name": "Octolith",
-        "sprite": "octolith 8",
+        "name": "Octolith 8",
+        "sprite": "octolith",
         "extraId": 1208,
         "nodeType": "artifact",
         "bg": "008080"

@@ -272,7 +272,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -435,7 +435,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankA",
+        "id": "powerBombTank",
         "sprite": "pbombs",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",

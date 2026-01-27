@@ -23,7 +23,7 @@ let keyslots = {};
   const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3"];
   const fangamesList = ["rd", "mc", "a", "t", "p2d", "n", "ana", "aona", "boz", "bw"];
-  const allMetroidList = ["m", "z", "p", "b", "h", "e", "c", "ff", "ros", "r", "s", "o", "f", "d"];
+  const allMetroidList = ["m", "z", "p", "pb", "h", "e", "c", "ff", "b", "ros", "r", "s", "o", "f", "d"];
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
   const kellyCrystalGames = ["mna", "mana", "mboz", "mbw", "mng", "mttne"];
@@ -659,9 +659,13 @@ let keyslots = {};
     
     if (elementId === "-" || element.lookupId === -1) {
       if (isSegment) {
-        let interimText = JSON.stringify(elementName).split(' ');
-        interimText[0] = interimText[0].toLowerCase();
-        wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
+        if (!elementName) {
+          console.error("item definition is missing! Received:", element);
+        } else {
+          let interimText = JSON.stringify(elementName).split(' ');
+          interimText[0] = interimText[0].toLowerCase();
+          wrapper.id = classLabel + "-" + interimText.join('').replace(/\W/g, '') + "-" + index;
+        }
       }
     } else {
       let trimmedItemName = elementId;
@@ -1422,16 +1426,9 @@ let keyslots = {};
         }
         let panel = {};
         let hierarchyLookup = hierarchy.find(source => {
-          let lookupCode = -1;
-          if (nodeTypesBossTier.includes(source.nodeType)) {
-            lookupCode = source.bossId;
-          } else if (nodeTypesItemTier.includes(source.nodeType)) {
-            lookupCode = source.itemId;
-          } else if (nodeTypesExtraTier.includes(source.nodeType)) {
-            lookupCode = source.extraId;
-          }
+          let lookupCode = source.bossId || source.itemId || source.extraId || -1;
           return lookupCode === entry.lookupId;
-        });
+        }) || {};
         panel = {...hierarchyLookup, ...entry};
         
         if (panel.hasOwnProperty("segments") && panel.segments.length) {
@@ -1439,20 +1436,13 @@ let keyslots = {};
           for (let slo = 0; slo < segmentList.length; slo++) {
             let segmentBase = segmentList[slo];
             if (segmentBase.hasOwnProperty("disabled") && segmentBase.disabled) {
-              console.log("skipping new segment", segmentBase)
+              console.log("skipping new segment", segmentBase);
               continue;
             }
             let segmentLookup = hierarchy.find(source => {
-              let lookupCode = -1;
-              if (nodeTypesBossTier.includes(source.nodeType)) {
-                lookupCode = source.bossId;
-              } else if (nodeTypesItemTier.includes(source.nodeType)) {
-                lookupCode = source.itemId;
-              } else if (nodeTypesExtraTier.includes(source.nodeType)) {
-                lookupCode = source.extraId;
-              }
+              let lookupCode = source.bossId || source.itemId || source.extraId || -1;
               return lookupCode === segmentBase.lookupId;
-            });
+            }) || {};
             segmentList[slo] = {...segmentLookup, ...segmentBase};
           }
           panel.segments = [...segmentList];
@@ -1484,20 +1474,17 @@ let keyslots = {};
     const foundStyleSheets = document.styleSheets;
     
     let scrambleMessage = "problem for both modes";
-    let scrambleClear = false;
     let flagDisplayIfScramble = false;
     let flagClearIfScramble = false;
     let hasSpriteAttribute = element.hasOwnProperty("sprite");
     if ((element.hasOwnProperty("displayIfScramble") && element.displayIfScramble) || (isSegment && parentData.hasOwnProperty("displayIfScramble") && parentData.displayIfScramble)) {
       scrambleMessage = "problem for Randomizer Mode only";
       flagDisplayIfScramble = true;
-      scrambleClear = true;
     }
     
     if ((element.hasOwnProperty("clearIfScramble") && element.clearIfScramble) || (isSegment && parentData.hasOwnProperty("clearIfScramble") && parentData.clearIfScramble)) {
-      scrambleMessage = "problem for Standard Mode only";
+      scrambleMessage = "problem only outside Randomizer Mode";
       flagClearIfScramble = true;
-      scrambleClear = true;
     }
     // console.log(foundStyleSheets);
     
@@ -1517,42 +1504,47 @@ let keyslots = {};
           let findStyleString;
           let trackingSprites = false;
           let cssFile = sheet.ownerNode.attributes.href.nodeValue;
+          let elementName = element.id;
           
           if (cssFile === 'allspritesMapping.css' && !skipGamesListForMZMItems.includes(currentGame)) {
             validSheet = true;
             sheetType = 2;
             // ruleset = ruleset[0].rules || ruleset[0].cssRules; // Restore IF a media query is wrapped around the file
             if (hasSpriteAttribute) {
-              findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${element.sprite}`;
+              elementName = element.sprite;
               trackingSprites = true;
             } else {
-              findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${element.id}`;
+              elementName = element.id;
               trackingSprites = false;
             }
+            findStyleString = `.game-${currentGame} .usesAllSprites .item-image.${elementName}`;
           } else if (cssFile === 'spriteMapping.css' && !skipGamesListForSprites.includes(currentGame)) {
             validSheet = true;
             sheetType = 1;
             // ruleset = ruleset[0].rules || ruleset[0].cssRules; // Restore IF a media query is wrapped around the file
             if (hasSpriteAttribute) {
-              findStyleString = `.game-${currentGame} .usesSprite .item-image.${element.sprite}`;
+              elementName = element.sprite;
+              findStyleString = `.game-${currentGame} .usesSprite .item-image.${elementName}`;
               if (kellyCrystalGames.includes(currentGame)) {
-                findStyleString = `.game-mkc .usesSprite .item-image.${element.sprite}`;
+                findStyleString = `.game-mkc .usesSprite .item-image.${elementName}`;
               }
               trackingSprites = true;
             } else {
-              resultsFound[sheetType] = `unable to find sprite for ${element.id} in file ${cssFile}, ${scrambleMessage}`;
+              elementName = element.id;
+              resultsFound[sheetType] = `unable to find sprite for ${elementName} in file ${cssFile}, ${scrambleMessage}`;
               continue;
             }
           } else if (cssFile === 'iconMapping.css' && !skipGamesListForPlaceholders.includes(currentGame)) {
             validSheet = true;
             sheetType = 0;
-            findStyleString = `.item-image.${element.id}`;
+            elementName = element.id;
+            findStyleString = `.item-image.${elementName}`;
             trackingSprites = false;
           }
           
           if (validSheet) {
             // console.log(sheetType, findStyleString, trackingSprites);
-            resultsFound[sheetType] = `unable to find style rule for ${trackingSprites ? 'sprite' : 'ID'} ${findStyleString} in file ${cssFile}, ${scrambleMessage}`;
+            resultsFound[sheetType] = `unable to find style rule for ${trackingSprites ? 'sprite' : 'placeholder'} "${elementName}" in file ${cssFile}, ${scrambleMessage}`;
             
             for (let j = 0; j < ruleset.length; j++) {
               let currentRule = ruleset[j];
@@ -1592,36 +1584,21 @@ let keyslots = {};
     }
     
     for (let i = 0; i < resultsFound.length; i++) {
+      const passesScrambleFlags = (!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble);
       if (resultsFound[i].length > 0) {
-        if (i === 0) {
-          if (!tracker.useSprites && !tracker.useAllSprites && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
+        if (i === 0 && !tracker.useSprites && !tracker.useAllSprites && passesScrambleFlags) {
+          isThisAProblem = true;
+          console.error(resultsFound[i]);
+        } else if (i === 1 && tracker.useSprites && !tracker.useAllSprites && passesScrambleFlags) {
+          isThisAProblem = true;
+          console.warn(resultsFound[i]);
+        } else if (i === 2 && tracker.useSprites && tracker.useAllSprites && passesScrambleFlags) {
+          console.info(resultsFound[i]);
+          if ((!hasSpriteAttribute || resultsFound[1].length > 0 || !skipGamesListForMZMItems.includes())) {
             isThisAProblem = true;
-          }
-          if (isThisAProblem) {
-            /////console.error(resultsFound[i]);
-          } else {
-            // console.log(resultsFound[i]);
-          }
-        } else if (i === 1) {
-          if (tracker.useSprites && !tracker.useAllSprites && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
-            isThisAProblem = true;
-          }
-          if (isThisAProblem) {
-            /////console.warn(resultsFound[i]);
-          } else {
-            // console.log(resultsFound[i]);
           }
         } else {
-          if (i === 2) {
-            if (tracker.useSprites && tracker.useAllSprites && (!hasSpriteAttribute || resultsFound[1].length > 0) && ((!flagClearIfScramble && tracker.isScramble) || (!flagDisplayIfScramble && !tracker.isScramble))) {
-              isThisAProblem = true;
-            }
-          }
-          if (isThisAProblem) {
-            /////console.info(resultsFound[i]);
-          } else {
-            // console.log(resultsFound[i]);
-          }
+          // console.log(resultsFound[i]);
         }
       }
     }
@@ -1691,8 +1668,6 @@ let keyslots = {};
       //console.groupEnd();
     }
     
-    //console.log(tracker.currentGame, hasProperGraphics ? 'ready' : 'NOT READY')
-    
     if ((tracker.useSprites || (tracker.useAllSprites && tracker.useSprites)) && hasProperGraphics) {
       itemWidth = 42;
     }
@@ -1708,16 +1683,22 @@ let keyslots = {};
       itemWidth = 60;
     }
     if (!hasProperGraphics) {
-      //console.log("improper setting detected for", tracker.currentGame);
+      console.warn("improper sprite graphics detected for", tracker.currentGame);
       if (tracker.useAllSprites) {
+        console.warn("    recommend visually checking, as some tiles may not be aligned correctly!");
+        // This is currently solved by hardcoding some sizes and margins in spriteMapping.css for some games...
+        // TODO: solve this issue
         itemWidth = 50;
+        if (["m1", "mzm", "m2ros", "sm"].includes(tracker.currentGame)) {
+          itemWidth = 42;
+        }
       } else if (!tracker.useSprites) {
         itemWidth = 50;
       } else {
         itemWidth = Math.max(itemWidth, 50);
       }
     }
-    //console.log(tracker.currentGame, itemWidth, hasProperGraphics);
+    // console.log(tracker.currentGame, itemWidth, hasProperGraphics);
     
     let setWidth;
     

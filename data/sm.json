@@ -184,7 +184,7 @@
           "max": 4
         },
         {
-          "id": "etedach",
+          "id": "animals",
           "sprite": "animals",
           "name": "Animals Rescued",
           "value": 0,
@@ -338,7 +338,7 @@
           "max": 4
         },
         {
-          "id": "etedach",
+          "id": "animals",
           "sprite": "animals",
           "name": "Animals Rescued",
           "value": 0,
@@ -410,7 +410,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "energyTankA",
+        "id": "energyTank",
         "sprite": "energy",
         "name": "Energy Tanks",
         "singleItemName": "Energy Tank",
@@ -476,7 +476,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombTankA",
+        "id": "powerBombTank",
         "sprite": "pbombs",
         "name": "Power Bomb Tanks",
         "singleItemName": "Power Bomb Tank",
@@ -485,7 +485,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "reserveTankC",
+        "id": "reserveTank",
         "sprite": "reserve",
         "name": "Reserve Tanks",
         "singleItemName": "Reserve Tank",

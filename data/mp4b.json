@@ -921,7 +921,6 @@
       {
         "id": "powerBombB",
         "name": "Psychic Power Bomb",
-        "sprite": "pbomb",
         "bg": "98b830",
         "itemId": 50,
         "nodeType": "upgrade"

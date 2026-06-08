@@ -335,6 +335,7 @@
 .game-mpff .usesSprite .item-image.unused { background: url("images/mpff_spritesheet.png") -192px -192px; } /* UNUSED */
 
 /********* METROID PRIME 4: BEYOND (NS) *********/
+.game-mp4b .usesSprite:not(.usesAllSprites).trimmed,
 .game-mp4b .usesAllSprites,
 .game-mp4b .usesAllSprites.trimmed,
 .game-mp4b .usesAllSprites.usesSprite { width: 50px; height: 50px; margin: 0; }
@@ -343,8 +344,53 @@
 .game-mp4b .expansion.usesAllSprites.usesSprite { height: 70px; }
 .game-mp4b .usesAllSprites .item-image,
 .game-mp4b .usesAllSprites.trimmed .item-image,
-.game-mp4b .usesAllSprites.usesSprite .item-image { width: 50px; height: 50px; margin: 0; }
-/* .game-mp4b .usesAllSprites.usesSprite .item-image { width: 42px; height: 42px; margin: 4px; } */ /* RENABLE WHEN MZM sprites are made */
+.game-mp4b .usesAllSprites.usesSprite .item-image { width: 42px; height: 42px; margin: 4px; }
+
+.game-mp4b .usesAllSprites.trimmed .psychicCrystal,
+.game-mp4b .usesAllSprites.trimmed .psychicBeamA,
+.game-mp4b .usesAllSprites.trimmed .psychicBeamB,
+.game-mp4b .usesAllSprites.trimmed .chargeBeamB,
+.game-mp4b .usesAllSprites.trimmed .psychicVisor,
+.game-mp4b .usesAllSprites.trimmed .superMissileB,
+.game-mp4b .usesAllSprites.trimmed .psychicGlove,
+.game-mp4b .usesAllSprites.trimmed .controlBeamA,
+.game-mp4b .usesAllSprites.trimmed .controlBeamB,
+.game-mp4b .usesAllSprites.trimmed .bombB,
+.game-mp4b .usesAllSprites.trimmed .nanoSuit,
+.game-mp4b .usesAllSprites.trimmed .nanoICSuit,
+.game-mp4b .usesAllSprites.trimmed .legacySuit,
+.game-mp4b .usesAllSprites.trimmed .bike,
+.game-mp4b .usesAllSprites.trimmed .hoverBike,
+.game-mp4b .usesAllSprites.trimmed .psychicBoots,
+.game-mp4b .usesAllSprites.trimmed .fireChip,
+.game-mp4b .usesAllSprites.trimmed .fireShot,
+.game-mp4b .usesAllSprites.trimmed .fireCharge,
+.game-mp4b .usesAllSprites.trimmed .fireSuper,
+.game-mp4b .usesAllSprites.trimmed .psychicLasso,
+.game-mp4b .usesAllSprites.trimmed .boostBallB,
+.game-mp4b .usesAllSprites.trimmed .iceChip,
+.game-mp4b .usesAllSprites.trimmed .iceShot,
+.game-mp4b .usesAllSprites.trimmed .iceCharge,
+.game-mp4b .usesAllSprites.trimmed .iceSuper,
+.game-mp4b .usesAllSprites.trimmed .grappleBeamB,
+.game-mp4b .usesAllSprites.trimmed .thunderChip,
+.game-mp4b .usesAllSprites.trimmed .thunderShot,
+.game-mp4b .usesAllSprites.trimmed .thunderCharge,
+.game-mp4b .usesAllSprites.trimmed .thunderSuper,
+.game-mp4b .usesAllSprites.trimmed .spiderBallB,
+.game-mp4b .usesAllSprites.trimmed .powerBombB,
+.game-mp4b .usesAllSprites.trimmed .geCrystalFinder,
+.game-mp4b .usesAllSprites.trimmed .shotExpansion,
+.game-mp4b .usesAllSprites.trimmed .shotExpansionA,
+.game-mp4b .usesAllSprites.trimmed .boostExpansion,
+.game-mp4b .usesAllSprites.trimmed .tkCodeA,
+.game-mp4b .usesAllSprites.trimmed .tkCodeB,
+.game-mp4b .usesAllSprites.trimmed .geCrystal,
+.game-mp4b .usesAllSprites.trimmed .teleportChip,
+.game-mp4b .usesAllSprites.trimmed .teleporterPatch,
+.game-mp4b .usesAllSprites.trimmed .mechPart,
+.game-mp4b .usesAllSprites.trimmed .teleporterKey,
+.game-mp4b .usesAllSprites.trimmed .memoryFruit { width: 50px; height: 50px; margin: 0; }
 
 /********* M2 - METROID II: RETURN OF SAMUS (GB) *********/
 .game-m2ros .usesSprite .item-image.morph { background: url("images/m2ros_spritesheet.png") 0 0; }
@@ -525,6 +571,10 @@
 .game-sm .usesSprite .item-image.heal { background: url("images/sm_spritesheet.png") -168px -126px; }
 .game-sm .usesSprite .item-image.ammo { background: url("images/sm_spritesheet.png") -210px -126px; }
 .game-sm .usesSprite .item-image.map { background: url("images/sm_spritesheet.png") 0 -168px; }
+.game-sm .usesSprite .item-image.kraid { background: url("images/sm_spritesheet.png") -42px -168px; }
+.game-sm .usesSprite .item-image.phantoon { background: url("images/sm_spritesheet.png") -84px -168px; }
+.game-sm .usesSprite .item-image.draygon { background: url("images/sm_spritesheet.png") -126px -168px; }
+.game-sm .usesSprite .item-image.ridley { background: url("images/sm_spritesheet.png") -168px -168px; }
 .game-sm .usesSprite .item-image.animals { background: url("images/mf_spritesheet.png") -43px -43px; }
 
 /********* METROID: OTHER M (Wii) *********/
@@ -564,30 +614,35 @@
 .game-mf .usesSprite .item-image.superMissile { background: url("images/mf_spritesheet.png") -129px 0; }
 .game-mf .usesSprite .item-image.speed { background: url("images/mf_spritesheet.png") -172px 0; }
 .game-mf .usesSprite .item-image.securityL0 { background: url("images/mf_spritesheet.png") -215px 0; }
+.game-mf .usesSprite .item-image.hatchL0 { background: url("images/mf_spritesheet.png") -258px 0; }
 .game-mf .usesSprite .item-image.pbomb { background: url("images/mf_spritesheet.png") 0 -43px; }
 .game-mf .usesSprite .item-image.animals { background: url("images/mf_spritesheet.png") -43px -43px; }
 .game-mf .usesSprite .item-image.iceMissile { background: url("images/mf_spritesheet.png") -86px -43px; }
 .game-mf .usesSprite .item-image.diffusion { background: url("images/mf_spritesheet.png") -129px -43px; }
 .game-mf .usesSprite .item-image.high { background: url("images/mf_spritesheet.png") -172px -43px; }
 .game-mf .usesSprite .item-image.securityL1 { background: url("images/mf_spritesheet.png") -215px -43px; }
+.game-mf .usesSprite .item-image.hatchL1 { background: url("images/mf_spritesheet.png") -258px -43px; }
 .game-mf .usesSprite .item-image.bombData { background: url("images/mf_spritesheet.png") 0 -86px; }
 .game-mf .usesSprite .item-image.pbombData { background: url("images/mf_spritesheet.png") -43px -86px; }
 .game-mf .usesSprite .item-image.powerBeam { background: url("images/mf_spritesheet.png") -86px -86px; }
 .game-mf .usesSprite .item-image.chargeBeam { background: url("images/mf_spritesheet.png") -129px -86px; }
 .game-mf .usesSprite .item-image.space { background: url("images/mf_spritesheet.png") -172px -86px; }
 .game-mf .usesSprite .item-image.securityL2 { background: url("images/mf_spritesheet.png") -215px -86px; }
+.game-mf .usesSprite .item-image.hatchL2 { background: url("images/mf_spritesheet.png") -258px -86px; }
 .game-mf .usesSprite .item-image.wideBeam { background: url("images/mf_spritesheet.png") 0 -129px; }
 .game-mf .usesSprite .item-image.plasmaBeam { background: url("images/mf_spritesheet.png") -43px -129px; }
 .game-mf .usesSprite .item-image.waveBeam { background: url("images/mf_spritesheet.png") -86px -129px; }
 .game-mf .usesSprite .item-image.iceBeam { background: url("images/mf_spritesheet.png") -129px -129px; }
 .game-mf .usesSprite .item-image.screw { background: url("images/mf_spritesheet.png") -172px -129px; }
 .game-mf .usesSprite .item-image.securityL3 { background: url("images/mf_spritesheet.png") -215px -129px; }
+.game-mf .usesSprite .item-image.hatchL3 { background: url("images/mf_spritesheet.png") -258px -129px; }
 .game-mf .usesSprite .item-image.fusion { background: url("images/mf_spritesheet.png") 0 -172px; }
 .game-mf .usesSprite .item-image.barrier { background: url("images/mf_spritesheet.png") -43px -172px; }
 .game-mf .usesSprite .item-image.gravity { background: url("images/mf_spritesheet.png") -86px -172px; }
 .game-mf .usesSprite .item-image.final { background: url("images/mf_spritesheet.png") -129px -172px; }
 .game-mf .usesSprite .item-image.morph { background: url("images/mf_spritesheet.png") -172px -172px; }
 .game-mf .usesSprite .item-image.securityL4 { background: url("images/mf_spritesheet.png") -215px -172px; }
+.game-mf .usesSprite .item-image.hatchL4 { background: url("images/mf_spritesheet.png") -258px -172px; }
 .game-mf .usesSprite .item-image.monster { background: url("images/mf_spritesheet.png") 0 -215px; }
 
 /********* M5 - METROID DREAD (NS) *********/

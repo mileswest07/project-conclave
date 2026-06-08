@@ -119,6 +119,7 @@
 .game-mp .usesAllSprites .item-image.missileExpansionPR,
 .game-mp2e .usesAllSprites .item-image.missileExpansion,
 .game-mp3c .usesAllSprites .item-image.missileExpansion,
+.game-mp4b .usesAllSprites .item-image.missileExpansionB,
 .game-ph .usesAllSprites .item-image.tank { background: url("images/mzm_full_spritesheet.png") 0 -84px; }
 .game-mzm .usesAllSprites .item-image.smissile,
 .game-msr .usesAllSprites .item-image.smtank,
@@ -128,6 +129,7 @@
 .game-sm .usesAllSprites .item-image.pbombs,
 .game-md .usesAllSprites .item-image.pbombs,
 .game-mp .usesAllSprites .item-image.powerBombExpP,
+.game-mp4b .usesAllSprites .item-image.powerBombExpB,
 .game-mp2e .usesAllSprites .item-image.powerBombExpE { background: url("images/mzm_full_spritesheet.png") -84px -84px; }
 .game-mzm .usesAllSprites .item-image.full { background: url("images/mzm_full_spritesheet.png") -126px -84px; }
 .game-mzm .usesAllSprites .item-image.plasma { background: url("images/mzm_full_spritesheet.png") -168px -84px; }
@@ -163,6 +165,7 @@
 .game-msr .usesAllSprites .item-image.missile,
 .game-mom .usesAllSprites .item-image.missile,
 .game-mf .usesAllSprites .item-image.missileData,
+.game-mp4b .usesAllSprites .item-image.missileLauncherB,
 .game-mp3c .usesAllSprites .item-image.missileLauncherP { background: url("images/mzm_full_spritesheet.png") -168px -126px; }
 .game-mom .usesAllSprites .item-image.super,
 .game-mf .usesAllSprites .item-image.superMissile { background: url("images/mzm_full_spritesheet.png") -210px -126px; }
@@ -210,6 +213,7 @@
 .game-mp .usesAllSprites .item-image.energyTankP,
 .game-mp2e .usesAllSprites .item-image.energyTankP,
 .game-mp3c .usesAllSprites .item-image.energyTankP,
+.game-mp4b .usesAllSprites .item-image.energyTankB,
 .game-ph .usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -546px -168px; }
 .game-ph .usesAllSprites .item-image.magmaul { background: url("images/mzm_full_spritesheet.png") -588px -168px; }
 .game-ph .usesAllSprites .item-image.al2 { background: url("images/mzm_full_spritesheet.png") -630px -168px; }

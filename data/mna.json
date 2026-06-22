@@ -1,0 +1,521 @@
+{
+  "mna": {
+    "checklistLayouts": {
+      "6x4": [
+        {
+          "lookupId": 1,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 3,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 11,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 14,
+          "value": 0,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1
+        },
+        {
+          "lookupId": 4,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 2,
+          "value": 1,
+          "start": 0,
+          "max": 50
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 20
+        },
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 15
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 10
+        },
+        {
+          "name": "Metroids defeated",
+          "type": "counter",
+          "value": 0,
+          "start": 0,
+          "max": 58,
+          "segments": [
+            {
+              "id": "monsterDna",
+              "name": "Phase 1",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 0,
+              "max": 1
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 2",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 1,
+              "max": 4
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 3 - Hydro Station",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 4,
+              "max": 9
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 4 - Golden Temple",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 9,
+              "max": 14
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 5",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 14,
+              "max": 16
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 6 - Distribution Centre",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 16,
+              "max": 28
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 7 - Old Molten Ship",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 28,
+              "max": 40
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 8",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 40,
+              "max": 47
+            },
+            {
+              "id": "monsterDna",
+              "name": "Phase 9 - Genetics Laboratory",
+              "sprite": "monsters",
+              "type": "counter",
+              "value": 0,
+              "start": 47,
+              "max": 58
+            }
+          ]
+        }
+      ]
+    },
+    "defaultLayout": "6x4",
+    "items": [
+      {
+        "id": "morphBall",
+        "sprite": "morph",
+        "name": "Morph Ball",
+        "bg": "d8a480",
+        "itemId": 1,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTankA",
+        "sprite": "missiles",
+        "name": "Missile Tanks",
+        "singleItemName": "Missile Tank",
+        "bg": "d82800",
+        "itemId": 2,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "chargeBeamE",
+        "sprite": "chargeOld",
+        "name": "Charge Module",
+        "bg": "808000",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "energyTankA",
+        "sprite": "energy",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "bg": "78a4bc",
+        "itemId": 4,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "bombA",
+        "sprite": "bombs",
+        "name": "Bomb",
+        "bg": "3800a8",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerGrip",
+        "sprite": "grip",
+        "name": "Power Grip",
+        "bg": "00e8d8",
+        "itemId": 6,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "speedBoosterA",
+        "sprite": "speed",
+        "name": "Speed Booster",
+        "bg": "ff0094",
+        "itemId": 7,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileTank",
+        "sprite": "supers",
+        "name": "Super Missile Tanks",
+        "singleItemName": "Super Missile Tank",
+        "bg": "007f0e",
+        "itemId": 8,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "springBallA",
+        "sprite": "spring",
+        "name": "Jump Ball",
+        "bg": "886848",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeamB",
+        "sprite": "wave",
+        "name": "Wave Beam",
+        "bg": "92278f",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierSuitB",
+        "sprite": "barrier",
+        "name": "Varia Suit",
+        "bg": "ff7e00",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "magneticShieldTank",
+        "sprite": "shieldsOld",
+        "name": "Magnetic Shield Tanks",
+        "singleItemName": "Magnetic Shield Tank",
+        "bg": "007098",
+        "itemId": 12,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "zeroSuitA",
+        "sprite": "purpleZero",
+        "name": "Zero Suit",
+        "bg": "007098",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "fullPowerSuit",
+        "sprite": "black",
+        "name": "Equipment recovered",
+        "bg": "ffb508",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceBeamB",
+        "sprite": "ice",
+        "name": "Ice Beam",
+        "bg": "2038ec",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "highJumpBoots",
+        "sprite": "high",
+        "name": "Hi-Jump Boots",
+        "bg": "c0a8d8",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTankA",
+        "sprite": "pbombs",
+        "name": "Power Bomb Tanks",
+        "singleItemName": "Power Bomb Tank",
+        "bg": "98b830",
+        "itemId": 17,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "spaceJump",
+        "sprite": "space",
+        "name": "Space Jump",
+        "bg": "00a0e0",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "screwAttackA",
+        "sprite": "screw",
+        "name": "Screw Attack",
+        "bg": "69cd69",
+        "itemId": 19,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeamB",
+        "sprite": "plasma",
+        "name": "Plasma Beam",
+        "bg": "00ff08",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuitA",
+        "sprite": "gravity",
+        "name": "Gravity Suit",
+        "bg": "602880",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      }
+    ],
+    "bosses": [
+      {
+        "id": "larval",
+        "name": "Larval Metroid",
+        "bossId": 101
+      },
+      {
+        "id": "moch",
+        "name": "Mochtroid",
+        "bossId": 102
+      },
+      {
+        "id": "alpha",
+        "name": "Alpha Metroid",
+        "bossId": 103
+      },
+      {
+        "id": "gamma",
+        "name": "Gamma Metroid",
+        "bossId": 104
+      },
+      {
+        "id": "zeta",
+        "name": "Zeta Metroid",
+        "bossId": 105
+      },
+      {
+        "id": "omega",
+        "name": "Omega Metroid",
+        "bossId": 106
+      },
+      {
+        "id": "clawgrip",
+        "name": "Clawgrip",
+        "bossId": 111
+      },
+      {
+        "id": "draygon",
+        "name": "Draygon",
+        "bossId": 112
+      },
+      {
+        "id": "kraid",
+        "name": "Kraid",
+        "bossId": 113
+      },
+      {
+        "id": "phantoon",
+        "name": "Phantoon",
+        "bossId": 114
+      },
+      {
+        "id": "beambeast",
+        "name": "Beam Beast",
+        "bossId": 115
+      },
+      {
+        "id": "crocomire",
+        "name": "Crocomire",
+        "bossId": 116
+      },
+      {
+        "id": "ridley",
+        "name": "Ridley",
+        "bossId": 117
+      },
+      {
+        "id": "queen",
+        "name": "Queen Metroid",
+        "bossId": 121
+      }
+    ],
+    "areas": [
+      {
+        "id": 1,
+        "name": "Game map",
+        "hasGameStart": true,
+        "color": "bcbcbc"
+      }
+    ],
+    "extras": [
+      {
+        "id": "unused",
+        "name": "Escape Sequence",
+        "extraId": 1006,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Chozo Statue trap",
+        "extraId": 1002,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Zero Suit Start",
+        "extraId": 1003,
+        "nodeType": "trigger"
+      },
+      {
+        "id": "unused",
+        "name": "Save Station",
+        "extraId": 1001,
+        "nodeType": "save"
+      }
+    ],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mph_grid.png"
+  }
+}

@@ -609,14 +609,14 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBeamA",
+        "id": "powerBeam",
         "name": "Power Beam",
         "bg": "ffb508",
         "itemId": 5,
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeam",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 6,
@@ -716,7 +716,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "controlBeamA",
+        "id": "controlBeam",
         "name": "Control Beam",
         "bg": "6f3198",
         "itemId": 20,
@@ -772,7 +772,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "shotExpansionA",
+        "id": "shotExpansionL",
         "name": "Large Shot Expansion",
         "bg": "007098",
         "itemId": 28,
@@ -919,7 +919,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombF",
+        "id": "powerBombB",
         "name": "Psychic Power Bomb",
         "bg": "98b830",
         "itemId": 50,
@@ -949,7 +949,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "controlBeamB",
+        "id": "controlBeamBoost",
         "name": "Control Beam Boost",
         "bg": "6f3198",
         "itemId": 54,

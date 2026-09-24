@@ -81,7 +81,7 @@
           "start": 0,
           "max": 1,
           "nodeType": "boss",
-          "id": "kraid",
+          "id": "kaijuboss",
           "sprite": "kraid",
           "name": "Kraid Defeated"
         },
@@ -91,7 +91,7 @@
           "start": 0,
           "max": 1,
           "nodeType": "boss",
-          "id": "ridley",
+          "id": "dragonboss",
           "sprite": "ridley",
           "name": "Ridley Defeated"
         }
@@ -176,7 +176,7 @@
           "start": 0,
           "max": 1,
           "nodeType": "boss",
-          "id": "kraid",
+          "id": "kaijuboss",
           "sprite": "kraid",
           "name": "Kraid Defeated"
         },
@@ -186,7 +186,7 @@
           "start": 0,
           "max": 1,
           "nodeType": "boss",
-          "id": "ridley",
+          "id": "dragonboss",
           "sprite": "ridley",
           "name": "Ridley Defeated"
         }
@@ -239,7 +239,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeamA",
+        "id": "iceBeam",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -256,7 +256,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -264,7 +264,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeam",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -283,12 +283,12 @@
     ],
     "bosses": [
       {
-        "id": "kraid",
+        "id": "kaijuboss",
         "name": "Kraid",
         "bossId": 101
       },
       {
-        "id": "ridley",
+        "id": "dragonboss",
         "name": "Ridley",
         "bossId": 102
       },

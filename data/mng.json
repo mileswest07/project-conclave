@@ -297,7 +297,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -363,7 +363,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",
@@ -371,7 +371,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallR",
         "sprite": "spider",
         "name": "Spider Ball",
         "bg": "bca470",
@@ -379,7 +379,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeamA",
+        "id": "wideBeam",
         "sprite": "wide",
         "name": "Spazer",
         "bg": "ffff80",
@@ -444,7 +444,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",

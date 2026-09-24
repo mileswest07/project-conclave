@@ -435,7 +435,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeam",
         "sprite": "charge",
         "name": "Charge Beam",
         "bg": "808000",
@@ -477,7 +477,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeamA",
+        "id": "iceBeam",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -494,7 +494,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "sprite": "speed",
         "name": "Speed Booster",
         "bg": "ff0094",
@@ -519,7 +519,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeam",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -545,7 +545,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",
@@ -553,7 +553,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "fullyPoweredSuit",
+        "id": "fullPowerSuit",
         "sprite": "full",
         "name": "Fully Powered Suit",
         "alternateName": "Chozo Power",
@@ -585,7 +585,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",

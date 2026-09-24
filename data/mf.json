@@ -309,7 +309,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -399,7 +399,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
@@ -431,7 +431,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "name": "Screw Attack",
         "sprite": "screw",
         "bg": "69cd69",

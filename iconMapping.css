@@ -210,7 +210,7 @@
 .item-image.superMissileTank { background: url("images/placeholders.png") -550px -550px; }
 .item-image.superMissileLauncherO,
 .item-image.diffusionMissileDataF { background: url("images/placeholders.png") -600px -550px; }
-.item-image.superMissileLauncher { background: url("images/placeholders.png") -650px -550px; } /* `superMissile` */
+.item-image.superMissileLauncher { background: url("images/placeholders.png") -650px -550px; }
 .item-image.iceMissileF { background: url("images/placeholders.png") -700px -550px; }
 .item-image.iceMissileC { background: url("images/placeholders.png") -750px -550px; }
 .item-image.seekerLauncherO { background: url("images/placeholders.png") -800px -550px; }

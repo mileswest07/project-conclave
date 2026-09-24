@@ -466,7 +466,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeam",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 3,
@@ -507,7 +507,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeamA",
+        "id": "wideBeam",
         "name": "Wide Beam",
         "bg": "ffff80",
         "itemId": 8,
@@ -552,7 +552,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "name": "Speed Booster",
         "bg": "ff0094",
         "itemId": 14,
@@ -626,7 +626,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "name": "Screw Attack",
         "bg": "69cd69",
         "itemId": 24,

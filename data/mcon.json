@@ -293,7 +293,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeam",
         "name": "Charge Beam",
         "sprite": "charge",
         "bg": "808000",
@@ -318,7 +318,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -335,7 +335,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "wideBeamA",
+        "id": "wideBeam",
         "name": "Spazer Beam",
         "sprite": "wide",
         "bg": "ffff80",

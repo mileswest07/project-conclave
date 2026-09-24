@@ -430,7 +430,7 @@
         "nodeType": "expansion"
       },
       {
-        "id": "spiderBallA",
+        "id": "spiderBallR",
         "sprite": "spider",
         "name": "Spider Ball",
         "bg": "bca470",
@@ -438,7 +438,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "iceBeamA",
+        "id": "iceBeam",
         "sprite": "ice",
         "name": "Ice Beam",
         "bg": "2038ec",
@@ -471,7 +471,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "waveBeamA",
+        "id": "waveBeam",
         "sprite": "wave",
         "name": "Wave Beam",
         "bg": "92278f",
@@ -488,7 +488,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "wideBeamA",
+        "id": "wideBeam",
         "sprite": "wide",
         "name": "Spazer Beam",
         "bg": "ffff80",
@@ -506,7 +506,7 @@
         "slotType": "beam"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "sprite": "screw",
         "name": "Screw Attack",
         "bg": "69cd69",

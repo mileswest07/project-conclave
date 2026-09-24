@@ -295,7 +295,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "chargeBeamA",
+        "id": "chargeBeam",
         "name": "Charge Beam",
         "bg": "808000",
         "itemId": 4,

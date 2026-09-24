@@ -309,7 +309,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "speedBoosterA",
+        "id": "speedBooster",
         "name": "Speed Booster",
         "sprite": "speed",
         "bg": "ff0094",
@@ -431,7 +431,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "screwAttackA",
+        "id": "screwAttack",
         "name": "Screw Attack",
         "sprite": "screw",
         "bg": "69cd69",

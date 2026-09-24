@@ -22,7 +22,7 @@ let keyslots = {};
   
   const z1m1List = ["m", "z1"];
   const smz3List = ["s", "z3"];
-  const fangamesList = ["rd", "mc", "a", "t", "p2d", "n",];
+  const fangamesList = ["rd", "mc", "a", "t", "p2d", "mpo", "n",];
   const allMetroidList = ["m", "z", "p", "pb", "h", "e", "c", "ff", "b", "ros", "r", "s", "o", "f", "d"];
   const allZeldaList = ["z1", "z2", "z3"];
   const allCastlevaniaList = ["sotn"];
@@ -1481,7 +1481,7 @@ let keyslots = {};
     // console.log(foundStyleSheets);
     
     const skipGamesListForAll = [...nonstandardizedList];
-    const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mcon", "am2r", "mng", "mttne", "mpff"];
+    const skipGamesListForMZMItems = [...skipGamesListForAll, "mrd", "p2d", "mpo", "mcon", "am2r", "mng", "mttne", "mpff"];
     const skipGamesListForSprites = [...skipGamesListForAll];
     const skipGamesListForPlaceholders = [...skipGamesListForAll];
     

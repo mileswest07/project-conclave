@@ -1,0 +1,456 @@
+{
+  "mpo": {
+    "checklistLayouts": {
+      "5x6": [
+        {
+          "lookupId": 12,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Flaahgra Defeated"
+        },
+        {
+          "lookupId": 21,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Gravity Chamber"
+        },
+        {
+          "lookupId": 29,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Omega Pirate Defeated"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 3,
+          "value": 0,
+          "start": 1,
+          "max": 1
+        },
+        {
+          "lookupId": 5,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Hive Mecha Defeated"
+        },
+        {
+          "lookupId": 15,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Chapel of the Elders"
+        },
+        {
+          "lookupId": 20,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Antechamber"
+        },
+        {
+          "lookupId": 27,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Plasma Processing"
+        },
+        {
+          "lookupId": 17,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Research Core"
+        },
+        {
+          "lookupId": 16,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Observatory"
+        },
+        {
+          "lookupId": 19,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Tower of Light"
+        },
+        {
+          "lookupId": 25,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Magmoor Caverns - Shore Tunnel"
+        },
+        {
+          "lookupId": 28,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot A"
+        },
+        {
+          "lookupId": 8,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Ruined Shrine"
+        },
+        {
+          "lookupId": 10,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Incinerator Drone Defeated"
+        },
+        {
+          "lookupId": 13,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phendrana Drifts - Phendrana Canyon"
+        },
+        {
+          "lookupId": 18,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "F_Boss",
+          "overText": "Thardus Defeated"
+        },
+        {
+          "lookupId": 22,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Central Dynamo"
+        },
+        {
+          "lookupId": 9,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Chozo Ruins - Watery Hall"
+        },
+        {
+          "lookupId": 14,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Alcove"
+        },
+        {
+          "lookupId": 24,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Phazon Mines - Storage Depot B"
+        },
+        {
+          "lookupId": 26,
+          "value": 1,
+          "start": 0,
+          "max": 1,
+          "over": "Z_Orb",
+          "overText": "Tallon Overworld - Life Grove"
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 7,
+          "value": 1,
+          "start": 0,
+          "max": 14
+        },
+        {
+          "lookupId": 6,
+          "value": 1,
+          "start": 0,
+          "max": 49
+        },
+        {
+          "lookupId": 23,
+          "value": 1,
+          "start": 0,
+          "max": 4
+        },
+        {
+          "id": "-"
+        },
+        {
+          "lookupId": 30,
+          "value": 1,
+          "start": 0,
+          "max": 12,
+          "over": "Z_Chozo",
+          "overText": "Hints Acquired"
+        }
+      ]
+    },
+    "defaultLayout": "5x6",
+    "items": [
+      {
+        "id": "powerBeam",
+        "name": "Power Beam",
+        "sprite": "power",
+        "bg": "ffb508",
+        "itemId": 3,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileLauncher",
+        "name": "Missile Launcher",
+        "sprite": "missile",
+        "bg": "d82800",
+        "itemId": 5,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "missileTank",
+        "name": "Missile Expansions",
+        "sprite": "missileExp",
+        "alreadyHasMainItem": true,
+        "singleItemName": "Missile Expansion",
+        "bg": "d82800",
+        "itemId": 6,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "energyTankP",
+        "name": "Energy Tanks",
+        "singleItemName": "Energy Tank",
+        "sprite": "energy",
+        "bg": "78a4bc",
+        "itemId": 7,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "morphBall",
+        "name": "Morph Ball",
+        "sprite": "morph",
+        "bg": "d8a480",
+        "itemId": 8,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "chargeBeamP",
+        "name": "Charge Beam",
+        "sprite": "charge",
+        "bg": "808000",
+        "itemId": 9,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "bombP",
+        "name": "Bombs",
+        "sprite": "bomb",
+        "bg": "3800a8",
+        "itemId": 10,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "springBallA",
+        "name": "Spring Ball",
+        "bg": "3800a8",
+        "itemId": 11,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "barrierSuitB",
+        "name": "Varia Suit",
+        "sprite": "barrier",
+        "bg": "ff7e00",
+        "itemId": 12,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "boostBall",
+        "name": "Boost Ball",
+        "sprite": "boost",
+        "bg": "ff0094",
+        "itemId": 13,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spaceJumpBoots",
+        "name": "Space Jump Boots",
+        "sprite": "jump",
+        "bg": "00a0e0",
+        "itemId": 14,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "waveBeam",
+        "name": "Wave Beam",
+        "sprite": "wave",
+        "bg": "6f3198",
+        "itemId": 15,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "superMissileLauncher",
+        "name": "Super Missile",
+        "sprite": "super",
+        "bg": "ffb508",
+        "itemId": 16,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wideBeam",
+        "name": "Spazer",
+        "sprite": "wide",
+        "bg": "ffff80",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "spiderBallP",
+        "name": "Spider Ball",
+        "sprite": "spider",
+        "bg": "007f0e",
+        "itemId": 18,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "wavebusterMPO",
+        "name": "Wavebuster",
+        "sprite": "buster",
+        "bg": "6f3198",
+        "itemId": 19,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "iceBeam",
+        "name": "Ice Beam",
+        "sprite": "ice",
+        "bg": "2038ec",
+        "itemId": 20,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "gravitySuitA",
+        "name": "Gravity Suit",
+        "sprite": "gravity",
+        "bg": "602880",
+        "itemId": 21,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBomb",
+        "name": "Power Bomb Detonator",
+        "sprite": "pbomb",
+        "bg": "98b830",
+        "itemId": 22,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "powerBombTank",
+        "name": "Power Bomb Expansions",
+        "alreadyHasMainItem": true,
+        "singleItemName": "Power Bomb Expansion",
+        "sprite": "pbe",
+        "bg": "98b830",
+        "itemId": 23,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "grappleBeam",
+        "name": "Grapple Beam",
+        "sprite": "grapple",
+        "bg": "00e8d8",
+        "itemId": 24,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "iceSpreaderMPO",
+        "name": "Ice Spreader",
+        "sprite": "spreader",
+        "bg": "2038ec",
+        "itemId": 25,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "screwAttack",
+        "name": "Screw Attack",
+        "sprite": "screw",
+        "bg": "69cd69",
+        "itemId": 26,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "plasmaBeam",
+        "name": "Plasma Beam",
+        "sprite": "plasma",
+        "bg": "ff4a4a",
+        "itemId": 27,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "incinerator",
+        "name": "Incinerator",
+        "sprite": "incin",
+        "bg": "ff4a4a",
+        "itemId": 28,
+        "nodeType": "expansion"
+      },
+      {
+        "id": "phazonSuit",
+        "name": "Phazon Suit",
+        "sprite": "phazon",
+        "bg": "282018",
+        "itemId": 29,
+        "nodeType": "upgrade"
+      },
+      {
+        "id": "birdArtifact",
+        "name": "Chozo Artifacts",
+        "singleItemName": "Artifact",
+        "sprite": "artifact",
+        "bg": "008080",
+        "itemId": 30,
+        "nodeType": "artifact"
+      }
+    ],
+    "bosses": [],
+    "areas": [],
+    "extras": [],
+    "mapTree": [
+      {
+        "hubId": 1,
+        "nodeType": "start",
+        "mapId": 1,
+        "children": []
+      }
+    ],
+    "grid": "mp_grid.png"
+  }
+}

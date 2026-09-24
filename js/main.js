@@ -20,6 +20,7 @@ let main = {
     "p": "mp", // Metroid Prime
     "pb": "pb", // Metroid Prime Pinball
     "p2d": "p2d", // Prime 2D
+    "mpo": "mpo", // Metroid Prime Origins
     "h": "ph", // Metroid Prime Hunters
     "e": "mp2e", // Metroid Prime 2: Echoes
     "c": "mp3c", // Metroid Prime 3: Corruption

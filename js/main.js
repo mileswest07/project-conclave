@@ -76,6 +76,24 @@ let main = {
   }
   
   /*
+    Debugging function to search for item by ID
+    and if it is found and used, output which game it's used in.
+    Requires hardcoded value to search against.
+
+    @param itemId Name of item to find
+    @param currentGame Current game to output
+  */
+  function signifyIfItemUsed(itemId, currentGame) {
+    const checkAgainst = ""; // hard-code the checking value here
+    if (checkAgainst === '') {
+      return;
+    }
+    if (itemId === checkAgainst) {
+      console.debug(`>> Found item ${itemId} in game ${currentGame}`);
+    }
+  }
+
+  /*
     Utility function. Checks against a hardcoded list of gameIDs and if it qualifies, it will
     add a value to a Set added as parameters.
     
@@ -86,6 +104,7 @@ let main = {
   function addItemToSetIfGameNotInList(itemSet, currentGame, addThisValue) {
     if (!["thf", "aol", "alttp", "sotn"].includes(currentGame) && !["unused", "empty", "none", "_____"].includes(addThisValue)) {
       itemSet.add(addThisValue);
+      signifyIfItemUsed(addThisValue, currentGame);
     }
   }
   

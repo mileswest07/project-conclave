@@ -254,10 +254,6 @@
           "max": 3
         },
         {
-          "id": "-",
-          "clearIfScramble": true
-        },
-        {
           "lookupId": 35,
           "value": 1,
           "start": 0,
@@ -271,8 +267,7 @@
           "value": 0,
           "start": 0,
           "max": 1,
-          "bg": "ce6665",
-          "displayIfScramble": true
+          "bg": "ce6665"
         }
       ]
     },

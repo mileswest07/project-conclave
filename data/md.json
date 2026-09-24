@@ -934,45 +934,52 @@
         "nodeType": "event"
       },
       {
-        "id": "teleportalPurple",
-        "name": "Purple Teleportal",
+        "id": "unused",
+        "name": "Teleportal Purple",
         "extraId": 1031,
+        "bg": "8800ff",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalBlue",
-        "name": "Blue Teleportal",
+        "id": "unused",
+        "name": "Teleportal Blue",
         "extraId": 1032,
+        "bg": "0000ff",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalCyan",
-        "name": "Cyan Teleportal",
+        "id": "unused",
+        "name": "Teleportal Cyan",
         "extraId": 1033,
+        "bg": "00ffff",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalGreen",
-        "name": "Green Teleportal",
+        "id": "unused",
+        "name": "Teleportal Green",
         "extraId": 1034,
+        "bg": "00ff00",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalYellow",
-        "name": "Yellow Teleportal",
+        "id": "unused",
+        "name": "Teleportal Yellow",
         "extraId": 1035,
+        "bg": "ffff00",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalOrange",
-        "name": "Orange Teleportal",
+        "id": "unused",
+        "name": "Teleportal Orange",
         "extraId": 1036,
+        "bg": "ff8800",
         "nodeType": "teleport"
       },
       {
-        "id": "teleportalRed",
-        "name": "Red Teleportal",
+        "id": "unused",
+        "name": "Teleportal Red",
         "extraId": 1037,
+        "bg": "ff0000",
         "nodeType": "teleport"
       },
       {

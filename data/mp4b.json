@@ -45,7 +45,7 @@
           "max": 2,
           "segments": [
             {
-              "lookupId": 17,
+              "lookupId": 18,
               "value": 0,
               "start": 0,
               "max": 1
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "lookupId": 19,
+          "lookupId": 17,
           "value": 0,
           "start": 0,
           "max": 1
@@ -275,7 +275,7 @@
           "max": 14
         },
         {
-          "lookupId": 18,
+          "lookupId": 19,
           "value": 0,
           "start": 0,
           "max": 48
@@ -430,7 +430,7 @@
           "max": 1
         },
         {
-          "lookupId": 17,
+          "lookupId": 18,
           "value": 0,
           "start": 0,
           "max": 1
@@ -481,7 +481,7 @@
           "max": 1
         },
         {
-          "lookupId": 19,
+          "lookupId": 17,
           "value": 0,
           "start": 0,
           "max": 1
@@ -528,7 +528,7 @@
           "max": 14
         },
         {
-          "lookupId": 18,
+          "lookupId": 19,
           "value": 0,
           "start": 0,
           "max": 48
@@ -694,10 +694,17 @@
         "nodeType": "expansion"
       },
       {
+        "id": "psychicGlove",
+        "name": "Psychic Glove",
+        "bg": "fcc4d8",
+        "itemId": 17,
+        "nodeType": "upgrade"
+      },
+      {
         "id": "missileLauncherB",
         "name": "Missile Launcher",
         "bg": "d82800",
-        "itemId": 17,
+        "itemId": 18,
         "nodeType": "upgrade"
       },
       {
@@ -705,15 +712,8 @@
         "name": "Missile Expansions",
         "singleItemName": "Missile Expansion",
         "bg": "d82800",
-        "itemId": 18,
-        "nodeType": "expansion"
-      },
-      {
-        "id": "psychicGlove",
-        "name": "Psychic Glove",
-        "bg": "fcc4d8",
         "itemId": 19,
-        "nodeType": "upgrade"
+        "nodeType": "expansion"
       },
       {
         "id": "controlBeamA",
@@ -919,7 +919,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "powerBombB",
+        "id": "powerBombF",
         "name": "Psychic Power Bomb",
         "bg": "98b830",
         "itemId": 50,

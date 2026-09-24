@@ -2,16 +2,18 @@
 
 .item-image,
 .item-image.unused { background: url("images/placeholders.png") 0 0; }
-.item-image.samus { background: url("images/placeholders.png") -50px 0; } /* will only be needed for randomizer start point mark */
+.item-image.samus { background: url("images/placeholders.png") -50px 0; } /* unused */
 .item-image.starshipZ { background: url("images/placeholders.png") -100px 0; }
 .item-image.gunshipP { background: url("images/placeholders.png") -150px 0; }
 .item-image.gunshipS { background: url("images/placeholders.png") -200px 0; }
 .item-image.gunshipC { background: url("images/placeholders.png") -250px 0; }
 .item-image.starshipF { background: url("images/placeholders.png") -300px 0; }
-.item-image.nothing { background: url("images/placeholders.png") -350px 0; } /* rando only item */
-.item-image.itemOrb { background: url("images/placeholders.png") -400px 0; } /* rando only item */
-.item-image.itemCube { background: url("images/placeholders.png") -450px 0; } /* rando only item */
-.item-image.randomizer { background: url("images/placeholders.png") -500px 0; } /* rando only item */
+.item-image.nothing { background: url("images/placeholders.png") -350px 0; } /* unused */
+.item-image.itemOrb { background: url("images/placeholders.png") -400px 0; } /* unused */
+.item-image.itemCube { background: url("images/placeholders.png") -450px 0; } /* unused */
+.item-image.randomizer { background: url("images/placeholders.png") -500px 0; } /* unused */
+
+/* ----- ----- */
 
 .item-image.morphBall { background: url("images/placeholders.png") 0 -50px; }
 .item-image.bombA { background: url("images/placeholders.png") -50px -50px; }
@@ -30,7 +32,7 @@
 .item-image.powerBombPR,
 .item-image.powerBombB { background: url("images/placeholders.png") -650px -50px; } /* alternative to replace powerBombExpB */
 .item-image.powerBombD { background: url("images/placeholders.png") -700px -50px; }
-.item-image.powerBombF { background: url("images/placeholders.png") -750px -50px; } /* might still be useful; for B main item only */
+.item-image.powerBombF { background: url("images/placeholders.png") -750px -50px; }
 .item-image.powerBombTank { background: url("images/placeholders.png") -800px -50px; }
 .item-image.powerBombExpP { background: url("images/placeholders.png") -850px -50px; }
 .item-image.powerBombExpE { background: url("images/placeholders.png") -900px -50px; }
@@ -68,8 +70,8 @@
 .item-image.iceBeamB { background: url("images/placeholders.png") -750px -150px; }
 .item-image.wideBeamA { background: url("images/placeholders.png") -800px -150px; }
 .item-image.wideBeamF { background: url("images/placeholders.png") -850px -150px; }
-.item-image.wideBeamR,
-.item-image.waveBeamC { background: url("images/placeholders.png") -900px -150px; } /* unneeded redundancy? */
+.item-image.waveBeamC, /* unused */
+.item-image.wideBeamR { background: url("images/placeholders.png") -900px -150px; }
 .item-image.waveBeamA { background: url("images/placeholders.png") -950px -150px; }
 .item-image.waveBeamF { background: url("images/placeholders.png") -1000px -150px; }
 .item-image.waveBeamO { background: url("images/placeholders.png") -1050px -150px; }
@@ -82,15 +84,15 @@
 .item-image.plasmaBeamB { background: url("images/placeholders.png") -200px -200px; }
 .item-image.novaBeam { background: url("images/placeholders.png") -250px -200px; }
 .item-image.darkBeam { background: url("images/placeholders.png") -300px -200px; }
-.item-image.darkBeamE { background: url("images/placeholders.png") -350px -200px; } /* pickup form */
+.item-image.darkBeamE { background: url("images/placeholders.png") -350px -200px; } /* unused */
 .item-image.lightBeam { background: url("images/placeholders.png") -400px -200px; }
-.item-image.lightBeamE { background: url("images/placeholders.png") -450px -200px; } /* pickup form */
+.item-image.lightBeamE { background: url("images/placeholders.png") -450px -200px; } /* unused */
 .item-image.annihilatorBeam { background: url("images/placeholders.png") -500px -200px; }
-.item-image.annihilatorBeamE { background: url("images/placeholders.png") -550px -200px; } /* pickup form */
+.item-image.annihilatorBeamE { background: url("images/placeholders.png") -550px -200px; } /* unused */
 .item-image.diffusionBeamD { background: url("images/placeholders.png") -600px -200px; }
-.item-image.hyperBeamS { background: url("images/placeholders.png") -650px -200px; } /* endgame item only */
+.item-image.hyperBeamS { background: url("images/placeholders.png") -650px -200px; } /* unused */
 .item-image.omegaCannonD { background: url("images/placeholders.png") -700px -200px; }
-.item-image.emergencyPistol { background: url("images/placeholders.png") -750px -200px; } /* ZM event item only; might combine with other? */
+.item-image.emergencyPistol { background: url("images/placeholders.png") -750px -200px; } /* unused */
 .item-image.psychicBeamA { background: url("images/placeholders.png") -800px -200px; }
 .item-image.psychicBeamB { background: url("images/placeholders.png") -850px -200px; }
 
@@ -141,15 +143,15 @@
 .item-image.darkVisor { background: url("images/placeholders.png") -550px -350px; }
 .item-image.echoVisor { background: url("images/placeholders.png") -600px -350px; }
 .item-image.commandVisor { background: url("images/placeholders.png") -650px -350px; }
-.item-image.violetTranslatorA { background: url("images/placeholders.png") -700px -350px; } /* might be good en_US fallback? */
+.item-image.violetTranslatorA { background: url("images/placeholders.png") -700px -350px; } /* unused */
 .item-image.violetTranslator { background: url("images/placeholders.png") -750px -350px; }
-.item-image.amberTranslatorA { background: url("images/placeholders.png") -800px -350px; } /* might be good en_US fallback? */
+.item-image.amberTranslatorA { background: url("images/placeholders.png") -800px -350px; } /* unused */
 .item-image.amberTranslator { background: url("images/placeholders.png") -850px -350px; }
-.item-image.emeraldTranslatorA { background: url("images/placeholders.png") -900px -350px; } /* might be good en_US fallback? */
+.item-image.emeraldTranslatorA { background: url("images/placeholders.png") -900px -350px; } /* unused */
 .item-image.emeraldTranslator { background: url("images/placeholders.png") -950px -350px; }
-.item-image.cobaltTranslatorA { background: url("images/placeholders.png") -1000px -350px; } /* might be good en_US fallback? */
+.item-image.cobaltTranslatorA { background: url("images/placeholders.png") -1000px -350px; } /* unused */
 .item-image.cobaltTranslator { background: url("images/placeholders.png") -1050px -350px; }
-.item-image.thermalPositioner { background: url("images/placeholders.png") -1100px -350px; } /* H inventory item only; unsure if necessary, verify with rando team */
+.item-image.thermalPositioner { background: url("images/placeholders.png") -1100px -350px; } /* unused */
 
 .item-image.energyTank { background: url("images/placeholders.png") 0 -400px; }
 .item-image.energyTankP { background: url("images/placeholders.png") -50px -400px; }
@@ -160,7 +162,7 @@
 .item-image.reserveTank { background: url("images/placeholders.png") -300px -400px; }
 .item-image.erecoveryTank { background: url("images/placeholders.png") -350px -400px; }
 .item-image.magneticShieldTank { background: url("images/placeholders.png") -400px -400px; }
-.item-image.magneticShield { background: url("images/placeholders.png") -450px -400px; } /* main item; currently no usage */
+.item-image.magneticShield { background: url("images/placeholders.png") -450px -400px; } /* unused */
 .item-image.phantomCloak { background: url("images/placeholders.png") -500px -400px; }
 
 .item-image.suitUpgradeP { background: url("images/placeholders.png") 0 -450px; }
@@ -175,13 +177,13 @@
 .item-image.gravitySuitD { background: url("images/placeholders.png") -350px -450px; }
 .item-image.zeroSuitA { background: url("images/placeholders.png") -400px -450px; }
 .item-image.zeroSuitB { background: url("images/placeholders.png") -450px -450px; }
-.item-image.fusionDataPort { background: url("images/placeholders.png") -500px -450px; } /* UNUSED; currently used as stand-in for fusionSuit; propose for deletion or consolidation */
+.item-image.fusionDataPort { background: url("images/placeholders.png") -500px -450px; } /* unused */
 .item-image.phazonSuit,
 .item-image.corruptedHypermode { background: url("images/placeholders.png") -550px -450px; }
 .item-image.lightSuit { background: url("images/placeholders.png") -600px -450px; }
 .item-image.pedSuit { background: url("images/placeholders.png") -650px -450px; }
 .item-image.hazardShield { background: url("images/placeholders.png") -700px -450px; }
-.item-image.monsterSuit { background: url("images/placeholders.png") -750px -450px; } /* endgame item only */
+.item-image.monsterSuit { background: url("images/placeholders.png") -750px -450px; } /* unused */
 .item-image.nanoSuit { background: url("images/placeholders.png") -800px -450px; }
 .item-image.nanoICSuit { background: url("images/placeholders.png") -850px -450px; }
 .item-image.legacySuit { background: url("images/placeholders.png") -900px -450px; }
@@ -194,7 +196,7 @@
 .game-scramble .item-image.missileLauncherPR,
 .item-image.missileExpansionPR,
 .item-image.missileLauncherP { background: url("images/placeholders.png") -100px -500px; }
-.item-image.missileLauncher { background: url("images/placeholders.png") -150px -500px; } /* standardized icon; currently no usage */
+.item-image.missileLauncher { background: url("images/placeholders.png") -150px -500px; } /* unused */
 .item-image.missileLauncherPR,
 .item-image.missileLauncherB { background: url("images/placeholders.png") -200px -500px; }
 .item-image.missileLauncherH { background: url("images/placeholders.png") -250px -500px; }
@@ -244,7 +246,7 @@
 .item-image.spaceJump { background: url("images/placeholders.png") -300px -550px; }
 .item-image.screwAttackA { background: url("images/placeholders.png") -350px -550px; }
 .item-image.screwAttackE { background: url("images/placeholders.png") -400px -550px; }
-.item-image.jumpBoots { background: url("images/placeholders.png") -450px -550px; } /* H inventory item only; unsure if necessary, verify with rando team */
+.item-image.jumpBoots { background: url("images/placeholders.png") -450px -550px; } /* unused */
 .item-image.speedBoosterA { background: url("images/placeholders.png") -500px -550px; }
 .item-image.speedBoosterO { background: url("images/placeholders.png") -550px -550px; }
 .item-image.flashShift { background: url("images/placeholders.png") -600px -550px; }
@@ -277,7 +279,6 @@
 .item-image.unknownBeam { background: url("images/placeholders.png") -250px -650px; }
 .item-image.unknownJump { background: url("images/placeholders.png") -300px -650px; }
 .item-image.unknownSuit { background: url("images/placeholders.png") -350px -650px; }
-.item-image.birdArtifact,
 .item-image.artifactBird,
 .item-image.artifactElder,
 .item-image.artifactLifegiver,
@@ -289,7 +290,8 @@
 .item-image.artifactTruth,
 .item-image.artifactWarrior,
 .item-image.artifactWild,
-.item-image.artifactWorld { background: url("images/placeholders.png") -400px -650px; }
+.item-image.artifactWorld,
+.item-image.birdArtifact { background: url("images/placeholders.png") -400px -650px; }
 .item-image.energyTransferModule { background: url("images/placeholders.png") -450px -650px; }
 .item-image.darkAgonKey { background: url("images/placeholders.png") -500px -650px; } /* might need to adjust for language-agnostic icon */
 .item-image.darkTorvusKey { background: url("images/placeholders.png") -550px -650px; } /* might need to adjust for language-agnostic icon */
@@ -307,8 +309,8 @@
 .item-image.alimbicArtifactArc2 { background: url("images/placeholders.png") -400px -700px; }
 .item-image.octolith { background: url("images/placeholders.png") -450px -700px; }
 .item-image.massiveDamage { background: url("images/placeholders.png") -500px -700px; } /* E multiplayer and rando only; uses FH icon; propose to replace with better representation */
-.item-image.doubleDamage { background: url("images/placeholders.png") -550px -700px; } /* H multiplayer only; unsure if necessary, verify with rando team */
-.item-image.invisibility { background: url("images/placeholders.png") -600px -700px; } /* H multiplayer only; unsure if necessary, verify with rando team */
+.item-image.doubleDamage { background: url("images/placeholders.png") -550px -700px; } /* unused */
+.item-image.invisibility { background: url("images/placeholders.png") -600px -700px; } /* unused */
 
 .item-image.theronianBomb { background: url("images/placeholders.png") 0 -750px; }
 .item-image.birdObservatoryCargo { background: url("images/placeholders.png") -50px -750px; }
@@ -330,9 +332,9 @@
 .item-image.ffdecoy { background: url("images/placeholders.png") -250px -800px; } /* used for tracker only */
 .item-image.ffslowBeam { background: url("images/placeholders.png") -300px -800px; } /* used for tracker only */
 .item-image.ffscanBolt { background: url("images/placeholders.png") -350px -800px; } /* used for tracker only */
-.item-image.modChip { background: url("images/placeholders.png") -400px -800px; } /* used for explorer only */
+.item-image.modChip { background: url("images/placeholders.png") -400px -800px; } /* unused */
 .item-image.goldMedal { background: url("images/placeholders.png") -450px -800px; } /* used for tracker only */
-.item-image.missileKey { background: url("images/placeholders.png") -500px -800px; } /* used for explorer only */
+.item-image.missileKey { background: url("images/placeholders.png") -500px -800px; } /* unused */
 
 .item-image.psychicCrystal { background: url("images/placeholders.png") 0 -850px; }
 .item-image.teleporterKey { background: url("images/placeholders.png") -50px -850px; }
@@ -358,37 +360,37 @@
 .item-image.fireSuper { background: url("images/placeholders.png") -950px -850px; }
 .item-image.iceSuper { background: url("images/placeholders.png") -1000px -850px; }
 .item-image.thunderSuper { background: url("images/placeholders.png") -1050px -850px; }
-.item-image.bikeBoost { background: url("images/placeholders.png") -1100px -850px; } /* used for explorer only */
-.item-image.bikeSlide { background: url("images/placeholders.png") -1150px -850px; } /* used for explorer only */
-.item-image.bikeProjectile { background: url("images/placeholders.png") -1200px -850px; } /* used for explorer only */
+.item-image.bikeBoost { background: url("images/placeholders.png") -1100px -850px; } /* unused */
+.item-image.bikeSlide { background: url("images/placeholders.png") -1150px -850px; } /* unused */
+.item-image.bikeProjectile { background: url("images/placeholders.png") -1200px -850px; } /* unused */
 
 .item-image.powerOrb { background: url("images/placeholders.png") 0 -900px; } /* might be door key or event label; propose for investigation and possible deletion */
 .item-image.monster { background: url("images/placeholders.png") -50px -900px; }
 .item-image.dna { background: url("images/placeholders.png") -100px -900px; } /* used for explorer only */
 .item-image.monsterDna { background: url("images/placeholders.png") -150px -900px; }
 .item-image.animals { background: url("images/placeholders.png") -200px -900px; } /* used for tracker only */
-.item-image.bossKeycard { background: url("images/placeholders.png") -250px -900px; } /* rando only item */
-.item-image.regionKeycard1 { background: url("images/placeholders.png") -300px -900px; } /* rando only item */
-.item-image.regionKeycard2 { background: url("images/placeholders.png") -350px -900px; } /* rando only item */
+.item-image.bossKeycard { background: url("images/placeholders.png") -250px -900px; } /* unused */
+.item-image.regionKeycard1 { background: url("images/placeholders.png") -300px -900px; } /* unused */
+.item-image.regionKeycard2 { background: url("images/placeholders.png") -350px -900px; } /* unused */
 .item-image.kraid { background: url("images/placeholders.png") -400px -900px; } /* rando only item */
 .item-image.ridley { background: url("images/placeholders.png") -450px -900px; } /* rando only item */
-.item-image.phantoon { background: url("images/placeholders.png") -500px -900px; } /* rando only item */
-.item-image.draygon { background: url("images/placeholders.png") -550px -900px; } /* rando only item */
+.item-image.phantoon { background: url("images/placeholders.png") -500px -900px; } /* unused */
+.item-image.draygon { background: url("images/placeholders.png") -550px -900px; } /* unused */
 
 .item-image.graySecurity { background: url("images/placeholders.png") 0 -950px; }
 .item-image.blueSecurity { background: url("images/placeholders.png") -50px -950px; }
 .item-image.greenSecurity { background: url("images/placeholders.png") -100px -950px; }
 .item-image.yellowSecurity { background: url("images/placeholders.png") -150px -950px; }
 .item-image.redSecurity { background: url("images/placeholders.png") -200px -950px; }
-.item-image.atmoStabilizer { background: url("images/placeholders.png") -250px -950px; } /* used for explorer only */
+.item-image.atmoStabilizer { background: url("images/placeholders.png") -250px -950px; } /* unused */
 .item-image.aquadiaKeycard { background: url("images/placeholders.png") -300px -950px; }
 .item-image.steelarisGear { background: url("images/placeholders.png") -350px -950px; }
-.item-image.mapStation { background: url("images/placeholders.png") -400px -950px; } /* rando only item; all other usages should be text label only */
-.item-image.teleportalRed { background: url("images/placeholders.png") -450px -950px; } /* used for explorer only */
-.item-image.teleportalPurple { background: url("images/placeholders.png") -500px -950px; } /* used for explorer only */
-.item-image.teleportalYellow { background: url("images/placeholders.png") -550px -950px; } /* used for explorer only */
-.item-image.teleportalGreen { background: url("images/placeholders.png") -600px -950px; } /* used for explorer only */
-.item-image.teleportalBlue { background: url("images/placeholders.png") -650px -950px; } /* used for explorer only */
-.item-image.teleportalCyan { background: url("images/placeholders.png") -700px -950px; } /* used for explorer only */
-.item-image.teleportalOrange { background: url("images/placeholders.png") -750px -950px; } /* used for explorer only */
+.item-image.mapStation { background: url("images/placeholders.png") -400px -950px; } /* unused */
+.item-image.teleportalRed { background: url("images/placeholders.png") -450px -950px; } /* unused */
+.item-image.teleportalPurple { background: url("images/placeholders.png") -500px -950px; } /* unused */
+.item-image.teleportalYellow { background: url("images/placeholders.png") -550px -950px; } /* unused */
+.item-image.teleportalGreen { background: url("images/placeholders.png") -600px -950px; } /* unused */
+.item-image.teleportalBlue { background: url("images/placeholders.png") -650px -950px; } /* unused */
+.item-image.teleportalCyan { background: url("images/placeholders.png") -700px -950px; } /* unused */
+.item-image.teleportalOrange { background: url("images/placeholders.png") -750px -950px; } /* unused */
 

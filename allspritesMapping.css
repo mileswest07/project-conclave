@@ -163,7 +163,7 @@
 .game-mzm .usesAllSprites .item-image.gravity,
 .game-msr .usesAllSprites .item-image.gravity,
 .game-sm .usesAllSprites .item-image.gravity,
-.game-mom .usesAllSprites .item-image.gravitySuitA,
+.game-mom .usesAllSprites .item-image.gravitySuit,
 .game-mf .usesAllSprites .item-image.gravity,
 .game-md .usesAllSprites .item-image.gravitySuitD { background: url("images/mzm_full_spritesheet.png") 0 -126px; }
 .game-mf .usesAllSprites .item-image.energy { background: url("images/mzm_full_spritesheet.png") -42px -126px; }

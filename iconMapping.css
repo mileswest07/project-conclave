@@ -60,10 +60,10 @@
 .item-image.zeroSuitB { background: url("images/placeholders.png") -50px -250px; }
 .item-image.fullPowerSuit { background: url("images/placeholders.png") -100px -250px; } /* triple-check to see that all respellings are lined up */
 .item-image.suitUpgradeP { background: url("images/placeholders.png") -150px -250px; }
-.item-image.barrierSuitA, /* could promote to main? */
+.item-image.barrierSuitA,
 .item-image.barrierSuitB { background: url("images/placeholders.png") -200px -250px; }
 .item-image.barrierSuitD { background: url("images/placeholders.png") -250px -250px; }
-.item-image.gravitySuitA { background: url("images/placeholders.png") -300px -250px; } /* could promote to main? */
+.item-image.gravitySuit { background: url("images/placeholders.png") -300px -250px; }
 .item-image.gravityBoost { background: url("images/placeholders.png") -350px -250px; }
 .item-image.gravitySuitD { background: url("images/placeholders.png") -400px -250px; }
 .item-image.phazonSuit,

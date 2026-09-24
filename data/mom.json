@@ -418,7 +418,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "name": "Gravity Feature",
         "bg": "602880",
         "itemId": 20,

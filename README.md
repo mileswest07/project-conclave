@@ -57,6 +57,7 @@ Fangames and notable ROMhacks:
 - Metroid: The Threat Never Ends (by u/Kelly_Crystal)
 - Prime 2D (by Team SCU)
 - ZIIAOL (by Hoverbat)
+- Metroid Prime Origins (by Lv.4 WALL)
 
 Randomizers, Multiworlds, and Crossrandomizers:
 
@@ -92,6 +93,7 @@ Code was all written by me. All assets and code may be used for non-profit purpo
 * Randovania: Darkszero and team
 * AM2R: DoctorM64, team, and continuation team
 * ZIIAOL: HoverBat and team
+* Metroid Prime Origins: Lv.4 Wall and team
 * All randomizers: their respective teams
 
 All Metroid game graphics (with exception of fangames and derivative works) and Zelda Minish Cap graphics were made and owned by Nintendo Co., Ltd., Mercury Steam Entertainment S.L., and Capcom Co., Ltd., respectively. Graphics were ripped by me, and are used here without express permission and without intent to profit.
@@ -103,6 +105,8 @@ Rogue Dawn graphics were made by the Rogue Dawn creators, ripped by me, and are 
 AM2R graphics were made by the AM2R continuation team, ripped by me, and are used here without express permission and without intent to profit.
 
 Prime 2D graphics were made by Team SCU, ripped by me (admittedly not very cleanly), and are used here without express permission and without intent to profit.
+
+Metroid Prime Origins graphics were made by the respective team, led by Lv.4 Wall, ripped by me, and are used here without express permission and without intent to profit.
 
 All custom-made Metroid: Zero Mission-style sprites were custom-made by Miles07 and Ridleymaster, intending to mimic or approximate an officially-owned graphical style (i.e. Nintendo's Metroid: Zero Mission graphical style) without intent to profit. The sprite sheet in its fullest is publicly available on the Spriter's Resource website.
 

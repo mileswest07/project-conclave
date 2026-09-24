@@ -185,6 +185,34 @@
 .game-p2d .usesSprite .item-image.scan { background: url("images/p2d_spritesheet.png") -84px -84px; }
 .game-p2d .usesSprite .item-image.scanPoint { background: url("images/p2d_spritesheet.png") -126px -84px; }
 
+/********* MPO - METROID PRIME ORIGINS (PC) *********/
+.game-mpo .usesSprite .item-image.missile,
+.game-mpo .usesSprite .item-image.missileExp { background: url("images/mpo_spritesheet.png") 0 0; }
+.game-mpo .usesSprite .item-image.morph { background: url("images/mpo_spritesheet.png") -42px 0; }
+.game-mpo .usesSprite .item-image.barrier { background: url("images/mpo_spritesheet.png") -84px 0; }
+.game-mpo .usesSprite .item-image.wide { background: url("images/mpo_spritesheet.png") -126px 0; }
+.game-mpo .usesSprite .item-image.screw { background: url("images/mpo_spritesheet.png") -168px 0; }
+.game-mpo .usesSprite .item-image.charge { background: url("images/mpo_spritesheet.png") 0 -42px; }
+.game-mpo .usesSprite .item-image.bomb { background: url("images/mpo_spritesheet.png") -42px -42px; }
+.game-mpo .usesSprite .item-image.boost { background: url("images/mpo_spritesheet.png") -84px -42px; }
+.game-mpo .usesSprite .item-image.spider { background: url("images/mpo_spritesheet.png") -126px -42px; }
+.game-mpo .usesSprite .item-image.spreader { background: url("images/mpo_spritesheet.png") -168px -42px; }
+.game-mpo .usesSprite .item-image.jump { background: url("images/mpo_spritesheet.png") 0 -84px; }
+.game-mpo .usesSprite .item-image.wave { background: url("images/mpo_spritesheet.png") -42px -84px; }
+.game-mpo .usesSprite .item-image.super { background: url("images/mpo_spritesheet.png") -84px -84px; }
+.game-mpo .usesSprite .item-image.buster { background: url("images/mpo_spritesheet.png") -126px -84px; }
+.game-mpo .usesSprite .item-image.plasma { background: url("images/mpo_spritesheet.png") -168px -84px; }
+.game-mpo .usesSprite .item-image.ice { background: url("images/mpo_spritesheet.png") 0 -126px; }
+.game-mpo .usesSprite .item-image.gravity { background: url("images/mpo_spritesheet.png") -42px -126px; }
+.game-mpo .usesSprite .item-image.pbomb,
+.game-mpo .usesSprite .item-image.pbe { background: url("images/mpo_spritesheet.png") -84px -126px; }
+.game-mpo .usesSprite .item-image.grapple { background: url("images/mpo_spritesheet.png") -126px -126px; }
+.game-mpo .usesSprite .item-image.incin { background: url("images/mpo_spritesheet.png") -168px -126px; }
+.game-mpo .usesSprite .item-image.phazon { background: url("images/mpo_spritesheet.png") 0 -168px; }
+.game-mpo .usesSprite .item-image.artifact { background: url("images/mpo_spritesheet.png") -42px -168px; }
+.game-mpo .usesSprite .item-image.energy { background: url("images/mpo_spritesheet.png") -84px -168px; }
+.game-mpo .usesSprite .item-image.power { background: url("images/mpo_spritesheet.png") -126px -168px; }
+
 /********* MPH - METROID PRIME: HUNTERS (DS) *********/
 .game-ph .usesAllSprites .item-image,
 .game-ph .usesAllSprites.trimmed .item-image,

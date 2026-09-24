@@ -63,7 +63,7 @@
 .item-image.barrierSuitA,
 .item-image.barrierSuitB { background: url("images/placeholders.png") -200px -250px; }
 .item-image.barrierSuitD { background: url("images/placeholders.png") -250px -250px; }
-.item-image.gravitySuitA { background: url("images/placeholders.png") -300px -250px; }
+.item-image.gravitySuit { background: url("images/placeholders.png") -300px -250px; }
 .item-image.gravityBoost { background: url("images/placeholders.png") -350px -250px; }
 .item-image.gravitySuitD { background: url("images/placeholders.png") -400px -250px; }
 .item-image.phazonSuit,

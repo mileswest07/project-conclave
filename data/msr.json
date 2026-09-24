@@ -447,7 +447,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "sprite": "gravity",
         "name": "Gravity Suit",
         "bg": "602880",

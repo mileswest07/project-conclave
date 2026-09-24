@@ -399,7 +399,7 @@
         "nodeType": "upgrade"
       },
       {
-        "id": "gravitySuitA",
+        "id": "gravitySuit",
         "name": "Gravity Suit",
         "sprite": "gravity",
         "bg": "602880",
